@@ -1,0 +1,424 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fmodern Courier New;}{\f1\fmodern\fcharset0 Courier New;}{\f2\fnil\fcharset129 Courier New;}}
+{\colortbl ;\red0\green0\blue0;\red48\green127\blue48;\red127\green127\blue27;\red127\green27\blue127;\red27\green127\blue127;}
+\viewkind4\uc1\pard\f0\fs18 Authenticating with public key "root"\cf1\highlight1 
+\par \cf0\highlight0      \u9484?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9488?\cf1\highlight1 
+\par \cf0\highlight0      \u9474?                        \cf2\f1\bullet  MobaXterm 11.1 \bullet  \cf0\f0                          \u9474?\cf1\highlight1 
+\par \cf0\highlight0      \u9474?            \cf3 (SSH client, X-server and networking tools)\cf0              \u9474?\cf1\highlight1 
+\par \cf0\highlight0      \u9474?                                                                    \u9474?\cf1\highlight1 
+\par \cf0\highlight0      \u9474? \u8594? SSH session to \cf4 root\cf0 @\cf4 104.198.181.40                               \cf0\u9474?\cf1\highlight1 
+\par \cf0\highlight0      \u9474?\f1    \bullet  SSH compression : \cf2\f0 v\cf0                                             \u9474?\cf1\highlight1 
+\par \cf0\highlight0      \u9474?\f1    \bullet  SSH-browser     : \cf2\f0 v\cf0                                             \u9474?\cf1\highlight1 
+\par \cf0\highlight0      \u9474?\f1    \bullet  X11-forwarding  : \cf2\f0 v\cf0   (remote display is forwarded through SSH) \u9474?\cf1\highlight1 
+\par \cf0\highlight0      \u9474?\f1    \bullet  DISPLAY         : \cf2\f0 v\cf0   (automatically set on remote server)      \u9474?\cf1\highlight1 
+\par \cf0\highlight0      \u9474?                                                                    \u9474?\cf1\highlight1 
+\par \cf0\highlight0      \u9474? \u8594? For more info, ctrl+click on \cf5\ul help\cf0\ulnone  or visit our \cf5\ul website\cf0\ulnone            \u9474?\cf1\highlight1 
+\par \cf0\highlight0      \u9492?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9496?\cf1\highlight1 
+\par 
+\par \cf0\highlight0 Welcome to Ubuntu 18.04.6 LTS (GNU/Linux 5.6.0-rc2 x86_64)\cf1\highlight1 
+\par 
+\par \cf0\highlight0  * Documentation:  https://help.ubuntu.com\cf1\highlight1 
+\par \cf0\highlight0  * Management:     https://landscape.canonical.com\cf1\highlight1 
+\par \cf0\highlight0  * Support:        https://ubuntu.com/advantage\cf1\highlight1 
+\par 
+\par \cf0\highlight0   System information as of Tue Dec  7 06:49:29 UTC 2021\cf1\highlight1 
+\par 
+\par \cf0\highlight0   System load:  4.29                Processes:              209\cf1\highlight1 
+\par \cf0\highlight0   Usage of /:   17.9% of 123.88GB   Users logged in:        1\cf1\highlight1 
+\par \cf0\highlight0   Memory usage: 8%                  IP address for ens4:    10.128.0.6\cf1\highlight1 
+\par \cf0\highlight0   Swap usage:   0%                  IP address for docker0: 172.17.0.1\cf1\highlight1 
+\par 
+\par 
+\par \cf0\highlight0 0 updates can be applied immediately.\cf1\highlight1 
+\par 
+\par \cf0\highlight0 New release '20.04.3 LTS' available.\cf1\highlight1 
+\par \cf0\highlight0 Run 'do-release-upgrade' to upgrade to it.\cf1\highlight1 
+\par 
+\par 
+\par \cf0\highlight0 Last login: Tue Dec  7 06:47:18 2021 from 114.143.207.106\cf1\highlight1 
+\par \cf0\highlight0 root@deployment:~# ./cluster/kubectl.sh get nodes -Ao wide\cf1\highlight1 
+\par \cf0\highlight0 -bash: ./cluster/kubectl.sh: No such file or directory\cf1\highlight1 
+\par \cf0\highlight0 root@deployment:~# su ubuntu\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:/root$ ./cluster/kubectl.sh get nodes -Ao wide\cf1\highlight1 
+\par \cf0\highlight0 bash: ./cluster/kubectl.sh: Permission denied\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:/root$ sudo ./cluster/kubectl.sh get nodes\cf1\highlight1 
+\par \cf0\highlight0 sudo: ./cluster/kubectl.sh: command not found\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:/root$ sudo ./cluster/kubectl.sh get nodes\cf1\highlight1 
+\par \cf0\highlight0 sudo: ./cluster/kubectl.sh: command not found\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:/root$  ./cluster/kubectl.sh get nodes\cf1\highlight1 
+\par \cf0\highlight0 bash: ./cluster/kubectl.sh: Permission denied\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:/root$ sudo ./cluster/kubectl.sh get nodes\cf1\highlight1 
+\par \cf0\highlight0 sudo: ./cluster/kubectl.sh: command not found\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:/root$ sudo ./cluster/kubectl.sh get nodes\cf1\highlight1 
+\par \cf0\highlight0 sudo: ./cluster/kubectl.sh: command not found\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:/root$\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:/root$ sudo ./cluster/kubectl.sh get nodes\cf1\highlight1 
+\par \cf0\highlight0 sudo: ./cluster/kubectl.sh: command not found\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:/root$ export KUBECONFIG=/var/run/kubernetes/admin.kubeconfig\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:/root$ ./cluster/kubectl.sh get nodes -Ao wide\cf1\highlight1 
+\par \cf0\highlight0 bash: ./cluster/kubectl.sh: Permission denied\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:/root$ sudo ./cluster/kubectl.sh get nodes\cf1\highlight1 
+\par \cf0\highlight0 sudo: ./cluster/kubectl.sh: command not found\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:/root$ sudo ./cluster/kubectl.sh get nodes^C\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:/root$ cluster/kubectl.sh\cf1\highlight1 
+\par \cf0\highlight0 bash: cluster/kubectl.sh: Permission denied\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:/root$ sudo cluster/kubectl.sh\cf1\highlight1 
+\par \cf0\highlight0 sudo: cluster/kubectl.sh: command not found\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:/root$ export KUBERNETES_PROVIDER=local\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:/root$ ./cluster/kubectl.sh get nodes -Ao wide\cf1\highlight1 
+\par \cf0\highlight0 bash: ./cluster/kubectl.sh: Permission denied\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:/root$ sudo ./cluster/kubectl.sh get nodes -Ao wide\cf1\highlight1 
+\par \cf0\highlight0 sudo: ./cluster/kubectl.sh: command not found\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:/root$ sudo ./cluster/kubectl.sh get nodes -A wide\cf1\highlight1 
+\par \cf0\highlight0 sudo: ./cluster/kubectl.sh: command not found\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:/root$ sudo ./cluster/kubectl.sh get nodes -o wide\cf1\highlight1 
+\par \cf0\highlight0 sudo: ./cluster/kubectl.sh: command not found\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:/root$ cd /home/ubuntu/go/src/k8s.io/arktos\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ sudo ./cluster/kubectl.sh get nodes -Ao wide\cf1\highlight1 
+\par \cf0\highlight0 NAME         STATUS   ROLES    AGE   VERSION   INTERNAL-IP   EXTERNAL-IP   OS-IMAGE             KERNEL-VERSION   CONTAINER-RUNTIME\cf1\highlight1 
+\par \cf0\highlight0 deployment   Ready    <none>   16m   v0.9.0    10.128.0.6    <none>        Ubuntu 18.04.6 LTS   5.6.0-rc2        containerd://1.4.0-beta.1-29-g70b0d3cf\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ cd /home/ubuntu/go/src/k8s.io/arktos^C\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ /cluster/kubectl.sh get pods -Ao wide\cf1\highlight1 
+\par \cf0\highlight0 bash: /cluster/kubectl.sh: No such file or directory\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ sudo /cluster/kubectl.sh get pods -Ao wide\cf1\highlight1 
+\par \cf0\highlight0 sudo: /cluster/kubectl.sh: command not found\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$  cd /home/ubuntu/go/src/k8s.io/arktos\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ sudo /cluster/kubectl.sh get pods -Ao wide\cf1\highlight1 
+\par \cf0\highlight0 sudo: /cluster/kubectl.sh: command not found\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ sudo /cluster/kubectl.sh get pod\cf1\highlight1 
+\par \cf0\highlight0 sudo: /cluster/kubectl.sh: command not found\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ cd /home/ubuntu/go/src/k8s.io/arktos\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ sudo /cluster/kubectl.sh get pods -Ao wide^C\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight1 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS             RESTARTS   AGE   IP           NODE         NOMINATED NODE   READINESS GATES\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-daemon-fz7nt                 6227399048249985085   1/1     Running            0          21m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-n8dsr    1365579182048140550   1/1     Running            0          21m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   coredns-default-7999fb47fb-l6qln   2779149631578886749   0/1     CrashLoopBackOff   7          21m   20.0.0.2     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-86wnm          7587638410360437250   1/3     CrashLoopBackOff   21         21m   20.0.0.6     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   virtlet-r9tf6                      4243249231154683095   3/3     Running            0          21m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ ./cluster/kubectl.sh get vpc -Ao wide\cf1\highlight1 
+\par \cf0\highlight0 NAMESPACE   NAME   IP         PREFIX   VNI   DIVIDERS   STATUS        CREATETIME                   PROVISIONDELAY\cf1\highlight1 
+\par \cf0\highlight0 default     vpc0   20.0.0.0   8        1     1          Provisioned   2021-12-07T06:50:36.620527   61.291832\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ 3) Check vpc status\cf1\highlight1 
+\par \cf0\highlight0 bash: syntax error near unexpected token `)'\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ ./cluster/kubectl.sh get vpc -Ao wide\cf1\highlight1 
+\par \cf0\highlight0 NAMESPACE   NAME   IP         PREFIX   VNI   DIVIDERS   STATUS        CREATETIME                   PROVISIONDELAY\cf1\highlight1 
+\par \cf0\highlight0 default     vpc0   20.0.0.0   8        1     1          Provisioned   2021-12-07T06:50:36.620527   61.291832\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ Output\cf1\highlight1 
+\par 
+\par \cf0\highlight0 Command 'Output' not found, did you mean:\cf1\highlight1 
+\par 
+\par \cf0\highlight0   command 'output' from deb yagiuda\cf1\highlight1 
+\par 
+\par \cf0\highlight0 Try: sudo apt install <deb name>\cf1\highlight1 
+\par 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ 4) Check subnets\cf1\highlight1 
+\par \cf0\highlight0 bash: syntax error near unexpected token `)'\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ ./cluster/kubectl.sh get subnets -Ao wide^C\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ ./cluster/kubectl.sh get subnets -Ao wide\cf1\highlight1 
+\par \cf0\highlight0 NAMESPACE   NAME   IP         PREFIX   VNI   VPC    STATUS        BOUNCERS   CREATETIME                   PROVISIONDELAY\cf1\highlight1 
+\par \cf0\highlight0 default     net0   20.0.0.0   8        1     vpc0   Provisioned   1          2021-12-07T06:50:36.717522   81.360562\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ ./cluster/kubectl.sh get net -Ao wide\cf1\highlight1 
+\par \cf0\highlight0 NAME      TYPE    VPC                      PHASE   DNS\cf1\highlight1 
+\par \cf0\highlight0 default   mizar   system-default-network   Ready   10.0.0.170\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ ./cluster/kubectl.sh get dividers -Ao wide\cf1\highlight1 
+\par \cf0\highlight0 NAMESPACE   NAME                                          VPC    IP    MAC   DROPLET      STATUS        CREATETIME                   PROVISIONDELAY\cf1\highlight1 
+\par \cf0\highlight0 default     vpc0-d-27858a1c-80e2-47ee-83f0-cc3bd28aa2d4   vpc0               deployment   Provisioned   2021-12-07T06:51:37.902721   0.245232\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ ./cluster/kubectl.sh get bouncers -Ao wide\cf1\highlight1 
+\par \cf0\highlight0 NAMESPACE   NAME                                          VPC    NET    IP    MAC   DROPLET      STATUS        CREATETIME                   PROVISIONDELAY\cf1\highlight1 
+\par \cf0\highlight0 default     net0-b-77f6ce8c-f75c-4763-8f6d-41aa2ff8b5f6   vpc0   net0               deployment   Provisioned   2021-12-07T06:51:58.064355   1.156814\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight1 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS             RESTARTS   AGE   IP           NODE         NOMINATED NODE   READINESS GATES\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-daemon-fz7nt                 6227399048249985085   1/1     Running            0          29m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-n8dsr    1365579182048140550   1/1     Running            0          29m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   coredns-default-7999fb47fb-l6qln   2779149631578886749   0/1     CrashLoopBackOff   9          29m   20.0.0.2     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-86wnm          7587638410360437250   0/3     CrashLoopBackOff   25         29m   20.0.0.6     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   virtlet-r9tf6                      4243249231154683095   3/3     Running            0          29m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight1 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS             RESTARTS   AGE   IP           NODE         NOMINATED NODE   READINESS GATES\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-daemon-fz7nt                 6227399048249985085   1/1     Running            0          31m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-n8dsr    1365579182048140550   1/1     Running            0          31m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   coredns-default-7999fb47fb-l6qln   2779149631578886749   0/1     CrashLoopBackOff   9          31m   20.0.0.2     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-86wnm          7587638410360437250   1/3     CrashLoopBackOff   27         31m   20.0.0.6     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   virtlet-r9tf6                      4243249231154683095   3/3     Running            0          31m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight1 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS             RESTARTS   AGE   IP           NODE         NOMINATED NODE   READINESS GATES\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-daemon-fz7nt                 6227399048249985085   1/1     Running            0          31m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-n8dsr    1365579182048140550   1/1     Running            0          31m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   coredns-default-7999fb47fb-l6qln   2779149631578886749   0/1     CrashLoopBackOff   9          31m   20.0.0.2     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-86wnm          7587638410360437250   1/3     CrashLoopBackOff   27         31m   20.0.0.6     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   virtlet-r9tf6                      4243249231154683095   3/3     Running            0          31m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight1 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS             RESTARTS   AGE   IP           NODE         NOMINATED NODE   READINESS GATES\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-daemon-fz7nt                 6227399048249985085   1/1     Running            0          31m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-n8dsr    1365579182048140550   1/1     Running            0          31m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   coredns-default-7999fb47fb-l6qln   2779149631578886749   0/1     Running            10         31m   20.0.0.2     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-86wnm          7587638410360437250   1/3     CrashLoopBackOff   27         31m   20.0.0.6     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   virtlet-r9tf6                      4243249231154683095   3/3     Running            0          31m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight1 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS    RESTARTS   AGE   IP           NODE         NOMINATED NODE   READINESS GATES\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-daemon-fz7nt                 6227399048249985085   1/1     Running   0          32m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-n8dsr    1365579182048140550   1/1     Running   0          32m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   coredns-default-7999fb47fb-l6qln   2779149631578886749   0/1     Running   10         32m   20.0.0.2     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-86wnm          7587638410360437250   1/3     Error     28         32m   20.0.0.6     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   virtlet-r9tf6                      4243249231154683095   3/3     Running   0          32m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight1 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS             RESTARTS   AGE   IP           NODE         NOMINATED NODE   READINESS GATES\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-daemon-fz7nt                 6227399048249985085   1/1     Running            0          32m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-n8dsr    1365579182048140550   1/1     Running            0          32m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   coredns-default-7999fb47fb-l6qln   2779149631578886749   0/1     Running            10         32m   20.0.0.2     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-86wnm          7587638410360437250   1/3     CrashLoopBackOff   28         32m   20.0.0.6     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   virtlet-r9tf6                      4243249231154683095   3/3     Running            0          32m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight1 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS             RESTARTS   AGE   IP           NODE         NOMINATED NODE   READINESS GATES\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-daemon-fz7nt                 6227399048249985085   1/1     Running            0          32m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-n8dsr    1365579182048140550   1/1     Running            0          32m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   coredns-default-7999fb47fb-l6qln   2779149631578886749   0/1     Running            10         32m   20.0.0.2     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-86wnm          7587638410360437250   1/3     CrashLoopBackOff   28         32m   20.0.0.6     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   virtlet-r9tf6                      4243249231154683095   3/3     Running            0          32m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight1 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS             RESTARTS   AGE   IP           NODE         NOMINATED NODE   READINESS GATES\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-daemon-fz7nt                 6227399048249985085   1/1     Running            0          32m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-n8dsr    1365579182048140550   1/1     Running            0          32m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   coredns-default-7999fb47fb-l6qln   2779149631578886749   0/1     Running            10         32m   20.0.0.2     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-86wnm          7587638410360437250   1/3     CrashLoopBackOff   28         32m   20.0.0.6     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   virtlet-r9tf6                      4243249231154683095   3/3     Running            0          32m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight1 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS             RESTARTS   AGE   IP           NODE         NOMINATED NODE   READINESS GATES\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-daemon-fz7nt                 6227399048249985085   1/1     Running            0          32m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-n8dsr    1365579182048140550   1/1     Running            0          32m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   coredns-default-7999fb47fb-l6qln   2779149631578886749   0/1     Running            10         32m   20.0.0.2     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-86wnm          7587638410360437250   1/3     CrashLoopBackOff   28         32m   20.0.0.6     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   virtlet-r9tf6                      4243249231154683095   3/3     Running            0          32m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight1 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS             RESTARTS   AGE   IP           NODE         NOMINATED NODE   READINESS GATES\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-daemon-fz7nt                 6227399048249985085   1/1     Running            0          32m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-n8dsr    1365579182048140550   1/1     Running            0          32m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   coredns-default-7999fb47fb-l6qln   2779149631578886749   0/1     Running            10         32m   20.0.0.2     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-86wnm          7587638410360437250   1/3     CrashLoopBackOff   28         32m   20.0.0.6     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   virtlet-r9tf6                      4243249231154683095   3/3     Running            0          32m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight1 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS             RESTARTS   AGE   IP           NODE         NOMINATED NODE   READINESS GATES\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-daemon-fz7nt                 6227399048249985085   1/1     Running            0          32m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-n8dsr    1365579182048140550   1/1     Running            0          32m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   coredns-default-7999fb47fb-l6qln   2779149631578886749   0/1     Running            10         32m   20.0.0.2     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-86wnm          7587638410360437250   1/3     CrashLoopBackOff   28         32m   20.0.0.6     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   virtlet-r9tf6                      4243249231154683095   3/3     Running            0          32m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight1 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS             RESTARTS   AGE   IP           NODE         NOMINATED NODE   READINESS GATES\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-daemon-fz7nt                 6227399048249985085   1/1     Running            0          32m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-n8dsr    1365579182048140550   1/1     Running            0          32m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   coredns-default-7999fb47fb-l6qln   2779149631578886749   0/1     Running            10         32m   20.0.0.2     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-86wnm          7587638410360437250   1/3     CrashLoopBackOff   28         32m   20.0.0.6     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   virtlet-r9tf6                      4243249231154683095   3/3     Running            0          32m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight1 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS             RESTARTS   AGE   IP           NODE         NOMINATED NODE   READINESS GATES\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-daemon-fz7nt                 6227399048249985085   1/1     Running            0          32m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-n8dsr    1365579182048140550   1/1     Running            0          32m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   coredns-default-7999fb47fb-l6qln   2779149631578886749   0/1     Running            10         32m   20.0.0.2     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-86wnm          7587638410360437250   1/3     CrashLoopBackOff   28         32m   20.0.0.6     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   virtlet-r9tf6                      4243249231154683095   3/3     Running            0          32m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight1 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS             RESTARTS   AGE   IP           NODE         NOMINATED NODE   READINESS GATES\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-daemon-fz7nt                 6227399048249985085   1/1     Running            0          32m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-n8dsr    1365579182048140550   1/1     Running            0          32m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   coredns-default-7999fb47fb-l6qln   2779149631578886749   0/1     Running            10         32m   20.0.0.2     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-86wnm          7587638410360437250   1/3     CrashLoopBackOff   28         32m   20.0.0.6     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   virtlet-r9tf6                      4243249231154683095   3/3     Running            0          32m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight1 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS             RESTARTS   AGE   IP           NODE         NOMINATED NODE   READINESS GATES\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-daemon-fz7nt                 6227399048249985085   1/1     Running            0          32m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-n8dsr    1365579182048140550   1/1     Running            0          32m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   coredns-default-7999fb47fb-l6qln   2779149631578886749   0/1     Running            10         32m   20.0.0.2     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-86wnm          7587638410360437250   1/3     CrashLoopBackOff   28         32m   20.0.0.6     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   virtlet-r9tf6                      4243249231154683095   3/3     Running            0          32m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight1 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS             RESTARTS   AGE   IP           NODE         NOMINATED NODE   READINESS GATES\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-daemon-fz7nt                 6227399048249985085   1/1     Running            0          32m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-n8dsr    1365579182048140550   1/1     Running            0          32m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   coredns-default-7999fb47fb-l6qln   2779149631578886749   0/1     Running            10         32m   20.0.0.2     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-86wnm          7587638410360437250   1/3     CrashLoopBackOff   28         32m   20.0.0.6     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   virtlet-r9tf6                      4243249231154683095   3/3     Running            0          32m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight1 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS             RESTARTS   AGE   IP           NODE         NOMINATED NODE   READINESS GATES\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-daemon-fz7nt                 6227399048249985085   1/1     Running            0          32m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-n8dsr    1365579182048140550   1/1     Running            0          32m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   coredns-default-7999fb47fb-l6qln   2779149631578886749   0/1     Running            10         32m   20.0.0.2     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-86wnm          7587638410360437250   1/3     CrashLoopBackOff   28         32m   20.0.0.6     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   virtlet-r9tf6                      4243249231154683095   3/3     Running            0          32m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight1 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS             RESTARTS   AGE   IP           NODE         NOMINATED NODE   READINESS GATES\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-daemon-fz7nt                 6227399048249985085   1/1     Running            0          32m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-n8dsr    1365579182048140550   1/1     Running            0          32m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   coredns-default-7999fb47fb-l6qln   2779149631578886749   0/1     Running            10         32m   20.0.0.2     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-86wnm          7587638410360437250   1/3     CrashLoopBackOff   28         32m   20.0.0.6     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   virtlet-r9tf6                      4243249231154683095   3/3     Running            0          32m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight1 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS             RESTARTS   AGE   IP           NODE         NOMINATED NODE   READINESS GATES\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-daemon-fz7nt                 6227399048249985085   1/1     Running            0          32m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-n8dsr    1365579182048140550   1/1     Running            0          32m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   coredns-default-7999fb47fb-l6qln   2779149631578886749   0/1     Running            10         32m   20.0.0.2     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-86wnm          7587638410360437250   1/3     CrashLoopBackOff   28         32m   20.0.0.6     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   virtlet-r9tf6                      4243249231154683095   3/3     Running            0          32m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight1 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS             RESTARTS   AGE   IP           NODE         NOMINATED NODE   READINESS GATES\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-daemon-fz7nt                 6227399048249985085   1/1     Running            0          32m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-n8dsr    1365579182048140550   1/1     Running            0          32m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   coredns-default-7999fb47fb-l6qln   2779149631578886749   0/1     Running            10         32m   20.0.0.2     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-86wnm          7587638410360437250   1/3     CrashLoopBackOff   28         32m   20.0.0.6     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   virtlet-r9tf6                      4243249231154683095   3/3     Running            0          32m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight1 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS             RESTARTS   AGE   IP           NODE         NOMINATED NODE   READINESS GATES\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-daemon-fz7nt                 6227399048249985085   1/1     Running            0          32m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-n8dsr    1365579182048140550   1/1     Running            0          32m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   coredns-default-7999fb47fb-l6qln   2779149631578886749   0/1     Running            10         32m   20.0.0.2     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-86wnm          7587638410360437250   1/3     CrashLoopBackOff   28         32m   20.0.0.6     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   virtlet-r9tf6                      4243249231154683095   3/3     Running            0          32m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight1 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS             RESTARTS   AGE   IP           NODE         NOMINATED NODE   READINESS GATES\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-daemon-fz7nt                 6227399048249985085   1/1     Running            0          35m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-n8dsr    1365579182048140550   1/1     Running            0          35m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   coredns-default-7999fb47fb-l6qln   2779149631578886749   0/1     Running            11         35m   20.0.0.2     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-86wnm          7587638410360437250   1/3     CrashLoopBackOff   29         35m   20.0.0.6     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   virtlet-r9tf6                      4243249231154683095   3/3     Running            0          35m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight1 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS             RESTARTS   AGE   IP           NODE         NOMINATED NODE   READINESS GATES\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-daemon-fz7nt                 6227399048249985085   1/1     Running            0          35m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-n8dsr    1365579182048140550   1/1     Running            0          35m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   coredns-default-7999fb47fb-l6qln   2779149631578886749   0/1     Running            11         35m   20.0.0.2     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-86wnm          7587638410360437250   1/3     CrashLoopBackOff   29         35m   20.0.0.6     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   virtlet-r9tf6                      4243249231154683095   3/3     Running            0          35m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight1 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS             RESTARTS   AGE   IP           NODE         NOMINATED NODE   READINESS GATES\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-daemon-fz7nt                 6227399048249985085   1/1     Running            0          35m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-n8dsr    1365579182048140550   1/1     Running            0          35m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   coredns-default-7999fb47fb-l6qln   2779149631578886749   0/1     Running            11         35m   20.0.0.2     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-86wnm          7587638410360437250   1/3     CrashLoopBackOff   30         35m   20.0.0.6     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   virtlet-r9tf6                      4243249231154683095   3/3     Running            0          35m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ vi test-yaml\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ /cluster/kubectl.sh apply -f test\cf1\highlight1 
+\par \cf0\highlight0 test/      test-yaml\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ /cluster/kubectl.sh apply -f test\cf1\highlight1 
+\par \cf0\highlight0 test/      test-yaml\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ /cluster/kubectl.sh apply -f test-yaml\cf1\highlight1 
+\par \cf0\highlight0 bash: /cluster/kubectl.sh: No such file or directory\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ ./cluster/kubectl.sh apply -f test-yaml\cf1\highlight1 
+\par \cf0\highlight0 error: error validating "test-yaml": error validating data: kind not set; if you choose to ignore these errors, turn validation off with --validate=false\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ vi test-yaml\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ ./cluster/kubectl.sh apply -f test-yaml\cf1\highlight1 
+\par \cf0\highlight0 pod/netpod1 created\cf1\highlight1 
+\par \cf0\highlight0 pod/netpod2 created\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight1 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS              RESTARTS   AGE   IP           NODE         NOMINATED NODE   READINESS GATES\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-daemon-fz7nt                 6227399048249985085   1/1     Running             0          49m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-n8dsr    1365579182048140550   1/1     Running             0          49m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 default       netpod1                            4115053383722671416   0/1     ContainerCreating   0          10s   <none>       deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 default       netpod2                            4248382394945406721   0/1     ContainerCreating   0          10s   <none>       deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   coredns-default-7999fb47fb-l6qln   2779149631578886749   0/1     CrashLoopBackOff    13         49m   20.0.0.2     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-86wnm          7587638410360437250   1/3     CrashLoopBackOff    37         49m   20.0.0.6     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   virtlet-r9tf6                      4243249231154683095   3/3     Running             0          49m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight1 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS              RESTARTS   AGE   IP           NODE         NOMINATED NODE   READINESS GATES\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-daemon-fz7nt                 6227399048249985085   1/1     Running             0          49m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-n8dsr    1365579182048140550   1/1     Running             0          49m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 default       netpod1                            4115053383722671416   0/1     ContainerCreating   0          13s   <none>       deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 default       netpod2                            4248382394945406721   0/1     ContainerCreating   0          13s   <none>       deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   coredns-default-7999fb47fb-l6qln   2779149631578886749   0/1     CrashLoopBackOff    13         49m   20.0.0.2     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-86wnm          7587638410360437250   1/3     CrashLoopBackOff    37         49m   20.0.0.6     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   virtlet-r9tf6                      4243249231154683095   3/3     Running             0          49m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight1 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS              RESTARTS   AGE   IP           NODE         NOMINATED NODE   READINESS GATES\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-daemon-fz7nt                 6227399048249985085   1/1     Running             0          49m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-n8dsr    1365579182048140550   1/1     Running             0          49m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 default       netpod1                            4115053383722671416   0/1     ContainerCreating   0          14s   <none>       deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 default       netpod2                            4248382394945406721   0/1     ContainerCreating   0          14s   <none>       deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   coredns-default-7999fb47fb-l6qln   2779149631578886749   0/1     CrashLoopBackOff    13         49m   20.0.0.2     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-86wnm          7587638410360437250   1/3     CrashLoopBackOff    37         49m   20.0.0.6     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   virtlet-r9tf6                      4243249231154683095   3/3     Running             0          49m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight1 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS              RESTARTS   AGE   IP           NODE         NOMINATED NODE   READINESS GATES\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-daemon-fz7nt                 6227399048249985085   1/1     Running             0          49m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-n8dsr    1365579182048140550   1/1     Running             0          49m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 default       netpod1                            4115053383722671416   0/1     ContainerCreating   0          15s   <none>       deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 default       netpod2                            4248382394945406721   0/1     ContainerCreating   0          15s   <none>       deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   coredns-default-7999fb47fb-l6qln   2779149631578886749   0/1     CrashLoopBackOff    13         49m   20.0.0.2     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-86wnm          7587638410360437250   1/3     CrashLoopBackOff    37         49m   20.0.0.6     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   virtlet-r9tf6                      4243249231154683095   3/3     Running             0          49m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight1 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS              RESTARTS   AGE   IP           NODE         NOMINATED NODE   READINESS GATES\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-daemon-fz7nt                 6227399048249985085   1/1     Running             0          49m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-n8dsr    1365579182048140550   1/1     Running             0          49m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 default       netpod1                            4115053383722671416   0/1     ContainerCreating   0          17s   <none>       deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 default       netpod2                            4248382394945406721   0/1     ContainerCreating   0          17s   <none>       deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   coredns-default-7999fb47fb-l6qln   2779149631578886749   0/1     CrashLoopBackOff    13         49m   20.0.0.2     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-86wnm          7587638410360437250   1/3     CrashLoopBackOff    37         49m   20.0.0.6     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   virtlet-r9tf6                      4243249231154683095   3/3     Running             0          49m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight1 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS              RESTARTS   AGE   IP           NODE         NOMINATED NODE   READINESS GATES\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-daemon-fz7nt                 6227399048249985085   1/1     Running             0          49m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-n8dsr    1365579182048140550   1/1     Running             0          49m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 default       netpod1                            4115053383722671416   0/1     ContainerCreating   0          17s   <none>       deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 default       netpod2                            4248382394945406721   0/1     ContainerCreating   0          17s   <none>       deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   coredns-default-7999fb47fb-l6qln   2779149631578886749   0/1     CrashLoopBackOff    13         49m   20.0.0.2     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-86wnm          7587638410360437250   1/3     CrashLoopBackOff    37         49m   20.0.0.6     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   virtlet-r9tf6                      4243249231154683095   3/3     Running             0          49m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight1 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS             RESTARTS   AGE   IP           NODE         NOMINATED NODE   READINESS GATES\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-daemon-fz7nt                 6227399048249985085   1/1     Running            0          49m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-n8dsr    1365579182048140550   1/1     Running            0          49m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 default       netpod1                            4115053383722671416   1/1     Running            0          18s   20.0.0.38    deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 default       netpod2                            4248382394945406721   1/1     Running            0          18s   20.0.0.14    deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   coredns-default-7999fb47fb-l6qln   2779149631578886749   0/1     CrashLoopBackOff   13         49m   20.0.0.2     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-86wnm          7587638410360437250   1/3     CrashLoopBackOff   37         49m   20.0.0.6     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   virtlet-r9tf6                      4243249231154683095   3/3     Running            0          49m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight1 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS             RESTARTS   AGE    IP           NODE         NOMINATED NODE   READINESS GATES\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-daemon-fz7nt                 6227399048249985085   1/1     Running            0          103m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-n8dsr    1365579182048140550   1/1     Running            0          103m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 default       netpod1                            4115053383722671416   1/1     Running            0          54m    20.0.0.38    deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 default       netpod2                            4248382394945406721   1/1     Running            0          54m    20.0.0.14    deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   coredns-default-7999fb47fb-l6qln   2779149631578886749   0/1     Running            26         103m   20.0.0.2     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-86wnm          7587638410360437250   0/3     CrashLoopBackOff   68         103m   20.0.0.6     deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 kube-system   virtlet-r9tf6                      4243249231154683095   3/3     Running            0          103m   10.128.0.6   deployment   <none>           <none>\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ ./cluster/kubectl.sh exec netpod1 ping 20.0.0.38\cf1\highlight1 
+\par \cf0\highlight0 PING 20.0.0.38 (20.0.0.38) 56(84) bytes of data.\cf1\highlight1 
+\par \cf0\highlight0 64 bytes from 20.0.0.38: icmp_seq=1 ttl=64 time=0.027 ms\cf1\highlight1 
+\par \cf0\highlight0 64 bytes from 20.0.0.38: icmp_seq=2 ttl=64 time=0.043 ms\cf1\highlight1 
+\par \cf0\highlight0 64 bytes from 20.0.0.38: icmp_seq=3 ttl=64 time=0.047 ms\cf1\highlight1 
+\par \cf0\highlight0 64 bytes from 20.0.0.38: icmp_seq=4 ttl=64 time=0.043 ms\cf1\highlight1 
+\par \cf0\highlight0 64 bytes from 20.0.0.38: icmp_seq=5 ttl=64 time=0.043 ms\cf1\highlight1 
+\par \cf0\highlight0 ^C\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ ./cluster/kubectl.sh exec netpod2 ping 20.0.0.14\cf1\highlight1 
+\par \cf0\highlight0 PING 20.0.0.14 (20.0.0.14) 56(84) bytes of data.\cf1\highlight1 
+\par \cf0\highlight0 64 bytes from 20.0.0.14: icmp_seq=1 ttl=64 time=0.038 ms\cf1\highlight1 
+\par \cf0\highlight0 64 bytes from 20.0.0.14: icmp_seq=2 ttl=64 time=0.044 ms\cf1\highlight1 
+\par \cf0\highlight0 64 bytes from 20.0.0.14: icmp_seq=3 ttl=64 time=0.041 ms\cf1\highlight1 
+\par \cf0\highlight0 64 bytes from 20.0.0.14: icmp_seq=4 ttl=64 time=0.048 ms\cf1\highlight1 
+\par \cf0\highlight0 64 bytes from 20.0.0.14: icmp_seq=5 ttl=64 time=0.063 ms\cf1\highlight1 
+\par \cf0\highlight0 ^C\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ ./cluster/kubectl.sh get pods -Ao wide^C\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ ./cluster/kubectl.sh exec netpod1 ping 20.0.0.14\cf1\highlight1 
+\par \cf0\highlight0 PING 20.0.0.14 (20.0.0.14) 56(84) bytes of data.\cf1\highlight1 
+\par \cf0\highlight0 From 20.0.0.38 icmp_seq=1 Destination Host Unreachable\cf1\highlight1 
+\par \cf0\highlight0 From 20.0.0.38 icmp_seq=2 Destination Host Unreachable\cf1\highlight1 
+\par \cf0\highlight0 From 20.0.0.38 icmp_seq=3 Destination Host Unreachable\cf1\highlight1 
+\par \cf0\highlight0 From 20.0.0.38 icmp_seq=4 Destination Host Unreachable\cf1\highlight1 
+\par \cf0\highlight0 ^C\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ ./cluster/kubectl.sh exec netpod2 ping 20.0.0.38\cf1\highlight1 
+\par \cf0\highlight0 PING 20.0.0.38 (20.0.0.38) 56(84) bytes of data.\cf1\highlight1 
+\par \cf0\highlight0 From 20.0.0.14 icmp_seq=1 Destination Host Unreachable\cf1\highlight1 
+\par \cf0\highlight0 From 20.0.0.14 icmp_seq=2 Destination Host Unreachable\cf1\highlight1 
+\par \cf0\highlight0 From 20.0.0.14 icmp_seq=5 Destination Host Unreachable\cf1\highlight1 
+\par \cf0\highlight0 From 20.0.0.14 icmp_seq=6 Destination Host Unreachable\cf1\highlight1 
+\par \cf0\highlight0 ^C\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ git branch\cf1\highlight1 
+\par \cf0\highlight0 * \cf2 default-cni-mizar\cf1\highlight1 
+\par \cf0\highlight0   master\cf1\highlight1 
+\par \cf0\highlight0 ubuntu@deployment:~/go/src/k8s.io/arktos$ ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight1 
+\par \pard\cf0\highlight0\f2\fs20 
+\par }
+ 
