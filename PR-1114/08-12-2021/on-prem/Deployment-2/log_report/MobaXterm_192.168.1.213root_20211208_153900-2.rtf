@@ -1,0 +1,238 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fmodern Consolas;}{\f1\fmodern\fcharset0 Consolas;}{\f2\fnil\fcharset129 Courier New;}}
+{\colortbl ;\red20\green20\blue20;\red142\green142\blue142;\red16\green158\blue98;\red148\green146\blue12;\red170\green51\blue170;\red56\green136\blue159;}
+\viewkind4\uc1\pard\f0\fs20     \u9484?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9488?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?                 \cf3\f1\bullet  MobaXterm Personal Edition v21.4 \bullet\cf0\f0                  \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?               \cf4 (SSH client, X server and network tools)\cf0                \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?                                                                      \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474? \u8594? SSH session to \cf5 root@192.168.1.213                        \cf0           \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  Direct SSH      :  \cf3\f0 v\cf0                                              \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  SSH compression :  \cf3\f0 v\cf0                                              \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  SSH-browser     :  \cf3\f0 v\cf0                                              \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  X11-forwarding  :  \cf3\f0 v\cf0   (remote display is forwarded through SSH)  \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?                                                                      \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474? \u8594? For more info, ctrl+click on \cf6\ul help\cf0\ulnone  or visit our \cf6\ul website\cf0\ulnone .            \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9492?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9496?\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 5.6.0-rc2 x86_64)\cf1\highlight2 
+\par 
+\par \cf0\highlight0  * Documentation:  https://help.ubuntu.com\cf1\highlight2 
+\par \cf0\highlight0  * Management:     https://landscape.canonical.com\cf1\highlight2 
+\par \cf0\highlight0  * Support:        https://ubuntu.com/advantage\cf1\highlight2 
+\par 
+\par \cf0\highlight0   System information as of Wed Dec  8 09:21:05 UTC 2021\cf1\highlight2 
+\par 
+\par \cf0\highlight0   System load:  0.47               Processes:              387\cf1\highlight2 
+\par \cf0\highlight0   Usage of /:   28.0% of 72.83GB   Users logged in:        1\cf1\highlight2 
+\par \cf0\highlight0   Memory usage: 18%                IP address for ens160:  192.168.1.213\cf1\highlight2 
+\par \cf0\highlight0   Swap usage:   0%                 IP address for docker0: 172.17.0.1\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0  * Canonical Livepatch is available for installation.\cf1\highlight2 
+\par \cf0\highlight0    - Reduce system reboots and improve kernel security. Activate at:\cf1\highlight2 
+\par \cf0\highlight0      https://ubuntu.com/livepatch\cf1\highlight2 
+\par 
+\par \cf0\highlight0 74 packages can be updated.\cf1\highlight2 
+\par \cf0\highlight0 1 update is a security update.\cf1\highlight2 
+\par 
+\par \cf0\highlight0 New release '20.04.3 LTS' available.\cf1\highlight2 
+\par \cf0\highlight0 Run 'do-release-upgrade' to upgrade to it.\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Last login: Wed Dec  8 08:52:34 2021 from 192.168.1.1\cf1\highlight2 
+\par \cf0\highlight0 root@localhost:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get nodes -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAME        STATUS   ROLES    AGE   VERSION   INTERNAL-IP     EXTERNAL-IP   OS-IMAGE             KERNEL-VERSION   CONTAINER-RUNTIME\cf1\highlight2 
+\par \cf0\highlight0 localhost   Ready    <none>   12m   v0.9.0    192.168.1.213   <none>        Ubuntu 18.04.5 LTS   5.6.0-rc2        containerd://1.4.0-beta.1-29-g70b0d3cf\cf1\highlight2 
+\par \cf0\highlight0 root@localhost:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS    RESTARTS   AGE   IP              NODE        NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-daemon-mpw5j                 1746779241500533718   1/1     Running   0          12m   192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-s6bp6    3383573561551368642   1/1     Running   0          12m   192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-6dfd988bdf-tskmw   6153453117765459299   0/1     Pending   0          12m   <none>          <none>      <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-fw9jl          7998274975207556737   0/3     Pending   0          12m   <none>          <none>      <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@localhost:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get vpcs -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE   NAME   IP         PREFIX   VNI   DIVIDERS   STATUS   CREATETIME                   PROVISIONDELAY\cf1\highlight2 
+\par \cf0\highlight0 default     vpc0   20.0.0.0   8        1     1          Init     2021-12-08T09:10:35.403068\cf1\highlight2 
+\par \cf0\highlight0 root@localhost:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get net -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAME      TYPE    VPC                      PHASE   DNS\cf1\highlight2 
+\par \cf0\highlight0 default   mizar   system-default-network   Ready   10.0.0.5\cf1\highlight2 
+\par \cf0\highlight0 root@localhost:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get subnet -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE   NAME   IP         PREFIX   VNI   VPC    STATUS   BOUNCERS   CREATETIME                   PROVISIONDELAY\cf1\highlight2 
+\par \cf0\highlight0 default     net0   20.0.0.0   8        1     vpc0   Init     1          2021-12-08T09:10:35.496709\cf1\highlight2 
+\par \cf0\highlight0 root@localhost:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get subnet -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE   NAME   IP         PREFIX   VNI   VPC    STATUS   BOUNCERS   CREATETIME                   PROVISIONDELAY\cf1\highlight2 
+\par \cf0\highlight0 default     net0   20.0.0.0   8        1     vpc0   Init     1          2021-12-08T09:24:08.039646\cf1\highlight2 
+\par \cf0\highlight0 root@localhost:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get vpcs -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE   NAME   IP         PREFIX   VNI   DIVIDERS   STATUS   CREATETIME                   PROVISIONDELAY\cf1\highlight2 
+\par \cf0\highlight0 default     vpc0   20.0.0.0   8        1     1          Init     2021-12-08T09:24:07.943028\cf1\highlight2 
+\par \cf0\highlight0 root@localhost:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS              RESTARTS   AGE   IP              NODE        NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-daemon-l22z7                 8414652929851020309   0/1     Init:0/1            0          45s   192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-nfwk5    9219354266910559120   1/1     Running             0          50s   192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-6dfd988bdf-r87h8   5561116784721377216   0/1     ContainerCreating   0          50s   <none>          localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-n4hf8          2493068358088039907   0/3     ContainerCreating   0          50s   <none>          localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-rznns                      7539698645510249843   0/3     Init:0/1            0          30s   192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@localhost:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS              RESTARTS   AGE   IP              NODE        NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-daemon-l22z7                 8414652929851020309   0/1     Init:0/1            0          52s   192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-nfwk5    9219354266910559120   1/1     Running             0          57s   192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-6dfd988bdf-r87h8   5561116784721377216   0/1     ContainerCreating   0          57s   <none>          localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-n4hf8          2493068358088039907   0/3     ContainerCreating   0          57s   <none>          localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-rznns                      7539698645510249843   0/3     Init:0/1            0          37s   192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@localhost:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS              RESTARTS   AGE   IP              NODE        NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-daemon-l22z7                 8414652929851020309   0/1     PodInitializing     0          54s   192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-nfwk5    9219354266910559120   1/1     Running             0          59s   192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-6dfd988bdf-r87h8   5561116784721377216   0/1     ContainerCreating   0          59s   <none>          localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-n4hf8          2493068358088039907   0/3     ContainerCreating   0          59s   <none>          localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-rznns                      7539698645510249843   0/3     Init:0/1            0          39s   192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@localhost:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS              RESTARTS   AGE   IP              NODE        NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-daemon-l22z7                 8414652929851020309   1/1     Running             0          63s   192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-nfwk5    9219354266910559120   1/1     Running             0          68s   192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-6dfd988bdf-r87h8   5561116784721377216   0/1     ContainerCreating   0          68s   <none>          localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-n4hf8          2493068358088039907   0/3     ContainerCreating   0          68s   <none>          localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-rznns                      7539698645510249843   0/3     Init:0/1            0          48s   192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@localhost:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS              RESTARTS   AGE   IP              NODE        NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-daemon-l22z7                 8414652929851020309   1/1     Running             0          70s   192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-nfwk5    9219354266910559120   1/1     Running             0          75s   192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-6dfd988bdf-r87h8   5561116784721377216   0/1     ContainerCreating   0          75s   <none>          localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-n4hf8          2493068358088039907   0/3     ContainerCreating   0          75s   <none>          localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-rznns                      7539698645510249843   0/3     Init:0/1            0          55s   192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@localhost:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS     RESTARTS   AGE     IP              NODE        NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-daemon-l22z7                 8414652929851020309   1/1     Running    0          4m23s   192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-nfwk5    9219354266910559120   1/1     Running    0          4m28s   192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-6dfd988bdf-r87h8   5561116784721377216   0/1     Running    1          4m28s   20.0.0.5        localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-n4hf8          2493068358088039907   2/3     Running    4          4m28s   20.0.0.18       localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-rznns                      7539698645510249843   0/3     Init:0/1   0          4m8s    192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@localhost:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS     RESTARTS   AGE     IP              NODE        NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-daemon-l22z7                 8414652929851020309   1/1     Running    0          4m33s   192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-nfwk5    9219354266910559120   1/1     Running    0          4m38s   192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-6dfd988bdf-r87h8   5561116784721377216   0/1     Running    1          4m38s   20.0.0.5        localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-n4hf8          2493068358088039907   2/3     Running    4          4m38s   20.0.0.18       localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-rznns                      7539698645510249843   0/3     Init:0/1   0          4m18s   192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@localhost:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS     RESTARTS   AGE     IP              NODE        NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-daemon-l22z7                 8414652929851020309   1/1     Running    0          4m35s   192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-nfwk5    9219354266910559120   1/1     Running    0          4m40s   192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-6dfd988bdf-r87h8   5561116784721377216   0/1     Running    1          4m40s   20.0.0.5        localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-n4hf8          2493068358088039907   2/3     Running    4          4m40s   20.0.0.18       localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-rznns                      7539698645510249843   0/3     Init:0/1   0          4m20s   192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@localhost:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS     RESTARTS   AGE     IP              NODE        NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-daemon-l22z7                 8414652929851020309   1/1     Running    0          4m47s   192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-nfwk5    9219354266910559120   1/1     Running    0          4m52s   192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-6dfd988bdf-r87h8   5561116784721377216   0/1     Running    1          4m52s   20.0.0.5        localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-n4hf8          2493068358088039907   2/3     Error      4          4m52s   20.0.0.18       localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-rznns                      7539698645510249843   0/3     Init:0/1   0          4m32s   192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@localhost:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS     RESTARTS   AGE     IP              NODE        NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-daemon-l22z7                 8414652929851020309   1/1     Running    0          4m49s   192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-nfwk5    9219354266910559120   1/1     Running    0          4m54s   192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-6dfd988bdf-r87h8   5561116784721377216   0/1     Running    1          4m54s   20.0.0.5        localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-n4hf8          2493068358088039907   2/3     Error      4          4m54s   20.0.0.18       localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-rznns                      7539698645510249843   0/3     Init:0/1   0          4m34s   192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@localhost:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS             RESTARTS   AGE     IP              NODE        NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-daemon-l22z7                 8414652929851020309   1/1     Running            0          9m14s   192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-nfwk5    9219354266910559120   1/1     Running            0          9m19s   192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-6dfd988bdf-r87h8   5561116784721377216   0/1     Running            4          9m19s   20.0.0.5        localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-n4hf8          2493068358088039907   2/3     CrashLoopBackOff   10         9m19s   20.0.0.18       localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-rznns                      7539698645510249843   3/3     Running            0          8m59s   192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@localhost:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS    RESTARTS   AGE     IP              NODE        NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-daemon-l22z7                 8414652929851020309   1/1     Running   0          9m20s   192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-nfwk5    9219354266910559120   1/1     Running   0          9m25s   192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-6dfd988bdf-r87h8   5561116784721377216   0/1     Running   4          9m25s   20.0.0.5        localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-n4hf8          2493068358088039907   2/3     Running   11         9m25s   20.0.0.18       localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-rznns                      7539698645510249843   3/3     Running   0          9m5s    192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@localhost:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS    RESTARTS   AGE     IP              NODE        NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-daemon-l22z7                 8414652929851020309   1/1     Running   0          9m21s   192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-nfwk5    9219354266910559120   1/1     Running   0          9m26s   192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-6dfd988bdf-r87h8   5561116784721377216   0/1     Running   4          9m26s   20.0.0.5        localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-n4hf8          2493068358088039907   2/3     Running   11         9m26s   20.0.0.18       localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-rznns                      7539698645510249843   3/3     Running   0          9m6s    192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@localhost:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS    RESTARTS   AGE     IP              NODE        NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-daemon-l22z7                 8414652929851020309   1/1     Running   0          9m22s   192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-nfwk5    9219354266910559120   1/1     Running   0          9m27s   192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-6dfd988bdf-r87h8   5561116784721377216   0/1     Running   4          9m27s   20.0.0.5        localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-n4hf8          2493068358088039907   2/3     Running   11         9m27s   20.0.0.18       localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-rznns                      7539698645510249843   3/3     Running   0          9m7s    192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@localhost:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get vpc -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE   NAME   IP         PREFIX   VNI   DIVIDERS   STATUS        CREATETIME                   PROVISIONDELAY\cf1\highlight2 
+\par \cf0\highlight0 default     vpc0   20.0.0.0   8        1     1          Provisioned   2021-12-08T09:24:07.943028   62.184788\cf1\highlight2 
+\par \cf0\highlight0 root@localhost:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get net -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAME      TYPE    VPC                      PHASE   DNS\cf1\highlight2 
+\par \cf0\highlight0 default   mizar   system-default-network   Ready   10.0.0.24\cf1\highlight2 
+\par \cf0\highlight0 root@localhost:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get subnet -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE   NAME   IP         PREFIX   VNI   VPC    STATUS        BOUNCERS   CREATETIME                   PROVISIONDELAY\cf1\highlight2 
+\par \cf0\highlight0 default     net0   20.0.0.0   8        1     vpc0   Provisioned   1          2021-12-08T09:24:08.039646   82.325276\cf1\highlight2 
+\par \cf0\highlight0 root@localhost:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get bouncers -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE   NAME                                          VPC    NET    IP    MAC   DROPLET     STATUS        CREATETIME                   PROVISIONDELAY\cf1\highlight2 
+\par \cf0\highlight0 default     net0-b-03b31d3c-c588-4767-b5f0-53669cd68928   vpc0   net0               localhost   Provisioned   2021-12-08T09:25:30.355722   2.438427\cf1\highlight2 
+\par \cf0\highlight0 root@localhost:~/go/src/k8s.io/arktos# vi netpod.yaml\cf1\highlight2 
+\par \cf0\highlight0 root@localhost:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh apply -f netpod.yaml\cf1\highlight2 
+\par \cf0\highlight0 pod/netpod1 created\cf1\highlight2 
+\par \cf0\highlight0 pod/netpod2 created\cf1\highlight2 
+\par \cf0\highlight0 root@localhost:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get dividers -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE   NAME                                          VPC    IP    MAC   DROPLET     STATUS        CREATETIME                   PROVISIONDELAY\cf1\highlight2 
+\par \cf0\highlight0 default     vpc0-d-887f198d-3f0c-4488-93ab-3f542bc16d1c   vpc0               localhost   Provisioned   2021-12-08T09:25:10.109450   0.323165\cf1\highlight2 
+\par \cf0\highlight0 root@localhost:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS              RESTARTS   AGE   IP              NODE        NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-daemon-l22z7                 8414652929851020309   1/1     Running             0          17m   192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-nfwk5    9219354266910559120   1/1     Running             0          17m   192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 default       netpod1                            7964468395775597226   0/1     ContainerCreating   0          62s   <none>          localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 default       netpod2                            9108624592769658796   0/1     ContainerCreating   0          62s   <none>          localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-6dfd988bdf-r87h8   5561116784721377216   0/1     Running             7          17m   20.0.0.5        localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-n4hf8          2493068358088039907   1/3     CrashLoopBackOff    18         17m   20.0.0.18       localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-rznns                      7539698645510249843   3/3     Running             0          17m   192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@localhost:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS              RESTARTS   AGE   IP              NODE        NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-daemon-l22z7                 8414652929851020309   1/1     Running             0          17m   192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-nfwk5    9219354266910559120   1/1     Running             0          17m   192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 default       netpod1                            7964468395775597226   0/1     ContainerCreating   0          65s   <none>          localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 default       netpod2                            9108624592769658796   0/1     ContainerCreating   0          65s   <none>          localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-6dfd988bdf-r87h8   5561116784721377216   0/1     Running             7          17m   20.0.0.5        localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-n4hf8          2493068358088039907   1/3     CrashLoopBackOff    18         17m   20.0.0.18       localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-rznns                      7539698645510249843   3/3     Running             0          17m   192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@localhost:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS             RESTARTS   AGE   IP              NODE        NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-daemon-l22z7                 8414652929851020309   1/1     Running            0          17m   192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-nfwk5    9219354266910559120   1/1     Running            0          17m   192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 default       netpod1                            7964468395775597226   1/1     Running            0          66s   20.0.0.17       localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 default       netpod2                            9108624592769658796   1/1     Running            0          66s   20.0.0.26       localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-6dfd988bdf-r87h8   5561116784721377216   0/1     Running            7          17m   20.0.0.5        localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-n4hf8          2493068358088039907   1/3     CrashLoopBackOff   19         17m   20.0.0.18       localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-rznns                      7539698645510249843   3/3     Running            0          17m   192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@localhost:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS             RESTARTS   AGE   IP              NODE        NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-daemon-l22z7                 8414652929851020309   1/1     Running            0          17m   192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-nfwk5    9219354266910559120   1/1     Running            0          17m   192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 default       netpod1                            7964468395775597226   1/1     Running            0          68s   20.0.0.17       localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 default       netpod2                            9108624592769658796   1/1     Running            0          68s   20.0.0.26       localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-6dfd988bdf-r87h8   5561116784721377216   0/1     Running            7          17m   20.0.0.5        localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-n4hf8          2493068358088039907   1/3     CrashLoopBackOff   19         17m   20.0.0.18       localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-rznns                      7539698645510249843   3/3     Running            0          17m   192.168.1.213   localhost   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@localhost:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh exec -it netpod1 ping 20.0.0.2620.0.0.26\cf1\highlight2 
+\par \cf0\highlight0 ^Ccommand terminated with exit code 130\cf1\highlight2 
+\par \cf0\highlight0 root@localhost:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh exec -it netpod1 ping 20.0.0.26\cf1\highlight2 
+\par \cf0\highlight0 PING 20.0.0.26 (20.0.0.26) 56(84) bytes of data.\cf1\highlight2 
+\par \cf0\highlight0 From 20.0.0.17 icmp_seq=1 Destination Host Unreachable\cf1\highlight2 
+\par \cf0\highlight0 From 20.0.0.17 icmp_seq=2 Destination Host Unreachable\cf1\highlight2 
+\par \cf0\highlight0 From 20.0.0.17 icmp_seq=5 Destination Host Unreachable\cf1\highlight2 
+\par \cf0\highlight0 From 20.0.0.17 icmp_seq=6 Destination Host Unreachable\cf1\highlight2 
+\par \cf0\highlight0 From 20.0.0.17 icmp_seq=7 Destination Host Unreachable\cf1\highlight2 
+\par \cf0\highlight0 From 20.0.0.17 icmp_seq=8 Destination Host Unreachable\cf1\highlight2 
+\par \cf0\highlight0 From 20.0.0.17 icmp_seq=9 Destination Host Unreachable\cf1\highlight2 
+\par \cf0\highlight0 ^C\cf1\highlight2 
+\par \cf0\highlight0 --- 20.0.0.26 ping statistics ---\cf1\highlight2 
+\par \cf0\highlight0 10 packets transmitted, 0 received, +7 errors, 100% packet loss, time 215ms\cf1\highlight2 
+\par \cf0\highlight0 pipe 4\cf1\highlight2 
+\par \cf0\highlight0 command terminated with exit code 1\cf1\highlight2 
+\par \cf0\highlight0 root@localhost:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh describe\cf1\highlight2 
+\par \pard\cf0\highlight0\f2 
+\par }
+ 
