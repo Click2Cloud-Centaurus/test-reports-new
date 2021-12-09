@@ -1,0 +1,838 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fmodern Consolas;}{\f1\fmodern\fcharset0 Consolas;}{\f2\fnil\fcharset129 Courier New;}}
+{\colortbl ;\red20\green20\blue20;\red142\green142\blue142;\red16\green158\blue98;\red148\green146\blue12;\red170\green51\blue170;\red56\green136\blue159;\red18\green124\blue155;\red94\green147\blue162;}
+\viewkind4\uc1\pard\f0\fs20     \u9484?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9488?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?                 \cf3\f1\bullet  MobaXterm Personal Edition v21.4 \bullet\cf0\f0                  \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?               \cf4 (SSH client, X server and network tools)\cf0                \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?                                                                      \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474? \u8594? SSH session to \cf5 root@192.168.1.213                        \cf0           \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  Direct SSH      :  \cf3\f0 v\cf0                                              \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  SSH compression :  \cf3\f0 v\cf0                                              \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  SSH-browser     :  \cf3\f0 v\cf0                                              \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  X11-forwarding  :  \cf3\f0 v\cf0   (remote display is forwarded through SSH)  \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?                                                                      \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474? \u8594? For more info, ctrl+click on \cf6\ul help\cf0\ulnone  or visit our \cf6\ul website\cf0\ulnone .            \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9492?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9496?\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 5.6.0-rc2 x86_64)\cf1\highlight2 
+\par 
+\par \cf0\highlight0  * Documentation:  https://help.ubuntu.com\cf1\highlight2 
+\par \cf0\highlight0  * Management:     https://landscape.canonical.com\cf1\highlight2 
+\par \cf0\highlight0  * Support:        https://ubuntu.com/advantage\cf1\highlight2 
+\par 
+\par \cf0\highlight0  System information disabled due to load higher than 16.0\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0  * Canonical Livepatch is available for installation.\cf1\highlight2 
+\par \cf0\highlight0    - Reduce system reboots and improve kernel security. Activate at:\cf1\highlight2 
+\par \cf0\highlight0      https://ubuntu.com/livepatch\cf1\highlight2 
+\par 
+\par \cf0\highlight0 156 packages can be updated.\cf1\highlight2 
+\par \cf0\highlight0 112 updates are security updates.\cf1\highlight2 
+\par 
+\par \cf0\highlight0 New release '20.04.3 LTS' available.\cf1\highlight2 
+\par \cf0\highlight0 Run 'do-release-upgrade' to upgrade to it.\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Last login: Thu Dec  9 09:09:51 2021 from 192.168.1.1\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# kubectl get nodes\cf1\highlight2 
+\par \cf0\highlight0 kubectl: command not found\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh\cf1\highlight2 
+\par \cf0\highlight0 kubectl controls the Kubernetes cluster manager.\cf1\highlight2 
+\par 
+\par \cf0\highlight0  Find more information at: https://kubernetes.io/docs/reference/kubectl/overview/\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Basic Commands (Beginner):\cf1\highlight2 
+\par \cf0\highlight0   create         Create a resource from a file or from stdin.\cf1\highlight2 
+\par \cf0\highlight0   expose         Take a replication controller, service, deployment or pod and expose it as a new Kubernetes Service\cf1\highlight2 
+\par \cf0\highlight0   run            Run a particular image on the cluster\cf1\highlight2 
+\par \cf0\highlight0   set            Set specific features on objects\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Basic Commands (Intermediate):\cf1\highlight2 
+\par \cf0\highlight0   explain        Documentation of resources\cf1\highlight2 
+\par \cf0\highlight0   get            Display one or many resources\cf1\highlight2 
+\par \cf0\highlight0   edit           Edit a resource on the server\cf1\highlight2 
+\par \cf0\highlight0   delete         Delete resources by filenames, stdin, resources and names, or by resources and label selector\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Deploy Commands:\cf1\highlight2 
+\par \cf0\highlight0   rollout        Manage the rollout of a resource\cf1\highlight2 
+\par \cf0\highlight0   scale          Set a new size for a Deployment, ReplicaSet, Replication Controller, or Job\cf1\highlight2 
+\par \cf0\highlight0   autoscale      Auto-scale a Deployment, ReplicaSet, or ReplicationController\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Cluster Management Commands:\cf1\highlight2 
+\par \cf0\highlight0   certificate    Modify certificate resources.\cf1\highlight2 
+\par \cf0\highlight0   cluster-info   Display cluster info\cf1\highlight2 
+\par \cf0\highlight0   top            Display Resource (CPU/Memory/Storage) usage.\cf1\highlight2 
+\par \cf0\highlight0   cordon         Mark node as unschedulable\cf1\highlight2 
+\par \cf0\highlight0   uncordon       Mark node as schedulable\cf1\highlight2 
+\par \cf0\highlight0   drain          Drain node in preparation for maintenance\cf1\highlight2 
+\par \cf0\highlight0   taint          Update the taints on one or more nodes\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Troubleshooting and Debugging Commands:\cf1\highlight2 
+\par \cf0\highlight0   describe       Show details of a specific resource or group of resources\cf1\highlight2 
+\par \cf0\highlight0   logs           Print the logs for a container in a pod\cf1\highlight2 
+\par \cf0\highlight0   attach         Attach to a running container\cf1\highlight2 
+\par \cf0\highlight0   exec           Execute a command in a container\cf1\highlight2 
+\par \cf0\highlight0   port-forward   Forward one or more local ports to a pod\cf1\highlight2 
+\par \cf0\highlight0   proxy          Run a proxy to the Kubernetes API server\cf1\highlight2 
+\par \cf0\highlight0   cp             Copy files and directories to and from containers.\cf1\highlight2 
+\par \cf0\highlight0   auth           Inspect authorization\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Advanced Commands:\cf1\highlight2 
+\par \cf0\highlight0   diff           Diff live version against would-be applied version\cf1\highlight2 
+\par \cf0\highlight0   apply          Apply a configuration to a resource by filename or stdin\cf1\highlight2 
+\par \cf0\highlight0   patch          Update field(s) of a resource using strategic merge patch\cf1\highlight2 
+\par \cf0\highlight0   replace        Replace a resource by filename or stdin\cf1\highlight2 
+\par \cf0\highlight0   wait           Experimental: Wait for a specific condition on one or many resources.\cf1\highlight2 
+\par \cf0\highlight0   convert        Convert config files between different API versions\cf1\highlight2 
+\par \cf0\highlight0   kustomize      Build a kustomization target from a directory or a remote url.\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Settings Commands:\cf1\highlight2 
+\par \cf0\highlight0   label          Update the labels on a resource\cf1\highlight2 
+\par \cf0\highlight0   annotate       Update the annotations on a resource\cf1\highlight2 
+\par \cf0\highlight0   completion     Output shell completion code for the specified shell (bash or zsh)\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Other Commands:\cf1\highlight2 
+\par \cf0\highlight0   api-resources  Print the supported API resources on the server\cf1\highlight2 
+\par \cf0\highlight0   api-versions   Print the supported API versions on the server, in the form of "group/version"\cf1\highlight2 
+\par \cf0\highlight0   config         Modify kubeconfig files\cf1\highlight2 
+\par \cf0\highlight0   plugin         Provides utilities for interacting with plugins.\cf1\highlight2 
+\par \cf0\highlight0   version        Print the client and server version information\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Usage:\cf1\highlight2 
+\par \cf0\highlight0   kubectl [flags] [options]\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Use "kubectl <command> --help" for more information about a given command.\cf1\highlight2 
+\par \cf0\highlight0 Use "kubectl options" for a list of global command-line options (applies to all commands).\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ls\cf1\highlight2 
+\par \cf7\highlight0 api\cf0                   \cf7 CHANGELOG\cf0            \cf7 docs\cf0     LICENSE                   \cf7 _output\cf0      README.md         \cf7 third_party\cf1\highlight2 
+\par \cf0\highlight0 aws_build_version    \cf7 cluster\cf0              \cf7 Godeps\cf0   \cf7 logo\cf0                       OWNERS      readthedocs.yaml  \cf7 translations\cf1\highlight2 
+\par \cf0\highlight0 aws_kube_params.inc  \cf7 cmd\cf0                  go.mod  \cf8 Makefile\cf0                   \cf7 perf-tests\cf0   \cf7 staging\cf0            \cf7 vendor\cf1\highlight2 
+\par \cf7\highlight0 build\cf0                 code-of-conduct.md  go.sum  \cf8 Makefile.generated_files\cf0   \cf7 pkg\cf0          SUPPORT.md        \cf8 WORKSPACE\cf1\highlight2 
+\par \cf8\highlight0 BUILD.bazel\cf0           CONTRIBUTING.md     \cf7 hack\cf0     mkdocs.yml                \cf7 plugin\cf0       \cf7 test\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get nodes\cf1\highlight2 
+\par \cf0\highlight0 NAME     STATUS     ROLES    AGE     VERSION\cf1\highlight2 
+\par \cf0\highlight0 node-d   NotReady   <none>   6m17s   v0.9.0\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get nodes\cf1\highlight2 
+\par \cf0\highlight0 NAME     STATUS     ROLES    AGE     VERSION\cf1\highlight2 
+\par \cf0\highlight0 node-d   NotReady   <none>   6m53s   v0.9.0\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get nodes\cf1\highlight2 
+\par \cf0\highlight0 NAME     STATUS     ROLES    AGE     VERSION\cf1\highlight2 
+\par \cf0\highlight0 node-d   NotReady   <none>   8m46s   v0.9.0\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get nodes\cf1\highlight2 
+\par \cf0\highlight0 NAME     STATUS   ROLES    AGE   VERSION\cf1\highlight2 
+\par \cf0\highlight0 node-d   Ready    <none>   10m   v0.9.0\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# mkdir -p /etc/kubeedge/ca\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos#\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# mkdir -p /etc/kubeedge/certs\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# scp -r 192.168.1.213:/etc/kubeedge/ca /etc/kubeedge\cf1\highlight2 
+\par \cf0\highlight0 The authenticity of host '192.168.1.213 (192.168.1.213)' can't be established.\cf1\highlight2 
+\par \cf0\highlight0 ECDSA key fingerprint is SHA256:CwgX7h/zzN3K9IeiEZ+BGK49rwjYaKdrG6IXDe7N+Sk.\cf1\highlight2 
+\par \cf0\highlight0 Are you sure you want to continue connecting (yes/no)? yes\cf1\highlight2 
+\par \cf0\highlight0 Warning: Permanently added '192.168.1.213' (ECDSA) to the list of known hosts.\cf1\highlight2 
+\par \cf0\highlight0 root@192.168.1.213's password:\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# scp -r 192.168.1.210:/etc/kubeedge/ca /etc/kubeedge\cf1\highlight2 
+\par \cf0\highlight0 The authenticity of host '192.168.1.210 (192.168.1.210)' can't be established.\cf1\highlight2 
+\par \cf0\highlight0 ECDSA key fingerprint is SHA256:CwgX7h/zzN3K9IeiEZ+BGK49rwjYaKdrG6IXDe7N+Sk.\cf1\highlight2 
+\par \cf0\highlight0 Are you sure you want to continue connecting (yes/no)? yes\cf1\highlight2 
+\par \cf0\highlight0 Warning: Permanently added '192.168.1.210' (ECDSA) to the list of known hosts.\cf1\highlight2 
+\par \cf0\highlight0 root@192.168.1.210's password:\cf1\highlight2 
+\par \cf0\highlight0 rootCA.key                                                                                             100% 3311     4.3MB/s   00:00\cf1\highlight2 
+\par \cf0\highlight0 rootCA.crt                                                                                             100% 2057     1.9MB/s   00:00\cf1\highlight2 
+\par \cf0\highlight0 rootCA.srl                                                                                             100%   41    44.3KB/s   00:00\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# scp -r 192.168.1.210:/etc/kubeedge/certs /etc/kubeedge\cf1\highlight2 
+\par \cf0\highlight0 root@192.168.1.210's password:\cf1\highlight2 
+\par \cf0\highlight0 server.crt                                                                                             100% 1602     3.4MB/s   00:00\cf1\highlight2 
+\par \cf0\highlight0 server.csr                                                                                             100%  989     2.4MB/s   00:00\cf1\highlight2 
+\par \cf0\highlight0 server.key                                                                                             100% 1675     3.9MB/s   00:00\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# git clone https://github.com/CentaurusInfra/fornax\cf1\highlight2 
+\par \cf0\highlight0 fatal: destination path 'fornax' already exists and is not an empty directory.\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos#\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# cd fornax\cf1\highlight2 
+\par \cf0\highlight0 -bash: cd: fornax: Not a directory\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ls\cf1\highlight2 
+\par \cf7\highlight0 api\cf0                   \cf7 CHANGELOG\cf0            \cf7 docs\cf0     \cf7 hack\cf0                       mkdocs.yml  \cf7 plugin\cf0             \cf7 test\cf1\highlight2 
+\par \cf0\highlight0 aws_build_version    \cf7 cluster\cf0              fornax  LICENSE                   \cf7 _output\cf0      README.md         \cf7 third_party\cf1\highlight2 
+\par \cf0\highlight0 aws_kube_params.inc  \cf7 cmd\cf0                  \cf7 Godeps\cf0   \cf7 logo\cf0                       OWNERS      readthedocs.yaml  \cf7 translations\cf1\highlight2 
+\par \cf7\highlight0 build\cf0                 code-of-conduct.md  go.mod  \cf8 Makefile\cf0                   \cf7 perf-tests\cf0   \cf7 staging\cf0            \cf7 vendor\cf1\highlight2 
+\par \cf8\highlight0 BUILD.bazel\cf0           CONTRIBUTING.md     go.sum  \cf8 Makefile.generated_files\cf0   \cf7 pkg\cf0          SUPPORT.md        \cf8 WORKSPACE\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# rm -rf fornax\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# git clone https://github.com/CentaurusInfra/fornax\cf1\highlight2 
+\par \cf0\highlight0 Cloning into 'fornax'...\cf1\highlight2 
+\par \cf0\highlight0 remote: Enumerating objects: 50832, done.\cf1\highlight2 
+\par \cf0\highlight0 remote: Counting objects: 100% (760/760), done.\cf1\highlight2 
+\par \cf0\highlight0 remote: Compressing objects: 100% (432/432), done.\cf1\highlight2 
+\par \cf0\highlight0 remote: Total 50832 (delta 360), reused 621 (delta 289), pack-reused 50072\cf1\highlight2 
+\par \cf0\highlight0 Receiving objects: 100% (50832/50832), 125.52 MiB | 9.22 MiB/s, done.\cf1\highlight2 
+\par \cf0\highlight0 Resolving deltas: 100% (27938/27938), done.\cf1\highlight2 
+\par \cf0\highlight0 Checking out files: 100% (8900/8900), done.\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# cd fornax\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos/fornax# make WHAT=edgecore\cf1\highlight2 
+\par \cf0\highlight0 hack/verify-golang.sh\cf1\highlight2 
+\par \cf0\highlight0 go detail version: go version go1.13.9 linux/amd64\cf1\highlight2 
+\par \cf0\highlight0 go version: 1.13.9\cf1\highlight2 
+\par \cf0\highlight0 KUBEEDGE_OUTPUT_SUBPATH=_output/local hack/make-rules/build.sh edgecore\cf1\highlight2 
+\par \cf0\highlight0 building github.com/kubeedge/kubeedge/edge/cmd/edgecore\cf1\highlight2 
+\par \cf0\highlight0 + go build -o /root/go/src/k8s.io/arktos/fornax/_output/local/bin/edgecore -gcflags= -ldflags '-s -w -buildid= -X github.com/kubeedge/kubeedge/pkg/version.buildDate=2021-12-09T09:34:31Z -X github.com/kubeedge/kubeedge/pkg/version.gitCommit=b992ccac6715efb9df3e8a1a702246b4d24096d1 -X github.com/kubeedge/kubeedge/pkg/version.gitTreeState=dirty -X github.com/kubeedge/kubeedge/pkg/version.gitVersion=v0.2-12+b992ccac6715ef-dirty -X github.com/kubeedge/kubeedge/pkg/version.gitMajor=0 -X github.com/kubeedge/kubeedge/pkg/version.gitMinor=2+' github.com/kubeedge/kubeedge/edge/cmd/edgecore\cf1\highlight2 
+\par \cf0\highlight0 go: downloading k8s.io/component-base v0.19.10\cf1\highlight2 
+\par \cf0\highlight0 go: downloading k8s.io/apimachinery v0.19.10\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/mitchellh/go-ps v0.0.0-20190716172923-621e5597135b\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/spf13/cobra v1.0.0\cf1\highlight2 
+\par \cf0\highlight0 go: downloading k8s.io/apiserver v0.19.10\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/gorilla/websocket v1.4.0\cf1\highlight2 
+\par \cf0\highlight0 go: downloading k8s.io/kubernetes v1.19.10\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/gorilla/websocket v1.4.0\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/spf13/cobra v1.0.0\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/google/cadvisor v0.37.5\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/mitchellh/go-ps v0.0.0-20190716172923-621e5597135b\cf1\highlight2 
+\par \cf0\highlight0 go: extracting k8s.io/component-base v0.19.10\cf1\highlight2 
+\par \cf0\highlight0 go: extracting k8s.io/apimachinery v0.19.10\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/google/cadvisor v0.37.5\cf1\highlight2 
+\par \cf0\highlight0 go: extracting k8s.io/apiserver v0.19.10\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/spf13/pflag v1.0.5\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/spf13/pflag v1.0.5\cf1\highlight2 
+\par \cf0\highlight0 go: extracting k8s.io/kubernetes v1.19.10\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/go-logr/logr v0.2.0\cf1\highlight2 
+\par \cf0\highlight0 go: downloading k8s.io/utils v0.0.0-20200729134348-d5654de09c73\cf1\highlight2 
+\par \cf0\highlight0 go: downloading k8s.io/kubelet v0.19.10\cf1\highlight2 
+\par \cf0\highlight0 go: downloading google.golang.org/grpc v1.27.0\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/mattn/go-sqlite3 v1.11.0\cf1\highlight2 
+\par \cf0\highlight0 go: downloading k8s.io/client-go v0.19.10\cf1\highlight2 
+\par \cf0\highlight0 go: downloading k8s.io/klog v1.0.0\cf1\highlight2 
+\par \cf0\highlight0 go: downloading k8s.io/cloud-provider v0.19.10\cf1\highlight2 
+\par \cf0\highlight0 go: extracting k8s.io/klog v1.0.0\cf1\highlight2 
+\par \cf0\highlight0 go: downloading k8s.io/klog/v2 v2.2.0\cf1\highlight2 
+\par \cf0\highlight0 go: extracting google.golang.org/grpc v1.27.0\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/go-logr/logr v0.2.0\cf1\highlight2 
+\par \cf0\highlight0 go: downloading k8s.io/cri-api v0.19.10\cf1\highlight2 
+\par \cf0\highlight0 go: extracting k8s.io/kubelet v0.19.10\cf1\highlight2 
+\par \cf0\highlight0 go: extracting k8s.io/cloud-provider v0.19.10\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/blang/semver v3.5.1+incompatible\cf1\highlight2 
+\par \cf0\highlight0 go: extracting k8s.io/utils v0.0.0-20200729134348-d5654de09c73\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/prometheus/client_golang v1.7.1\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/docker/spdystream v0.0.0-20181023171402-6480d4af844c\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/gogo/protobuf v1.3.2\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/google/uuid v1.1.1\cf1\highlight2 
+\par \cf0\highlight0 go: extracting k8s.io/klog/v2 v2.2.0\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/container-storage-interface/spec v1.2.0\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/mattn/go-sqlite3 v1.11.0\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/blang/semver v3.5.1+incompatible\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/golang/protobuf v1.4.2\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/google/uuid v1.1.1\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/prometheus/procfs v0.1.3\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/prometheus/client_golang v1.7.1\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/google/go-cmp v0.4.0\cf1\highlight2 
+\par \cf0\highlight0 go: downloading cloud.google.com/go v0.51.0\cf1\highlight2 
+\par \cf0\highlight0 go: extracting k8s.io/cri-api v0.19.10\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/docker/spdystream v0.0.0-20181023171402-6480d4af844c\cf1\highlight2 
+\par \cf0\highlight0 go: downloading golang.org/x/net v0.0.0-20201110031124-69a78807bb2b\cf1\highlight2 
+\par \cf0\highlight0 go: extracting k8s.io/client-go v0.19.10\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/google/go-cmp v0.4.0\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/container-storage-interface/spec v1.2.0\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/golang/protobuf v1.4.2\cf1\highlight2 
+\par \cf0\highlight0 go: downloading k8s.io/kube-openapi v0.0.0-20200805222855-6aeccd4b50c6\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/prometheus/procfs v0.1.3\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/armon/circbuf v0.0.0-20190214190532-5111143e8da2\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/aws/aws-sdk-go v1.28.2\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/cespare/xxhash v1.1.0\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/cespare/xxhash v1.1.0\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/cespare/xxhash/v2 v2.1.1\cf1\highlight2 
+\par \cf0\highlight0 go: extracting golang.org/x/net v0.0.0-20201110031124-69a78807bb2b\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/armon/circbuf v0.0.0-20190214190532-5111143e8da2\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/cespare/xxhash/v2 v2.1.1\cf1\highlight2 
+\par \cf0\highlight0 go: downloading k8s.io/csi-translation-lib v0.19.10\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/satori/go.uuid v1.2.0\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/davecgh/go-spew v1.1.1\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/docker/docker v1.4.2-0.20200309214505-aa6a9891b09c\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/davecgh/go-spew v1.1.1\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/gogo/protobuf v1.3.2\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/256dpi/gomqtt v0.10.4\cf1\highlight2 
+\par \cf0\highlight0 go: extracting cloud.google.com/go v0.51.0\cf1\highlight2 
+\par \cf0\highlight0 go: extracting k8s.io/csi-translation-lib v0.19.10\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/satori/go.uuid v1.2.0\cf1\highlight2 
+\par \cf0\highlight0 go: downloading gopkg.in/inf.v0 v0.9.1\cf1\highlight2 
+\par \cf0\highlight0 go: extracting k8s.io/kube-openapi v0.0.0-20200805222855-6aeccd4b50c6\cf1\highlight2 
+\par \cf0\highlight0 go: extracting gopkg.in/inf.v0 v0.9.1\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/eclipse/paho.mqtt.golang v1.2.0\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/256dpi/gomqtt v0.10.4\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/prometheus/client_model v0.2.0\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/opencontainers/runc v1.0.0-rc91.0.20200707015106-819fcc687efb\cf1\highlight2 
+\par \cf0\highlight0 go: downloading k8s.io/api v0.19.10\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/prometheus/client_model v0.2.0\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/eclipse/paho.mqtt.golang v1.2.0\cf1\highlight2 
+\par \cf0\highlight0 go: downloading google.golang.org/protobuf v1.24.0\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/opencontainers/runc v1.0.0-rc91.0.20200707015106-819fcc687efb\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/docker/docker v1.4.2-0.20200309214505-aa6a9891b09c\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/stretchr/testify v1.4.0\cf1\highlight2 
+\par \cf0\highlight0 go: extracting k8s.io/api v0.19.10\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/stretchr/testify v1.4.0\cf1\highlight2 
+\par \cf0\highlight0 go: extracting google.golang.org/protobuf v1.24.0\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/pmezard/go-difflib v1.0.0\cf1\highlight2 
+\par \cf0\highlight0 go: downloading go.uber.org/zap v1.10.0\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/emicklei/go-restful v2.9.6+incompatible\cf1\highlight2 
+\par \cf0\highlight0 go: downloading google.golang.org/genproto v0.0.0-20200526211855-cb27e3aa2013\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/pmezard/go-difflib v1.0.0\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/moby/term v0.0.0-20200312100748-672ec06f55cd\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/docker/go-units v0.4.0\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/golang/groupcache v0.0.0-20191227052852-215e87163ea7\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/cyphar/filepath-securejoin v0.2.2\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/moby/term v0.0.0-20200312100748-672ec06f55cd\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/docker/go-units v0.4.0\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/pkg/errors v0.9.1\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/moby/sys/mountinfo v0.1.3\cf1\highlight2 
+\par \cf0\highlight0 go: extracting go.uber.org/zap v1.10.0\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/cyphar/filepath-securejoin v0.2.2\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/golang/groupcache v0.0.0-20191227052852-215e87163ea7\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/sirupsen/logrus v1.6.0\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/docker/go-connections v0.4.0\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/astaxie/beego v1.12.0\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/pkg/errors v0.9.1\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/stretchr/objx v0.2.0\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/emicklei/go-restful v2.9.6+incompatible\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/moby/sys/mountinfo v0.1.3\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/docker/go-connections v0.4.0\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/stretchr/objx v0.2.0\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/sirupsen/logrus v1.6.0\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/google/gofuzz v1.1.0\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/json-iterator/go v1.1.10\cf1\highlight2 
+\par \cf0\highlight0 go: downloading gopkg.in/tomb.v2 v2.0.0-20161208151619-d5d1b5820637\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/containernetworking/cni v0.8.0\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/evanphx/json-patch v4.9.0+incompatible\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/google/gofuzz v1.1.0\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/mxk/go-flowrate v0.0.0-20140419014527-cca7078d478f\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/evanphx/json-patch v4.9.0+incompatible\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/mxk/go-flowrate v0.0.0-20140419014527-cca7078d478f\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/astaxie/beego v1.12.0\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/json-iterator/go v1.1.10\cf1\highlight2 
+\par \cf0\highlight0 go: extracting gopkg.in/tomb.v2 v2.0.0-20161208151619-d5d1b5820637\cf1\highlight2 
+\par \cf0\highlight0 go: downloading sigs.k8s.io/yaml v1.2.0\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/beorn7/perks v1.0.1\cf1\highlight2 
+\par \cf0\highlight0 go: downloading golang.org/x/time v0.0.0-20191024005414-555d28b269f0\cf1\highlight2 
+\par \cf0\highlight0 go: extracting sigs.k8s.io/yaml v1.2.0\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/beorn7/perks v1.0.1\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/godbus/dbus/v5 v5.0.3\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/prometheus/common v0.10.0\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/containernetworking/cni v0.8.0\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/fsnotify/fsnotify v1.4.9\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/googleapis/gnostic v0.4.1\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/euank/go-kmsg-parser v2.0.0+incompatible\cf1\highlight2 
+\par \cf0\highlight0 go: extracting golang.org/x/time v0.0.0-20191024005414-555d28b269f0\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/coreos/go-systemd v0.0.0-20190620071333-e64a0ec8b42a\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/godbus/dbus/v5 v5.0.3\cf1\highlight2 
+\par \cf0\highlight0 go: downloading gopkg.in/yaml.v2 v2.2.8\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/fsnotify/fsnotify v1.4.9\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/prometheus/common v0.10.0\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/opencontainers/image-spec v1.0.1\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/docker/distribution v2.7.1+incompatible\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/googleapis/gnostic v0.4.1\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/euank/go-kmsg-parser v2.0.0+incompatible\cf1\highlight2 
+\par \cf0\highlight0 go: extracting gopkg.in/yaml.v2 v2.2.8\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/lithammer/dedent v1.1.0\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/vishvananda/netlink v1.1.0\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/opencontainers/image-spec v1.0.1\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/NYTimes/gziphandler v0.0.0-20170623195520-56545f4a5d46\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/lithammer/dedent v1.1.0\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd\cf1\highlight2 
+\par \cf0\highlight0 go: downloading go.etcd.io/etcd v0.5.0-alpha.5.0.20200819165624-17cef6e3e9d5\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/docker/distribution v2.7.1+incompatible\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/coreos/go-systemd v0.0.0-20190620071333-e64a0ec8b42a\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/coreos/go-systemd/v22 v22.1.0\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/vishvananda/netlink v1.1.0\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/NYTimes/gziphandler v0.0.0-20170623195520-56545f4a5d46\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/containerd/containerd v1.3.3\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/modern-go/reflect2 v1.0.1\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/matttproud/golang_protobuf_extensions v1.0.2-0.20181231171920-c182affec369\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/aws/aws-sdk-go v1.28.2\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/modern-go/reflect2 v1.0.1\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/vishvananda/netns v0.0.0-20200520041808-52d707b772fe\cf1\highlight2 
+\par \cf0\highlight0 go: downloading go.uber.org/atomic v1.4.0\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/matttproud/golang_protobuf_extensions v1.0.2-0.20181231171920-c182affec369\cf1\highlight2 
+\par \cf0\highlight0 go: downloading golang.org/x/sys v0.0.0-20201112073958-5cba982894dd\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/coreos/go-systemd/v22 v22.1.0\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/opencontainers/go-digest v1.0.0-rc1\cf1\highlight2 
+\par \cf0\highlight0 go: extracting go.uber.org/atomic v1.4.0\cf1\highlight2 
+\par \cf0\highlight0 go: downloading golang.org/x/sync v0.0.0-20201020160332-67f06af15bc9\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/opencontainers/go-digest v1.0.0-rc1\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/checkpoint-restore/go-criu/v4 v4.0.2\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/vishvananda/netns v0.0.0-20200520041808-52d707b772fe\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/opencontainers/runtime-spec v1.0.3-0.20200520003142-237cc4f519e2\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/containerd/containerd v1.3.3\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/mindprince/gonvml v0.0.0-20190828220739-9ebdce4bb989\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/opencontainers/selinux v1.5.2\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/morikuni/aec v1.0.0\cf1\highlight2 
+\par \cf0\highlight0 go: extracting golang.org/x/sync v0.0.0-20201020160332-67f06af15bc9\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822\cf1\highlight2 
+\par \cf0\highlight0 go: extracting google.golang.org/genproto v0.0.0-20200526211855-cb27e3aa2013\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/checkpoint-restore/go-criu/v4 v4.0.2\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/cilium/ebpf v0.0.0-20200702112145-1c8d4c9ef775\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/mindprince/gonvml v0.0.0-20190828220739-9ebdce4bb989\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/opencontainers/runtime-spec v1.0.3-0.20200520003142-237cc4f519e2\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/opencontainers/selinux v1.5.2\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/morikuni/aec v1.0.0\cf1\highlight2 
+\par \cf0\highlight0 go: downloading k8s.io/kube-scheduler v0.19.10\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/mrunalp/fileutils v0.0.0-20200520151820-abd8a0e76976\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/256dpi/mercury v0.1.0\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/mistifyio/go-zfs v2.1.2-0.20190413222219-f784269be439+incompatible\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/hashicorp/golang-lru v0.5.3\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/hashicorp/golang-lru v0.5.3\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/containerd/ttrpc v1.0.0\cf1\highlight2 
+\par \cf0\highlight0 go: extracting golang.org/x/sys v0.0.0-20201112073958-5cba982894dd\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/mistifyio/go-zfs v2.1.2-0.20190413222219-f784269be439+incompatible\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/mrunalp/fileutils v0.0.0-20200520151820-abd8a0e76976\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/256dpi/mercury v0.1.0\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/containerd/ttrpc v1.0.0\cf1\highlight2 
+\par \cf0\highlight0 go: downloading sigs.k8s.io/structured-merge-diff v0.0.0-20190525122527-15d366b2352e\cf1\highlight2 
+\par \cf0\highlight0 go: extracting k8s.io/kube-scheduler v0.19.10\cf1\highlight2 
+\par \cf0\highlight0 go: downloading sigs.k8s.io/apiserver-network-proxy v0.0.20\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/syndtr/gocapability v0.0.0-20180916011248-d98352740cb2\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/cilium/ebpf v0.0.0-20200702112145-1c8d4c9ef775\cf1\highlight2 
+\par \cf0\highlight0 go: downloading k8s.io/apiextensions-apiserver v0.19.10\cf1\highlight2 
+\par \cf0\highlight0 go: extracting sigs.k8s.io/structured-merge-diff v0.0.0-20190525122527-15d366b2352e\cf1\highlight2 
+\par \cf0\highlight0 go: downloading golang.org/x/crypto v0.0.0-20200622213623-75b288015ac9\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/go-openapi/spec v0.19.3\cf1\highlight2 
+\par \cf0\highlight0 go: extracting sigs.k8s.io/apiserver-network-proxy v0.0.20\cf1\highlight2 
+\par \cf0\highlight0 go: downloading sigs.k8s.io/structured-merge-diff/v4 v4.0.3\cf1\highlight2 
+\par \cf0\highlight0 go: downloading sigs.k8s.io/apiserver-network-proxy/konnectivity-client v0.0.20\cf1\highlight2 
+\par \cf0\highlight0 go: downloading go.uber.org/multierr v1.1.0\cf1\highlight2 
+\par \cf0\highlight0 go: extracting go.etcd.io/etcd v0.5.0-alpha.5.0.20200819165624-17cef6e3e9d5\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/syndtr/gocapability v0.0.0-20180916011248-d98352740cb2\cf1\highlight2 
+\par \cf0\highlight0 go: extracting sigs.k8s.io/apiserver-network-proxy/konnectivity-client v0.0.20\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/lucas-clemente/quic-go v0.10.2\cf1\highlight2 
+\par \cf0\highlight0 go: extracting go.uber.org/multierr v1.1.0\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/go-openapi/spec v0.19.3\cf1\highlight2 
+\par \cf0\highlight0 go: extracting k8s.io/apiextensions-apiserver v0.19.10\cf1\highlight2 
+\par \cf0\highlight0 go: extracting golang.org/x/crypto v0.0.0-20200622213623-75b288015ac9\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/containerd/console v1.0.0\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/go-openapi/jsonpointer v0.19.3\cf1\highlight2 
+\par \cf0\highlight0 go: extracting sigs.k8s.io/structured-merge-diff/v4 v4.0.3\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/go-openapi/swag v0.19.5\cf1\highlight2 
+\par \cf0\highlight0 go: downloading golang.org/x/text v0.3.3\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/go-openapi/jsonreference v0.19.3\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/lucas-clemente/quic-go v0.10.2\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/imdario/mergo v0.3.7\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/go-openapi/jsonreference v0.19.3\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/go-openapi/jsonpointer v0.19.3\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/PuerkitoBio/purell v1.1.1\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/go-openapi/swag v0.19.5\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/spf13/afero v1.2.2\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/containerd/console v1.0.0\cf1\highlight2 
+\par \cf0\highlight0 go: downloading golang.org/x/oauth2 v0.0.0-20191202225959-858c2ad4c8b6\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/karrick/godirwalk v1.10.12\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/mailru/easyjson v0.7.0\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/PuerkitoBio/purell v1.1.1\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/cheekybits/genny v1.0.0\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/PuerkitoBio/urlesc v0.0.0-20170810143723-de5bf2ad4578\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/imdario/mergo v0.3.7\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/spf13/afero v1.2.2\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/coreos/pkg v0.0.0-20180928190104-399ea9e2e55f\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/bifurcation/mint v0.0.0-20180715133206-93c51c6ce115\cf1\highlight2 
+\par \cf0\highlight0 go: extracting golang.org/x/oauth2 v0.0.0-20191202225959-858c2ad4c8b6\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/karrick/godirwalk v1.10.12\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/PuerkitoBio/urlesc v0.0.0-20170810143723-de5bf2ad4578\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/mailru/easyjson v0.7.0\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/coreos/go-semver v0.3.0\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/bifurcation/mint v0.0.0-20180715133206-93c51c6ce115\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/cheekybits/genny v1.0.0\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/jmespath/go-jmespath v0.0.0-20180206201540-c2b33e8439af\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/grpc-ecosystem/go-grpc-prometheus v1.2.0\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/lucas-clemente/aes12 v0.0.0-20171027163421-cd47fb39b79f\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/coreos/go-semver v0.3.0\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/coreos/pkg v0.0.0-20180928190104-399ea9e2e55f\cf1\highlight2 
+\par \cf0\highlight0 go: downloading github.com/lucas-clemente/quic-go-certificates v0.0.0-20160823095156-d2f86524cced\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/grpc-ecosystem/go-grpc-prometheus v1.2.0\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/jmespath/go-jmespath v0.0.0-20180206201540-c2b33e8439af\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/lucas-clemente/aes12 v0.0.0-20171027163421-cd47fb39b79f\cf1\highlight2 
+\par \cf0\highlight0 go: extracting github.com/lucas-clemente/quic-go-certificates v0.0.0-20160823095156-d2f86524cced\cf1\highlight2 
+\par \cf0\highlight0 go: extracting golang.org/x/text v0.3.3\cf1\highlight2 
+\par \cf0\highlight0 go: finding k8s.io/component-base v0.19.10\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/satori/go.uuid v1.2.0\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/go-logr/logr v0.2.0\cf1\highlight2 
+\par \cf0\highlight0 go: finding k8s.io/apimachinery v0.19.10\cf1\highlight2 
+\par \cf0\highlight0 go: finding k8s.io/klog/v2 v2.2.0\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/spf13/pflag v1.0.5\cf1\highlight2 
+\par \cf0\highlight0 go: finding go.uber.org/zap v1.10.0\cf1\highlight2 
+\par \cf0\highlight0 go: finding go.uber.org/atomic v1.4.0\cf1\highlight2 
+\par \cf0\highlight0 go: finding go.uber.org/multierr v1.1.0\cf1\highlight2 
+\par \cf0\highlight0 go: finding k8s.io/api v0.19.10\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/gogo/protobuf v1.3.2\cf1\highlight2 
+\par \cf0\highlight0 go: finding gopkg.in/inf.v0 v0.9.1\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/google/gofuzz v1.1.0\cf1\highlight2 
+\par \cf0\highlight0 go: finding sigs.k8s.io/structured-merge-diff/v4 v4.0.3\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/json-iterator/go v1.1.10\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/modern-go/reflect2 v1.0.1\cf1\highlight2 
+\par \cf0\highlight0 go: finding gopkg.in/yaml.v2 v2.2.8\cf1\highlight2 
+\par \cf0\highlight0 go: finding golang.org/x/net v0.0.0-20201110031124-69a78807bb2b\cf1\highlight2 
+\par \cf0\highlight0 go: finding golang.org/x/text v0.3.3\cf1\highlight2 
+\par \cf0\highlight0 go: finding sigs.k8s.io/yaml v1.2.0\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/pkg/errors v0.9.1\cf1\highlight2 
+\par \cf0\highlight0 go: finding k8s.io/client-go v0.19.10\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/gorilla/websocket v1.4.0\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/golang/protobuf v1.4.2\cf1\highlight2 
+\par \cf0\highlight0 go: finding google.golang.org/protobuf v1.24.0\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/lucas-clemente/quic-go v0.10.2\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/bifurcation/mint v0.0.0-20180715133206-93c51c6ce115\cf1\highlight2 
+\par \cf0\highlight0 go: finding golang.org/x/crypto v0.0.0-20200622213623-75b288015ac9\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/cheekybits/genny v1.0.0\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/hashicorp/golang-lru v0.5.3\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/lucas-clemente/aes12 v0.0.0-20171027163421-cd47fb39b79f\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/lucas-clemente/quic-go-certificates v0.0.0-20160823095156-d2f86524cced\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/astaxie/beego v1.12.0\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/mattn/go-sqlite3 v1.11.0\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/google/uuid v1.1.1\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/davecgh/go-spew v1.1.1\cf1\highlight2 
+\par \cf0\highlight0 go: finding golang.org/x/sys v0.0.0-20201112073958-5cba982894dd\cf1\highlight2 
+\par \cf0\highlight0 go: finding golang.org/x/oauth2 v0.0.0-20191202225959-858c2ad4c8b6\cf1\highlight2 
+\par \cf0\highlight0 go: finding golang.org/x/time v0.0.0-20191024005414-555d28b269f0\cf1\highlight2 
+\par \cf0\highlight0 go: finding k8s.io/utils v0.0.0-20200729134348-d5654de09c73\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/googleapis/gnostic v0.4.1\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/imdario/mergo v0.3.7\cf1\highlight2 
+\par \cf0\highlight0 go: finding k8s.io/apiserver v0.19.10\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/google/go-cmp v0.4.0\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/blang/semver v3.5.1+incompatible\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/prometheus/client_golang v1.7.1\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/beorn7/perks v1.0.1\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/cespare/xxhash/v2 v2.1.1\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/prometheus/client_model v0.2.0\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/prometheus/common v0.10.0\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/matttproud/golang_protobuf_extensions v1.0.2-0.20181231171920-c182affec369\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/prometheus/procfs v0.1.3\cf1\highlight2 
+\par \cf0\highlight0 go: finding google.golang.org/grpc v1.27.0\cf1\highlight2 
+\par \cf0\highlight0 go: finding google.golang.org/genproto v0.0.0-20200526211855-cb27e3aa2013\cf1\highlight2 
+\par \cf0\highlight0 go: finding sigs.k8s.io/apiserver-network-proxy/konnectivity-client v0.0.20\cf1\highlight2 
+\par \cf0\highlight0 go: finding k8s.io/apiextensions-apiserver v0.19.10\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/evanphx/json-patch v4.9.0+incompatible\cf1\highlight2 
+\par \cf0\highlight0 go: finding k8s.io/kube-openapi v0.0.0-20200805222855-6aeccd4b50c6\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/emicklei/go-restful v2.9.6+incompatible\cf1\highlight2 
+\par \cf0\highlight0 go: finding go.etcd.io/etcd v0.5.0-alpha.5.0.20200819165624-17cef6e3e9d5\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/coreos/go-systemd v0.0.0-20190620071333-e64a0ec8b42a\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/coreos/pkg v0.0.0-20180928190104-399ea9e2e55f\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/coreos/go-semver v0.3.0\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/grpc-ecosystem/go-grpc-prometheus v1.2.0\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/go-openapi/spec v0.19.3\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/go-openapi/jsonpointer v0.19.3\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/go-openapi/swag v0.19.5\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/mailru/easyjson v0.7.0\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/go-openapi/jsonreference v0.19.3\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/PuerkitoBio/purell v1.1.1\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/PuerkitoBio/urlesc v0.0.0-20170810143723-de5bf2ad4578\cf1\highlight2 
+\par \cf0\highlight0 go: finding golang.org/x/sync v0.0.0-20201020160332-67f06af15bc9\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/golang/groupcache v0.0.0-20191227052852-215e87163ea7\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/NYTimes/gziphandler v0.0.0-20170623195520-56545f4a5d46\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/container-storage-interface/spec v1.2.0\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/google/cadvisor v0.37.5\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/docker/docker v1.4.2-0.20200309214505-aa6a9891b09c\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/docker/go-connections v0.4.0\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/docker/go-units v0.4.0\cf1\highlight2 
+\par \cf0\highlight0 go: finding k8s.io/kubernetes v1.19.10\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/docker/spdystream v0.0.0-20181023171402-6480d4af844c\cf1\highlight2 
+\par \cf0\highlight0 go: finding k8s.io/cri-api v0.19.10\cf1\highlight2 
+\par \cf0\highlight0 go: finding k8s.io/cloud-provider v0.19.10\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/mistifyio/go-zfs v2.1.2-0.20190413222219-f784269be439+incompatible\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/containerd/containerd v1.3.3\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/opencontainers/go-digest v1.0.0-rc1\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/containerd/ttrpc v1.0.0\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/sirupsen/logrus v1.6.0\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/karrick/godirwalk v1.10.12\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/opencontainers/runc v1.0.0-rc91.0.20200707015106-819fcc687efb\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/coreos/go-systemd/v22 v22.1.0\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/godbus/dbus/v5 v5.0.3\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/opencontainers/runtime-spec v1.0.3-0.20200520003142-237cc4f519e2\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/checkpoint-restore/go-criu/v4 v4.0.2\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/containerd/console v1.0.0\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/cyphar/filepath-securejoin v0.2.2\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/moby/sys/mountinfo v0.1.3\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/mrunalp/fileutils v0.0.0-20200520151820-abd8a0e76976\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/cilium/ebpf v0.0.0-20200702112145-1c8d4c9ef775\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/opencontainers/selinux v1.5.2\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/syndtr/gocapability v0.0.0-20180916011248-d98352740cb2\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/vishvananda/netlink v1.1.0\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/vishvananda/netns v0.0.0-20200520041808-52d707b772fe\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/docker/distribution v2.7.1+incompatible\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/opencontainers/image-spec v1.0.1\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/mindprince/gonvml v0.0.0-20190828220739-9ebdce4bb989\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/euank/go-kmsg-parser v2.0.0+incompatible\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/aws/aws-sdk-go v1.28.2\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/jmespath/go-jmespath v0.0.0-20180206201540-c2b33e8439af\cf1\highlight2 
+\par \cf0\highlight0 go: finding cloud.google.com/go v0.51.0\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/fsnotify/fsnotify v1.4.9\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/spf13/afero v1.2.2\cf1\highlight2 
+\par \cf0\highlight0 go: finding k8s.io/kube-scheduler v0.19.10\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/stretchr/testify v1.4.0\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/pmezard/go-difflib v1.0.0\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/stretchr/objx v0.2.0\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/mxk/go-flowrate v0.0.0-20140419014527-cca7078d478f\cf1\highlight2 
+\par \cf0\highlight0 go: finding k8s.io/kubelet v0.19.10\cf1\highlight2 
+\par \cf0\highlight0 go: finding k8s.io/csi-translation-lib v0.19.10\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/armon/circbuf v0.0.0-20190214190532-5111143e8da2\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/morikuni/aec v1.0.0\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/lithammer/dedent v1.1.0\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/containernetworking/cni v0.8.0\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/eclipse/paho.mqtt.golang v1.2.0\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/256dpi/gomqtt v0.10.4\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/256dpi/mercury v0.1.0\cf1\highlight2 
+\par \cf0\highlight0 go: finding gopkg.in/tomb.v2 v2.0.0-20161208151619-d5d1b5820637\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/mitchellh/go-ps v0.0.0-20190716172923-621e5597135b\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/spf13/cobra v1.0.0\cf1\highlight2 
+\par \cf0\highlight0 go: finding github.com/moby/term v0.0.0-20200312100748-672ec06f55cd\cf1\highlight2 
+\par \cf0\highlight0 + set +x\cf1\highlight2 
+\par \cf0\highlight0 yes | cp -r binaries/kubectl _output/local/bin/\cf1\highlight2 
+\par \cf0\highlight0 mkdir -p _output/local/bin/crds\cf1\highlight2 
+\par \cf0\highlight0 yes | cp build/crds/devices/devices_v1alpha2_device.yaml  _output/local/bin/crds/\cf1\highlight2 
+\par \cf0\highlight0 yes | cp build/crds/devices/devices_v1alpha2_devicemodel.yaml  _output/local/bin/crds/\cf1\highlight2 
+\par \cf0\highlight0 yes | cp build/crds/reliablesyncs/cluster_objectsync_v1alpha1.yaml  _output/local/bin/crds/\cf1\highlight2 
+\par \cf0\highlight0 yes | cp build/crds/reliablesyncs/objectsync_v1alpha1.yaml  _output/local/bin/crds/\cf1\highlight2 
+\par \cf0\highlight0 yes | cp build/crds/router/router_v1_rule.yaml  _output/local/bin/crds/\cf1\highlight2 
+\par \cf0\highlight0 yes | cp build/crds/router/router_v1_ruleEndpoint.yaml  _output/local/bin/crds/\cf1\highlight2 
+\par \cf0\highlight0 yes | cp build/crds/edgecluster/mission_v1.yaml  _output/local/bin/crds/\cf1\highlight2 
+\par \cf0\highlight0 yes | cp build/crds/edgecluster/edgecluster_v1.yaml  _output/local/bin/crds/\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos/fornax# scp 192.168.4.51:/usr/bin/kubectl /usr/bin/kubectl\cf1\highlight2 
+\par \cf0\highlight0 The authenticity of host '192.168.4.51 (192.168.4.51)' can't be established.\cf1\highlight2 
+\par \cf0\highlight0 ECDSA key fingerprint is SHA256:CB1dE2wmZ3LcNKU6RDD0D8xosH3X8k+M4YQMZtC34RI.\cf1\highlight2 
+\par \cf0\highlight0 Are you sure you want to continue connecting (yes/no)? yes\cf1\highlight2 
+\par \cf0\highlight0 Warning: Permanently added '192.168.4.51' (ECDSA) to the list of known hosts.\cf1\highlight2 
+\par \cf0\highlight0 root@192.168.4.51's password:\cf1\highlight2 
+\par \cf0\highlight0 kubectl                                                                                                100%   38MB  79.5MB/s   00:00\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos/fornax# cp /var/run/kubernetes/admin.kubeconfig /root/edgecluster.kubeconfig\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos/fornax# mkdir -p /etc/kubeedge/config chmod\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos/fornax# mkdir -p /etc/kubeedge/config\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos/fornax# chmod\cf1\highlight2 
+\par \cf0\highlight0 chmod: missing operand\cf1\highlight2 
+\par \cf0\highlight0 Try 'chmod --help' for more information.\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos/fornax# chmod\cf1\highlight2 
+\par \cf0\highlight0 chmod: missing operand\cf1\highlight2 
+\par \cf0\highlight0 Try 'chmod --help' for more information.\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos/fornax# _output/local/bin/edgecore --edgeclusterconfig > /etc/kubeedge/config/edgecore.yaml\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos/fornax# _output/local/bin/edgecore --edgeclusterconfig > /etc/kubeedge/config/edgecore.yaml\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos/fornax# chmod a+x tests/edgecluster/hack/update_edgecore_config.sh\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos/fornax# tests/edgecluster/hack/update_edgecore_config.sh admin.conf\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos/fornax# mkdir -p /etc/kubeedge/config\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos/fornax# vi /etc/kubeedge/config/edgecore.yaml\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos/fornax# chmod a+x _output/local/bin/kubectl/vanilla/kubectl\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos/fornax# nohup _output/local/bin/edgecore --edgecluster > edgecore.logs 2>&1 &\cf1\highlight2 
+\par \cf0\highlight0 [1] 2078\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos/fornax# tail -f edgecore.logs\cf1\highlight2 
+\par \cf0\highlight0 W1209 09:42:18.535638    2078 context_channel.go:335] Failed to get type channel, type:twin\cf1\highlight2 
+\par \cf0\highlight0 W1209 09:42:18.535688    2078 context_channel.go:184] Get bad module type:twin when sendToGroup message, do nothing\cf1\highlight2 
+\par \cf0\highlight0 W1209 09:42:18.535725    2078 context_channel.go:335] Failed to get type channel, type:bus\cf1\highlight2 
+\par \cf0\highlight0 W1209 09:42:18.535771    2078 context_channel.go:184] Get bad module type:bus when sendToGroup message, do nothing\cf1\highlight2 
+\par \cf0\highlight0 I1209 09:42:18.535896    2078 process.go:411] node connection event occur: cloud_connected\cf1\highlight2 
+\par \cf0\highlight0 I1209 09:42:18.535940    2078 process.go:411] node connection event occur: cloud_connected\cf1\highlight2 
+\par \cf0\highlight0 E1209 09:42:18.843349    2078 mission_state_reporter.go:108] Failed to unmarshal mission list: invalid character 'e' looking for beginning of value, output : (error: the server doesn't have a resource type "missions"\cf1\highlight2 
+\par \cf0\highlight0 )\cf1\highlight2 
+\par \cf0\highlight0 I1209 09:42:19.200499    2078 edgecluster_state_reporter.go:113] Attempting to register edgeCluster (node-d), default/edgeclusterstate/node-d\cf1\highlight2 
+\par \cf0\highlight0 I1209 09:42:19.206417    2078 edgecluster_state_reporter.go:131] Successfully registered edgeCluster node-d\cf1\highlight2 
+\par \cf0\highlight0 ^C\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos/fornax# kubect get pods -A\cf1\highlight2 
+\par \cf0\highlight0 kubect: command not found\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos/fornax# kubectl get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                              HASHKEY               READY   STATUS              RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-daemon-h2w69                6592199866192543920   1/1     Running             0          23m\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-rfz8j   8671591457198608881   1/1     Running             0          23m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-fc74854f6-pzz4s   7524768366422865253   0/1     ContainerCreating   0          23m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-t9tgg         6702434315285952260   0/3     ContainerCreating   0          23m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-f9m97                     6831290709867304711   3/3     Running             0          14m\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos/fornax# kubectl get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                              HASHKEY               READY   STATUS              RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-daemon-h2w69                6592199866192543920   1/1     Running             0          23m\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-rfz8j   8671591457198608881   1/1     Running             0          23m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-fc74854f6-pzz4s   7524768366422865253   0/1     ContainerCreating   0          23m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-t9tgg         6702434315285952260   0/3     ContainerCreating   0          23m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-f9m97                     6831290709867304711   3/3     Running             0          14m\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos/fornax# kubectl get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                              HASHKEY               READY   STATUS              RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-daemon-h2w69                6592199866192543920   1/1     Running             0          23m\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-rfz8j   8671591457198608881   1/1     Running             0          23m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-fc74854f6-pzz4s   7524768366422865253   0/1     ContainerCreating   0          23m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-t9tgg         6702434315285952260   0/3     ContainerCreating   0          23m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-f9m97                     6831290709867304711   3/3     Running             0          14m\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos/fornax# hostname -i\cf1\highlight2 
+\par \cf0\highlight0 192.168.1.213\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos/fornax# kubectl get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                              HASHKEY               READY   STATUS              RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-daemon-h2w69                6592199866192543920   1/1     Running             0          25m\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-rfz8j   8671591457198608881   1/1     Running             0          25m\cf1\highlight2 
+\par \cf0\highlight0 face          nsqd-594c8db6dd-bwsc4             8468725754715426589   0/1     ContainerCreating   0          19s\cf1\highlight2 
+\par \cf0\highlight0 face          nsqlookup-b986db78f-2j64w         4020931345773023195   0/1     ContainerCreating   0          26s\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-fc74854f6-pzz4s   7524768366422865253   0/1     ContainerCreating   0          25m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-t9tgg         6702434315285952260   0/3     ContainerCreating   0          25m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-f9m97                     6831290709867304711   3/3     Running             0          16m\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos/fornax# kubectl get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                                   HASHKEY               READY   STATUS              RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-daemon-h2w69                     6592199866192543920   1/1     Running             0          25m\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-rfz8j        8671591457198608881   1/1     Running             0          25m\cf1\highlight2 
+\par \cf0\highlight0 face          nsqd-594c8db6dd-bwsc4                  8468725754715426589   0/1     ContainerCreating   0          29s\cf1\highlight2 
+\par \cf0\highlight0 face          nsqlookup-b986db78f-2j64w              4020931345773023195   0/1     ContainerCreating   0          36s\cf1\highlight2 
+\par \cf0\highlight0 face          receiver-deployment-559c44888f-dlqp8   1334860494849302785   0/1     ContainerCreating   0          8s\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-fc74854f6-pzz4s        7524768366422865253   0/1     ContainerCreating   0          25m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-t9tgg              6702434315285952260   0/3     ContainerCreating   0          25m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-f9m97                          6831290709867304711   3/3     Running             0          16m\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos/fornax# kubectl get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                                   HASHKEY               READY   STATUS              RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-daemon-h2w69                     6592199866192543920   1/1     Running             0          25m\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-rfz8j        8671591457198608881   1/1     Running             0          26m\cf1\highlight2 
+\par \cf0\highlight0 face          nsqd-594c8db6dd-bwsc4                  8468725754715426589   0/1     ContainerCreating   0          36s\cf1\highlight2 
+\par \cf0\highlight0 face          nsqlookup-b986db78f-2j64w              4020931345773023195   0/1     ContainerCreating   0          43s\cf1\highlight2 
+\par \cf0\highlight0 face          receiver-deployment-559c44888f-dlqp8   1334860494849302785   0/1     ContainerCreating   0          15s\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-fc74854f6-pzz4s        7524768366422865253   0/1     ContainerCreating   0          26m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-t9tgg              6702434315285952260   0/3     ContainerCreating   0          26m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-f9m97                          6831290709867304711   3/3     Running             0          17m\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos/fornax# kubectl get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                                   HASHKEY               READY   STATUS              RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-daemon-h2w69                     6592199866192543920   1/1     Running             0          26m\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-rfz8j        8671591457198608881   1/1     Running             0          26m\cf1\highlight2 
+\par \cf0\highlight0 face          nsqd-594c8db6dd-bwsc4                  8468725754715426589   0/1     ContainerCreating   0          61s\cf1\highlight2 
+\par \cf0\highlight0 face          nsqlookup-b986db78f-2j64w              4020931345773023195   0/1     ContainerCreating   0          68s\cf1\highlight2 
+\par \cf0\highlight0 face          receiver-deployment-559c44888f-dlqp8   1334860494849302785   0/1     ContainerCreating   0          40s\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-fc74854f6-pzz4s        7524768366422865253   0/1     ContainerCreating   0          26m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-t9tgg              6702434315285952260   0/3     ContainerCreating   0          26m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-f9m97                          6831290709867304711   3/3     Running             0          17m\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos/fornax# kubectl get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                                          HASHKEY               READY   STATUS              RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-daemon-h2w69                            6592199866192543920   1/1     Running             0          26m\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-rfz8j               8671591457198608881   1/1     Running             0          26m\cf1\highlight2 
+\par \cf0\highlight0 face          image-processor-deployment-54488487c7-m2vl9   4942787007233899615   0/1     ContainerCreating   0          4s\cf1\highlight2 
+\par \cf0\highlight0 face          nsqd-594c8db6dd-bwsc4                         8468725754715426589   0/1     ContainerCreating   0          69s\cf1\highlight2 
+\par \cf0\highlight0 face          nsqlookup-b986db78f-2j64w                     4020931345773023195   0/1     ContainerCreating   0          76s\cf1\highlight2 
+\par \cf0\highlight0 face          receiver-deployment-559c44888f-dlqp8          1334860494849302785   0/1     ContainerCreating   0          48s\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-fc74854f6-pzz4s               7524768366422865253   0/1     ContainerCreating   0          26m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-t9tgg                     6702434315285952260   0/3     ContainerCreating   0          26m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-f9m97                                 6831290709867304711   3/3     Running             0          17m\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos/fornax# kubectl get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                                          HASHKEY               READY   STATUS              RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-daemon-h2w69                            6592199866192543920   1/1     Running             0          27m\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-rfz8j               8671591457198608881   1/1     Running             0          27m\cf1\highlight2 
+\par \cf0\highlight0 face          face-recog-cc5788dff-snzfq                    640869359021234371    0/1     Pending             0          4s\cf1\highlight2 
+\par \cf0\highlight0 face          frontend-64f9fd599c-6pldr                     7194155719604393031   0/1     ContainerCreating   0          10s\cf1\highlight2 
+\par \cf0\highlight0 face          image-processor-deployment-54488487c7-m2vl9   4942787007233899615   0/1     ContainerCreating   0          66s\cf1\highlight2 
+\par \cf0\highlight0 face          nsqd-594c8db6dd-bwsc4                         8468725754715426589   0/1     ContainerCreating   0          2m11s\cf1\highlight2 
+\par \cf0\highlight0 face          nsqlookup-b986db78f-2j64w                     4020931345773023195   0/1     ContainerCreating   0          2m18s\cf1\highlight2 
+\par \cf0\highlight0 face          receiver-deployment-559c44888f-dlqp8          1334860494849302785   0/1     ContainerCreating   0          110s\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-fc74854f6-pzz4s               7524768366422865253   0/1     ContainerCreating   0          27m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-t9tgg                     6702434315285952260   0/3     ContainerCreating   0          27m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-f9m97                                 6831290709867304711   3/3     Running             0          18m\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos/fornax# kubectl describe pod image-processor-deployment-54488487c7-m2vl9 -n face\cf1\highlight2 
+\par \cf0\highlight0 Name:           image-processor-deployment-54488487c7-m2vl9\cf1\highlight2 
+\par \cf0\highlight0 Namespace:      face\cf1\highlight2 
+\par \cf0\highlight0 Priority:       0\cf1\highlight2 
+\par \cf0\highlight0 Node:           node-d/192.168.1.213\cf1\highlight2 
+\par \cf0\highlight0 Start Time:     Thu, 09 Dec 2021 09:45:53 +0000\cf1\highlight2 
+\par \cf0\highlight0 Labels:         app=image-processor\cf1\highlight2 
+\par \cf0\highlight0                 pod-template-hash=54488487c7\cf1\highlight2 
+\par \cf0\highlight0 Annotations:    <none>\cf1\highlight2 
+\par \cf0\highlight0 Status:         Pending\cf1\highlight2 
+\par \cf0\highlight0 IP:\cf1\highlight2 
+\par \cf0\highlight0 IPs:            <none>\cf1\highlight2 
+\par \cf0\highlight0 Controlled By:  ReplicaSet/image-processor-deployment-54488487c7\cf1\highlight2 
+\par \cf0\highlight0 Containers:\cf1\highlight2 
+\par \cf0\highlight0   image-processor:\cf1\highlight2 
+\par \cf0\highlight0     Container ID:\cf1\highlight2 
+\par \cf0\highlight0     Image:         skarlso/kube-processor-alpine:1.0.13\cf1\highlight2 
+\par \cf0\highlight0     Image ID:\cf1\highlight2 
+\par \cf0\highlight0     Port:          <none>\cf1\highlight2 
+\par \cf0\highlight0     Host Port:     <none>\cf1\highlight2 
+\par \cf0\highlight0     Args:\cf1\highlight2 
+\par \cf0\highlight0       --db-host=mysql.face.svc.cluster.local\cf1\highlight2 
+\par \cf0\highlight0       --db-username-password=$(MYSQL_USERPASSWORD)\cf1\highlight2 
+\par \cf0\highlight0       --db-port=3306\cf1\highlight2 
+\par \cf0\highlight0       --db-dbname=kube\cf1\highlight2 
+\par \cf0\highlight0       --nsq-lookup-address=nsqlookup.face.svc.cluster.local:4161\cf1\highlight2 
+\par \cf0\highlight0       --grpc-address=face-recog.face.svc.cluster.local:50051\cf1\highlight2 
+\par \cf0\highlight0     State:          Waiting\cf1\highlight2 
+\par \cf0\highlight0       Reason:       ContainerCreating\cf1\highlight2 
+\par \cf0\highlight0     Ready:          False\cf1\highlight2 
+\par \cf0\highlight0     Restart Count:  0\cf1\highlight2 
+\par \cf0\highlight0     Environment:\cf1\highlight2 
+\par \cf0\highlight0       MYSQL_USERPASSWORD:  <set to the key 'mysql_userpassword' in secret 'kube-face-secret'>  Optional: false\cf1\highlight2 
+\par \cf0\highlight0     Mounts:\cf1\highlight2 
+\par \cf0\highlight0       /var/run/secrets/kubernetes.io/serviceaccount from default-token-v9pwh (ro)\cf1\highlight2 
+\par \cf0\highlight0 Conditions:\cf1\highlight2 
+\par \cf0\highlight0   Type              Status\cf1\highlight2 
+\par \cf0\highlight0   Initialized       True\cf1\highlight2 
+\par \cf0\highlight0   ContainersReady   False\cf1\highlight2 
+\par \cf0\highlight0   Ready             False\cf1\highlight2 
+\par \cf0\highlight0   PodScheduled      True\cf1\highlight2 
+\par \cf0\highlight0 Volumes:\cf1\highlight2 
+\par \cf0\highlight0   default-token-v9pwh:\cf1\highlight2 
+\par \cf0\highlight0     Type:        Secret (a volume populated by a Secret)\cf1\highlight2 
+\par \cf0\highlight0     SecretName:  default-token-v9pwh\cf1\highlight2 
+\par \cf0\highlight0     Optional:    false\cf1\highlight2 
+\par \cf0\highlight0 QoS Class:       BestEffort\cf1\highlight2 
+\par \cf0\highlight0 Node-Selectors:  <none>\cf1\highlight2 
+\par \cf0\highlight0 Tolerations:     node.kubernetes.io/not-ready:NoExecute op=Exists for 300s\cf1\highlight2 
+\par \cf0\highlight0                  node.kubernetes.io/unreachable:NoExecute op=Exists for 300s\cf1\highlight2 
+\par \cf0\highlight0 Events:\cf1\highlight2 
+\par \cf0\highlight0   Type     Reason                  Age                 From               Message\cf1\highlight2 
+\par \cf0\highlight0   ----     ------                  ----                ----               -------\cf1\highlight2 
+\par \cf0\highlight0   Normal   Scheduled               110s                default-scheduler  Successfully assigned face/image-processor-deployment-54488487c7-m2vl9 to node-d\cf1\highlight2 
+\par \cf0\highlight0   Warning  FailedCreatePodSandBox  107s                kubelet            Failed create pod sandbox: rpc error: code = Unknown desc = failed to setup network for sandbox "e1cc7af5f4fb4a55f9085cdf42841b0e372925e97e6d5c777ea903a0f0f0280c": rpc error: code = DeadlineExceeded desc = context deadline exceeded\cf1\highlight2 
+\par \cf0\highlight0   Warning  FailedCreatePodSandBox  92s                 kubelet            Failed create pod sandbox: rpc error: code = Unknown desc = failed to setup network for sandbox "57822cf1b080dc82052cbeb3d8b77de6bed12dc838468dabfe71bc7f93350f7e": rpc error: code = DeadlineExceeded desc = Deadline Exceeded\cf1\highlight2 
+\par \cf0\highlight0   Warning  FailedCreatePodSandBox  76s                 kubelet            Failed create pod sandbox: rpc error: code = Unknown desc = failed to setup network for sandbox "f3b6d36f3c1dfcc0c988bc06bc2d79d04f1b6b1d68a8a1137544db89887b0f77": rpc error: code = DeadlineExceeded desc = context deadline exceeded\cf1\highlight2 
+\par \cf0\highlight0   Warning  FailedCreatePodSandBox  60s                 kubelet            Failed create pod sandbox: rpc error: code = Unknown desc = failed to setup network for sandbox "9157de9a198df1ad1c832c5a396f39c71a53593e5faa4c6a2986f44d27ef1a2d": rpc error: code = DeadlineExceeded desc = context deadline exceeded\cf1\highlight2 
+\par \cf0\highlight0   Warning  FailedCreatePodSandBox  46s                 kubelet            Failed create pod sandbox: rpc error: code = Unknown desc = failed to setup network for sandbox "8814228ddac54f69bf932a84996cd70e923de785ed0bd2a43a9b5fc50c4f5f3b": rpc error: code = DeadlineExceeded desc = context deadline exceeded\cf1\highlight2 
+\par \cf0\highlight0   Warning  FailedCreatePodSandBox  29s                 kubelet            Failed create pod sandbox: rpc error: code = Unknown desc = failed to setup network for sandbox "7d4daa2bcf1bd122274fca1150d634e6e8d76331395687f587d2e1e24429e064": rpc error: code = DeadlineExceeded desc = context deadline exceeded\cf1\highlight2 
+\par \cf0\highlight0   Warning  GettingClusterDNS       18s (x7 over 111s)  kubelet            pod: "image-processor-deployment-54488487c7-m2vl9_face_system(e49a7cfd-0aeb-41ca-adb7-7c6e862e6c16)". For verification - ClusterDNS IP : "10.0.0.112"\cf1\highlight2 
+\par \cf0\highlight0   Warning  FailedCreatePodSandBox  14s                 kubelet            Failed create pod sandbox: rpc error: code = Unknown desc = failed to setup network for sandbox "e059707cd3e8c19588004d3d69d902cc2c7412973805ba92f9f518a75feddfec": rpc error: code = DeadlineExceeded desc = context deadline exceeded\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos/fornax# kubectl get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                                          HASHKEY               READY   STATUS              RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-daemon-h2w69                            6592199866192543920   1/1     Running             0          28m\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-rfz8j               8671591457198608881   1/1     Running             0          28m\cf1\highlight2 
+\par \cf0\highlight0 face          face-recog-cc5788dff-snzfq                    640869359021234371    0/1     Pending             0          74s\cf1\highlight2 
+\par \cf0\highlight0 face          frontend-64f9fd599c-6pldr                     7194155719604393031   0/1     ContainerCreating   0          80s\cf1\highlight2 
+\par \cf0\highlight0 face          image-processor-deployment-54488487c7-m2vl9   4942787007233899615   0/1     ContainerCreating   0          2m16s\cf1\highlight2 
+\par \cf0\highlight0 face          nsqd-594c8db6dd-bwsc4                         8468725754715426589   0/1     ContainerCreating   0          3m21s\cf1\highlight2 
+\par \cf0\highlight0 face          nsqlookup-b986db78f-2j64w                     4020931345773023195   0/1     ContainerCreating   0          3m28s\cf1\highlight2 
+\par \cf0\highlight0 face          receiver-deployment-559c44888f-dlqp8          1334860494849302785   0/1     ContainerCreating   0          3m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-fc74854f6-pzz4s               7524768366422865253   0/1     ContainerCreating   0          28m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-t9tgg                     6702434315285952260   0/3     ContainerCreating   0          28m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-f9m97                                 6831290709867304711   3/3     Running             0          19m\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos/fornax# vi /etc/hostname\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos/fornax# vi /etc/hosts\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos/fornax# kubectl get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                                          HASHKEY               READY   STATUS              RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-daemon-h2w69                            6592199866192543920   1/1     Running             0          37m\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-rfz8j               8671591457198608881   1/1     Running             0          37m\cf1\highlight2 
+\par \cf0\highlight0 face          face-recog-cc5788dff-snzfq                    640869359021234371    0/1     ContainerCreating   0          10m\cf1\highlight2 
+\par \cf0\highlight0 face          frontend-64f9fd599c-6pldr                     7194155719604393031   0/1     ContainerCreating   0          10m\cf1\highlight2 
+\par \cf0\highlight0 face          image-processor-deployment-54488487c7-m2vl9   4942787007233899615   0/1     ContainerCreating   0          11m\cf1\highlight2 
+\par \cf0\highlight0 face          mysql-59b99c5f5c-ncq2g                        3242139854942213360   0/1     ContainerCreating   0          8m58s\cf1\highlight2 
+\par \cf0\highlight0 face          nsqd-594c8db6dd-bwsc4                         8468725754715426589   0/1     ContainerCreating   0          12m\cf1\highlight2 
+\par \cf0\highlight0 face          nsqlookup-b986db78f-2j64w                     4020931345773023195   0/1     ContainerCreating   0          12m\cf1\highlight2 
+\par \cf0\highlight0 face          receiver-deployment-559c44888f-dlqp8          1334860494849302785   0/1     ContainerCreating   0          11m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-fc74854f6-pzz4s               7524768366422865253   0/1     ContainerCreating   0          37m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-t9tgg                     6702434315285952260   0/3     ContainerCreating   0          37m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-f9m97                                 6831290709867304711   3/3     Running             0          28m\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos/fornax# kubectl get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                                          HASHKEY               READY   STATUS              RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-daemon-h2w69                            6592199866192543920   1/1     Running             0          42m\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-rfz8j               8671591457198608881   1/1     Running             0          42m\cf1\highlight2 
+\par \cf0\highlight0 face          face-recog-cc5788dff-snzfq                    640869359021234371    0/1     ContainerCreating   0          14m\cf1\highlight2 
+\par \cf0\highlight0 face          frontend-64f9fd599c-6pldr                     7194155719604393031   0/1     ContainerCreating   0          14m\cf1\highlight2 
+\par \cf0\highlight0 face          image-processor-deployment-54488487c7-m2vl9   4942787007233899615   0/1     ContainerCreating   0          15m\cf1\highlight2 
+\par \cf0\highlight0 face          mysql-59b99c5f5c-ncq2g                        3242139854942213360   0/1     ContainerCreating   0          13m\cf1\highlight2 
+\par \cf0\highlight0 face          nsqd-594c8db6dd-bwsc4                         8468725754715426589   0/1     ContainerCreating   0          16m\cf1\highlight2 
+\par \cf0\highlight0 face          nsqlookup-b986db78f-2j64w                     4020931345773023195   0/1     ContainerCreating   0          16m\cf1\highlight2 
+\par \cf0\highlight0 face          receiver-deployment-559c44888f-dlqp8          1334860494849302785   0/1     ContainerCreating   0          16m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-fc74854f6-pzz4s               7524768366422865253   0/1     ContainerCreating   0          42m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-t9tgg                     6702434315285952260   0/3     ContainerCreating   0          42m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-f9m97                                 6831290709867304711   3/3     Running             0          33m\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos/fornax# kubectl get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                                          HASHKEY               READY   STATUS              RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-daemon-h2w69                            6592199866192543920   1/1     Running             0          58m\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-operator-6b78d7ffc4-rfz8j               8671591457198608881   1/1     Running             0          58m\cf1\highlight2 
+\par \cf0\highlight0 face          face-recog-cc5788dff-snzfq                    640869359021234371    0/1     ContainerCreating   0          31m\cf1\highlight2 
+\par \cf0\highlight0 face          frontend-64f9fd599c-6pldr                     7194155719604393031   0/1     ContainerCreating   0          31m\cf1\highlight2 
+\par \cf0\highlight0 face          image-processor-deployment-54488487c7-m2vl9   4942787007233899615   0/1     ContainerCreating   0          32m\cf1\highlight2 
+\par \cf0\highlight0 face          mysql-59b99c5f5c-ncq2g                        3242139854942213360   0/1     ContainerCreating   0          30m\cf1\highlight2 
+\par \cf0\highlight0 face          nsqd-594c8db6dd-bwsc4                         8468725754715426589   0/1     ContainerCreating   0          33m\cf1\highlight2 
+\par \cf0\highlight0 face          nsqlookup-b986db78f-2j64w                     4020931345773023195   0/1     ContainerCreating   0          33m\cf1\highlight2 
+\par \cf0\highlight0 face          receiver-deployment-559c44888f-dlqp8          1334860494849302785   0/1     ContainerCreating   0          33m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-fc74854f6-pzz4s               7524768366422865253   0/1     ContainerCreating   0          58m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-t9tgg                     6702434315285952260   0/3     ContainerCreating   0          58m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-f9m97                                 6831290709867304711   3/3     Running             0          49m\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos/fornax# kubectl describe pod\cf1\highlight2 
+\par \pard\cf0\highlight0\f2 
+\par }
+ 

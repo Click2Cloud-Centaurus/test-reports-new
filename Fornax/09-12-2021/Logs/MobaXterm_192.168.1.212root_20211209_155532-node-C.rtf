@@ -1,0 +1,1247 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fmodern Consolas;}{\f1\fmodern\fcharset0 Consolas;}{\f2\fnil\fcharset129 Courier New;}}
+{\colortbl ;\red20\green20\blue20;\red142\green142\blue142;\red16\green158\blue98;\red148\green146\blue12;\red170\green51\blue170;\red56\green136\blue159;\red170\green85\blue85;}
+\viewkind4\uc1\pard\f0\fs20     \u9484?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9488?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?                 \cf3\f1\bullet  MobaXterm Personal Edition v21.4 \bullet\cf0\f0                  \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?               \cf4 (SSH client, X server and network tools)\cf0                \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?                                                                      \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474? \u8594? SSH session to \cf5 root@192.168.1.212                        \cf0           \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  Direct SSH      :  \cf3\f0 v\cf0                                              \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  SSH compression :  \cf3\f0 v\cf0                                              \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  SSH-browser     :  \cf3\f0 v\cf0                                              \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  X11-forwarding  :  \cf3\f0 v\cf0   (remote display is forwarded through SSH)  \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?                                                                      \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474? \u8594? For more info, ctrl+click on \cf6\ul help\cf0\ulnone  or visit our \cf6\ul website\cf0\ulnone .            \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9492?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9496?\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 4.15.0-159-generic x86_64)\cf1\highlight2 
+\par 
+\par \cf0\highlight0  * Documentation:  https://help.ubuntu.com\cf1\highlight2 
+\par \cf0\highlight0  * Management:     https://landscape.canonical.com\cf1\highlight2 
+\par \cf0\highlight0  * Support:        https://ubuntu.com/advantage\cf1\highlight2 
+\par 
+\par \cf0\highlight0   System information as of Thu Dec  9 05:06:07 UTC 2021\cf1\highlight2 
+\par 
+\par \cf0\highlight0   System load:  0.0               Processes:             308\cf1\highlight2 
+\par \cf0\highlight0   Usage of /:   8.5% of 72.83GB   Users logged in:       0\cf1\highlight2 
+\par \cf0\highlight0   Memory usage: 2%                IP address for ens160: 192.168.1.212\cf1\highlight2 
+\par \cf0\highlight0   Swap usage:   0%\cf1\highlight2 
+\par 
+\par \cf0\highlight0  * Super-optimized for small spaces - read how we shrank the memory\cf1\highlight2 
+\par \cf0\highlight0    footprint of MicroK8s to make it the smallest full K8s around.\cf1\highlight2 
+\par 
+\par \cf0\highlight0    https://ubuntu.com/blog/microk8s-memory-optimisation\cf1\highlight2 
+\par 
+\par \cf0\highlight0  * Canonical Livepatch is available for installation.\cf1\highlight2 
+\par \cf0\highlight0    - Reduce system reboots and improve kernel security. Activate at:\cf1\highlight2 
+\par \cf0\highlight0      https://ubuntu.com/livepatch\cf1\highlight2 
+\par 
+\par \cf0\highlight0 20 updates can be applied immediately.\cf1\highlight2 
+\par \cf0\highlight0 3 of these updates are standard security updates.\cf1\highlight2 
+\par \cf0\highlight0 To see these additional updates run: apt list --upgradable\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 *** System restart required ***\cf1\highlight2 
+\par \cf0\highlight0 Last login: Tue Dec  7 04:58:29 2021 from 192.168.1.1\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~# ufw disable\cf1\highlight2 
+\par \cf0\highlight0 Firewall stopped and disabled on system startup\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~# apt-get update -y\cf1\highlight2 
+\par \cf0\highlight0 Hit:1 http://in.archive.ubuntu.com/ubuntu bionic InRelease\cf1\highlight2 
+\par \cf0\highlight0 Get:2 http://in.archive.ubuntu.com/ubuntu bionic-updates InRelease [88.7 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:3 http://in.archive.ubuntu.com/ubuntu bionic-backports InRelease [74.6 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:4 http://in.archive.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:5 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 Packages [2,328 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:6 http://in.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 Packages [1,771 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:7 http://in.archive.ubuntu.com/ubuntu bionic-security/main amd64 Packages [1,983 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:8 http://in.archive.ubuntu.com/ubuntu bionic-security/universe amd64 Packages [1,153 kB]\cf1\highlight2 
+\par \cf0\highlight0 Fetched 7,486 kB in 5s (1,654 kB/s)\cf1\highlight2 
+\par \cf0\highlight0 Reading package lists... Done\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~# apt-get remove -y docker docker-engine docker.io containerd runc\cf1\highlight2 
+\par \cf0\highlight0 Reading package lists... Done\cf1\highlight2 
+\par \cf0\highlight0 Building dependency tree\cf1\highlight2 
+\par \cf0\highlight0 Reading state information... Done\cf1\highlight2 
+\par \cf0\highlight0 Package 'docker-engine' is not installed, so not removed\cf1\highlight2 
+\par \cf0\highlight0 Package 'docker' is not installed, so not removed\cf1\highlight2 
+\par \cf0\highlight0 Package 'containerd' is not installed, so not removed\cf1\highlight2 
+\par \cf0\highlight0 Package 'docker.io' is not installed, so not removed\cf1\highlight2 
+\par \cf0\highlight0 Package 'runc' is not installed, so not removed\cf1\highlight2 
+\par \cf0\highlight0 0 upgraded, 0 newly installed, 0 to remove and 18 not upgraded.\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~# apt-get install -y apt-transport-https ca-certificates curl gnupg lsb-release\cf1\highlight2 
+\par \cf0\highlight0 Reading package lists... Done\cf1\highlight2 
+\par \cf0\highlight0 Building dependency tree\cf1\highlight2 
+\par \cf0\highlight0 Reading state information... Done\cf1\highlight2 
+\par \cf0\highlight0 lsb-release is already the newest version (9.20170808ubuntu1).\cf1\highlight2 
+\par \cf0\highlight0 lsb-release set to manually installed.\cf1\highlight2 
+\par \cf0\highlight0 ca-certificates is already the newest version (20210119~18.04.2).\cf1\highlight2 
+\par \cf0\highlight0 ca-certificates set to manually installed.\cf1\highlight2 
+\par \cf0\highlight0 curl is already the newest version (7.58.0-2ubuntu3.16).\cf1\highlight2 
+\par \cf0\highlight0 curl set to manually installed.\cf1\highlight2 
+\par \cf0\highlight0 gnupg is already the newest version (2.2.4-1ubuntu1.4).\cf1\highlight2 
+\par \cf0\highlight0 gnupg set to manually installed.\cf1\highlight2 
+\par \cf0\highlight0 The following NEW packages will be installed:\cf1\highlight2 
+\par \cf0\highlight0   apt-transport-https\cf1\highlight2 
+\par \cf0\highlight0 0 upgraded, 1 newly installed, 0 to remove and 18 not upgraded.\cf1\highlight2 
+\par \cf0\highlight0 Need to get 4,348 B of archives.\cf1\highlight2 
+\par \cf0\highlight0 After this operation, 154 kB of additional disk space will be used.\cf1\highlight2 
+\par \cf0\highlight0 Get:1 http://in.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 apt-transport-https all 1.6.14 [4,348 B]\cf1\highlight2 
+\par \cf0\highlight0 Fetched 4,348 B in 0s (48.0 kB/s)\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package apt-transport-https.\cf1\highlight2 
+\par \cf0\highlight0 (Reading database ... 102752 files and directories currently installed.)\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../apt-transport-https_1.6.14_all.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking apt-transport-https (1.6.14) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up apt-transport-https (1.6.14) ...\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~# curl -fsSL https://download.docker.com/linux/ubuntu/gpg | gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~#\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~# echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | tee /etc/apt/sources.list.d/docker.list > /dev/null\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~# apt-get update -y\cf1\highlight2 
+\par \cf0\highlight0 Hit:1 http://in.archive.ubuntu.com/ubuntu bionic InRelease\cf1\highlight2 
+\par \cf0\highlight0 Hit:2 http://in.archive.ubuntu.com/ubuntu bionic-updates InRelease\cf1\highlight2 
+\par \cf0\highlight0 Hit:3 http://in.archive.ubuntu.com/ubuntu bionic-backports InRelease\cf1\highlight2 
+\par \cf0\highlight0 Hit:4 http://in.archive.ubuntu.com/ubuntu bionic-security InRelease\cf1\highlight2 
+\par \cf0\highlight0 Get:5 https://download.docker.com/linux/ubuntu bionic InRelease [64.4 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:6 https://download.docker.com/linux/ubuntu bionic/stable amd64 Packages [21.8 kB]\cf1\highlight2 
+\par \cf0\highlight0 Fetched 86.3 kB in 1s (125 kB/s)\cf1\highlight2 
+\par \cf0\highlight0 Reading package lists... Done\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~#\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~# apt-get install -y docker-ce docker-ce-cli containerd.io\cf1\highlight2 
+\par \cf0\highlight0 Reading package lists... Done\cf1\highlight2 
+\par \cf0\highlight0 Building dependency tree\cf1\highlight2 
+\par \cf0\highlight0 Reading state information... Done\cf1\highlight2 
+\par \cf0\highlight0 The following additional packages will be installed:\cf1\highlight2 
+\par \cf0\highlight0   dbus-user-session docker-ce-rootless-extras docker-scan-plugin libltdl7 pigz\cf1\highlight2 
+\par \cf0\highlight0 Suggested packages:\cf1\highlight2 
+\par \cf0\highlight0   aufs-tools cgroupfs-mount | cgroup-lite\cf1\highlight2 
+\par \cf0\highlight0 Recommended packages:\cf1\highlight2 
+\par \cf0\highlight0   slirp4netns\cf1\highlight2 
+\par \cf0\highlight0 The following NEW packages will be installed:\cf1\highlight2 
+\par \cf0\highlight0   containerd.io dbus-user-session docker-ce docker-ce-cli docker-ce-rootless-extras docker-scan-plugin libltdl7 pigz\cf1\highlight2 
+\par \cf0\highlight0 0 upgraded, 8 newly installed, 0 to remove and 18 not upgraded.\cf1\highlight2 
+\par \cf0\highlight0 Need to get 95.3 MB of archives.\cf1\highlight2 
+\par \cf0\highlight0 After this operation, 403 MB of additional disk space will be used.\cf1\highlight2 
+\par \cf0\highlight0 Get:1 http://in.archive.ubuntu.com/ubuntu bionic/universe amd64 pigz amd64 2.4-1 [57.4 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:2 https://download.docker.com/linux/ubuntu bionic/stable amd64 containerd.io amd64 1.4.12-1 [23.7 MB]\cf1\highlight2 
+\par \cf0\highlight0 Get:3 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 dbus-user-session amd64 1.12.2-1ubuntu1.2 [9,392 B]\cf1\highlight2 
+\par \cf0\highlight0 Get:4 http://in.archive.ubuntu.com/ubuntu bionic/main amd64 libltdl7 amd64 2.4.6-2 [38.8 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:5 https://download.docker.com/linux/ubuntu bionic/stable amd64 docker-ce-cli amd64 5:20.10.11~3-0~ubuntu-bionic [38.8 MB]\cf1\highlight2 
+\par \cf0\highlight0 Get:6 https://download.docker.com/linux/ubuntu bionic/stable amd64 docker-ce amd64 5:20.10.11~3-0~ubuntu-bionic [21.2 MB]\cf1\highlight2 
+\par \cf0\highlight0 Get:7 https://download.docker.com/linux/ubuntu bionic/stable amd64 docker-ce-rootless-extras amd64 5:20.10.11~3-0~ubuntu-bionic [7,920 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:8 https://download.docker.com/linux/ubuntu bionic/stable amd64 docker-scan-plugin amd64 0.9.0~ubuntu-bionic [3,518 kB]\cf1\highlight2 
+\par \cf0\highlight0 Fetched 95.3 MB in 9s (10.0 MB/s)\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package pigz.\cf1\highlight2 
+\par \cf0\highlight0 (Reading database ... 102756 files and directories currently installed.)\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../0-pigz_2.4-1_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking pigz (2.4-1) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package containerd.io.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../1-containerd.io_1.4.12-1_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking containerd.io (1.4.12-1) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package dbus-user-session.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../2-dbus-user-session_1.12.2-1ubuntu1.2_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking dbus-user-session (1.12.2-1ubuntu1.2) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package docker-ce-cli.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../3-docker-ce-cli_5%3a20.10.11~3-0~ubuntu-bionic_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking docker-ce-cli (5:20.10.11~3-0~ubuntu-bionic) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package docker-ce.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../4-docker-ce_5%3a20.10.11~3-0~ubuntu-bionic_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking docker-ce (5:20.10.11~3-0~ubuntu-bionic) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package docker-ce-rootless-extras.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../5-docker-ce-rootless-extras_5%3a20.10.11~3-0~ubuntu-bionic_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking docker-ce-rootless-extras (5:20.10.11~3-0~ubuntu-bionic) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package docker-scan-plugin.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../6-docker-scan-plugin_0.9.0~ubuntu-bionic_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking docker-scan-plugin (0.9.0~ubuntu-bionic) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package libltdl7:amd64.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../7-libltdl7_2.4.6-2_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking libltdl7:amd64 (2.4.6-2) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up containerd.io (1.4.12-1) ...\cf1\highlight2 
+\par \cf0\highlight0 Created symlink /etc/systemd/system/multi-user.target.wants/containerd.service \u8594? /lib/systemd/system/containerd.service.\cf1\highlight2 
+\par \cf0\highlight0 /usr/sbin/policy-rc.d returned 101, not running 'start containerd.service'\cf1\highlight2 
+\par \cf0\highlight0 Setting up docker-scan-plugin (0.9.0~ubuntu-bionic) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up dbus-user-session (1.12.2-1ubuntu1.2) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up libltdl7:amd64 (2.4.6-2) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up docker-ce-cli (5:20.10.11~3-0~ubuntu-bionic) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up pigz (2.4-1) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up docker-ce (5:20.10.11~3-0~ubuntu-bionic) ...\cf1\highlight2 
+\par \cf0\highlight0 Created symlink /etc/systemd/system/multi-user.target.wants/docker.service \u8594? /lib/systemd/system/docker.service.\cf1\highlight2 
+\par \cf0\highlight0 Created symlink /etc/systemd/system/sockets.target.wants/docker.socket \u8594? /lib/systemd/system/docker.socket.\cf1\highlight2 
+\par \cf0\highlight0 invoke-rc.d: policy-rc.d denied execution of start.\cf1\highlight2 
+\par \cf0\highlight0 Setting up docker-ce-rootless-extras (5:20.10.11~3-0~ubuntu-bionic) ...\cf1\highlight2 
+\par \cf0\highlight0 Processing triggers for systemd (237-3ubuntu10.52) ...\cf1\highlight2 
+\par \cf0\highlight0 Processing triggers for man-db (2.8.3-2ubuntu0.1) ...\cf1\highlight2 
+\par \cf0\highlight0 Processing triggers for ureadahead (0.100.0-21) ...\cf1\highlight2 
+\par \cf0\highlight0 Processing triggers for libc-bin (2.27-3ubuntu1.4) ...\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~# mkdir /etc/docker\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~#\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~# cat <<EOF | tee /etc/docker/daemon.json\cf1\highlight2 
+\par \cf0\highlight0 > \{\cf1\highlight2 
+\par \cf0\highlight0 >\cf1\highlight2 
+\par \cf0\highlight0 > "exec-opts": ["native.cgroupdriver=systemd"],\cf1\highlight2 
+\par \cf0\highlight0 >\cf1\highlight2 
+\par \cf0\highlight0 > "log-driver": "json-file",\cf1\highlight2 
+\par \cf0\highlight0 >\cf1\highlight2 
+\par \cf0\highlight0 > "log-opts": \{\cf1\highlight2 
+\par \cf0\highlight0 >\cf1\highlight2 
+\par \cf0\highlight0 > "max-size": "100m"\cf1\highlight2 
+\par \cf0\highlight0 >\cf1\highlight2 
+\par \cf0\highlight0 > \},\cf1\highlight2 
+\par \cf0\highlight0 >\cf1\highlight2 
+\par \cf0\highlight0 > "storage-driver": "overlay2"\cf1\highlight2 
+\par \cf0\highlight0 >\cf1\highlight2 
+\par \cf0\highlight0 > \}\cf1\highlight2 
+\par \cf0\highlight0 >\cf1\highlight2 
+\par \cf0\highlight0 > EOF\cf1\highlight2 
+\par \cf0\highlight0\{\cf1\highlight2 
+\par 
+\par \cf0\highlight0 "exec-opts": ["native.cgroupdriver=systemd"],\cf1\highlight2 
+\par 
+\par \cf0\highlight0 "log-driver": "json-file",\cf1\highlight2 
+\par 
+\par \cf0\highlight0 "log-opts": \{\cf1\highlight2 
+\par 
+\par \cf0\highlight0 "max-size": "100m"\cf1\highlight2 
+\par 
+\par \cf0\highlight0\},\cf1\highlight2 
+\par 
+\par \cf0\highlight0 "storage-driver": "overlay2"\cf1\highlight2 
+\par 
+\par \cf0\highlight0\}\cf1\highlight2 
+\par 
+\par \cf0\highlight0 root@node-c:~# systemctl enable docker\cf1\highlight2 
+\par \cf0\highlight0 Synchronizing state of docker.service with SysV service script with /lib/systemd/systemd-sysv-install.\cf1\highlight2 
+\par \cf0\highlight0 Executing: /lib/systemd/systemd-sysv-install enable docker\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~#\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~# systemctl daemon-reload\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~#\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~# systemctl restart docker\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~#\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~# systemctl status docker\cf1\highlight2 
+\par \cf3\highlight0\u9679?\cf0  docker.service - Docker Application Container Engine\cf1\highlight2 
+\par \cf0\highlight0    Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)\cf1\highlight2 
+\par \cf0\highlight0    Active: \cf3 active (running)\cf0  since Thu 2021-12-09 05:14:38 UTC; 487ms ago\cf1\highlight2 
+\par \cf0\highlight0      Docs: https://docs.docker.com\cf1\highlight2 
+\par \cf0\highlight0  Main PID: 28887 (dockerd)\cf1\highlight2 
+\par \cf0\highlight0     Tasks: 15\cf1\highlight2 
+\par \cf0\highlight0    CGroup: /system.slice/docker.service\cf1\highlight2 
+\par \cf0\highlight0            \u9492?\u9472?28887 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Dec 09 05:14:37 node-c dockerd[28887]: time="2021-12-09T05:14:37.893896258Z" level=info msg="ClientConn switching balancer to \\"pick_firs\cf1\highlight2 
+\par \cf0\highlight0 Dec 09 05:14:38 node-c dockerd[28887]: time="2021-12-09T05:14:38.037676182Z" level=warning msg="Your kernel does not support swap memory\cf1\highlight2 
+\par \cf0\highlight0 Dec 09 05:14:38 node-c dockerd[28887]: time="2021-12-09T05:14:38.037724945Z" level=warning msg="Your kernel does not support CPU realtime\cf1\highlight2 
+\par \cf0\highlight0 Dec 09 05:14:38 node-c dockerd[28887]: time="2021-12-09T05:14:38.038000665Z" level=info msg="Loading containers: start."\cf1\highlight2 
+\par \cf0\highlight0 Dec 09 05:14:38 node-c dockerd[28887]: time="2021-12-09T05:14:38.393914847Z" level=info msg="Default bridge (docker0) is assigned with an\cf1\highlight2 
+\par \cf0\highlight0 Dec 09 05:14:38 node-c dockerd[28887]: time="2021-12-09T05:14:38.663373033Z" level=info msg="Loading containers: done."\cf1\highlight2 
+\par \cf0\highlight0 Dec 09 05:14:38 node-c dockerd[28887]: time="2021-12-09T05:14:38.721129481Z" level=info msg="Docker daemon" commit=847da18 graphdriver(s)\cf1\highlight2 
+\par \cf0\highlight0 Dec 09 05:14:38 node-c dockerd[28887]: time="2021-12-09T05:14:38.721323448Z" level=info msg="Daemon has completed initialization"\cf1\highlight2 
+\par \cf0\highlight0 Dec 09 05:14:38 node-c systemd[1]: Started Docker Application Container Engine.\cf1\highlight2 
+\par \cf0\highlight0 Dec 09 05:14:38 node-c dockerd[28887]: time="2021-12-09T05:14:38.788672186Z" level=info msg="API listen on /var/run/docker.sock"\cf1\highlight2 
+\par 
+\par \cf0\highlight0 root@node-c:~# swapoff -a\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~#\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~# cat <<EOF | tee /etc/modules-load.d/k8s.conf\cf1\highlight2 
+\par \cf0\highlight0 > br_netfilter\cf1\highlight2 
+\par \cf0\highlight0 >\cf1\highlight2 
+\par \cf0\highlight0 > EOF\cf1\highlight2 
+\par \cf0\highlight0 br_netfilter\cf1\highlight2 
+\par 
+\par \cf0\highlight0 root@node-c:~# cat <<EOF | tee /etc/sysctl.d/k8s.conf\cf1\highlight2 
+\par \cf0\highlight0 > net.bridge.bridge-nf-call-ip6tables = 1\cf1\highlight2 
+\par \cf0\highlight0 >\cf1\highlight2 
+\par \cf0\highlight0 > net.bridge.bridge-nf-call-iptables = 1\cf1\highlight2 
+\par \cf0\highlight0 >\cf1\highlight2 
+\par \cf0\highlight0 > EOF\cf1\highlight2 
+\par \cf0\highlight0 net.bridge.bridge-nf-call-ip6tables = 1\cf1\highlight2 
+\par 
+\par \cf0\highlight0 net.bridge.bridge-nf-call-iptables = 1\cf1\highlight2 
+\par 
+\par \cf0\highlight0 root@node-c:~# sysctl --system\cf1\highlight2 
+\par \cf0\highlight0 * Applying /etc/sysctl.d/10-console-messages.conf ...\cf1\highlight2 
+\par \cf0\highlight0 kernel.printk = 4 4 1 7\cf1\highlight2 
+\par \cf0\highlight0 * Applying /etc/sysctl.d/10-ipv6-privacy.conf ...\cf1\highlight2 
+\par \cf0\highlight0 net.ipv6.conf.all.use_tempaddr = 2\cf1\highlight2 
+\par \cf0\highlight0 net.ipv6.conf.default.use_tempaddr = 2\cf1\highlight2 
+\par \cf0\highlight0 * Applying /etc/sysctl.d/10-kernel-hardening.conf ...\cf1\highlight2 
+\par \cf0\highlight0 kernel.kptr_restrict = 1\cf1\highlight2 
+\par \cf0\highlight0 * Applying /etc/sysctl.d/10-link-restrictions.conf ...\cf1\highlight2 
+\par \cf0\highlight0 fs.protected_hardlinks = 1\cf1\highlight2 
+\par \cf0\highlight0 fs.protected_symlinks = 1\cf1\highlight2 
+\par \cf0\highlight0 * Applying /etc/sysctl.d/10-lxd-inotify.conf ...\cf1\highlight2 
+\par \cf0\highlight0 fs.inotify.max_user_instances = 1024\cf1\highlight2 
+\par \cf0\highlight0 * Applying /etc/sysctl.d/10-magic-sysrq.conf ...\cf1\highlight2 
+\par \cf0\highlight0 kernel.sysrq = 176\cf1\highlight2 
+\par \cf0\highlight0 * Applying /etc/sysctl.d/10-network-security.conf ...\cf1\highlight2 
+\par \cf0\highlight0 net.ipv4.conf.default.rp_filter = 1\cf1\highlight2 
+\par \cf0\highlight0 net.ipv4.conf.all.rp_filter = 1\cf1\highlight2 
+\par \cf0\highlight0 net.ipv4.tcp_syncookies = 1\cf1\highlight2 
+\par \cf0\highlight0 * Applying /etc/sysctl.d/10-ptrace.conf ...\cf1\highlight2 
+\par \cf0\highlight0 kernel.yama.ptrace_scope = 1\cf1\highlight2 
+\par \cf0\highlight0 * Applying /etc/sysctl.d/10-zeropage.conf ...\cf1\highlight2 
+\par \cf0\highlight0 vm.mmap_min_addr = 65536\cf1\highlight2 
+\par \cf0\highlight0 * Applying /usr/lib/sysctl.d/50-default.conf ...\cf1\highlight2 
+\par \cf0\highlight0 net.ipv4.conf.all.promote_secondaries = 1\cf1\highlight2 
+\par \cf0\highlight0 net.core.default_qdisc = fq_codel\cf1\highlight2 
+\par \cf0\highlight0 * Applying /etc/sysctl.d/99-sysctl.conf ...\cf1\highlight2 
+\par \cf0\highlight0 * Applying /etc/sysctl.d/k8s.conf ...\cf1\highlight2 
+\par \cf0\highlight0 net.bridge.bridge-nf-call-ip6tables = 1\cf1\highlight2 
+\par \cf0\highlight0 net.bridge.bridge-nf-call-iptables = 1\cf1\highlight2 
+\par \cf0\highlight0 * Applying /etc/sysctl.conf ...\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~#\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~# apt-get update -y\cf1\highlight2 
+\par \cf0\highlight0 Hit:1 https://download.docker.com/linux/ubuntu bionic InRelease\cf1\highlight2 
+\par \cf0\highlight0 Hit:2 http://in.archive.ubuntu.com/ubuntu bionic InRelease\cf1\highlight2 
+\par \cf0\highlight0 Hit:3 http://in.archive.ubuntu.com/ubuntu bionic-updates InRelease\cf1\highlight2 
+\par \cf0\highlight0 Hit:4 http://in.archive.ubuntu.com/ubuntu bionic-backports InRelease\cf1\highlight2 
+\par \cf0\highlight0 Hit:5 http://in.archive.ubuntu.com/ubuntu bionic-security InRelease\cf1\highlight2 
+\par \cf0\highlight0 Reading package lists... Done\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~#\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~# apt-get install -y apt-transport-https ca-certificates curl\cf1\highlight2 
+\par \cf0\highlight0 Reading package lists... Done\cf1\highlight2 
+\par \cf0\highlight0 Building dependency tree\cf1\highlight2 
+\par \cf0\highlight0 Reading state information... Done\cf1\highlight2 
+\par \cf0\highlight0 ca-certificates is already the newest version (20210119~18.04.2).\cf1\highlight2 
+\par \cf0\highlight0 curl is already the newest version (7.58.0-2ubuntu3.16).\cf1\highlight2 
+\par \cf0\highlight0 apt-transport-https is already the newest version (1.6.14).\cf1\highlight2 
+\par \cf0\highlight0 0 upgraded, 0 newly installed, 0 to remove and 18 not upgraded.\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~# curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~#\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~# echo "deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | tee /etc/apt/sources.list.d/kubernetes.list\cf1\highlight2 
+\par \cf0\highlight0 deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~#\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~# apt-get update -y\cf1\highlight2 
+\par \cf0\highlight0 Hit:1 http://in.archive.ubuntu.com/ubuntu bionic InRelease\cf1\highlight2 
+\par \cf0\highlight0 Hit:2 https://download.docker.com/linux/ubuntu bionic InRelease\cf1\highlight2 
+\par \cf0\highlight0 Hit:3 http://in.archive.ubuntu.com/ubuntu bionic-updates InRelease\cf1\highlight2 
+\par \cf0\highlight0 Hit:4 http://in.archive.ubuntu.com/ubuntu bionic-backports InRelease\cf1\highlight2 
+\par \cf0\highlight0 Hit:5 http://in.archive.ubuntu.com/ubuntu bionic-security InRelease\cf1\highlight2 
+\par \cf0\highlight0 Get:6 https://packages.cloud.google.com/apt kubernetes-xenial InRelease [9,383 B]\cf1\highlight2 
+\par \cf0\highlight0 Get:7 https://packages.cloud.google.com/apt kubernetes-xenial/main amd64 Packages [51.5 kB]\cf1\highlight2 
+\par \cf0\highlight0 Fetched 60.9 kB in 1s (44.1 kB/s)\cf1\highlight2 
+\par \cf0\highlight0 Reading package lists... Done\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~# apt install -y kubeadm=1.21.1-00 kubelet=1.21.1-00 kubectl=1.21.1-00 --allow-change-held-packages\cf1\highlight2 
+\par \cf0\highlight0 Reading package lists... Done\cf1\highlight2 
+\par \cf0\highlight0 Building dependency tree\cf1\highlight2 
+\par \cf0\highlight0 Reading state information... Done\cf1\highlight2 
+\par \cf0\highlight0 The following additional packages will be installed:\cf1\highlight2 
+\par \cf0\highlight0   conntrack cri-tools kubernetes-cni socat\cf1\highlight2 
+\par \cf0\highlight0 The following NEW packages will be installed:\cf1\highlight2 
+\par \cf0\highlight0   conntrack cri-tools kubeadm kubectl kubelet kubernetes-cni socat\cf1\highlight2 
+\par \cf0\highlight0 0 upgraded, 7 newly installed, 0 to remove and 18 not upgraded.\cf1\highlight2 
+\par \cf0\highlight0 Need to get 73.5 MB of archives.\cf1\highlight2 
+\par \cf0\highlight0 After this operation, 316 MB of additional disk space will be used.\cf1\highlight2 
+\par \cf0\highlight0 Get:1 http://in.archive.ubuntu.com/ubuntu bionic/main amd64 conntrack amd64 1:1.4.4+snapshot20161117-6ubuntu2 [30.6 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:2 http://in.archive.ubuntu.com/ubuntu bionic/main amd64 socat amd64 1.7.3.2-2ubuntu2 [342 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:3 https://packages.cloud.google.com/apt kubernetes-xenial/main amd64 cri-tools amd64 1.19.0-00 [11.2 MB]\cf1\highlight2 
+\par \cf0\highlight0 Get:4 https://packages.cloud.google.com/apt kubernetes-xenial/main amd64 kubernetes-cni amd64 0.8.7-00 [25.0 MB]\cf1\highlight2 
+\par \cf0\highlight0 Get:5 https://packages.cloud.google.com/apt kubernetes-xenial/main amd64 kubelet amd64 1.21.1-00 [18.8 MB]\cf1\highlight2 
+\par \cf0\highlight0 Get:6 https://packages.cloud.google.com/apt kubernetes-xenial/main amd64 kubectl amd64 1.21.1-00 [9,225 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:7 https://packages.cloud.google.com/apt kubernetes-xenial/main amd64 kubeadm amd64 1.21.1-00 [8,985 kB]\cf1\highlight2 
+\par \cf0\highlight0 Fetched 73.5 MB in 18s (4,044 kB/s)\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package conntrack.\cf1\highlight2 
+\par \cf0\highlight0 (Reading database ... 103020 files and directories currently installed.)\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../0-conntrack_1%3a1.4.4+snapshot20161117-6ubuntu2_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking conntrack (1:1.4.4+snapshot20161117-6ubuntu2) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package cri-tools.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../1-cri-tools_1.19.0-00_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking cri-tools (1.19.0-00) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package kubernetes-cni.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../2-kubernetes-cni_0.8.7-00_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking kubernetes-cni (0.8.7-00) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package socat.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../3-socat_1.7.3.2-2ubuntu2_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking socat (1.7.3.2-2ubuntu2) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package kubelet.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../4-kubelet_1.21.1-00_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking kubelet (1.21.1-00) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package kubectl.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../5-kubectl_1.21.1-00_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking kubectl (1.21.1-00) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package kubeadm.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../6-kubeadm_1.21.1-00_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking kubeadm (1.21.1-00) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up conntrack (1:1.4.4+snapshot20161117-6ubuntu2) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up kubernetes-cni (0.8.7-00) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up cri-tools (1.19.0-00) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up socat (1.7.3.2-2ubuntu2) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up kubelet (1.21.1-00) ...\cf1\highlight2 
+\par \cf0\highlight0 Created symlink /etc/systemd/system/multi-user.target.wants/kubelet.service \u8594? /lib/systemd/system/kubelet.service.\cf1\highlight2 
+\par \cf0\highlight0 /usr/sbin/policy-rc.d returned 101, not running 'start kubelet.service'\cf1\highlight2 
+\par \cf0\highlight0 Setting up kubectl (1.21.1-00) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up kubeadm (1.21.1-00) ...\cf1\highlight2 
+\par \cf0\highlight0 Processing triggers for man-db (2.8.3-2ubuntu0.1) ...\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~# apt-mark hold kubelet kubeadm kubectl\cf1\highlight2 
+\par \cf0\highlight0 kubelet set on hold.\cf1\highlight2 
+\par \cf0\highlight0 kubeadm set on hold.\cf1\highlight2 
+\par \cf0\highlight0 kubectl set on hold.\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~#\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~# systemctl enable --now kubelet\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~#\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~# systemctl status kubelet\cf1\highlight2 
+\par \cf0\highlight0\u9679? kubelet.service - kubelet: The Kubernetes Node Agent\cf1\highlight2 
+\par \cf0\highlight0    Loaded: loaded (/lib/systemd/system/kubelet.service; enabled; vendor preset: enabled)\cf1\highlight2 
+\par \cf0\highlight0   Drop-In: /etc/systemd/system/kubelet.service.d\cf1\highlight2 
+\par \cf0\highlight0            \u9492?\u9472?10-kubeadm.conf\cf1\highlight2 
+\par \cf0\highlight0    Active: activating (auto-restart) (Result: exit-code) since Thu 2021-12-09 05:18:12 UTC; 921ms ago\cf1\highlight2 
+\par \cf0\highlight0      Docs: https://kubernetes.io/docs/home/\cf1\highlight2 
+\par \cf0\highlight0   Process: 30155 ExecStart=/usr/bin/kubelet $KUBELET_KUBECONFIG_ARGS $KUBELET_CONFIG_ARGS $KUBELET_KUBEADM_ARGS $KUBELET_EXTRA_ARGS \cf7 (code\cf1\highlight2 
+\par \cf0\highlight0  Main PID: 30155 (code=exited, status=1/FAILURE)\cf1\highlight2 
+\par 
+\par \cf0\highlight0 root@node-c:~# systemctl status kubelet\cf1\highlight2 
+\par \cf0\highlight0\u9679? kubelet.service - kubelet: The Kubernetes Node Agent\cf1\highlight2 
+\par \cf0\highlight0    Loaded: loaded (/lib/systemd/system/kubelet.service; enabled; vendor preset: enabled)\cf1\highlight2 
+\par \cf0\highlight0   Drop-In: /etc/systemd/system/kubelet.service.d\cf1\highlight2 
+\par \cf0\highlight0            \u9492?\u9472?10-kubeadm.conf\cf1\highlight2 
+\par \cf0\highlight0    Active: activating (auto-restart) (Result: exit-code) since Thu 2021-12-09 05:18:12 UTC; 7s ago\cf1\highlight2 
+\par \cf0\highlight0      Docs: https://kubernetes.io/docs/home/\cf1\highlight2 
+\par \cf0\highlight0   Process: 30155 ExecStart=/usr/bin/kubelet $KUBELET_KUBECONFIG_ARGS $KUBELET_CONFIG_ARGS $KUBELET_KUBEADM_ARGS $KUBELET_EXTRA_ARGS \cf7 (code\cf1\highlight2 
+\par \cf0\highlight0  Main PID: 30155 (code=exited, status=1/FAILURE)\cf1\highlight2 
+\par 
+\par \cf0\highlight0 root@node-c:~# kubeadm init --pod-network-cidr=10.244.0.0/16\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:19:01.546118   30331 version.go:254] remote version is much newer: v1.23.0; falling back to: stable-1.21\cf1\highlight2 
+\par \cf0\highlight0 [init] Using Kubernetes version: v1.21.7\cf1\highlight2 
+\par \cf0\highlight0 [preflight] Running pre-flight checks\cf1\highlight2 
+\par \cf0\highlight0 [preflight] Pulling images required for setting up a Kubernetes cluster\cf1\highlight2 
+\par \cf0\highlight0 [preflight] This might take a minute or two, depending on the speed of your internet connection\cf1\highlight2 
+\par \cf0\highlight0 [preflight] You can also perform this action in beforehand using 'kubeadm config images pull'\cf1\highlight2 
+\par \cf0\highlight0 [certs] Using certificateDir folder "/etc/kubernetes/pki"\cf1\highlight2 
+\par \cf0\highlight0 [certs] Generating "ca" certificate and key\cf1\highlight2 
+\par \cf0\highlight0 [certs] Generating "apiserver" certificate and key\cf1\highlight2 
+\par \cf0\highlight0 [certs] apiserver serving cert is signed for DNS names [kubernetes kubernetes.default kubernetes.default.svc kubernetes.default.svc.cluster.local node-c] and IPs [10.96.0.1 192.168.1.212]\cf1\highlight2 
+\par \cf0\highlight0 [certs] Generating "apiserver-kubelet-client" certificate and key\cf1\highlight2 
+\par \cf0\highlight0 [certs] Generating "front-proxy-ca" certificate and key\cf1\highlight2 
+\par \cf0\highlight0 [certs] Generating "front-proxy-client" certificate and key\cf1\highlight2 
+\par \cf0\highlight0 [certs] Generating "etcd/ca" certificate and key\cf1\highlight2 
+\par \cf0\highlight0 [certs] Generating "etcd/server" certificate and key\cf1\highlight2 
+\par \cf0\highlight0 [certs] etcd/server serving cert is signed for DNS names [localhost node-c] and IPs [192.168.1.212 127.0.0.1 ::1]\cf1\highlight2 
+\par \cf0\highlight0 [certs] Generating "etcd/peer" certificate and key\cf1\highlight2 
+\par \cf0\highlight0 [certs] etcd/peer serving cert is signed for DNS names [localhost node-c] and IPs [192.168.1.212 127.0.0.1 ::1]\cf1\highlight2 
+\par \cf0\highlight0 [certs] Generating "etcd/healthcheck-client" certificate and key\cf1\highlight2 
+\par \cf0\highlight0 [certs] Generating "apiserver-etcd-client" certificate and key\cf1\highlight2 
+\par \cf0\highlight0 [certs] Generating "sa" key and public key\cf1\highlight2 
+\par \cf0\highlight0 [kubeconfig] Using kubeconfig folder "/etc/kubernetes"\cf1\highlight2 
+\par \cf0\highlight0 [kubeconfig] Writing "admin.conf" kubeconfig file\cf1\highlight2 
+\par \cf0\highlight0 [kubeconfig] Writing "kubelet.conf" kubeconfig file\cf1\highlight2 
+\par \cf0\highlight0 [kubeconfig] Writing "controller-manager.conf" kubeconfig file\cf1\highlight2 
+\par \cf0\highlight0 [kubeconfig] Writing "scheduler.conf" kubeconfig file\cf1\highlight2 
+\par \cf0\highlight0 [kubelet-start] Writing kubelet environment file with flags to file "/var/lib/kubelet/kubeadm-flags.env"\cf1\highlight2 
+\par \cf0\highlight0 [kubelet-start] Writing kubelet configuration to file "/var/lib/kubelet/config.yaml"\cf1\highlight2 
+\par \cf0\highlight0 [kubelet-start] Starting the kubelet\cf1\highlight2 
+\par \cf0\highlight0 [control-plane] Using manifest folder "/etc/kubernetes/manifests"\cf1\highlight2 
+\par \cf0\highlight0 [control-plane] Creating static Pod manifest for "kube-apiserver"\cf1\highlight2 
+\par \cf0\highlight0 [control-plane] Creating static Pod manifest for "kube-controller-manager"\cf1\highlight2 
+\par \cf0\highlight0 [control-plane] Creating static Pod manifest for "kube-scheduler"\cf1\highlight2 
+\par \cf0\highlight0 [etcd] Creating static Pod manifest for local etcd in "/etc/kubernetes/manifests"\cf1\highlight2 
+\par \cf0\highlight0 [wait-control-plane] Waiting for the kubelet to boot up the control plane as static Pods from directory "/etc/kubernetes/manifests". This can take up to 4m0s\cf1\highlight2 
+\par \cf0\highlight0 [apiclient] All control plane components are healthy after 18.004573 seconds\cf1\highlight2 
+\par \cf0\highlight0 [upload-config] Storing the configuration used in ConfigMap "kubeadm-config" in the "kube-system" Namespace\cf1\highlight2 
+\par \cf0\highlight0 [kubelet] Creating a ConfigMap "kubelet-config-1.21" in namespace kube-system with the configuration for the kubelets in the cluster\cf1\highlight2 
+\par \cf0\highlight0 [upload-certs] Skipping phase. Please see --upload-certs\cf1\highlight2 
+\par \cf0\highlight0 [mark-control-plane] Marking the node node-c as control-plane by adding the labels: [node-role.kubernetes.io/master(deprecated) node-role.kubernetes.io/control-plane node.kubernetes.io/exclude-from-external-load-balancers]\cf1\highlight2 
+\par \cf0\highlight0 [mark-control-plane] Marking the node node-c as control-plane by adding the taints [node-role.kubernetes.io/master:NoSchedule]\cf1\highlight2 
+\par \cf0\highlight0 [bootstrap-token] Using token: ocvhup.rrbr63bc9q9lxcas\cf1\highlight2 
+\par \cf0\highlight0 [bootstrap-token] Configuring bootstrap tokens, cluster-info ConfigMap, RBAC Roles\cf1\highlight2 
+\par \cf0\highlight0 [bootstrap-token] configured RBAC rules to allow Node Bootstrap tokens to get nodes\cf1\highlight2 
+\par \cf0\highlight0 [bootstrap-token] configured RBAC rules to allow Node Bootstrap tokens to post CSRs in order for nodes to get long term certificate credentials\cf1\highlight2 
+\par \cf0\highlight0 [bootstrap-token] configured RBAC rules to allow the csrapprover controller automatically approve CSRs from a Node Bootstrap Token\cf1\highlight2 
+\par \cf0\highlight0 [bootstrap-token] configured RBAC rules to allow certificate rotation for all node client certificates in the cluster\cf1\highlight2 
+\par \cf0\highlight0 [bootstrap-token] Creating the "cluster-info" ConfigMap in the "kube-public" namespace\cf1\highlight2 
+\par \cf0\highlight0 [kubelet-finalize] Updating "/etc/kubernetes/kubelet.conf" to point to a rotatable kubelet client certificate and key\cf1\highlight2 
+\par \cf0\highlight0 [addons] Applied essential addon: CoreDNS\cf1\highlight2 
+\par \cf0\highlight0 [addons] Applied essential addon: kube-proxy\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Your Kubernetes control-plane has initialized successfully!\cf1\highlight2 
+\par 
+\par \cf0\highlight0 To start using your cluster, you need to run the following as a regular user:\cf1\highlight2 
+\par 
+\par \cf0\highlight0   mkdir -p $HOME/.kube\cf1\highlight2 
+\par \cf0\highlight0   sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config\cf1\highlight2 
+\par \cf0\highlight0   sudo chown $(id -u):$(id -g) $HOME/.kube/config\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Alternatively, if you are the root user, you can run:\cf1\highlight2 
+\par 
+\par \cf0\highlight0   export KUBECONFIG=/etc/kubernetes/admin.conf\cf1\highlight2 
+\par 
+\par \cf0\highlight0 You should now deploy a pod network to the cluster.\cf1\highlight2 
+\par \cf0\highlight0 Run "kubectl apply -f [podnetwork].yaml" with one of the options listed at:\cf1\highlight2 
+\par \cf0\highlight0   https://kubernetes.io/docs/concepts/cluster-administration/addons/\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Then you can join any number of worker nodes by running the following on each as root:\cf1\highlight2 
+\par 
+\par \cf0\highlight0 kubeadm join 192.168.1.212:6443 --token ocvhup.rrbr63bc9q9lxcas \\\cf1\highlight2 
+\par \cf0\highlight0         --discovery-token-ca-cert-hash sha256:442c2ed2de6778a3b5607fb9b41f98f1a965a0da8ff970299441dab9d4a570cf\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~# mkdir -p $HOME/.kube\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~#\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~# cp -i /etc/kubernetes/admin.conf $HOME/.kube/config\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~#\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~# chown $(id -u):$(id -g) $HOME/.kube/config\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~# kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml\cf1\highlight2 
+\par \cf4\highlight0 Warning:\cf0  policy/v1beta1 PodSecurityPolicy is deprecated in v1.21+, unavailable in v1.25+\cf1\highlight2 
+\par \cf0\highlight0 podsecuritypolicy.policy/psp.flannel.unprivileged created\cf1\highlight2 
+\par \cf0\highlight0 clusterrole.rbac.authorization.k8s.io/flannel created\cf1\highlight2 
+\par \cf0\highlight0 clusterrolebinding.rbac.authorization.k8s.io/flannel created\cf1\highlight2 
+\par \cf0\highlight0 serviceaccount/flannel created\cf1\highlight2 
+\par \cf0\highlight0 configmap/kube-flannel-cfg created\cf1\highlight2 
+\par \cf0\highlight0 daemonset.apps/kube-flannel-ds created\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~#\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~# kubectl get nodes\cf1\highlight2 
+\par \cf0\highlight0 NAME     STATUS     ROLES                  AGE    VERSION\cf1\highlight2 
+\par \cf0\highlight0 node-c   NotReady   control-plane,master   106s   v1.21.1\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~# kubectl get nodes\cf1\highlight2 
+\par \cf0\highlight0 NAME     STATUS   ROLES                  AGE     VERSION\cf1\highlight2 
+\par \cf0\highlight0 node-c   Ready    control-plane,master   2m37s   v1.21.1\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~# sudo wget https://storage.googleapis.com/golang/go1.15.4.linux-amd64.tar.gz\cf1\highlight2 
+\par \cf0\highlight0 --2021-12-09 05:23:48--  https://storage.googleapis.com/golang/go1.15.4.linux-amd64.tar.gz\cf1\highlight2 
+\par \cf0\highlight0 Resolving storage.googleapis.com (storage.googleapis.com)... 142.250.183.80, 172.217.166.80, 142.250.192.16, ...\cf1\highlight2 
+\par \cf0\highlight0 Connecting to storage.googleapis.com (storage.googleapis.com)|142.250.183.80|:443... connected.\cf1\highlight2 
+\par \cf0\highlight0 HTTP request sent, awaiting response... 200 OK\cf1\highlight2 
+\par \cf0\highlight0 Length: 120906247 (115M) [application/octet-stream]\cf1\highlight2 
+\par \cf0\highlight0\f1 Saving to: \lquote go1.15.4.linux-amd64.tar.gz\rquote\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 go1.15.4.linux-amd64.tar.gz        100%[=============================================================>] 115.30M  7.59MB/s    in 34s\cf1\highlight2 
+\par 
+\par \cf0\highlight0\f1 2021-12-09 05:24:23 (3.35 MB/s) - \lquote go1.15.4.linux-amd64.tar.gz\rquote  saved [120906247/120906247]\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 root@node-c:~# sudo tar -C /usr/local -xzf go1.15.4.linux-amd64.tar.gz\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~#\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~# sudo echo 'export PATH=$PATH:/usr/local/go/bin' >> $HOME/.profile\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~#\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~# sudo echo 'export GOPATH=$HOME/gopath' >> $HOME/.profile\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~#\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~# source $HOME/.profile\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~# apt install -y make gcc jq\cf1\highlight2 
+\par \cf0\highlight0 Reading package lists... Done\cf1\highlight2 
+\par \cf0\highlight0 Building dependency tree\cf1\highlight2 
+\par \cf0\highlight0 Reading state information... Done\cf1\highlight2 
+\par \cf0\highlight0 The following additional packages will be installed:\cf1\highlight2 
+\par \cf0\highlight0   binutils binutils-common binutils-x86-64-linux-gnu cpp cpp-7 gcc-7 gcc-7-base libasan4 libatomic1 libbinutils libc-dev-bin libc6-dev\cf1\highlight2 
+\par \cf0\highlight0   libcc1-0 libcilkrts5 libgcc-7-dev libgomp1 libisl19 libitm1 libjq1 liblsan0 libmpc3 libmpx2 libonig4 libquadmath0 libtsan0 libubsan0\cf1\highlight2 
+\par \cf0\highlight0   linux-libc-dev manpages-dev\cf1\highlight2 
+\par \cf0\highlight0 Suggested packages:\cf1\highlight2 
+\par \cf0\highlight0   binutils-doc cpp-doc gcc-7-locales gcc-multilib autoconf automake libtool flex bison gdb gcc-doc gcc-7-multilib gcc-7-doc libgcc1-dbg\cf1\highlight2 
+\par \cf0\highlight0   libgomp1-dbg libitm1-dbg libatomic1-dbg libasan4-dbg liblsan0-dbg libtsan0-dbg libubsan0-dbg libcilkrts5-dbg libmpx2-dbg\cf1\highlight2 
+\par \cf0\highlight0   libquadmath0-dbg glibc-doc make-doc\cf1\highlight2 
+\par \cf0\highlight0 The following NEW packages will be installed:\cf1\highlight2 
+\par \cf0\highlight0   binutils binutils-common binutils-x86-64-linux-gnu cpp cpp-7 gcc gcc-7 gcc-7-base jq libasan4 libatomic1 libbinutils libc-dev-bin\cf1\highlight2 
+\par \cf0\highlight0   libc6-dev libcc1-0 libcilkrts5 libgcc-7-dev libgomp1 libisl19 libitm1 libjq1 liblsan0 libmpc3 libmpx2 libonig4 libquadmath0 libtsan0\cf1\highlight2 
+\par \cf0\highlight0   libubsan0 linux-libc-dev make manpages-dev\cf1\highlight2 
+\par \cf0\highlight0 0 upgraded, 31 newly installed, 0 to remove and 21 not upgraded.\cf1\highlight2 
+\par \cf0\highlight0 Need to get 3,679 kB/31.1 MB of archives.\cf1\highlight2 
+\par \cf0\highlight0 After this operation, 119 MB of additional disk space will be used.\cf1\highlight2 
+\par \cf0\highlight0 Get:1 http://in.archive.ubuntu.com/ubuntu bionic/main amd64 libisl19 amd64 0.19-1 [551 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:2 http://in.archive.ubuntu.com/ubuntu bionic/main amd64 libmpc3 amd64 1.1.0-1 [40.8 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:3 http://in.archive.ubuntu.com/ubuntu bionic/universe amd64 libonig4 amd64 6.7.0-1 [119 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:4 http://in.archive.ubuntu.com/ubuntu bionic/universe amd64 libjq1 amd64 1.5+dfsg-2 [111 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:5 http://in.archive.ubuntu.com/ubuntu bionic/universe amd64 jq amd64 1.5+dfsg-2 [45.6 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:6 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libc-dev-bin amd64 2.27-3ubuntu1.4 [71.8 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:7 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libc6-dev amd64 2.27-3ubuntu1.4 [2,585 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:8 http://in.archive.ubuntu.com/ubuntu bionic/main amd64 make amd64 4.1-9.1ubuntu1 [154 kB]\cf1\highlight2 
+\par \cf0\highlight0 Fetched 3,679 kB in 1s (3,750 kB/s)\cf1\highlight2 
+\par \cf0\highlight0 Extracting templates from packages: 100%\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package binutils-common:amd64.\cf1\highlight2 
+\par \cf0\highlight0 (Reading database ... 103094 files and directories currently installed.)\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../00-binutils-common_2.30-21ubuntu1~18.04.7_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking binutils-common:amd64 (2.30-21ubuntu1~18.04.7) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package libbinutils:amd64.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../01-libbinutils_2.30-21ubuntu1~18.04.7_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking libbinutils:amd64 (2.30-21ubuntu1~18.04.7) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package binutils-x86-64-linux-gnu.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../02-binutils-x86-64-linux-gnu_2.30-21ubuntu1~18.04.7_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking binutils-x86-64-linux-gnu (2.30-21ubuntu1~18.04.7) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package binutils.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../03-binutils_2.30-21ubuntu1~18.04.7_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking binutils (2.30-21ubuntu1~18.04.7) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package gcc-7-base:amd64.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../04-gcc-7-base_7.5.0-3ubuntu1~18.04_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking gcc-7-base:amd64 (7.5.0-3ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package libisl19:amd64.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../05-libisl19_0.19-1_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking libisl19:amd64 (0.19-1) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package libmpc3:amd64.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../06-libmpc3_1.1.0-1_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking libmpc3:amd64 (1.1.0-1) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package cpp-7.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../07-cpp-7_7.5.0-3ubuntu1~18.04_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking cpp-7 (7.5.0-3ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package cpp.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../08-cpp_4%3a7.4.0-1ubuntu2.3_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking cpp (4:7.4.0-1ubuntu2.3) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package libcc1-0:amd64.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../09-libcc1-0_8.4.0-1ubuntu1~18.04_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking libcc1-0:amd64 (8.4.0-1ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package libgomp1:amd64.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../10-libgomp1_8.4.0-1ubuntu1~18.04_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking libgomp1:amd64 (8.4.0-1ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package libitm1:amd64.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../11-libitm1_8.4.0-1ubuntu1~18.04_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking libitm1:amd64 (8.4.0-1ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package libatomic1:amd64.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../12-libatomic1_8.4.0-1ubuntu1~18.04_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking libatomic1:amd64 (8.4.0-1ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package libasan4:amd64.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../13-libasan4_7.5.0-3ubuntu1~18.04_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking libasan4:amd64 (7.5.0-3ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package liblsan0:amd64.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../14-liblsan0_8.4.0-1ubuntu1~18.04_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking liblsan0:amd64 (8.4.0-1ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package libtsan0:amd64.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../15-libtsan0_8.4.0-1ubuntu1~18.04_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking libtsan0:amd64 (8.4.0-1ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package libubsan0:amd64.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../16-libubsan0_7.5.0-3ubuntu1~18.04_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking libubsan0:amd64 (7.5.0-3ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package libcilkrts5:amd64.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../17-libcilkrts5_7.5.0-3ubuntu1~18.04_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking libcilkrts5:amd64 (7.5.0-3ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package libmpx2:amd64.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../18-libmpx2_8.4.0-1ubuntu1~18.04_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking libmpx2:amd64 (8.4.0-1ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package libquadmath0:amd64.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../19-libquadmath0_8.4.0-1ubuntu1~18.04_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking libquadmath0:amd64 (8.4.0-1ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package libgcc-7-dev:amd64.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../20-libgcc-7-dev_7.5.0-3ubuntu1~18.04_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking libgcc-7-dev:amd64 (7.5.0-3ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package gcc-7.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../21-gcc-7_7.5.0-3ubuntu1~18.04_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking gcc-7 (7.5.0-3ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package gcc.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../22-gcc_4%3a7.4.0-1ubuntu2.3_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking gcc (4:7.4.0-1ubuntu2.3) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package libonig4:amd64.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../23-libonig4_6.7.0-1_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking libonig4:amd64 (6.7.0-1) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package libjq1:amd64.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../24-libjq1_1.5+dfsg-2_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking libjq1:amd64 (1.5+dfsg-2) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package jq.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../25-jq_1.5+dfsg-2_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking jq (1.5+dfsg-2) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package libc-dev-bin.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../26-libc-dev-bin_2.27-3ubuntu1.4_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking libc-dev-bin (2.27-3ubuntu1.4) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package linux-libc-dev:amd64.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../27-linux-libc-dev_4.15.0-163.171_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking linux-libc-dev:amd64 (4.15.0-163.171) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package libc6-dev:amd64.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../28-libc6-dev_2.27-3ubuntu1.4_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking libc6-dev:amd64 (2.27-3ubuntu1.4) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package make.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../29-make_4.1-9.1ubuntu1_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking make (4.1-9.1ubuntu1) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package manpages-dev.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../30-manpages-dev_4.15-1_all.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking manpages-dev (4.15-1) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up libquadmath0:amd64 (8.4.0-1ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up libgomp1:amd64 (8.4.0-1ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up libatomic1:amd64 (8.4.0-1ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up libcc1-0:amd64 (8.4.0-1ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up make (4.1-9.1ubuntu1) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up libtsan0:amd64 (8.4.0-1ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up libonig4:amd64 (6.7.0-1) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up linux-libc-dev:amd64 (4.15.0-163.171) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up liblsan0:amd64 (8.4.0-1ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up gcc-7-base:amd64 (7.5.0-3ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up binutils-common:amd64 (2.30-21ubuntu1~18.04.7) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up libjq1:amd64 (1.5+dfsg-2) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up libmpx2:amd64 (8.4.0-1ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up libmpc3:amd64 (1.1.0-1) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up libc-dev-bin (2.27-3ubuntu1.4) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up manpages-dev (4.15-1) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up libc6-dev:amd64 (2.27-3ubuntu1.4) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up libitm1:amd64 (8.4.0-1ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up libisl19:amd64 (0.19-1) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up jq (1.5+dfsg-2) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up libasan4:amd64 (7.5.0-3ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up libbinutils:amd64 (2.30-21ubuntu1~18.04.7) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up libcilkrts5:amd64 (7.5.0-3ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up libubsan0:amd64 (7.5.0-3ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up libgcc-7-dev:amd64 (7.5.0-3ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up cpp-7 (7.5.0-3ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up binutils-x86-64-linux-gnu (2.30-21ubuntu1~18.04.7) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up cpp (4:7.4.0-1ubuntu2.3) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up binutils (2.30-21ubuntu1~18.04.7) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up gcc-7 (7.5.0-3ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up gcc (4:7.4.0-1ubuntu2.3) ...\cf1\highlight2 
+\par \cf0\highlight0 Processing triggers for man-db (2.8.3-2ubuntu0.1) ...\cf1\highlight2 
+\par \cf0\highlight0 Processing triggers for libc-bin (2.27-3ubuntu1.4) ...\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~# go versin\cf1\highlight2 
+\par \cf0\highlight0 go versin: unknown command\cf1\highlight2 
+\par \cf0\highlight0 Run 'go help' for usage.\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~# go version\cf1\highlight2 
+\par \cf0\highlight0 go version go1.15.4 linux/amd64\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~# git clone https://github.com/CentaurusInfra/fornax\cf1\highlight2 
+\par \cf0\highlight0 Cloning into 'fornax'...\cf1\highlight2 
+\par \cf0\highlight0 remote: Enumerating objects: 50832, done.\cf1\highlight2 
+\par \cf0\highlight0 remote: Counting objects: 100% (760/760), done.\cf1\highlight2 
+\par \cf0\highlight0 remote: Compressing objects: 100% (432/432), done.\cf1\highlight2 
+\par \cf0\highlight0 remote: Total 50832 (delta 360), reused 621 (delta 289), pack-reused 50072\cf1\highlight2 
+\par \cf0\highlight0 Receiving objects: 100% (50832/50832), 125.52 MiB | 1.44 MiB/s, done.\cf1\highlight2 
+\par \cf0\highlight0 Resolving deltas: 100% (27938/27938), done.\cf1\highlight2 
+\par \cf0\highlight0 Checking out files: 100% (8900/8900), done.\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~#\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~# cd fornax\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax#\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax# make WHAT=cloudcore\cf1\highlight2 
+\par \cf0\highlight0 hack/verify-golang.sh\cf1\highlight2 
+\par \cf0\highlight0 go detail version: go version go1.15.4 linux/amd64\cf1\highlight2 
+\par \cf0\highlight0 go version: 1.15.4\cf1\highlight2 
+\par \cf0\highlight0 KUBEEDGE_OUTPUT_SUBPATH=_output/local hack/make-rules/build.sh cloudcore\cf1\highlight2 
+\par \cf0\highlight0 building github.com/kubeedge/kubeedge/cloud/cmd/cloudcore\cf1\highlight2 
+\par \cf0\highlight0 + go build -o /root/fornax/_output/local/bin/cloudcore -gcflags= -ldflags '-s -w -buildid= -X github.com/kubeedge/kubeedge/pkg/version.buildDate=2021-12-09T05:32:58Z -X github.com/kubeedge/kubeedge/pkg/version.gitCommit=b992ccac6715efb9df3e8a1a702246b4d24096d1 -X github.com/kubeedge/kubeedge/pkg/version.gitTreeState=clean -X github.com/kubeedge/kubeedge/pkg/version.gitVersion=v0.2-12+b992ccac6715ef -X github.com/kubeedge/kubeedge/pkg/version.gitMajor=0 -X github.com/kubeedge/kubeedge/pkg/version.gitMinor=2+' github.com/kubeedge/kubeedge/cloud/cmd/cloudcore\cf1\highlight2 
+\par \cf0\highlight0 + set +x\cf1\highlight2 
+\par \cf0\highlight0 yes | cp -r binaries/kubectl _output/local/bin/\cf1\highlight2 
+\par \cf0\highlight0 mkdir -p _output/local/bin/crds\cf1\highlight2 
+\par \cf0\highlight0 yes | cp build/crds/devices/devices_v1alpha2_device.yaml  _output/local/bin/crds/\cf1\highlight2 
+\par \cf0\highlight0 yes | cp build/crds/devices/devices_v1alpha2_devicemodel.yaml  _output/local/bin/crds/\cf1\highlight2 
+\par \cf0\highlight0 yes | cp build/crds/reliablesyncs/cluster_objectsync_v1alpha1.yaml  _output/local/bin/crds/\cf1\highlight2 
+\par \cf0\highlight0 yes | cp build/crds/reliablesyncs/objectsync_v1alpha1.yaml  _output/local/bin/crds/\cf1\highlight2 
+\par \cf0\highlight0 yes | cp build/crds/router/router_v1_rule.yaml  _output/local/bin/crds/\cf1\highlight2 
+\par \cf0\highlight0 yes | cp build/crds/router/router_v1_ruleEndpoint.yaml  _output/local/bin/crds/\cf1\highlight2 
+\par \cf0\highlight0 yes | cp build/crds/edgecluster/mission_v1.yaml  _output/local/bin/crds/\cf1\highlight2 
+\par \cf0\highlight0 yes | cp build/crds/edgecluster/edgecluster_v1.yaml  _output/local/bin/crds/\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax#\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax# make WHAT=edgecore\cf1\highlight2 
+\par \cf0\highlight0 hack/verify-golang.sh\cf1\highlight2 
+\par \cf0\highlight0 go detail version: go version go1.15.4 linux/amd64\cf1\highlight2 
+\par \cf0\highlight0 go version: 1.15.4\cf1\highlight2 
+\par \cf0\highlight0 KUBEEDGE_OUTPUT_SUBPATH=_output/local hack/make-rules/build.sh edgecore\cf1\highlight2 
+\par \cf0\highlight0 building github.com/kubeedge/kubeedge/edge/cmd/edgecore\cf1\highlight2 
+\par \cf0\highlight0 + go build -o /root/fornax/_output/local/bin/edgecore -gcflags= -ldflags '-s -w -buildid= -X github.com/kubeedge/kubeedge/pkg/version.buildDate=2021-12-09T05:38:09Z -X github.com/kubeedge/kubeedge/pkg/version.gitCommit=b992ccac6715efb9df3e8a1a702246b4d24096d1 -X github.com/kubeedge/kubeedge/pkg/version.gitTreeState=clean -X github.com/kubeedge/kubeedge/pkg/version.gitVersion=v0.2-12+b992ccac6715ef -X github.com/kubeedge/kubeedge/pkg/version.gitMajor=0 -X github.com/kubeedge/kubeedge/pkg/version.gitMinor=2+' github.com/kubeedge/kubeedge/edge/cmd/edgecore\cf1\highlight2 
+\par \cf0\highlight0 + set +x\cf1\highlight2 
+\par \cf0\highlight0 yes | cp -r binaries/kubectl _output/local/bin/\cf1\highlight2 
+\par \cf0\highlight0 mkdir -p _output/local/bin/crds\cf1\highlight2 
+\par \cf0\highlight0 yes | cp build/crds/devices/devices_v1alpha2_device.yaml  _output/local/bin/crds/\cf1\highlight2 
+\par \cf0\highlight0 yes | cp build/crds/devices/devices_v1alpha2_devicemodel.yaml  _output/local/bin/crds/\cf1\highlight2 
+\par \cf0\highlight0 yes | cp build/crds/reliablesyncs/cluster_objectsync_v1alpha1.yaml  _output/local/bin/crds/\cf1\highlight2 
+\par \cf0\highlight0 yes | cp build/crds/reliablesyncs/objectsync_v1alpha1.yaml  _output/local/bin/crds/\cf1\highlight2 
+\par \cf0\highlight0 yes | cp build/crds/router/router_v1_rule.yaml  _output/local/bin/crds/\cf1\highlight2 
+\par \cf0\highlight0 yes | cp build/crds/router/router_v1_ruleEndpoint.yaml  _output/local/bin/crds/\cf1\highlight2 
+\par \cf0\highlight0 yes | cp build/crds/edgecluster/mission_v1.yaml  _output/local/bin/crds/\cf1\highlight2 
+\par \cf0\highlight0 yes | cp build/crds/edgecluster/edgecluster_v1.yaml  _output/local/bin/crds/\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax# mkdir -p /etc/kubeedge/ca\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax#\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax# mkdir -p /etc/kubeedge/certs\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax# scp -r 192.168.1.210:/etc/kubeedge/ca /etc/kubeedge\cf1\highlight2 
+\par \cf0\highlight0 The authenticity of host '192.168.1.210 (192.168.1.210)' can't be established.\cf1\highlight2 
+\par \cf0\highlight0 ECDSA key fingerprint is SHA256:CwgX7h/zzN3K9IeiEZ+BGK49rwjYaKdrG6IXDe7N+Sk.\cf1\highlight2 
+\par \cf0\highlight0 Are you sure you want to continue connecting (yes/no)? yes\cf1\highlight2 
+\par \cf0\highlight0 Warning: Permanently added '192.168.1.210' (ECDSA) to the list of known hosts.\cf1\highlight2 
+\par \cf0\highlight0 root@192.168.1.210's password:\cf1\highlight2 
+\par \cf0\highlight0 rootCA.key                                                                                             100% 3311     4.6MB/s   00:00\cf1\highlight2 
+\par \cf0\highlight0 rootCA.crt                                                                                             100% 2057     4.3MB/s   00:00\cf1\highlight2 
+\par \cf0\highlight0 rootCA.srl                                                                                             100%   41    37.0KB/s   00:00\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax# scp -r 192.168.1.210:/etc/kubeedge/certs /etc/kubeedge\cf1\highlight2 
+\par \cf0\highlight0 root@192.168.1.210's password:\cf1\highlight2 
+\par \cf0\highlight0 server.crt                                                                                             100% 1602     2.4MB/s   00:00\cf1\highlight2 
+\par \cf0\highlight0 server.csr                                                                                             100%  989     1.8MB/s   00:00\cf1\highlight2 
+\par \cf0\highlight0 server.key                                                                                             100% 1675     3.4MB/s   00:00\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax# cp /etc/kubernetes/admin.conf /root/.kube/config\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax#\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax# mkdir -p /etc/kubeedge/config\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax#\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax# _output/local/bin/cloudcore --minconfig > /etc/kubeedge/config/cloudcore.yaml\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax# cp /etc/kubernetes/admin.conf /root/edgecluster.kubeconfig\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax#\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax# _output/local/bin/edgecore --edgeclusterconfig > /etc/kubeedge/config/edgecore.yaml\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax# scp 192.168.1.211:/etc/kubernetes/admin.conf /root/fornax\cf1\highlight2 
+\par \cf0\highlight0 The authenticity of host '192.168.1.211 (192.168.1.211)' can't be established.\cf1\highlight2 
+\par \cf0\highlight0 ECDSA key fingerprint is SHA256:CwgX7h/zzN3K9IeiEZ+BGK49rwjYaKdrG6IXDe7N+Sk.\cf1\highlight2 
+\par \cf0\highlight0 Are you sure you want to continue connecting (yes/no)? yes\cf1\highlight2 
+\par \cf0\highlight0 Warning: Permanently added '192.168.1.211' (ECDSA) to the list of known hosts.\cf1\highlight2 
+\par \cf0\highlight0 root@192.168.1.211's password:\cf1\highlight2 
+\par \cf0\highlight0 admin.conf                                                                                             100% 5597     5.5MB/s   00:00\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax# tests/edgecluster/hack/update_edgecore_config.sh admin.conf\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax# chmod a+x tests/edgecluster/hack/update_edgecore_config.sh\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax# kubectl apply -f build/crds/devices/devices_v1alpha2_device.yaml\cf1\highlight2 
+\par \cf0\highlight0 kubectl apply -f build/crds/devices/devices_v1alpha2_devicemodel.yaml\cf1\highlight2 
+\par 
+\par \cf0\highlight0 kubectl apply -f build/crds/reliablesyncs/cluster_objectsync_v1alpha1.yaml\cf1\highlight2 
+\par 
+\par \cf0\highlight0 kubectl apply -f build/crds/reliablesyncs/objectsync_v1alpha1.yaml\cf1\highlight2 
+\par 
+\par \cf0\highlight0 kubectl apply -f build/crds/router/router_v1_rule.yaml\cf1\highlight2 
+\par 
+\par \cf0\highlight0 kubectl apply -f build/crds/router/router_v1_ruleEndpoint.yaml\cf1\highlight2 
+\par 
+\par \cf0\highlight0 kubectl apply -f build/crds/edgecluster/mission_v1.yaml\cf1\highlight2 
+\par 
+\par \cf0\highlight0 kubectl apply -f build/crds/edgecluster/edgecluster_v1.yaml\cf1\highlight2 
+\par \cf4\highlight0 Warning:\cf0  apiextensions.k8s.io/v1beta1 CustomResourceDefinition is deprecated in v1.16+, unavailable in v1.22+; use apiextensions.k8s.io/v1 CustomResourceDefinition\cf1\highlight2 
+\par \cf0\highlight0 customresourcedefinition.apiextensions.k8s.io/devices.devices.kubeedge.io created\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax#\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax# kubectl apply -f build/crds/devices/devices_v1alpha2_devicemodel.yaml\cf1\highlight2 
+\par \cf4\highlight0 Warning:\cf0  apiextensions.k8s.io/v1beta1 CustomResourceDefinition is deprecated in v1.16+, unavailable in v1.22+; use apiextensions.k8s.io/v1 CustomResourceDefinition\cf1\highlight2 
+\par \cf0\highlight0 customresourcedefinition.apiextensions.k8s.io/devicemodels.devices.kubeedge.io created\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax#\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax# kubectl apply -f build/crds/reliablesyncs/cluster_objectsync_v1alpha1.yaml\cf1\highlight2 
+\par \cf4\highlight0 Warning:\cf0  apiextensions.k8s.io/v1beta1 CustomResourceDefinition is deprecated in v1.16+, unavailable in v1.22+; use apiextensions.k8s.io/v1 CustomResourceDefinition\cf1\highlight2 
+\par \cf0\highlight0 customresourcedefinition.apiextensions.k8s.io/clusterobjectsyncs.reliablesyncs.kubeedge.io created\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax#\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax# kubectl apply -f build/crds/reliablesyncs/objectsync_v1alpha1.yaml\cf1\highlight2 
+\par \cf4\highlight0 Warning:\cf0  apiextensions.k8s.io/v1beta1 CustomResourceDefinition is deprecated in v1.16+, unavailable in v1.22+; use apiextensions.k8s.io/v1 CustomResourceDefinition\cf1\highlight2 
+\par \cf0\highlight0 customresourcedefinition.apiextensions.k8s.io/objectsyncs.reliablesyncs.kubeedge.io created\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax#\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax# kubectl apply -f build/crds/router/router_v1_rule.yaml\cf1\highlight2 
+\par \cf0\highlight0 customresourcedefinition.apiextensions.k8s.io/rules.rules.kubeedge.io created\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax#\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax# kubectl apply -f build/crds/router/router_v1_ruleEndpoint.yaml\cf1\highlight2 
+\par \cf0\highlight0 customresourcedefinition.apiextensions.k8s.io/ruleendpoints.rules.kubeedge.io created\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax#\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax# kubectl apply -f build/crds/edgecluster/mission_v1.yaml\cf1\highlight2 
+\par \cf4\highlight0 Warning:\cf0  apiextensions.k8s.io/v1beta1 CustomResourceDefinition is deprecated in v1.16+, unavailable in v1.22+; use apiextensions.k8s.io/v1 CustomResourceDefinition\cf1\highlight2 
+\par \cf0\highlight0 customresourcedefinition.apiextensions.k8s.io/missions.edgeclusters.kubeedge.io created\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax#\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax# kubectl apply -f build/crds/edgecluster/edgecluster_v1.yaml\cf1\highlight2 
+\par \cf4\highlight0 Warning:\cf0  apiextensions.k8s.io/v1beta1 CustomResourceDefinition is deprecated in v1.16+, unavailable in v1.22+; use apiextensions.k8s.io/v1 CustomResourceDefinition\cf1\highlight2 
+\par \cf0\highlight0 customresourcedefinition.apiextensions.k8s.io/edgeclusters.edgeclusters.kubeedge.io created\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax# nohup _output/local/bin/edgecore --edgecluster > edgecore.logs 2>&1 &\cf1\highlight2 
+\par \cf0\highlight0 [1] 1764\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax# tail -f edgecore.logs\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:49:53.725609    1764 ws.go:46] dial wss://192.168.1.211:10000/e632aba927ea4ac2b575ec1603d56f10/node-c/events successfully\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:49:53.725827    1764 websocket.go:93] Websocket connect to cloud access successful\cf1\highlight2 
+\par \cf0\highlight0 W1209 05:49:53.725917    1764 context_channel.go:335] Failed to get type channel, type:twin\cf1\highlight2 
+\par \cf0\highlight0 W1209 05:49:53.725937    1764 context_channel.go:184] Get bad module type:twin when sendToGroup message, do nothing\cf1\highlight2 
+\par \cf0\highlight0 W1209 05:49:53.725961    1764 context_channel.go:335] Failed to get type channel, type:bus\cf1\highlight2 
+\par \cf0\highlight0 W1209 05:49:53.725973    1764 context_channel.go:184] Get bad module type:bus when sendToGroup message, do nothing\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:49:53.726394    1764 process.go:411] node connection event occur: cloud_connected\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:49:53.726426    1764 process.go:411] node connection event occur: cloud_connected\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:49:56.495262    1764 edgecluster_state_reporter.go:113] Attempting to register edgeCluster (node-c), default/edgeclusterstate/node-c\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:49:56.512603    1764 edgecluster_state_reporter.go:131] Successfully registered edgeCluster node-c\cf1\highlight2 
+\par \cf0\highlight0 ^C\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax# nohup _output/local/bin/cloudcore > cloudcore.logs 2>&1 &\cf1\highlight2 
+\par \cf0\highlight0 [2] 2660\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax# tail -f cloudcore.logs\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:50:14.021447    2660 core.go:24] Starting module devicecontroller\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:50:14.021504    2660 core.go:24] Starting module synccontroller\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:50:14.021581    2660 downstream.go:873] Start downstream devicecontroller\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:50:14.021979    2660 upstream.go:123] start upstream controller\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:50:14.031379    2660 downstream.go:446] start downstream controller\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:50:14.165299    2660 signcerts.go:100] Succeed to creating token\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:50:14.165394    2660 server.go:44] start unix domain socket server\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:50:14.165648    2660 uds.go:71] listening on: //var/lib/kubeedge/kubeedge.sock\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:50:14.166849    2660 server.go:64] Starting cloudhub websocket server\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:50:16.021981    2660 upstream.go:63] Start upstream devicecontroller\cf1\highlight2 
+\par \cf0\highlight0 ^C\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax# tail -f edgecore.logs\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:49:53.725609    1764 ws.go:46] dial wss://192.168.1.211:10000/e632aba927ea4ac2b575ec1603d56f10/node-c/events successfully\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:49:53.725827    1764 websocket.go:93] Websocket connect to cloud access successful\cf1\highlight2 
+\par \cf0\highlight0 W1209 05:49:53.725917    1764 context_channel.go:335] Failed to get type channel, type:twin\cf1\highlight2 
+\par \cf0\highlight0 W1209 05:49:53.725937    1764 context_channel.go:184] Get bad module type:twin when sendToGroup message, do nothing\cf1\highlight2 
+\par \cf0\highlight0 W1209 05:49:53.725961    1764 context_channel.go:335] Failed to get type channel, type:bus\cf1\highlight2 
+\par \cf0\highlight0 W1209 05:49:53.725973    1764 context_channel.go:184] Get bad module type:bus when sendToGroup message, do nothing\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:49:53.726394    1764 process.go:411] node connection event occur: cloud_connected\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:49:53.726426    1764 process.go:411] node connection event occur: cloud_connected\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:49:56.495262    1764 edgecluster_state_reporter.go:113] Attempting to register edgeCluster (node-c), default/edgeclusterstate/node-c\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:49:56.512603    1764 edgecluster_state_reporter.go:131] Successfully registered edgeCluster node-c\cf1\highlight2 
+\par \cf0\highlight0 ^C\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax# scp /etc/kubernetes/admin.conf root@192.168.1.213:/root/go/src/k8s.io/arktos/fornax\cf1\highlight2 
+\par \cf0\highlight0 The authenticity of host '192.168.1.213 (192.168.1.213)' can't be established.\cf1\highlight2 
+\par \cf0\highlight0 ECDSA key fingerprint is SHA256:CwgX7h/zzN3K9IeiEZ+BGK49rwjYaKdrG6IXDe7N+Sk.\cf1\highlight2 
+\par \cf0\highlight0 Are you sure you want to continue connecting (yes/no)? yes\cf1\highlight2 
+\par \cf0\highlight0 Warning: Permanently added '192.168.1.213' (ECDSA) to the list of known hosts.\cf1\highlight2 
+\par \cf0\highlight0 root@192.168.1.213's password:\cf1\highlight2 
+\par \cf0\highlight0 admin.conf                                                                                             100% 5593     7.0MB/s   00:00\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax# kubectl get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                                          READY   STATUS    RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 face          frontend-56b6fd5f8c-92mgb                     0/1     Pending   0          22s\cf1\highlight2 
+\par \cf0\highlight0 face          image-processor-deployment-7d6d54d996-wqmfl   0/1     Pending   0          4s\cf1\highlight2 
+\par \cf0\highlight0 face          mysql-67ff5f6bf4-vmdgg                        0/1     Pending   0          11s\cf1\highlight2 
+\par \cf0\highlight0 face          nsqd-54667b87f4-6f768                         0/1     Pending   0          27s\cf1\highlight2 
+\par \cf0\highlight0 face          receiver-deployment-74b5c7d449-54ttd          0/1     Pending   0          6s\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-558bd4d5db-gjfcq                      1/1     Running   0          95m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-558bd4d5db-ktd47                      1/1     Running   0          95m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   etcd-node-c                                   1/1     Running   0          95m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-apiserver-node-c                         1/1     Running   0          95m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-controller-manager-node-c                1/1     Running   0          95m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-flannel-ds-srw44                         1/1     Running   0          94m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-proxy-bskm8                              1/1     Running   0          95m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-scheduler-node-c                         1/1     Running   0          95m\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax# kubectl get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                                          READY   STATUS    RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 face          face-recog-698dc6b88f-p2n76                   0/1     Pending   0          37s\cf1\highlight2 
+\par \cf0\highlight0 face          frontend-56b6fd5f8c-92mgb                     0/1     Pending   0          78s\cf1\highlight2 
+\par \cf0\highlight0 face          image-processor-deployment-7d6d54d996-wqmfl   0/1     Pending   0          60s\cf1\highlight2 
+\par \cf0\highlight0 face          mysql-67ff5f6bf4-vmdgg                        0/1     Pending   0          67s\cf1\highlight2 
+\par \cf0\highlight0 face          nsqd-54667b87f4-6f768                         0/1     Pending   0          83s\cf1\highlight2 
+\par \cf0\highlight0 face          nsqlookup-56768d5bd8-ktwbd                    0/1     Pending   0          50s\cf1\highlight2 
+\par \cf0\highlight0 face          receiver-deployment-74b5c7d449-54ttd          0/1     Pending   0          62s\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-558bd4d5db-gjfcq                      1/1     Running   0          96m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-558bd4d5db-ktd47                      1/1     Running   0          96m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   etcd-node-c                                   1/1     Running   0          96m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-apiserver-node-c                         1/1     Running   0          96m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-controller-manager-node-c                1/1     Running   0          96m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-flannel-ds-srw44                         1/1     Running   0          95m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-proxy-bskm8                              1/1     Running   0          96m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-scheduler-node-c                         1/1     Running   0          96m\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax# kubectl taint nodes node-c node-role.kubernetes.io/master-\cf1\highlight2 
+\par \cf0\highlight0 node/node-c untainted\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax# kubectl get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                                          READY   STATUS              RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 face          face-recog-698dc6b88f-p2n76                   0/1     ContainerCreating   0          2m2s\cf1\highlight2 
+\par \cf0\highlight0 face          frontend-56b6fd5f8c-92mgb                     0/1     ContainerCreating   0          2m43s\cf1\highlight2 
+\par \cf0\highlight0 face          image-processor-deployment-7d6d54d996-wqmfl   0/1     ContainerCreating   0          2m25s\cf1\highlight2 
+\par \cf0\highlight0 face          mysql-67ff5f6bf4-vmdgg                        0/1     ContainerCreating   0          2m32s\cf1\highlight2 
+\par \cf0\highlight0 face          nsqd-54667b87f4-6f768                         0/1     ContainerCreating   0          2m48s\cf1\highlight2 
+\par \cf0\highlight0 face          nsqlookup-56768d5bd8-ktwbd                    0/1     ContainerCreating   0          2m15s\cf1\highlight2 
+\par \cf0\highlight0 face          receiver-deployment-74b5c7d449-54ttd          0/1     ContainerCreating   0          2m27s\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-558bd4d5db-gjfcq                      1/1     Running             0          98m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-558bd4d5db-ktd47                      1/1     Running             0          98m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   etcd-node-c                                   1/1     Running             0          98m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-apiserver-node-c                         1/1     Running             0          98m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-controller-manager-node-c                1/1     Running             0          98m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-flannel-ds-srw44                         1/1     Running             0          96m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-proxy-bskm8                              1/1     Running             0          98m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-scheduler-node-c                         1/1     Running             0          98m\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax# kubectl get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                                          READY   STATUS              RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 face          face-recog-698dc6b88f-p2n76                   0/1     ContainerCreating   0          3m9s\cf1\highlight2 
+\par \cf0\highlight0 face          frontend-56b6fd5f8c-92mgb                     1/1     Running             0          3m50s\cf1\highlight2 
+\par \cf0\highlight0 face          image-processor-deployment-7d6d54d996-wqmfl   1/1     Running             0          3m32s\cf1\highlight2 
+\par \cf0\highlight0 face          mysql-67ff5f6bf4-vmdgg                        0/1     ContainerCreating   0          3m39s\cf1\highlight2 
+\par \cf0\highlight0 face          nsqd-54667b87f4-6f768                         1/1     Running             0          3m55s\cf1\highlight2 
+\par \cf0\highlight0 face          nsqlookup-56768d5bd8-ktwbd                    1/1     Running             0          3m22s\cf1\highlight2 
+\par \cf0\highlight0 face          receiver-deployment-74b5c7d449-54ttd          0/1     ContainerCreating   0          3m34s\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-558bd4d5db-gjfcq                      1/1     Running             0          99m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-558bd4d5db-ktd47                      1/1     Running             0          99m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   etcd-node-c                                   1/1     Running             0          99m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-apiserver-node-c                         1/1     Running             0          99m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-controller-manager-node-c                1/1     Running             0          99m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-flannel-ds-srw44                         1/1     Running             0          97m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-proxy-bskm8                              1/1     Running             0          99m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-scheduler-node-c                         1/1     Running             0          99m\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax# kubectl get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                                          READY   STATUS              RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 face          face-recog-698dc6b88f-p2n76                   0/1     ContainerCreating   0          4m32s\cf1\highlight2 
+\par \cf0\highlight0 face          frontend-56b6fd5f8c-92mgb                     1/1     Running             0          5m13s\cf1\highlight2 
+\par \cf0\highlight0 face          image-processor-deployment-7d6d54d996-wqmfl   1/1     Running             0          4m55s\cf1\highlight2 
+\par \cf0\highlight0 face          mysql-67ff5f6bf4-vmdgg                        0/1     ContainerCreating   0          5m2s\cf1\highlight2 
+\par \cf0\highlight0 face          nsqd-54667b87f4-6f768                         1/1     Running             0          5m18s\cf1\highlight2 
+\par \cf0\highlight0 face          nsqlookup-56768d5bd8-ktwbd                    1/1     Running             0          4m45s\cf1\highlight2 
+\par \cf0\highlight0 face          receiver-deployment-74b5c7d449-54ttd          0/1     ContainerCreating   0          4m57s\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-558bd4d5db-gjfcq                      1/1     Running             0          100m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-558bd4d5db-ktd47                      1/1     Running             0          100m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   etcd-node-c                                   1/1     Running             0          100m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-apiserver-node-c                         1/1     Running             0          100m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-controller-manager-node-c                1/1     Running             0          100m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-flannel-ds-srw44                         1/1     Running             0          99m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-proxy-bskm8                              1/1     Running             0          100m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-scheduler-node-c                         1/1     Running             0          100m\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax# kubectl get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                                          READY   STATUS              RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 face          face-recog-698dc6b88f-p2n76                   0/1     CrashLoopBackOff    8          25m\cf1\highlight2 
+\par \cf0\highlight0 face          frontend-56b6fd5f8c-92mgb                     1/1     Running             0          26m\cf1\highlight2 
+\par \cf0\highlight0 face          image-processor-deployment-7d6d54d996-wqmfl   1/1     Running             0          25m\cf1\highlight2 
+\par \cf0\highlight0 face          mysql-67ff5f6bf4-vmdgg                        0/1     ContainerCreating   0          26m\cf1\highlight2 
+\par \cf0\highlight0 face          nsqd-54667b87f4-6f768                         1/1     Running             0          26m\cf1\highlight2 
+\par \cf0\highlight0 face          nsqlookup-56768d5bd8-ktwbd                    1/1     Running             0          25m\cf1\highlight2 
+\par \cf0\highlight0 face          receiver-deployment-74b5c7d449-54ttd          1/1     Running             0          25m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-558bd4d5db-gjfcq                      1/1     Running             0          121m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-558bd4d5db-ktd47                      1/1     Running             0          121m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   etcd-node-c                                   1/1     Running             0          121m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-apiserver-node-c                         1/1     Running             0          121m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-controller-manager-node-c                1/1     Running             0          121m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-flannel-ds-srw44                         1/1     Running             0          120m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-proxy-bskm8                              1/1     Running             0          121m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-scheduler-node-c                         1/1     Running             0          121m\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax# kubectl get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                                          READY   STATUS              RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 face          face-recog-698dc6b88f-p2n76                   0/1     CrashLoopBackOff    24         107m\cf1\highlight2 
+\par \cf0\highlight0 face          frontend-56b6fd5f8c-92mgb                     1/1     Running             0          107m\cf1\highlight2 
+\par \cf0\highlight0 face          image-processor-deployment-7d6d54d996-wqmfl   1/1     Running             0          107m\cf1\highlight2 
+\par \cf0\highlight0 face          mysql-67ff5f6bf4-vmdgg                        0/1     ContainerCreating   0          107m\cf1\highlight2 
+\par \cf0\highlight0 face          nsqd-54667b87f4-6f768                         1/1     Running             0          108m\cf1\highlight2 
+\par \cf0\highlight0 face          nsqlookup-56768d5bd8-ktwbd                    1/1     Running             0          107m\cf1\highlight2 
+\par \cf0\highlight0 face          receiver-deployment-74b5c7d449-54ttd          1/1     Running             0          107m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-558bd4d5db-gjfcq                      1/1     Running             0          3h23m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-558bd4d5db-ktd47                      1/1     Running             0          3h23m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   etcd-node-c                                   1/1     Running             0          3h23m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-apiserver-node-c                         1/1     Running             0          3h23m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-controller-manager-node-c                1/1     Running             0          3h23m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-flannel-ds-srw44                         1/1     Running             0          3h21m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-proxy-bskm8                              1/1     Running             0          3h23m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-scheduler-node-c                         1/1     Running             0          3h23m\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax# kubectl get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                                          READY   STATUS              RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 face          face-recog-698dc6b88f-p2n76                   0/1     CrashLoopBackOff    24         108m\cf1\highlight2 
+\par \cf0\highlight0 face          frontend-56b6fd5f8c-92mgb                     1/1     Running             0          109m\cf1\highlight2 
+\par \cf0\highlight0 face          image-processor-deployment-7d6d54d996-wqmfl   1/1     Running             0          108m\cf1\highlight2 
+\par \cf0\highlight0 face          mysql-67ff5f6bf4-vmdgg                        0/1     ContainerCreating   0          109m\cf1\highlight2 
+\par \cf0\highlight0 face          nsqd-54667b87f4-6f768                         1/1     Running             0          109m\cf1\highlight2 
+\par \cf0\highlight0 face          nsqlookup-56768d5bd8-ktwbd                    1/1     Running             0          108m\cf1\highlight2 
+\par \cf0\highlight0 face          receiver-deployment-74b5c7d449-54ttd          1/1     Running             0          109m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-558bd4d5db-gjfcq                      1/1     Running             0          3h24m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-558bd4d5db-ktd47                      1/1     Running             0          3h24m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   etcd-node-c                                   1/1     Running             0          3h24m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-apiserver-node-c                         1/1     Running             0          3h24m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-controller-manager-node-c                1/1     Running             0          3h24m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-flannel-ds-srw44                         1/1     Running             0          3h23m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-proxy-bskm8                              1/1     Running             0          3h24m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-scheduler-node-c                         1/1     Running             0          3h24m\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax# kubectl get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                                          READY   STATUS              RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 face          face-recog-698dc6b88f-p2n76                   0/1     CrashLoopBackOff    24         108m\cf1\highlight2 
+\par \cf0\highlight0 face          frontend-56b6fd5f8c-92mgb                     1/1     Running             0          109m\cf1\highlight2 
+\par \cf0\highlight0 face          image-processor-deployment-7d6d54d996-wqmfl   1/1     Running             0          109m\cf1\highlight2 
+\par \cf0\highlight0 face          mysql-67ff5f6bf4-vmdgg                        0/1     ContainerCreating   0          109m\cf1\highlight2 
+\par \cf0\highlight0 face          nsqd-54667b87f4-6f768                         1/1     Running             0          109m\cf1\highlight2 
+\par \cf0\highlight0 face          nsqlookup-56768d5bd8-ktwbd                    1/1     Running             0          108m\cf1\highlight2 
+\par \cf0\highlight0 face          receiver-deployment-74b5c7d449-54ttd          1/1     Running             0          109m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-558bd4d5db-gjfcq                      1/1     Running             0          3h24m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-558bd4d5db-ktd47                      1/1     Running             0          3h24m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   etcd-node-c                                   1/1     Running             0          3h24m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-apiserver-node-c                         1/1     Running             0          3h24m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-controller-manager-node-c                1/1     Running             0          3h24m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-flannel-ds-srw44                         1/1     Running             0          3h23m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-proxy-bskm8                              1/1     Running             0          3h24m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-scheduler-node-c                         1/1     Running             0          3h24m\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax# kubectl get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                                          READY   STATUS              RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 face          face-recog-698dc6b88f-p2n76                   0/1     CrashLoopBackOff    24         108m\cf1\highlight2 
+\par \cf0\highlight0 face          frontend-56b6fd5f8c-92mgb                     1/1     Running             0          109m\cf1\highlight2 
+\par \cf0\highlight0 face          image-processor-deployment-7d6d54d996-wqmfl   1/1     Running             0          109m\cf1\highlight2 
+\par \cf0\highlight0 face          mysql-67ff5f6bf4-vmdgg                        0/1     ContainerCreating   0          109m\cf1\highlight2 
+\par \cf0\highlight0 face          nsqd-54667b87f4-6f768                         1/1     Running             0          109m\cf1\highlight2 
+\par \cf0\highlight0 face          nsqlookup-56768d5bd8-ktwbd                    1/1     Running             0          108m\cf1\highlight2 
+\par \cf0\highlight0 face          receiver-deployment-74b5c7d449-54ttd          1/1     Running             0          109m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-558bd4d5db-gjfcq                      1/1     Running             0          3h24m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-558bd4d5db-ktd47                      1/1     Running             0          3h24m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   etcd-node-c                                   1/1     Running             0          3h24m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-apiserver-node-c                         1/1     Running             0          3h24m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-controller-manager-node-c                1/1     Running             0          3h24m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-flannel-ds-srw44                         1/1     Running             0          3h23m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-proxy-bskm8                              1/1     Running             0          3h24m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-scheduler-node-c                         1/1     Running             0          3h24m\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax# kubectl get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                                          READY   STATUS              RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 face          face-recog-698dc6b88f-p2n76                   0/1     CrashLoopBackOff    24         108m\cf1\highlight2 
+\par \cf0\highlight0 face          frontend-56b6fd5f8c-92mgb                     1/1     Running             0          109m\cf1\highlight2 
+\par \cf0\highlight0 face          image-processor-deployment-7d6d54d996-wqmfl   1/1     Running             0          109m\cf1\highlight2 
+\par \cf0\highlight0 face          mysql-67ff5f6bf4-vmdgg                        0/1     ContainerCreating   0          109m\cf1\highlight2 
+\par \cf0\highlight0 face          nsqd-54667b87f4-6f768                         1/1     Running             0          109m\cf1\highlight2 
+\par \cf0\highlight0 face          nsqlookup-56768d5bd8-ktwbd                    1/1     Running             0          108m\cf1\highlight2 
+\par \cf0\highlight0 face          receiver-deployment-74b5c7d449-54ttd          1/1     Running             0          109m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-558bd4d5db-gjfcq                      1/1     Running             0          3h24m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-558bd4d5db-ktd47                      1/1     Running             0          3h24m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   etcd-node-c                                   1/1     Running             0          3h24m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-apiserver-node-c                         1/1     Running             0          3h24m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-controller-manager-node-c                1/1     Running             0          3h24m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-flannel-ds-srw44                         1/1     Running             0          3h23m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-proxy-bskm8                              1/1     Running             0          3h24m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-scheduler-node-c                         1/1     Running             0          3h24m\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax# kubectl get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                             READY   STATUS    RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-558bd4d5db-gjfcq         1/1     Running   0          3h31m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-558bd4d5db-ktd47         1/1     Running   0          3h31m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   etcd-node-c                      1/1     Running   0          3h31m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-apiserver-node-c            1/1     Running   0          3h31m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-controller-manager-node-c   1/1     Running   0          3h31m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-flannel-ds-srw44            1/1     Running   0          3h29m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-proxy-bskm8                 1/1     Running   0          3h31m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-scheduler-node-c            1/1     Running   0          3h31m\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax# tail -f cloudcore.logs\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:50:14.165299    2660 signcerts.go:100] Succeed to creating token\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:50:14.165394    2660 server.go:44] start unix domain socket server\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:50:14.165648    2660 uds.go:71] listening on: //var/lib/kubeedge/kubeedge.sock\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:50:14.166849    2660 server.go:64] Starting cloudhub websocket server\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:50:16.021981    2660 upstream.go:63] Start upstream devicecontroller\cf1\highlight2 
+\par \cf0\highlight0 I1209 06:49:25.069842    2660 messagehandler.go:293] edge node node-d for project e632aba927ea4ac2b575ec1603d56f10 connected\cf1\highlight2 
+\par \cf0\highlight0 W1209 06:49:25.069919    2660 upstream.go:188] parse message: bb08a720-9c87-41c1-bc1c-9a888e3be8cb resource type with error: resource type not found,\cf1\highlight2 
+\par \cf0\highlight0 W1209 08:43:15.128575    2660 pruner.go:146] Error in updating the state of mission resource-known-pvc: Operation cannot be fulfilled on missions.edgeclusters.kubeedge.io "resource-known-pvc": the object has been modified; please apply your changes to the latest version and try again\cf1\highlight2 
+\par \cf0\highlight0 W1209 09:03:55.311039    2660 messagehandler.go:207] Timeout to receive heart beat from edge node node-d for project e632aba927ea4ac2b575ec1603d56f10\cf1\highlight2 
+\par \cf0\highlight0 E1209 09:03:55.311328    2660 ws.go:122] failed to read message, error: read tcp 192.168.1.212:10000->192.168.1.213:34702: use of closed network connection\cf1\highlight2 
+\par \cf0\highlight0 ^C\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax# history\cf1\highlight2 
+\par \cf0\highlight0     1  vi /etc/ssh/sshd_config\cf1\highlight2 
+\par \cf0\highlight0     2  init 6\cf1\highlight2 
+\par \cf0\highlight0     3  init 0\cf1\highlight2 
+\par \cf0\highlight0     4  vi /etc/netplan/00-installer-config.yaml\cf1\highlight2 
+\par \cf0\highlight0     5  init 6\cf1\highlight2 
+\par \cf0\highlight0     6  apt-get update && apt-get upgrade -y\cf1\highlight2 
+\par \cf0\highlight0     7  vi /etc/hostname\cf1\highlight2 
+\par \cf0\highlight0     8  init 6\cf1\highlight2 
+\par \cf0\highlight0     9  init 0\cf1\highlight2 
+\par \cf0\highlight0    10  vi /etc/hostname\cf1\highlight2 
+\par \cf0\highlight0    11  init 6\cf1\highlight2 
+\par \cf0\highlight0    12  apt-get update -y\cf1\highlight2 
+\par \cf0\highlight0    13  swapoff -a\cf1\highlight2 
+\par \cf0\highlight0    14  ufw disable\cf1\highlight2 
+\par \cf0\highlight0    15  apt-get install build-essential -y\cf1\highlight2 
+\par \cf0\highlight0    16  init 6\cf1\highlight2 
+\par \cf0\highlight0    17  apt-get install build-essential -y\cf1\highlight2 
+\par \cf0\highlight0    18  ufw disable\cf1\highlight2 
+\par \cf0\highlight0    19  apt-get update -y\cf1\highlight2 
+\par \cf0\highlight0    20  apt-get remove -y docker docker-engine docker.io containerd runc\cf1\highlight2 
+\par \cf0\highlight0    21  apt-get install -y apt-transport-https ca-certificates curl gnupg lsb-release\cf1\highlight2 
+\par \cf0\highlight0    22  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg\cf1\highlight2 
+\par \cf0\highlight0    23  echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | tee /etc/apt/sources.list.d/docker.list > /dev/null\cf1\highlight2 
+\par \cf0\highlight0    24  apt-get update -y\cf1\highlight2 
+\par \cf0\highlight0    25  apt-get install -y docker-ce docker-ce-cli containerd.io\cf1\highlight2 
+\par \cf0\highlight0    26  mkdir /etc/docker\cf1\highlight2 
+\par \cf0\highlight0    27  cat <<EOF | tee /etc/docker/daemon.json\cf1\highlight2 
+\par \cf0\highlight0\{\cf1\highlight2 
+\par 
+\par \cf0\highlight0 "exec-opts": ["native.cgroupdriver=systemd"],\cf1\highlight2 
+\par 
+\par \cf0\highlight0 "log-driver": "json-file",\cf1\highlight2 
+\par 
+\par \cf0\highlight0 "log-opts": \{\cf1\highlight2 
+\par 
+\par \cf0\highlight0 "max-size": "100m"\cf1\highlight2 
+\par 
+\par \cf0\highlight0\},\cf1\highlight2 
+\par 
+\par \cf0\highlight0 "storage-driver": "overlay2"\cf1\highlight2 
+\par 
+\par \cf0\highlight0\}\cf1\highlight2 
+\par 
+\par \cf0\highlight0 EOF\cf1\highlight2 
+\par 
+\par \cf0\highlight0    28  systemctl enable docker\cf1\highlight2 
+\par \cf0\highlight0    29  systemctl daemon-reload\cf1\highlight2 
+\par \cf0\highlight0    30  systemctl restart docker\cf1\highlight2 
+\par \cf0\highlight0    31  systemctl status docker\cf1\highlight2 
+\par \cf0\highlight0    32  swapoff -a\cf1\highlight2 
+\par \cf0\highlight0    33  cat <<EOF | tee /etc/modules-load.d/k8s.conf\cf1\highlight2 
+\par \cf0\highlight0 br_netfilter\cf1\highlight2 
+\par 
+\par \cf0\highlight0 EOF\cf1\highlight2 
+\par 
+\par \cf0\highlight0    34  cat <<EOF | tee /etc/sysctl.d/k8s.conf\cf1\highlight2 
+\par \cf0\highlight0 net.bridge.bridge-nf-call-ip6tables = 1\cf1\highlight2 
+\par 
+\par \cf0\highlight0 net.bridge.bridge-nf-call-iptables = 1\cf1\highlight2 
+\par 
+\par \cf0\highlight0 EOF\cf1\highlight2 
+\par 
+\par \cf0\highlight0    35  sysctl --system\cf1\highlight2 
+\par \cf0\highlight0    36  apt-get update -y\cf1\highlight2 
+\par \cf0\highlight0    37  apt-get install -y apt-transport-https ca-certificates curl\cf1\highlight2 
+\par \cf0\highlight0    38  curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg\cf1\highlight2 
+\par \cf0\highlight0    39  echo "deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | tee /etc/apt/sources.list.d/kubernetes.list\cf1\highlight2 
+\par \cf0\highlight0    40  apt-get update -y\cf1\highlight2 
+\par \cf0\highlight0    41  apt install -y kubeadm=1.21.1-00 kubelet=1.21.1-00 kubectl=1.21.1-00 --allow-change-held-packages\cf1\highlight2 
+\par \cf0\highlight0    42  apt-mark hold kubelet kubeadm kubectl\cf1\highlight2 
+\par \cf0\highlight0    43  systemctl enable --now kubelet\cf1\highlight2 
+\par \cf0\highlight0    44  systemctl status kubelet\cf1\highlight2 
+\par \cf0\highlight0    45  kubeadm init --pod-network-cidr=10.244.0.0/16\cf1\highlight2 
+\par \cf0\highlight0    46  mkdir -p $HOME/.kube\cf1\highlight2 
+\par \cf0\highlight0    47  cp -i /etc/kubernetes/admin.conf $HOME/.kube/config\cf1\highlight2 
+\par \cf0\highlight0    48  chown $(id -u):$(id -g) $HOME/.kube/config\cf1\highlight2 
+\par \cf0\highlight0    49  kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml\cf1\highlight2 
+\par \cf0\highlight0    50  kubectl get nodes\cf1\highlight2 
+\par \cf0\highlight0    51  sudo wget https://storage.googleapis.com/golang/go1.15.4.linux-amd64.tar.gz\cf1\highlight2 
+\par \cf0\highlight0    52  sudo tar -C /usr/local -xzf go1.15.4.linux-amd64.tar.gz\cf1\highlight2 
+\par \cf0\highlight0    53  sudo echo 'export PATH=$PATH:/usr/local/go/bin' >> $HOME/.profile\cf1\highlight2 
+\par \cf0\highlight0    54  sudo echo 'export GOPATH=$HOME/gopath' >> $HOME/.profile\cf1\highlight2 
+\par \cf0\highlight0    55  source $HOME/.profile\cf1\highlight2 
+\par \cf0\highlight0    56  apt install -y make gcc jq\cf1\highlight2 
+\par \cf0\highlight0    57  go versin\cf1\highlight2 
+\par \cf0\highlight0    58  go version\cf1\highlight2 
+\par \cf0\highlight0    59  git clone https://github.com/CentaurusInfra/fornax\cf1\highlight2 
+\par \cf0\highlight0    60  cd fornax\cf1\highlight2 
+\par \cf0\highlight0    61  make WHAT=cloudcore\cf1\highlight2 
+\par \cf0\highlight0    62  make WHAT=edgecore\cf1\highlight2 
+\par \cf0\highlight0    63  mkdir -p /etc/kubeedge/ca\cf1\highlight2 
+\par \cf0\highlight0    64  mkdir -p /etc/kubeedge/certs\cf1\highlight2 
+\par \cf0\highlight0    65  scp -r 192.168.1.210:/etc/kubeedge/ca /etc/kubeedge\cf1\highlight2 
+\par \cf0\highlight0    66  scp -r 192.168.1.210:/etc/kubeedge/certs /etc/kubeedge\cf1\highlight2 
+\par \cf0\highlight0    67  cp /etc/kubernetes/admin.conf /root/.kube/config\cf1\highlight2 
+\par \cf0\highlight0    68  mkdir -p /etc/kubeedge/config\cf1\highlight2 
+\par \cf0\highlight0    69  _output/local/bin/cloudcore --minconfig > /etc/kubeedge/config/cloudcore.yaml\cf1\highlight2 
+\par \cf0\highlight0    70  cp /etc/kubernetes/admin.conf /root/edgecluster.kubeconfig\cf1\highlight2 
+\par \cf0\highlight0    71  _output/local/bin/edgecore --edgeclusterconfig > /etc/kubeedge/config/edgecore.yaml\cf1\highlight2 
+\par \cf0\highlight0    72  scp 192.168.1.211:/etc/kubernetes/admin.conf /root/fornax\cf1\highlight2 
+\par \cf0\highlight0    73  tests/edgecluster/hack/update_edgecore_config.sh admin.conf\cf1\highlight2 
+\par \cf0\highlight0    74  chmod a+x tests/edgecluster/hack/update_edgecore_config.sh\cf1\highlight2 
+\par \cf0\highlight0    75  kubectl apply -f build/crds/devices/devices_v1alpha2_device.yaml\cf1\highlight2 
+\par \cf0\highlight0    76  kubectl apply -f build/crds/devices/devices_v1alpha2_devicemodel.yaml\cf1\highlight2 
+\par \cf0\highlight0    77  kubectl apply -f build/crds/reliablesyncs/cluster_objectsync_v1alpha1.yaml\cf1\highlight2 
+\par \cf0\highlight0    78  kubectl apply -f build/crds/reliablesyncs/objectsync_v1alpha1.yaml\cf1\highlight2 
+\par \cf0\highlight0    79  kubectl apply -f build/crds/router/router_v1_rule.yaml\cf1\highlight2 
+\par \cf0\highlight0    80  kubectl apply -f build/crds/router/router_v1_ruleEndpoint.yaml\cf1\highlight2 
+\par \cf0\highlight0    81  kubectl apply -f build/crds/edgecluster/mission_v1.yaml\cf1\highlight2 
+\par \cf0\highlight0    82  kubectl apply -f build/crds/edgecluster/edgecluster_v1.yaml\cf1\highlight2 
+\par \cf0\highlight0    83  nohup _output/local/bin/edgecore --edgecluster > edgecore.logs 2>&1 &\cf1\highlight2 
+\par \cf0\highlight0    84  tail -f edgecore.logs\cf1\highlight2 
+\par \cf0\highlight0    85  nohup _output/local/bin/cloudcore > cloudcore.logs 2>&1 &\cf1\highlight2 
+\par \cf0\highlight0    86  tail -f cloudcore.logs\cf1\highlight2 
+\par \cf0\highlight0    87  tail -f edgecore.logs\cf1\highlight2 
+\par \cf0\highlight0    88  scp /etc/kubernetes/admin.conf root@192.168.1.213:/root/go/src/k8s.io/arktos/fornax\cf1\highlight2 
+\par \cf0\highlight0    89  kubectl get pods -A\cf1\highlight2 
+\par \cf0\highlight0    90  kubectl taint nodes node-c node-role.kubernetes.io/master-\cf1\highlight2 
+\par \cf0\highlight0    91  kubectl get pods -A\cf1\highlight2 
+\par \cf0\highlight0    92  tail -f cloudcore.logs\cf1\highlight2 
+\par \cf0\highlight0    93  history\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax#  scp /etc/kubernetes/admin.conf root@192.168.1.213:/root/go/src/k8s.io/arktos/fornax\cf1\highlight2 
+\par \cf0\highlight0 root@192.168.1.213's password:\cf1\highlight2 
+\par \cf0\highlight0 admin.conf                                                                                             100% 5593     6.4MB/s   00:00\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax# scp -r 192.168.1.213:/etc/kubeedge/ca /etc/kubeedge\cf1\highlight2 
+\par \cf0\highlight0 root@192.168.1.213's password:\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax#  scp /etc/kubernetes/admin.conf root@192.168.1.213:/root/go/src/k8s.io/arktos/fornax\cf1\highlight2 
+\par \cf0\highlight0 root@192.168.1.213's password:\cf1\highlight2 
+\par \cf0\highlight0 admin.conf                                                                                             100% 5593     2.7MB/s   00:00\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax# tail -f cloudcore.logs\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:50:14.165299    2660 signcerts.go:100] Succeed to creating token\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:50:14.165394    2660 server.go:44] start unix domain socket server\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:50:14.165648    2660 uds.go:71] listening on: //var/lib/kubeedge/kubeedge.sock\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:50:14.166849    2660 server.go:64] Starting cloudhub websocket server\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:50:16.021981    2660 upstream.go:63] Start upstream devicecontroller\cf1\highlight2 
+\par \cf0\highlight0 I1209 06:49:25.069842    2660 messagehandler.go:293] edge node node-d for project e632aba927ea4ac2b575ec1603d56f10 connected\cf1\highlight2 
+\par \cf0\highlight0 W1209 06:49:25.069919    2660 upstream.go:188] parse message: bb08a720-9c87-41c1-bc1c-9a888e3be8cb resource type with error: resource type not found,\cf1\highlight2 
+\par \cf0\highlight0 W1209 08:43:15.128575    2660 pruner.go:146] Error in updating the state of mission resource-known-pvc: Operation cannot be fulfilled on missions.edgeclusters.kubeedge.io "resource-known-pvc": the object has been modified; please apply your changes to the latest version and try again\cf1\highlight2 
+\par \cf0\highlight0 W1209 09:03:55.311039    2660 messagehandler.go:207] Timeout to receive heart beat from edge node node-d for project e632aba927ea4ac2b575ec1603d56f10\cf1\highlight2 
+\par \cf0\highlight0 E1209 09:03:55.311328    2660 ws.go:122] failed to read message, error: read tcp 192.168.1.212:10000->192.168.1.213:34702: use of closed network connection\cf1\highlight2 
+\par \cf0\highlight0 ^C\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax# kubectl get edgecluster\cf1\highlight2 
+\par \cf0\highlight0 NAME     LASTHEARBEAT   HEALTHSTATUS   SUBEDGECLUSTERS   RECEIVED_MISSIONS   MATCHED_MISSIONS\cf1\highlight2 
+\par \cf0\highlight0 node-d   5s             healthy\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax# kubectl get edgecluster\cf1\highlight2 
+\par \cf0\highlight0 NAME     LASTHEARBEAT   HEALTHSTATUS   SUBEDGECLUSTERS   RECEIVED_MISSIONS   MATCHED_MISSIONS\cf1\highlight2 
+\par \cf0\highlight0 node-d   8s             healthy\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax# kubectl get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                                   READY   STATUS                       RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 face          nsqd-54667b87f4-6j5jd                  1/1     Running                      0          26s\cf1\highlight2 
+\par \cf0\highlight0 face          nsqlookup-56768d5bd8-f2dn4             1/1     Running                      0          23s\cf1\highlight2 
+\par \cf0\highlight0 face          receiver-deployment-74b5c7d449-dcklq   0/1     CreateContainerConfigError   0          12s\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-558bd4d5db-gjfcq               1/1     Running                      0          4h24m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-558bd4d5db-ktd47               1/1     Running                      0          4h24m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   etcd-node-c                            1/1     Running                      0          4h24m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-apiserver-node-c                  1/1     Running                      0          4h24m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-controller-manager-node-c         1/1     Running                      0          4h24m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-flannel-ds-srw44                  1/1     Running                      0          4h22m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-proxy-bskm8                       1/1     Running                      0          4h24m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-scheduler-node-c                  1/1     Running                      0          4h24m\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax# kubectl get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                                          READY   STATUS    RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 face          face-recog-698dc6b88f-mzztq                   0/1     Pending   0          21s\cf1\highlight2 
+\par \cf0\highlight0 face          frontend-56b6fd5f8c-cqz7x                     1/1     Running   0          25s\cf1\highlight2 
+\par \cf0\highlight0 face          image-processor-deployment-7d6d54d996-f6k79   1/1     Running   0          42s\cf1\highlight2 
+\par \cf0\highlight0 face          mysql-67ff5f6bf4-nb8cm                        0/1     Pending   0          0s\cf1\highlight2 
+\par \cf0\highlight0 face          nsqd-54667b87f4-6j5jd                         1/1     Running   0          70s\cf1\highlight2 
+\par \cf0\highlight0 face          nsqlookup-56768d5bd8-f2dn4                    1/1     Running   0          67s\cf1\highlight2 
+\par \cf0\highlight0 face          receiver-deployment-74b5c7d449-dcklq          1/1     Running   0          56s\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-558bd4d5db-gjfcq                      1/1     Running   0          4h24m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-558bd4d5db-ktd47                      1/1     Running   0          4h24m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   etcd-node-c                                   1/1     Running   0          4h24m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-apiserver-node-c                         1/1     Running   0          4h24m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-controller-manager-node-c                1/1     Running   0          4h24m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-flannel-ds-srw44                         1/1     Running   0          4h23m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-proxy-bskm8                              1/1     Running   0          4h24m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-scheduler-node-c                         1/1     Running   0          4h25m\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax# kubectl get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                                          READY   STATUS              RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 face          face-recog-698dc6b88f-mzztq                   0/1     CrashLoopBackOff    10         32m\cf1\highlight2 
+\par \cf0\highlight0 face          frontend-56b6fd5f8c-cqz7x                     1/1     Running             0          33m\cf1\highlight2 
+\par \cf0\highlight0 face          image-processor-deployment-7d6d54d996-f6k79   1/1     Running             0          33m\cf1\highlight2 
+\par \cf0\highlight0 face          mysql-67ff5f6bf4-nb8cm                        0/1     ContainerCreating   0          32m\cf1\highlight2 
+\par \cf0\highlight0 face          nsqd-54667b87f4-6j5jd                         1/1     Running             0          33m\cf1\highlight2 
+\par \cf0\highlight0 face          nsqlookup-56768d5bd8-f2dn4                    1/1     Running             0          33m\cf1\highlight2 
+\par \cf0\highlight0 face          receiver-deployment-74b5c7d449-dcklq          1/1     Running             0          33m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-558bd4d5db-gjfcq                      1/1     Running             0          4h57m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-558bd4d5db-ktd47                      1/1     Running             0          4h57m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   etcd-node-c                                   1/1     Running             0          4h57m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-apiserver-node-c                         1/1     Running             0          4h57m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-controller-manager-node-c                1/1     Running             0          4h57m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-flannel-ds-srw44                         1/1     Running             0          4h55m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-proxy-bskm8                              1/1     Running             0          4h57m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-scheduler-node-c                         1/1     Running             0          4h57m\cf1\highlight2 
+\par \cf0\highlight0 root@node-c:~/fornax#\cf1\highlight2 
+\par \pard\cf0\highlight0\f2 
+\par }
+ 

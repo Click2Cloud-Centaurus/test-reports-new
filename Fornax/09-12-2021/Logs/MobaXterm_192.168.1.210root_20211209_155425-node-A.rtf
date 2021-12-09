@@ -1,0 +1,1234 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fmodern Consolas;}{\f1\fmodern\fcharset0 Consolas;}{\f2\fnil\fcharset129 Courier New;}}
+{\colortbl ;\red20\green20\blue20;\red142\green142\blue142;\red16\green158\blue98;\red148\green146\blue12;\red170\green51\blue170;\red56\green136\blue159;\red18\green124\blue155;\red170\green85\blue85;\red85\green85\blue85;\red170\green64\blue64;}
+\viewkind4\uc1\pard\f0\fs20     \u9484?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9488?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?                 \cf3\f1\bullet  MobaXterm Personal Edition v21.4 \bullet\cf0\f0                  \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?               \cf4 (SSH client, X server and network tools)\cf0                \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?                                                                      \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474? \u8594? SSH session to \cf5 root@192.168.1.210                        \cf0           \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  Direct SSH      :  \cf3\f0 v\cf0                                              \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  SSH compression :  \cf3\f0 v\cf0                                              \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  SSH-browser     :  \cf3\f0 v\cf0                                              \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  X11-forwarding  :  \cf3\f0 v\cf0   (remote display is forwarded through SSH)  \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?                                                                      \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474? \u8594? For more info, ctrl+click on \cf6\ul help\cf0\ulnone  or visit our \cf6\ul website\cf0\ulnone .            \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9492?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9496?\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 4.15.0-159-generic x86_64)\cf1\highlight2 
+\par 
+\par \cf0\highlight0  * Documentation:  https://help.ubuntu.com\cf1\highlight2 
+\par \cf0\highlight0  * Management:     https://landscape.canonical.com\cf1\highlight2 
+\par \cf0\highlight0  * Support:        https://ubuntu.com/advantage\cf1\highlight2 
+\par 
+\par \cf0\highlight0   System information as of Thu Dec  9 05:05:40 UTC 2021\cf1\highlight2 
+\par 
+\par \cf0\highlight0   System load:  0.04              Processes:             311\cf1\highlight2 
+\par \cf0\highlight0   Usage of /:   8.7% of 72.83GB   Users logged in:       0\cf1\highlight2 
+\par \cf0\highlight0   Memory usage: 3%                IP address for ens160: 192.168.1.210\cf1\highlight2 
+\par \cf0\highlight0   Swap usage:   0%\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0  * Canonical Livepatch is available for installation.\cf1\highlight2 
+\par \cf0\highlight0    - Reduce system reboots and improve kernel security. Activate at:\cf1\highlight2 
+\par \cf0\highlight0      https://ubuntu.com/livepatch\cf1\highlight2 
+\par 
+\par \cf0\highlight0 76 packages can be updated.\cf1\highlight2 
+\par \cf0\highlight0 1 update is a security update.\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 *** System restart required ***\cf1\highlight2 
+\par \cf0\highlight0 Last login: Tue Dec  7 04:47:32 2021 from 192.168.1.1\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~# history\cf1\highlight2 
+\par \cf0\highlight0     1  vi /etc/ssh/sshd_config\cf1\highlight2 
+\par \cf0\highlight0     2  init 6\cf1\highlight2 
+\par \cf0\highlight0     3  init 0\cf1\highlight2 
+\par \cf0\highlight0     4  ip a\cf1\highlight2 
+\par \cf0\highlight0     5  init 0\cf1\highlight2 
+\par \cf0\highlight0     6  ip a\cf1\highlight2 
+\par \cf0\highlight0     7  vim /etc/netplan/00-installer-config.yaml\cf1\highlight2 
+\par \cf0\highlight0     8  netplan apply\cf1\highlight2 
+\par \cf0\highlight0     9  init 0\cf1\highlight2 
+\par \cf0\highlight0    10  vi /etc/hostname\cf1\highlight2 
+\par \cf0\highlight0    11  init 6\cf1\highlight2 
+\par \cf0\highlight0    12  apt-get update -y\cf1\highlight2 
+\par \cf0\highlight0    13  swapoff -a\cf1\highlight2 
+\par \cf0\highlight0    14  ufw disable\cf1\highlight2 
+\par \cf0\highlight0    15  apt-get install build-essential -y\cf1\highlight2 
+\par \cf0\highlight0    16  history\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~# ls\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~# ll\cf1\highlight2 
+\par \cf0\highlight0 total 40\cf1\highlight2 
+\par \cf0\highlight0 drwx------  5 root root 4096 Dec  9 05:05 \cf7 .\cf0 /\cf1\highlight2 
+\par \cf0\highlight0 drwxr-xr-x 24 root root 4096 Dec  7 06:47 \cf7 ..\cf0 /\cf1\highlight2 
+\par \cf0\highlight0 -rw-------  1 root root  221 Dec  7 05:16 .bash_history\cf1\highlight2 
+\par \cf0\highlight0 -rw-r--r--  1 root root 3106 Apr  9  2018 .bashrc\cf1\highlight2 
+\par \cf0\highlight0 drwx------  2 root root 4096 Oct  5 05:55 \cf7 .cache\cf0 /\cf1\highlight2 
+\par \cf0\highlight0 drwx------  3 root root 4096 Oct  5 05:55 \cf7 .gnupg\cf0 /\cf1\highlight2 
+\par \cf0\highlight0 -rw-r--r--  1 root root  148 Aug 17  2015 .profile\cf1\highlight2 
+\par \cf0\highlight0 drwx------  2 root root 4096 Oct  5 05:50 \cf7 .ssh\cf0 /\cf1\highlight2 
+\par \cf0\highlight0 -rw-------  1 root root 2147 Dec  7 04:45 .viminfo\cf1\highlight2 
+\par \cf0\highlight0 -rw-------  1 root root  156 Dec  9 05:05 .Xauthority\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~# systemctl status docker\cf1\highlight2 
+\par \cf0\highlight0 Unit docker.service could not be found.\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~# swapoff -a\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~# uw disable\cf1\highlight2 
+\par \cf0\highlight0 uw: command not found\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~# ufw disable\cf1\highlight2 
+\par \cf0\highlight0 Firewall stopped and disabled on system startup\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~# apt-get update -y\cf1\highlight2 
+\par \cf0\highlight0 Hit:1 http://in.archive.ubuntu.com/ubuntu bionic InRelease\cf1\highlight2 
+\par \cf0\highlight0 Get:2 http://in.archive.ubuntu.com/ubuntu bionic-updates InRelease [88.7 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:3 http://in.archive.ubuntu.com/ubuntu bionic-backports InRelease [74.6 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:4 http://in.archive.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:5 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 Packages [2,328 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:6 http://in.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 Packages [1,771 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:7 http://in.archive.ubuntu.com/ubuntu bionic-security/main amd64 Packages [1,983 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:8 http://in.archive.ubuntu.com/ubuntu bionic-security/universe amd64 Packages [1,153 kB]\cf1\highlight2 
+\par \cf0\highlight0 Fetched 7,486 kB in 4s (1,816 kB/s)\cf1\highlight2 
+\par \cf0\highlight0 Reading package lists... Done\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~# apt-get remove -y docker docker-engine docker.io containerd runc\cf1\highlight2 
+\par \cf0\highlight0 Reading package lists... Done\cf1\highlight2 
+\par \cf0\highlight0 Building dependency tree\cf1\highlight2 
+\par \cf0\highlight0 Reading state information... Done\cf1\highlight2 
+\par \cf0\highlight0 Package 'docker-engine' is not installed, so not removed\cf1\highlight2 
+\par \cf0\highlight0 Package 'docker' is not installed, so not removed\cf1\highlight2 
+\par \cf0\highlight0 Package 'containerd' is not installed, so not removed\cf1\highlight2 
+\par \cf0\highlight0 Package 'docker.io' is not installed, so not removed\cf1\highlight2 
+\par \cf0\highlight0 Package 'runc' is not installed, so not removed\cf1\highlight2 
+\par \cf0\highlight0 0 upgraded, 0 newly installed, 0 to remove and 72 not upgraded.\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~# apt-get install -y apt-transport-https ca-certificates curl gnupg lsb-release\cf1\highlight2 
+\par \cf0\highlight0 Reading package lists... Done\cf1\highlight2 
+\par \cf0\highlight0 Building dependency tree\cf1\highlight2 
+\par \cf0\highlight0 Reading state information... Done\cf1\highlight2 
+\par \cf0\highlight0 lsb-release is already the newest version (9.20170808ubuntu1).\cf1\highlight2 
+\par \cf0\highlight0 lsb-release set to manually installed.\cf1\highlight2 
+\par \cf0\highlight0 ca-certificates is already the newest version (20210119~18.04.2).\cf1\highlight2 
+\par \cf0\highlight0 ca-certificates set to manually installed.\cf1\highlight2 
+\par \cf0\highlight0 curl is already the newest version (7.58.0-2ubuntu3.16).\cf1\highlight2 
+\par \cf0\highlight0 curl set to manually installed.\cf1\highlight2 
+\par \cf0\highlight0 The following additional packages will be installed:\cf1\highlight2 
+\par \cf0\highlight0   dirmngr gnupg-l10n gnupg-utils gpg gpg-agent gpg-wks-client gpg-wks-server gpgconf gpgsm gpgv\cf1\highlight2 
+\par \cf0\highlight0 Suggested packages:\cf1\highlight2 
+\par \cf0\highlight0   dbus-user-session pinentry-gnome3 tor parcimonie xloadimage scdaemon\cf1\highlight2 
+\par \cf0\highlight0 The following NEW packages will be installed:\cf1\highlight2 
+\par \cf0\highlight0   apt-transport-https\cf1\highlight2 
+\par \cf0\highlight0 The following packages will be upgraded:\cf1\highlight2 
+\par \cf0\highlight0   dirmngr gnupg gnupg-l10n gnupg-utils gpg gpg-agent gpg-wks-client gpg-wks-server gpgconf gpgsm gpgv\cf1\highlight2 
+\par \cf0\highlight0 11 upgraded, 1 newly installed, 0 to remove and 61 not upgraded.\cf1\highlight2 
+\par \cf0\highlight0 Need to get 2,155 kB of archives.\cf1\highlight2 
+\par \cf0\highlight0 After this operation, 154 kB of additional disk space will be used.\cf1\highlight2 
+\par \cf0\highlight0 Get:1 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 gpg-wks-client amd64 2.2.4-1ubuntu1.4 [91.8 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:2 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 dirmngr amd64 2.2.4-1ubuntu1.4 [316 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:3 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 gpg-wks-server amd64 2.2.4-1ubuntu1.4 [85.0 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:4 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 gnupg-utils amd64 2.2.4-1ubuntu1.4 [128 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:5 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 gpg-agent amd64 2.2.4-1ubuntu1.4 [227 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:6 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 gpg amd64 2.2.4-1ubuntu1.4 [467 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:7 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 gpgconf amd64 2.2.4-1ubuntu1.4 [123 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:8 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 gnupg-l10n all 2.2.4-1ubuntu1.4 [49.8 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:9 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 gnupg amd64 2.2.4-1ubuntu1.4 [249 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:10 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 gpgsm amd64 2.2.4-1ubuntu1.4 [215 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:11 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 gpgv amd64 2.2.4-1ubuntu1.4 [198 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:12 http://in.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 apt-transport-https all 1.6.14 [4,348 B]\cf1\highlight2 
+\par \cf0\highlight0 Fetched 2,155 kB in 1s (2,343 kB/s)\cf1\highlight2 
+\par \cf0\highlight0 (Reading database ... 108187 files and directories currently installed.)\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../00-gpg-wks-client_2.2.4-1ubuntu1.4_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking gpg-wks-client (2.2.4-1ubuntu1.4) over (2.2.4-1ubuntu1.3) ...\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../01-dirmngr_2.2.4-1ubuntu1.4_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking dirmngr (2.2.4-1ubuntu1.4) over (2.2.4-1ubuntu1.3) ...\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../02-gpg-wks-server_2.2.4-1ubuntu1.4_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking gpg-wks-server (2.2.4-1ubuntu1.4) over (2.2.4-1ubuntu1.3) ...\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../03-gnupg-utils_2.2.4-1ubuntu1.4_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking gnupg-utils (2.2.4-1ubuntu1.4) over (2.2.4-1ubuntu1.3) ...\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../04-gpg-agent_2.2.4-1ubuntu1.4_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking gpg-agent (2.2.4-1ubuntu1.4) over (2.2.4-1ubuntu1.3) ...\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../05-gpg_2.2.4-1ubuntu1.4_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking gpg (2.2.4-1ubuntu1.4) over (2.2.4-1ubuntu1.3) ...\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../06-gpgconf_2.2.4-1ubuntu1.4_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking gpgconf (2.2.4-1ubuntu1.4) over (2.2.4-1ubuntu1.3) ...\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../07-gnupg-l10n_2.2.4-1ubuntu1.4_all.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking gnupg-l10n (2.2.4-1ubuntu1.4) over (2.2.4-1ubuntu1.3) ...\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../08-gnupg_2.2.4-1ubuntu1.4_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking gnupg (2.2.4-1ubuntu1.4) over (2.2.4-1ubuntu1.3) ...\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../09-gpgsm_2.2.4-1ubuntu1.4_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking gpgsm (2.2.4-1ubuntu1.4) over (2.2.4-1ubuntu1.3) ...\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../10-gpgv_2.2.4-1ubuntu1.4_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking gpgv (2.2.4-1ubuntu1.4) over (2.2.4-1ubuntu1.3) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up gpgv (2.2.4-1ubuntu1.4) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package apt-transport-https.\cf1\highlight2 
+\par \cf0\highlight0 (Reading database ... 108187 files and directories currently installed.)\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../apt-transport-https_1.6.14_all.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking apt-transport-https (1.6.14) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up apt-transport-https (1.6.14) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up gpgconf (2.2.4-1ubuntu1.4) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up gpg-agent (2.2.4-1ubuntu1.4) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up gnupg-l10n (2.2.4-1ubuntu1.4) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up gpgsm (2.2.4-1ubuntu1.4) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up gnupg-utils (2.2.4-1ubuntu1.4) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up dirmngr (2.2.4-1ubuntu1.4) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up gpg (2.2.4-1ubuntu1.4) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up gpg-wks-server (2.2.4-1ubuntu1.4) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up gpg-wks-client (2.2.4-1ubuntu1.4) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up gnupg (2.2.4-1ubuntu1.4) ...\cf1\highlight2 
+\par \cf0\highlight0 Processing triggers for install-info (6.5.0.dfsg.1-2) ...\cf1\highlight2 
+\par \cf0\highlight0 Processing triggers for man-db (2.8.3-2ubuntu0.1) ...\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~# curl -fsSL https://download.docker.com/linux/ubuntu/gpg | gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~#\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~# echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | tee /etc/apt/sources.list.d/docker.list > /dev/null\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~# apt-get update -y\cf1\highlight2 
+\par \cf0\highlight0 Hit:1 http://in.archive.ubuntu.com/ubuntu bionic InRelease\cf1\highlight2 
+\par \cf0\highlight0 Hit:2 http://in.archive.ubuntu.com/ubuntu bionic-updates InRelease\cf1\highlight2 
+\par \cf0\highlight0 Hit:3 http://in.archive.ubuntu.com/ubuntu bionic-backports InRelease\cf1\highlight2 
+\par \cf0\highlight0 Get:4 https://download.docker.com/linux/ubuntu bionic InRelease [64.4 kB]\cf1\highlight2 
+\par \cf0\highlight0 Hit:5 http://in.archive.ubuntu.com/ubuntu bionic-security InRelease\cf1\highlight2 
+\par \cf0\highlight0 Get:6 https://download.docker.com/linux/ubuntu bionic/stable amd64 Packages [21.8 kB]\cf1\highlight2 
+\par \cf0\highlight0 Fetched 86.3 kB in 1s (140 kB/s)\cf1\highlight2 
+\par \cf0\highlight0 Reading package lists... Done\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~#\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~# apt-get install -y docker-ce docker-ce-cli containerd.io\cf1\highlight2 
+\par \cf0\highlight0 Reading package lists... Done\cf1\highlight2 
+\par \cf0\highlight0 Building dependency tree\cf1\highlight2 
+\par \cf0\highlight0 Reading state information... Done\cf1\highlight2 
+\par \cf0\highlight0 The following additional packages will be installed:\cf1\highlight2 
+\par \cf0\highlight0   dbus-user-session docker-ce-rootless-extras docker-scan-plugin libltdl7 pigz\cf1\highlight2 
+\par \cf0\highlight0 Suggested packages:\cf1\highlight2 
+\par \cf0\highlight0   aufs-tools cgroupfs-mount | cgroup-lite\cf1\highlight2 
+\par \cf0\highlight0 Recommended packages:\cf1\highlight2 
+\par \cf0\highlight0   slirp4netns\cf1\highlight2 
+\par \cf0\highlight0 The following NEW packages will be installed:\cf1\highlight2 
+\par \cf0\highlight0   containerd.io dbus-user-session docker-ce docker-ce-cli docker-ce-rootless-extras docker-scan-plugin libltdl7 pigz\cf1\highlight2 
+\par \cf0\highlight0 0 upgraded, 8 newly installed, 0 to remove and 61 not upgraded.\cf1\highlight2 
+\par \cf0\highlight0 Need to get 95.3 MB of archives.\cf1\highlight2 
+\par \cf0\highlight0 After this operation, 403 MB of additional disk space will be used.\cf1\highlight2 
+\par \cf0\highlight0 Get:1 https://download.docker.com/linux/ubuntu bionic/stable amd64 containerd.io amd64 1.4.12-1 [23.7 MB]\cf1\highlight2 
+\par \cf0\highlight0 Get:2 http://in.archive.ubuntu.com/ubuntu bionic/universe amd64 pigz amd64 2.4-1 [57.4 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:3 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 dbus-user-session amd64 1.12.2-1ubuntu1.2 [9,392 B]\cf1\highlight2 
+\par \cf0\highlight0 Get:4 http://in.archive.ubuntu.com/ubuntu bionic/main amd64 libltdl7 amd64 2.4.6-2 [38.8 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:5 https://download.docker.com/linux/ubuntu bionic/stable amd64 docker-ce-cli amd64 5:20.10.11~3-0~ubuntu-bionic [38.8 MB]\cf1\highlight2 
+\par \cf0\highlight0 Get:6 https://download.docker.com/linux/ubuntu bionic/stable amd64 docker-ce amd64 5:20.10.11~3-0~ubuntu-bionic [21.2 MB]\cf1\highlight2 
+\par \cf0\highlight0 Get:7 https://download.docker.com/linux/ubuntu bionic/stable amd64 docker-ce-rootless-extras amd64 5:20.10.11~3-0~ubuntu-bionic [7,920 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:8 https://download.docker.com/linux/ubuntu bionic/stable amd64 docker-scan-plugin amd64 0.9.0~ubuntu-bionic [3,518 kB]\cf1\highlight2 
+\par \cf0\highlight0 Fetched 95.3 MB in 10s (9,168 kB/s)\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package pigz.\cf1\highlight2 
+\par \cf0\highlight0 (Reading database ... 108191 files and directories currently installed.)\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../0-pigz_2.4-1_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking pigz (2.4-1) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package containerd.io.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../1-containerd.io_1.4.12-1_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking containerd.io (1.4.12-1) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package dbus-user-session.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../2-dbus-user-session_1.12.2-1ubuntu1.2_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking dbus-user-session (1.12.2-1ubuntu1.2) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package docker-ce-cli.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../3-docker-ce-cli_5%3a20.10.11~3-0~ubuntu-bionic_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking docker-ce-cli (5:20.10.11~3-0~ubuntu-bionic) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package docker-ce.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../4-docker-ce_5%3a20.10.11~3-0~ubuntu-bionic_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking docker-ce (5:20.10.11~3-0~ubuntu-bionic) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package docker-ce-rootless-extras.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../5-docker-ce-rootless-extras_5%3a20.10.11~3-0~ubuntu-bionic_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking docker-ce-rootless-extras (5:20.10.11~3-0~ubuntu-bionic) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package docker-scan-plugin.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../6-docker-scan-plugin_0.9.0~ubuntu-bionic_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking docker-scan-plugin (0.9.0~ubuntu-bionic) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package libltdl7:amd64.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../7-libltdl7_2.4.6-2_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking libltdl7:amd64 (2.4.6-2) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up containerd.io (1.4.12-1) ...\cf1\highlight2 
+\par \cf0\highlight0 Created symlink /etc/systemd/system/multi-user.target.wants/containerd.service \u8594? /lib/systemd/system/containerd.service.\cf1\highlight2 
+\par \cf0\highlight0 /usr/sbin/policy-rc.d returned 101, not running 'start containerd.service'\cf1\highlight2 
+\par \cf0\highlight0 Setting up docker-scan-plugin (0.9.0~ubuntu-bionic) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up dbus-user-session (1.12.2-1ubuntu1.2) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up libltdl7:amd64 (2.4.6-2) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up docker-ce-cli (5:20.10.11~3-0~ubuntu-bionic) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up pigz (2.4-1) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up docker-ce (5:20.10.11~3-0~ubuntu-bionic) ...\cf1\highlight2 
+\par \cf0\highlight0 Created symlink /etc/systemd/system/multi-user.target.wants/docker.service \u8594? /lib/systemd/system/docker.service.\cf1\highlight2 
+\par \cf0\highlight0 Created symlink /etc/systemd/system/sockets.target.wants/docker.socket \u8594? /lib/systemd/system/docker.socket.\cf1\highlight2 
+\par \cf0\highlight0 invoke-rc.d: policy-rc.d denied execution of start.\cf1\highlight2 
+\par \cf0\highlight0 Setting up docker-ce-rootless-extras (5:20.10.11~3-0~ubuntu-bionic) ...\cf1\highlight2 
+\par \cf0\highlight0 Processing triggers for systemd (237-3ubuntu10.50) ...\cf1\highlight2 
+\par \cf0\highlight0 Processing triggers for man-db (2.8.3-2ubuntu0.1) ...\cf1\highlight2 
+\par \cf0\highlight0 Processing triggers for ureadahead (0.100.0-21) ...\cf1\highlight2 
+\par \cf0\highlight0 Processing triggers for libc-bin (2.27-3ubuntu1.2) ...\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~# mkdir /etc/docker\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~#\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~# cat <<EOF | tee /etc/docker/daemon.json\cf1\highlight2 
+\par \cf0\highlight0 > \{\cf1\highlight2 
+\par \cf0\highlight0 >\cf1\highlight2 
+\par \cf0\highlight0 > "exec-opts": ["native.cgroupdriver=systemd"],\cf1\highlight2 
+\par \cf0\highlight0 >\cf1\highlight2 
+\par \cf0\highlight0 > "log-driver": "json-file",\cf1\highlight2 
+\par \cf0\highlight0 >\cf1\highlight2 
+\par \cf0\highlight0 > "log-opts": \{\cf1\highlight2 
+\par \cf0\highlight0 >\cf1\highlight2 
+\par \cf0\highlight0 > "max-size": "100m"\cf1\highlight2 
+\par \cf0\highlight0 >\cf1\highlight2 
+\par \cf0\highlight0 > \},\cf1\highlight2 
+\par \cf0\highlight0 >\cf1\highlight2 
+\par \cf0\highlight0 > "storage-driver": "overlay2"\cf1\highlight2 
+\par \cf0\highlight0 >\cf1\highlight2 
+\par \cf0\highlight0 > \}\cf1\highlight2 
+\par \cf0\highlight0 >\cf1\highlight2 
+\par \cf0\highlight0 > EOF\cf1\highlight2 
+\par \cf0\highlight0\{\cf1\highlight2 
+\par 
+\par \cf0\highlight0 "exec-opts": ["native.cgroupdriver=systemd"],\cf1\highlight2 
+\par 
+\par \cf0\highlight0 "log-driver": "json-file",\cf1\highlight2 
+\par 
+\par \cf0\highlight0 "log-opts": \{\cf1\highlight2 
+\par 
+\par \cf0\highlight0 "max-size": "100m"\cf1\highlight2 
+\par 
+\par \cf0\highlight0\},\cf1\highlight2 
+\par 
+\par \cf0\highlight0 "storage-driver": "overlay2"\cf1\highlight2 
+\par 
+\par \cf0\highlight0\}\cf1\highlight2 
+\par 
+\par \cf0\highlight0 root@node-a:~# systemctl enable docker\cf1\highlight2 
+\par \cf0\highlight0 Synchronizing state of docker.service with SysV service script with /lib/systemd/systemd-sysv-install.\cf1\highlight2 
+\par \cf0\highlight0 Executing: /lib/systemd/systemd-sysv-install enable docker\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~#\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~# systemctl daemon-reload\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~#\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~# systemctl restart docker\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~#\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~# systemctl status docker\cf1\highlight2 
+\par \cf3\highlight0\u9679?\cf0  docker.service - Docker Application Container Engine\cf1\highlight2 
+\par \cf0\highlight0    Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)\cf1\highlight2 
+\par \cf0\highlight0    Active: \cf3 active (running)\cf0  since Thu 2021-12-09 05:14:27 UTC; 28ms ago\cf1\highlight2 
+\par \cf0\highlight0      Docs: https://docs.docker.com\cf1\highlight2 
+\par \cf0\highlight0  Main PID: 10166 (dockerd)\cf1\highlight2 
+\par \cf0\highlight0     Tasks: 14\cf1\highlight2 
+\par \cf0\highlight0    CGroup: /system.slice/docker.service\cf1\highlight2 
+\par \cf0\highlight0            \u9492?\u9472?10166 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Dec 09 05:14:27 node-a dockerd[10166]: time="2021-12-09T05:14:27.091616499Z" level=info msg="ClientConn switching balancer to \\"pick_firs\cf1\highlight2 
+\par \cf0\highlight0 Dec 09 05:14:27 node-a dockerd[10166]: time="2021-12-09T05:14:27.242857183Z" level=warning msg="Your kernel does not support swap memory\cf1\highlight2 
+\par \cf0\highlight0 Dec 09 05:14:27 node-a dockerd[10166]: time="2021-12-09T05:14:27.242899836Z" level=warning msg="Your kernel does not support CPU realtime\cf1\highlight2 
+\par \cf0\highlight0 Dec 09 05:14:27 node-a dockerd[10166]: time="2021-12-09T05:14:27.243181224Z" level=info msg="Loading containers: start."\cf1\highlight2 
+\par \cf0\highlight0 Dec 09 05:14:27 node-a dockerd[10166]: time="2021-12-09T05:14:27.550318707Z" level=info msg="Default bridge (docker0) is assigned with an\cf1\highlight2 
+\par \cf0\highlight0 Dec 09 05:14:27 node-a dockerd[10166]: time="2021-12-09T05:14:27.808453354Z" level=info msg="Loading containers: done."\cf1\highlight2 
+\par \cf0\highlight0 Dec 09 05:14:27 node-a dockerd[10166]: time="2021-12-09T05:14:27.878929619Z" level=info msg="Docker daemon" commit=847da18 graphdriver(s)\cf1\highlight2 
+\par \cf0\highlight0 Dec 09 05:14:27 node-a dockerd[10166]: time="2021-12-09T05:14:27.879098339Z" level=info msg="Daemon has completed initialization"\cf1\highlight2 
+\par \cf0\highlight0 Dec 09 05:14:27 node-a systemd[1]: Started Docker Application Container Engine.\cf1\highlight2 
+\par \cf0\highlight0 Dec 09 05:14:27 node-a dockerd[10166]: time="2021-12-09T05:14:27.949609659Z" level=info msg="API listen on /var/run/docker.sock"\cf1\highlight2 
+\par 
+\par \cf0\highlight0 root@node-a:~# swapoff -a\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~#\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~# cat <<EOF | tee /etc/modules-load.d/k8s.conf\cf1\highlight2 
+\par \cf0\highlight0 > br_netfilter\cf1\highlight2 
+\par \cf0\highlight0 >\cf1\highlight2 
+\par \cf0\highlight0 > EOF\cf1\highlight2 
+\par \cf0\highlight0 br_netfilter\cf1\highlight2 
+\par 
+\par \cf0\highlight0 root@node-a:~# cat <<EOF | tee /etc/sysctl.d/k8s.conf\cf1\highlight2 
+\par \cf0\highlight0 > net.bridge.bridge-nf-call-ip6tables = 1\cf1\highlight2 
+\par \cf0\highlight0 >\cf1\highlight2 
+\par \cf0\highlight0 > net.bridge.bridge-nf-call-iptables = 1\cf1\highlight2 
+\par \cf0\highlight0 >\cf1\highlight2 
+\par \cf0\highlight0 > EOF\cf1\highlight2 
+\par \cf0\highlight0 net.bridge.bridge-nf-call-ip6tables = 1\cf1\highlight2 
+\par 
+\par \cf0\highlight0 net.bridge.bridge-nf-call-iptables = 1\cf1\highlight2 
+\par 
+\par \cf0\highlight0 root@node-a:~# sysctl --system\cf1\highlight2 
+\par \cf0\highlight0 * Applying /etc/sysctl.d/10-console-messages.conf ...\cf1\highlight2 
+\par \cf0\highlight0 kernel.printk = 4 4 1 7\cf1\highlight2 
+\par \cf0\highlight0 * Applying /etc/sysctl.d/10-ipv6-privacy.conf ...\cf1\highlight2 
+\par \cf0\highlight0 net.ipv6.conf.all.use_tempaddr = 2\cf1\highlight2 
+\par \cf0\highlight0 net.ipv6.conf.default.use_tempaddr = 2\cf1\highlight2 
+\par \cf0\highlight0 * Applying /etc/sysctl.d/10-kernel-hardening.conf ...\cf1\highlight2 
+\par \cf0\highlight0 kernel.kptr_restrict = 1\cf1\highlight2 
+\par \cf0\highlight0 * Applying /etc/sysctl.d/10-link-restrictions.conf ...\cf1\highlight2 
+\par \cf0\highlight0 fs.protected_hardlinks = 1\cf1\highlight2 
+\par \cf0\highlight0 fs.protected_symlinks = 1\cf1\highlight2 
+\par \cf0\highlight0 * Applying /etc/sysctl.d/10-lxd-inotify.conf ...\cf1\highlight2 
+\par \cf0\highlight0 fs.inotify.max_user_instances = 1024\cf1\highlight2 
+\par \cf0\highlight0 * Applying /etc/sysctl.d/10-magic-sysrq.conf ...\cf1\highlight2 
+\par \cf0\highlight0 kernel.sysrq = 176\cf1\highlight2 
+\par \cf0\highlight0 * Applying /etc/sysctl.d/10-network-security.conf ...\cf1\highlight2 
+\par \cf0\highlight0 net.ipv4.conf.default.rp_filter = 1\cf1\highlight2 
+\par \cf0\highlight0 net.ipv4.conf.all.rp_filter = 1\cf1\highlight2 
+\par \cf0\highlight0 net.ipv4.tcp_syncookies = 1\cf1\highlight2 
+\par \cf0\highlight0 * Applying /etc/sysctl.d/10-ptrace.conf ...\cf1\highlight2 
+\par \cf0\highlight0 kernel.yama.ptrace_scope = 1\cf1\highlight2 
+\par \cf0\highlight0 * Applying /etc/sysctl.d/10-zeropage.conf ...\cf1\highlight2 
+\par \cf0\highlight0 vm.mmap_min_addr = 65536\cf1\highlight2 
+\par \cf0\highlight0 * Applying /usr/lib/sysctl.d/50-default.conf ...\cf1\highlight2 
+\par \cf0\highlight0 net.ipv4.conf.all.promote_secondaries = 1\cf1\highlight2 
+\par \cf0\highlight0 net.core.default_qdisc = fq_codel\cf1\highlight2 
+\par \cf0\highlight0 * Applying /etc/sysctl.d/99-sysctl.conf ...\cf1\highlight2 
+\par \cf0\highlight0 * Applying /etc/sysctl.d/k8s.conf ...\cf1\highlight2 
+\par \cf0\highlight0 net.bridge.bridge-nf-call-ip6tables = 1\cf1\highlight2 
+\par \cf0\highlight0 net.bridge.bridge-nf-call-iptables = 1\cf1\highlight2 
+\par \cf0\highlight0 * Applying /etc/sysctl.conf ...\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~#\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~# apt-get update -y\cf1\highlight2 
+\par \cf0\highlight0 Hit:1 https://download.docker.com/linux/ubuntu bionic InRelease\cf1\highlight2 
+\par \cf0\highlight0 Hit:2 http://in.archive.ubuntu.com/ubuntu bionic InRelease\cf1\highlight2 
+\par \cf0\highlight0 Hit:3 http://in.archive.ubuntu.com/ubuntu bionic-updates InRelease\cf1\highlight2 
+\par \cf0\highlight0 Hit:4 http://in.archive.ubuntu.com/ubuntu bionic-backports InRelease\cf1\highlight2 
+\par \cf0\highlight0 Hit:5 http://in.archive.ubuntu.com/ubuntu bionic-security InRelease\cf1\highlight2 
+\par \cf0\highlight0 Reading package lists... Done\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~#\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~# apt-get install -y apt-transport-https ca-certificates curl\cf1\highlight2 
+\par \cf0\highlight0 Reading package lists... Done\cf1\highlight2 
+\par \cf0\highlight0 Building dependency tree\cf1\highlight2 
+\par \cf0\highlight0 Reading state information... Done\cf1\highlight2 
+\par \cf0\highlight0 ca-certificates is already the newest version (20210119~18.04.2).\cf1\highlight2 
+\par \cf0\highlight0 curl is already the newest version (7.58.0-2ubuntu3.16).\cf1\highlight2 
+\par \cf0\highlight0 apt-transport-https is already the newest version (1.6.14).\cf1\highlight2 
+\par \cf0\highlight0 0 upgraded, 0 newly installed, 0 to remove and 61 not upgraded.\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~# curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~#\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~# echo "deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | tee /etc/apt/sources.list.d/kubernetes.list\cf1\highlight2 
+\par \cf0\highlight0 deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~#\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~# apt-get update -y\cf1\highlight2 
+\par \cf0\highlight0 Hit:1 http://in.archive.ubuntu.com/ubuntu bionic InRelease\cf1\highlight2 
+\par \cf0\highlight0 Hit:2 http://in.archive.ubuntu.com/ubuntu bionic-updates InRelease\cf1\highlight2 
+\par \cf0\highlight0 Hit:3 https://download.docker.com/linux/ubuntu bionic InRelease\cf1\highlight2 
+\par \cf0\highlight0 Hit:4 http://in.archive.ubuntu.com/ubuntu bionic-backports InRelease\cf1\highlight2 
+\par \cf0\highlight0 Hit:5 http://in.archive.ubuntu.com/ubuntu bionic-security InRelease\cf1\highlight2 
+\par \cf0\highlight0 Get:6 https://packages.cloud.google.com/apt kubernetes-xenial InRelease [9,383 B]\cf1\highlight2 
+\par \cf0\highlight0 Get:7 https://packages.cloud.google.com/apt kubernetes-xenial/main amd64 Packages [51.5 kB]\cf1\highlight2 
+\par \cf0\highlight0 Fetched 60.9 kB in 2s (25.6 kB/s)\cf1\highlight2 
+\par \cf0\highlight0 Reading package lists... Done\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~# apt install -y kubeadm=1.21.1-00 kubelet=1.21.1-00 kubectl=1.21.1-00 --allow-change-held-packages\cf1\highlight2 
+\par \cf0\highlight0 Reading package lists... Done\cf1\highlight2 
+\par \cf0\highlight0 Building dependency tree\cf1\highlight2 
+\par \cf0\highlight0 Reading state information... Done\cf1\highlight2 
+\par \cf0\highlight0 The following additional packages will be installed:\cf1\highlight2 
+\par \cf0\highlight0   conntrack cri-tools kubernetes-cni socat\cf1\highlight2 
+\par \cf0\highlight0 The following NEW packages will be installed:\cf1\highlight2 
+\par \cf0\highlight0   conntrack cri-tools kubeadm kubectl kubelet kubernetes-cni socat\cf1\highlight2 
+\par \cf0\highlight0 0 upgraded, 7 newly installed, 0 to remove and 61 not upgraded.\cf1\highlight2 
+\par \cf0\highlight0 Need to get 73.5 MB of archives.\cf1\highlight2 
+\par \cf0\highlight0 After this operation, 316 MB of additional disk space will be used.\cf1\highlight2 
+\par \cf0\highlight0 Get:1 http://in.archive.ubuntu.com/ubuntu bionic/main amd64 conntrack amd64 1:1.4.4+snapshot20161117-6ubuntu2 [30.6 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:2 http://in.archive.ubuntu.com/ubuntu bionic/main amd64 socat amd64 1.7.3.2-2ubuntu2 [342 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:3 https://packages.cloud.google.com/apt kubernetes-xenial/main amd64 cri-tools amd64 1.19.0-00 [11.2 MB]\cf1\highlight2 
+\par \cf0\highlight0 Get:4 https://packages.cloud.google.com/apt kubernetes-xenial/main amd64 kubernetes-cni amd64 0.8.7-00 [25.0 MB]\cf1\highlight2 
+\par \cf0\highlight0 Get:5 https://packages.cloud.google.com/apt kubernetes-xenial/main amd64 kubelet amd64 1.21.1-00 [18.8 MB]\cf1\highlight2 
+\par \cf0\highlight0 Get:6 https://packages.cloud.google.com/apt kubernetes-xenial/main amd64 kubectl amd64 1.21.1-00 [9,225 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:7 https://packages.cloud.google.com/apt kubernetes-xenial/main amd64 kubeadm amd64 1.21.1-00 [8,985 kB]\cf1\highlight2 
+\par \cf0\highlight0 Fetched 73.5 MB in 13s (5,625 kB/s)\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package conntrack.\cf1\highlight2 
+\par \cf0\highlight0 (Reading database ... 108455 files and directories currently installed.)\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../0-conntrack_1%3a1.4.4+snapshot20161117-6ubuntu2_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking conntrack (1:1.4.4+snapshot20161117-6ubuntu2) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package cri-tools.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../1-cri-tools_1.19.0-00_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking cri-tools (1.19.0-00) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package kubernetes-cni.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../2-kubernetes-cni_0.8.7-00_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking kubernetes-cni (0.8.7-00) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package socat.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../3-socat_1.7.3.2-2ubuntu2_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking socat (1.7.3.2-2ubuntu2) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package kubelet.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../4-kubelet_1.21.1-00_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking kubelet (1.21.1-00) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package kubectl.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../5-kubectl_1.21.1-00_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking kubectl (1.21.1-00) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package kubeadm.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../6-kubeadm_1.21.1-00_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking kubeadm (1.21.1-00) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up conntrack (1:1.4.4+snapshot20161117-6ubuntu2) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up kubernetes-cni (0.8.7-00) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up cri-tools (1.19.0-00) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up socat (1.7.3.2-2ubuntu2) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up kubelet (1.21.1-00) ...\cf1\highlight2 
+\par \cf0\highlight0 Created symlink /etc/systemd/system/multi-user.target.wants/kubelet.service \u8594? /lib/systemd/system/kubelet.service.\cf1\highlight2 
+\par \cf0\highlight0 /usr/sbin/policy-rc.d returned 101, not running 'start kubelet.service'\cf1\highlight2 
+\par \cf0\highlight0 Setting up kubectl (1.21.1-00) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up kubeadm (1.21.1-00) ...\cf1\highlight2 
+\par \cf0\highlight0 Processing triggers for man-db (2.8.3-2ubuntu0.1) ...\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~# apt-mark hold kubelet kubeadm kubectl\cf1\highlight2 
+\par \cf0\highlight0 kubelet set on hold.\cf1\highlight2 
+\par \cf0\highlight0 kubeadm set on hold.\cf1\highlight2 
+\par \cf0\highlight0 kubectl set on hold.\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~#\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~# systemctl enable --now kubelet\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~#\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~# systemctl status kubelet\cf1\highlight2 
+\par \cf0\highlight0\u9679? kubelet.service - kubelet: The Kubernetes Node Agent\cf1\highlight2 
+\par \cf0\highlight0    Loaded: loaded (/lib/systemd/system/kubelet.service; enabled; vendor preset: enabled)\cf1\highlight2 
+\par \cf0\highlight0   Drop-In: /etc/systemd/system/kubelet.service.d\cf1\highlight2 
+\par \cf0\highlight0            \u9492?\u9472?10-kubeadm.conf\cf1\highlight2 
+\par \cf0\highlight0    Active: activating (auto-restart) (Result: exit-code) since Thu 2021-12-09 05:18:23 UTC; 7s ago\cf1\highlight2 
+\par \cf0\highlight0      Docs: https://kubernetes.io/docs/home/\cf1\highlight2 
+\par \cf0\highlight0   Process: 11530 ExecStart=/usr/bin/kubelet $KUBELET_KUBECONFIG_ARGS $KUBELET_CONFIG_ARGS $KUBELET_KUBEADM_ARGS $KUBELET_EXTRA_ARGS \cf8 (code\cf1\highlight2 
+\par \cf0\highlight0  Main PID: 11530 (code=exited, status=1/FAILURE)\cf1\highlight2 
+\par 
+\par \cf0\highlight0 root@node-a:~# kubeadm init --pod-network-cidr=10.244.0.0/16\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:19:08.384186   11696 version.go:254] remote version is much newer: v1.23.0; falling back to: stable-1.21\cf1\highlight2 
+\par \cf0\highlight0 [init] Using Kubernetes version: v1.21.7\cf1\highlight2 
+\par \cf0\highlight0 [preflight] Running pre-flight checks\cf1\highlight2 
+\par \cf0\highlight0 [preflight] Pulling images required for setting up a Kubernetes cluster\cf1\highlight2 
+\par \cf0\highlight0 [preflight] This might take a minute or two, depending on the speed of your internet connection\cf1\highlight2 
+\par \cf0\highlight0 [preflight] You can also perform this action in beforehand using 'kubeadm config images pull'\cf1\highlight2 
+\par \cf0\highlight0 [certs] Using certificateDir folder "/etc/kubernetes/pki"\cf1\highlight2 
+\par \cf0\highlight0 [certs] Generating "ca" certificate and key\cf1\highlight2 
+\par \cf0\highlight0 [certs] Generating "apiserver" certificate and key\cf1\highlight2 
+\par \cf0\highlight0 [certs] apiserver serving cert is signed for DNS names [kubernetes kubernetes.default kubernetes.default.svc kubernetes.default.svc.cluster.local node-a] and IPs [10.96.0.1 192.168.1.210]\cf1\highlight2 
+\par \cf0\highlight0 [certs] Generating "apiserver-kubelet-client" certificate and key\cf1\highlight2 
+\par \cf0\highlight0 [certs] Generating "front-proxy-ca" certificate and key\cf1\highlight2 
+\par \cf0\highlight0 [certs] Generating "front-proxy-client" certificate and key\cf1\highlight2 
+\par \cf0\highlight0 [certs] Generating "etcd/ca" certificate and key\cf1\highlight2 
+\par \cf0\highlight0 [certs] Generating "etcd/server" certificate and key\cf1\highlight2 
+\par \cf0\highlight0 [certs] etcd/server serving cert is signed for DNS names [localhost node-a] and IPs [192.168.1.210 127.0.0.1 ::1]\cf1\highlight2 
+\par \cf0\highlight0 [certs] Generating "etcd/peer" certificate and key\cf1\highlight2 
+\par \cf0\highlight0 [certs] etcd/peer serving cert is signed for DNS names [localhost node-a] and IPs [192.168.1.210 127.0.0.1 ::1]\cf1\highlight2 
+\par \cf0\highlight0 [certs] Generating "etcd/healthcheck-client" certificate and key\cf1\highlight2 
+\par \cf0\highlight0 [certs] Generating "apiserver-etcd-client" certificate and key\cf1\highlight2 
+\par \cf0\highlight0 [certs] Generating "sa" key and public key\cf1\highlight2 
+\par \cf0\highlight0 [kubeconfig] Using kubeconfig folder "/etc/kubernetes"\cf1\highlight2 
+\par \cf0\highlight0 [kubeconfig] Writing "admin.conf" kubeconfig file\cf1\highlight2 
+\par \cf0\highlight0 [kubeconfig] Writing "kubelet.conf" kubeconfig file\cf1\highlight2 
+\par \cf0\highlight0 [kubeconfig] Writing "controller-manager.conf" kubeconfig file\cf1\highlight2 
+\par \cf0\highlight0 [kubeconfig] Writing "scheduler.conf" kubeconfig file\cf1\highlight2 
+\par \cf0\highlight0 [kubelet-start] Writing kubelet environment file with flags to file "/var/lib/kubelet/kubeadm-flags.env"\cf1\highlight2 
+\par \cf0\highlight0 [kubelet-start] Writing kubelet configuration to file "/var/lib/kubelet/config.yaml"\cf1\highlight2 
+\par \cf0\highlight0 [kubelet-start] Starting the kubelet\cf1\highlight2 
+\par \cf0\highlight0 [control-plane] Using manifest folder "/etc/kubernetes/manifests"\cf1\highlight2 
+\par \cf0\highlight0 [control-plane] Creating static Pod manifest for "kube-apiserver"\cf1\highlight2 
+\par \cf0\highlight0 [control-plane] Creating static Pod manifest for "kube-controller-manager"\cf1\highlight2 
+\par \cf0\highlight0 [control-plane] Creating static Pod manifest for "kube-scheduler"\cf1\highlight2 
+\par \cf0\highlight0 [etcd] Creating static Pod manifest for local etcd in "/etc/kubernetes/manifests"\cf1\highlight2 
+\par \cf0\highlight0 [wait-control-plane] Waiting for the kubelet to boot up the control plane as static Pods from directory "/etc/kubernetes/manifests". This can take up to 4m0s\cf1\highlight2 
+\par \cf0\highlight0 [apiclient] All control plane components are healthy after 17.003776 seconds\cf1\highlight2 
+\par \cf0\highlight0 [upload-config] Storing the configuration used in ConfigMap "kubeadm-config" in the "kube-system" Namespace\cf1\highlight2 
+\par \cf0\highlight0 [kubelet] Creating a ConfigMap "kubelet-config-1.21" in namespace kube-system with the configuration for the kubelets in the cluster\cf1\highlight2 
+\par \cf0\highlight0 [upload-certs] Skipping phase. Please see --upload-certs\cf1\highlight2 
+\par \cf0\highlight0 [mark-control-plane] Marking the node node-a as control-plane by adding the labels: [node-role.kubernetes.io/master(deprecated) node-role.kubernetes.io/control-plane node.kubernetes.io/exclude-from-external-load-balancers]\cf1\highlight2 
+\par \cf0\highlight0 [mark-control-plane] Marking the node node-a as control-plane by adding the taints [node-role.kubernetes.io/master:NoSchedule]\cf1\highlight2 
+\par \cf0\highlight0 [bootstrap-token] Using token: 75vqsi.ty3ysyg84y9s0thh\cf1\highlight2 
+\par \cf0\highlight0 [bootstrap-token] Configuring bootstrap tokens, cluster-info ConfigMap, RBAC Roles\cf1\highlight2 
+\par \cf0\highlight0 [bootstrap-token] configured RBAC rules to allow Node Bootstrap tokens to get nodes\cf1\highlight2 
+\par \cf0\highlight0 [bootstrap-token] configured RBAC rules to allow Node Bootstrap tokens to post CSRs in order for nodes to get long term certificate credentials\cf1\highlight2 
+\par \cf0\highlight0 [bootstrap-token] configured RBAC rules to allow the csrapprover controller automatically approve CSRs from a Node Bootstrap Token\cf1\highlight2 
+\par \cf0\highlight0 [bootstrap-token] configured RBAC rules to allow certificate rotation for all node client certificates in the cluster\cf1\highlight2 
+\par \cf0\highlight0 [bootstrap-token] Creating the "cluster-info" ConfigMap in the "kube-public" namespace\cf1\highlight2 
+\par \cf0\highlight0 [kubelet-finalize] Updating "/etc/kubernetes/kubelet.conf" to point to a rotatable kubelet client certificate and key\cf1\highlight2 
+\par \cf0\highlight0 [addons] Applied essential addon: CoreDNS\cf1\highlight2 
+\par \cf0\highlight0 [addons] Applied essential addon: kube-proxy\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Your Kubernetes control-plane has initialized successfully!\cf1\highlight2 
+\par 
+\par \cf0\highlight0 To start using your cluster, you need to run the following as a regular user:\cf1\highlight2 
+\par 
+\par \cf0\highlight0   mkdir -p $HOME/.kube\cf1\highlight2 
+\par \cf0\highlight0   sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config\cf1\highlight2 
+\par \cf0\highlight0   sudo chown $(id -u):$(id -g) $HOME/.kube/config\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Alternatively, if you are the root user, you can run:\cf1\highlight2 
+\par 
+\par \cf0\highlight0   export KUBECONFIG=/etc/kubernetes/admin.conf\cf1\highlight2 
+\par 
+\par \cf0\highlight0 You should now deploy a pod network to the cluster.\cf1\highlight2 
+\par \cf0\highlight0 Run "kubectl apply -f [podnetwork].yaml" with one of the options listed at:\cf1\highlight2 
+\par \cf0\highlight0   https://kubernetes.io/docs/concepts/cluster-administration/addons/\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Then you can join any number of worker nodes by running the following on each as root:\cf1\highlight2 
+\par 
+\par \cf0\highlight0 kubeadm join 192.168.1.210:6443 --token 75vqsi.ty3ysyg84y9s0thh \\\cf1\highlight2 
+\par \cf0\highlight0         --discovery-token-ca-cert-hash sha256:ee126cc1e022602f32415a25816c8d1d70fbd67e2e509c17fc87b6565c2da394\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~# mkdir -p $HOME/.kube\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~#\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~# cp -i /etc/kubernetes/admin.conf $HOME/.kube/config\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~#\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~# chown $(id -u):$(id -g) $HOME/.kube/config\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~# kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml\cf1\highlight2 
+\par \cf4\highlight0 Warning:\cf0  policy/v1beta1 PodSecurityPolicy is deprecated in v1.21+, unavailable in v1.25+\cf1\highlight2 
+\par \cf0\highlight0 podsecuritypolicy.policy/psp.flannel.unprivileged created\cf1\highlight2 
+\par \cf0\highlight0 clusterrole.rbac.authorization.k8s.io/flannel created\cf1\highlight2 
+\par \cf0\highlight0 clusterrolebinding.rbac.authorization.k8s.io/flannel created\cf1\highlight2 
+\par \cf0\highlight0 serviceaccount/flannel created\cf1\highlight2 
+\par \cf0\highlight0 configmap/kube-flannel-cfg created\cf1\highlight2 
+\par \cf0\highlight0 daemonset.apps/kube-flannel-ds created\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~#\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~# kubectl get nodes\cf1\highlight2 
+\par \cf0\highlight0 NAME     STATUS     ROLES                  AGE   VERSION\cf1\highlight2 
+\par \cf0\highlight0 node-a   NotReady   control-plane,master   84s   v1.21.1\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~# kubectl get nodes\cf1\highlight2 
+\par \cf0\highlight0 NAME     STATUS     ROLES                  AGE    VERSION\cf1\highlight2 
+\par \cf0\highlight0 node-a   NotReady   control-plane,master   102s   v1.21.1\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~# kubectl get nodes\cf1\highlight2 
+\par \cf0\highlight0 NAME     STATUS   ROLES                  AGE     VERSION\cf1\highlight2 
+\par \cf0\highlight0 node-a   Ready    control-plane,master   2m36s   v1.21.1\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~# sudo wget https://storage.googleapis.com/golang/go1.15.4.linux-amd64.tar.gz\cf1\highlight2 
+\par \cf0\highlight0 --2021-12-09 05:23:42--  https://storage.googleapis.com/golang/go1.15.4.linux-amd64.tar.gz\cf1\highlight2 
+\par \cf0\highlight0 Resolving storage.googleapis.com (storage.googleapis.com)... 142.250.183.80, 172.217.166.80, 142.250.192.16, ...\cf1\highlight2 
+\par \cf0\highlight0 Connecting to storage.googleapis.com (storage.googleapis.com)|142.250.183.80|:443... connected.\cf1\highlight2 
+\par \cf0\highlight0 HTTP request sent, awaiting response... 200 OK\cf1\highlight2 
+\par \cf0\highlight0 Length: 120906247 (115M) [application/octet-stream]\cf1\highlight2 
+\par \cf0\highlight0\f1 Saving to: \lquote go1.15.4.linux-amd64.tar.gz\rquote\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 go1.15.4.linux-amd64.tar.gz        100%[=============================================================>] 115.30M  3.41MB/s    in 25s\cf1\highlight2 
+\par 
+\par \cf0\highlight0\f1 2021-12-09 05:24:09 (4.58 MB/s) - \lquote go1.15.4.linux-amd64.tar.gz\rquote  saved [120906247/120906247]\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 root@node-a:~# sudo tar -C /usr/local -xzf go1.15.4.linux-amd64.tar.gz\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~#\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~# sudo echo 'export PATH=$PATH:/usr/local/go/bin' >> $HOME/.profile\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~#\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~# sudo echo 'export GOPATH=$HOME/gopath' >> $HOME/.profile\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~#\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~# source $HOME/.profile\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~# apt install -y make gcc jq\cf1\highlight2 
+\par \cf0\highlight0 Reading package lists... Done\cf1\highlight2 
+\par \cf0\highlight0 Building dependency tree\cf1\highlight2 
+\par \cf0\highlight0 Reading state information... Done\cf1\highlight2 
+\par \cf0\highlight0 make is already the newest version (4.1-9.1ubuntu1).\cf1\highlight2 
+\par \cf0\highlight0 make set to manually installed.\cf1\highlight2 
+\par \cf0\highlight0 gcc is already the newest version (4:7.4.0-1ubuntu2.3).\cf1\highlight2 
+\par \cf0\highlight0 gcc set to manually installed.\cf1\highlight2 
+\par \cf0\highlight0 The following NEW packages will be installed:\cf1\highlight2 
+\par \cf0\highlight0   jq libjq1 libonig4\cf1\highlight2 
+\par \cf0\highlight0 0 upgraded, 3 newly installed, 0 to remove and 64 not upgraded.\cf1\highlight2 
+\par \cf0\highlight0 Need to get 276 kB of archives.\cf1\highlight2 
+\par \cf0\highlight0 After this operation, 930 kB of additional disk space will be used.\cf1\highlight2 
+\par \cf0\highlight0 Get:1 http://in.archive.ubuntu.com/ubuntu bionic/universe amd64 libonig4 amd64 6.7.0-1 [119 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:2 http://in.archive.ubuntu.com/ubuntu bionic/universe amd64 libjq1 amd64 1.5+dfsg-2 [111 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:3 http://in.archive.ubuntu.com/ubuntu bionic/universe amd64 jq amd64 1.5+dfsg-2 [45.6 kB]\cf1\highlight2 
+\par \cf0\highlight0 Fetched 276 kB in 0s (587 kB/s)\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package libonig4:amd64.\cf1\highlight2 
+\par \cf0\highlight0 (Reading database ... 108529 files and directories currently installed.)\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../libonig4_6.7.0-1_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking libonig4:amd64 (6.7.0-1) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package libjq1:amd64.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../libjq1_1.5+dfsg-2_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking libjq1:amd64 (1.5+dfsg-2) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package jq.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../jq_1.5+dfsg-2_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking jq (1.5+dfsg-2) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up libonig4:amd64 (6.7.0-1) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up libjq1:amd64 (1.5+dfsg-2) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up jq (1.5+dfsg-2) ...\cf1\highlight2 
+\par \cf0\highlight0 Processing triggers for man-db (2.8.3-2ubuntu0.1) ...\cf1\highlight2 
+\par \cf0\highlight0 Processing triggers for libc-bin (2.27-3ubuntu1.2) ...\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~# go version\cf1\highlight2 
+\par \cf0\highlight0 go version go1.15.4 linux/amd64\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~# logout\cf1\highlight2 
+\par 
+\par \cf9\highlight0\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\cf1\highlight2 
+\par 
+\par \cf10\highlight0 Session stopped\cf1\highlight2 
+\par \cf0\highlight0     - Press \cf5 <return>\cf0  to exit tab\cf1\highlight2 
+\par \cf0\highlight0     - Press \cf5 R\cf0  to restart session\cf1\highlight2 
+\par \cf0\highlight0     - Press \cf5 S\cf0  to save terminal output to file\cf1\highlight2 
+\par \cf0\highlight0     \u9484?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9488?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?                 \cf3\f1\bullet  MobaXterm Personal Edition v21.4 \bullet\cf0\f0                  \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?               \cf4 (SSH client, X server and network tools)\cf0                \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?                                                                      \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474? \u8594? SSH session to \cf5 root@192.168.1.210                        \cf0           \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  Direct SSH      :  \cf3\f0 v\cf0                                              \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  SSH compression :  \cf3\f0 v\cf0                                              \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  SSH-browser     :  \cf3\f0 v\cf0                                              \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  X11-forwarding  :  \cf3\f0 v\cf0   (remote display is forwarded through SSH)  \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?                                                                      \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474? \u8594? For more info, ctrl+click on \cf6\ul help\cf0\ulnone  or visit our \cf6\ul website\cf0\ulnone .            \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9492?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9496?\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 4.15.0-159-generic x86_64)\cf1\highlight2 
+\par 
+\par \cf0\highlight0  * Documentation:  https://help.ubuntu.com\cf1\highlight2 
+\par \cf0\highlight0  * Management:     https://landscape.canonical.com\cf1\highlight2 
+\par \cf0\highlight0  * Support:        https://ubuntu.com/advantage\cf1\highlight2 
+\par 
+\par \cf0\highlight0   System information as of Thu Dec  9 05:26:47 UTC 2021\cf1\highlight2 
+\par 
+\par \cf0\highlight0   System load:  0.27               Users logged in:        0\cf1\highlight2 
+\par \cf0\highlight0   Usage of /:   11.6% of 72.83GB   IP address for ens160:  192.168.1.210\cf1\highlight2 
+\par \cf0\highlight0   Memory usage: 7%                 IP address for docker0: 172.17.0.1\cf1\highlight2 
+\par \cf0\highlight0   Swap usage:   0%                 IP address for cni0:    10.244.0.1\cf1\highlight2 
+\par \cf0\highlight0   Processes:    353\cf1\highlight2 
+\par 
+\par \cf0\highlight0  * Super-optimized for small spaces - read how we shrank the memory\cf1\highlight2 
+\par \cf0\highlight0    footprint of MicroK8s to make it the smallest full K8s around.\cf1\highlight2 
+\par 
+\par \cf0\highlight0    https://ubuntu.com/blog/microk8s-memory-optimisation\cf1\highlight2 
+\par 
+\par \cf0\highlight0  * Canonical Livepatch is available for installation.\cf1\highlight2 
+\par \cf0\highlight0    - Reduce system reboots and improve kernel security. Activate at:\cf1\highlight2 
+\par \cf0\highlight0      https://ubuntu.com/livepatch\cf1\highlight2 
+\par 
+\par \cf0\highlight0 63 packages can be updated.\cf1\highlight2 
+\par \cf0\highlight0 1 update is a security update.\cf1\highlight2 
+\par 
+\par \cf0\highlight0 New release '20.04.3 LTS' available.\cf1\highlight2 
+\par \cf0\highlight0 Run 'do-release-upgrade' to upgrade to it.\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 *** System restart required ***\cf1\highlight2 
+\par \cf0\highlight0 Last login: Thu Dec  9 05:05:41 2021 from 192.168.1.1\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~# kubectl get nodes\cf1\highlight2 
+\par \cf0\highlight0 NAME     STATUS   ROLES                  AGE     VERSION\cf1\highlight2 
+\par \cf0\highlight0 node-a   Ready    control-plane,master   6m38s   v1.21.1\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~# git clone https://github.com/CentaurusInfra/fornax\cf1\highlight2 
+\par \cf0\highlight0 Cloning into 'fornax'...\cf1\highlight2 
+\par \cf0\highlight0 remote: Enumerating objects: 50832, done.\cf1\highlight2 
+\par \cf0\highlight0 remote: Counting objects: 100% (760/760), done.\cf1\highlight2 
+\par \cf0\highlight0 remote: Compressing objects: 100% (432/432), done.\cf1\highlight2 
+\par \cf0\highlight0 remote: Total 50832 (delta 360), reused 621 (delta 289), pack-reused 50072\cf1\highlight2 
+\par \cf0\highlight0 Receiving objects: 100% (50832/50832), 125.52 MiB | 10.54 MiB/s, done.\cf1\highlight2 
+\par \cf0\highlight0 Resolving deltas: 100% (27938/27938), done.\cf1\highlight2 
+\par \cf0\highlight0 Checking out files: 100% (8900/8900), done.\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~#\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~# cd fornax\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax# make WHAT=cloudcore\cf1\highlight2 
+\par \cf0\highlight0 hack/verify-golang.sh\cf1\highlight2 
+\par \cf0\highlight0 go detail version: go version go1.15.4 linux/amd64\cf1\highlight2 
+\par \cf0\highlight0 go version: 1.15.4\cf1\highlight2 
+\par \cf0\highlight0 KUBEEDGE_OUTPUT_SUBPATH=_output/local hack/make-rules/build.sh cloudcore\cf1\highlight2 
+\par \cf0\highlight0 building github.com/kubeedge/kubeedge/cloud/cmd/cloudcore\cf1\highlight2 
+\par \cf0\highlight0 + go build -o /root/fornax/_output/local/bin/cloudcore -gcflags= -ldflags '-s -w -buildid= -X github.com/kubeedge/kubeedge/pkg/version.buildDate=2021-12-09T05:29:48Z -X github.com/kubeedge/kubeedge/pkg/version.gitCommit=b992ccac6715efb9df3e8a1a702246b4d24096d1 -X github.com/kubeedge/kubeedge/pkg/version.gitTreeState=clean -X github.com/kubeedge/kubeedge/pkg/version.gitVersion=v0.2-12+b992ccac6715ef -X github.com/kubeedge/kubeedge/pkg/version.gitMajor=0 -X github.com/kubeedge/kubeedge/pkg/version.gitMinor=2+' github.com/kubeedge/kubeedge/cloud/cmd/cloudcore\cf1\highlight2 
+\par \cf0\highlight0 + set +x\cf1\highlight2 
+\par \cf0\highlight0 yes | cp -r binaries/kubectl _output/local/bin/\cf1\highlight2 
+\par \cf0\highlight0 mkdir -p _output/local/bin/crds\cf1\highlight2 
+\par \cf0\highlight0 yes | cp build/crds/devices/devices_v1alpha2_device.yaml  _output/local/bin/crds/\cf1\highlight2 
+\par \cf0\highlight0 yes | cp build/crds/devices/devices_v1alpha2_devicemodel.yaml  _output/local/bin/crds/\cf1\highlight2 
+\par \cf0\highlight0 yes | cp build/crds/reliablesyncs/cluster_objectsync_v1alpha1.yaml  _output/local/bin/crds/\cf1\highlight2 
+\par \cf0\highlight0 yes | cp build/crds/reliablesyncs/objectsync_v1alpha1.yaml  _output/local/bin/crds/\cf1\highlight2 
+\par \cf0\highlight0 yes | cp build/crds/router/router_v1_rule.yaml  _output/local/bin/crds/\cf1\highlight2 
+\par \cf0\highlight0 yes | cp build/crds/router/router_v1_ruleEndpoint.yaml  _output/local/bin/crds/\cf1\highlight2 
+\par \cf0\highlight0 yes | cp build/crds/edgecluster/mission_v1.yaml  _output/local/bin/crds/\cf1\highlight2 
+\par \cf0\highlight0 yes | cp build/crds/edgecluster/edgecluster_v1.yaml  _output/local/bin/crds/\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax# make WHAT=edgecore\cf1\highlight2 
+\par \cf0\highlight0 hack/verify-golang.sh\cf1\highlight2 
+\par \cf0\highlight0 go detail version: go version go1.15.4 linux/amd64\cf1\highlight2 
+\par \cf0\highlight0 go version: 1.15.4\cf1\highlight2 
+\par \cf0\highlight0 KUBEEDGE_OUTPUT_SUBPATH=_output/local hack/make-rules/build.sh edgecore\cf1\highlight2 
+\par \cf0\highlight0 building github.com/kubeedge/kubeedge/edge/cmd/edgecore\cf1\highlight2 
+\par \cf0\highlight0 + go build -o /root/fornax/_output/local/bin/edgecore -gcflags= -ldflags '-s -w -buildid= -X github.com/kubeedge/kubeedge/pkg/version.buildDate=2021-12-09T05:31:11Z -X github.com/kubeedge/kubeedge/pkg/version.gitCommit=b992ccac6715efb9df3e8a1a702246b4d24096d1 -X github.com/kubeedge/kubeedge/pkg/version.gitTreeState=clean -X github.com/kubeedge/kubeedge/pkg/version.gitVersion=v0.2-12+b992ccac6715ef -X github.com/kubeedge/kubeedge/pkg/version.gitMajor=0 -X github.com/kubeedge/kubeedge/pkg/version.gitMinor=2+' github.com/kubeedge/kubeedge/edge/cmd/edgecore\cf1\highlight2 
+\par \cf0\highlight0 + set +x\cf1\highlight2 
+\par \cf0\highlight0 yes | cp -r binaries/kubectl _output/local/bin/\cf1\highlight2 
+\par \cf0\highlight0 mkdir -p _output/local/bin/crds\cf1\highlight2 
+\par \cf0\highlight0 yes | cp build/crds/devices/devices_v1alpha2_device.yaml  _output/local/bin/crds/\cf1\highlight2 
+\par \cf0\highlight0 yes | cp build/crds/devices/devices_v1alpha2_devicemodel.yaml  _output/local/bin/crds/\cf1\highlight2 
+\par \cf0\highlight0 yes | cp build/crds/reliablesyncs/cluster_objectsync_v1alpha1.yaml  _output/local/bin/crds/\cf1\highlight2 
+\par \cf0\highlight0 yes | cp build/crds/reliablesyncs/objectsync_v1alpha1.yaml  _output/local/bin/crds/\cf1\highlight2 
+\par \cf0\highlight0 yes | cp build/crds/router/router_v1_rule.yaml  _output/local/bin/crds/\cf1\highlight2 
+\par \cf0\highlight0 yes | cp build/crds/router/router_v1_ruleEndpoint.yaml  _output/local/bin/crds/\cf1\highlight2 
+\par \cf0\highlight0 yes | cp build/crds/edgecluster/mission_v1.yaml  _output/local/bin/crds/\cf1\highlight2 
+\par \cf0\highlight0 yes | cp build/crds/edgecluster/edgecluster_v1.yaml  _output/local/bin/crds/\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax# cp /etc/kubernetes/admin.conf /root/.kube/config\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax#\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax# mkdir -p /etc/kubeedge/config\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax#\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax# _output/local/bin/cloudcore --minconfig > /etc/kubeedge/config/cloudcore.yaml\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax# build/tools/certgen.sh genCertAndKey server 192.168.1.210 192.168.1.211 192.168.1.212 192.168.1.213\cf1\highlight2 
+\par \cf0\highlight0 Generating RSA private key, 4096 bit long modulus (2 primes)\cf1\highlight2 
+\par \cf0\highlight0 .............................................................................................................................++++\cf1\highlight2 
+\par \cf0\highlight0 .......................++++\cf1\highlight2 
+\par \cf0\highlight0 e is 65537 (0x010001)\cf1\highlight2 
+\par \cf0\highlight0 Can't load /root/.rnd into RNG\cf1\highlight2 
+\par \cf0\highlight0 140421496988096:error:2406F079:random number generator:RAND_load_file:Cannot open file:../crypto/rand/randfile.c:88:Filename=/root/.rnd\cf1\highlight2 
+\par \cf0\highlight0 Generating RSA private key, 2048 bit long modulus (2 primes)\cf1\highlight2 
+\par \cf0\highlight0 ...............+++++\cf1\highlight2 
+\par \cf0\highlight0 ..+++++\cf1\highlight2 
+\par \cf0\highlight0 e is 65537 (0x010001)\cf1\highlight2 
+\par \cf0\highlight0 Can't load /root/.rnd into RNG\cf1\highlight2 
+\par \cf0\highlight0 140583394914752:error:2406F079:random number generator:RAND_load_file:Cannot open file:../crypto/rand/randfile.c:88:Filename=/root/.rnd\cf1\highlight2 
+\par \cf0\highlight0 Signature ok\cf1\highlight2 
+\par \cf0\highlight0 subject=C = CN, ST = Zhejiang, L = Hangzhou, O = KubeEdge, CN = kubeedge.io\cf1\highlight2 
+\par \cf0\highlight0 Getting CA Private Key\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax# build/tools/certgen.sh genCA 192.168.1.210 192.168.1.211 192.168.1.212 192.168.1.213\cf1\highlight2 
+\par \cf0\highlight0 Generating RSA private key, 4096 bit long modulus (2 primes)\cf1\highlight2 
+\par \cf0\highlight0 .........................++++\cf1\highlight2 
+\par \cf0\highlight0 ........................................++++\cf1\highlight2 
+\par \cf0\highlight0 e is 65537 (0x010001)\cf1\highlight2 
+\par \cf0\highlight0 Can't load /root/.rnd into RNG\cf1\highlight2 
+\par \cf0\highlight0 140700012274112:error:2406F079:random number generator:RAND_load_file:Cannot open file:../crypto/rand/randfile.c:88:Filename=/root/.rnd\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax# mkdir -p /etc/kubeedge/ca\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax#\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax# mkdir -p /etc/kubeedge/certs\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax# build/tools/certgen.sh genCA 192.168.1.210 192.168.1.211 192.168.1.212 192.168.1.213\cf1\highlight2 
+\par \cf0\highlight0 Generating RSA private key, 4096 bit long modulus (2 primes)\cf1\highlight2 
+\par \cf0\highlight0 ................................................++++\cf1\highlight2 
+\par \cf0\highlight0 ..............................................................................................................++++\cf1\highlight2 
+\par \cf0\highlight0 e is 65537 (0x010001)\cf1\highlight2 
+\par \cf0\highlight0 Can't load /root/.rnd into RNG\cf1\highlight2 
+\par \cf0\highlight0 139952180523456:error:2406F079:random number generator:RAND_load_file:Cannot open file:../crypto/rand/randfile.c:88:Filename=/root/.rnd\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax# mkdir -p /etc/kubeedge/certs\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax# build/tools/certgen.sh genCA 192.168.1.210 192.168.1.211 192.168.1.212 192.168.1.213\cf1\highlight2 
+\par \cf0\highlight0 Generating RSA private key, 4096 bit long modulus (2 primes)\cf1\highlight2 
+\par \cf0\highlight0 ..................................................................................................................................................++++\cf1\highlight2 
+\par \cf0\highlight0 ..................................................................................++++\cf1\highlight2 
+\par \cf0\highlight0 e is 65537 (0x010001)\cf1\highlight2 
+\par \cf0\highlight0 Can't load /root/.rnd into RNG\cf1\highlight2 
+\par \cf0\highlight0 140392144323008:error:2406F079:random number generator:RAND_load_file:Cannot open file:../crypto/rand/randfile.c:88:Filename=/root/.rnd\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax# build/tools/certgen.sh genCertAndKey server 192.168.1.210 192.168.1.211 192.168.1.212 192.168.1.213\cf1\highlight2 
+\par \cf0\highlight0 Generating RSA private key, 2048 bit long modulus (2 primes)\cf1\highlight2 
+\par \cf0\highlight0 ..................................................................+++++\cf1\highlight2 
+\par \cf0\highlight0 ........................................................................................................+++++\cf1\highlight2 
+\par \cf0\highlight0 e is 65537 (0x010001)\cf1\highlight2 
+\par \cf0\highlight0 Can't load /root/.rnd into RNG\cf1\highlight2 
+\par \cf0\highlight0 139649661211072:error:2406F079:random number generator:RAND_load_file:Cannot open file:../crypto/rand/randfile.c:88:Filename=/root/.rnd\cf1\highlight2 
+\par \cf0\highlight0 Signature ok\cf1\highlight2 
+\par \cf0\highlight0 subject=C = CN, ST = Zhejiang, L = Hangzhou, O = KubeEdge, CN = kubeedge.io\cf1\highlight2 
+\par \cf0\highlight0 Getting CA Private Key\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax# cd /etc/kubeedge/\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:/etc/kubeedge# ls\cf1\highlight2 
+\par \cf7\highlight0 ca\cf0   \cf7 certs\cf0   \cf7 config\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:/etc/kubeedge# cd ca\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:/etc/kubeedge/ca# ls\cf1\highlight2 
+\par \cf0\highlight0 rootCA.crt  rootCA.key  rootCA.srl\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:/etc/kubeedge/ca# cd ..\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:/etc/kubeedge# cd certs\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:/etc/kubeedge/certs# ls\cf1\highlight2 
+\par \cf0\highlight0 server.crt  server.csr  server.key\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:/etc/kubeedge/certs# kubectl apply -f build/crds/devices/devices_v1alpha2_device.yaml\cf1\highlight2 
+\par \cf0\highlight0 kubectl apply -f build/crds/devices/devices_v1alpha2_devicemodel.yaml\cf1\highlight2 
+\par 
+\par \cf0\highlight0 kubectl apply -f build/crds/reliablesyncs/cluster_objectsync_v1alpha1.yaml\cf1\highlight2 
+\par 
+\par \cf0\highlight0 kubectl apply -f build/crds/reliablesyncs/objectsync_v1alpha1.yaml\cf1\highlight2 
+\par 
+\par \cf0\highlight0 kubectl apply -f build/crds/router/router_v1_rule.yaml\cf1\highlight2 
+\par 
+\par \cf0\highlight0 kubectl apply -f build/crds/router/router_v1_ruleEndpoint.yaml\cf1\highlight2 
+\par 
+\par \cf0\highlight0 kubectl apply -f build/crds/edgecluster/mission_v1.yaml\cf1\highlight2 
+\par 
+\par \cf0\highlight0 kubectl apply -f build/crds/edgecluster/edgecluster_v1.yamlerror: the path "build/crds/devices/devices_v1alpha2_device.yaml" does not exist\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:/etc/kubeedge/certs#\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:/etc/kubeedge/certs# kubectl apply -f build/crds/devices/devices_v1alpha2_devicemodel.yaml\cf1\highlight2 
+\par \cf0\highlight0 error: the path "build/crds/devices/devices_v1alpha2_devicemodel.yaml" does not exist\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:/etc/kubeedge/certs#\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:/etc/kubeedge/certs# kubectl apply -f build/crds/reliablesyncs/cluster_objectsync_v1alpha1.yaml\cf1\highlight2 
+\par \cf0\highlight0 error: the path "build/crds/reliablesyncs/cluster_objectsync_v1alpha1.yaml" does not exist\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:/etc/kubeedge/certs#\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:/etc/kubeedge/certs# kubectl apply -f build/crds/reliablesyncs/objectsync_v1alpha1.yaml\cf1\highlight2 
+\par \cf0\highlight0 error: the path "build/crds/reliablesyncs/objectsync_v1alpha1.yaml" does not exist\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:/etc/kubeedge/certs#\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:/etc/kubeedge/certs# kubectl apply -f build/crds/router/router_v1_rule.yaml\cf1\highlight2 
+\par \cf0\highlight0 error: the path "build/crds/router/router_v1_rule.yaml" does not exist\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:/etc/kubeedge/certs#\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:/etc/kubeedge/certs# kubectl apply -f build/crds/router/router_v1_ruleEndpoint.yaml\cf1\highlight2 
+\par \cf0\highlight0 error: the path "build/crds/router/router_v1_ruleEndpoint.yaml" does not exist\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:/etc/kubeedge/certs#\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:/etc/kubeedge/certs# kubectl apply -f build/crds/edgecluster/mission_v1.yaml\cf1\highlight2 
+\par \cf0\highlight0 error: the path "build/crds/edgecluster/mission_v1.yaml" does not exist\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:/etc/kubeedge/certs#\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:/etc/kubeedge/certs# kubectl apply -f build/crds/edgecluster/edgecluster_v1.yaml^C\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:/etc/kubeedge/certs# cd /root/fornax/\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax# kubectl apply -f build/crds/devices/devices_v1alpha2_device.yaml\cf1\highlight2 
+\par 
+\par \cf0\highlight0 kubectl apply -f build/crds/devices/devices_v1alpha2_devicemodel.yaml\cf1\highlight2 
+\par 
+\par \cf0\highlight0 kubectl apply -f build/crds/reliablesyncs/cluster_objectsync_v1alpha1.yaml\cf1\highlight2 
+\par 
+\par \cf0\highlight0 kubectl apply -f build/crds/reliablesyncs/objectsync_v1alpha1.yaml\cf1\highlight2 
+\par 
+\par \cf0\highlight0 kubectl apply -f build/crds/router/router_v1_rule.yaml\cf1\highlight2 
+\par 
+\par \cf0\highlight0 kubectl apply -f build/crds/router/router_v1_ruleEndpoint.yaml\cf1\highlight2 
+\par 
+\par \cf0\highlight0 kubectl apply -f build/crds/edgecluster/mission_v1.yaml\cf1\highlight2 
+\par 
+\par \cf0\highlight0 kubectl apply -f build/crds/edgecluster/edgecluster_v1.yaml\cf4 Warning:\cf0  apiextensions.k8s.io/v1beta1 CustomResourceDefinition is deprecated in v1.16+, unavailable in v1.22+; use apiextensions.k8s.io/v1 CustomResourceDefinition\cf1\highlight2 
+\par \cf0\highlight0 customresourcedefinition.apiextensions.k8s.io/devices.devices.kubeedge.io created\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax#\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax# kubectl apply -f build/crds/devices/devices_v1alpha2_devicemodel.yaml\cf1\highlight2 
+\par 
+\par \cf4\highlight0 Warning:\cf0  apiextensions.k8s.io/v1beta1 CustomResourceDefinition is deprecated in v1.16+, unavailable in v1.22+; use apiextensions.k8s.io/v1 CustomResourceDefinition\cf1\highlight2 
+\par \cf0\highlight0 customresourcedefinition.apiextensions.k8s.io/devicemodels.devices.kubeedge.io created\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax#\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax# kubectl apply -f build/crds/reliablesyncs/cluster_objectsync_v1alpha1.yaml\cf1\highlight2 
+\par \cf4\highlight0 Warning:\cf0  apiextensions.k8s.io/v1beta1 CustomResourceDefinition is deprecated in v1.16+, unavailable in v1.22+; use apiextensions.k8s.io/v1 CustomResourceDefinition\cf1\highlight2 
+\par \cf0\highlight0 customresourcedefinition.apiextensions.k8s.io/clusterobjectsyncs.reliablesyncs.kubeedge.io created\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax#\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax# kubectl apply -f build/crds/reliablesyncs/objectsync_v1alpha1.yaml\cf1\highlight2 
+\par \cf4\highlight0 Warning:\cf0  apiextensions.k8s.io/v1beta1 CustomResourceDefinition is deprecated in v1.16+, unavailable in v1.22+; use apiextensions.k8s.io/v1 CustomResourceDefinition\cf1\highlight2 
+\par \cf0\highlight0 customresourcedefinition.apiextensions.k8s.io/objectsyncs.reliablesyncs.kubeedge.io created\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax#\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax# kubectl apply -f build/crds/router/router_v1_rule.yaml\cf1\highlight2 
+\par \cf0\highlight0 customresourcedefinition.apiextensions.k8s.io/rules.rules.kubeedge.io created\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax#\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax# kubectl apply -f build/crds/router/router_v1_ruleEndpoint.yaml\cf1\highlight2 
+\par \cf0\highlight0 customresourcedefinition.apiextensions.k8s.io/ruleendpoints.rules.kubeedge.io created\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax#\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax# kubectl apply -f build/crds/edgecluster/mission_v1.yaml\cf1\highlight2 
+\par \cf4\highlight0 Warning:\cf0  apiextensions.k8s.io/v1beta1 CustomResourceDefinition is deprecated in v1.16+, unavailable in v1.22+; use apiextensions.k8s.io/v1 CustomResourceDefinition\cf1\highlight2 
+\par \cf0\highlight0 customresourcedefinition.apiextensions.k8s.io/missions.edgeclusters.kubeedge.io created\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax#\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax# kubectl apply -f build/crds/edgecluster/edgecluster_v1.yaml\cf1\highlight2 
+\par \cf4\highlight0 Warning:\cf0  apiextensions.k8s.io/v1beta1 CustomResourceDefinition is deprecated in v1.16+, unavailable in v1.22+; use apiextensions.k8s.io/v1 CustomResourceDefinition\cf1\highlight2 
+\par \cf0\highlight0 customresourcedefinition.apiextensions.k8s.io/edgeclusters.edgeclusters.kubeedge.io created\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax# nohup _output/local/bin/cloudcore > cloudcore.logs 2>&1 &\cf1\highlight2 
+\par \cf0\highlight0 [1] 5346\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax# tail -f cloudcore.logs\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:37:24.868359    5346 core.go:24] Starting module edgecontroller\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:37:24.868400    5346 core.go:24] Starting module devicecontroller\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:37:24.868517    5346 upstream.go:123] start upstream controller\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:37:24.868780    5346 downstream.go:446] start downstream controller\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:37:24.869285    5346 downstream.go:873] Start downstream devicecontroller\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:37:24.987536    5346 signcerts.go:100] Succeed to creating token\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:37:24.987628    5346 server.go:44] start unix domain socket server\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:37:24.987914    5346 uds.go:71] listening on: //var/lib/kubeedge/kubeedge.sock\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:37:24.988164    5346 server.go:64] Starting cloudhub websocket server\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:37:26.869613    5346 upstream.go:63] Start upstream devicecontroller\cf1\highlight2 
+\par \cf0\highlight0 ^C\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax# tail -f cloudcore.logs\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:37:24.868359    5346 core.go:24] Starting module edgecontroller\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:37:24.868400    5346 core.go:24] Starting module devicecontroller\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:37:24.868517    5346 upstream.go:123] start upstream controller\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:37:24.868780    5346 downstream.go:446] start downstream controller\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:37:24.869285    5346 downstream.go:873] Start downstream devicecontroller\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:37:24.987536    5346 signcerts.go:100] Succeed to creating token\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:37:24.987628    5346 server.go:44] start unix domain socket server\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:37:24.987914    5346 uds.go:71] listening on: //var/lib/kubeedge/kubeedge.sock\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:37:24.988164    5346 server.go:64] Starting cloudhub websocket server\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:37:26.869613    5346 upstream.go:63] Start upstream devicecontroller\cf1\highlight2 
+\par \cf0\highlight0 ^C\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax# tail -f cloudcore.logs\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:37:24.868359    5346 core.go:24] Starting module edgecontroller\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:37:24.868400    5346 core.go:24] Starting module devicecontroller\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:37:24.868517    5346 upstream.go:123] start upstream controller\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:37:24.868780    5346 downstream.go:446] start downstream controller\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:37:24.869285    5346 downstream.go:873] Start downstream devicecontroller\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:37:24.987536    5346 signcerts.go:100] Succeed to creating token\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:37:24.987628    5346 server.go:44] start unix domain socket server\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:37:24.987914    5346 uds.go:71] listening on: //var/lib/kubeedge/kubeedge.sock\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:37:24.988164    5346 server.go:64] Starting cloudhub websocket server\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:37:26.869613    5346 upstream.go:63] Start upstream devicecontroller\cf1\highlight2 
+\par \cf0\highlight0 ^C\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax# kubectl get edgecluster\cf1\highlight2 
+\par \cf0\highlight0 NAME     LASTHEARBEAT   HEALTHSTATUS   SUBEDGECLUSTERS        RECEIVED_MISSIONS   MATCHED_MISSIONS\cf1\highlight2 
+\par \cf0\highlight0 node-b   7s             healthy        \{"node-c":"healthy"\}\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax# kubectl get edgecluster\cf1\highlight2 
+\par \cf0\highlight0 NAME     LASTHEARBEAT   HEALTHSTATUS   SUBEDGECLUSTERS        RECEIVED_MISSIONS   MATCHED_MISSIONS\cf1\highlight2 
+\par \cf0\highlight0 node-b   10s            healthy        \{"node-c":"healthy"\}\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax# tail -f cloudcore.logs\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:37:24.868517    5346 upstream.go:123] start upstream controller\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:37:24.868780    5346 downstream.go:446] start downstream controller\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:37:24.869285    5346 downstream.go:873] Start downstream devicecontroller\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:37:24.987536    5346 signcerts.go:100] Succeed to creating token\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:37:24.987628    5346 server.go:44] start unix domain socket server\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:37:24.987914    5346 uds.go:71] listening on: //var/lib/kubeedge/kubeedge.sock\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:37:24.988164    5346 server.go:64] Starting cloudhub websocket server\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:37:26.869613    5346 upstream.go:63] Start upstream devicecontroller\cf1\highlight2 
+\par \cf0\highlight0 I1209 05:45:28.127454    5346 messagehandler.go:293] edge node node-b for project e632aba927ea4ac2b575ec1603d56f10 connected\cf1\highlight2 
+\par \cf0\highlight0 W1209 05:45:28.127494    5346 upstream.go:188] parse message: 36f1833f-f248-4c61-b8de-84eb13c04922 resource type with error: resource type not found,\cf1\highlight2 
+\par \cf0\highlight0 ^C\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax# kubectl get edgecluster\cf1\highlight2 
+\par \cf0\highlight0 NAME     LASTHEARBEAT   HEALTHSTATUS   SUBEDGECLUSTERS                                  RECEIVED_MISSIONS   MATCHED_MISSIONS\cf1\highlight2 
+\par \cf0\highlight0 node-b   4s             healthy        \{"node-c":"healthy","node-c/node-d":"healthy"\}\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax# kubectl get edgecluster\cf1\highlight2 
+\par \cf0\highlight0 NAME     LASTHEARBEAT   HEALTHSTATUS   SUBEDGECLUSTERS                                  RECEIVED_MISSIONS   MATCHED_MISSIONS\cf1\highlight2 
+\par \cf0\highlight0 node-b   7s             healthy        \{"node-c":"healthy","node-c/node-d":"healthy"\}\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax# l\cf1\highlight2 
+\par \cf0\highlight0 ADOPTERS.md  CHANGELOG.md        \cf7 common\cf0 /          \cf7 edgemesh\cf0 /               go.sum   \cf7 LICENSES\cf0 /       \cf7 mappers\cf0 /  README.md     \cf7 vendor\cf0 /\cf1\highlight2 
+\par \cf7\highlight0 binaries\cf0 /    \cf7 cloud\cf0 /              CONTRIBUTING.md  \cf7 edgesite\cf0 /               \cf7 hack\cf0 /    MAINTAINERS     \cf7 _output\cf0 /  README_zh.md\cf1\highlight2 
+\par \cf7\highlight0 build\cf0 /       cloudcore.logs      \cf7 docs\cf0 /            external-dependency.md  \cf7 keadm\cf0 /   MAINTAINERS.md  OWNERS    \cf7 staging\cf0 /\cf1\highlight2 
+\par \cf7\highlight0 CHANGELOG\cf0 /   CODE_OF_CONDUCT.md  \cf7 edge\cf0 /            go.mod                  LICENSE  Makefile        \cf7 pkg\cf0 /      \cf7 tests\cf0 /\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax# cd tests/edgecluster/data/\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax/tests/edgecluster/data# ls\cf1\highlight2 
+\par \cf7\highlight0 ai_app\cf0   \cf7 missions\cf0   sample_edgecore_with_edgecluster.yaml\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax/tests/edgecluster/data# rm -rf ai_app\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax/tests/edgecluster/data# ls\cf1\highlight2 
+\par \cf7\highlight0 missions\cf0   sample_edgecore_with_edgecluster.yaml\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax/tests/edgecluster/data# scp 192.168.4.51:/root/fornax/tests/edgecluster/data/ai_app .\cf1\highlight2 
+\par \cf0\highlight0 The authenticity of host '192.168.4.51 (192.168.4.51)' can't be established.\cf1\highlight2 
+\par \cf0\highlight0 ECDSA key fingerprint is SHA256:CB1dE2wmZ3LcNKU6RDD0D8xosH3X8k+M4YQMZtC34RI.\cf1\highlight2 
+\par \cf0\highlight0 Are you sure you want to continue connecting (yes/no)? yes\cf1\highlight2 
+\par \cf0\highlight0 Warning: Permanently added '192.168.4.51' (ECDSA) to the list of known hosts.\cf1\highlight2 
+\par \cf0\highlight0 root@192.168.4.51's password:\cf1\highlight2 
+\par \cf0\highlight0 scp: /root/fornax/tests/edgecluster/data/ai_app: not a regular file\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax/tests/edgecluster/data# scp -r 192.168.4.51:/root/fornax/tests/edgecluster/data/ai_app .\cf1\highlight2 
+\par \cf0\highlight0 root@192.168.4.51's password:\cf1\highlight2 
+\par \cf0\highlight0 30_port_forward_mysql.yaml                                                                             100%  670   720.6KB/s   00:00\cf1\highlight2 
+\par \cf0\highlight0 11_known_pv.yaml                                                                                       100%  678   954.1KB/s   00:00\cf1\highlight2 
+\par \cf0\highlight0 01_create_ns_face.yaml                                                                                 100%  451   713.9KB/s   00:00\cf1\highlight2 
+\par \cf0\highlight0 32_port_forward_frontend.yaml                                                                          100%  718   876.9KB/s   00:00\cf1\highlight2 
+\par \cf0\highlight0 24_frontend_deployment.yaml                                                                            100% 1094     1.4MB/s   00:00\cf1\highlight2 
+\par \cf0\highlight0 17_nsqd_service.yaml                                                                                   100%  460   766.2KB/s   00:00\cf1\highlight2 
+\par \cf0\highlight0 23_frontend_service.yaml                                                                               100%  315   419.0KB/s   00:00\cf1\highlight2 
+\par \cf0\highlight0 12_unknown_pvc.yaml                                                                                    100%  472   608.1KB/s   00:00\cf1\highlight2 
+\par \cf0\highlight0 09_cp_unknown.yaml                                                                                     100%  535     1.0MB/s   00:00\cf1\highlight2 
+\par \cf0\highlight0 22_face_recog_deployment.yaml                                                                          100% 1223     1.2MB/s   00:00\cf1\highlight2 
+\par \cf0\highlight0 02_label_nodes.yaml                                                                                    100%  762   512.7KB/s   00:00\cf1\highlight2 
+\par \cf0\highlight0 05_mysql_pvc.yaml                                                                                      100%  440   454.9KB/s   00:00\cf1\highlight2 
+\par \cf0\highlight0 31_port_forward_receiver.yaml                                                                          100%  676   700.9KB/s   00:00\cf1\highlight2 
+\par \cf0\highlight0 14_nsqlookup_service.yaml                                                                              100%  479   656.0KB/s   00:00\cf1\highlight2 
+\par \cf0\highlight0 13_known_pvc.yaml                                                                                      100%  466   620.9KB/s   00:00\cf1\highlight2 
+\par \cf0\highlight0 21_face_recog_service.yaml                                                                             100%  371   705.0KB/s   00:00\cf1\highlight2 
+\par \cf0\highlight0 15_nsqlookup_deployment.yaml                                                                           100%  786   791.7KB/s   00:00\cf1\highlight2 
+\par \cf0\highlight0 07_mysql_deployment.yaml                                                                               100% 1437     1.3MB/s   00:00\cf1\highlight2 
+\par \cf0\highlight0 18_receiver_deployment.yaml                                                                            100% 1227     1.2MB/s   00:00\cf1\highlight2 
+\par \cf0\highlight0 16_receiver_service.yaml                                                                               100%  370   497.9KB/s   00:00\cf1\highlight2 
+\par \cf0\highlight0 10_unknown_pv.yaml                                                                                     100%  684   923.3KB/s   00:00\cf1\highlight2 
+\par \cf0\highlight0 04_mysql_service.yaml                                                                                  100%  311   428.5KB/s   00:00\cf1\highlight2 
+\par \cf0\highlight0 mysql-pv.yml                                                                                           100%  663     1.0MB/s   00:00\cf1\highlight2 
+\par \cf0\highlight0 20_image_processor_deployment.yaml                                                                     100% 1141     1.6MB/s   00:00\cf1\highlight2 
+\par \cf0\highlight0 19_nsqd_deployment.yaml                                                                                100% 1094     1.3MB/s   00:00\cf1\highlight2 
+\par \cf0\highlight0 08_cp_known.yaml                                                                                       100%  559   586.0KB/s   00:00\cf1\highlight2 
+\par \cf0\highlight0 03_create_secret.yaml                                                                                  100%  333   339.3KB/s   00:00\cf1\highlight2 
+\par \cf0\highlight0 06_create_configmap.yaml                                                                               100%  723   720.5KB/s   00:00\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax/tests/edgecluster/data# ls\cf1\highlight2 
+\par \cf7\highlight0 ai_app\cf0   \cf7 missions\cf0   sample_edgecore_with_edgecluster.yaml\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax/tests/edgecluster/data# cd ai_app\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax/tests/edgecluster/data/ai_app# ls\cf1\highlight2 
+\par \cf0\highlight0 01_create_ns_face.yaml    08_cp_known.yaml           15_nsqlookup_deployment.yaml        22_face_recog_deployment.yaml\cf1\highlight2 
+\par \cf0\highlight0 02_label_nodes.yaml       09_cp_unknown.yaml         16_receiver_service.yaml            23_frontend_service.yaml\cf1\highlight2 
+\par \cf0\highlight0 03_create_secret.yaml     10_unknown_pv.yaml         17_nsqd_service.yaml                24_frontend_deployment.yaml\cf1\highlight2 
+\par \cf0\highlight0 04_mysql_service.yaml     11_known_pv.yaml           18_receiver_deployment.yaml         30_port_forward_mysql.yaml\cf1\highlight2 
+\par \cf0\highlight0 05_mysql_pvc.yaml         12_unknown_pvc.yaml        19_nsqd_deployment.yaml             31_port_forward_receiver.yaml\cf1\highlight2 
+\par \cf0\highlight0 06_create_configmap.yaml  13_known_pvc.yaml          20_image_processor_deployment.yaml  32_port_forward_frontend.yaml\cf1\highlight2 
+\par \cf0\highlight0 07_mysql_deployment.yaml  14_nsqlookup_service.yaml  21_face_recog_service.yaml          mysql-pv.yml\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax/tests/edgecluster/data/ai_app# kubectl apply -Rf ai_app/\cf1\highlight2 
+\par \cf0\highlight0 error: the path "ai_app/" does not exist\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax/tests/edgecluster/data/ai_app# cd ..\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax/tests/edgecluster/data# kubectl apply -Rf ai_app/\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/command-create-ns-face created\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/command-label-node created\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/resource-secret created\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/resource-mysql-service created\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/resource-mysql-pvc created\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/command-create-configmap created\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/resource-mysql-deployment created\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/command-cp-known created\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/command-cp-unknown created\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/resource-unknown-pv created\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/resource-known-pv created\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/resource-unknown-pvc created\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/resource-known-pvc created\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/resource-nsqlookup-service created\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/resource-nsqlookup-deployment created\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/resource-receiver-svc created\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/resource-nsqd-svc created\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/resource-receiver-deployment created\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/resource-nsqd-deployment created\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/resource-image-processor-deployment created\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/resource-face-recog-svc created\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/resource-face-recog-deployment created\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/resource-frontend-svc created\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/resource-frontend-deployment created\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/command-mysql-port-forward created\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/command-receiver-port-forward created\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/command-frontend-port-forward created\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/resource-mysql-pv created\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax/tests/edgecluster/data# kubectl get edgecluster\cf1\highlight2 
+\par \cf0\highlight0 NAME     LASTHEARBEAT   HEALTHSTATUS   SUBEDGECLUSTERS                                  RECEIVED_MISSIONS                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  MATCHED_MISSIONS\cf1\highlight2 
+\par \cf0\highlight0 node-b   11s            healthy        \{"node-c":"healthy","node-c/node-d":"healthy"\}   ["resource-unknown-pvc","resource-mysql-pvc","command-cp-unknown","resource-unknown-pv","resource-receiver-svc","command-frontend-port-forward","resource-nsqlookup-deployment","resource-secret","resource-face-recog-svc","command-create-ns-face","resource-face-recog-deployment","command-create-configmap","command-cp-known","command-mysql-port-forward","resource-nsqd-deployment","resource-frontend-svc","resource-known-pv","resource-frontend-deployment","resource-mysql-pv","resource-mysql-deployment","resource-known-pvc","resource-receiver-deployment","resource-nsqlookup-service","resource-image-processor-deployment","command-receiver-port-forward","resource-nsqd-svc","command-label-node","resource-mysql-service"]   ["resource-unknown-pvc","resource-mysql-pvc","command-cp-unknown","resource-unknown-pv","resource-receiver-svc","resource-nsqlookup-deployment","resource-secret","resource-face-recog-svc","command-create-ns-face","resource-face-recog-deployment","command-create-configmap","command-cp-known","resource-nsqd-deployment","resource-frontend-svc","resource-known-pv","resource-frontend-deployment","resource-mysql-pv","resource-mysql-deployment","resource-known-pvc","resource-receiver-deployment","resource-nsqlookup-service","resource-image-processor-deployment","resource-nsqd-svc","command-label-node","resource-mysql-service"]\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax/tests/edgecluster/data# kubectl get edgecluster\cf1\highlight2 
+\par \cf0\highlight0 NAME     LASTHEARBEAT   HEALTHSTATUS   SUBEDGECLUSTERS                                  RECEIVED_MISSIONS                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  MATCHED_MISSIONS\cf1\highlight2 
+\par \cf0\highlight0 node-b   5s             healthy        \{"node-c":"healthy","node-c/node-d":"healthy"\}   ["resource-known-pvc","resource-receiver-deployment","resource-mysql-deployment","resource-image-processor-deployment","command-receiver-port-forward","resource-nsqd-svc","command-label-node","resource-mysql-service","resource-nsqlookup-service","resource-mysql-pvc","command-cp-unknown","resource-unknown-pvc","resource-receiver-svc","command-frontend-port-forward","resource-nsqlookup-deployment","resource-unknown-pv","resource-face-recog-svc","command-create-ns-face","resource-secret","command-create-configmap","command-cp-known","command-mysql-port-forward","resource-nsqd-deployment","resource-frontend-svc","resource-face-recog-deployment","resource-known-pv","resource-mysql-pv","resource-frontend-deployment"]   ["resource-known-pvc","resource-receiver-deployment","resource-mysql-deployment","resource-image-processor-deployment","resource-nsqd-svc","command-label-node","resource-mysql-service","resource-nsqlookup-service","resource-mysql-pvc","command-cp-unknown","resource-unknown-pvc","resource-receiver-svc","resource-nsqlookup-deployment","resource-unknown-pv","resource-face-recog-svc","command-create-ns-face","resource-secret","command-create-configmap","command-cp-known","resource-nsqd-deployment","resource-frontend-svc","resource-face-recog-deployment","resource-known-pv","resource-mysql-pv","resource-frontend-deployment"]\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax/tests/edgecluster/data# kubectl get edgecluster\cf1\highlight2 
+\par \cf0\highlight0 NAME     LASTHEARBEAT   HEALTHSTATUS   SUBEDGECLUSTERS                                  RECEIVED_MISSIONS                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  MATCHED_MISSIONS\cf1\highlight2 
+\par \cf0\highlight0 node-b   3s             healthy        \{"node-c":"healthy","node-c/node-d":"healthy"\}   ["command-label-node","resource-mysql-service","resource-nsqlookup-service","resource-image-processor-deployment","command-receiver-port-forward","resource-nsqd-svc","resource-unknown-pvc","resource-mysql-pvc","command-cp-unknown","resource-unknown-pv","resource-receiver-svc","command-frontend-port-forward","resource-nsqlookup-deployment","resource-secret","resource-face-recog-svc","command-create-ns-face","resource-nsqd-deployment","resource-frontend-svc","resource-face-recog-deployment","command-create-configmap","command-cp-known","command-mysql-port-forward","resource-known-pv","resource-frontend-deployment","resource-mysql-pv","resource-mysql-deployment","resource-known-pvc","resource-receiver-deployment"]   ["command-label-node","resource-mysql-service","resource-nsqlookup-service","resource-image-processor-deployment","resource-nsqd-svc","resource-unknown-pvc","resource-mysql-pvc","command-cp-unknown","resource-unknown-pv","resource-receiver-svc","resource-nsqlookup-deployment","resource-secret","resource-face-recog-svc","command-create-ns-face","resource-nsqd-deployment","resource-frontend-svc","resource-face-recog-deployment","command-create-configmap","command-cp-known","resource-known-pv","resource-frontend-deployment","resource-mysql-pv","resource-mysql-deployment","resource-known-pvc","resource-receiver-deployment"]\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax/tests/edgecluster/data# history\cf1\highlight2 
+\par \cf0\highlight0     1  vi /etc/ssh/sshd_config\cf1\highlight2 
+\par \cf0\highlight0     2  init 6\cf1\highlight2 
+\par \cf0\highlight0     3  init 0\cf1\highlight2 
+\par \cf0\highlight0     4  ip a\cf1\highlight2 
+\par \cf0\highlight0     5  init 0\cf1\highlight2 
+\par \cf0\highlight0     6  ip a\cf1\highlight2 
+\par \cf0\highlight0     7  vim /etc/netplan/00-installer-config.yaml\cf1\highlight2 
+\par \cf0\highlight0     8  netplan apply\cf1\highlight2 
+\par \cf0\highlight0     9  init 0\cf1\highlight2 
+\par \cf0\highlight0    10  vi /etc/hostname\cf1\highlight2 
+\par \cf0\highlight0    11  init 6\cf1\highlight2 
+\par \cf0\highlight0    12  apt-get update -y\cf1\highlight2 
+\par \cf0\highlight0    13  swapoff -a\cf1\highlight2 
+\par \cf0\highlight0    14  ufw disable\cf1\highlight2 
+\par \cf0\highlight0    15  apt-get install build-essential -y\cf1\highlight2 
+\par \cf0\highlight0    16  history\cf1\highlight2 
+\par \cf0\highlight0    17  ls\cf1\highlight2 
+\par \cf0\highlight0    18  ll\cf1\highlight2 
+\par \cf0\highlight0    19  systemctl status docker\cf1\highlight2 
+\par \cf0\highlight0    20  swapoff -a\cf1\highlight2 
+\par \cf0\highlight0    21  uw disable\cf1\highlight2 
+\par \cf0\highlight0    22  ufw disable\cf1\highlight2 
+\par \cf0\highlight0    23  apt-get update -y\cf1\highlight2 
+\par \cf0\highlight0    24  apt-get remove -y docker docker-engine docker.io containerd runc\cf1\highlight2 
+\par \cf0\highlight0    25  apt-get install -y apt-transport-https ca-certificates curl gnupg lsb-release\cf1\highlight2 
+\par \cf0\highlight0    26  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg\cf1\highlight2 
+\par \cf0\highlight0    27  echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | tee /etc/apt/sources.list.d/docker.list > /dev/null\cf1\highlight2 
+\par \cf0\highlight0    28  apt-get update -y\cf1\highlight2 
+\par \cf0\highlight0    29  apt-get install -y docker-ce docker-ce-cli containerd.io\cf1\highlight2 
+\par \cf0\highlight0    30  mkdir /etc/docker\cf1\highlight2 
+\par \cf0\highlight0    31  cat <<EOF | tee /etc/docker/daemon.json\cf1\highlight2 
+\par \cf0\highlight0    32  \{\cf1\highlight2 
+\par \cf0\highlight0    33  "exec-opts": ["native.cgroupdriver=systemd"],\cf1\highlight2 
+\par \cf0\highlight0    34  "log-driver": "json-file",\cf1\highlight2 
+\par \cf0\highlight0    35  "log-opts": \{\cf1\highlight2 
+\par \cf0\highlight0    36  "max-size": "100m"\cf1\highlight2 
+\par \cf0\highlight0    37  \},\cf1\highlight2 
+\par \cf0\highlight0    38  "storage-driver": "overlay2"\cf1\highlight2 
+\par \cf0\highlight0    39  \}\cf1\highlight2 
+\par \cf0\highlight0    40  EOF\cf1\highlight2 
+\par \cf0\highlight0    41  systemctl enable docker\cf1\highlight2 
+\par \cf0\highlight0    42  systemctl daemon-reload\cf1\highlight2 
+\par \cf0\highlight0    43  systemctl restart docker\cf1\highlight2 
+\par \cf0\highlight0    44  systemctl status docker\cf1\highlight2 
+\par \cf0\highlight0    45  swapoff -a\cf1\highlight2 
+\par \cf0\highlight0    46  cat <<EOF | tee /etc/modules-load.d/k8s.conf\cf1\highlight2 
+\par \cf0\highlight0    47  br_netfilter\cf1\highlight2 
+\par \cf0\highlight0    48  EOF\cf1\highlight2 
+\par \cf0\highlight0    49  cat <<EOF | tee /etc/sysctl.d/k8s.conf\cf1\highlight2 
+\par \cf0\highlight0    50  net.bridge.bridge-nf-call-ip6tables = 1\cf1\highlight2 
+\par \cf0\highlight0    51  net.bridge.bridge-nf-call-iptables = 1\cf1\highlight2 
+\par \cf0\highlight0    52  EOF\cf1\highlight2 
+\par \cf0\highlight0    53  sysctl --system\cf1\highlight2 
+\par \cf0\highlight0    54  apt-get update -y\cf1\highlight2 
+\par \cf0\highlight0    55  apt-get install -y apt-transport-https ca-certificates curl\cf1\highlight2 
+\par \cf0\highlight0    56  curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg\cf1\highlight2 
+\par \cf0\highlight0    57  echo "deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | tee /etc/apt/sources.list.d/kubernetes.list\cf1\highlight2 
+\par \cf0\highlight0    58  apt-get update -y\cf1\highlight2 
+\par \cf0\highlight0    59  apt install -y kubeadm=1.21.1-00 kubelet=1.21.1-00 kubectl=1.21.1-00 --allow-change-held-packages\cf1\highlight2 
+\par \cf0\highlight0    60  apt-mark hold kubelet kubeadm kubectl\cf1\highlight2 
+\par \cf0\highlight0    61  systemctl enable --now kubelet\cf1\highlight2 
+\par \cf0\highlight0    62  systemctl status kubelet\cf1\highlight2 
+\par \cf0\highlight0    63  kubeadm init --pod-network-cidr=10.244.0.0/16\cf1\highlight2 
+\par \cf0\highlight0    64  mkdir -p $HOME/.kube\cf1\highlight2 
+\par \cf0\highlight0    65  cp -i /etc/kubernetes/admin.conf $HOME/.kube/config\cf1\highlight2 
+\par \cf0\highlight0    66  chown $(id -u):$(id -g) $HOME/.kube/config\cf1\highlight2 
+\par \cf0\highlight0    67  kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml\cf1\highlight2 
+\par \cf0\highlight0    68  kubectl get nodes\cf1\highlight2 
+\par \cf0\highlight0    69  sudo wget https://storage.googleapis.com/golang/go1.15.4.linux-amd64.tar.gz\cf1\highlight2 
+\par \cf0\highlight0    70  sudo tar -C /usr/local -xzf go1.15.4.linux-amd64.tar.gz\cf1\highlight2 
+\par \cf0\highlight0    71  sudo echo 'export PATH=$PATH:/usr/local/go/bin' >> $HOME/.profile\cf1\highlight2 
+\par \cf0\highlight0    72  sudo echo 'export GOPATH=$HOME/gopath' >> $HOME/.profile\cf1\highlight2 
+\par \cf0\highlight0    73  source $HOME/.profile\cf1\highlight2 
+\par \cf0\highlight0    74  apt install -y make gcc jq\cf1\highlight2 
+\par \cf0\highlight0    75  go version\cf1\highlight2 
+\par \cf0\highlight0    76  logout\cf1\highlight2 
+\par \cf0\highlight0    77  kubectl get nodes\cf1\highlight2 
+\par \cf0\highlight0    78  git clone https://github.com/CentaurusInfra/fornax\cf1\highlight2 
+\par \cf0\highlight0    79  cd fornax\cf1\highlight2 
+\par \cf0\highlight0    80  make WHAT=cloudcore\cf1\highlight2 
+\par \cf0\highlight0    81  make WHAT=edgecore\cf1\highlight2 
+\par \cf0\highlight0    82  cp /etc/kubernetes/admin.conf /root/.kube/config\cf1\highlight2 
+\par \cf0\highlight0    83  mkdir -p /etc/kubeedge/config\cf1\highlight2 
+\par \cf0\highlight0    84  _output/local/bin/cloudcore --minconfig > /etc/kubeedge/config/cloudcore.yaml\cf1\highlight2 
+\par \cf0\highlight0    85  build/tools/certgen.sh genCertAndKey server 192.168.1.210 192.168.1.211 192.168.1.212 192.168.1.213\cf1\highlight2 
+\par \cf0\highlight0    86  build/tools/certgen.sh genCA 192.168.1.210 192.168.1.211 192.168.1.212 192.168.1.213\cf1\highlight2 
+\par \cf0\highlight0    87  mkdir -p /etc/kubeedge/ca\cf1\highlight2 
+\par \cf0\highlight0    88  mkdir -p /etc/kubeedge/certs\cf1\highlight2 
+\par \cf0\highlight0    89  build/tools/certgen.sh genCA 192.168.1.210 192.168.1.211 192.168.1.212 192.168.1.213\cf1\highlight2 
+\par \cf0\highlight0    90  mkdir -p /etc/kubeedge/certs\cf1\highlight2 
+\par \cf0\highlight0    91  build/tools/certgen.sh genCA 192.168.1.210 192.168.1.211 192.168.1.212 192.168.1.213\cf1\highlight2 
+\par \cf0\highlight0    92  build/tools/certgen.sh genCertAndKey server 192.168.1.210 192.168.1.211 192.168.1.212 192.168.1.213\cf1\highlight2 
+\par \cf0\highlight0    93  cd /etc/kubeedge/\cf1\highlight2 
+\par \cf0\highlight0    94  ls\cf1\highlight2 
+\par \cf0\highlight0    95  cd ca\cf1\highlight2 
+\par \cf0\highlight0    96  ls\cf1\highlight2 
+\par \cf0\highlight0    97  cd ..\cf1\highlight2 
+\par \cf0\highlight0    98  cd certs\cf1\highlight2 
+\par \cf0\highlight0    99  ls\cf1\highlight2 
+\par \cf0\highlight0   100  kubectl apply -f build/crds/devices/devices_v1alpha2_device.yaml\cf1\highlight2 
+\par \cf0\highlight0   101  kubectl apply -f build/crds/devices/devices_v1alpha2_devicemodel.yaml\cf1\highlight2 
+\par \cf0\highlight0   102  kubectl apply -f build/crds/reliablesyncs/cluster_objectsync_v1alpha1.yaml\cf1\highlight2 
+\par \cf0\highlight0   103  kubectl apply -f build/crds/reliablesyncs/objectsync_v1alpha1.yaml\cf1\highlight2 
+\par \cf0\highlight0   104  kubectl apply -f build/crds/router/router_v1_rule.yaml\cf1\highlight2 
+\par \cf0\highlight0   105  kubectl apply -f build/crds/router/router_v1_ruleEndpoint.yaml\cf1\highlight2 
+\par \cf0\highlight0   106  kubectl apply -f build/crds/edgecluster/mission_v1.yaml\cf1\highlight2 
+\par \cf0\highlight0   107  cd /root/fornax/\cf1\highlight2 
+\par \cf0\highlight0   108  kubectl apply -f build/crds/devices/devices_v1alpha2_device.yaml\cf1\highlight2 
+\par \cf0\highlight0   109  kubectl apply -f build/crds/devices/devices_v1alpha2_devicemodel.yaml\cf1\highlight2 
+\par \cf0\highlight0   110  kubectl apply -f build/crds/reliablesyncs/cluster_objectsync_v1alpha1.yaml\cf1\highlight2 
+\par \cf0\highlight0   111  kubectl apply -f build/crds/reliablesyncs/objectsync_v1alpha1.yaml\cf1\highlight2 
+\par \cf0\highlight0   112  kubectl apply -f build/crds/router/router_v1_rule.yaml\cf1\highlight2 
+\par \cf0\highlight0   113  kubectl apply -f build/crds/router/router_v1_ruleEndpoint.yaml\cf1\highlight2 
+\par \cf0\highlight0   114  kubectl apply -f build/crds/edgecluster/mission_v1.yaml\cf1\highlight2 
+\par \cf0\highlight0   115  kubectl apply -f build/crds/edgecluster/edgecluster_v1.yaml\cf1\highlight2 
+\par \cf0\highlight0   116  nohup _output/local/bin/cloudcore > cloudcore.logs 2>&1 &\cf1\highlight2 
+\par \cf0\highlight0   117  tail -f cloudcore.logs\cf1\highlight2 
+\par \cf0\highlight0   118  kubectl get edgecluster\cf1\highlight2 
+\par \cf0\highlight0   119  tail -f cloudcore.logs\cf1\highlight2 
+\par \cf0\highlight0   120  kubectl get edgecluster\cf1\highlight2 
+\par \cf0\highlight0   121  l\cf1\highlight2 
+\par \cf0\highlight0   122  cd tests/edgecluster/data/\cf1\highlight2 
+\par \cf0\highlight0   123  ls\cf1\highlight2 
+\par \cf0\highlight0   124  rm -rf ai_app\cf1\highlight2 
+\par \cf0\highlight0   125  ls\cf1\highlight2 
+\par \cf0\highlight0   126  scp 192.168.4.51:/root/fornax/tests/edgecluster/data/ai_app .\cf1\highlight2 
+\par \cf0\highlight0   127  scp -r 192.168.4.51:/root/fornax/tests/edgecluster/data/ai_app .\cf1\highlight2 
+\par \cf0\highlight0   128  ls\cf1\highlight2 
+\par \cf0\highlight0   129  cd ai_app\cf1\highlight2 
+\par \cf0\highlight0   130  ls\cf1\highlight2 
+\par \cf0\highlight0   131  kubectl apply -Rf ai_app/\cf1\highlight2 
+\par \cf0\highlight0   132  cd ..\cf1\highlight2 
+\par \cf0\highlight0   133  kubectl apply -Rf ai_app/\cf1\highlight2 
+\par \cf0\highlight0   134  kubectl get edgecluster\cf1\highlight2 
+\par \cf0\highlight0   135  history\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax/tests/edgecluster/data# ^C\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax/tests/edgecluster/data# kubectl delete -f ai_app/\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io "command-create-ns-face" deleted\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io "command-label-node" deleted\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io "resource-secret" deleted\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io "resource-mysql-service" deleted\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io "resource-mysql-pvc" deleted\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io "command-create-configmap" deleted\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io "resource-mysql-deployment" deleted\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io "command-cp-known" deleted\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io "command-cp-unknown" deleted\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io "resource-unknown-pv" deleted\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io "resource-known-pv" deleted\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io "resource-unknown-pvc" deleted\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io "resource-known-pvc" deleted\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io "resource-nsqlookup-service" deleted\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io "resource-nsqlookup-deployment" deleted\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io "resource-receiver-svc" deleted\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io "resource-nsqd-svc" deleted\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io "resource-receiver-deployment" deleted\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io "resource-nsqd-deployment" deleted\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io "resource-image-processor-deployment" deleted\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io "resource-face-recog-svc" deleted\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io "resource-face-recog-deployment" deleted\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io "resource-frontend-svc" deleted\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io "resource-frontend-deployment" deleted\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io "command-mysql-port-forward" deleted\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io "command-receiver-port-forward" deleted\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io "command-frontend-port-forward" deleted\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io "resource-mysql-pv" deleted\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax/tests/edgecluster/data# kubectl get edgecluster\cf1\highlight2 
+\par \cf0\highlight0 NAME     LASTHEARBEAT   HEALTHSTATUS   SUBEDGECLUSTERS                                  RECEIVED_MISSIONS   MATCHED_MISSIONS\cf1\highlight2 
+\par \cf0\highlight0 node-b   8s             healthy        \{"node-c":"healthy","node-c/node-d":"healthy"\}\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax/tests/edgecluster/data# kubectl apply -Rf ai_app/\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/command-create-ns-face created\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/command-label-node created\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/resource-secret created\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/resource-mysql-service created\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/resource-mysql-pvc created\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/command-create-configmap created\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/resource-mysql-deployment created\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/command-cp-known created\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/command-cp-unknown created\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/resource-unknown-pv created\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/resource-known-pv created\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/resource-unknown-pvc created\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/resource-known-pvc created\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/resource-nsqlookup-service created\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/resource-nsqlookup-deployment created\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/resource-receiver-svc created\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/resource-nsqd-svc created\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/resource-receiver-deployment created\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/resource-nsqd-deployment created\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/resource-image-processor-deployment created\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/resource-face-recog-svc created\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/resource-face-recog-deployment created\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/resource-frontend-svc created\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/resource-frontend-deployment created\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/command-mysql-port-forward created\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/command-receiver-port-forward created\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/command-frontend-port-forward created\cf1\highlight2 
+\par \cf0\highlight0 mission.edgeclusters.kubeedge.io/resource-mysql-pv created\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax/tests/edgecluster/data# kubectl get edgecluster\cf1\highlight2 
+\par \cf0\highlight0 NAME     LASTHEARBEAT   HEALTHSTATUS   SUBEDGECLUSTERS                                  RECEIVED_MISSIONS                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  MATCHED_MISSIONS\cf1\highlight2 
+\par \cf0\highlight0 node-b   8s             healthy        \{"node-c":"healthy","node-c/node-d":"healthy"\}   ["command-create-ns-face","resource-face-recog-svc","resource-secret","command-create-configmap","command-cp-known","command-mysql-port-forward","resource-nsqd-deployment","resource-frontend-svc","resource-face-recog-deployment","resource-known-pv","resource-mysql-pv","resource-frontend-deployment","resource-known-pvc","resource-receiver-deployment","resource-mysql-deployment","resource-nsqlookup-service","resource-image-processor-deployment","command-receiver-port-forward","resource-nsqd-svc","command-label-node","resource-mysql-service","resource-mysql-pvc","command-cp-unknown","resource-unknown-pvc","resource-unknown-pv","resource-receiver-svc","command-frontend-port-forward","resource-nsqlookup-deployment"]   ["command-create-ns-face","resource-face-recog-svc","resource-secret","command-create-configmap","command-cp-known","resource-nsqd-deployment","resource-frontend-svc","resource-face-recog-deployment","resource-known-pv","resource-mysql-pv","resource-frontend-deployment","resource-known-pvc","resource-receiver-deployment","resource-mysql-deployment","resource-nsqlookup-service","resource-image-processor-deployment","resource-nsqd-svc","command-label-node","resource-mysql-service","resource-mysql-pvc","command-cp-unknown","resource-unknown-pvc","resource-unknown-pv","resource-receiver-svc","resource-nsqlookup-deployment"]\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax/tests/edgecluster/data# kubectl get edgecluster\cf1\highlight2 
+\par \cf0\highlight0 NAME     LASTHEARBEAT   HEALTHSTATUS   SUBEDGECLUSTERS                                  RECEIVED_MISSIONS                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  MATCHED_MISSIONS\cf1\highlight2 
+\par \cf0\highlight0 node-b   1s             healthy        \{"node-c":"healthy","node-c/node-d":"healthy"\}   ["resource-mysql-service","resource-nsqlookup-service","resource-image-processor-deployment","command-receiver-port-forward","resource-nsqd-svc","command-label-node","resource-unknown-pvc","resource-mysql-pvc","command-cp-unknown","resource-nsqlookup-deployment","resource-unknown-pv","resource-receiver-svc","command-frontend-port-forward","resource-secret","command-create-ns-face","resource-face-recog-svc","resource-face-recog-deployment","command-create-configmap","command-cp-known","command-mysql-port-forward","resource-nsqd-deployment","resource-frontend-svc","resource-known-pv","resource-mysql-pv","resource-frontend-deployment","resource-mysql-deployment","resource-known-pvc","resource-receiver-deployment"]   ["resource-mysql-service","resource-nsqlookup-service","resource-image-processor-deployment","resource-nsqd-svc","command-label-node","resource-unknown-pvc","resource-mysql-pvc","command-cp-unknown","resource-nsqlookup-deployment","resource-unknown-pv","resource-receiver-svc","resource-secret","command-create-ns-face","resource-face-recog-svc","resource-face-recog-deployment","command-create-configmap","command-cp-known","resource-nsqd-deployment","resource-frontend-svc","resource-known-pv","resource-mysql-pv","resource-frontend-deployment","resource-mysql-deployment","resource-known-pvc","resource-receiver-deployment"]\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax/tests/edgecluster/data# kubectl get edgecluster\cf1\highlight2 
+\par \cf0\highlight0 NAME     LASTHEARBEAT   HEALTHSTATUS   SUBEDGECLUSTERS                                  RECEIVED_MISSIONS                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  MATCHED_MISSIONS\cf1\highlight2 
+\par \cf0\highlight0 node-b   7s             healthy        \{"node-c":"healthy","node-c/node-d":"healthy"\}   ["command-label-node","resource-mysql-service","resource-nsqlookup-service","resource-image-processor-deployment","command-receiver-port-forward","resource-nsqd-svc","command-cp-unknown","resource-unknown-pvc","resource-mysql-pvc","command-frontend-port-forward","resource-nsqlookup-deployment","resource-unknown-pv","resource-receiver-svc","resource-face-recog-svc","resource-secret","command-create-ns-face","resource-frontend-svc","resource-face-recog-deployment","command-create-configmap","command-cp-known","command-mysql-port-forward","resource-nsqd-deployment","resource-known-pv","resource-frontend-deployment","resource-mysql-pv","resource-receiver-deployment","resource-mysql-deployment","resource-known-pvc"]   ["command-label-node","resource-mysql-service","resource-nsqlookup-service","resource-image-processor-deployment","resource-nsqd-svc","command-cp-unknown","resource-unknown-pvc","resource-mysql-pvc","resource-nsqlookup-deployment","resource-unknown-pv","resource-receiver-svc","resource-face-recog-svc","resource-secret","command-create-ns-face","resource-frontend-svc","resource-face-recog-deployment","command-create-configmap","command-cp-known","resource-nsqd-deployment","resource-known-pv","resource-frontend-deployment","resource-mysql-pv","resource-receiver-deployment","resource-mysql-deployment","resource-known-pvc"]\cf1\highlight2 
+\par \cf0\highlight0 root@node-a:~/fornax/tests/edgecluster/data#\cf1\highlight2 
+\par \pard\cf0\highlight0\f2 
+\par }
+ 
