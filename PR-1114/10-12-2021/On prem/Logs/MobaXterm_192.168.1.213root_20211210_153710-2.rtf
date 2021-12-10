@@ -1,0 +1,750 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fmodern Consolas;}{\f1\fmodern\fcharset0 Consolas;}{\f2\fnil\fcharset129 Courier New;}}
+{\colortbl ;\red20\green20\blue20;\red142\green142\blue142;\red16\green158\blue98;\red148\green146\blue12;\red170\green51\blue170;\red56\green136\blue159;\red18\green18\blue18;\red245\green245\blue245;\red18\green124\blue155;\red94\green147\blue162;}
+\viewkind4\uc1\pard\f0\fs20 Server refused our key\cf1\highlight2 
+\par \cf0\highlight0     \u9484?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9488?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?                 \cf3\f1\bullet  MobaXterm Personal Edition v21.4 \bullet\cf0\f0                  \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?               \cf4 (SSH client, X server and network tools)\cf0                \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?                                                                      \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474? \u8594? SSH session to \cf5 root@192.168.1.213                        \cf0           \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  Direct SSH      :  \cf3\f0 v\cf0                                              \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  SSH compression :  \cf3\f0 v\cf0                                              \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  SSH-browser     :  \cf3\f0 v\cf0                                              \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  X11-forwarding  :  \cf3\f0 v\cf0   (remote display is forwarded through SSH)  \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?                                                                      \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474? \u8594? For more info, ctrl+click on \cf6\ul help\cf0\ulnone  or visit our \cf6\ul website\cf0\ulnone .            \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9492?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9496?\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 5.6.0-rc2 x86_64)\cf1\highlight2 
+\par 
+\par \cf0\highlight0  * Documentation:  https://help.ubuntu.com\cf1\highlight2 
+\par \cf0\highlight0  * Management:     https://landscape.canonical.com\cf1\highlight2 
+\par \cf0\highlight0  * Support:        https://ubuntu.com/advantage\cf1\highlight2 
+\par 
+\par \cf0\highlight0   System information as of Fri Dec 10 07:21:21 UTC 2021\cf1\highlight2 
+\par 
+\par \cf0\highlight0   System load:  0.48               Processes:              361\cf1\highlight2 
+\par \cf0\highlight0   Usage of /:   24.6% of 72.83GB   Users logged in:        1\cf1\highlight2 
+\par \cf0\highlight0   Memory usage: 9%                 IP address for ens160:  192.168.1.213\cf1\highlight2 
+\par \cf0\highlight0   Swap usage:   0%                 IP address for docker0: 172.17.0.1\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0  * Canonical Livepatch is available for installation.\cf1\highlight2 
+\par \cf0\highlight0    - Reduce system reboots and improve kernel security. Activate at:\cf1\highlight2 
+\par \cf0\highlight0      https://ubuntu.com/livepatch\cf1\highlight2 
+\par 
+\par \cf0\highlight0 74 packages can be updated.\cf1\highlight2 
+\par \cf0\highlight0 1 update is a security update.\cf1\highlight2 
+\par 
+\par \cf0\highlight0 New release '20.04.3 LTS' available.\cf1\highlight2 
+\par \cf0\highlight0 Run 'do-release-upgrade' to upgrade to it.\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 *** System restart required ***\cf1\highlight2 
+\par \cf0\highlight0 Last login: Fri Dec 10 05:47:18 2021 from 192.168.1.1\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get nodes\cf1\highlight2 
+\par \cf0\highlight0 NAME     STATUS     ROLES    AGE   VERSION\cf1\highlight2 
+\par \cf0\highlight0 node-d   NotReady   <none>   25m   v0.9.0\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get nodes\cf1\highlight2 
+\par \cf0\highlight0 NAME     STATUS     ROLES    AGE   VERSION\cf1\highlight2 
+\par \cf0\highlight0 node-d   NotReady   <none>   26m   v0.9.0\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get nodes\cf1\highlight2 
+\par \cf0\highlight0 NAME     STATUS     ROLES    AGE   VERSION\cf1\highlight2 
+\par \cf0\highlight0 node-d   NotReady   <none>   26m   v0.9.0\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# systemctl status containerd\cf1\highlight2 
+\par \cf3\highlight0\u9679?\cf0  containerd.service - containerd container runtime\cf1\highlight2 
+\par \cf0\highlight0    Loaded: loaded (/lib/systemd/system/containerd.service; enabled; vendor preset: enabled)\cf1\highlight2 
+\par \cf0\highlight0    Active: \cf3 active (running)\cf0  since Fri 2021-12-10 06:02:07 UTC; 1h 25min ago\cf1\highlight2 
+\par \cf0\highlight0      Docs: https://containerd.io\cf1\highlight2 
+\par \cf0\highlight0  Main PID: 5964 (containerd)\cf1\highlight2 
+\par \cf0\highlight0     Tasks: 28\cf1\highlight2 
+\par \cf0\highlight0    CGroup: /system.slice/containerd.service\cf1\highlight2 
+\par \cf0\highlight0            \u9492?\u9472?5964 /usr/bin/containerd\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Dec 10 07:27:38 node-d containerd[5964]: time="2021-12-10T07:27:38.032207659Z" level=info msg="No cni config template is specified, wait\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:27:38 node-d containerd[5964]: time="2021-12-10T07:27:38.133011246Z" level=info msg="No cni config template is specified, wait\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:27:38 node-d containerd[5964]: time="2021-12-10T07:27:38.233944981Z" level=info msg="No cni config template is specified, wait\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:27:38 node-d containerd[5964]: time="2021-12-10T07:27:38.334922039Z" level=info msg="No cni config template is specified, wait\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:27:38 node-d containerd[5964]: time="2021-12-10T07:27:38.435808229Z" level=info msg="No cni config template is specified, wait\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:27:38 node-d containerd[5964]: time="2021-12-10T07:27:38.536682133Z" level=info msg="No cni config template is specified, wait\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:27:38 node-d containerd[5964]: time="2021-12-10T07:27:38.637447349Z" level=info msg="No cni config template is specified, wait\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:27:38 node-d containerd[5964]: time="2021-12-10T07:27:38.738370529Z" level=info msg="No cni config template is specified, wait\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:27:38 node-d containerd[5964]: time="2021-12-10T07:27:38.839313850Z" level=info msg="No cni config template is specified, wait\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:27:38 node-d containerd[5964]: time="2021-12-10T07:27:38.940202077Z" level=info msg="No cni config template is specified, wait\cf1\highlight2 
+\par 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# systemctl status containerd\cf1\highlight2 
+\par \cf3\highlight0\u9679?\cf0  containerd.service - containerd container runtime\cf1\highlight2 
+\par \cf0\highlight0    Loaded: loaded (/lib/systemd/system/containerd.service; enabled; vendor preset: enabled)\cf1\highlight2 
+\par \cf0\highlight0    Active: \cf3 active (running)\cf0  since Fri 2021-12-10 06:02:07 UTC; 1h 29min ago\cf1\highlight2 
+\par \cf0\highlight0      Docs: https://containerd.io\cf1\highlight2 
+\par \cf0\highlight0  Main PID: 5964 (containerd)\cf1\highlight2 
+\par \cf0\highlight0     Tasks: 28\cf1\highlight2 
+\par \cf0\highlight0    CGroup: /system.slice/containerd.service\cf1\highlight2 
+\par \cf0\highlight0            \u9492?\u9472?5964 /usr/bin/containerd\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.551523331Z" level=info msg="No cni config template is specified, wait\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.652653301Z" level=info msg="No cni config template is specified, wait\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.753711873Z" level=info msg="No cni config template is specified, wait\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.854604641Z" level=info msg="No cni config template is specified, wait\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.955532409Z" level=info msg="No cni config template is specified, wait\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.156858616Z" level=info msg="No cni config template is specified, wait\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.257787460Z" level=info msg="No cni config template is specified, wait\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.358645961Z" level=info msg="No cni config template is specified, wait\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.459635862Z" level=info msg="No cni config template is specified, wait\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.560498015Z" level=info msg="No cni config template is specified, wait\cf1\highlight2 
+\par \cf7\highlight8 lines 1-19/19 (END)\cf1\highlight2 
+\par \cf3\highlight0\u9679?\cf0  containerd.service - containerd container runtime\cf1\highlight2 
+\par \cf0\highlight0    Loaded: loaded (/lib/systemd/system/containerd.service; enabled; vendor preset: enabled)\cf1\highlight2 
+\par \cf0\highlight0    Active: \cf3 active (running)\cf0  since Fri 2021-12-10 06:02:07 UTC; 1h 29min ago\cf1\highlight2 
+\par \cf0\highlight0      Docs: https://containerd.io\cf1\highlight2 
+\par \cf0\highlight0  Main PID: 5964 (containerd)\cf1\highlight2 
+\par \cf0\highlight0     Tasks: 28\cf1\highlight2 
+\par \cf0\highlight0    CGroup: /system.slice/containerd.service\cf1\highlight2 
+\par \cf0\highlight0            \u9492?\u9472?5964 /usr/bin/containerd\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.551523331Z" level=info msg="No cni config template is specified, wait for oth\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.652653301Z" level=info msg="No cni config template is specified, wait for oth\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.753711873Z" level=info msg="No cni config template is specified, wait for oth\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.854604641Z" level=info msg="No cni config template is specified, wait for oth\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.955532409Z" level=info msg="No cni config template is specified, wait for oth\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.156858616Z" level=info msg="No cni config template is specified, wait for oth\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.257787460Z" level=info msg="No cni config template is specified, wait for oth\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.358645961Z" level=info msg="No cni config template is specified, wait for oth\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.459635862Z" level=info msg="No cni config template is specified, wait for oth\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.560498015Z" level=info msg="No cni config template is specified, wait for oth\cf1\highlight2 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf7\highlight8 lines 1-19/19 (END)\cf1\highlight2 
+\par \cf3\highlight0\u9679?\cf0  containerd.service - containerd container runtime\cf1\highlight2 
+\par \cf0\highlight0    Loaded: loaded (/lib/systemd/system/containerd.service; enabled; vendor preset: enabled)\cf1\highlight2 
+\par \cf0\highlight0    Active: \cf3 active (running)\cf0  since Fri 2021-12-10 06:02:07 UTC; 1h 29min ago\cf1\highlight2 
+\par \cf0\highlight0      Docs: https://containerd.io\cf1\highlight2 
+\par \cf0\highlight0  Main PID: 5964 (containerd)\cf1\highlight2 
+\par \cf0\highlight0     Tasks: 28\cf1\highlight2 
+\par \cf0\highlight0    CGroup: /system.slice/containerd.service\cf1\highlight2 
+\par \cf0\highlight0            \u9492?\u9472?5964 /usr/bin/containerd\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.551523331Z" level=info msg="No cni config template is specified, wait for other system\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.652653301Z" level=info msg="No cni config template is specified, wait for other system\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.753711873Z" level=info msg="No cni config template is specified, wait for other system\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.854604641Z" level=info msg="No cni config template is specified, wait for other system\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.955532409Z" level=info msg="No cni config template is specified, wait for other system\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.156858616Z" level=info msg="No cni config template is specified, wait for other system\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.257787460Z" level=info msg="No cni config template is specified, wait for other system\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.358645961Z" level=info msg="No cni config template is specified, wait for other system\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.459635862Z" level=info msg="No cni config template is specified, wait for other system\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.560498015Z" level=info msg="No cni config template is specified, wait for other system\cf1\highlight2 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf7\highlight8 lines 1-19/19 (END)\cf1\highlight2 
+\par \cf3\highlight0\u9679?\cf0  containerd.service - containerd container runtime\cf1\highlight2 
+\par \cf0\highlight0    Loaded: loaded (/lib/systemd/system/containerd.service; enabled; vendor preset: enabled)\cf1\highlight2 
+\par \cf0\highlight0    Active: \cf3 active (running)\cf0  since Fri 2021-12-10 06:02:07 UTC; 1h 29min ago\cf1\highlight2 
+\par \cf0\highlight0      Docs: https://containerd.io\cf1\highlight2 
+\par \cf0\highlight0  Main PID: 5964 (containerd)\cf1\highlight2 
+\par \cf0\highlight0     Tasks: 28\cf1\highlight2 
+\par \cf0\highlight0    CGroup: /system.slice/containerd.service\cf1\highlight2 
+\par \cf0\highlight0            \u9492?\u9472?5964 /usr/bin/containerd\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.551523331Z" level=info msg="No cni config template is specified, wait for other system compo\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.652653301Z" level=info msg="No cni config template is specified, wait for other system compo\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.753711873Z" level=info msg="No cni config template is specified, wait for other system compo\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.854604641Z" level=info msg="No cni config template is specified, wait for other system compo\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.955532409Z" level=info msg="No cni config template is specified, wait for other system compo\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.156858616Z" level=info msg="No cni config template is specified, wait for other system compo\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.257787460Z" level=info msg="No cni config template is specified, wait for other system compo\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.358645961Z" level=info msg="No cni config template is specified, wait for other system compo\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.459635862Z" level=info msg="No cni config template is specified, wait for other system compo\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.560498015Z" level=info msg="No cni config template is specified, wait for other system compo\cf1\highlight2 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf7\highlight8 lines 1-19/19 (END)\cf1\highlight2 
+\par \cf3\highlight0\u9679?\cf0  containerd.service - containerd container runtime\cf1\highlight2 
+\par \cf0\highlight0    Loaded: loaded (/lib/systemd/system/containerd.service; enabled; vendor preset: enabled)\cf1\highlight2 
+\par \cf0\highlight0    Active: \cf3 active (running)\cf0  since Fri 2021-12-10 06:02:07 UTC; 1h 29min ago\cf1\highlight2 
+\par \cf0\highlight0      Docs: https://containerd.io\cf1\highlight2 
+\par \cf0\highlight0  Main PID: 5964 (containerd)\cf1\highlight2 
+\par \cf0\highlight0     Tasks: 28\cf1\highlight2 
+\par \cf0\highlight0    CGroup: /system.slice/containerd.service\cf1\highlight2 
+\par \cf0\highlight0            \u9492?\u9472?5964 /usr/bin/containerd\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.551523331Z" level=info msg="No cni config template is specified, wait for other system compone\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.652653301Z" level=info msg="No cni config template is specified, wait for other system compone\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.753711873Z" level=info msg="No cni config template is specified, wait for other system compone\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.854604641Z" level=info msg="No cni config template is specified, wait for other system compone\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.955532409Z" level=info msg="No cni config template is specified, wait for other system compone\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.156858616Z" level=info msg="No cni config template is specified, wait for other system compone\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.257787460Z" level=info msg="No cni config template is specified, wait for other system compone\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.358645961Z" level=info msg="No cni config template is specified, wait for other system compone\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.459635862Z" level=info msg="No cni config template is specified, wait for other system compone\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.560498015Z" level=info msg="No cni config template is specified, wait for other system compone\cf1\highlight2 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf7\highlight8 lines 1-19/19 (END)\cf1\highlight2 
+\par \cf3\highlight0\u9679?\cf0  containerd.service - containerd container runtime\cf1\highlight2 
+\par \cf0\highlight0    Loaded: loaded (/lib/systemd/system/containerd.service; enabled; vendor preset: enabled)\cf1\highlight2 
+\par \cf0\highlight0    Active: \cf3 active (running)\cf0  since Fri 2021-12-10 06:02:07 UTC; 1h 29min ago\cf1\highlight2 
+\par \cf0\highlight0      Docs: https://containerd.io\cf1\highlight2 
+\par \cf0\highlight0  Main PID: 5964 (containerd)\cf1\highlight2 
+\par \cf0\highlight0     Tasks: 28\cf1\highlight2 
+\par \cf0\highlight0    CGroup: /system.slice/containerd.service\cf1\highlight2 
+\par \cf0\highlight0            \u9492?\u9472?5964 /usr/bin/containerd\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.551523331Z" level=info msg="No cni config template is specified, wait for other system compon\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.652653301Z" level=info msg="No cni config template is specified, wait for other system compon\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.753711873Z" level=info msg="No cni config template is specified, wait for other system compon\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.854604641Z" level=info msg="No cni config template is specified, wait for other system compon\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.955532409Z" level=info msg="No cni config template is specified, wait for other system compon\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.156858616Z" level=info msg="No cni config template is specified, wait for other system compon\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.257787460Z" level=info msg="No cni config template is specified, wait for other system compon\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.358645961Z" level=info msg="No cni config template is specified, wait for other system compon\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.459635862Z" level=info msg="No cni config template is specified, wait for other system compon\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.560498015Z" level=info msg="No cni config template is specified, wait for other system compon\cf1\highlight2 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf7\highlight8 lines 1-19/19 (END)\cf1\highlight2 
+\par \cf3\highlight0\u9679?\cf0  containerd.service - containerd container runtime\cf1\highlight2 
+\par \cf0\highlight0    Loaded: loaded (/lib/systemd/system/containerd.service; enabled; vendor preset: enabled)\cf1\highlight2 
+\par \cf0\highlight0    Active: \cf3 active (running)\cf0  since Fri 2021-12-10 06:02:07 UTC; 1h 29min ago\cf1\highlight2 
+\par \cf0\highlight0      Docs: https://containerd.io\cf1\highlight2 
+\par \cf0\highlight0  Main PID: 5964 (containerd)\cf1\highlight2 
+\par \cf0\highlight0     Tasks: 28\cf1\highlight2 
+\par \cf0\highlight0    CGroup: /system.slice/containerd.service\cf1\highlight2 
+\par \cf0\highlight0            \u9492?\u9472?5964 /usr/bin/containerd\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.551523331Z" level=info msg="No cni config template is specified, wait for other system compo\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.652653301Z" level=info msg="No cni config template is specified, wait for other system compo\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.753711873Z" level=info msg="No cni config template is specified, wait for other system compo\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.854604641Z" level=info msg="No cni config template is specified, wait for other system compo\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.955532409Z" level=info msg="No cni config template is specified, wait for other system compo\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.156858616Z" level=info msg="No cni config template is specified, wait for other system compo\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.257787460Z" level=info msg="No cni config template is specified, wait for other system compo\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.358645961Z" level=info msg="No cni config template is specified, wait for other system compo\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.459635862Z" level=info msg="No cni config template is specified, wait for other system compo\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.560498015Z" level=info msg="No cni config template is specified, wait for other system compo\cf1\highlight2 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf7\highlight8 lines 1-19/19 (END)\cf1\highlight2 
+\par \cf3\highlight0\u9679?\cf0  containerd.service - containerd container runtime\cf1\highlight2 
+\par \cf0\highlight0    Loaded: loaded (/lib/systemd/system/containerd.service; enabled; vendor preset: enabled)\cf1\highlight2 
+\par \cf0\highlight0    Active: \cf3 active (running)\cf0  since Fri 2021-12-10 06:02:07 UTC; 1h 29min ago\cf1\highlight2 
+\par \cf0\highlight0      Docs: https://containerd.io\cf1\highlight2 
+\par \cf0\highlight0  Main PID: 5964 (containerd)\cf1\highlight2 
+\par \cf0\highlight0     Tasks: 28\cf1\highlight2 
+\par \cf0\highlight0    CGroup: /system.slice/containerd.service\cf1\highlight2 
+\par \cf0\highlight0            \u9492?\u9472?5964 /usr/bin/containerd\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.551523331Z" level=info msg="No cni config template is specified, wait for other system compon\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.652653301Z" level=info msg="No cni config template is specified, wait for other system compon\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.753711873Z" level=info msg="No cni config template is specified, wait for other system compon\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.854604641Z" level=info msg="No cni config template is specified, wait for other system compon\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.955532409Z" level=info msg="No cni config template is specified, wait for other system compon\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.156858616Z" level=info msg="No cni config template is specified, wait for other system compon\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.257787460Z" level=info msg="No cni config template is specified, wait for other system compon\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.358645961Z" level=info msg="No cni config template is specified, wait for other system compon\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.459635862Z" level=info msg="No cni config template is specified, wait for other system compon\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.560498015Z" level=info msg="No cni config template is specified, wait for other system compon\cf1\highlight2 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf7\highlight8 lines 1-19/19 (END)\cf1\highlight2 
+\par \cf3\highlight0\u9679?\cf0  containerd.service - containerd container runtime\cf1\highlight2 
+\par \cf0\highlight0    Loaded: loaded (/lib/systemd/system/containerd.service; enabled; vendor preset: enabled)\cf1\highlight2 
+\par \cf0\highlight0    Active: \cf3 active (running)\cf0  since Fri 2021-12-10 06:02:07 UTC; 1h 29min ago\cf1\highlight2 
+\par \cf0\highlight0      Docs: https://containerd.io\cf1\highlight2 
+\par \cf0\highlight0  Main PID: 5964 (containerd)\cf1\highlight2 
+\par \cf0\highlight0     Tasks: 28\cf1\highlight2 
+\par \cf0\highlight0    CGroup: /system.slice/containerd.service\cf1\highlight2 
+\par \cf0\highlight0            \u9492?\u9472?5964 /usr/bin/containerd\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.551523331Z" level=info msg="No cni config template is specified, wait for other system compone\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.652653301Z" level=info msg="No cni config template is specified, wait for other system compone\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.753711873Z" level=info msg="No cni config template is specified, wait for other system compone\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.854604641Z" level=info msg="No cni config template is specified, wait for other system compone\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.955532409Z" level=info msg="No cni config template is specified, wait for other system compone\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.156858616Z" level=info msg="No cni config template is specified, wait for other system compone\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.257787460Z" level=info msg="No cni config template is specified, wait for other system compone\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.358645961Z" level=info msg="No cni config template is specified, wait for other system compone\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.459635862Z" level=info msg="No cni config template is specified, wait for other system compone\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.560498015Z" level=info msg="No cni config template is specified, wait for other system compone\cf1\highlight2 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf7\highlight8 lines 1-19/19 (END)\cf1\highlight2 
+\par \cf3\highlight0\u9679?\cf0  containerd.service - containerd container runtime\cf1\highlight2 
+\par \cf0\highlight0    Loaded: loaded (/lib/systemd/system/containerd.service; enabled; vendor preset: enabled)\cf1\highlight2 
+\par \cf0\highlight0    Active: \cf3 active (running)\cf0  since Fri 2021-12-10 06:02:07 UTC; 1h 29min ago\cf1\highlight2 
+\par \cf0\highlight0      Docs: https://containerd.io\cf1\highlight2 
+\par \cf0\highlight0  Main PID: 5964 (containerd)\cf1\highlight2 
+\par \cf0\highlight0     Tasks: 28\cf1\highlight2 
+\par \cf0\highlight0    CGroup: /system.slice/containerd.service\cf1\highlight2 
+\par \cf0\highlight0            \u9492?\u9472?5964 /usr/bin/containerd\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.551523331Z" level=info msg="No cni config template is specified, wait for other system componen\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.652653301Z" level=info msg="No cni config template is specified, wait for other system componen\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.753711873Z" level=info msg="No cni config template is specified, wait for other system componen\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.854604641Z" level=info msg="No cni config template is specified, wait for other system componen\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.955532409Z" level=info msg="No cni config template is specified, wait for other system componen\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.156858616Z" level=info msg="No cni config template is specified, wait for other system componen\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.257787460Z" level=info msg="No cni config template is specified, wait for other system componen\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.358645961Z" level=info msg="No cni config template is specified, wait for other system componen\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.459635862Z" level=info msg="No cni config template is specified, wait for other system componen\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.560498015Z" level=info msg="No cni config template is specified, wait for other system componen\cf1\highlight2 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf7\highlight8 lines 1-19/19 (END)\cf0\highlight0 ...skipping...\cf1\highlight2 
+\par \cf3\highlight0\u9679?\cf0  containerd.service - containerd container runtime\cf1\highlight2 
+\par \cf0\highlight0    Loaded: loaded (/lib/systemd/system/containerd.service; enabled; vendor preset: enabled)\cf1\highlight2 
+\par \cf0\highlight0    Active: \cf3 active (running)\cf0  since Fri 2021-12-10 06:02:07 UTC; 1h 29min ago\cf1\highlight2 
+\par \cf0\highlight0      Docs: https://containerd.io\cf1\highlight2 
+\par \cf0\highlight0  Main PID: 5964 (containerd)\cf1\highlight2 
+\par \cf0\highlight0     Tasks: 28\cf1\highlight2 
+\par \cf0\highlight0    CGroup: /system.slice/containerd.service\cf1\highlight2 
+\par \cf0\highlight0            \u9492?\u9472?5964 /usr/bin/containerd\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.551523331Z" level=info msg="No cni config template is specified, wait for other system componen\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.652653301Z" level=info msg="No cni config template is specified, wait for other system componen\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.753711873Z" level=info msg="No cni config template is specified, wait for other system componen\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.854604641Z" level=info msg="No cni config template is specified, wait for other system componen\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.955532409Z" level=info msg="No cni config template is specified, wait for other system componen\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.156858616Z" level=info msg="No cni config template is specified, wait for other system componen\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.257787460Z" level=info msg="No cni config template is specified, wait for other system componen\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.358645961Z" level=info msg="No cni config template is specified, wait for other system componen\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.459635862Z" level=info msg="No cni config template is specified, wait for other system componen\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.560498015Z" level=info msg="No cni config template is specified, wait for other system componen\cf1\highlight2 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf7\highlight8 lines 1-19/19 (END)\cf0\highlight0 ...skipping...\cf1\highlight2 
+\par \cf3\highlight0\u9679?\cf0  containerd.service - containerd container runtime\cf1\highlight2 
+\par \cf0\highlight0    Loaded: loaded (/lib/systemd/system/containerd.service; enabled; vendor preset: enabled)\cf1\highlight2 
+\par \cf0\highlight0    Active: \cf3 active (running)\cf0  since Fri 2021-12-10 06:02:07 UTC; 1h 29min ago\cf1\highlight2 
+\par \cf0\highlight0      Docs: https://containerd.io\cf1\highlight2 
+\par \cf0\highlight0  Main PID: 5964 (containerd)\cf1\highlight2 
+\par \cf0\highlight0     Tasks: 28\cf1\highlight2 
+\par \cf0\highlight0    CGroup: /system.slice/containerd.service\cf1\highlight2 
+\par \cf0\highlight0            \u9492?\u9472?5964 /usr/bin/containerd\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.551523331Z" level=info msg="No cni config template is specified, wait for other system componen\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.652653301Z" level=info msg="No cni config template is specified, wait for other system componen\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.753711873Z" level=info msg="No cni config template is specified, wait for other system componen\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.854604641Z" level=info msg="No cni config template is specified, wait for other system componen\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.955532409Z" level=info msg="No cni config template is specified, wait for other system componen\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.156858616Z" level=info msg="No cni config template is specified, wait for other system componen\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.257787460Z" level=info msg="No cni config template is specified, wait for other system componen\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.358645961Z" level=info msg="No cni config template is specified, wait for other system componen\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.459635862Z" level=info msg="No cni config template is specified, wait for other system componen\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.560498015Z" level=info msg="No cni config template is specified, wait for other system componen\cf1\highlight2 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf7\highlight8 lines 1-19/19 (END)\cf0\highlight0 ...skipping...\cf1\highlight2 
+\par \cf3\highlight0\u9679?\cf0  containerd.service - containerd container runtime\cf1\highlight2 
+\par \cf0\highlight0    Loaded: loaded (/lib/systemd/system/containerd.service; enabled; vendor preset: enabled)\cf1\highlight2 
+\par \cf0\highlight0    Active: \cf3 active (running)\cf0  since Fri 2021-12-10 06:02:07 UTC; 1h 29min ago\cf1\highlight2 
+\par \cf0\highlight0      Docs: https://containerd.io\cf1\highlight2 
+\par \cf0\highlight0  Main PID: 5964 (containerd)\cf1\highlight2 
+\par \cf0\highlight0     Tasks: 28\cf1\highlight2 
+\par \cf0\highlight0    CGroup: /system.slice/containerd.service\cf1\highlight2 
+\par \cf0\highlight0            \u9492?\u9472?5964 /usr/bin/containerd\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.551523331Z" level=info msg="No cni config template is specified, wait for other system componen\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.652653301Z" level=info msg="No cni config template is specified, wait for other system componen\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.753711873Z" level=info msg="No cni config template is specified, wait for other system componen\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.854604641Z" level=info msg="No cni config template is specified, wait for other system componen\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:08 node-d containerd[5964]: time="2021-12-10T07:31:08.955532409Z" level=info msg="No cni config template is specified, wait for other system componen\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.156858616Z" level=info msg="No cni config template is specified, wait for other system componen\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.257787460Z" level=info msg="No cni config template is specified, wait for other system componen\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.358645961Z" level=info msg="No cni config template is specified, wait for other system componen\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.459635862Z" level=info msg="No cni config template is specified, wait for other system componen\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:31:09 node-d containerd[5964]: time="2021-12-10T07:31:09.560498015Z" level=info msg="No cni config template is specified, wait for other system componen\cf1\highlight2 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# systemctl status containerd\cf1\highlight2 
+\par \cf3\highlight0\u9679?\cf0  containerd.service - containerd container runtime\cf1\highlight2 
+\par \cf0\highlight0    Loaded: loaded (/lib/systemd/system/containerd.service; enabled; vendor preset: enabled)\cf1\highlight2 
+\par \cf0\highlight0    Active: \cf3 active (running)\cf0  since Fri 2021-12-10 06:02:07 UTC; 1h 30min ago\cf1\highlight2 
+\par \cf0\highlight0      Docs: https://containerd.io\cf1\highlight2 
+\par \cf0\highlight0  Main PID: 5964 (containerd)\cf1\highlight2 
+\par \cf0\highlight0     Tasks: 28\cf1\highlight2 
+\par \cf0\highlight0    CGroup: /system.slice/containerd.service\cf1\highlight2 
+\par \cf0\highlight0            \u9492?\u9472?5964 /usr/bin/containerd\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Dec 10 07:32:39 node-d containerd[5964]: time="2021-12-10T07:32:39.567096434Z" level=info msg="No cni config template is specified, wait for other system componen\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:32:39 node-d containerd[5964]: time="2021-12-10T07:32:39.768430401Z" level=info msg="No cni config template is specified, wait for other system componen\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:32:39 node-d containerd[5964]: time="2021-12-10T07:32:39.869362234Z" level=info msg="No cni config template is specified, wait for other system componen\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:32:40 node-d containerd[5964]: time="2021-12-10T07:32:40.070541148Z" level=info msg="No cni config template is specified, wait for other system componen\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:32:40 node-d containerd[5964]: time="2021-12-10T07:32:40.171292110Z" level=info msg="No cni config template is specified, wait for other system componen\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:32:40 node-d containerd[5964]: time="2021-12-10T07:32:40.272138904Z" level=info msg="No cni config template is specified, wait for other system componen\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:32:40 node-d containerd[5964]: time="2021-12-10T07:32:40.473656130Z" level=info msg="No cni config template is specified, wait for other system componen\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:32:40 node-d containerd[5964]: time="2021-12-10T07:32:40.574662760Z" level=info msg="No cni config template is specified, wait for other system componen\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:32:40 node-d containerd[5964]: time="2021-12-10T07:32:40.675673124Z" level=info msg="No cni config template is specified, wait for other system componen\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:32:40 node-d containerd[5964]: time="2021-12-10T07:32:40.776957469Z" level=info msg="No cni config template is specified, wait for other system componen\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ls\cf1\highlight2 
+\par \cf9\highlight0 api\cf0                 aws_kube_params.inc  \cf10 BUILD.bazel\cf0   \cf9 cluster\cf0   code-of-conduct.md  \cf9 docs\cf0     go.mod  \cf9 hack\cf0      \cf9 logo\cf0       \cf10 Makefile.generated_files\cf0   \cf9 _output\cf0   \cf9 perf-tests\cf1\highlight2 
+\par \cf0\highlight0 aws_build_version  \cf9 build\cf0                 \cf9 CHANGELOG\cf0     \cf9 cmd\cf0       CONTRIBUTING.md     \cf9 Godeps\cf0   go.sum  LICENSE  \cf10 Makefile\cf0   mkdocs.yml                OWNERS   \cf9 pkg\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ls /etc/cni/net.d\cf1\highlight2 
+\par \cf0\highlight0 bridge.conf\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ls /opt/cni/bin\cf1\highlight2 
+\par \cf3\highlight0 bandwidth\cf0   \cf3 bridge\cf0   \cf3 dhcp\cf0   \cf3 firewall\cf0   \cf3 flannel\cf0   \cf3 host-device\cf0   \cf3 host-local\cf0   \cf3 ipvlan\cf0   \cf3 loopback\cf0   \cf3 macvlan\cf0   \cf3 portmap\cf0   \cf3 ptp\cf0   \cf3 sbr\cf0   \cf3 static\cf0   \cf3 tuning\cf0   \cf3 vlan\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# systemctl restart containerd\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# systemctl status containerd\cf1\highlight2 
+\par \cf3\highlight0\u9679?\cf0  containerd.service - containerd container runtime\cf1\highlight2 
+\par \cf0\highlight0    Loaded: loaded (/lib/systemd/system/containerd.service; enabled; vendor preset: enabled)\cf1\highlight2 
+\par \cf0\highlight0    Active: \cf3 active (running)\cf0  since Fri 2021-12-10 07:33:41 UTC; 9s ago\cf1\highlight2 
+\par \cf0\highlight0      Docs: https://containerd.io\cf1\highlight2 
+\par \cf0\highlight0   Process: 31699 ExecStartPre=/sbin/modprobe overlay (code=exited, status=0/SUCCESS)\cf1\highlight2 
+\par \cf0\highlight0  Main PID: 31706 (containerd)\cf1\highlight2 
+\par \cf0\highlight0     Tasks: 27\cf1\highlight2 
+\par \cf0\highlight0    CGroup: /system.slice/containerd.service\cf1\highlight2 
+\par \cf0\highlight0            \u9492?\u9472?31706 /usr/bin/containerd\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Dec 10 07:33:49 node-d containerd[31706]: time="2021-12-10T07:33:49.621118864Z" level=info msg="No cni config template is specified, wait for other system compone\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:33:49 node-d containerd[31706]: time="2021-12-10T07:33:49.721994662Z" level=info msg="No cni config template is specified, wait for other system compone\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:33:49 node-d containerd[31706]: time="2021-12-10T07:33:49.822897670Z" level=info msg="No cni config template is specified, wait for other system compone\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:33:49 node-d containerd[31706]: time="2021-12-10T07:33:49.923930419Z" level=info msg="No cni config template is specified, wait for other system compone\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:33:50 node-d containerd[31706]: time="2021-12-10T07:33:50.024838447Z" level=info msg="No cni config template is specified, wait for other system compone\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:33:50 node-d containerd[31706]: time="2021-12-10T07:33:50.125881377Z" level=info msg="No cni config template is specified, wait for other system compone\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:33:50 node-d containerd[31706]: time="2021-12-10T07:33:50.227019115Z" level=info msg="No cni config template is specified, wait for other system compone\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:33:50 node-d containerd[31706]: time="2021-12-10T07:33:50.428371958Z" level=info msg="No cni config template is specified, wait for other system compone\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:33:50 node-d containerd[31706]: time="2021-12-10T07:33:50.529398482Z" level=info msg="No cni config template is specified, wait for other system compone\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:33:50 node-d containerd[31706]: time="2021-12-10T07:33:50.630468349Z" level=info msg="No cni config template is specified, wait for other system compone\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# systemctl status containerd\cf1\highlight2 
+\par \cf3\highlight0\u9679?\cf0  containerd.service - containerd container runtime\cf1\highlight2 
+\par \cf0\highlight0    Loaded: loaded (/lib/systemd/system/containerd.service; enabled; vendor preset: enabled)\cf1\highlight2 
+\par \cf0\highlight0    Active: \cf3 active (running)\cf0  since Fri 2021-12-10 07:33:41 UTC; 39s ago\cf1\highlight2 
+\par \cf0\highlight0      Docs: https://containerd.io\cf1\highlight2 
+\par \cf0\highlight0   Process: 31699 ExecStartPre=/sbin/modprobe overlay (code=exited, status=0/SUCCESS)\cf1\highlight2 
+\par \cf0\highlight0  Main PID: 31706 (containerd)\cf1\highlight2 
+\par \cf0\highlight0     Tasks: 75\cf1\highlight2 
+\par \cf0\highlight0    CGroup: /system.slice/containerd.service\cf1\highlight2 
+\par \cf0\highlight0            \u9500?\u9472?  310 /usr/bin/containerd-shim-runc-v2 -namespace k8s.io -id 4c70725e1ab35bbfded5566e32c0c474651ac01c3dacc8b134ba8882ed86275b -address /run/container\cf1\highlight2 
+\par \cf0\highlight0            \u9500?\u9472?  333 /pause\cf1\highlight2 
+\par \cf0\highlight0            \u9500?\u9472?  565 /usr/bin/containerd-shim-runc-v2 -namespace k8s.io -id 71494a722b3f8fba4cd6243a6dfc65a38adbe744c9414662568dbc637f6089b0 -address /run/container\cf1\highlight2 
+\par \cf0\highlight0            \u9500?\u9472?  587 /pause\cf1\highlight2 
+\par \cf0\highlight0            \u9500?\u9472? 1041 /kube-dns --domain=cluster.local. --dns-port=10053 --config-dir=/kube-dns-config --v=2\cf1\highlight2 
+\par \cf0\highlight0            \u9500?\u9472? 1308 /dnsmasq-nanny -v=2 -logtostderr -configDir=/etc/k8s/dns/dnsmasq-nanny -restartDnsmasq=true -- -k --cache-size=1000 --no-negcache --dns-loop-de\cf1\highlight2 
+\par \cf0\highlight0            \u9500?\u9472? 1358 /usr/sbin/dnsmasq -k --cache-size=1000 --no-negcache --dns-loop-detect --log-facility=- --server=/cluster.local/127.0.0.1#10053 --server=/in-ad\cf1\highlight2 
+\par \cf0\highlight0            \u9500?\u9472?31706 /usr/bin/containerd\cf1\highlight2 
+\par \cf0\highlight0            \u9500?\u9472?32628 /usr/bin/containerd-shim-runc-v2 -namespace k8s.io -id b830e2ab5eb0a4b59c23df20375d504fbbacadb89cc4eacc3c153da4e1a198f0 -address /run/container\cf1\highlight2 
+\par \cf0\highlight0            \u9492?\u9472?32655 /pause\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Dec 10 07:34:20 node-d containerd[31706]: time="2021-12-10T07:34:20.097919698Z" level=info msg="No cni config template is specified, wait for other system compone\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:34:20 node-d containerd[31706]: time="2021-12-10T07:34:20.198879333Z" level=info msg="No cni config template is specified, wait for other system compone\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:34:20 node-d containerd[31706]: time="2021-12-10T07:34:20.400139265Z" level=info msg="No cni config template is specified, wait for other system compone\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:34:20 node-d containerd[31706]: time="2021-12-10T07:34:20.501431570Z" level=info msg="No cni config template is specified, wait for other system compone\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:34:20 node-d containerd[31706]: time="2021-12-10T07:34:20.602818569Z" level=info msg="No cni config template is specified, wait for other system compone\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:34:20 node-d containerd[31706]: time="2021-12-10T07:34:20.803958067Z" level=info msg="No cni config template is specified, wait for other system compone\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:34:21 node-d containerd[31706]: time="2021-12-10T07:34:21.005180627Z" level=info msg="No cni config template is specified, wait for other system compone\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:34:21 node-d containerd[31706]: time="2021-12-10T07:34:21.106015125Z" level=info msg="No cni config template is specified, wait for other system compone\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:34:21 node-d containerd[31706]: time="2021-12-10T07:34:21.206855968Z" level=info msg="No cni config template is specified, wait for other system compone\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:34:21 node-d containerd[31706]: time="2021-12-10T07:34:21.408012151Z" level=info msg="No cni config template is specified, wait for other system compone\cf1\highlight2 
+\par \cf7\highlight8 lines 1-29/29 (END)\cf1\highlight2 
+\par \cf3\highlight0\u9679?\cf0  containerd.service - containerd container runtime\cf1\highlight2 
+\par \cf0\highlight0    Loaded: loaded (/lib/systemd/system/containerd.service; enabled; vendor preset: enabled)\cf1\highlight2 
+\par \cf0\highlight0    Active: \cf3 active (running)\cf0  since Fri 2021-12-10 07:33:41 UTC; 39s ago\cf1\highlight2 
+\par \cf0\highlight0      Docs: https://containerd.io\cf1\highlight2 
+\par \cf0\highlight0   Process: 31699 ExecStartPre=/sbin/modprobe overlay (code=exited, status=0/SUCCESS)\cf1\highlight2 
+\par \cf0\highlight0  Main PID: 31706 (containerd)\cf1\highlight2 
+\par \cf0\highlight0     Tasks: 75\cf1\highlight2 
+\par \cf0\highlight0    CGroup: /system.slice/containerd.service\cf1\highlight2 
+\par \cf0\highlight0            \u9500?\u9472?  310 /usr/bin/containerd-shim-runc-v2 -namespace k8s.io -id 4c70725e1ab35bbfded5566e32c0c474651ac01c3dacc8b134ba8882ed86275b -address /run/container\cf1\highlight2 
+\par \cf0\highlight0            \u9500?\u9472?  333 /pause\cf1\highlight2 
+\par \cf0\highlight0            \u9500?\u9472?  565 /usr/bin/containerd-shim-runc-v2 -namespace k8s.io -id 71494a722b3f8fba4cd6243a6dfc65a38adbe744c9414662568dbc637f6089b0 -address /run/container\cf1\highlight2 
+\par \cf0\highlight0            \u9500?\u9472?  587 /pause\cf1\highlight2 
+\par \cf0\highlight0            \u9500?\u9472? 1041 /kube-dns --domain=cluster.local. --dns-port=10053 --config-dir=/kube-dns-config --v=2\cf1\highlight2 
+\par \cf0\highlight0            \u9500?\u9472? 1308 /dnsmasq-nanny -v=2 -logtostderr -configDir=/etc/k8s/dns/dnsmasq-nanny -restartDnsmasq=true -- -k --cache-size=1000 --no-negcache --dns-loop-de\cf1\highlight2 
+\par \cf0\highlight0            \u9500?\u9472? 1358 /usr/sbin/dnsmasq -k --cache-size=1000 --no-negcache --dns-loop-detect --log-facility=- --server=/cluster.local/127.0.0.1#10053 --server=/in-ad\cf1\highlight2 
+\par \cf0\highlight0            \u9500?\u9472?31706 /usr/bin/containerd\cf1\highlight2 
+\par \cf0\highlight0            \u9500?\u9472?32628 /usr/bin/containerd-shim-runc-v2 -namespace k8s.io -id b830e2ab5eb0a4b59c23df20375d504fbbacadb89cc4eacc3c153da4e1a198f0 -address /run/container\cf1\highlight2 
+\par \cf0\highlight0            \u9492?\u9472?32655 /pause\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Dec 10 07:34:20 node-d containerd[31706]: time="2021-12-10T07:34:20.097919698Z" level=info msg="No cni config template is specified, wait for other system compone\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:34:20 node-d containerd[31706]: time="2021-12-10T07:34:20.198879333Z" level=info msg="No cni config template is specified, wait for other system compone\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:34:20 node-d containerd[31706]: time="2021-12-10T07:34:20.400139265Z" level=info msg="No cni config template is specified, wait for other system compone\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:34:20 node-d containerd[31706]: time="2021-12-10T07:34:20.501431570Z" level=info msg="No cni config template is specified, wait for other system compone\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:34:20 node-d containerd[31706]: time="2021-12-10T07:34:20.602818569Z" level=info msg="No cni config template is specified, wait for other system compone\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:34:20 node-d containerd[31706]: time="2021-12-10T07:34:20.803958067Z" level=info msg="No cni config template is specified, wait for other system compone\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:34:21 node-d containerd[31706]: time="2021-12-10T07:34:21.005180627Z" level=info msg="No cni config template is specified, wait for other system compone\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:34:21 node-d containerd[31706]: time="2021-12-10T07:34:21.106015125Z" level=info msg="No cni config template is specified, wait for other system compone\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:34:21 node-d containerd[31706]: time="2021-12-10T07:34:21.206855968Z" level=info msg="No cni config template is specified, wait for other system compone\cf1\highlight2 
+\par \cf0\highlight0 Dec 10 07:34:21 node-d containerd[31706]: time="2021-12-10T07:34:21.408012151Z" level=info msg="No cni config template is specified, wait for other system compone\cf1\highlight2 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get nodes\cf1\highlight2 
+\par \cf0\highlight0 NAME     STATUS   ROLES    AGE   VERSION\cf1\highlight2 
+\par \cf0\highlight0 node-d   Ready    <none>   47m   v0.9.0\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# vi netpod.yaml\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh apply -f netpod.yaml\cf1\highlight2 
+\par \cf0\highlight0 pod/netpod1 created\cf1\highlight2 
+\par \cf0\highlight0 pod/netpod2 created\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                              HASHKEY               READY   STATUS              RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 default       netpod1                           264452629193712830    0/1     ContainerCreating   0          11s\cf1\highlight2 
+\par \cf0\highlight0 default       netpod2                           6136942825566431536   0/1     ContainerCreating   0          11s\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-fc74854f6-ph7g2   1627313107800031393   1/1     Running             0          100m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-l5n86         6675015311205163329   3/3     Running             0          100m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-bgbk6                     4051200829271800872   3/3     Running             0          62m\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                              HASHKEY               READY   STATUS              RESTARTS   AGE    IP              NODE     NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 default       netpod1                           264452629193712830    0/1     ContainerCreating   0          18s    <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 default       netpod2                           6136942825566431536   0/1     ContainerCreating   0          18s    <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-fc74854f6-ph7g2   1627313107800031393   1/1     Running             0          100m   10.88.0.2       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-l5n86         6675015311205163329   3/3     Running             0          100m   10.88.0.3       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-bgbk6                     4051200829271800872   3/3     Running             0          62m    192.168.1.213   node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                              HASHKEY               READY   STATUS    RESTARTS   AGE     IP              NODE     NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 default       netpod1                           264452629193712830    1/1     Running   0          2m23s   10.88.0.4       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 default       netpod2                           6136942825566431536   1/1     Running   0          2m23s   10.88.0.5       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-fc74854f6-ph7g2   1627313107800031393   1/1     Running   0          102m    10.88.0.2       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-l5n86         6675015311205163329   3/3     Running   0          102m    10.88.0.3       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-bgbk6                     4051200829271800872   3/3     Running   0          64m     192.168.1.213   node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh exec netpod1 ping 10.88.0.5\cf1\highlight2 
+\par \cf0\highlight0 PING 10.88.0.5 (10.88.0.5) 56(84) bytes of data.\cf1\highlight2 
+\par \cf0\highlight0 64 bytes from 10.88.0.5: icmp_seq=1 ttl=64 time=0.140 ms\cf1\highlight2 
+\par \cf0\highlight0 64 bytes from 10.88.0.5: icmp_seq=2 ttl=64 time=0.097 ms\cf1\highlight2 
+\par \cf0\highlight0 ^C\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh exec netpod2 ping 10.88.0.4\cf1\highlight2 
+\par \cf0\highlight0 PING 10.88.0.4 (10.88.0.4) 56(84) bytes of data.\cf1\highlight2 
+\par \cf0\highlight0 64 bytes from 10.88.0.4: icmp_seq=1 ttl=64 time=0.093 ms\cf1\highlight2 
+\par \cf0\highlight0 64 bytes from 10.88.0.4: icmp_seq=2 ttl=64 time=0.073 ms\cf1\highlight2 
+\par \cf0\highlight0 ^C\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh exec netpod2 ping 10.88.0.4\cf1\highlight2 
+\par \cf0\highlight0 PING 10.88.0.4 (10.88.0.4) 56(84) bytes of data.\cf1\highlight2 
+\par \cf0\highlight0 64 bytes from 10.88.0.4: icmp_seq=1 ttl=64 time=0.152 ms\cf1\highlight2 
+\par \cf0\highlight0 64 bytes from 10.88.0.4: icmp_seq=2 ttl=64 time=0.088 ms\cf1\highlight2 
+\par \cf0\highlight0 64 bytes from 10.88.0.4: icmp_seq=3 ttl=64 time=0.097 ms\cf1\highlight2 
+\par \cf0\highlight0 ^C\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos#\cf1\highlight2 
+\par \pard\cf0\highlight0\f2 
+\par }
+ 
