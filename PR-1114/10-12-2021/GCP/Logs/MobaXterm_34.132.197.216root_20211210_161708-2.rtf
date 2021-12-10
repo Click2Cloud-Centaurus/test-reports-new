@@ -220,6 +220,24 @@
 \par \cf0\highlight0 --- 10.88.0.5 ping statistics ---\cf1\highlight2 
 \par \cf0\highlight0 4 packets transmitted, 4 received, 0% packet loss, time 60ms\cf1\highlight2 
 \par \cf0\highlight0 rtt min/avg/max/mdev = 0.070/0.095/0.147/0.032 ms\cf1\highlight2 
+\par \cf0\highlight0 root@prajwal-arktos:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh exec -it netpod1 ping 10.88.0.4\cf1\highlight2 
+\par \cf0\highlight0 PING 10.88.0.4 (10.88.0.4) 56(84) bytes of data.\cf1\highlight2 
+\par \cf0\highlight0 64 bytes from 10.88.0.4: icmp_seq=1 ttl=64 time=0.174 ms\cf1\highlight2 
+\par \cf0\highlight0 64 bytes from 10.88.0.4: icmp_seq=2 ttl=64 time=0.089 ms\cf1\highlight2 
+\par \cf0\highlight0 64 bytes from 10.88.0.4: icmp_seq=3 ttl=64 time=0.088 ms\cf1\highlight2 
+\par \cf0\highlight0 ^C\cf1\highlight2 
+\par \cf0\highlight0 --- 10.88.0.4 ping statistics ---\cf1\highlight2 
+\par \cf0\highlight0 3 packets transmitted, 3 received, 0% packet loss, time 56ms\cf1\highlight2 
+\par \cf0\highlight0 rtt min/avg/max/mdev = 0.088/0.117/0.174/0.040 ms\cf1\highlight2 
+\par \cf0\highlight0 root@prajwal-arktos:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh exec -it netpod2 ping 10.88.0.5\cf1\highlight2 
+\par \cf0\highlight0 PING 10.88.0.5 (10.88.0.5) 56(84) bytes of data.\cf1\highlight2 
+\par \cf0\highlight0 64 bytes from 10.88.0.5: icmp_seq=1 ttl=64 time=0.102 ms\cf1\highlight2 
+\par \cf0\highlight0 64 bytes from 10.88.0.5: icmp_seq=2 ttl=64 time=0.076 ms\cf1\highlight2 
+\par \cf0\highlight0 64 bytes from 10.88.0.5: icmp_seq=3 ttl=64 time=0.075 ms\cf1\highlight2 
+\par \cf0\highlight0 ^C\cf1\highlight2 
+\par \cf0\highlight0 --- 10.88.0.5 ping statistics ---\cf1\highlight2 
+\par \cf0\highlight0 3 packets transmitted, 3 received, 0% packet loss, time 50ms\cf1\highlight2 
+\par \cf0\highlight0 rtt min/avg/max/mdev = 0.075/0.084/0.102/0.014 ms\cf1\highlight2 
 \par \cf0\highlight0 root@prajwal-arktos:~/go/src/k8s.io/arktos#\cf1\highlight2 
 \par \pard\cf0\highlight0\f2 
 \par }
