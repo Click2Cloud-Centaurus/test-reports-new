@@ -1,0 +1,603 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fmodern Consolas;}{\f1\fmodern\fcharset0 Consolas;}{\f2\fnil\fcharset129 Courier New;}}
+{\colortbl ;\red20\green20\blue20;\red142\green142\blue142;\red16\green158\blue98;\red148\green146\blue12;\red170\green51\blue170;\red56\green136\blue159;}
+\viewkind4\uc1\pard\f0\fs20 Authenticating with public key "root"\cf1\highlight2 
+\par \cf0\highlight0 Passphrase for key "root":\cf1\highlight2 
+\par \cf0\highlight0     \u9484?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9488?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?                 \cf3\f1\bullet  MobaXterm Personal Edition v21.4 \bullet\cf0\f0                  \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?               \cf4 (SSH client, X server and network tools)\cf0                \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?                                                                      \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474? \u8594? SSH session to \cf5 root@104.198.130.82                       \cf0           \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  Direct SSH      :  \cf3\f0 v\cf0                                              \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  SSH compression :  \cf3\f0 v\cf0                                              \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  SSH-browser     :  \cf3\f0 v\cf0                                              \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  X11-forwarding  :  \cf3\f0 v\cf0   (remote display is forwarded through SSH)  \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?                                                                      \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474? \u8594? For more info, ctrl+click on \cf6\ul help\cf0\ulnone  or visit our \cf6\ul website\cf0\ulnone .            \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9492?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9496?\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Welcome to Ubuntu 18.04.6 LTS (GNU/Linux 5.6.0-rc2 x86_64)\cf1\highlight2 
+\par 
+\par \cf0\highlight0  * Documentation:  https://help.ubuntu.com\cf1\highlight2 
+\par \cf0\highlight0  * Management:     https://landscape.canonical.com\cf1\highlight2 
+\par \cf0\highlight0  * Support:        https://ubuntu.com/advantage\cf1\highlight2 
+\par 
+\par \cf0\highlight0   System information as of Mon Dec 13 12:23:39 UTC 2021\cf1\highlight2 
+\par 
+\par \cf0\highlight0   System load:  0.02                Processes:              159\cf1\highlight2 
+\par \cf0\highlight0   Usage of /:   12.7% of 123.88GB   Users logged in:        0\cf1\highlight2 
+\par \cf0\highlight0   Memory usage: 3%                  IP address for ens4:    10.128.0.12\cf1\highlight2 
+\par \cf0\highlight0   Swap usage:   0%                  IP address for docker0: 172.17.0.1\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 5 updates can be applied immediately.\cf1\highlight2 
+\par \cf0\highlight0 To see these additional updates run: apt list --upgradable\cf1\highlight2 
+\par 
+\par \cf0\highlight0 New release '20.04.3 LTS' available.\cf1\highlight2 
+\par \cf0\highlight0 Run 'do-release-upgrade' to upgrade to it.\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Last login: Mon Dec 13 06:04:57 2021 from 114.143.207.106\cf1\highlight2 
+\par \cf0\highlight0 root@prajwal-ark:~# uname -a\cf1\highlight2 
+\par \cf0\highlight0 Linux prajwal-ark 5.6.0-rc2 #1 SMP Tue Feb 25 18:54:05 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux\cf1\highlight2 
+\par \cf0\highlight0 root@prajwal-ark:~# sudo apt-get remove docker docker-engine docker.io containerd runc\cf1\highlight2 
+\par \cf0\highlight0 Reading package lists... Done\cf1\highlight2 
+\par \cf0\highlight0 Building dependency tree\cf1\highlight2 
+\par \cf0\highlight0 Reading state information... Done\cf1\highlight2 
+\par \cf0\highlight0 Package 'docker-engine' is not installed, so not removed\cf1\highlight2 
+\par \cf0\highlight0 Package 'docker' is not installed, so not removed\cf1\highlight2 
+\par \cf0\highlight0 Package 'containerd' is not installed, so not removed\cf1\highlight2 
+\par \cf0\highlight0 Package 'docker.io' is not installed, so not removed\cf1\highlight2 
+\par \cf0\highlight0 Package 'runc' is not installed, so not removed\cf1\highlight2 
+\par \cf0\highlight0 The following package was automatically installed and is no longer required:\cf1\highlight2 
+\par \cf0\highlight0   libnuma1\cf1\highlight2 
+\par \cf0\highlight0 Use 'sudo apt autoremove' to remove it.\cf1\highlight2 
+\par \cf0\highlight0 0 upgraded, 0 newly installed, 0 to remove and 5 not upgraded.\cf1\highlight2 
+\par \cf0\highlight0 root@prajwal-ark:~# sudo apt-get update\cf1\highlight2 
+\par \cf0\highlight0 Hit:1 http://us-central1.gce.archive.ubuntu.com/ubuntu bionic InRelease\cf1\highlight2 
+\par \cf0\highlight0 Get:2 http://us-central1.gce.archive.ubuntu.com/ubuntu bionic-updates InRelease [88.7 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:3 http://us-central1.gce.archive.ubuntu.com/ubuntu bionic-backports InRelease [74.6 kB]\cf1\highlight2 
+\par \cf0\highlight0 Hit:4 https://download.docker.com/linux/ubuntu bionic InRelease\cf1\highlight2 
+\par \cf0\highlight0 Get:5 http://security.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB]\cf1\highlight2 
+\par \cf0\highlight0 Fetched 252 kB in 1s (455 kB/s)\cf1\highlight2 
+\par \cf0\highlight0 Reading package lists... Done\cf1\highlight2 
+\par \cf0\highlight0 root@prajwal-ark:~# sudo apt-get install \\\cf1\highlight2 
+\par \cf0\highlight0 >     ca-certificates \\\cf1\highlight2 
+\par \cf0\highlight0 >     curl \\\cf1\highlight2 
+\par \cf0\highlight0 >     gnupg \\\cf1\highlight2 
+\par \cf0\highlight0 >     lsb-release\cf1\highlight2 
+\par \cf0\highlight0 Reading package lists... Done\cf1\highlight2 
+\par \cf0\highlight0 Building dependency tree\cf1\highlight2 
+\par \cf0\highlight0 Reading state information... Done\cf1\highlight2 
+\par \cf0\highlight0 lsb-release is already the newest version (9.20170808ubuntu1).\cf1\highlight2 
+\par \cf0\highlight0 ca-certificates is already the newest version (20210119~18.04.2).\cf1\highlight2 
+\par \cf0\highlight0 curl is already the newest version (7.58.0-2ubuntu3.16).\cf1\highlight2 
+\par \cf0\highlight0 gnupg is already the newest version (2.2.4-1ubuntu1.4).\cf1\highlight2 
+\par \cf0\highlight0 The following package was automatically installed and is no longer required:\cf1\highlight2 
+\par \cf0\highlight0   libnuma1\cf1\highlight2 
+\par \cf0\highlight0 Use 'sudo apt autoremove' to remove it.\cf1\highlight2 
+\par \cf0\highlight0 0 upgraded, 0 newly installed, 0 to remove and 5 not upgraded.\cf1\highlight2 
+\par \cf0\highlight0 root@prajwal-ark:~# curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg\cf1\highlight2 
+\par \cf0\highlight0 File '/usr/share/keyrings/docker-archive-keyring.gpg' exists. Overwrite? (y/N) y\cf1\highlight2 
+\par \cf0\highlight0 root@prajwal-ark:~# echo \\\cf1\highlight2 
+\par \cf0\highlight0 >  "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \\\cf1\highlight2 
+\par \cf0\highlight0 >\cf1\highlight2 
+\par \cf0\highlight0 > ^C\cf1\highlight2 
+\par \cf0\highlight0 root@prajwal-ark:~# echo \\\cf1\highlight2 
+\par \cf0\highlight0 >  "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \\\cf1\highlight2 
+\par \cf0\highlight0 >   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null\cf1\highlight2 
+\par \cf0\highlight0 root@prajwal-ark:~# echo \\\cf1\highlight2 
+\par \cf0\highlight0 >  "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \\\cf1\highlight2 
+\par \cf0\highlight0 >   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null\cf1\highlight2 
+\par \cf0\highlight0 root@prajwal-ark:~# sudo apt-get update\cf1\highlight2 
+\par \cf0\highlight0 Hit:1 http://us-central1.gce.archive.ubuntu.com/ubuntu bionic InRelease\cf1\highlight2 
+\par \cf0\highlight0 Hit:2 http://us-central1.gce.archive.ubuntu.com/ubuntu bionic-updates InRelease\cf1\highlight2 
+\par \cf0\highlight0 Hit:3 http://us-central1.gce.archive.ubuntu.com/ubuntu bionic-backports InRelease\cf1\highlight2 
+\par \cf0\highlight0 Hit:4 https://download.docker.com/linux/ubuntu bionic InRelease\cf1\highlight2 
+\par \cf0\highlight0 Hit:5 http://security.ubuntu.com/ubuntu bionic-security InRelease\cf1\highlight2 
+\par \cf0\highlight0 Reading package lists... Done\cf1\highlight2 
+\par \cf0\highlight0 root@prajwal-ark:~# sudo apt-get install docker-ce docker-ce-cli containerd.io\cf1\highlight2 
+\par \cf0\highlight0 Reading package lists... Done\cf1\highlight2 
+\par \cf0\highlight0 Building dependency tree\cf1\highlight2 
+\par \cf0\highlight0 Reading state information... Done\cf1\highlight2 
+\par \cf0\highlight0 containerd.io is already the newest version (1.4.12-1).\cf1\highlight2 
+\par \cf0\highlight0 docker-ce-cli is already the newest version (5:20.10.11~3-0~ubuntu-bionic).\cf1\highlight2 
+\par \cf0\highlight0 docker-ce is already the newest version (5:20.10.11~3-0~ubuntu-bionic).\cf1\highlight2 
+\par \cf0\highlight0 The following package was automatically installed and is no longer required:\cf1\highlight2 
+\par \cf0\highlight0   libnuma1\cf1\highlight2 
+\par \cf0\highlight0 Use 'sudo apt autoremove' to remove it.\cf1\highlight2 
+\par \cf0\highlight0 0 upgraded, 0 newly installed, 0 to remove and 5 not upgraded.\cf1\highlight2 
+\par \cf0\highlight0 root@prajwal-ark:~# systemctl status docker\cf1\highlight2 
+\par \cf3\highlight0\u9679?\cf0  docker.service - Docker Application Container Engine\cf1\highlight2 
+\par \cf0\highlight0    Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)\cf1\highlight2 
+\par \cf0\highlight0    Active: \cf3 active (running)\cf0  since Mon 2021-12-13 07:02:13 UTC; 5h 23min ago\cf1\highlight2 
+\par \cf0\highlight0      Docs: https://docs.docker.com\cf1\highlight2 
+\par \cf0\highlight0  Main PID: 6572 (dockerd)\cf1\highlight2 
+\par \cf0\highlight0     Tasks: 14\cf1\highlight2 
+\par \cf0\highlight0    CGroup: /system.slice/docker.service\cf1\highlight2 
+\par \cf0\highlight0            \u9492?\u9472?6572 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Dec 13 07:01:57 prajwal-ark dockerd[6572]: time="2021-12-13T07:01:57.887296238Z" level=warning msg="Your kernel does not support CPU realtime scheduler"\cf1\highlight2 
+\par \cf0\highlight0 Dec 13 07:01:57 prajwal-ark dockerd[6572]: time="2021-12-13T07:01:57.887308483Z" level=warning msg="Your kernel does not support cgroup blkio weight"\cf1\highlight2 
+\par \cf0\highlight0 Dec 13 07:01:57 prajwal-ark dockerd[6572]: time="2021-12-13T07:01:57.887317279Z" level=warning msg="Your kernel does not support cgroup blkio weight_device"\cf1\highlight2 
+\par \cf0\highlight0 Dec 13 07:01:57 prajwal-ark dockerd[6572]: time="2021-12-13T07:01:57.887567881Z" level=info msg="Loading containers: start."\cf1\highlight2 
+\par \cf0\highlight0 Dec 13 07:02:08 prajwal-ark dockerd[6572]: time="2021-12-13T07:02:08.835099860Z" level=info msg="Default bridge (docker0) is assigned with an IP address 172.17.0.0/16\cf1\highlight2 
+\par \cf0\highlight0 Dec 13 07:02:13 prajwal-ark dockerd[6572]: time="2021-12-13T07:02:13.456132575Z" level=info msg="Loading containers: done."\cf1\highlight2 
+\par \cf0\highlight0 Dec 13 07:02:13 prajwal-ark dockerd[6572]: time="2021-12-13T07:02:13.476288926Z" level=info msg="Docker daemon" commit=847da18 graphdriver(s)=overlay2 version=20.10.1\cf1\highlight2 
+\par \cf0\highlight0 Dec 13 07:02:13 prajwal-ark dockerd[6572]: time="2021-12-13T07:02:13.476368840Z" level=info msg="Daemon has completed initialization"\cf1\highlight2 
+\par \cf0\highlight0 Dec 13 07:02:13 prajwal-ark systemd[1]: Started Docker Application Container Engine.\cf1\highlight2 
+\par \cf0\highlight0 Dec 13 07:02:13 prajwal-ark dockerd[6572]: time="2021-12-13T07:02:13.496561183Z" level=info msg="API listen on /var/run/docker.sock"\cf1\highlight2 
+\par 
+\par \cf0\highlight0 root@prajwal-ark:~# systemctl status containerd\cf1\highlight2 
+\par \cf3\highlight0\u9679?\cf0  containerd.service - containerd container runtime\cf1\highlight2 
+\par \cf0\highlight0    Loaded: loaded (/lib/systemd/system/containerd.service; enabled; vendor preset: enabled)\cf1\highlight2 
+\par \cf0\highlight0    Active: \cf3 active (running)\cf0  since Mon 2021-12-13 07:01:57 UTC; 5h 23min ago\cf1\highlight2 
+\par \cf0\highlight0      Docs: https://containerd.io\cf1\highlight2 
+\par \cf0\highlight0   Process: 6527 ExecStartPre=/sbin/modprobe overlay (code=exited, status=0/SUCCESS)\cf1\highlight2 
+\par \cf0\highlight0  Main PID: 6533 (containerd)\cf1\highlight2 
+\par \cf0\highlight0     Tasks: 14\cf1\highlight2 
+\par \cf0\highlight0    CGroup: /system.slice/containerd.service\cf1\highlight2 
+\par \cf0\highlight0            \u9492?\u9472?6533 /usr/bin/containerd\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Dec 13 07:01:57 prajwal-ark containerd[6533]: time="2021-12-13T07:01:57.788657797Z" level=info msg="loading plugin \\"io.containerd.grpc.v1.namespaces\\"..." type=io.co\cf1\highlight2 
+\par \cf0\highlight0 Dec 13 07:01:57 prajwal-ark containerd[6533]: time="2021-12-13T07:01:57.788679087Z" level=info msg="loading plugin \\"io.containerd.internal.v1.opt\\"..." type=io.conta\cf1\highlight2 
+\par \cf0\highlight0 Dec 13 07:01:57 prajwal-ark containerd[6533]: time="2021-12-13T07:01:57.788723152Z" level=info msg="loading plugin \\"io.containerd.grpc.v1.snapshots\\"..." type=io.con\cf1\highlight2 
+\par \cf0\highlight0 Dec 13 07:01:57 prajwal-ark containerd[6533]: time="2021-12-13T07:01:57.788739505Z" level=info msg="loading plugin \\"io.containerd.grpc.v1.tasks\\"..." type=io.contain\cf1\highlight2 
+\par \cf0\highlight0 Dec 13 07:01:57 prajwal-ark containerd[6533]: time="2021-12-13T07:01:57.788757108Z" level=info msg="loading plugin \\"io.containerd.grpc.v1.version\\"..." type=io.conta\cf1\highlight2 
+\par \cf0\highlight0 Dec 13 07:01:57 prajwal-ark containerd[6533]: time="2021-12-13T07:01:57.788776642Z" level=info msg="loading plugin \\"io.containerd.grpc.v1.introspection\\"..." type=io\cf1\highlight2 
+\par \cf0\highlight0 Dec 13 07:01:57 prajwal-ark containerd[6533]: time="2021-12-13T07:01:57.789144641Z" level=info msg=serving... address=/run/containerd/containerd.sock.ttrpc\cf1\highlight2 
+\par \cf0\highlight0 Dec 13 07:01:57 prajwal-ark containerd[6533]: time="2021-12-13T07:01:57.789242001Z" level=info msg=serving... address=/run/containerd/containerd.sock\cf1\highlight2 
+\par \cf0\highlight0 Dec 13 07:01:57 prajwal-ark containerd[6533]: time="2021-12-13T07:01:57.789319822Z" level=info msg="containerd successfully booted in 0.041810s"\cf1\highlight2 
+\par \cf0\highlight0 Dec 13 07:01:57 prajwal-ark systemd[1]: Started containerd container runtime.\cf1\highlight2 
+\par 
+\par \cf0\highlight0 root@prajwal-ark:~# mkdir -p $GOPATH/src/github.com\cf1\highlight2 
+\par \cf0\highlight0 root@prajwal-ark:~# cd $GOPATH/src/github.com\cf1\highlight2 
+\par \cf0\highlight0 root@prajwal-ark:/src/github.com# git clone https://github.com/CentaurusInfra/arktos\cf1\highlight2 
+\par \cf0\highlight0 fatal: destination path 'arktos' already exists and is not an empty directory.\cf1\highlight2 
+\par \cf0\highlight0 root@prajwal-ark:/src/github.com# cd arktos\cf1\highlight2 
+\par \cf0\highlight0 root@prajwal-ark:/src/github.com/arktos# make\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Can't find 'go' in PATH, please fix and retry.\cf1\highlight2 
+\par \cf0\highlight0 See http://golang.org/doc/install for installation instructions.\cf1\highlight2 
+\par 
+\par \cf0\highlight0 !!! [1213 12:25:56] Call tree:\cf1\highlight2 
+\par \cf0\highlight0 !!! [1213 12:25:56]  1: hack/run-in-gopath.sh:30 kube::golang::setup_env(...)\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Can't find 'go' in PATH, please fix and retry.\cf1\highlight2 
+\par \cf0\highlight0 See http://golang.org/doc/install for installation instructions.\cf1\highlight2 
+\par 
+\par \cf0\highlight0 !!! [1213 12:25:57] Call tree:\cf1\highlight2 
+\par \cf0\highlight0 !!! [1213 12:25:57]  1: ./hack/run-in-gopath.sh:30 kube::golang::setup_env(...)\cf1\highlight2 
+\par \cf0\highlight0 Makefile.generated_files:153: recipe for target 'gen_deepcopy' failed\cf1\highlight2 
+\par \cf0\highlight0 make[1]: *** [gen_deepcopy] Error 1\cf1\highlight2 
+\par \cf0\highlight0 Makefile:560: recipe for target 'generated_files' failed\cf1\highlight2 
+\par \cf0\highlight0 make: *** [generated_files] Error 2\cf1\highlight2 
+\par \cf0\highlight0 root@prajwal-ark:/src/github.com/arktos# go version\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Command 'go' not found, but can be installed with:\cf1\highlight2 
+\par 
+\par \cf0\highlight0 apt install golang-go\cf1\highlight2 
+\par \cf0\highlight0 apt install gccgo-go\cf1\highlight2 
+\par 
+\par \cf0\highlight0 root@prajwal-ark:/src/github.com/arktos# wget https://go.dev/dl/go1.13.9.linux-amd64.tar.gz\cf1\highlight2 
+\par \cf0\highlight0 --2021-12-13 12:26:31--  https://go.dev/dl/go1.13.9.linux-amd64.tar.gz\cf1\highlight2 
+\par \cf0\highlight0 Resolving go.dev (go.dev)... 216.239.38.21, 216.239.34.21, 216.239.32.21, ...\cf1\highlight2 
+\par \cf0\highlight0 Connecting to go.dev (go.dev)|216.239.38.21|:443... connected.\cf1\highlight2 
+\par \cf0\highlight0 HTTP request sent, awaiting response... 302 Found\cf1\highlight2 
+\par \cf0\highlight0 Location: https://dl.google.com/go/go1.13.9.linux-amd64.tar.gz [following]\cf1\highlight2 
+\par \cf0\highlight0 --2021-12-13 12:26:31--  https://dl.google.com/go/go1.13.9.linux-amd64.tar.gz\cf1\highlight2 
+\par \cf0\highlight0 Resolving dl.google.com (dl.google.com)... 74.125.70.136, 74.125.70.91, 74.125.70.93, ...\cf1\highlight2 
+\par \cf0\highlight0 Connecting to dl.google.com (dl.google.com)|74.125.70.136|:443... connected.\cf1\highlight2 
+\par \cf0\highlight0 HTTP request sent, awaiting response... 200 OK\cf1\highlight2 
+\par \cf0\highlight0 Length: 120139686 (115M) [application/octet-stream]\cf1\highlight2 
+\par \cf0\highlight0\f1 Saving to: \lquote go1.13.9.linux-amd64.tar.gz.1\rquote\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 go1.13.9.linux-amd64.tar.gz.1             100%[===================================================================================>] 114.57M   166MB/s    in 0.7s\cf1\highlight2 
+\par 
+\par \cf0\highlight0\f1 2021-12-13 12:26:32 (166 MB/s) - \lquote go1.13.9.linux-amd64.tar.gz.1\rquote  saved [120139686/120139686]\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 root@prajwal-ark:/src/github.com/arktos# rm -rf /usr/local/go && tar -C /usr/local -xzf go1.13.9.linux-amd64.tar.gz\cf1\highlight2 
+\par \cf0\highlight0 root@prajwal-ark:/src/github.com/arktos# export PATH=$PATH:/usr/local/go/bin\cf1\highlight2 
+\par \cf0\highlight0 root@prajwal-ark:/src/github.com/arktos# go version\cf1\highlight2 
+\par \cf0\highlight0 go version go1.13.9 linux/amd64\cf1\highlight2 
+\par \cf0\highlight0 root@prajwal-ark:/src/github.com/arktos# mkdir -p $GOPATH/src/github.com\cf1\highlight2 
+\par \cf0\highlight0 root@prajwal-ark:/src/github.com/arktos# cd $GOPATH/src/github.com\cf1\highlight2 
+\par \cf0\highlight0 root@prajwal-ark:/src/github.com# git clone https://github.com/CentaurusInfra/arktos\cf1\highlight2 
+\par \cf0\highlight0 fatal: destination path 'arktos' already exists and is not an empty directory.\cf1\highlight2 
+\par \cf0\highlight0 root@prajwal-ark:/src/github.com# cd arktos\cf1\highlight2 
+\par \cf0\highlight0 root@prajwal-ark:/src/github.com/arktos# make\cf1\highlight2 
+\par \cf0\highlight0 Running copyright check for repo: /src/github.com/arktos, logging to _output/ArktosCopyrightTool.log\cf1\highlight2 
+\par \cf0\highlight0 /src/github.com/arktos /src/github.com/arktos\cf1\highlight2 
+\par \cf0\highlight0 warning: inexact rename detection was skipped due to too many files.\cf1\highlight2 
+\par \cf0\highlight0 warning: you may want to set your diff.renameLimit variable to at least 3067 and retry the command.\cf1\highlight2 
+\par \cf0\highlight0 /src/github.com/arktos\cf1\highlight2 
+\par \cf0\highlight0 /src/github.com/arktos /src/github.com/arktos\cf1\highlight2 
+\par \cf0\highlight0 warning: inexact rename detection was skipped due to too many files.\cf1\highlight2 
+\par \cf0\highlight0 warning: you may want to set your diff.renameLimit variable to at least 3067 and retry the command.\cf1\highlight2 
+\par \cf0\highlight0 /src/github.com/arktos\cf1\highlight2 
+\par \cf0\highlight0 Inspecting copyright files, writing logs to _output/ArktosCopyrightTool.log\cf1\highlight2 
+\par \cf0\highlight0 Done.\cf1\highlight2 
+\par \cf0\highlight0 +++ [1213 12:28:23] Building go targets for linux/amd64:\cf1\highlight2 
+\par \cf0\highlight0     cmd/kube-proxy\cf1\highlight2 
+\par \cf0\highlight0     cmd/kube-apiserver\cf1\highlight2 
+\par \cf0\highlight0     cmd/kube-controller-manager\cf1\highlight2 
+\par \cf0\highlight0     cmd/cloud-controller-manager\cf1\highlight2 
+\par \cf0\highlight0     cmd/workload-controller-manager\cf1\highlight2 
+\par \cf0\highlight0     cmd/kubelet\cf1\highlight2 
+\par \cf0\highlight0     cmd/kubeadm\cf1\highlight2 
+\par \cf0\highlight0     cmd/hyperkube\cf1\highlight2 
+\par \cf0\highlight0     cmd/kube-scheduler\cf1\highlight2 
+\par \cf0\highlight0     vendor/k8s.io/apiextensions-apiserver\cf1\highlight2 
+\par \cf0\highlight0     cluster/gce/gci/mounter\cf1\highlight2 
+\par \cf0\highlight0     cmd/kubectl\cf1\highlight2 
+\par \cf0\highlight0     cmd/gendocs\cf1\highlight2 
+\par \cf0\highlight0     cmd/genkubedocs\cf1\highlight2 
+\par \cf0\highlight0     cmd/genman\cf1\highlight2 
+\par \cf0\highlight0     cmd/genyaml\cf1\highlight2 
+\par \cf0\highlight0     cmd/genswaggertypedocs\cf1\highlight2 
+\par \cf0\highlight0     cmd/linkcheck\cf1\highlight2 
+\par \cf0\highlight0     vendor/github.com/onsi/ginkgo/ginkgo\cf1\highlight2 
+\par \cf0\highlight0     test/e2e/e2e.test\cf1\highlight2 
+\par \cf0\highlight0     cmd/kubemark\cf1\highlight2 
+\par \cf0\highlight0     vendor/github.com/onsi/ginkgo/ginkgo\cf1\highlight2 
+\par \cf0\highlight0     test/e2e_node/e2e_node.test\cf1\highlight2 
+\par \cf0\highlight0 Running copyright check for repo: /src/github.com/arktos, logging to _output/ArktosCopyrightTool.log\cf1\highlight2 
+\par \cf0\highlight0 /src/github.com/arktos /src/github.com/arktos\cf1\highlight2 
+\par \cf0\highlight0 warning: inexact rename detection was skipped due to too many files.\cf1\highlight2 
+\par \cf0\highlight0 warning: you may want to set your diff.renameLimit variable to at least 3067 and retry the command.\cf1\highlight2 
+\par \cf0\highlight0 /src/github.com/arktos\cf1\highlight2 
+\par \cf0\highlight0 /src/github.com/arktos /src/github.com/arktos\cf1\highlight2 
+\par \cf0\highlight0 warning: inexact rename detection was skipped due to too many files.\cf1\highlight2 
+\par \cf0\highlight0 warning: you may want to set your diff.renameLimit variable to at least 3067 and retry the command.\cf1\highlight2 
+\par \cf0\highlight0 /src/github.com/arktos\cf1\highlight2 
+\par \cf0\highlight0 Inspecting copyright files, writing logs to _output/ArktosCopyrightTool.log\cf1\highlight2 
+\par \cf0\highlight0 Done.\cf1\highlight2 
+\par \cf0\highlight0 root@prajwal-ark:/src/github.com/arktos# cd $GOPATH/src/github.com/arktos\cf1\highlight2 
+\par \cf0\highlight0 root@prajwal-ark:/src/github.com/arktos# hack/arktos-up.sh\cf1\highlight2 
+\par \cf0\highlight0 DBG: Flannel CNI plugin will be installed AFTER cluster is up\cf1\highlight2 
+\par \cf0\highlight0 DBG: effective feature gates AllAlpha=false,WorkloadInfoDefaulting=true,QPSDoubleGCController=true,QPSDoubleRSController=true,MandatoryArktosNetwork=true\cf1\highlight2 
+\par \cf0\highlight0 DBG: effective disabling admission plugins\cf1\highlight2 
+\par \cf0\highlight0 DBG: effective default network template file is /src/github.com/arktos/hack/testdata/default-flat-network.tmpl\cf1\highlight2 
+\par \cf0\highlight0 DBG: kubelet arg RESOLV_CONF is /run/systemd/resolve/resolv.conf\cf1\highlight2 
+\par \cf0\highlight0 WARNING : The kubelet is configured to not fail even if swap is enabled; production deployments should disable swap.\cf1\highlight2 
+\par \cf0\highlight0 cni plugin is bridge; arktos will use bridge to provision pod network\cf1\highlight2 
+\par \cf0\highlight0 Ensuring firewall to allow traffic forward by default\cf1\highlight2 
+\par \cf0\highlight0 -P FORWARD ACCEPT\cf1\highlight2 
+\par \cf0\highlight0 Ensuring minimum cni plugin installation...\cf1\highlight2 
+\par \cf0\highlight0 found bridge, host-local, loopback\cf1\highlight2 
+\par \cf0\highlight0 setting up cni conf file...\cf1\highlight2 
+\par \cf0\highlight0 copying /src/github.com/arktos/hack/testdata/cni-conf/bridge.conf to /etc/cni/net.d/bridge.conf...\cf1\highlight2 
+\par \cf0\highlight0 copied /src/github.com/arktos/hack/testdata/cni-conf/bridge.conf to /etc/cni/net.d/bridge.conf\cf1\highlight2 
+\par \cf0\highlight0 done with bridge cni plugin installation\cf1\highlight2 
+\par \cf0\highlight0 WARNING : The kubelet is configured to not fail even if swap is enabled; production deployments should disable swap.\cf1\highlight2 
+\par \cf0\highlight0 Getting runtime deployment file  libvirt-qemu\cf1\highlight2 
+\par \cf0\highlight0 --2021-12-13 12:31:12--  https://raw.githubusercontent.com/futurewei-cloud/arktos-vm-runtime/release-0.6/deploy/apparmor/libvirt-qemu\cf1\highlight2 
+\par \cf0\highlight0 Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.108.133, 185.199.109.133, 185.199.110.133, ...\cf1\highlight2 
+\par \cf0\highlight0 Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443... connected.\cf1\highlight2 
+\par \cf0\highlight0 HTTP request sent, awaiting response... 200 OK\cf1\highlight2 
+\par \cf0\highlight0 Length: 6578 (6.4K) [text/plain]\cf1\highlight2 
+\par \cf0\highlight0\f1 Saving to: \lquote /tmp/libvirt-qemu\rquote\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 /tmp/libvirt-qemu                         100%[===================================================================================>]   6.42K  --.-KB/s    in 0s\cf1\highlight2 
+\par 
+\par \cf0\highlight0\f1 2021-12-13 12:31:12 (61.5 MB/s) - \lquote /tmp/libvirt-qemu\rquote  saved [6578/6578]\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 Getting runtime deployment file  libvirtd\cf1\highlight2 
+\par \cf0\highlight0 --2021-12-13 12:31:12--  https://raw.githubusercontent.com/futurewei-cloud/arktos-vm-runtime/release-0.6/deploy/apparmor/libvirtd\cf1\highlight2 
+\par \cf0\highlight0 Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.111.133, 185.199.110.133, 185.199.109.133, ...\cf1\highlight2 
+\par \cf0\highlight0 Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.111.133|:443... connected.\cf1\highlight2 
+\par \cf0\highlight0 HTTP request sent, awaiting response... 200 OK\cf1\highlight2 
+\par \cf0\highlight0 Length: 1617 (1.6K) [text/plain]\cf1\highlight2 
+\par \cf0\highlight0\f1 Saving to: \lquote /tmp/libvirtd\rquote\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 /tmp/libvirtd                             100%[===================================================================================>]   1.58K  --.-KB/s    in 0s\cf1\highlight2 
+\par 
+\par \cf0\highlight0\f1 2021-12-13 12:31:12 (22.9 MB/s) - \lquote /tmp/libvirtd\rquote  saved [1617/1617]\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 Getting runtime deployment file  virtlet\cf1\highlight2 
+\par \cf0\highlight0 --2021-12-13 12:31:12--  https://raw.githubusercontent.com/futurewei-cloud/arktos-vm-runtime/release-0.6/deploy/apparmor/virtlet\cf1\highlight2 
+\par \cf0\highlight0 Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.111.133, 185.199.110.133, 185.199.109.133, ...\cf1\highlight2 
+\par \cf0\highlight0 Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.111.133|:443... connected.\cf1\highlight2 
+\par \cf0\highlight0 HTTP request sent, awaiting response... 200 OK\cf1\highlight2 
+\par \cf0\highlight0 Length: 2582 (2.5K) [text/plain]\cf1\highlight2 
+\par \cf0\highlight0\f1 Saving to: \lquote /tmp/virtlet\rquote\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 /tmp/virtlet                              100%[===================================================================================>]   2.52K  --.-KB/s    in 0s\cf1\highlight2 
+\par 
+\par \cf0\highlight0\f1 2021-12-13 12:31:12 (35.6 MB/s) - \lquote /tmp/virtlet\rquote  saved [2582/2582]\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 Getting runtime deployment file  vms\cf1\highlight2 
+\par \cf0\highlight0 --2021-12-13 12:31:12--  https://raw.githubusercontent.com/futurewei-cloud/arktos-vm-runtime/release-0.6/deploy/apparmor/vms\cf1\highlight2 
+\par \cf0\highlight0 Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.111.133, 185.199.110.133, 185.199.109.133, ...\cf1\highlight2 
+\par \cf0\highlight0 Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.111.133|:443... connected.\cf1\highlight2 
+\par \cf0\highlight0 HTTP request sent, awaiting response... 200 OK\cf1\highlight2 
+\par \cf0\highlight0 Length: 485 [text/plain]\cf1\highlight2 
+\par \cf0\highlight0\f1 Saving to: \lquote /tmp/vms\rquote\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 /tmp/vms                                  100%[===================================================================================>]     485  --.-KB/s    in 0s\cf1\highlight2 
+\par 
+\par \cf0\highlight0\f1 2021-12-13 12:31:13 (29.8 MB/s) - \lquote /tmp/vms\rquote  saved [485/485]\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 Getting runtime deployment file  vmruntime.yaml\cf1\highlight2 
+\par \cf0\highlight0 --2021-12-13 12:31:13--  https://raw.githubusercontent.com/futurewei-cloud/arktos-vm-runtime/release-0.6/deploy/data/virtlet-ds.yaml\cf1\highlight2 
+\par \cf0\highlight0 Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.111.133, 185.199.110.133, 185.199.109.133, ...\cf1\highlight2 
+\par \cf0\highlight0 Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.111.133|:443... connected.\cf1\highlight2 
+\par \cf0\highlight0 HTTP request sent, awaiting response... 200 OK\cf1\highlight2 
+\par \cf0\highlight0 Length: 11643 (11K) [text/plain]\cf1\highlight2 
+\par \cf0\highlight0\f1 Saving to: \lquote /tmp/vmruntime.yaml\rquote\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 /tmp/vmruntime.yaml                       100%[===================================================================================>]  11.37K  --.-KB/s    in 0s\cf1\highlight2 
+\par 
+\par \cf0\highlight0\f1 2021-12-13 12:31:13 (67.7 MB/s) - \lquote /tmp/vmruntime.yaml\rquote  saved [11643/11643]\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 Getting runtime deployment file  images.yaml\cf1\highlight2 
+\par \cf0\highlight0 --2021-12-13 12:31:13--  https://raw.githubusercontent.com/futurewei-cloud/arktos-vm-runtime/release-0.6/deploy/images.yaml\cf1\highlight2 
+\par \cf0\highlight0 Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.111.133, 185.199.110.133, 185.199.109.133, ...\cf1\highlight2 
+\par \cf0\highlight0 Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.111.133|:443... connected.\cf1\highlight2 
+\par \cf0\highlight0 HTTP request sent, awaiting response... 200 OK\cf1\highlight2 
+\par \cf0\highlight0 Length: 254 [text/plain]\cf1\highlight2 
+\par \cf0\highlight0\f1 Saving to: \lquote /tmp/images.yaml\rquote\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 /tmp/images.yaml                          100%[===================================================================================>]     254  --.-KB/s    in 0s\cf1\highlight2 
+\par 
+\par \cf0\highlight0\f1 2021-12-13 12:31:13 (16.6 MB/s) - \lquote /tmp/images.yaml\rquote  saved [254/254]\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 Stopping Apparmor service\cf1\highlight2 
+\par \cf0\highlight0 make: Entering directory '/src/github.com/arktos'\cf1\highlight2 
+\par \cf0\highlight0 make[1]: Entering directory '/src/github.com/arktos'\cf1\highlight2 
+\par \cf0\highlight0 make[1]: Leaving directory '/src/github.com/arktos'\cf1\highlight2 
+\par \cf0\highlight0 Running copyright check for repo: /src/github.com/arktos, logging to _output/ArktosCopyrightTool.log\cf1\highlight2 
+\par \cf0\highlight0 /src/github.com/arktos /src/github.com/arktos\cf1\highlight2 
+\par \cf0\highlight0 warning: inexact rename detection was skipped due to too many files.\cf1\highlight2 
+\par \cf0\highlight0 warning: you may want to set your diff.renameLimit variable to at least 3067 and retry the command.\cf1\highlight2 
+\par \cf0\highlight0 /src/github.com/arktos\cf1\highlight2 
+\par \cf0\highlight0 /src/github.com/arktos /src/github.com/arktos\cf1\highlight2 
+\par \cf0\highlight0 warning: inexact rename detection was skipped due to too many files.\cf1\highlight2 
+\par \cf0\highlight0 warning: you may want to set your diff.renameLimit variable to at least 3067 and retry the command.\cf1\highlight2 
+\par \cf0\highlight0 /src/github.com/arktos\cf1\highlight2 
+\par \cf0\highlight0 Inspecting copyright files, writing logs to _output/ArktosCopyrightTool.log\cf1\highlight2 
+\par \cf0\highlight0 Done.\cf1\highlight2 
+\par \cf0\highlight0 +++ [1213 12:31:44] Building go targets for linux/amd64:\cf1\highlight2 
+\par \cf0\highlight0     cmd/kubectl\cf1\highlight2 
+\par \cf0\highlight0     cmd/hyperkube\cf1\highlight2 
+\par \cf0\highlight0     cmd/kube-apiserver\cf1\highlight2 
+\par \cf0\highlight0     cmd/kube-controller-manager\cf1\highlight2 
+\par \cf0\highlight0     cmd/workload-controller-manager\cf1\highlight2 
+\par \cf0\highlight0     cmd/cloud-controller-manager\cf1\highlight2 
+\par \cf0\highlight0     cmd/kubelet\cf1\highlight2 
+\par \cf0\highlight0     cmd/kube-proxy\cf1\highlight2 
+\par \cf0\highlight0     cmd/kube-scheduler\cf1\highlight2 
+\par \cf0\highlight0     cmd/arktos-network-controller\cf1\highlight2 
+\par \cf0\highlight0 Running copyright check for repo: /src/github.com/arktos, logging to _output/ArktosCopyrightTool.log\cf1\highlight2 
+\par \cf0\highlight0 /src/github.com/arktos /src/github.com/arktos\cf1\highlight2 
+\par \cf0\highlight0 warning: inexact rename detection was skipped due to too many files.\cf1\highlight2 
+\par \cf0\highlight0 warning: you may want to set your diff.renameLimit variable to at least 3067 and retry the command.\cf1\highlight2 
+\par \cf0\highlight0 /src/github.com/arktos\cf1\highlight2 
+\par \cf0\highlight0 /src/github.com/arktos /src/github.com/arktos\cf1\highlight2 
+\par \cf0\highlight0 warning: inexact rename detection was skipped due to too many files.\cf1\highlight2 
+\par \cf0\highlight0 warning: you may want to set your diff.renameLimit variable to at least 3067 and retry the command.\cf1\highlight2 
+\par \cf0\highlight0 /src/github.com/arktos\cf1\highlight2 
+\par \cf0\highlight0 Inspecting copyright files, writing logs to _output/ArktosCopyrightTool.log\cf1\highlight2 
+\par \cf0\highlight0 Done.\cf1\highlight2 
+\par \cf0\highlight0 make: Leaving directory '/src/github.com/arktos'\cf1\highlight2 
+\par 
+\par \cf0\highlight0 The current version is 3.4.3\cf1\highlight2 
+\par 
+\par \cf0\highlight0 API SERVER insecure port is free, proceeding...\cf1\highlight2 
+\par \cf0\highlight0 API SERVER secure port is free, proceeding...\cf1\highlight2 
+\par \cf0\highlight0 Unable to successfully run 'cfssl' from /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/go/bin:/src/github.com/arktos/third_party/etcd; downloading instead...\cf1\highlight2 
+\par \cf0\highlight0   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\cf1\highlight2 
+\par \cf0\highlight0                                  Dload  Upload   Total   Spent    Left  Speed\cf1\highlight2 
+\par \cf0\highlight0   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\cf1\highlight2 
+\par \cf0\highlight0 100   654  100   654    0     0   2458      0 --:--:-- --:--:-- --:--:--  2458\cf1\highlight2 
+\par \cf0\highlight0 100  9.8M  100  9.8M    0     0  14.3M      0 --:--:-- --:--:-- --:--:-- 14.3M\cf1\highlight2 
+\par \cf0\highlight0   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\cf1\highlight2 
+\par \cf0\highlight0                                  Dload  Upload   Total   Spent    Left  Speed\cf1\highlight2 
+\par \cf0\highlight0   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\cf1\highlight2 
+\par \cf0\highlight0 100   658  100   658    0     0   3018      0 --:--:-- --:--:-- --:--:--  642k\cf1\highlight2 
+\par \cf0\highlight0 100 2224k  100 2224k    0     0  4015k      0 --:--:-- --:--:-- --:--:-- 4015k\cf1\highlight2 
+\par \cf0\highlight0 Detected host and ready to start services.  Doing some housekeeping first...\cf1\highlight2 
+\par \cf0\highlight0 Using GO_OUT /src/github.com/arktos/_output/local/bin/linux/amd64\cf1\highlight2 
+\par \cf0\highlight0 Starting services now!\cf1\highlight2 
+\par \cf0\highlight0 Starting etcd\cf1\highlight2 
+\par 
+\par \cf0\highlight0 The current version is 3.4.3\cf1\highlight2 
+\par 
+\par \cf0\highlight0 etcd --name prajwal-ark --listen-peer-urls http://10.128.0.12:2380   --advertise-client-urls http://10.128.0.12:2379 --data-dir /tmp/tmp.GRNGIUPMev --listen-client-urls http://10.128.0.12:2379,http://127.0.0.1:2379 --listen-peer-urls http://10.128.0.12:2380 --debug > "/tmp/etcd.log" 2>/dev/null\cf1\highlight2 
+\par \cf0\highlight0 Waiting for etcd to come up.\cf1\highlight2 
+\par \cf0\highlight0 +++ [1213 12:32:50] On try 2, etcd: : \{"health":"true"\}\cf1\highlight2 
+\par \cf0\highlight0\{"header":\{"cluster_id":"13011813335817456115","member_id":"2021940510180476400","revision":"2","raft_term":"2"\}\}Starting 1 kube-apiserver instances. If you want to make changes to the kube-apiserver nubmer, please run export APISERVER_SERVER=n(n=1,2,...).\cf1\highlight2 
+\par \cf0\highlight0 Copied the apiserver partition config file  /var/run/kubernetes/apiserver.config...\cf1\highlight2 
+\par \cf0\highlight0 Skip generating CA as CA files existed and REGENERATE_CA != true. To regenerate CA files, export REGENERATE_CA=true\cf1\highlight2 
+\par \cf0\highlight0 Can't load /root/.rnd into RNG\cf1\highlight2 
+\par \cf0\highlight0 140658106745280:error:2406F079:random number generator:RAND_load_file:Cannot open file:../crypto/rand/randfile.c:88:Filename=/root/.rnd\cf1\highlight2 
+\par \cf0\highlight0 Generating a RSA private key\cf1\highlight2 
+\par \cf0\highlight0 ................................................+++++\cf1\highlight2 
+\par \cf0\highlight0 ..................................+++++\cf1\highlight2 
+\par \cf0\highlight0 writing new private key to '/var/run/kubernetes/request-header-ca.key'\cf1\highlight2 
+\par \cf0\highlight0 -----\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:32:50 [INFO] generate received request\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:32:50 [INFO] received CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:32:50 [INFO] generating key: rsa-2048\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:32:50 [INFO] encoded CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:32:50 [INFO] signed certificate with serial number 442817054297277863158970110121732644918577105189\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:32:50 [WARNING] This certificate lacks a "hosts" field. This makes it unsuitable for\cf1\highlight2 
+\par \cf0\highlight0 websites. For more information see the Baseline Requirements for the Issuance and Management\cf1\highlight2 
+\par \cf0\highlight0 of Publicly-Trusted Certificates, v.1.1.6, from the CA/Browser Forum (https://cabforum.org);\cf1\highlight2 
+\par \cf0\highlight0 specifically, section 10.2.3 ("Information Requirements").\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:32:50 [INFO] generate received request\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:32:50 [INFO] received CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:32:50 [INFO] generating key: rsa-2048\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:32:50 [INFO] encoded CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:32:50 [INFO] signed certificate with serial number 76393345776995053207452337314910837395535298146\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:32:50 [WARNING] This certificate lacks a "hosts" field. This makes it unsuitable for\cf1\highlight2 
+\par \cf0\highlight0 websites. For more information see the Baseline Requirements for the Issuance and Management\cf1\highlight2 
+\par \cf0\highlight0 of Publicly-Trusted Certificates, v.1.1.6, from the CA/Browser Forum (https://cabforum.org);\cf1\highlight2 
+\par \cf0\highlight0 specifically, section 10.2.3 ("Information Requirements").\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:32:50 [INFO] generate received request\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:32:50 [INFO] received CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:32:50 [INFO] generating key: rsa-2048\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:32:50 [INFO] encoded CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:32:50 [INFO] signed certificate with serial number 310575859429709617751033575631259671392554420944\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:32:50 [WARNING] This certificate lacks a "hosts" field. This makes it unsuitable for\cf1\highlight2 
+\par \cf0\highlight0 websites. For more information see the Baseline Requirements for the Issuance and Management\cf1\highlight2 
+\par \cf0\highlight0 of Publicly-Trusted Certificates, v.1.1.6, from the CA/Browser Forum (https://cabforum.org);\cf1\highlight2 
+\par \cf0\highlight0 specifically, section 10.2.3 ("Information Requirements").\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:32:50 [INFO] generate received request\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:32:50 [INFO] received CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:32:50 [INFO] generating key: rsa-2048\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:32:51 [INFO] encoded CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:32:51 [INFO] signed certificate with serial number 107170475851998205941128809652744374032905167833\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:32:51 [WARNING] This certificate lacks a "hosts" field. This makes it unsuitable for\cf1\highlight2 
+\par \cf0\highlight0 websites. For more information see the Baseline Requirements for the Issuance and Management\cf1\highlight2 
+\par \cf0\highlight0 of Publicly-Trusted Certificates, v.1.1.6, from the CA/Browser Forum (https://cabforum.org);\cf1\highlight2 
+\par \cf0\highlight0 specifically, section 10.2.3 ("Information Requirements").\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:32:51 [INFO] generate received request\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:32:51 [INFO] received CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:32:51 [INFO] generating key: rsa-2048\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:32:51 [INFO] encoded CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:32:51 [INFO] signed certificate with serial number 442243989159113583539598265816126236950478665487\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:32:51 [WARNING] This certificate lacks a "hosts" field. This makes it unsuitable for\cf1\highlight2 
+\par \cf0\highlight0 websites. For more information see the Baseline Requirements for the Issuance and Management\cf1\highlight2 
+\par \cf0\highlight0 of Publicly-Trusted Certificates, v.1.1.6, from the CA/Browser Forum (https://cabforum.org);\cf1\highlight2 
+\par \cf0\highlight0 specifically, section 10.2.3 ("Information Requirements").\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:32:51 [INFO] generate received request\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:32:51 [INFO] received CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:32:51 [INFO] generating key: rsa-2048\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:32:51 [INFO] encoded CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:32:51 [INFO] signed certificate with serial number 211615365787154776932392321119225596599612327359\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:32:51 [WARNING] This certificate lacks a "hosts" field. This makes it unsuitable for\cf1\highlight2 
+\par \cf0\highlight0 websites. For more information see the Baseline Requirements for the Issuance and Management\cf1\highlight2 
+\par \cf0\highlight0 of Publicly-Trusted Certificates, v.1.1.6, from the CA/Browser Forum (https://cabforum.org);\cf1\highlight2 
+\par \cf0\highlight0 specifically, section 10.2.3 ("Information Requirements").\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:32:51 [INFO] generate received request\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:32:51 [INFO] received CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:32:51 [INFO] generating key: rsa-2048\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:32:51 [INFO] encoded CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:32:51 [INFO] signed certificate with serial number 506421720659193597292963397085130512109024170570\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:32:51 [WARNING] This certificate lacks a "hosts" field. This makes it unsuitable for\cf1\highlight2 
+\par \cf0\highlight0 websites. For more information see the Baseline Requirements for the Issuance and Management\cf1\highlight2 
+\par \cf0\highlight0 of Publicly-Trusted Certificates, v.1.1.6, from the CA/Browser Forum (https://cabforum.org);\cf1\highlight2 
+\par \cf0\highlight0 specifically, section 10.2.3 ("Information Requirements").\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:32:51 [INFO] generate received request\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:32:51 [INFO] received CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:32:51 [INFO] generating key: rsa-2048\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:32:52 [INFO] encoded CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:32:52 [INFO] signed certificate with serial number 578680630667420678448059855709344941566293154113\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:32:52 [WARNING] This certificate lacks a "hosts" field. This makes it unsuitable for\cf1\highlight2 
+\par \cf0\highlight0 websites. For more information see the Baseline Requirements for the Issuance and Management\cf1\highlight2 
+\par \cf0\highlight0 of Publicly-Trusted Certificates, v.1.1.6, from the CA/Browser Forum (https://cabforum.org);\cf1\highlight2 
+\par \cf0\highlight0 specifically, section 10.2.3 ("Information Requirements").\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:32:52 [INFO] generate received request\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:32:52 [INFO] received CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:32:52 [INFO] generating key: rsa-2048\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:32:52 [INFO] encoded CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:32:52 [INFO] signed certificate with serial number 470153667673782409438960606589703007954708860336\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:32:52 [WARNING] This certificate lacks a "hosts" field. This makes it unsuitable for\cf1\highlight2 
+\par \cf0\highlight0 websites. For more information see the Baseline Requirements for the Issuance and Management\cf1\highlight2 
+\par \cf0\highlight0 of Publicly-Trusted Certificates, v.1.1.6, from the CA/Browser Forum (https://cabforum.org);\cf1\highlight2 
+\par \cf0\highlight0 specifically, section 10.2.3 ("Information Requirements").\cf1\highlight2 
+\par \cf0\highlight0 Waiting for apiserver to come up\cf1\highlight2 
+\par \cf0\highlight0 +++ [1213 12:33:02] On try 8, apiserver: : ok\cf1\highlight2 
+\par \cf0\highlight0 clusterrolebinding.rbac.authorization.k8s.io/kube-apiserver-kubelet-admin created\cf1\highlight2 
+\par \cf0\highlight0 Cluster "local-up-cluster" set.\cf1\highlight2 
+\par \cf0\highlight0 use 'kubectl --kubeconfig=/var/run/kubernetes/admin-kube-aggregator0.kubeconfig' to use the aggregated API server\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:33:03 [INFO] generate received request\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:33:03 [INFO] received CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:33:03 [INFO] generating key: rsa-2048\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:33:03 [INFO] encoded CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:33:03 [INFO] signed certificate with serial number 376122640634899080061028066028491790738027341927\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:33:03 [WARNING] This certificate lacks a "hosts" field. This makes it unsuitable for\cf1\highlight2 
+\par \cf0\highlight0 websites. For more information see the Baseline Requirements for the Issuance and Management\cf1\highlight2 
+\par \cf0\highlight0 of Publicly-Trusted Certificates, v.1.1.6, from the CA/Browser Forum (https://cabforum.org);\cf1\highlight2 
+\par \cf0\highlight0 specifically, section 10.2.3 ("Information Requirements").\cf1\highlight2 
+\par \cf0\highlight0 service/kube-dns created\cf1\highlight2 
+\par \cf0\highlight0 serviceaccount/kube-dns created\cf1\highlight2 
+\par \cf0\highlight0 configmap/kube-dns created\cf1\highlight2 
+\par \cf0\highlight0 deployment.apps/kube-dns created\cf1\highlight2 
+\par \cf0\highlight0 Kube-dns addon successfully deployed.\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:33:04 [INFO] generate received request\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:33:04 [INFO] received CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:33:04 [INFO] generating key: rsa-2048\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:33:04 [INFO] encoded CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:33:04 [INFO] signed certificate with serial number 254262760487246041904769470856259108095863591793\cf1\highlight2 
+\par \cf0\highlight0 2021/12/13 12:33:04 [WARNING] This certificate lacks a "hosts" field. This makes it unsuitable for\cf1\highlight2 
+\par \cf0\highlight0 websites. For more information see the Baseline Requirements for the Issuance and Management\cf1\highlight2 
+\par \cf0\highlight0 of Publicly-Trusted Certificates, v.1.1.6, from the CA/Browser Forum (https://cabforum.org);\cf1\highlight2 
+\par \cf0\highlight0 specifically, section 10.2.3 ("Information Requirements").\cf1\highlight2 
+\par \cf0\highlight0 kubelet ( 2081 ) is running.\cf1\highlight2 
+\par \cf0\highlight0 Create default storage class for\cf1\highlight2 
+\par \cf0\highlight0 storageclass.storage.k8s.io/standard created\cf1\highlight2 
+\par \cf0\highlight0 customresourcedefinition.apiextensions.k8s.io/networks.arktos.futurewei.com created\cf1\highlight2 
+\par \cf0\highlight0 *******************************************\cf1\highlight2 
+\par \cf0\highlight0 Setup Arktos components ...\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \pard\cf0\highlight0\f2 
+\par }
+ 
