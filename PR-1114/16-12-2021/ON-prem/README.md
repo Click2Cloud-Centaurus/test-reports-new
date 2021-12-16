@@ -1,4 +1,4 @@
-#Deployment of arktos without Mizar CNI (Community code)
+# Deployment of arktos without Mizar CNI (Community code)
 Deployment Infra | Deployments Counts | Success | Failures | Comments
 --- | --- | --- | --- | ---
 AWS | 0 | 0 | 0 |-
