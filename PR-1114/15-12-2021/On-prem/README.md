@@ -1,5 +1,5 @@
 
-# Deployment of Arktos cluster without Mizar CNI 
+# Deployment of Arktos cluster without Mizar CNI (Community code)
 
 Deployment Infra | Deployments Counts | Success | Failures | Comments
 --- | --- | --- | --- | ---
