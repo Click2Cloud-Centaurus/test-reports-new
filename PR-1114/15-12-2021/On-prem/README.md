@@ -1,5 +1,5 @@
 
-# Deployment of Arktos cluster without Mizar CNI 
+# Centaurus Dashboard Deployment 
 
 Deployment Infra | Deployments Counts | Success | Failures | Comments
 --- | --- | --- | --- | ---
