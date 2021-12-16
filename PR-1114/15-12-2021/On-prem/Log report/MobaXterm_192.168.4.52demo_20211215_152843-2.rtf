@@ -1,0 +1,1615 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fmodern Consolas;}{\f1\fmodern\fcharset0 Consolas;}{\f2\fnil\fcharset129 Courier New;}}
+{\colortbl ;\red20\green20\blue20;\red142\green142\blue142;\red16\green158\blue98;\red148\green146\blue12;\red170\green51\blue170;\red56\green136\blue159;\red18\green124\blue155;\red94\green147\blue162;\red170\green85\blue85;}
+\viewkind4\uc1\pard\f0\fs20     \u9484?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9488?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?                 \cf3\f1\bullet  MobaXterm Personal Edition v21.4 \bullet\cf0\f0                  \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?               \cf4 (SSH client, X server and network tools)\cf0                \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?                                                                      \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474? \u8594? SSH session to \cf5 demo@192.168.4.52                         \cf0           \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  Direct SSH      :  \cf3\f0 v\cf0                                              \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  SSH compression :  \cf3\f0 v\cf0                                              \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  SSH-browser     :  \cf3\f0 v\cf0                                              \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  X11-forwarding  :  \cf3\f0 v\cf0   (remote display is forwarded through SSH)  \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?                                                                      \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474? \u8594? For more info, ctrl+click on \cf6\ul help\cf0\ulnone  or visit our \cf6\ul website\cf0\ulnone .            \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9492?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9496?\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Welcome to Ubuntu 18.04.3 LTS (GNU/Linux 5.6.0-rc2 x86_64)\cf1\highlight2 
+\par 
+\par \cf0\highlight0  * Documentation:  https://help.ubuntu.com\cf1\highlight2 
+\par \cf0\highlight0  * Management:     https://landscape.canonical.com\cf1\highlight2 
+\par \cf0\highlight0  * Support:        https://ubuntu.com/advantage\cf1\highlight2 
+\par 
+\par \cf0\highlight0   System information as of Wed Dec 15 05:39:11 UTC 2021\cf1\highlight2 
+\par 
+\par \cf0\highlight0   System load:  0.99                Processes:              350\cf1\highlight2 
+\par \cf0\highlight0   Usage of /:   10.6% of 129.91GB   Users logged in:        1\cf1\highlight2 
+\par \cf0\highlight0   Memory usage: 8%                  IP address for ens160:  192.168.4.52\cf1\highlight2 
+\par \cf0\highlight0   Swap usage:   0%                  IP address for docker0: 172.17.0.1\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0  * Canonical Livepatch is available for installation.\cf1\highlight2 
+\par \cf0\highlight0    - Reduce system reboots and improve kernel security. Activate at:\cf1\highlight2 
+\par \cf0\highlight0      https://ubuntu.com/livepatch\cf1\highlight2 
+\par 
+\par \cf0\highlight0 226 packages can be updated.\cf1\highlight2 
+\par \cf0\highlight0 165 updates are security updates.\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your Internet connection or proxy settings\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Last login: Wed Dec 15 05:21:45 2021 from 192.168.4.1\cf1\highlight2 
+\par \cf0\highlight0 demo@node-d:~$ sudo -i\cf1\highlight2 
+\par \cf0\highlight0 [sudo] password for demo:\cf1\highlight2 
+\par \cf0\highlight0 -bash: export: `/root/go/src/k8s.io/arktos': not a valid identifier\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get nodes\cf1\highlight2 
+\par \cf0\highlight0 NAME     STATUS     ROLES    AGE     VERSION\cf1\highlight2 
+\par \cf0\highlight0 node-d   NotReady   <none>   2m30s   v0.9.0\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# systemctl status conatinerd\cf1\highlight2 
+\par \cf0\highlight0 Unit conatinerd.service could not be found.\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# systemctl status containerd\cf1\highlight2 
+\par \cf3\highlight0\u9679?\cf0  containerd.service - containerd container runtime\cf1\highlight2 
+\par \cf0\highlight0    Loaded: loaded (/lib/systemd/system/containerd.service; enabled; vendor preset: enabled)\cf1\highlight2 
+\par \cf0\highlight0    Active: \cf3 active (running)\cf0  since Wed 2021-12-15 05:28:39 UTC; 11min ago\cf1\highlight2 
+\par \cf0\highlight0      Docs: https://containerd.io\cf1\highlight2 
+\par \cf0\highlight0  Main PID: 2857 (containerd)\cf1\highlight2 
+\par \cf0\highlight0     Tasks: 24\cf1\highlight2 
+\par \cf0\highlight0    CGroup: /system.slice/containerd.service\cf1\highlight2 
+\par \cf0\highlight0            \u9492?\u9472?2857 /usr/bin/containerd\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Dec 15 05:40:03 node-d containerd[2857]: time="2021-12-15T05:40:03.943773744Z" level=info msg="No cni config template is specified, wait for other system components t\cf1\highlight2 
+\par \cf0\highlight0 Dec 15 05:40:04 node-d containerd[2857]: time="2021-12-15T05:40:04.044527591Z" level=info msg="No cni config template is specified, wait for other system components t\cf1\highlight2 
+\par \cf0\highlight0 Dec 15 05:40:04 node-d containerd[2857]: time="2021-12-15T05:40:04.145467488Z" level=info msg="No cni config template is specified, wait for other system components t\cf1\highlight2 
+\par \cf0\highlight0 Dec 15 05:40:04 node-d containerd[2857]: time="2021-12-15T05:40:04.246382030Z" level=info msg="No cni config template is specified, wait for other system components t\cf1\highlight2 
+\par \cf0\highlight0 Dec 15 05:40:04 node-d containerd[2857]: time="2021-12-15T05:40:04.447639378Z" level=info msg="No cni config template is specified, wait for other system components t\cf1\highlight2 
+\par \cf0\highlight0 Dec 15 05:40:04 node-d containerd[2857]: time="2021-12-15T05:40:04.749192343Z" level=info msg="No cni config template is specified, wait for other system components t\cf1\highlight2 
+\par \cf0\highlight0 Dec 15 05:40:04 node-d containerd[2857]: time="2021-12-15T05:40:04.849998572Z" level=info msg="No cni config template is specified, wait for other system components t\cf1\highlight2 
+\par \cf0\highlight0 Dec 15 05:40:04 node-d containerd[2857]: time="2021-12-15T05:40:04.950846643Z" level=info msg="No cni config template is specified, wait for other system components t\cf1\highlight2 
+\par \cf0\highlight0 Dec 15 05:40:05 node-d containerd[2857]: time="2021-12-15T05:40:05.051732652Z" level=info msg="No cni config template is specified, wait for other system components t\cf1\highlight2 
+\par \cf0\highlight0 Dec 15 05:40:05 node-d containerd[2857]: time="2021-12-15T05:40:05.152748754Z" level=info msg="No cni config template is specified, wait for other system components t\cf1\highlight2 
+\par 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# systemctl restart containerd\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# systemctl status containerd\cf1\highlight2 
+\par \cf3\highlight0\u9679?\cf0  containerd.service - containerd container runtime\cf1\highlight2 
+\par \cf0\highlight0    Loaded: loaded (/lib/systemd/system/containerd.service; enabled; vendor preset: enabled)\cf1\highlight2 
+\par \cf0\highlight0    Active: \cf3 active (running)\cf0  since Wed 2021-12-15 05:40:18 UTC; 1s ago\cf1\highlight2 
+\par \cf0\highlight0      Docs: https://containerd.io\cf1\highlight2 
+\par \cf0\highlight0   Process: 7511 ExecStartPre=/sbin/modprobe overlay (code=exited, status=0/SUCCESS)\cf1\highlight2 
+\par \cf0\highlight0  Main PID: 7517 (containerd)\cf1\highlight2 
+\par \cf0\highlight0     Tasks: 20\cf1\highlight2 
+\par \cf0\highlight0    CGroup: /system.slice/containerd.service\cf1\highlight2 
+\par \cf0\highlight0            \u9492?\u9472?7517 /usr/bin/containerd\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Dec 15 05:40:18 node-d containerd[7517]: time="2021-12-15T05:40:18.150784641Z" level=info msg="containerd successfully booted in 0.051622s"\cf1\highlight2 
+\par \cf0\highlight0 Dec 15 05:40:18 node-d systemd[1]: Started containerd container runtime.\cf1\highlight2 
+\par \cf0\highlight0 Dec 15 05:40:19 node-d containerd[7517]: time="2021-12-15T05:40:19.064692583Z" level=info msg="No cni config template is specified, wait for other system components t\cf1\highlight2 
+\par \cf0\highlight0 Dec 15 05:40:19 node-d containerd[7517]: time="2021-12-15T05:40:19.266185381Z" level=info msg="No cni config template is specified, wait for other system components t\cf1\highlight2 
+\par \cf0\highlight0 Dec 15 05:40:19 node-d containerd[7517]: time="2021-12-15T05:40:19.367282141Z" level=info msg="No cni config template is specified, wait for other system components t\cf1\highlight2 
+\par \cf0\highlight0 Dec 15 05:40:19 node-d containerd[7517]: time="2021-12-15T05:40:19.568713167Z" level=info msg="No cni config template is specified, wait for other system components t\cf1\highlight2 
+\par \cf0\highlight0 Dec 15 05:40:19 node-d containerd[7517]: time="2021-12-15T05:40:19.669747223Z" level=info msg="No cni config template is specified, wait for other system components t\cf1\highlight2 
+\par \cf0\highlight0 Dec 15 05:40:19 node-d containerd[7517]: time="2021-12-15T05:40:19.770880714Z" level=info msg="No cni config template is specified, wait for other system components t\cf1\highlight2 
+\par \cf0\highlight0 Dec 15 05:40:19 node-d containerd[7517]: time="2021-12-15T05:40:19.871886386Z" level=info msg="No cni config template is specified, wait for other system components t\cf1\highlight2 
+\par \cf0\highlight0 Dec 15 05:40:19 node-d containerd[7517]: time="2021-12-15T05:40:19.972834608Z" level=info msg="No cni config template is specified, wait for other system components t\cf1\highlight2 
+\par 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# systemctl status containerd\cf1\highlight2 
+\par \cf3\highlight0\u9679?\cf0  containerd.service - containerd container runtime\cf1\highlight2 
+\par \cf0\highlight0    Loaded: loaded (/lib/systemd/system/containerd.service; enabled; vendor preset: enabled)\cf1\highlight2 
+\par \cf0\highlight0    Active: \cf3 active (running)\cf0  since Wed 2021-12-15 05:40:18 UTC; 12s ago\cf1\highlight2 
+\par \cf0\highlight0      Docs: https://containerd.io\cf1\highlight2 
+\par \cf0\highlight0   Process: 7511 ExecStartPre=/sbin/modprobe overlay (code=exited, status=0/SUCCESS)\cf1\highlight2 
+\par \cf0\highlight0  Main PID: 7517 (containerd)\cf1\highlight2 
+\par \cf0\highlight0     Tasks: 29\cf1\highlight2 
+\par \cf0\highlight0    CGroup: /system.slice/containerd.service\cf1\highlight2 
+\par \cf0\highlight0            \u9492?\u9472?7517 /usr/bin/containerd\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Dec 15 05:40:29 node-d containerd[7517]: time="2021-12-15T05:40:29.257013544Z" level=info msg="No cni config template is specified, wait for other system components t\cf1\highlight2 
+\par \cf0\highlight0 Dec 15 05:40:29 node-d containerd[7517]: time="2021-12-15T05:40:29.357946960Z" level=info msg="No cni config template is specified, wait for other system components t\cf1\highlight2 
+\par \cf0\highlight0 Dec 15 05:40:29 node-d containerd[7517]: time="2021-12-15T05:40:29.458860381Z" level=info msg="No cni config template is specified, wait for other system components t\cf1\highlight2 
+\par \cf0\highlight0 Dec 15 05:40:29 node-d containerd[7517]: time="2021-12-15T05:40:29.559821343Z" level=info msg="No cni config template is specified, wait for other system components t\cf1\highlight2 
+\par \cf0\highlight0 Dec 15 05:40:29 node-d containerd[7517]: time="2021-12-15T05:40:29.660789259Z" level=info msg="No cni config template is specified, wait for other system components t\cf1\highlight2 
+\par \cf0\highlight0 Dec 15 05:40:29 node-d containerd[7517]: time="2021-12-15T05:40:29.761677777Z" level=info msg="No cni config template is specified, wait for other system components t\cf1\highlight2 
+\par \cf0\highlight0 Dec 15 05:40:29 node-d containerd[7517]: time="2021-12-15T05:40:29.862836899Z" level=info msg="No cni config template is specified, wait for other system components t\cf1\highlight2 
+\par \cf0\highlight0 Dec 15 05:40:29 node-d containerd[7517]: time="2021-12-15T05:40:29.963786352Z" level=info msg="No cni config template is specified, wait for other system components t\cf1\highlight2 
+\par \cf0\highlight0 Dec 15 05:40:30 node-d containerd[7517]: time="2021-12-15T05:40:30.064625537Z" level=info msg="No cni config template is specified, wait for other system components t\cf1\highlight2 
+\par \cf0\highlight0 Dec 15 05:40:30 node-d containerd[7517]: time="2021-12-15T05:40:30.266079310Z" level=info msg="No cni config template is specified, wait for other system components t\cf1\highlight2 
+\par 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get nodes\cf1\highlight2 
+\par \cf0\highlight0 NAME     STATUS   ROLES    AGE     VERSION\cf1\highlight2 
+\par \cf0\highlight0 node-d   Ready    <none>   3m59s   v0.9.0\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# export KUBECONFIG=/var/run/kubernetes/admin.kubeconfig\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS     RESTARTS   AGE     IP             NODE     NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-6ff7d98dc8-9r66m   3790096273370637885   1/1     Running    0          4m52s   10.88.0.3      node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-2rght          3515277765848946229   3/3     Running    0          4m52s   10.88.0.2      node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-65pcv                      6213951806386579682   0/3     Init:0/1   0          82s     192.168.4.52   node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# hostname -i\cf1\highlight2 
+\par \cf0\highlight0 192.168.4.52\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# vi kubernetes-dashboard.yaml\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# sudo sed -i '0,/RANDFILE/\{s/RANDFILE/\\#&/\}' /etc/ssl/openssl.cnf\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# openssl genrsa -out dashboard.key 2048\cf1\highlight2 
+\par \cf0\highlight0 Generating RSA private key, 2048 bit long modulus (2 primes)\cf1\highlight2 
+\par \cf0\highlight0 .................................................+++++\cf1\highlight2 
+\par \cf0\highlight0 .................+++++\cf1\highlight2 
+\par \cf0\highlight0 e is 65537 (0x010001)\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# openssl rsa -in dashboard.key -out dashboard.key\cf1\highlight2 
+\par \cf0\highlight0 writing RSA key\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# openssl req -sha256 -new -key dashboard.key -out dashboard.csr -subj "/CN=$(hostname -I | awk '\{print $1\}')"\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# openssl x509 -req -sha256 -days 365 -in dashboard.csr -signkey dashboard.key -out dashboard.crt\cf1\highlight2 
+\par \cf0\highlight0 Signature ok\cf1\highlight2 
+\par \cf0\highlight0 subject=CN = 192.168.4.52\cf1\highlight2 
+\par \cf0\highlight0 Getting Private key\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ls\cf1\highlight2 
+\par \cf7\highlight0 api\cf0                   \cf7 CHANGELOG\cf0            dashboard.crt  go.mod                     \cf7 logo\cf0                       OWNERS      readthedocs.yaml  \cf7 translations\cf1\highlight2 
+\par \cf0\highlight0 aws_build_version    \cf7 cluster\cf0              dashboard.csr  go.sum                     \cf8 Makefile\cf0                   \cf7 perf-tests\cf0   \cf7 staging\cf0            \cf7 vendor\cf1\highlight2 
+\par \cf0\highlight0 aws_kube_params.inc  \cf7 cmd\cf0                  dashboard.key  \cf7 hack\cf0                        \cf8 Makefile.generated_files\cf0   \cf7 pkg\cf0          SUPPORT.md        \cf8 WORKSPACE\cf1\highlight2 
+\par \cf7\highlight0 build\cf0                 code-of-conduct.md  \cf7 docs\cf0            kubernetes-dashboard.yaml  mkdocs.yml                \cf7 plugin\cf0       \cf7 test\cf1\highlight2 
+\par \cf8\highlight0 BUILD.bazel\cf0           CONTRIBUTING.md     \cf7 Godeps\cf0          LICENSE                    \cf7 _output\cf0                    README.md   \cf7 third_party\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# cp dashboard.crt dashboard.csr dashboard.key  /root\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh create namespace kubernetes-dashboard\cf1\highlight2 
+\par \cf0\highlight0 namespace/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh create secret generic kubernetes-dashboard-certs --from-file=$HOME/dashboard.key --from-file=$HOME/dashboard.crt\cf1\highlight2 
+\par \cf0\highlight0 secret/kubernetes-dashboard-certs created\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ls\cf1\highlight2 
+\par \cf7\highlight0 api\cf0                   \cf7 CHANGELOG\cf0            dashboard.crt  go.mod                     \cf7 logo\cf0                       OWNERS      readthedocs.yaml  \cf7 translations\cf1\highlight2 
+\par \cf0\highlight0 aws_build_version    \cf7 cluster\cf0              dashboard.csr  go.sum                     \cf8 Makefile\cf0                   \cf7 perf-tests\cf0   \cf7 staging\cf0            \cf7 vendor\cf1\highlight2 
+\par \cf0\highlight0 aws_kube_params.inc  \cf7 cmd\cf0                  dashboard.key  \cf7 hack\cf0                        \cf8 Makefile.generated_files\cf0   \cf7 pkg\cf0          SUPPORT.md        \cf8 WORKSPACE\cf1\highlight2 
+\par \cf7\highlight0 build\cf0                 code-of-conduct.md  \cf7 docs\cf0            kubernetes-dashboard.yaml  mkdocs.yml                \cf7 plugin\cf0       \cf7 test\cf1\highlight2 
+\par \cf8\highlight0 BUILD.bazel\cf0           CONTRIBUTING.md     \cf7 Godeps\cf0          LICENSE                    \cf7 _output\cf0                    README.md   \cf7 third_party\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh create secret generic kubernetes-dashboard-certs --from-file=$HOME/dashboard.key --from-file=$HOME/dashboard.crt -n kubernetes-dashboard\cf1\highlight2 
+\par \cf0\highlight0 secret/kubernetes-dashboard-certs created\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh create -f kubernetes-dashboard.yaml\cf1\highlight2 
+\par \cf0\highlight0 serviceaccount/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 service/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 secret/kubernetes-dashboard-csrf created\cf1\highlight2 
+\par \cf0\highlight0 secret/kubernetes-dashboard-key-holder created\cf1\highlight2 
+\par \cf0\highlight0 configmap/kubernetes-dashboard-settings created\cf1\highlight2 
+\par \cf0\highlight0 role.rbac.authorization.k8s.io/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 clusterrole.rbac.authorization.k8s.io/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 rolebinding.rbac.authorization.k8s.io/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 clusterrolebinding.rbac.authorization.k8s.io/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 deployment.apps/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 service/dashboard-metrics-scraper created\cf1\highlight2 
+\par \cf0\highlight0 deployment.apps/dashboard-metrics-scraper created\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE              NAME                                         HASHKEY               READY   STATUS              RESTARTS   AGE     IP             NODE     NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 kube-system            coredns-default-6ff7d98dc8-9r66m             3790096273370637885   1/1     Running             0          10m     10.88.0.3      node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            kube-dns-554c5866fc-2rght                    3515277765848946229   3/3     Running             0          10m     10.88.0.2      node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            virtlet-65pcv                                6213951806386579682   3/3     Running             0          6m35s   192.168.4.52   node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   dashboard-metrics-scraper-6fbf748d6d-qrrwf   7726004176900680265   0/1     ContainerCreating   0          12s     <none>         node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-5745876c85-6w6hn        6811219126517615809   0/1     ContainerCreating   0          13s     <none>         node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-5745876c85-vm4xb        2942170762646836114   0/1     ContainerCreating   0          12s     <none>         node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE              NAME                                         HASHKEY               READY   STATUS    RESTARTS   AGE     IP             NODE     NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 kube-system            coredns-default-6ff7d98dc8-9r66m             3790096273370637885   1/1     Running   0          11m     10.88.0.3      node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            kube-dns-554c5866fc-2rght                    3515277765848946229   3/3     Running   0          11m     10.88.0.2      node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            virtlet-65pcv                                6213951806386579682   3/3     Running   0          7m30s   192.168.4.52   node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   dashboard-metrics-scraper-6fbf748d6d-qrrwf   7726004176900680265   1/1     Running   0          67s     10.88.0.4      node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-5745876c85-6w6hn        6811219126517615809   1/1     Running   0          68s     10.88.0.5      node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-5745876c85-vm4xb        2942170762646836114   1/1     Running   0          67s     10.88.0.6      node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# vi /etc/net\cf1\highlight2 
+\par \cf0\highlight0 netplan/             network/             networkd-dispatcher/ networks\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# vi /etc/netplan/50-cloud-init.yaml\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# vim hack/\cf1\highlight2 
+\par \cf0\highlight0 Display all 128 possibilities? (y or n)^C\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# vim hack/lib/common.sh\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# make clean\cf1\highlight2 
+\par \cf0\highlight0 +++ [1215 09:05:21] Verifying Prerequisites....\cf1\highlight2 
+\par \cf0\highlight0 +++ [1215 09:05:22] Removing _output directory\cf1\highlight2 
+\par \cf0\highlight0 Removing test/e2e/generated/bindata.go ..\cf1\highlight2 
+\par \cf0\highlight0 (reverse-i-search)`C': openssl req -sha256 -new -key dashboard.key -out dashboard.csr -subj "/^C=$(hostname -I | awk '\{print $1\}')"\cf1\highlight2 
+\par \cf0\highlight0 (reverse-i-search)`ar': ./cluster/kubectl.sh create secret generic kubernetes-dashbo^Cd-certs --from-file=$HOME/dashboard.key --from-file=$HOME/dashboard.crt -n kubernetes-dashboard\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ^C\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# mkdir /etc/kubernetes/auth -p\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# vi /etc/kubernetes/auth/auth.csv\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh create secret generic kubernetes-dashboard-certs --from-file=$HOME/dashboard.key --from-file=$HOME/dashboard.crt -n kubernetes-dashboard^C^C\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ^C\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos#\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh create serviceaccount dashboard-admin -n kube-system\cf1\highlight2 
+\par \cf0\highlight0 serviceaccount/dashboard-admin created\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh create clusterrolebinding dashboard-admin --clusterrole=cluster-admin --serviceaccount=kube-system:dashboard-admin\cf1\highlight2 
+\par \cf0\highlight0 clusterrolebinding.rbac.authorization.k8s.io/dashboard-admin created\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh describe secrets -n kube-system $(kubectl -n kube-system get secret | awk '/dashboard-admin/\{print $1\}')\cf1\highlight2 
+\par \cf0\highlight0 kubectl: command not found\cf1\highlight2 
+\par \cf0\highlight0 Name:         attachdetach-controller-token-zfdqz\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: attachdetach-controller\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: 93f42529-b07a-434a-a968-1a58376595c7\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJhdHRhY2hkZXRhY2gtY29udHJvbGxlci10b2tlbi16ZmRxeiIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50Lm5hbWUiOiJhdHRhY2hkZXRhY2gtY29udHJvbGxlciIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50LnVpZCI6IjkzZjQyNTI5LWIwN2EtNDM0YS1hOTY4LTFhNTgzNzY1OTVjNyIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvdGVuYW50Ijoic3lzdGVtIiwic3ViIjoic3lzdGVtOnNlcnZpY2VhY2NvdW50Omt1YmUtc3lzdGVtOmF0dGFjaGRldGFjaC1jb250cm9sbGVyIn0.cUiiJU_UX7zjZe38pWBhVSjDm6cjlX8DS42q24REAfwdiiwodXayJ_rEUcWySHCfIPM7QdppaDJsg-cyOXgviEOet_ZbngYbdxkvkAeKqol5hYVg1yFz6B_2g0d8ityWseu5tnNc5__Hm3JseOkq84MdBg6cWDW0dmwIZD2pFFPnr4zPGYBDuqcJaeu8cQDZIv_nuogjSWYN7fGcfG8Fq5OUytnO-_YQ_SIQMANghaaqsiJhoyY4-vxnAU7Zr0Ko1k1T1ZOik8rwI1bW9dkh2oOz3zAPCI2RwgFKny_rwfJCRQTbJH-Aeb6Hij-OuoDN1oD1uAhppL5-Oj6FCjnFOg\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         certificate-controller-token-pzw2z\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: certificate-controller\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: b7626a0a-49da-409a-ab8b-755f30d09c0c\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJjZXJ0aWZpY2F0ZS1jb250cm9sbGVyLXRva2VuLXB6dzJ6Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6ImNlcnRpZmljYXRlLWNvbnRyb2xsZXIiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC51aWQiOiJiNzYyNmEwYS00OWRhLTQwOWEtYWI4Yi03NTVmMzBkMDljMGMiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3RlbmFudCI6InN5c3RlbSIsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDprdWJlLXN5c3RlbTpjZXJ0aWZpY2F0ZS1jb250cm9sbGVyIn0.AfZcSznnQPHtBo7Un9zqOxXlJAqndbw8x-QLO_l03tSK9yhVku4DS-hjzbz66D8SeZpi7DSJ3FMckrUQgJUtkQg1FwtrixsV_OcpzrhB6l8hx4NV08S0vPZx1_-QLohyxOxQBCCw9bhfftC94IfE-oeN_GiauHFvCWmob3IPTzeSlPocD1RCp9p8Jbh0szWE9QxlX_0_nHnr40O2PkVXreewfmHgkzAkwx3OQO_4dXdY8wyopPmBf9VhRXCcsmGYJO4zsLqneCOedUzlzwidcbf6lT_F2mYaC-k7YIoSnvfRRZDJLQzoL0-h3pgw_rzXowPVJN7kG3ytSzb76UFhXg\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         clusterrole-aggregation-controller-token-sf8xm\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: clusterrole-aggregation-controller\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: f2c1251e-6070-4f8b-b37f-fd91b2517e0e\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJjbHVzdGVycm9sZS1hZ2dyZWdhdGlvbi1jb250cm9sbGVyLXRva2VuLXNmOHhtIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6ImNsdXN0ZXJyb2xlLWFnZ3JlZ2F0aW9uLWNvbnRyb2xsZXIiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC51aWQiOiJmMmMxMjUxZS02MDcwLTRmOGItYjM3Zi1mZDkxYjI1MTdlMGUiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3RlbmFudCI6InN5c3RlbSIsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDprdWJlLXN5c3RlbTpjbHVzdGVycm9sZS1hZ2dyZWdhdGlvbi1jb250cm9sbGVyIn0.SFKIiFBA3rWQb_IBiC31oPh6-vwUknMo9uek9_XUnshyB4j34FCxC4HN8JPmeiMqOcPRpqO9aNoIyvRn0CasbEP8zoxLzzJGiyER0JIX4oLIJDvWmx9qqBCMdCEDo8W7SLdJsTswSDWtinPZizpYnqBeFz7SHBVlIzt7afBIZCDe7Fb95eVcbCYwHENL6bwf89eNdjIqzku1nhH9JKjrnzA9d0ch8M7cGzoFMQ3_U-xuoc8bnqUjEHeXkWO2hzBsgQjheqB7dqyzkAZ55Qtd7bDp5GNYuzzII1b9GrhUtQcmASTVc0apobNPe8imnPw71dwaIgaWkwwZ5J61BrjTNg\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         coredns-token-gd2sg\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: coredns\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: 6e150e77-3eff-40f7-86b9-ce4901812377\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJjb3JlZG5zLXRva2VuLWdkMnNnIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6ImNvcmVkbnMiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC51aWQiOiI2ZTE1MGU3Ny0zZWZmLTQwZjctODZiOS1jZTQ5MDE4MTIzNzciLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3RlbmFudCI6InN5c3RlbSIsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDprdWJlLXN5c3RlbTpjb3JlZG5zIn0.KdrlExUD8h0fwFCXncZmLfPdgPRpe4wzx0j27FYc69Gl9VDeq_0KpNN2W0XV7jz-iLmNj5FgCsjP5AL3PeCcIp8iYXt6bufLyPInf1YcGK1leq3pjaRoPyW5A4FTZiXnMSDl5A3iTtcSmmJteBDZEjWIqEcWfYDCtDZIi4mq63CKmS3jFTEL0ulW8Rwt5ENI4QzIHeKDEdD67knnNJ6D2msNM0ZeW3J7vYK_NlmiQT5_JJ3_mFiZTA3_T20DPVB76Ng4YNFyQJLA7T96yDvZvSM0U3NEGyYJtRq72vv3nHwGP-iUwPam-Qx3OV2SyWOm2OZmaUhixPSyPNItYpx9DQ\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         cronjob-controller-token-zv427\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: cronjob-controller\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: 22243ac3-8de6-4eda-870c-f0f757d11b2d\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJjcm9uam9iLWNvbnRyb2xsZXItdG9rZW4tenY0MjciLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC5uYW1lIjoiY3JvbmpvYi1jb250cm9sbGVyIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQudWlkIjoiMjIyNDNhYzMtOGRlNi00ZWRhLTg3MGMtZjBmNzU3ZDExYjJkIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC90ZW5hbnQiOiJzeXN0ZW0iLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6a3ViZS1zeXN0ZW06Y3JvbmpvYi1jb250cm9sbGVyIn0.cwZ8ypmUVQwKri2dMVIM5_bFfNaNA0BE_CHAz7qjqlqifptVozexFxjNYyXsihHa_OVW1a5q0VDLnlg1RjQdeVr2LERoZd8GD3iTV1dsTxvbKuRNwwp_ypYnzX9VZ0UZ-M_n_Nh6beEAYrCFKliHw7f-qQsviwTmsBTW_8dV83cyoWdYSx0erINhJlMsucTC_bt_-QB4PxJB7U5G6WXiAIJqsqwkkcnJBynPqbVOJSFXX1UcTxfVqoQt2_7Mh0Hffxy-GAo0aesQOnXicQZEubpq5ttBmOQ8k67Q0KC4cCdd6QBIWNtmV-xcOK5RgMyabFhSVvFvrA7bmA1hxLouaw\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         daemon-set-controller-token-6qss7\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: daemon-set-controller\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: 56a81681-da60-4bf3-be4d-3dbc35a6017b\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJkYWVtb24tc2V0LWNvbnRyb2xsZXItdG9rZW4tNnFzczciLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC5uYW1lIjoiZGFlbW9uLXNldC1jb250cm9sbGVyIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQudWlkIjoiNTZhODE2ODEtZGE2MC00YmYzLWJlNGQtM2RiYzM1YTYwMTdiIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC90ZW5hbnQiOiJzeXN0ZW0iLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6a3ViZS1zeXN0ZW06ZGFlbW9uLXNldC1jb250cm9sbGVyIn0.IKsQiVNY1Uyj4V1v0Xd3fi3DbYmTRoWpCv_gBnOUHVyJEUmSbZIKVrHWY1ATb55rmZ0zVqNvhCtD_DdqygG5m5k5hplGCg_qJJq_cFgvT-Kw1H_rqi33Jl_frBlCOVnUV_j49EkhPHBBJKT7NImGJAbgYY0QYra4s6x4goMAaNY-pggcYTgzQJPRIfbuqbT3m42n-PuhEVm-p5-YPofSdcKw7G7QAhj8Vffkdj2Sz_9SBpCrVawXN9aLGWgM57PD-fln5zx1jj1HIg4idvHruGixqxRHt-fCR6xM6CLnbXBstmOZBTbvX0TC3sWZBGU5EfTQy--iw2kl5RKV_a8ySA\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         dashboard-admin-token-pj4qs\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: dashboard-admin\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: ae234eeb-98e3-4328-9c79-02cd52506495\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJkYXNoYm9hcmQtYWRtaW4tdG9rZW4tcGo0cXMiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC5uYW1lIjoiZGFzaGJvYXJkLWFkbWluIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQudWlkIjoiYWUyMzRlZWItOThlMy00MzI4LTljNzktMDJjZDUyNTA2NDk1Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC90ZW5hbnQiOiJzeXN0ZW0iLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6a3ViZS1zeXN0ZW06ZGFzaGJvYXJkLWFkbWluIn0.XDixzPXa1P4h0LvxBGb4V3Zo0HfzXnerASOxMwlDQKjkWEk-_QuCWG5RCBiLrxD17f5OUSet1QNRU8hEz4EzRHQHZSKfqB16X9q0k4dUBZLZW6QhliwtGeJewu0PA6a9nGwHThH0LMEzNbPztyHhWjUXmtSw9uGVp1Kc2ILPiQjOIc9EvhmujNZ8Y04HJFF09_mV_xOvFB61T2mJ3dcSoip-v-C44Vl4xfQDD2P3b5P_TpyUq98luUklFdCheJWP329suCuRWK3lgPy010vxm-U-KsDJVhv3A5h4Lv2XlEQBTVlPCInO_NYO6beuPspewus2SmqblYwTTZHnv0jVOw\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         default-token-dgdt4\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: default\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: 5ee1cf8d-2c0e-4b72-8588-1e1606f53283\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJkZWZhdWx0LXRva2VuLWRnZHQ0Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6ImRlZmF1bHQiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC51aWQiOiI1ZWUxY2Y4ZC0yYzBlLTRiNzItODU4OC0xZTE2MDZmNTMyODMiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3RlbmFudCI6InN5c3RlbSIsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDprdWJlLXN5c3RlbTpkZWZhdWx0In0.daYHSxA7o2IDssN5Sdv4MXTPxzzXGFNeZMn95UxWq7Q5AgZZNQ_HQI5ImJCNnQWxzDVRxkLERaebanRHicN8_WqQ7ZbaTVOgHp3O3N_Qq69GvAm7cFAXsi9u5qf9mAA3DEnhBE20A6EZidMSHtTTugacUnTICKdULijeDv5oL9Cr1PrjRCMjxY0TAxw7U8z98d1o1hpqObBQmKkD9pWzXlD8hLY3RogT-TXtSLrP0Rh4N0ZEkAGkmvKa-eyAw44f9HSn7a5Z1dzw6Pa3wqMFKzGlKu4oyjV_Ma_iIMLLQHyZa0sj83CJQ1JTVGNz4B3c6HbDK6oGzF4i_KnG5IEZpQ\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         deployment-controller-token-rg8bq\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: deployment-controller\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: 23385596-9352-4e63-ac3e-a6ba98b5638e\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJkZXBsb3ltZW50LWNvbnRyb2xsZXItdG9rZW4tcmc4YnEiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC5uYW1lIjoiZGVwbG95bWVudC1jb250cm9sbGVyIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQudWlkIjoiMjMzODU1OTYtOTM1Mi00ZTYzLWFjM2UtYTZiYTk4YjU2MzhlIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC90ZW5hbnQiOiJzeXN0ZW0iLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6a3ViZS1zeXN0ZW06ZGVwbG95bWVudC1jb250cm9sbGVyIn0.Ue1o2DQLIyywBnxXlccPEKGs1tWmUTntHbWKEmshRAehx6xrsa1-K3otCytJ_uDTw40UPKYYHjMogqGbq77TwyMB-CxxJ_2sbGMRWoPfm5BowSFdgV1LD72-q101cJ6EYYnG2O7_A7RA2F-nteskdgquWjTPnC45qBjTlMd5gOhoD5en_UtZHVotD0zsq3_qHFG-891zXsRmMDmTRTfubLhNoqith9M439TipA50Qh_15Me2ODk773cUvcJBboe8EQEAXUxN8MXW20-S3p5ewaRMYmfy7dzX--X-t6FP4j5K2blVRXicgAFU7otp-2y2bN8p3TaE65c86gS0cTAvZg\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         disruption-controller-token-fc264\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: disruption-controller\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: e1b6aba3-273a-4dc9-87eb-4c2da957698d\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJkaXNydXB0aW9uLWNvbnRyb2xsZXItdG9rZW4tZmMyNjQiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC5uYW1lIjoiZGlzcnVwdGlvbi1jb250cm9sbGVyIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQudWlkIjoiZTFiNmFiYTMtMjczYS00ZGM5LTg3ZWItNGMyZGE5NTc2OThkIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC90ZW5hbnQiOiJzeXN0ZW0iLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6a3ViZS1zeXN0ZW06ZGlzcnVwdGlvbi1jb250cm9sbGVyIn0.GQ99ASYw2V5qeYKDKKcIydK9G4lMfXgN3ZTpfKUQ7yqnRqo4eF2DkeUhILUvwzjvghQR7ACFx5-ULlSIw5FrzYQy1e0zML28O9h3te0F4WvpDK0NCtV_3E7wJbOK17Vicizs0AIRpHeOg060X4DJ1crZCpDA9o3fIPSgTP7Fi-CJCPX07VUAg9q2lf_qQRY8ptD1hE4UGAHqhzruzJsP9_EHjeIeNO15hRUwjRcUCt6glFsYSR2luEZEPOwBbVJteCSrs16CclBHYyEW0OxwHsy61E9GP2jM1bvrHYcveOcVBbp4YjewYbL4akfCKev1Fn_n0V1qlSFNPII85pmapg\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         endpoint-controller-token-f72hb\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: endpoint-controller\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: 2191029d-7a3c-45b8-a022-eae8d821416a\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJlbmRwb2ludC1jb250cm9sbGVyLXRva2VuLWY3MmhiIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6ImVuZHBvaW50LWNvbnRyb2xsZXIiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC51aWQiOiIyMTkxMDI5ZC03YTNjLTQ1YjgtYTAyMi1lYWU4ZDgyMTQxNmEiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3RlbmFudCI6InN5c3RlbSIsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDprdWJlLXN5c3RlbTplbmRwb2ludC1jb250cm9sbGVyIn0.bBHZgoA3uyKdLnWcXQ7evD03xQf0TFi-RfsDdeyG0ihr6d2yxl5wHGhgHO6awTBJoefwa754gAKUVDXayd0Wf-Bxlnh90Djd6Z_9jc3pf97GWTNhd__ljIb3ztXn9RQaWR8rvuJ1jvYz0FrdcmvplsRgqD_e1RKNMbhFnoJTMw7G4aZHUNyQwBk4MVhO1Ojpi_7XzZDpsz45IBB-O6-VeJDM2DJm3zBf3FRwVPvTWKjJ5SUqhrSKDXPpb4_aVGNq6pEGIV-n79LUhZHoGwXWktKDU80oDthCmWzfTcXZT4_D4ZkY-otQLCgDySBqUe5eE-KrF6yuDKjd1JN9kyRFiw\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         expand-controller-token-xr59r\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: expand-controller\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: 9aed3892-e072-42e6-b640-6d5f032341b6\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJleHBhbmQtY29udHJvbGxlci10b2tlbi14cjU5ciIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50Lm5hbWUiOiJleHBhbmQtY29udHJvbGxlciIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50LnVpZCI6IjlhZWQzODkyLWUwNzItNDJlNi1iNjQwLTZkNWYwMzIzNDFiNiIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvdGVuYW50Ijoic3lzdGVtIiwic3ViIjoic3lzdGVtOnNlcnZpY2VhY2NvdW50Omt1YmUtc3lzdGVtOmV4cGFuZC1jb250cm9sbGVyIn0.tOI3Sbom2z7Onjy8tvOMSYCsnu9juuvW4h46ANfXDSBKAlUmMxrvTWzmaDR6CHZG92m_yU-b1CQINjMqGwBmLe9sXTvB6dtpzt48r2gs9mYGCB90rH5IbhU09dYXVY4ETwDR-C3nYgO5jMhvT2xrJiUhS-PfSmy4Kz5sw-IXOSyOqFdSoKiyQlP8DqtU8iXhGzlradIfyHB4WUi46pAIclQ7kvOOvuMx2evHRZuHvQ-9afTbjDPpdnMfXkR6b4oOywy7456aG3XCQvNYWnnrH7WrxnSJyBQsNd6DGIVSUcbGsNs5nB1PejN1i1O86lkguZo8iHczINXQ9kLTJr7JeQ\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         generic-garbage-collector-token-ljv7x\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: generic-garbage-collector\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: 1a59e446-f6b4-4fdd-a141-9accd95ec37a\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJnZW5lcmljLWdhcmJhZ2UtY29sbGVjdG9yLXRva2VuLWxqdjd4Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6ImdlbmVyaWMtZ2FyYmFnZS1jb2xsZWN0b3IiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC51aWQiOiIxYTU5ZTQ0Ni1mNmI0LTRmZGQtYTE0MS05YWNjZDk1ZWMzN2EiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3RlbmFudCI6InN5c3RlbSIsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDprdWJlLXN5c3RlbTpnZW5lcmljLWdhcmJhZ2UtY29sbGVjdG9yIn0.SnLfuGrSeJUAWUo6cGIcUjmyDKc4-5lJIav3ab1vZAhbcNe2lpmDMuSWs_ul-R21T_uoSt52IQxKpA1Ga5KMt-0W0uXzAZ1olo7PLlDSHM_7bbibjDc8gz7pwMfbxE5AA22WOsa7iYvGzoMIMV3pbCRtInBl4NCkZgmQNPS1cpRe7WzlVO2AesM6ujOM4L7QnsEHpTLgal7ORRXO3MDp1UCDrQpewcNerqvXWWOITYQdI8JRG6TOz5Ozdfb7MCQMBropB0UJa6USy9sX3UgLIvV1oWFg8hpPkzOg2ztkltORyqryg90HP0xltmqwUMXOAjwRj-NYINWBD0TafRiCqQ\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         horizontal-pod-autoscaler-token-xpgxk\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: horizontal-pod-autoscaler\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: bf891a5d-d37b-4577-a69e-79e6485a1bf8\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJob3Jpem9udGFsLXBvZC1hdXRvc2NhbGVyLXRva2VuLXhwZ3hrIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6Imhvcml6b250YWwtcG9kLWF1dG9zY2FsZXIiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC51aWQiOiJiZjg5MWE1ZC1kMzdiLTQ1NzctYTY5ZS03OWU2NDg1YTFiZjgiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3RlbmFudCI6InN5c3RlbSIsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDprdWJlLXN5c3RlbTpob3Jpem9udGFsLXBvZC1hdXRvc2NhbGVyIn0.bfZ-9IRdO1C50pwpqsJ8iG3xcivnHqx9vAvuyx0FEim3X9eLND-PVSrsYEmdkL6T332q7h1luVNXS_qrx0E92ErmpGJgc-wQq1qgf4dlXFiDr5lsIaioBxq-iGpt3V1azDfnao5L0A4pDY_TbTWzSIjDCeLgf-_UAVsaLs6ncjvJf8vqdYhG8jdvF-TGIghTzYNQYqJkfcXNLACFzb44J4vdhXurjVt6D2n-UIjftHgYIMYV9dWE1DhidqltY-Xo2jcTH2vi3qGavYar6_eS3QyNTCA-jevNYQTZ9PCDgy2jp88heVXMoh1Mg-KC4L_QMHCRZLGf8y_AHeE4gVMOcA\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         job-controller-token-rnmsx\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: job-controller\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: 7ec357ba-5822-456f-93f9-1ca144c96e2c\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJqb2ItY29udHJvbGxlci10b2tlbi1ybm1zeCIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50Lm5hbWUiOiJqb2ItY29udHJvbGxlciIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50LnVpZCI6IjdlYzM1N2JhLTU4MjItNDU2Zi05M2Y5LTFjYTE0NGM5NmUyYyIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvdGVuYW50Ijoic3lzdGVtIiwic3ViIjoic3lzdGVtOnNlcnZpY2VhY2NvdW50Omt1YmUtc3lzdGVtOmpvYi1jb250cm9sbGVyIn0.RVrCmvg-J0Z5f5FYjVt4GBeWkwr_rLofzmtgqi9ZfvOaPFCriRyQkIdEUXl8umr1j26x2YoaHbH0tZaZ_JwPrMAnGzr0Zohx6kHencnB7WN7smSZ4PjOmCXTV6c_WhXHExUJXWc2Tjz1okgZzc3wPvefgG6hP9ZWbWP4iMc6WWfqnbppd7NmQhXucVoLUpNN9IbfUyfLqWsK9YX6seonfGryFommQBVDRydWwu-wgyyZUFHoby79e90KjwkBTrKkAzB7HCeijKqK_cMOeHhK0Qto4hnCTgAPwEFJIs_9s5NMB4UQpLaiHVCXjlW0L2SUVQ-mgSMGC9cZS-WBPj7xhA\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         kube-dns-token-27vb9\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: kube-dns\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: b63bacab-2f42-455f-b863-6711c76fc314\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJrdWJlLWRucy10b2tlbi0yN3ZiOSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50Lm5hbWUiOiJrdWJlLWRucyIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50LnVpZCI6ImI2M2JhY2FiLTJmNDItNDU1Zi1iODYzLTY3MTFjNzZmYzMxNCIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvdGVuYW50Ijoic3lzdGVtIiwic3ViIjoic3lzdGVtOnNlcnZpY2VhY2NvdW50Omt1YmUtc3lzdGVtOmt1YmUtZG5zIn0.hwN9Y282cglOsjPHnVyIbFw1kG5txfZxCLGLijMxdgWmvStt8zads7Ptta09KHfrhsVjdnCRHy8qtvz0rGDxwSvtCGcTdmJYvO_h1eadKZqMrT88BOrR1J1Vo2Cb5f5z-s8uSc7XgaegJQFzLW1MdKhJ1TQfDxNlAjqfPkc-fisi2j55JuPDKik0FVcV_mxO1zy-husozj60gncdywaZpGnxhdJeTAk242PWevYN394D8Ee_upPMbELRU40Twp41iuBsqNwbU7THL3-9MLB3NBh1fLyJZQ2KvgsP0wWdwLAc_HUgoX8HidmCfG2wwXQC5yjqvS42g31WXGn2S-nTgg\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         mizar-starter-controller-token-5rg7j\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: mizar-starter-controller\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: 905fd08d-8e3e-4eeb-8be6-1439859381f9\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJtaXphci1zdGFydGVyLWNvbnRyb2xsZXItdG9rZW4tNXJnN2oiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC5uYW1lIjoibWl6YXItc3RhcnRlci1jb250cm9sbGVyIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQudWlkIjoiOTA1ZmQwOGQtOGUzZS00ZWViLThiZTYtMTQzOTg1OTM4MWY5Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC90ZW5hbnQiOiJzeXN0ZW0iLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6a3ViZS1zeXN0ZW06bWl6YXItc3RhcnRlci1jb250cm9sbGVyIn0.n6zGtIIjYdYrDHqT8BaNPvIJgmLi5S7pw2O6cT7EFif1Fx9F6A4bwwwDQNL3SJYfP9eWquVpvUMoeHDt6l0YEQwJbNnhqv2Bw6viWmdQlNpqfP7635KelqBLiOr-kuWijUJJzSRdoNvVkr6TDsDS9mEWHAurG8Amc0cyvuqHV1WoYFT50C9JDYEX_FUYrbfoxZLsBG1-UJuLRuRQq2TWqwCJL9dKhA92Any9C31ePRBFEPc3sjby2FYpoysRQfqawFr00oCEeppwvXq8KoR3tY9yuafQH0h0jdrbp9WJYSHrCW21H5OuLR4zRqaLs-BukZK0JvTOfXpnHwyzNxFs8g\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         namespace-controller-token-v87z2\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: namespace-controller\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: e3e0b2bc-6fb4-4104-b797-e2b061ef6f32\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJuYW1lc3BhY2UtY29udHJvbGxlci10b2tlbi12ODd6MiIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50Lm5hbWUiOiJuYW1lc3BhY2UtY29udHJvbGxlciIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50LnVpZCI6ImUzZTBiMmJjLTZmYjQtNDEwNC1iNzk3LWUyYjA2MWVmNmYzMiIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvdGVuYW50Ijoic3lzdGVtIiwic3ViIjoic3lzdGVtOnNlcnZpY2VhY2NvdW50Omt1YmUtc3lzdGVtOm5hbWVzcGFjZS1jb250cm9sbGVyIn0.XVho8WmNFzIqsJCGMp-YJh3Fo7ccAEPcGAFcJ-XVK0NcPkzwdBuZ2JLZiyvC2ReDazza757NbeubIQApJPhr-9f-sHnQdf636h4b9vW_NHsC209KDAIiFEUcIAB_KYDnoxotkDaBLitLgOLvUHHhy1hFES-QexF1mTkgD3wvMIOzh5c9sMtwsDv1zPZI8QO7Lx-u9QHdltmcHocsQFGsBLGSqmc8mwD5bUYBFrQl9-GLn3Zmi8zsBBnkFTCag_fFQ_8JSpv4tjyyfdnSmEtoIIRE9L3oWGQLaTnvgrVaISr8UQpg28LVvyQWJt86_N_mY0ad_wzw8iopVcY_SGCNMA\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         node-controller-token-m4nsx\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: node-controller\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: c909a30c-e94f-4417-a274-56486e6071ce\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJub2RlLWNvbnRyb2xsZXItdG9rZW4tbTRuc3giLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC5uYW1lIjoibm9kZS1jb250cm9sbGVyIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQudWlkIjoiYzkwOWEzMGMtZTk0Zi00NDE3LWEyNzQtNTY0ODZlNjA3MWNlIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC90ZW5hbnQiOiJzeXN0ZW0iLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6a3ViZS1zeXN0ZW06bm9kZS1jb250cm9sbGVyIn0.YtfvJO8IZEky_ZAlusmwyOzl7ozwl0DG77OQvb5IPTjn8qoCklAgH6pbZM5AfMUA06NeWUDHn39c6iQd-xq02l_e-0Mns0VERbuICZ50oeThOX-Zrw-mTURVg1GJtfsJXK6xPl2k3DBMHI31PnNarUgoseP_f5A63KQ7pSJnuFz82aaAv54H2ENU3XOsk2JQxVc6MnKjHCu_QYJVp3QNE5_F7Lzvhxas1ZHj46EAB4SwsQYGMHgMgUDYl_yZuBGmzmcCepqdTKPg0xk_TEW8pdwECZop9SAYdfGFY_wZhqph38byiNGZXLfDdwku_xUHjhGafpHSh_CGsqt-hy5ZrA\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         node-ipam-controller-token-c67qd\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: node-ipam-controller\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: 8aab4d30-5a96-4bef-ad84-aea14216b923\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJub2RlLWlwYW0tY29udHJvbGxlci10b2tlbi1jNjdxZCIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50Lm5hbWUiOiJub2RlLWlwYW0tY29udHJvbGxlciIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50LnVpZCI6IjhhYWI0ZDMwLTVhOTYtNGJlZi1hZDg0LWFlYTE0MjE2YjkyMyIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvdGVuYW50Ijoic3lzdGVtIiwic3ViIjoic3lzdGVtOnNlcnZpY2VhY2NvdW50Omt1YmUtc3lzdGVtOm5vZGUtaXBhbS1jb250cm9sbGVyIn0.MVz9IS9wvja58ulXahBOwF4duKGDn_SKpeHnP183sv3TorA-GxAVGmu4nZSTkpB6LIs4pzGgzJsg7T-0U0Am6EUF8IZtqHvBjsmUNbyt9j27T-j0KoU_HBFKUk95bRrn3ulgAGYdwiQdi8n7mo_nUoMaKUQ9nLVcCW4YbNDhQPLE0x9jfZDAMD2RmlejULV9cTeGJq_b9hb9TSu4RdMdDcMkS_fkeAuKjtMAgkK3f74xNV3VDMy0bZnsp4eiX6yGdMMY9y6RL8KmBsSICm5ITND11qb4xFSRK6cFT3p_yKmIfjv-ZEQwFr6_ayPi2i4T6UDynsgzGYnTOqgAOaiTDQ\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         persistent-volume-binder-token-76r8j\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: persistent-volume-binder\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: 80bf117f-cf3a-4510-8c14-8292a378b3cf\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJwZXJzaXN0ZW50LXZvbHVtZS1iaW5kZXItdG9rZW4tNzZyOGoiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC5uYW1lIjoicGVyc2lzdGVudC12b2x1bWUtYmluZGVyIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQudWlkIjoiODBiZjExN2YtY2YzYS00NTEwLThjMTQtODI5MmEzNzhiM2NmIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC90ZW5hbnQiOiJzeXN0ZW0iLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6a3ViZS1zeXN0ZW06cGVyc2lzdGVudC12b2x1bWUtYmluZGVyIn0.FXSyysYSOB7kamIEq5jby1UKFi_DC6Nx32dKxFgGcGRbNu6hv5MDhA7IqcK8zEH8jNRyne2FxqEMD09tNhjyFdYiQuUc5pl1iw8EBlqJY-jD2I4k25ZecPxMPlMtDRyEA6WnyHh6JvTT10-ZlDLDvZ0OP-6n3kEJF9uaLlwke1fQvzuNkzkoO7-eRTkMiK6091iv_LsHnZr45PGST0QhAOF4thYiwuRV2OI9v2mnawmkJdrA-DRAoMS1pUh_PZTvqCZZS5IkyameXkyN8sitd6c0o0fu5neCvS4ms9_zeDMX-B38hIPzlVVdcoLNZcOw2j1rVdma9gaRH13sKs90Sg\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         pod-garbage-collector-token-p22tl\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: pod-garbage-collector\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: 0ba10ba9-5989-429c-ba98-c87fb4617d49\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJwb2QtZ2FyYmFnZS1jb2xsZWN0b3ItdG9rZW4tcDIydGwiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC5uYW1lIjoicG9kLWdhcmJhZ2UtY29sbGVjdG9yIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQudWlkIjoiMGJhMTBiYTktNTk4OS00MjljLWJhOTgtYzg3ZmI0NjE3ZDQ5Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC90ZW5hbnQiOiJzeXN0ZW0iLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6a3ViZS1zeXN0ZW06cG9kLWdhcmJhZ2UtY29sbGVjdG9yIn0.iEDR7PO56iHg8QqAYwoUwukMZTA88MGa5GWCnzi6MLBqBw2EceVDnOP35yLt9wRbSGMiI5kQLsqZyJx_Plq_6wjoA65n0SVBz-ykid51HCHtuKhvIb97OwO74D126aUSRlTsdzB_jDFgwPaScXBwZIji71LV8e73cXvgpitrddbu2vFsOO-FC2bFgb5wRdQb6soRlsnPdJwVnX8JY0ZcrOXMl-PhLNtBvulzVogN1pMOMWgSWCqoKk5OvFNGT6yy0_nIdJUbebtf0OeQg3Sj3_kFWo46Ucc01uqDEYEN5yUnOZpAteWJU8OOZi8ZqIvksMsaoWmtpRl1pdkO9hZJvA\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         pv-protection-controller-token-2rbh8\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: pv-protection-controller\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: d0d11b7c-227d-49b6-9d62-bc56b155a3ab\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJwdi1wcm90ZWN0aW9uLWNvbnRyb2xsZXItdG9rZW4tMnJiaDgiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC5uYW1lIjoicHYtcHJvdGVjdGlvbi1jb250cm9sbGVyIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQudWlkIjoiZDBkMTFiN2MtMjI3ZC00OWI2LTlkNjItYmM1NmIxNTVhM2FiIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC90ZW5hbnQiOiJzeXN0ZW0iLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6a3ViZS1zeXN0ZW06cHYtcHJvdGVjdGlvbi1jb250cm9sbGVyIn0.DdYWRuWBzRHFFopCZqflS6zrppn79kD3vbeqSzYuqwfzKqk6iOyOaKr9i9SoqgOcKf1NpQkmLAnKiSOS4f_evs_m4s1bX9MvllfS_SEMYmatg1WFdseSU4gRRmwP5Lh_6kpOIsChzjBbbqL6wdlV6YIyGGW7Ig6wn0J4mGFD-Jg-MQt0NNJJ9KYNpSsnufTRPu5s3H2_HvSBq2vcKfaUNKAzhBF6P4rsPvXkwIQ70r08d96TszC0vTzZ_Aq9U8lYk3zDuY5o1eosOOSPevleKRtd02zjYWtEE-0rvdvJVdfVgBzzHHTpEZfoEMfE6ym7fOZ_DctVVKgLL__Cxm5Xhw\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         pvc-protection-controller-token-g7l68\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: pvc-protection-controller\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: 1df3a49d-2ac3-453d-95f9-ba3c8da666e9\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJwdmMtcHJvdGVjdGlvbi1jb250cm9sbGVyLXRva2VuLWc3bDY4Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6InB2Yy1wcm90ZWN0aW9uLWNvbnRyb2xsZXIiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC51aWQiOiIxZGYzYTQ5ZC0yYWMzLTQ1M2QtOTVmOS1iYTNjOGRhNjY2ZTkiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3RlbmFudCI6InN5c3RlbSIsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDprdWJlLXN5c3RlbTpwdmMtcHJvdGVjdGlvbi1jb250cm9sbGVyIn0.ruOITjBnBlvN9VOiFvO_4XhuGvZb5JIxoegvu5P25R17KmVAIkautL0p8P223WFwmFA19klUmqf-XvqouJGVyjerwdGiDelFbIdsI2Z3LeKfwgs4E5J_gSW5DsIxFtEFjyWIOikUOaPE2GaHgTWvebxUkyZz_i_S9mYDj2cjW8Nm5CJ-NCeIXGdc26GSp02CPKxvPGynaANBobmHGGZXmFhA8kUuak48g4wz2usaLAE8A0ghM8PlVSmiMOVJB010O38QwIjd6PKMkXOav5uhuFKNJa-3UNBfuTFtxatyLqhiTusct98Ux5s3FZR16KFA8MQ09odQGhSn5EjXtLeeiA\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         replicaset-controller-token-vfjjg\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: replicaset-controller\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: 05ca24f6-e8be-42ac-a1f0-84eb4822b6c9\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJyZXBsaWNhc2V0LWNvbnRyb2xsZXItdG9rZW4tdmZqamciLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC5uYW1lIjoicmVwbGljYXNldC1jb250cm9sbGVyIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQudWlkIjoiMDVjYTI0ZjYtZThiZS00MmFjLWExZjAtODRlYjQ4MjJiNmM5Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC90ZW5hbnQiOiJzeXN0ZW0iLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6a3ViZS1zeXN0ZW06cmVwbGljYXNldC1jb250cm9sbGVyIn0.LgKknkodLR9uf4ELZCSnohoyyQnmITVF7lWNQXY214Mrc08QaJoZ_imE9k2K8ZOCBblWcMm-OkBcEl7u6iDHd7t-i8Arf1fQ6KUvwmVis04hv_1CzXnprCBKzcH6MGWZTmRXp6lUfGM8hc2nQe8d6T-9SyHyLQuLIzLSLvrUEd6IssK9fGEMnPkseWsVgVEnnXU5hDcLHxmWRRMyL9IwCTBSf5ALT4WcK6ZIK9U-KfQNaaMJxz90QcDl7T2bV8iFYyajxEBbrtK4nVzj3QviEbLCtCMeGnTs8GziyLxg0EuPGHEeIwOoZSHVTP-BNS2dNB-vxa7GXjI8gSxDvwGjDA\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         replication-controller-token-nhnxj\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: replication-controller\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: 5921d8bf-f65d-4cd6-8d95-49c77e9cdacc\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJyZXBsaWNhdGlvbi1jb250cm9sbGVyLXRva2VuLW5obnhqIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6InJlcGxpY2F0aW9uLWNvbnRyb2xsZXIiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC51aWQiOiI1OTIxZDhiZi1mNjVkLTRjZDYtOGQ5NS00OWM3N2U5Y2RhY2MiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3RlbmFudCI6InN5c3RlbSIsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDprdWJlLXN5c3RlbTpyZXBsaWNhdGlvbi1jb250cm9sbGVyIn0.acdFPdxdsE4cJyz8b0ooljgI7tfHmAQZhaBxEZ5g1PjtGoQP9m0-_fUVQ04M5kWfr1D6BpC79aVMiqlBGe8gzfuatFRTQgQUxAkT0I35pfDnsDBDlfvWBnRCCv4ALdNFzmw7fV9UQP785AzlhL6g6fTxt4jbu799cn0i8fYmw8GnlU_lyOWU2F7WjVFS--yNcmVmzddlbYhoacNgW9GxCHRwaMqXzneH1O93QaXuVzRhH1j18sOlK1PpDvfI0vzg3q8rZpOr2KPNpwiD8WcyVs0J0T0CNF9a7exY9VU1-eJDD81ZE3i3V96Z6E7OQTijejCF56mq_Xn0xd56xzzuDQ\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         resourcequota-controller-token-n8p9s\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: resourcequota-controller\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: 40a6dd46-ccb3-45ee-9503-33cea08ac7a4\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJyZXNvdXJjZXF1b3RhLWNvbnRyb2xsZXItdG9rZW4tbjhwOXMiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC5uYW1lIjoicmVzb3VyY2VxdW90YS1jb250cm9sbGVyIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQudWlkIjoiNDBhNmRkNDYtY2NiMy00NWVlLTk1MDMtMzNjZWEwOGFjN2E0Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC90ZW5hbnQiOiJzeXN0ZW0iLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6a3ViZS1zeXN0ZW06cmVzb3VyY2VxdW90YS1jb250cm9sbGVyIn0.unkvg6lX20AgRieK8Y6iiPAQCaVt1UMAP2ov8Gnt8MYh-BFvRhqoUCpkzA9v8CewSt1olfY9pSydTAGzvqIddbFjDrIXfdlOX4KEFE0rEHUuNDWMjp2kAY4hymBW8h91jGlBnrxf_NzlPjkQN7GhEJnwvROXM7K0hatrD2_hglDKQ08D2B9FZbNpliBv-AyNn5pLVCqtki1kIk0XqcLZM__RtmqsHUJMm4Hqo87K6X-Pk2UxwhbYi0CZsnCfwh24urwLRr2WSG6pACq7MJAHvwWGNH9CJmuajvsocJ-mwNEVsmew3N9Dzk6SPRtk6w2aYbsXY3S_vdNpjGpe4_6zow\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         service-account-controller-token-t22qk\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: service-account-controller\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: 36a93f17-ef8b-491a-b1aa-fef249ab85ce\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJzZXJ2aWNlLWFjY291bnQtY29udHJvbGxlci10b2tlbi10MjJxayIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50Lm5hbWUiOiJzZXJ2aWNlLWFjY291bnQtY29udHJvbGxlciIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50LnVpZCI6IjM2YTkzZjE3LWVmOGItNDkxYS1iMWFhLWZlZjI0OWFiODVjZSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvdGVuYW50Ijoic3lzdGVtIiwic3ViIjoic3lzdGVtOnNlcnZpY2VhY2NvdW50Omt1YmUtc3lzdGVtOnNlcnZpY2UtYWNjb3VudC1jb250cm9sbGVyIn0.CY4cwvoVIK8lhMt-1j_RMCKH4undQpFVE-M61rZAu4sdllPaD-L3C6q04I34Y_omHrGBwRDc1DBNaJRjfIPiiMjWsZZVODcUN3_QagNSdK17jEO62BPEDpbYrBXDZxseuqHTvKr__TCC_qrxb-LBmat0tn275q7-fYSH8iIjEATXnoS_hfF44LWkzK4kPr4fzzsOmQGK-vj6IJD7PvS_aR0Ozb8cjOotHH1v4XfAFDY_XNwXJxAPedVvCbkMX6lVKx9yyGuA8CnzFWgtvNswd6DkqSLbqihMOWEmaavIdsHphRaY-8r19l0Y1e6Vmqlg4T-HWzCMgx52eLnGJMG0Vw\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         service-controller-token-68x64\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: service-controller\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: 4e946082-c7da-4f42-a494-a1f36b7e3630\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJzZXJ2aWNlLWNvbnRyb2xsZXItdG9rZW4tNjh4NjQiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC5uYW1lIjoic2VydmljZS1jb250cm9sbGVyIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQudWlkIjoiNGU5NDYwODItYzdkYS00ZjQyLWE0OTQtYTFmMzZiN2UzNjMwIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC90ZW5hbnQiOiJzeXN0ZW0iLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6a3ViZS1zeXN0ZW06c2VydmljZS1jb250cm9sbGVyIn0.HmDX-M1jiN2Y-D4g_8olorbeApaIN4WUAds-Xln6jkuwPppEzNSAnOBaTnWDG1MZBvz0Wc8RyFTUnOuGjKTjuteRN11jt52hU_zQxiwgfilrbWevy5uW0kzh-NQOBYsDoasRZ7BVQvvYxSAopBSnJTX6jiYAhO6SVUEiMRzmNSivzwsU8ybA2SSIi9Mfthr70cOxmFi7m0luOSfbH98_-nkgKilp8ZjTK860AaPn-GtOjlEp9XRCxLy-pU8WCveZHA9i71BQlQsvJcqkxZPRtJBQrRGe8GX9B78pVseVHuLp2JtA6K4mMef0VeKuXKaCbNpa5pMZ9qv84g5VHU9P2Q\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         statefulset-controller-token-4rlm8\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: statefulset-controller\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: f7b99274-e96b-490f-9831-8945f76784f8\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJzdGF0ZWZ1bHNldC1jb250cm9sbGVyLXRva2VuLTRybG04Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6InN0YXRlZnVsc2V0LWNvbnRyb2xsZXIiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC51aWQiOiJmN2I5OTI3NC1lOTZiLTQ5MGYtOTgzMS04OTQ1Zjc2Nzg0ZjgiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3RlbmFudCI6InN5c3RlbSIsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDprdWJlLXN5c3RlbTpzdGF0ZWZ1bHNldC1jb250cm9sbGVyIn0.lcET1ZF6oSq2Diajhpqqaj_0iBdgvLQ7JvBDRnpPUVlnhmBkfgywhk7rR9ekCyTJixspdaoJwCGXJmXm_8zOJDPOGtjNsPFkwGDT15HBDTKwcZEuKvvpwIiTDt73xbJTMF6RatIRv1lSEGHe5EBkPSEcpJ9GI54DhtfPXNZFlxsnfzfQwzmJzWACAve9qUs4N9bHgreXNoqdNBJ2pMiXknnGMMoMJMYLpCmQN2QRukBo4GsuR_cn5ObxG8YMkxBOzNi4hEBN07pPBgiRSQ82ZzQhgF3nsZJ8p0B8agwCeQWuZR8QdcRli8xW6I0N9qwxTgBJY4zafIIIKwZWPS0vlA\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         tenant-controller-token-fmmtp\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: tenant-controller\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: d705e982-8682-42cb-9a26-fa659ec97d83\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJ0ZW5hbnQtY29udHJvbGxlci10b2tlbi1mbW10cCIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50Lm5hbWUiOiJ0ZW5hbnQtY29udHJvbGxlciIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50LnVpZCI6ImQ3MDVlOTgyLTg2ODItNDJjYi05YTI2LWZhNjU5ZWM5N2Q4MyIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvdGVuYW50Ijoic3lzdGVtIiwic3ViIjoic3lzdGVtOnNlcnZpY2VhY2NvdW50Omt1YmUtc3lzdGVtOnRlbmFudC1jb250cm9sbGVyIn0.PvZQIB612TIJaCq8OXbMNqgZXn3Pst5w2ydHGayvl4yciservCgGrSv36ChS5jQ6SDe_C7U-fb1aa6CbbVtHSoHUE-4gVz8DBKdRaDfFnlwgOkPdunWem0ldkTUgTxiMBrNPR929j2BRDe4Bt7DRaeDI8Ib1B17a4mY-nINpUdj5ILXNgxbcecKbRCh0ATasBP_pBjg_3lTRBEJA_L5n0wIWC8tcVuu9OOXps2sEnw41Iocq1qvVE0hp03KWOZJ9RWZ-fiJMYvsBHfMlr131CHXG6XJTzgO2r4f3YfGGTs7snrno3kWdmCT9i3d7iXFk3smc1443GEZaIXL-NxThdA\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         ttl-controller-token-m9hgr\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: ttl-controller\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: 47e36de6-0572-4afe-a476-add0b8214235\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJ0dGwtY29udHJvbGxlci10b2tlbi1tOWhnciIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50Lm5hbWUiOiJ0dGwtY29udHJvbGxlciIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50LnVpZCI6IjQ3ZTM2ZGU2LTA1NzItNGFmZS1hNDc2LWFkZDBiODIxNDIzNSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvdGVuYW50Ijoic3lzdGVtIiwic3ViIjoic3lzdGVtOnNlcnZpY2VhY2NvdW50Omt1YmUtc3lzdGVtOnR0bC1jb250cm9sbGVyIn0.mM2GB-CMYeQ5vZ7iBM8tVQtEeJnmQ1kJ9XGlk-5or55ECcl45SoIxvilPjI5hcTKZuoKox1y2lsdPvopr7wQiPhJ4tUOXXumsVYO-5tgGUYKDURlYbSU8WIsRP1jr6G4RUZxgLKrioWAAqhVQVZlMZZokBjuH0V6VTPf_PJ-yxobEcWHyfJxoxvAZOz6pnC4O-bUabOiWtFAK244IjLfiLlEOpGHxkyEVF3aSJ0S5LsYvIaP32kCJyMKSPsmspah4ZvB3Jv5Q4sWN7wfHmsNTYX--h48WnnFRqW5xvos99IVW6xUkiAPn-NpHxJd7M-WkY3RwgtqkfrWcHTxgcdj1A\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         virtlet-token-w895h\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: virtlet\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: b1cde2f8-325a-437e-944e-0a9b99850526\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJ2aXJ0bGV0LXRva2VuLXc4OTVoIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6InZpcnRsZXQiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC51aWQiOiJiMWNkZTJmOC0zMjVhLTQzN2UtOTQ0ZS0wYTliOTk4NTA1MjYiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3RlbmFudCI6InN5c3RlbSIsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDprdWJlLXN5c3RlbTp2aXJ0bGV0In0.hFcG0nW6lvzkUnmUEWZ8A6K6fo7rhZhN44ZBl2XVNnz1ODaIQD9YdPxGDJcvHX9oatr3a7H-xoxtIjp4mpXfWY4WUd6xqXNLt29ixWSCeMXzDYkDeb1_aQb5-qELZtgJ2MYNKuusfBT6zxcDh1KR7PZ_06-SbobJzY3iMI9qHMGr8ymFCpV5wIUWy53joHttGL-1B0eKohsxqc0W5l2xa5dYJQjZ-ytIQHTAaqSRk8Q0tziCXcNp1k5-eqnl_Vx9WJRbjLZdjWM8WJE8FX3Ap1OMNvS9bqgfAqFUEgtSnWO5XIk9oB4o8NLRuBeKJ4nFEMYACLzPM0I4kY82CqgnSQ\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         vm-pod-controller-token-6vtfj\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: vm-pod-controller\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: b7d37bb6-584a-4254-8f03-67292de4456f\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJ2bS1wb2QtY29udHJvbGxlci10b2tlbi02dnRmaiIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50Lm5hbWUiOiJ2bS1wb2QtY29udHJvbGxlciIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50LnVpZCI6ImI3ZDM3YmI2LTU4NGEtNDI1NC04ZjAzLTY3MjkyZGU0NDU2ZiIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvdGVuYW50Ijoic3lzdGVtIiwic3ViIjoic3lzdGVtOnNlcnZpY2VhY2NvdW50Omt1YmUtc3lzdGVtOnZtLXBvZC1jb250cm9sbGVyIn0.suConXv4NH6-Xu1ji65tNpDmOdSw9CNJZi8H254LQPZwk3wJ_QAGUt4uhDAtLnXjOW82J6GFYwJGW0N8aQWFsUVm-IPj4JaJqJUtA_NrEZvhWwPU9-XSJ31wmYIL06PcDxs8A8OJ25t0YV5zeHEcrY4a3OnPU1PI25GREgkjgFPetMVGxiZkEhk2s9WWxax1DNHYgStsTI9HYb7Ip35vR3G1n6DJd4XJ1Te2xSrcNzydVYip5p2VS4HFFA6rXzrOP7jsvMVf3-m42rrMdn3_2y8rLyRvhkwBNVNP_MF_ucZx0db7ZWBdNI6PT5nZSXGWj_0nHzscnSUCLE9sPq6KRQ\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh describe secrets -n kube-system $(kubectl -n kube-system get secret | awk '/admin/\{print $1\}')\cf1\highlight2 
+\par \cf0\highlight0 kubectl: command not found\cf1\highlight2 
+\par \cf0\highlight0 Name:         attachdetach-controller-token-zfdqz\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: attachdetach-controller\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: 93f42529-b07a-434a-a968-1a58376595c7\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJhdHRhY2hkZXRhY2gtY29udHJvbGxlci10b2tlbi16ZmRxeiIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50Lm5hbWUiOiJhdHRhY2hkZXRhY2gtY29udHJvbGxlciIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50LnVpZCI6IjkzZjQyNTI5LWIwN2EtNDM0YS1hOTY4LTFhNTgzNzY1OTVjNyIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvdGVuYW50Ijoic3lzdGVtIiwic3ViIjoic3lzdGVtOnNlcnZpY2VhY2NvdW50Omt1YmUtc3lzdGVtOmF0dGFjaGRldGFjaC1jb250cm9sbGVyIn0.cUiiJU_UX7zjZe38pWBhVSjDm6cjlX8DS42q24REAfwdiiwodXayJ_rEUcWySHCfIPM7QdppaDJsg-cyOXgviEOet_ZbngYbdxkvkAeKqol5hYVg1yFz6B_2g0d8ityWseu5tnNc5__Hm3JseOkq84MdBg6cWDW0dmwIZD2pFFPnr4zPGYBDuqcJaeu8cQDZIv_nuogjSWYN7fGcfG8Fq5OUytnO-_YQ_SIQMANghaaqsiJhoyY4-vxnAU7Zr0Ko1k1T1ZOik8rwI1bW9dkh2oOz3zAPCI2RwgFKny_rwfJCRQTbJH-Aeb6Hij-OuoDN1oD1uAhppL5-Oj6FCjnFOg\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         certificate-controller-token-pzw2z\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: certificate-controller\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: b7626a0a-49da-409a-ab8b-755f30d09c0c\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJjZXJ0aWZpY2F0ZS1jb250cm9sbGVyLXRva2VuLXB6dzJ6Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6ImNlcnRpZmljYXRlLWNvbnRyb2xsZXIiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC51aWQiOiJiNzYyNmEwYS00OWRhLTQwOWEtYWI4Yi03NTVmMzBkMDljMGMiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3RlbmFudCI6InN5c3RlbSIsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDprdWJlLXN5c3RlbTpjZXJ0aWZpY2F0ZS1jb250cm9sbGVyIn0.AfZcSznnQPHtBo7Un9zqOxXlJAqndbw8x-QLO_l03tSK9yhVku4DS-hjzbz66D8SeZpi7DSJ3FMckrUQgJUtkQg1FwtrixsV_OcpzrhB6l8hx4NV08S0vPZx1_-QLohyxOxQBCCw9bhfftC94IfE-oeN_GiauHFvCWmob3IPTzeSlPocD1RCp9p8Jbh0szWE9QxlX_0_nHnr40O2PkVXreewfmHgkzAkwx3OQO_4dXdY8wyopPmBf9VhRXCcsmGYJO4zsLqneCOedUzlzwidcbf6lT_F2mYaC-k7YIoSnvfRRZDJLQzoL0-h3pgw_rzXowPVJN7kG3ytSzb76UFhXg\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         clusterrole-aggregation-controller-token-sf8xm\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: clusterrole-aggregation-controller\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: f2c1251e-6070-4f8b-b37f-fd91b2517e0e\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJjbHVzdGVycm9sZS1hZ2dyZWdhdGlvbi1jb250cm9sbGVyLXRva2VuLXNmOHhtIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6ImNsdXN0ZXJyb2xlLWFnZ3JlZ2F0aW9uLWNvbnRyb2xsZXIiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC51aWQiOiJmMmMxMjUxZS02MDcwLTRmOGItYjM3Zi1mZDkxYjI1MTdlMGUiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3RlbmFudCI6InN5c3RlbSIsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDprdWJlLXN5c3RlbTpjbHVzdGVycm9sZS1hZ2dyZWdhdGlvbi1jb250cm9sbGVyIn0.SFKIiFBA3rWQb_IBiC31oPh6-vwUknMo9uek9_XUnshyB4j34FCxC4HN8JPmeiMqOcPRpqO9aNoIyvRn0CasbEP8zoxLzzJGiyER0JIX4oLIJDvWmx9qqBCMdCEDo8W7SLdJsTswSDWtinPZizpYnqBeFz7SHBVlIzt7afBIZCDe7Fb95eVcbCYwHENL6bwf89eNdjIqzku1nhH9JKjrnzA9d0ch8M7cGzoFMQ3_U-xuoc8bnqUjEHeXkWO2hzBsgQjheqB7dqyzkAZ55Qtd7bDp5GNYuzzII1b9GrhUtQcmASTVc0apobNPe8imnPw71dwaIgaWkwwZ5J61BrjTNg\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         coredns-token-gd2sg\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: coredns\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: 6e150e77-3eff-40f7-86b9-ce4901812377\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJjb3JlZG5zLXRva2VuLWdkMnNnIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6ImNvcmVkbnMiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC51aWQiOiI2ZTE1MGU3Ny0zZWZmLTQwZjctODZiOS1jZTQ5MDE4MTIzNzciLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3RlbmFudCI6InN5c3RlbSIsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDprdWJlLXN5c3RlbTpjb3JlZG5zIn0.KdrlExUD8h0fwFCXncZmLfPdgPRpe4wzx0j27FYc69Gl9VDeq_0KpNN2W0XV7jz-iLmNj5FgCsjP5AL3PeCcIp8iYXt6bufLyPInf1YcGK1leq3pjaRoPyW5A4FTZiXnMSDl5A3iTtcSmmJteBDZEjWIqEcWfYDCtDZIi4mq63CKmS3jFTEL0ulW8Rwt5ENI4QzIHeKDEdD67knnNJ6D2msNM0ZeW3J7vYK_NlmiQT5_JJ3_mFiZTA3_T20DPVB76Ng4YNFyQJLA7T96yDvZvSM0U3NEGyYJtRq72vv3nHwGP-iUwPam-Qx3OV2SyWOm2OZmaUhixPSyPNItYpx9DQ\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         cronjob-controller-token-zv427\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: cronjob-controller\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: 22243ac3-8de6-4eda-870c-f0f757d11b2d\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJjcm9uam9iLWNvbnRyb2xsZXItdG9rZW4tenY0MjciLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC5uYW1lIjoiY3JvbmpvYi1jb250cm9sbGVyIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQudWlkIjoiMjIyNDNhYzMtOGRlNi00ZWRhLTg3MGMtZjBmNzU3ZDExYjJkIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC90ZW5hbnQiOiJzeXN0ZW0iLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6a3ViZS1zeXN0ZW06Y3JvbmpvYi1jb250cm9sbGVyIn0.cwZ8ypmUVQwKri2dMVIM5_bFfNaNA0BE_CHAz7qjqlqifptVozexFxjNYyXsihHa_OVW1a5q0VDLnlg1RjQdeVr2LERoZd8GD3iTV1dsTxvbKuRNwwp_ypYnzX9VZ0UZ-M_n_Nh6beEAYrCFKliHw7f-qQsviwTmsBTW_8dV83cyoWdYSx0erINhJlMsucTC_bt_-QB4PxJB7U5G6WXiAIJqsqwkkcnJBynPqbVOJSFXX1UcTxfVqoQt2_7Mh0Hffxy-GAo0aesQOnXicQZEubpq5ttBmOQ8k67Q0KC4cCdd6QBIWNtmV-xcOK5RgMyabFhSVvFvrA7bmA1hxLouaw\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         daemon-set-controller-token-6qss7\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: daemon-set-controller\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: 56a81681-da60-4bf3-be4d-3dbc35a6017b\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJkYWVtb24tc2V0LWNvbnRyb2xsZXItdG9rZW4tNnFzczciLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC5uYW1lIjoiZGFlbW9uLXNldC1jb250cm9sbGVyIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQudWlkIjoiNTZhODE2ODEtZGE2MC00YmYzLWJlNGQtM2RiYzM1YTYwMTdiIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC90ZW5hbnQiOiJzeXN0ZW0iLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6a3ViZS1zeXN0ZW06ZGFlbW9uLXNldC1jb250cm9sbGVyIn0.IKsQiVNY1Uyj4V1v0Xd3fi3DbYmTRoWpCv_gBnOUHVyJEUmSbZIKVrHWY1ATb55rmZ0zVqNvhCtD_DdqygG5m5k5hplGCg_qJJq_cFgvT-Kw1H_rqi33Jl_frBlCOVnUV_j49EkhPHBBJKT7NImGJAbgYY0QYra4s6x4goMAaNY-pggcYTgzQJPRIfbuqbT3m42n-PuhEVm-p5-YPofSdcKw7G7QAhj8Vffkdj2Sz_9SBpCrVawXN9aLGWgM57PD-fln5zx1jj1HIg4idvHruGixqxRHt-fCR6xM6CLnbXBstmOZBTbvX0TC3sWZBGU5EfTQy--iw2kl5RKV_a8ySA\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         dashboard-admin-token-pj4qs\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: dashboard-admin\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: ae234eeb-98e3-4328-9c79-02cd52506495\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJkYXNoYm9hcmQtYWRtaW4tdG9rZW4tcGo0cXMiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC5uYW1lIjoiZGFzaGJvYXJkLWFkbWluIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQudWlkIjoiYWUyMzRlZWItOThlMy00MzI4LTljNzktMDJjZDUyNTA2NDk1Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC90ZW5hbnQiOiJzeXN0ZW0iLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6a3ViZS1zeXN0ZW06ZGFzaGJvYXJkLWFkbWluIn0.XDixzPXa1P4h0LvxBGb4V3Zo0HfzXnerASOxMwlDQKjkWEk-_QuCWG5RCBiLrxD17f5OUSet1QNRU8hEz4EzRHQHZSKfqB16X9q0k4dUBZLZW6QhliwtGeJewu0PA6a9nGwHThH0LMEzNbPztyHhWjUXmtSw9uGVp1Kc2ILPiQjOIc9EvhmujNZ8Y04HJFF09_mV_xOvFB61T2mJ3dcSoip-v-C44Vl4xfQDD2P3b5P_TpyUq98luUklFdCheJWP329suCuRWK3lgPy010vxm-U-KsDJVhv3A5h4Lv2XlEQBTVlPCInO_NYO6beuPspewus2SmqblYwTTZHnv0jVOw\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         default-token-dgdt4\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: default\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: 5ee1cf8d-2c0e-4b72-8588-1e1606f53283\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJkZWZhdWx0LXRva2VuLWRnZHQ0Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6ImRlZmF1bHQiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC51aWQiOiI1ZWUxY2Y4ZC0yYzBlLTRiNzItODU4OC0xZTE2MDZmNTMyODMiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3RlbmFudCI6InN5c3RlbSIsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDprdWJlLXN5c3RlbTpkZWZhdWx0In0.daYHSxA7o2IDssN5Sdv4MXTPxzzXGFNeZMn95UxWq7Q5AgZZNQ_HQI5ImJCNnQWxzDVRxkLERaebanRHicN8_WqQ7ZbaTVOgHp3O3N_Qq69GvAm7cFAXsi9u5qf9mAA3DEnhBE20A6EZidMSHtTTugacUnTICKdULijeDv5oL9Cr1PrjRCMjxY0TAxw7U8z98d1o1hpqObBQmKkD9pWzXlD8hLY3RogT-TXtSLrP0Rh4N0ZEkAGkmvKa-eyAw44f9HSn7a5Z1dzw6Pa3wqMFKzGlKu4oyjV_Ma_iIMLLQHyZa0sj83CJQ1JTVGNz4B3c6HbDK6oGzF4i_KnG5IEZpQ\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         deployment-controller-token-rg8bq\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: deployment-controller\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: 23385596-9352-4e63-ac3e-a6ba98b5638e\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJkZXBsb3ltZW50LWNvbnRyb2xsZXItdG9rZW4tcmc4YnEiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC5uYW1lIjoiZGVwbG95bWVudC1jb250cm9sbGVyIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQudWlkIjoiMjMzODU1OTYtOTM1Mi00ZTYzLWFjM2UtYTZiYTk4YjU2MzhlIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC90ZW5hbnQiOiJzeXN0ZW0iLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6a3ViZS1zeXN0ZW06ZGVwbG95bWVudC1jb250cm9sbGVyIn0.Ue1o2DQLIyywBnxXlccPEKGs1tWmUTntHbWKEmshRAehx6xrsa1-K3otCytJ_uDTw40UPKYYHjMogqGbq77TwyMB-CxxJ_2sbGMRWoPfm5BowSFdgV1LD72-q101cJ6EYYnG2O7_A7RA2F-nteskdgquWjTPnC45qBjTlMd5gOhoD5en_UtZHVotD0zsq3_qHFG-891zXsRmMDmTRTfubLhNoqith9M439TipA50Qh_15Me2ODk773cUvcJBboe8EQEAXUxN8MXW20-S3p5ewaRMYmfy7dzX--X-t6FP4j5K2blVRXicgAFU7otp-2y2bN8p3TaE65c86gS0cTAvZg\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         disruption-controller-token-fc264\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: disruption-controller\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: e1b6aba3-273a-4dc9-87eb-4c2da957698d\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJkaXNydXB0aW9uLWNvbnRyb2xsZXItdG9rZW4tZmMyNjQiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC5uYW1lIjoiZGlzcnVwdGlvbi1jb250cm9sbGVyIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQudWlkIjoiZTFiNmFiYTMtMjczYS00ZGM5LTg3ZWItNGMyZGE5NTc2OThkIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC90ZW5hbnQiOiJzeXN0ZW0iLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6a3ViZS1zeXN0ZW06ZGlzcnVwdGlvbi1jb250cm9sbGVyIn0.GQ99ASYw2V5qeYKDKKcIydK9G4lMfXgN3ZTpfKUQ7yqnRqo4eF2DkeUhILUvwzjvghQR7ACFx5-ULlSIw5FrzYQy1e0zML28O9h3te0F4WvpDK0NCtV_3E7wJbOK17Vicizs0AIRpHeOg060X4DJ1crZCpDA9o3fIPSgTP7Fi-CJCPX07VUAg9q2lf_qQRY8ptD1hE4UGAHqhzruzJsP9_EHjeIeNO15hRUwjRcUCt6glFsYSR2luEZEPOwBbVJteCSrs16CclBHYyEW0OxwHsy61E9GP2jM1bvrHYcveOcVBbp4YjewYbL4akfCKev1Fn_n0V1qlSFNPII85pmapg\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         endpoint-controller-token-f72hb\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: endpoint-controller\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: 2191029d-7a3c-45b8-a022-eae8d821416a\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJlbmRwb2ludC1jb250cm9sbGVyLXRva2VuLWY3MmhiIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6ImVuZHBvaW50LWNvbnRyb2xsZXIiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC51aWQiOiIyMTkxMDI5ZC03YTNjLTQ1YjgtYTAyMi1lYWU4ZDgyMTQxNmEiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3RlbmFudCI6InN5c3RlbSIsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDprdWJlLXN5c3RlbTplbmRwb2ludC1jb250cm9sbGVyIn0.bBHZgoA3uyKdLnWcXQ7evD03xQf0TFi-RfsDdeyG0ihr6d2yxl5wHGhgHO6awTBJoefwa754gAKUVDXayd0Wf-Bxlnh90Djd6Z_9jc3pf97GWTNhd__ljIb3ztXn9RQaWR8rvuJ1jvYz0FrdcmvplsRgqD_e1RKNMbhFnoJTMw7G4aZHUNyQwBk4MVhO1Ojpi_7XzZDpsz45IBB-O6-VeJDM2DJm3zBf3FRwVPvTWKjJ5SUqhrSKDXPpb4_aVGNq6pEGIV-n79LUhZHoGwXWktKDU80oDthCmWzfTcXZT4_D4ZkY-otQLCgDySBqUe5eE-KrF6yuDKjd1JN9kyRFiw\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         expand-controller-token-xr59r\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: expand-controller\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: 9aed3892-e072-42e6-b640-6d5f032341b6\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJleHBhbmQtY29udHJvbGxlci10b2tlbi14cjU5ciIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50Lm5hbWUiOiJleHBhbmQtY29udHJvbGxlciIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50LnVpZCI6IjlhZWQzODkyLWUwNzItNDJlNi1iNjQwLTZkNWYwMzIzNDFiNiIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvdGVuYW50Ijoic3lzdGVtIiwic3ViIjoic3lzdGVtOnNlcnZpY2VhY2NvdW50Omt1YmUtc3lzdGVtOmV4cGFuZC1jb250cm9sbGVyIn0.tOI3Sbom2z7Onjy8tvOMSYCsnu9juuvW4h46ANfXDSBKAlUmMxrvTWzmaDR6CHZG92m_yU-b1CQINjMqGwBmLe9sXTvB6dtpzt48r2gs9mYGCB90rH5IbhU09dYXVY4ETwDR-C3nYgO5jMhvT2xrJiUhS-PfSmy4Kz5sw-IXOSyOqFdSoKiyQlP8DqtU8iXhGzlradIfyHB4WUi46pAIclQ7kvOOvuMx2evHRZuHvQ-9afTbjDPpdnMfXkR6b4oOywy7456aG3XCQvNYWnnrH7WrxnSJyBQsNd6DGIVSUcbGsNs5nB1PejN1i1O86lkguZo8iHczINXQ9kLTJr7JeQ\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         generic-garbage-collector-token-ljv7x\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: generic-garbage-collector\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: 1a59e446-f6b4-4fdd-a141-9accd95ec37a\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJnZW5lcmljLWdhcmJhZ2UtY29sbGVjdG9yLXRva2VuLWxqdjd4Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6ImdlbmVyaWMtZ2FyYmFnZS1jb2xsZWN0b3IiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC51aWQiOiIxYTU5ZTQ0Ni1mNmI0LTRmZGQtYTE0MS05YWNjZDk1ZWMzN2EiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3RlbmFudCI6InN5c3RlbSIsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDprdWJlLXN5c3RlbTpnZW5lcmljLWdhcmJhZ2UtY29sbGVjdG9yIn0.SnLfuGrSeJUAWUo6cGIcUjmyDKc4-5lJIav3ab1vZAhbcNe2lpmDMuSWs_ul-R21T_uoSt52IQxKpA1Ga5KMt-0W0uXzAZ1olo7PLlDSHM_7bbibjDc8gz7pwMfbxE5AA22WOsa7iYvGzoMIMV3pbCRtInBl4NCkZgmQNPS1cpRe7WzlVO2AesM6ujOM4L7QnsEHpTLgal7ORRXO3MDp1UCDrQpewcNerqvXWWOITYQdI8JRG6TOz5Ozdfb7MCQMBropB0UJa6USy9sX3UgLIvV1oWFg8hpPkzOg2ztkltORyqryg90HP0xltmqwUMXOAjwRj-NYINWBD0TafRiCqQ\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         horizontal-pod-autoscaler-token-xpgxk\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: horizontal-pod-autoscaler\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: bf891a5d-d37b-4577-a69e-79e6485a1bf8\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJob3Jpem9udGFsLXBvZC1hdXRvc2NhbGVyLXRva2VuLXhwZ3hrIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6Imhvcml6b250YWwtcG9kLWF1dG9zY2FsZXIiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC51aWQiOiJiZjg5MWE1ZC1kMzdiLTQ1NzctYTY5ZS03OWU2NDg1YTFiZjgiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3RlbmFudCI6InN5c3RlbSIsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDprdWJlLXN5c3RlbTpob3Jpem9udGFsLXBvZC1hdXRvc2NhbGVyIn0.bfZ-9IRdO1C50pwpqsJ8iG3xcivnHqx9vAvuyx0FEim3X9eLND-PVSrsYEmdkL6T332q7h1luVNXS_qrx0E92ErmpGJgc-wQq1qgf4dlXFiDr5lsIaioBxq-iGpt3V1azDfnao5L0A4pDY_TbTWzSIjDCeLgf-_UAVsaLs6ncjvJf8vqdYhG8jdvF-TGIghTzYNQYqJkfcXNLACFzb44J4vdhXurjVt6D2n-UIjftHgYIMYV9dWE1DhidqltY-Xo2jcTH2vi3qGavYar6_eS3QyNTCA-jevNYQTZ9PCDgy2jp88heVXMoh1Mg-KC4L_QMHCRZLGf8y_AHeE4gVMOcA\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         job-controller-token-rnmsx\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: job-controller\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: 7ec357ba-5822-456f-93f9-1ca144c96e2c\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJqb2ItY29udHJvbGxlci10b2tlbi1ybm1zeCIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50Lm5hbWUiOiJqb2ItY29udHJvbGxlciIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50LnVpZCI6IjdlYzM1N2JhLTU4MjItNDU2Zi05M2Y5LTFjYTE0NGM5NmUyYyIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvdGVuYW50Ijoic3lzdGVtIiwic3ViIjoic3lzdGVtOnNlcnZpY2VhY2NvdW50Omt1YmUtc3lzdGVtOmpvYi1jb250cm9sbGVyIn0.RVrCmvg-J0Z5f5FYjVt4GBeWkwr_rLofzmtgqi9ZfvOaPFCriRyQkIdEUXl8umr1j26x2YoaHbH0tZaZ_JwPrMAnGzr0Zohx6kHencnB7WN7smSZ4PjOmCXTV6c_WhXHExUJXWc2Tjz1okgZzc3wPvefgG6hP9ZWbWP4iMc6WWfqnbppd7NmQhXucVoLUpNN9IbfUyfLqWsK9YX6seonfGryFommQBVDRydWwu-wgyyZUFHoby79e90KjwkBTrKkAzB7HCeijKqK_cMOeHhK0Qto4hnCTgAPwEFJIs_9s5NMB4UQpLaiHVCXjlW0L2SUVQ-mgSMGC9cZS-WBPj7xhA\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         kube-dns-token-27vb9\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: kube-dns\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: b63bacab-2f42-455f-b863-6711c76fc314\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJrdWJlLWRucy10b2tlbi0yN3ZiOSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50Lm5hbWUiOiJrdWJlLWRucyIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50LnVpZCI6ImI2M2JhY2FiLTJmNDItNDU1Zi1iODYzLTY3MTFjNzZmYzMxNCIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvdGVuYW50Ijoic3lzdGVtIiwic3ViIjoic3lzdGVtOnNlcnZpY2VhY2NvdW50Omt1YmUtc3lzdGVtOmt1YmUtZG5zIn0.hwN9Y282cglOsjPHnVyIbFw1kG5txfZxCLGLijMxdgWmvStt8zads7Ptta09KHfrhsVjdnCRHy8qtvz0rGDxwSvtCGcTdmJYvO_h1eadKZqMrT88BOrR1J1Vo2Cb5f5z-s8uSc7XgaegJQFzLW1MdKhJ1TQfDxNlAjqfPkc-fisi2j55JuPDKik0FVcV_mxO1zy-husozj60gncdywaZpGnxhdJeTAk242PWevYN394D8Ee_upPMbELRU40Twp41iuBsqNwbU7THL3-9MLB3NBh1fLyJZQ2KvgsP0wWdwLAc_HUgoX8HidmCfG2wwXQC5yjqvS42g31WXGn2S-nTgg\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         mizar-starter-controller-token-5rg7j\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: mizar-starter-controller\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: 905fd08d-8e3e-4eeb-8be6-1439859381f9\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJtaXphci1zdGFydGVyLWNvbnRyb2xsZXItdG9rZW4tNXJnN2oiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC5uYW1lIjoibWl6YXItc3RhcnRlci1jb250cm9sbGVyIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQudWlkIjoiOTA1ZmQwOGQtOGUzZS00ZWViLThiZTYtMTQzOTg1OTM4MWY5Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC90ZW5hbnQiOiJzeXN0ZW0iLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6a3ViZS1zeXN0ZW06bWl6YXItc3RhcnRlci1jb250cm9sbGVyIn0.n6zGtIIjYdYrDHqT8BaNPvIJgmLi5S7pw2O6cT7EFif1Fx9F6A4bwwwDQNL3SJYfP9eWquVpvUMoeHDt6l0YEQwJbNnhqv2Bw6viWmdQlNpqfP7635KelqBLiOr-kuWijUJJzSRdoNvVkr6TDsDS9mEWHAurG8Amc0cyvuqHV1WoYFT50C9JDYEX_FUYrbfoxZLsBG1-UJuLRuRQq2TWqwCJL9dKhA92Any9C31ePRBFEPc3sjby2FYpoysRQfqawFr00oCEeppwvXq8KoR3tY9yuafQH0h0jdrbp9WJYSHrCW21H5OuLR4zRqaLs-BukZK0JvTOfXpnHwyzNxFs8g\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         namespace-controller-token-v87z2\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: namespace-controller\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: e3e0b2bc-6fb4-4104-b797-e2b061ef6f32\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJuYW1lc3BhY2UtY29udHJvbGxlci10b2tlbi12ODd6MiIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50Lm5hbWUiOiJuYW1lc3BhY2UtY29udHJvbGxlciIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50LnVpZCI6ImUzZTBiMmJjLTZmYjQtNDEwNC1iNzk3LWUyYjA2MWVmNmYzMiIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvdGVuYW50Ijoic3lzdGVtIiwic3ViIjoic3lzdGVtOnNlcnZpY2VhY2NvdW50Omt1YmUtc3lzdGVtOm5hbWVzcGFjZS1jb250cm9sbGVyIn0.XVho8WmNFzIqsJCGMp-YJh3Fo7ccAEPcGAFcJ-XVK0NcPkzwdBuZ2JLZiyvC2ReDazza757NbeubIQApJPhr-9f-sHnQdf636h4b9vW_NHsC209KDAIiFEUcIAB_KYDnoxotkDaBLitLgOLvUHHhy1hFES-QexF1mTkgD3wvMIOzh5c9sMtwsDv1zPZI8QO7Lx-u9QHdltmcHocsQFGsBLGSqmc8mwD5bUYBFrQl9-GLn3Zmi8zsBBnkFTCag_fFQ_8JSpv4tjyyfdnSmEtoIIRE9L3oWGQLaTnvgrVaISr8UQpg28LVvyQWJt86_N_mY0ad_wzw8iopVcY_SGCNMA\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         node-controller-token-m4nsx\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: node-controller\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: c909a30c-e94f-4417-a274-56486e6071ce\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJub2RlLWNvbnRyb2xsZXItdG9rZW4tbTRuc3giLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC5uYW1lIjoibm9kZS1jb250cm9sbGVyIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQudWlkIjoiYzkwOWEzMGMtZTk0Zi00NDE3LWEyNzQtNTY0ODZlNjA3MWNlIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC90ZW5hbnQiOiJzeXN0ZW0iLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6a3ViZS1zeXN0ZW06bm9kZS1jb250cm9sbGVyIn0.YtfvJO8IZEky_ZAlusmwyOzl7ozwl0DG77OQvb5IPTjn8qoCklAgH6pbZM5AfMUA06NeWUDHn39c6iQd-xq02l_e-0Mns0VERbuICZ50oeThOX-Zrw-mTURVg1GJtfsJXK6xPl2k3DBMHI31PnNarUgoseP_f5A63KQ7pSJnuFz82aaAv54H2ENU3XOsk2JQxVc6MnKjHCu_QYJVp3QNE5_F7Lzvhxas1ZHj46EAB4SwsQYGMHgMgUDYl_yZuBGmzmcCepqdTKPg0xk_TEW8pdwECZop9SAYdfGFY_wZhqph38byiNGZXLfDdwku_xUHjhGafpHSh_CGsqt-hy5ZrA\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         node-ipam-controller-token-c67qd\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: node-ipam-controller\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: 8aab4d30-5a96-4bef-ad84-aea14216b923\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJub2RlLWlwYW0tY29udHJvbGxlci10b2tlbi1jNjdxZCIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50Lm5hbWUiOiJub2RlLWlwYW0tY29udHJvbGxlciIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50LnVpZCI6IjhhYWI0ZDMwLTVhOTYtNGJlZi1hZDg0LWFlYTE0MjE2YjkyMyIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvdGVuYW50Ijoic3lzdGVtIiwic3ViIjoic3lzdGVtOnNlcnZpY2VhY2NvdW50Omt1YmUtc3lzdGVtOm5vZGUtaXBhbS1jb250cm9sbGVyIn0.MVz9IS9wvja58ulXahBOwF4duKGDn_SKpeHnP183sv3TorA-GxAVGmu4nZSTkpB6LIs4pzGgzJsg7T-0U0Am6EUF8IZtqHvBjsmUNbyt9j27T-j0KoU_HBFKUk95bRrn3ulgAGYdwiQdi8n7mo_nUoMaKUQ9nLVcCW4YbNDhQPLE0x9jfZDAMD2RmlejULV9cTeGJq_b9hb9TSu4RdMdDcMkS_fkeAuKjtMAgkK3f74xNV3VDMy0bZnsp4eiX6yGdMMY9y6RL8KmBsSICm5ITND11qb4xFSRK6cFT3p_yKmIfjv-ZEQwFr6_ayPi2i4T6UDynsgzGYnTOqgAOaiTDQ\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         persistent-volume-binder-token-76r8j\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: persistent-volume-binder\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: 80bf117f-cf3a-4510-8c14-8292a378b3cf\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJwZXJzaXN0ZW50LXZvbHVtZS1iaW5kZXItdG9rZW4tNzZyOGoiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC5uYW1lIjoicGVyc2lzdGVudC12b2x1bWUtYmluZGVyIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQudWlkIjoiODBiZjExN2YtY2YzYS00NTEwLThjMTQtODI5MmEzNzhiM2NmIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC90ZW5hbnQiOiJzeXN0ZW0iLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6a3ViZS1zeXN0ZW06cGVyc2lzdGVudC12b2x1bWUtYmluZGVyIn0.FXSyysYSOB7kamIEq5jby1UKFi_DC6Nx32dKxFgGcGRbNu6hv5MDhA7IqcK8zEH8jNRyne2FxqEMD09tNhjyFdYiQuUc5pl1iw8EBlqJY-jD2I4k25ZecPxMPlMtDRyEA6WnyHh6JvTT10-ZlDLDvZ0OP-6n3kEJF9uaLlwke1fQvzuNkzkoO7-eRTkMiK6091iv_LsHnZr45PGST0QhAOF4thYiwuRV2OI9v2mnawmkJdrA-DRAoMS1pUh_PZTvqCZZS5IkyameXkyN8sitd6c0o0fu5neCvS4ms9_zeDMX-B38hIPzlVVdcoLNZcOw2j1rVdma9gaRH13sKs90Sg\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         pod-garbage-collector-token-p22tl\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: pod-garbage-collector\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: 0ba10ba9-5989-429c-ba98-c87fb4617d49\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJwb2QtZ2FyYmFnZS1jb2xsZWN0b3ItdG9rZW4tcDIydGwiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC5uYW1lIjoicG9kLWdhcmJhZ2UtY29sbGVjdG9yIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQudWlkIjoiMGJhMTBiYTktNTk4OS00MjljLWJhOTgtYzg3ZmI0NjE3ZDQ5Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC90ZW5hbnQiOiJzeXN0ZW0iLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6a3ViZS1zeXN0ZW06cG9kLWdhcmJhZ2UtY29sbGVjdG9yIn0.iEDR7PO56iHg8QqAYwoUwukMZTA88MGa5GWCnzi6MLBqBw2EceVDnOP35yLt9wRbSGMiI5kQLsqZyJx_Plq_6wjoA65n0SVBz-ykid51HCHtuKhvIb97OwO74D126aUSRlTsdzB_jDFgwPaScXBwZIji71LV8e73cXvgpitrddbu2vFsOO-FC2bFgb5wRdQb6soRlsnPdJwVnX8JY0ZcrOXMl-PhLNtBvulzVogN1pMOMWgSWCqoKk5OvFNGT6yy0_nIdJUbebtf0OeQg3Sj3_kFWo46Ucc01uqDEYEN5yUnOZpAteWJU8OOZi8ZqIvksMsaoWmtpRl1pdkO9hZJvA\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         pv-protection-controller-token-2rbh8\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: pv-protection-controller\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: d0d11b7c-227d-49b6-9d62-bc56b155a3ab\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJwdi1wcm90ZWN0aW9uLWNvbnRyb2xsZXItdG9rZW4tMnJiaDgiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC5uYW1lIjoicHYtcHJvdGVjdGlvbi1jb250cm9sbGVyIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQudWlkIjoiZDBkMTFiN2MtMjI3ZC00OWI2LTlkNjItYmM1NmIxNTVhM2FiIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC90ZW5hbnQiOiJzeXN0ZW0iLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6a3ViZS1zeXN0ZW06cHYtcHJvdGVjdGlvbi1jb250cm9sbGVyIn0.DdYWRuWBzRHFFopCZqflS6zrppn79kD3vbeqSzYuqwfzKqk6iOyOaKr9i9SoqgOcKf1NpQkmLAnKiSOS4f_evs_m4s1bX9MvllfS_SEMYmatg1WFdseSU4gRRmwP5Lh_6kpOIsChzjBbbqL6wdlV6YIyGGW7Ig6wn0J4mGFD-Jg-MQt0NNJJ9KYNpSsnufTRPu5s3H2_HvSBq2vcKfaUNKAzhBF6P4rsPvXkwIQ70r08d96TszC0vTzZ_Aq9U8lYk3zDuY5o1eosOOSPevleKRtd02zjYWtEE-0rvdvJVdfVgBzzHHTpEZfoEMfE6ym7fOZ_DctVVKgLL__Cxm5Xhw\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         pvc-protection-controller-token-g7l68\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: pvc-protection-controller\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: 1df3a49d-2ac3-453d-95f9-ba3c8da666e9\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJwdmMtcHJvdGVjdGlvbi1jb250cm9sbGVyLXRva2VuLWc3bDY4Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6InB2Yy1wcm90ZWN0aW9uLWNvbnRyb2xsZXIiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC51aWQiOiIxZGYzYTQ5ZC0yYWMzLTQ1M2QtOTVmOS1iYTNjOGRhNjY2ZTkiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3RlbmFudCI6InN5c3RlbSIsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDprdWJlLXN5c3RlbTpwdmMtcHJvdGVjdGlvbi1jb250cm9sbGVyIn0.ruOITjBnBlvN9VOiFvO_4XhuGvZb5JIxoegvu5P25R17KmVAIkautL0p8P223WFwmFA19klUmqf-XvqouJGVyjerwdGiDelFbIdsI2Z3LeKfwgs4E5J_gSW5DsIxFtEFjyWIOikUOaPE2GaHgTWvebxUkyZz_i_S9mYDj2cjW8Nm5CJ-NCeIXGdc26GSp02CPKxvPGynaANBobmHGGZXmFhA8kUuak48g4wz2usaLAE8A0ghM8PlVSmiMOVJB010O38QwIjd6PKMkXOav5uhuFKNJa-3UNBfuTFtxatyLqhiTusct98Ux5s3FZR16KFA8MQ09odQGhSn5EjXtLeeiA\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         replicaset-controller-token-vfjjg\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: replicaset-controller\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: 05ca24f6-e8be-42ac-a1f0-84eb4822b6c9\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJyZXBsaWNhc2V0LWNvbnRyb2xsZXItdG9rZW4tdmZqamciLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC5uYW1lIjoicmVwbGljYXNldC1jb250cm9sbGVyIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQudWlkIjoiMDVjYTI0ZjYtZThiZS00MmFjLWExZjAtODRlYjQ4MjJiNmM5Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC90ZW5hbnQiOiJzeXN0ZW0iLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6a3ViZS1zeXN0ZW06cmVwbGljYXNldC1jb250cm9sbGVyIn0.LgKknkodLR9uf4ELZCSnohoyyQnmITVF7lWNQXY214Mrc08QaJoZ_imE9k2K8ZOCBblWcMm-OkBcEl7u6iDHd7t-i8Arf1fQ6KUvwmVis04hv_1CzXnprCBKzcH6MGWZTmRXp6lUfGM8hc2nQe8d6T-9SyHyLQuLIzLSLvrUEd6IssK9fGEMnPkseWsVgVEnnXU5hDcLHxmWRRMyL9IwCTBSf5ALT4WcK6ZIK9U-KfQNaaMJxz90QcDl7T2bV8iFYyajxEBbrtK4nVzj3QviEbLCtCMeGnTs8GziyLxg0EuPGHEeIwOoZSHVTP-BNS2dNB-vxa7GXjI8gSxDvwGjDA\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         replication-controller-token-nhnxj\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: replication-controller\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: 5921d8bf-f65d-4cd6-8d95-49c77e9cdacc\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJyZXBsaWNhdGlvbi1jb250cm9sbGVyLXRva2VuLW5obnhqIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6InJlcGxpY2F0aW9uLWNvbnRyb2xsZXIiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC51aWQiOiI1OTIxZDhiZi1mNjVkLTRjZDYtOGQ5NS00OWM3N2U5Y2RhY2MiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3RlbmFudCI6InN5c3RlbSIsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDprdWJlLXN5c3RlbTpyZXBsaWNhdGlvbi1jb250cm9sbGVyIn0.acdFPdxdsE4cJyz8b0ooljgI7tfHmAQZhaBxEZ5g1PjtGoQP9m0-_fUVQ04M5kWfr1D6BpC79aVMiqlBGe8gzfuatFRTQgQUxAkT0I35pfDnsDBDlfvWBnRCCv4ALdNFzmw7fV9UQP785AzlhL6g6fTxt4jbu799cn0i8fYmw8GnlU_lyOWU2F7WjVFS--yNcmVmzddlbYhoacNgW9GxCHRwaMqXzneH1O93QaXuVzRhH1j18sOlK1PpDvfI0vzg3q8rZpOr2KPNpwiD8WcyVs0J0T0CNF9a7exY9VU1-eJDD81ZE3i3V96Z6E7OQTijejCF56mq_Xn0xd56xzzuDQ\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         resourcequota-controller-token-n8p9s\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: resourcequota-controller\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: 40a6dd46-ccb3-45ee-9503-33cea08ac7a4\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJyZXNvdXJjZXF1b3RhLWNvbnRyb2xsZXItdG9rZW4tbjhwOXMiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC5uYW1lIjoicmVzb3VyY2VxdW90YS1jb250cm9sbGVyIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQudWlkIjoiNDBhNmRkNDYtY2NiMy00NWVlLTk1MDMtMzNjZWEwOGFjN2E0Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC90ZW5hbnQiOiJzeXN0ZW0iLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6a3ViZS1zeXN0ZW06cmVzb3VyY2VxdW90YS1jb250cm9sbGVyIn0.unkvg6lX20AgRieK8Y6iiPAQCaVt1UMAP2ov8Gnt8MYh-BFvRhqoUCpkzA9v8CewSt1olfY9pSydTAGzvqIddbFjDrIXfdlOX4KEFE0rEHUuNDWMjp2kAY4hymBW8h91jGlBnrxf_NzlPjkQN7GhEJnwvROXM7K0hatrD2_hglDKQ08D2B9FZbNpliBv-AyNn5pLVCqtki1kIk0XqcLZM__RtmqsHUJMm4Hqo87K6X-Pk2UxwhbYi0CZsnCfwh24urwLRr2WSG6pACq7MJAHvwWGNH9CJmuajvsocJ-mwNEVsmew3N9Dzk6SPRtk6w2aYbsXY3S_vdNpjGpe4_6zow\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         service-account-controller-token-t22qk\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: service-account-controller\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: 36a93f17-ef8b-491a-b1aa-fef249ab85ce\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJzZXJ2aWNlLWFjY291bnQtY29udHJvbGxlci10b2tlbi10MjJxayIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50Lm5hbWUiOiJzZXJ2aWNlLWFjY291bnQtY29udHJvbGxlciIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50LnVpZCI6IjM2YTkzZjE3LWVmOGItNDkxYS1iMWFhLWZlZjI0OWFiODVjZSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvdGVuYW50Ijoic3lzdGVtIiwic3ViIjoic3lzdGVtOnNlcnZpY2VhY2NvdW50Omt1YmUtc3lzdGVtOnNlcnZpY2UtYWNjb3VudC1jb250cm9sbGVyIn0.CY4cwvoVIK8lhMt-1j_RMCKH4undQpFVE-M61rZAu4sdllPaD-L3C6q04I34Y_omHrGBwRDc1DBNaJRjfIPiiMjWsZZVODcUN3_QagNSdK17jEO62BPEDpbYrBXDZxseuqHTvKr__TCC_qrxb-LBmat0tn275q7-fYSH8iIjEATXnoS_hfF44LWkzK4kPr4fzzsOmQGK-vj6IJD7PvS_aR0Ozb8cjOotHH1v4XfAFDY_XNwXJxAPedVvCbkMX6lVKx9yyGuA8CnzFWgtvNswd6DkqSLbqihMOWEmaavIdsHphRaY-8r19l0Y1e6Vmqlg4T-HWzCMgx52eLnGJMG0Vw\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         service-controller-token-68x64\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: service-controller\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: 4e946082-c7da-4f42-a494-a1f36b7e3630\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJzZXJ2aWNlLWNvbnRyb2xsZXItdG9rZW4tNjh4NjQiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC5uYW1lIjoic2VydmljZS1jb250cm9sbGVyIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQudWlkIjoiNGU5NDYwODItYzdkYS00ZjQyLWE0OTQtYTFmMzZiN2UzNjMwIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC90ZW5hbnQiOiJzeXN0ZW0iLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6a3ViZS1zeXN0ZW06c2VydmljZS1jb250cm9sbGVyIn0.HmDX-M1jiN2Y-D4g_8olorbeApaIN4WUAds-Xln6jkuwPppEzNSAnOBaTnWDG1MZBvz0Wc8RyFTUnOuGjKTjuteRN11jt52hU_zQxiwgfilrbWevy5uW0kzh-NQOBYsDoasRZ7BVQvvYxSAopBSnJTX6jiYAhO6SVUEiMRzmNSivzwsU8ybA2SSIi9Mfthr70cOxmFi7m0luOSfbH98_-nkgKilp8ZjTK860AaPn-GtOjlEp9XRCxLy-pU8WCveZHA9i71BQlQsvJcqkxZPRtJBQrRGe8GX9B78pVseVHuLp2JtA6K4mMef0VeKuXKaCbNpa5pMZ9qv84g5VHU9P2Q\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         statefulset-controller-token-4rlm8\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: statefulset-controller\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: f7b99274-e96b-490f-9831-8945f76784f8\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJzdGF0ZWZ1bHNldC1jb250cm9sbGVyLXRva2VuLTRybG04Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6InN0YXRlZnVsc2V0LWNvbnRyb2xsZXIiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC51aWQiOiJmN2I5OTI3NC1lOTZiLTQ5MGYtOTgzMS04OTQ1Zjc2Nzg0ZjgiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3RlbmFudCI6InN5c3RlbSIsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDprdWJlLXN5c3RlbTpzdGF0ZWZ1bHNldC1jb250cm9sbGVyIn0.lcET1ZF6oSq2Diajhpqqaj_0iBdgvLQ7JvBDRnpPUVlnhmBkfgywhk7rR9ekCyTJixspdaoJwCGXJmXm_8zOJDPOGtjNsPFkwGDT15HBDTKwcZEuKvvpwIiTDt73xbJTMF6RatIRv1lSEGHe5EBkPSEcpJ9GI54DhtfPXNZFlxsnfzfQwzmJzWACAve9qUs4N9bHgreXNoqdNBJ2pMiXknnGMMoMJMYLpCmQN2QRukBo4GsuR_cn5ObxG8YMkxBOzNi4hEBN07pPBgiRSQ82ZzQhgF3nsZJ8p0B8agwCeQWuZR8QdcRli8xW6I0N9qwxTgBJY4zafIIIKwZWPS0vlA\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         tenant-controller-token-fmmtp\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: tenant-controller\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: d705e982-8682-42cb-9a26-fa659ec97d83\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJ0ZW5hbnQtY29udHJvbGxlci10b2tlbi1mbW10cCIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50Lm5hbWUiOiJ0ZW5hbnQtY29udHJvbGxlciIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50LnVpZCI6ImQ3MDVlOTgyLTg2ODItNDJjYi05YTI2LWZhNjU5ZWM5N2Q4MyIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvdGVuYW50Ijoic3lzdGVtIiwic3ViIjoic3lzdGVtOnNlcnZpY2VhY2NvdW50Omt1YmUtc3lzdGVtOnRlbmFudC1jb250cm9sbGVyIn0.PvZQIB612TIJaCq8OXbMNqgZXn3Pst5w2ydHGayvl4yciservCgGrSv36ChS5jQ6SDe_C7U-fb1aa6CbbVtHSoHUE-4gVz8DBKdRaDfFnlwgOkPdunWem0ldkTUgTxiMBrNPR929j2BRDe4Bt7DRaeDI8Ib1B17a4mY-nINpUdj5ILXNgxbcecKbRCh0ATasBP_pBjg_3lTRBEJA_L5n0wIWC8tcVuu9OOXps2sEnw41Iocq1qvVE0hp03KWOZJ9RWZ-fiJMYvsBHfMlr131CHXG6XJTzgO2r4f3YfGGTs7snrno3kWdmCT9i3d7iXFk3smc1443GEZaIXL-NxThdA\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         ttl-controller-token-m9hgr\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: ttl-controller\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: 47e36de6-0572-4afe-a476-add0b8214235\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJ0dGwtY29udHJvbGxlci10b2tlbi1tOWhnciIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50Lm5hbWUiOiJ0dGwtY29udHJvbGxlciIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50LnVpZCI6IjQ3ZTM2ZGU2LTA1NzItNGFmZS1hNDc2LWFkZDBiODIxNDIzNSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvdGVuYW50Ijoic3lzdGVtIiwic3ViIjoic3lzdGVtOnNlcnZpY2VhY2NvdW50Omt1YmUtc3lzdGVtOnR0bC1jb250cm9sbGVyIn0.mM2GB-CMYeQ5vZ7iBM8tVQtEeJnmQ1kJ9XGlk-5or55ECcl45SoIxvilPjI5hcTKZuoKox1y2lsdPvopr7wQiPhJ4tUOXXumsVYO-5tgGUYKDURlYbSU8WIsRP1jr6G4RUZxgLKrioWAAqhVQVZlMZZokBjuH0V6VTPf_PJ-yxobEcWHyfJxoxvAZOz6pnC4O-bUabOiWtFAK244IjLfiLlEOpGHxkyEVF3aSJ0S5LsYvIaP32kCJyMKSPsmspah4ZvB3Jv5Q4sWN7wfHmsNTYX--h48WnnFRqW5xvos99IVW6xUkiAPn-NpHxJd7M-WkY3RwgtqkfrWcHTxgcdj1A\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         virtlet-token-w895h\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: virtlet\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: b1cde2f8-325a-437e-944e-0a9b99850526\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJ2aXJ0bGV0LXRva2VuLXc4OTVoIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6InZpcnRsZXQiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC51aWQiOiJiMWNkZTJmOC0zMjVhLTQzN2UtOTQ0ZS0wYTliOTk4NTA1MjYiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3RlbmFudCI6InN5c3RlbSIsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDprdWJlLXN5c3RlbTp2aXJ0bGV0In0.hFcG0nW6lvzkUnmUEWZ8A6K6fo7rhZhN44ZBl2XVNnz1ODaIQD9YdPxGDJcvHX9oatr3a7H-xoxtIjp4mpXfWY4WUd6xqXNLt29ixWSCeMXzDYkDeb1_aQb5-qELZtgJ2MYNKuusfBT6zxcDh1KR7PZ_06-SbobJzY3iMI9qHMGr8ymFCpV5wIUWy53joHttGL-1B0eKohsxqc0W5l2xa5dYJQjZ-ytIQHTAaqSRk8Q0tziCXcNp1k5-eqnl_Vx9WJRbjLZdjWM8WJE8FX3Ap1OMNvS9bqgfAqFUEgtSnWO5XIk9oB4o8NLRuBeKJ4nFEMYACLzPM0I4kY82CqgnSQ\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Name:         vm-pod-controller-token-6vtfj\cf1\highlight2 
+\par \cf0\highlight0 Namespace:    kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:       system\cf1\highlight2 
+\par \cf0\highlight0 Labels:       <none>\cf1\highlight2 
+\par \cf0\highlight0 Annotations:  kubernetes.io/service-account.name: vm-pod-controller\cf1\highlight2 
+\par \cf0\highlight0               kubernetes.io/service-account.uid: b7d37bb6-584a-4254-8f03-67292de4456f\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Type:  kubernetes.io/service-account-token\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Data\cf1\highlight2 
+\par \cf0\highlight0 ====\cf1\highlight2 
+\par \cf0\highlight0 namespace:  11 bytes\cf1\highlight2 
+\par \cf0\highlight0 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJ2bS1wb2QtY29udHJvbGxlci10b2tlbi02dnRmaiIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50Lm5hbWUiOiJ2bS1wb2QtY29udHJvbGxlciIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50LnVpZCI6ImI3ZDM3YmI2LTU4NGEtNDI1NC04ZjAzLTY3MjkyZGU0NDU2ZiIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvdGVuYW50Ijoic3lzdGVtIiwic3ViIjoic3lzdGVtOnNlcnZpY2VhY2NvdW50Omt1YmUtc3lzdGVtOnZtLXBvZC1jb250cm9sbGVyIn0.suConXv4NH6-Xu1ji65tNpDmOdSw9CNJZi8H254LQPZwk3wJ_QAGUt4uhDAtLnXjOW82J6GFYwJGW0N8aQWFsUVm-IPj4JaJqJUtA_NrEZvhWwPU9-XSJ31wmYIL06PcDxs8A8OJ25t0YV5zeHEcrY4a3OnPU1PI25GREgkjgFPetMVGxiZkEhk2s9WWxax1DNHYgStsTI9HYb7Ip35vR3G1n6DJd4XJ1Te2xSrcNzydVYip5p2VS4HFFA6rXzrOP7jsvMVf3-m42rrMdn3_2y8rLyRvhkwBNVNP_MF_ucZx0db7ZWBdNI6PT5nZSXGWj_0nHzscnSUCLE9sPq6KRQ\cf1\highlight2 
+\par \cf0\highlight0 ca.crt:     1310 bytes\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos#\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh create ns kubernetes-dashboard\cf1\highlight2 
+\par \cf0\highlight0 namespace/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh create secret generic kubernetes-dashboard-certs --from-file=$HOME/dashboard.key --from-file=$HOME/dashboard.crt -n kubernetes-dashboard\cf1\highlight2 
+\par \cf0\highlight0 secret/kubernetes-dashboard-certs created\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh apply -f kubernetes-dashboard.yaml\cf1\highlight2 
+\par \cf0\highlight0 serviceaccount/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 service/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 secret/kubernetes-dashboard-csrf created\cf1\highlight2 
+\par \cf0\highlight0 secret/kubernetes-dashboard-key-holder created\cf1\highlight2 
+\par \cf0\highlight0 configmap/kubernetes-dashboard-settings created\cf1\highlight2 
+\par \cf0\highlight0 role.rbac.authorization.k8s.io/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 clusterrole.rbac.authorization.k8s.io/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 rolebinding.rbac.authorization.k8s.io/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 clusterrolebinding.rbac.authorization.k8s.io/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 deployment.apps/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 service/dashboard-metrics-scraper created\cf1\highlight2 
+\par \cf0\highlight0 deployment.apps/dashboard-metrics-scraper created\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get svc\cf1\highlight2 
+\par \cf0\highlight0 NAME                 TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE\cf1\highlight2 
+\par \cf0\highlight0 kubernetes           ClusterIP   10.0.0.1     <none>        443/TCP   2m22s\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-default   ClusterIP   10.0.0.163   <none>        443/TCP   2m3s\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get svcc -A\cf1\highlight2 
+\par \cf0\highlight0 error: the server doesn't have a resource type "svcc"\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get svc -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE              NAME                        TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)                  AGE\cf1\highlight2 
+\par \cf0\highlight0 default                kubernetes                  ClusterIP   10.0.0.1     <none>        443/TCP                  2m29s\cf1\highlight2 
+\par \cf0\highlight0 default                kubernetes-default          ClusterIP   10.0.0.163   <none>        443/TCP                  2m10s\cf1\highlight2 
+\par \cf0\highlight0 kube-system            kube-dns                    ClusterIP   10.0.0.10    <none>        53/UDP,53/TCP            2m26s\cf1\highlight2 
+\par \cf0\highlight0 kube-system            kube-dns-default            ClusterIP   10.0.0.199   <none>        53/UDP,53/TCP,9153/TCP   2m10s\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   dashboard-metrics-scraper   ClusterIP   10.0.0.45    <none>        8000/TCP                 17s\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard        NodePort    10.0.0.118   <none>        443:30001/TCP            17s\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE              NAME                                         HASHKEY               READY   STATUS    RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 kube-system            coredns-default-6ff7d98dc8-bqxsv             4388422226659059471   1/1     Running   0          2m16s\cf1\highlight2 
+\par \cf0\highlight0 kube-system            kube-dns-554c5866fc-m5qwm                    9148485099040653435   3/3     Running   0          2m16s\cf1\highlight2 
+\par \cf0\highlight0 kube-system            virtlet-55llc                                8136090957494979223   3/3     Running   1          2m6s\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   dashboard-metrics-scraper-6fbf748d6d-hnzch   8051326711310405845   1/1     Running   0          24s\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-5745876c85-5jmnp        7089200638178483339   1/1     Running   0          24s\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-5745876c85-fcpbq        6406731983895176354   1/1     Running   0          24s\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh describe pod kubernetes-dashboard-5745876c85-5jmnp -n kubernetes-dashboard\cf1\highlight2 
+\par \cf0\highlight0 Name:           kubernetes-dashboard-5745876c85-5jmnp\cf1\highlight2 
+\par \cf0\highlight0 Namespace:      kubernetes-dashboard\cf1\highlight2 
+\par \cf0\highlight0 Tenant:         system\cf1\highlight2 
+\par \cf0\highlight0 Priority:       0\cf1\highlight2 
+\par \cf0\highlight0 Node:           node-d/192.168.4.52\cf1\highlight2 
+\par \cf0\highlight0 Start Time:     Wed, 15 Dec 2021 09:13:00 +0000\cf1\highlight2 
+\par \cf0\highlight0 Labels:         k8s-app=kubernetes-dashboard\cf1\highlight2 
+\par \cf0\highlight0                 pod-template-hash=5745876c85\cf1\highlight2 
+\par \cf0\highlight0 Annotations:    <none>\cf1\highlight2 
+\par \cf0\highlight0 Status:         Running\cf1\highlight2 
+\par \cf0\highlight0 IP:             10.88.0.9\cf1\highlight2 
+\par \cf0\highlight0 Controlled By:  ReplicaSet/kubernetes-dashboard-5745876c85\cf1\highlight2 
+\par \cf0\highlight0 Containers:\cf1\highlight2 
+\par \cf0\highlight0   kubernetes-dashboard:\cf1\highlight2 
+\par \cf0\highlight0     Container ID:  unknown://f2e07ef643320a9cb096a47f37bf3f083dcca5fe16cb0aaff1bc30c498e3d982\cf1\highlight2 
+\par \cf0\highlight0     Image:         c2cengg20190034/dashboard:0.6.2\cf1\highlight2 
+\par \cf0\highlight0     Image ID:      docker.io/c2cengg20190034/dashboard@sha256:39493218ceef2178e5fb50349d1b34617c0ee9c477349864b94717222b6702a6\cf1\highlight2 
+\par \cf0\highlight0     Port:          8443/TCP\cf1\highlight2 
+\par \cf0\highlight0     Host Port:     0/TCP\cf1\highlight2 
+\par \cf0\highlight0     Args:\cf1\highlight2 
+\par \cf0\highlight0       --auto-generate-certificates\cf1\highlight2 
+\par \cf0\highlight0       --enable-skip-login\cf1\highlight2 
+\par \cf0\highlight0       --disable-settings-authorizer\cf1\highlight2 
+\par \cf0\highlight0       --enable-insecure-login\cf1\highlight2 
+\par \cf0\highlight0       --insecure-bind-address=0.0.0.0\cf1\highlight2 
+\par \cf0\highlight0       --namespace=kubernetes-dashboard\cf1\highlight2 
+\par \cf0\highlight0     State:          Running\cf1\highlight2 
+\par \cf0\highlight0       Started:      Wed, 15 Dec 2021 09:13:04 +0000\cf1\highlight2 
+\par \cf0\highlight0     Ready:          True\cf1\highlight2 
+\par \cf0\highlight0     Restart Count:  0\cf1\highlight2 
+\par \cf0\highlight0     Liveness:       http-get https://:8443/ delay=30s timeout=30s period=10s #success=1 #failure=3\cf1\highlight2 
+\par \cf0\highlight0     Environment:    <none>\cf1\highlight2 
+\par \cf0\highlight0     Mounts:\cf1\highlight2 
+\par \cf0\highlight0       /certs from kubernetes-dashboard-certs (rw)\cf1\highlight2 
+\par \cf0\highlight0       /tmp from tmp-volume (rw)\cf1\highlight2 
+\par \cf0\highlight0       /var/run/secrets/kubernetes.io/serviceaccount from kubernetes-dashboard-token-m9dwc (ro)\cf1\highlight2 
+\par \cf0\highlight0 Conditions:\cf1\highlight2 
+\par \cf0\highlight0   Type              Status\cf1\highlight2 
+\par \cf0\highlight0   Initialized       True\cf1\highlight2 
+\par \cf0\highlight0   ContainersReady   True\cf1\highlight2 
+\par \cf0\highlight0   Ready             True\cf1\highlight2 
+\par \cf0\highlight0   PodScheduled      True\cf1\highlight2 
+\par \cf0\highlight0 Volumes:\cf1\highlight2 
+\par \cf0\highlight0   kubernetes-dashboard-certs:\cf1\highlight2 
+\par \cf0\highlight0     Type:        Secret (a volume populated by a Secret)\cf1\highlight2 
+\par \cf0\highlight0     SecretName:  kubernetes-dashboard-certs\cf1\highlight2 
+\par \cf0\highlight0     Optional:    false\cf1\highlight2 
+\par \cf0\highlight0   tmp-volume:\cf1\highlight2 
+\par \cf0\highlight0     Type:       EmptyDir (a temporary directory that shares a pod's lifetime)\cf1\highlight2 
+\par \cf0\highlight0     Medium:\cf1\highlight2 
+\par \cf0\highlight0     SizeLimit:  <unset>\cf1\highlight2 
+\par \cf0\highlight0   kubernetes-dashboard-token-m9dwc:\cf1\highlight2 
+\par \cf0\highlight0     Type:        Secret (a volume populated by a Secret)\cf1\highlight2 
+\par \cf0\highlight0     SecretName:  kubernetes-dashboard-token-m9dwc\cf1\highlight2 
+\par \cf0\highlight0     Optional:    false\cf1\highlight2 
+\par \cf0\highlight0 QoS Class:       BestEffort\cf1\highlight2 
+\par \cf0\highlight0 Node-Selectors:  <none>\cf1\highlight2 
+\par \cf0\highlight0 Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s\cf1\highlight2 
+\par \cf0\highlight0                  node.kubernetes.io/unreachable:NoExecute for 300s\cf1\highlight2 
+\par \cf0\highlight0 Events:          <none>\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# cat /etc/kubernetes/auth/auth.csv\cf1\highlight2 
+\par \cf0\highlight0 adminpass123,admin,admin,system:masters\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# service ufw status\cf1\highlight2 
+\par \cf0\highlight0\u9679? ufw.service - Uncomplicated firewall\cf1\highlight2 
+\par \cf0\highlight0    Loaded: loaded (/lib/systemd/system/ufw.service; disabled; vendor preset: enabled)\cf1\highlight2 
+\par \cf0\highlight0    Active: inactive (dead)\cf1\highlight2 
+\par \cf0\highlight0      Docs: man:ufw(8)\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# netstat -tulpn\cf1\highlight2 
+\par \cf0\highlight0 Active Internet connections (only servers)\cf1\highlight2 
+\par \cf0\highlight0 Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name\cf1\highlight2 
+\par \cf0\highlight0 tcp        0      0 127.0.0.1:33071         0.0.0.0:*               LISTEN      7517/containerd\cf1\highlight2 
+\par \cf0\highlight0 tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN      19323/systemd-resol\cf1\highlight2 
+\par \cf0\highlight0 tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      16297/sshd\cf1\highlight2 
+\par \cf0\highlight0 tcp        0      0 192.168.4.52:10010      0.0.0.0:*               LISTEN      29645/virtlet\cf1\highlight2 
+\par \cf0\highlight0 tcp        0      0 127.0.0.1:6010          0.0.0.0:*               LISTEN      2346/sshd: demo@pts\cf1\highlight2 
+\par \cf0\highlight0 tcp        0      0 127.0.0.1:6011          0.0.0.0:*               LISTEN      4864/sshd: demo@pts\cf1\highlight2 
+\par \cf0\highlight0 tcp        0      0 127.0.0.1:10248         0.0.0.0:*               LISTEN      25195/hyperkube\cf1\highlight2 
+\par \cf0\highlight0 tcp        0      0 127.0.0.1:10249         0.0.0.0:*               LISTEN      24950/hyperkube\cf1\highlight2 
+\par \cf0\highlight0 tcp        0      0 192.168.4.52:2379       0.0.0.0:*               LISTEN      24110/etcd\cf1\highlight2 
+\par \cf0\highlight0 tcp        0      0 127.0.0.1:2379          0.0.0.0:*               LISTEN      24110/etcd\cf1\highlight2 
+\par \cf0\highlight0 tcp        0      0 192.168.4.52:2380       0.0.0.0:*               LISTEN      24110/etcd\cf1\highlight2 
+\par \cf0\highlight0 tcp6       0      0 :::10255                :::*                    LISTEN      25195/hyperkube\cf1\highlight2 
+\par \cf0\highlight0 tcp6       0      0 :::10256                :::*                    LISTEN      24950/hyperkube\cf1\highlight2 
+\par \cf0\highlight0 tcp6       0      0 :::8080                 :::*                    LISTEN      24339/hyperkube\cf1\highlight2 
+\par \cf0\highlight0 tcp6       0      0 :::30001                :::*                    LISTEN      24950/hyperkube\cf1\highlight2 
+\par \cf0\highlight0 tcp6       0      0 :::10257                :::*                    LISTEN      24810/hyperkube\cf1\highlight2 
+\par \cf0\highlight0 tcp6       0      0 :::10259                :::*                    LISTEN      24911/hyperkube\cf1\highlight2 
+\par \cf0\highlight0 tcp6       0      0 :::22                   :::*                    LISTEN      16297/sshd\cf1\highlight2 
+\par \cf0\highlight0 tcp6       0      0 ::1:6010                :::*                    LISTEN      2346/sshd: demo@pts\cf1\highlight2 
+\par \cf0\highlight0 tcp6       0      0 ::1:6011                :::*                    LISTEN      4864/sshd: demo@pts\cf1\highlight2 
+\par \cf0\highlight0 tcp6       0      0 :::10250                :::*                    LISTEN      25195/hyperkube\cf1\highlight2 
+\par \cf0\highlight0 tcp6       0      0 :::10251                :::*                    LISTEN      24911/hyperkube\cf1\highlight2 
+\par \cf0\highlight0 tcp6       0      0 :::6443                 :::*                    LISTEN      24339/hyperkube\cf1\highlight2 
+\par \cf0\highlight0 tcp6       0      0 :::10252                :::*                    LISTEN      24810/hyperkube\cf1\highlight2 
+\par \cf0\highlight0 udp        0      0 127.0.0.53:53           0.0.0.0:*                           19323/systemd-resol\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# netstat -tulpn | grep 30001\cf1\highlight2 
+\par \cf0\highlight0 tcp6       0      0 :::\cf9 30001\cf0                 :::*                    LISTEN      24950/hyperkube\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh delete -f kubernetes-dashboard.yaml\cf1\highlight2 
+\par \cf0\highlight0 serviceaccount "kubernetes-dashboard" deleted\cf1\highlight2 
+\par \cf0\highlight0 service "kubernetes-dashboard" deleted\cf1\highlight2 
+\par \cf0\highlight0 secret "kubernetes-dashboard-csrf" deleted\cf1\highlight2 
+\par \cf0\highlight0 secret "kubernetes-dashboard-key-holder" deleted\cf1\highlight2 
+\par \cf0\highlight0 configmap "kubernetes-dashboard-settings" deleted\cf1\highlight2 
+\par \cf0\highlight0 role.rbac.authorization.k8s.io "kubernetes-dashboard" deleted\cf1\highlight2 
+\par \cf0\highlight0 clusterrole.rbac.authorization.k8s.io "kubernetes-dashboard" deleted\cf1\highlight2 
+\par \cf0\highlight0 rolebinding.rbac.authorization.k8s.io "kubernetes-dashboard" deleted\cf1\highlight2 
+\par \cf0\highlight0 clusterrolebinding.rbac.authorization.k8s.io "kubernetes-dashboard" deleted\cf1\highlight2 
+\par \cf0\highlight0 deployment.apps "kubernetes-dashboard" deleted\cf1\highlight2 
+\par \cf0\highlight0 service "dashboard-metrics-scraper" deleted\cf1\highlight2 
+\par \cf0\highlight0 deployment.apps "dashboard-metrics-scraper" deleted\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# vim kubernetes-dashboard.yaml\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh apply -f kubernetes-dashboard.yaml\cf1\highlight2 
+\par \cf0\highlight0 serviceaccount/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 service/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 secret/kubernetes-dashboard-csrf created\cf1\highlight2 
+\par \cf0\highlight0 secret/kubernetes-dashboard-key-holder created\cf1\highlight2 
+\par \cf0\highlight0 configmap/kubernetes-dashboard-settings created\cf1\highlight2 
+\par \cf0\highlight0 role.rbac.authorization.k8s.io/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 clusterrole.rbac.authorization.k8s.io/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 rolebinding.rbac.authorization.k8s.io/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 clusterrolebinding.rbac.authorization.k8s.io/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 deployment.apps/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 service/dashboard-metrics-scraper created\cf1\highlight2 
+\par \cf0\highlight0 deployment.apps/dashboard-metrics-scraper created\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE              NAME                                         HASHKEY               READY   STATUS    RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 kube-system            coredns-default-6ff7d98dc8-bqxsv             4388422226659059471   1/1     Running   0          7m11s\cf1\highlight2 
+\par \cf0\highlight0 kube-system            kube-dns-554c5866fc-m5qwm                    9148485099040653435   3/3     Running   0          7m11s\cf1\highlight2 
+\par \cf0\highlight0 kube-system            virtlet-55llc                                8136090957494979223   3/3     Running   1          7m1s\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   dashboard-metrics-scraper-6fbf748d6d-qq6j6   7459528110728687991   1/1     Running   0          17s\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-7946f59459-4z2kt        9208851773504450543   1/1     Running   0          17s\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-7946f59459-9pzjz        4917961250041184170   1/1     Running   0          17s\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh delete -f kubernetes-dashboard.yaml\cf1\highlight2 
+\par \cf0\highlight0 serviceaccount "kubernetes-dashboard" deleted\cf1\highlight2 
+\par \cf0\highlight0 service "kubernetes-dashboard" deleted\cf1\highlight2 
+\par \cf0\highlight0 secret "kubernetes-dashboard-csrf" deleted\cf1\highlight2 
+\par \cf0\highlight0 secret "kubernetes-dashboard-key-holder" deleted\cf1\highlight2 
+\par \cf0\highlight0 configmap "kubernetes-dashboard-settings" deleted\cf1\highlight2 
+\par \cf0\highlight0 role.rbac.authorization.k8s.io "kubernetes-dashboard" deleted\cf1\highlight2 
+\par \cf0\highlight0 clusterrole.rbac.authorization.k8s.io "kubernetes-dashboard" deleted\cf1\highlight2 
+\par \cf0\highlight0 rolebinding.rbac.authorization.k8s.io "kubernetes-dashboard" deleted\cf1\highlight2 
+\par \cf0\highlight0 clusterrolebinding.rbac.authorization.k8s.io "kubernetes-dashboard" deleted\cf1\highlight2 
+\par \cf0\highlight0 deployment.apps "kubernetes-dashboard" deleted\cf1\highlight2 
+\par \cf0\highlight0 service "dashboard-metrics-scraper" deleted\cf1\highlight2 
+\par \cf0\highlight0 deployment.apps "dashboard-metrics-scraper" deleted\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# vim kubernetes-dashboard.yaml\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh apply -f kubernetes-dashboard.yaml\cf1\highlight2 
+\par \cf0\highlight0 serviceaccount/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 service/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 secret/kubernetes-dashboard-csrf created\cf1\highlight2 
+\par \cf0\highlight0 secret/kubernetes-dashboard-key-holder created\cf1\highlight2 
+\par \cf0\highlight0 configmap/kubernetes-dashboard-settings created\cf1\highlight2 
+\par \cf0\highlight0 role.rbac.authorization.k8s.io/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 clusterrole.rbac.authorization.k8s.io/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 rolebinding.rbac.authorization.k8s.io/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 clusterrolebinding.rbac.authorization.k8s.io/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 deployment.apps/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 service/dashboard-metrics-scraper created\cf1\highlight2 
+\par \cf0\highlight0 deployment.apps/dashboard-metrics-scraper created\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE              NAME                                         HASHKEY               READY   STATUS    RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 kube-system            coredns-default-6ff7d98dc8-bqxsv             4388422226659059471   1/1     Running   0          9m32s\cf1\highlight2 
+\par \cf0\highlight0 kube-system            kube-dns-554c5866fc-m5qwm                    9148485099040653435   3/3     Running   0          9m32s\cf1\highlight2 
+\par \cf0\highlight0 kube-system            virtlet-55llc                                8136090957494979223   3/3     Running   1          9m22s\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   dashboard-metrics-scraper-6fbf748d6d-79vm5   4471409260436706721   1/1     Running   0          40s\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-c7d68847c-jgwq2         3008293018702869775   1/1     Running   0          40s\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-c7d68847c-r8xnr         4864211639003488579   1/1     Running   1          40s\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# vim kubernetes-dashboard.yaml\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh apply -f kubernetes-dashboard.yaml\cf1\highlight2 
+\par \cf0\highlight0 serviceaccount/kubernetes-dashboard unchanged\cf1\highlight2 
+\par \cf0\highlight0 service/kubernetes-dashboard unchanged\cf1\highlight2 
+\par \cf0\highlight0 secret/kubernetes-dashboard-csrf configured\cf1\highlight2 
+\par \cf0\highlight0 Warning: kubectl apply should be used on resource created by either kubectl create --save-config or kubectl apply\cf1\highlight2 
+\par \cf0\highlight0 secret/kubernetes-dashboard-key-holder configured\cf1\highlight2 
+\par \cf0\highlight0 configmap/kubernetes-dashboard-settings unchanged\cf1\highlight2 
+\par \cf0\highlight0 role.rbac.authorization.k8s.io/kubernetes-dashboard unchanged\cf1\highlight2 
+\par \cf0\highlight0 clusterrole.rbac.authorization.k8s.io/kubernetes-dashboard unchanged\cf1\highlight2 
+\par \cf0\highlight0 rolebinding.rbac.authorization.k8s.io/kubernetes-dashboard unchanged\cf1\highlight2 
+\par \cf0\highlight0 clusterrolebinding.rbac.authorization.k8s.io/kubernetes-dashboard unchanged\cf1\highlight2 
+\par \cf0\highlight0 deployment.apps/kubernetes-dashboard configured\cf1\highlight2 
+\par \cf0\highlight0 service/dashboard-metrics-scraper unchanged\cf1\highlight2 
+\par \cf0\highlight0 deployment.apps/dashboard-metrics-scraper unchanged\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE              NAME                                         HASHKEY               READY   STATUS              RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 kube-system            coredns-default-6ff7d98dc8-bqxsv             4388422226659059471   1/1     Running             0          10m\cf1\highlight2 
+\par \cf0\highlight0 kube-system            kube-dns-554c5866fc-m5qwm                    9148485099040653435   3/3     Running             0          10m\cf1\highlight2 
+\par \cf0\highlight0 kube-system            virtlet-55llc                                8136090957494979223   3/3     Running             1          9m51s\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   dashboard-metrics-scraper-6fbf748d6d-79vm5   4471409260436706721   1/1     Running             0          69s\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-7476cc5d45-6749t        3491691095025253345   0/1     ContainerCreating   0          6s\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-c7d68847c-jgwq2         3008293018702869775   1/1     Running             0          69s\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-c7d68847c-r8xnr         4864211639003488579   1/1     Running             1          69s\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# vim hack/\cf1\highlight2 
+\par \cf0\highlight0 Display all 128 possibilities? (y or n)\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# vim hack/lib/common\cf1\highlight2 
+\par \cf0\highlight0 common.sh           common-var-init.sh\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# vim hack/lib/common.sh\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ls /etc/kubernetes/auth/auth.csv\cf1\highlight2 
+\par \cf0\highlight0 /etc/kubernetes/auth/auth.csv\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ll /etc/kubernetes/auth/auth.csv\cf1\highlight2 
+\par \cf0\highlight0 -rw-r--r-- 1 root root 40 Dec 15 09:05 /etc/kubernetes/auth/auth.csv\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# chmod +x  /etc/kubernetes/auth/auth.csv\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# cat  /etc/kubernetes/auth/auth.csv\cf1\highlight2 
+\par \cf0\highlight0 adminpass123,admin,admin,system:masters\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh create ns kubernetes-dashboard\cf1\highlight2 
+\par \cf0\highlight0 namespace/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh create secret generic kubernetes-dashboard-certs --from-file=$HOME/dashboard.key --from-file=$HOME/dashboard.crt -n kubernetes-dashboard\cf1\highlight2 
+\par \cf0\highlight0 secret/kubernetes-dashboard-certs created\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh apply -f kubernetes-dashboard.yaml\cf1\highlight2 
+\par \cf0\highlight0 serviceaccount/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 service/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 secret/kubernetes-dashboard-csrf created\cf1\highlight2 
+\par \cf0\highlight0 secret/kubernetes-dashboard-key-holder created\cf1\highlight2 
+\par \cf0\highlight0 configmap/kubernetes-dashboard-settings created\cf1\highlight2 
+\par \cf0\highlight0 role.rbac.authorization.k8s.io/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 clusterrole.rbac.authorization.k8s.io/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 rolebinding.rbac.authorization.k8s.io/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 clusterrolebinding.rbac.authorization.k8s.io/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 deployment.apps/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 service/dashboard-metrics-scraper created\cf1\highlight2 
+\par \cf0\highlight0 deployment.apps/dashboard-metrics-scraper created\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE              NAME                                         HASHKEY               READY   STATUS              RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 kube-system            coredns-default-6ff7d98dc8-78kgm             8904360619173429499   0/1     ContainerCreating   0          14s\cf1\highlight2 
+\par \cf0\highlight0 kube-system            kube-dns-554c5866fc-z6grs                    3381408229835117770   0/3     ContainerCreating   0          14s\cf1\highlight2 
+\par \cf0\highlight0 kube-system            virtlet-ttc8h                                2704605441291724176   2/3     Running             0          6s\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   dashboard-metrics-scraper-6fbf748d6d-j556r   6984165448527716973   0/1     ContainerCreating   0          14s\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-7796b47785-dp9jt        2162730867994857645   0/1     ContainerCreating   0          14s\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-7796b47785-rdcrz        6468895051886165562   0/1     ContainerCreating   0          14s\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE              NAME                                         HASHKEY               READY   STATUS              RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 kube-system            coredns-default-6ff7d98dc8-78kgm             8904360619173429499   0/1     ContainerCreating   0          20s\cf1\highlight2 
+\par \cf0\highlight0 kube-system            kube-dns-554c5866fc-z6grs                    3381408229835117770   2/3     Running             0          20s\cf1\highlight2 
+\par \cf0\highlight0 kube-system            virtlet-ttc8h                                2704605441291724176   3/3     Running             0          12s\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   dashboard-metrics-scraper-6fbf748d6d-j556r   6984165448527716973   1/1     Running             0          20s\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-7796b47785-dp9jt        2162730867994857645   1/1     Running             0          20s\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-7796b47785-rdcrz        6468895051886165562   0/1     ContainerCreating   0          20s\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE              NAME                                         HASHKEY               READY   STATUS              RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 kube-system            coredns-default-6ff7d98dc8-78kgm             8904360619173429499   0/1     ContainerCreating   0          21s\cf1\highlight2 
+\par \cf0\highlight0 kube-system            kube-dns-554c5866fc-z6grs                    3381408229835117770   2/3     Running             0          21s\cf1\highlight2 
+\par \cf0\highlight0 kube-system            virtlet-ttc8h                                2704605441291724176   3/3     Running             0          13s\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   dashboard-metrics-scraper-6fbf748d6d-j556r   6984165448527716973   1/1     Running             0          21s\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-7796b47785-dp9jt        2162730867994857645   1/1     Running             0          21s\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-7796b47785-rdcrz        6468895051886165562   0/1     ContainerCreating   0          21s\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE              NAME                                         HASHKEY               READY   STATUS              RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 kube-system            coredns-default-6ff7d98dc8-78kgm             8904360619173429499   0/1     ContainerCreating   0          22s\cf1\highlight2 
+\par \cf0\highlight0 kube-system            kube-dns-554c5866fc-z6grs                    3381408229835117770   3/3     Running             0          22s\cf1\highlight2 
+\par \cf0\highlight0 kube-system            virtlet-ttc8h                                2704605441291724176   3/3     Running             0          14s\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   dashboard-metrics-scraper-6fbf748d6d-j556r   6984165448527716973   1/1     Running             0          22s\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-7796b47785-dp9jt        2162730867994857645   1/1     Running             0          22s\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-7796b47785-rdcrz        6468895051886165562   0/1     ContainerCreating   0          22s\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE              NAME                                         HASHKEY               READY   STATUS              RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 kube-system            coredns-default-6ff7d98dc8-78kgm             8904360619173429499   0/1     ContainerCreating   0          24s\cf1\highlight2 
+\par \cf0\highlight0 kube-system            kube-dns-554c5866fc-z6grs                    3381408229835117770   3/3     Running             0          24s\cf1\highlight2 
+\par \cf0\highlight0 kube-system            virtlet-ttc8h                                2704605441291724176   3/3     Running             0          16s\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   dashboard-metrics-scraper-6fbf748d6d-j556r   6984165448527716973   1/1     Running             0          24s\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-7796b47785-dp9jt        2162730867994857645   1/1     Running             0          24s\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-7796b47785-rdcrz        6468895051886165562   0/1     ContainerCreating   0          24s\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE              NAME                                         HASHKEY               READY   STATUS    RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 kube-system            coredns-default-6ff7d98dc8-78kgm             8904360619173429499   0/1     Running   0          29s\cf1\highlight2 
+\par \cf0\highlight0 kube-system            kube-dns-554c5866fc-z6grs                    3381408229835117770   3/3     Running   0          29s\cf1\highlight2 
+\par \cf0\highlight0 kube-system            virtlet-ttc8h                                2704605441291724176   3/3     Running   0          21s\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   dashboard-metrics-scraper-6fbf748d6d-j556r   6984165448527716973   1/1     Running   0          29s\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-7796b47785-dp9jt        2162730867994857645   1/1     Running   0          29s\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-7796b47785-rdcrz        6468895051886165562   1/1     Running   0          29s\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# vi /hack/lib/common.sh\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# cd ./hack/lib/common.sh\cf1\highlight2 
+\par \cf0\highlight0 -bash: cd: ./hack/lib/common.sh: Not a directory\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# vi ./hack/lib/common.sh\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# vi ./hack/lib/common.sh\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos#\cf1\highlight2 
+\par \pard\cf0\highlight0\f2 
+\par }
+ 
