@@ -1,4 +1,4 @@
-# SUMMARY
+# Arktos cluster without mizar (Community code)
 
 Deployment Infra | Deployments Counts | Success | Failures | Comments
 --- | --- | --- | --- | ---
