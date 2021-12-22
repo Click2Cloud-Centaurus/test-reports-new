@@ -1,0 +1,1689 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fmodern Consolas;}{\f1\fmodern\fcharset0 Consolas;}{\f2\fnil\fcharset129 Courier New;}}
+{\colortbl ;\red20\green20\blue20;\red142\green142\blue142;\red16\green158\blue98;\red148\green146\blue12;\red170\green51\blue170;\red56\green136\blue159;\red170\green64\blue64;\red85\green85\blue85;\red170\green85\blue85;\red9\green118\blue72;}
+\viewkind4\uc1\pard\f0\fs20     \u9484?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9488?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?                 \cf3\f1\bullet  MobaXterm Personal Edition v21.4 \bullet\cf0\f0                  \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?               \cf4 (SSH client, X server and network tools)\cf0                \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?                                                                      \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474? \u8594? SSH session to \cf5 root@192.168.1.211                        \cf0           \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  Direct SSH      :  \cf3\f0 v\cf0                                              \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  SSH compression :  \cf3\f0 v\cf0                                              \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  SSH-browser     :  \cf3\f0 v\cf0                                              \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  X11-forwarding  :  \cf3\f0 v\cf0   (remote display is forwarded through SSH)  \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?                                                                      \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474? \u8594? For more info, ctrl+click on \cf6\ul help\cf0\ulnone  or visit our \cf6\ul website\cf0\ulnone .            \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9492?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9496?\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 4.15.0-159-generic x86_64)\cf1\highlight2 
+\par 
+\par \cf0\highlight0  * Documentation:  https://help.ubuntu.com\cf1\highlight2 
+\par \cf0\highlight0  * Management:     https://landscape.canonical.com\cf1\highlight2 
+\par \cf0\highlight0  * Support:        https://ubuntu.com/advantage\cf1\highlight2 
+\par 
+\par \cf0\highlight0   System information as of Tue Dec 21 09:49:08 UTC 2021\cf1\highlight2 
+\par 
+\par \cf0\highlight0   System load:  1.08              Processes:             360\cf1\highlight2 
+\par \cf0\highlight0   Usage of /:   9.1% of 72.83GB   Users logged in:       0\cf1\highlight2 
+\par \cf0\highlight0   Memory usage: 3%                IP address for ens160: 192.168.1.211\cf1\highlight2 
+\par \cf0\highlight0   Swap usage:   0%\cf1\highlight2 
+\par 
+\par \cf0\highlight0  * Super-optimized for small spaces - read how we shrank the memory\cf1\highlight2 
+\par \cf0\highlight0    footprint of MicroK8s to make it the smallest full K8s around.\cf1\highlight2 
+\par 
+\par \cf0\highlight0    https://ubuntu.com/blog/microk8s-memory-optimisation\cf1\highlight2 
+\par 
+\par \cf0\highlight0  * Canonical Livepatch is available for installation.\cf1\highlight2 
+\par \cf0\highlight0    - Reduce system reboots and improve kernel security. Activate at:\cf1\highlight2 
+\par \cf0\highlight0      https://ubuntu.com/livepatch\cf1\highlight2 
+\par 
+\par \cf0\highlight0 37 updates can be applied immediately.\cf1\highlight2 
+\par \cf0\highlight0 18 of these updates are standard security updates.\cf1\highlight2 
+\par \cf0\highlight0 To see these additional updates run: apt list --upgradable\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Last login: Tue Nov  2 09:03:47 2021\cf1\highlight2 
+\par \cf0\highlight0 root@knodeC:~# vi /etc/hostname\cf1\highlight2 
+\par \cf0\highlight0 root@knodeC:~# vi /etc/hosts\cf1\highlight2 
+\par \cf0\highlight0 root@knodeC:~# init 6\cf1\highlight2 
+\par 
+\par \cf7\highlight0 Remote side unexpectedly closed network connection\cf1\highlight2 
+\par 
+\par \cf8\highlight0\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\cf1\highlight2 
+\par 
+\par \cf7\highlight0 Session stopped\cf1\highlight2 
+\par \cf0\highlight0     - Press \cf5 <return>\cf0  to exit tab\cf1\highlight2 
+\par \cf0\highlight0     - Press \cf5 R\cf0  to restart session\cf1\highlight2 
+\par \cf0\highlight0     - Press \cf5 S\cf0  to save terminal output to file\cf1\highlight2 
+\par \cf0\highlight0     \u9484?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9488?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?                 \cf3\f1\bullet  MobaXterm Personal Edition v21.4 \bullet\cf0\f0                  \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?               \cf4 (SSH client, X server and network tools)\cf0                \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?                                                                      \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474? \u8594? SSH session to \cf5 root@192.168.1.211                        \cf0           \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  Direct SSH      :  \cf3\f0 v\cf0                                              \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  SSH compression :  \cf3\f0 v\cf0                                              \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  SSH-browser     :  \cf3\f0 v\cf0                                              \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  X11-forwarding  :  \cf3\f0 v\cf0   (remote display is forwarded through SSH)  \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?                                                                      \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474? \u8594? For more info, ctrl+click on \cf6\ul help\cf0\ulnone  or visit our \cf6\ul website\cf0\ulnone .            \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9492?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9496?\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 4.15.0-163-generic x86_64)\cf1\highlight2 
+\par 
+\par \cf0\highlight0  * Documentation:  https://help.ubuntu.com\cf1\highlight2 
+\par \cf0\highlight0  * Management:     https://landscape.canonical.com\cf1\highlight2 
+\par \cf0\highlight0  * Support:        https://ubuntu.com/advantage\cf1\highlight2 
+\par 
+\par \cf0\highlight0   System information as of Tue Dec 21 09:53:23 UTC 2021\cf1\highlight2 
+\par 
+\par \cf0\highlight0   System load:  1.15              Processes:             329\cf1\highlight2 
+\par \cf0\highlight0   Usage of /:   8.4% of 72.83GB   Users logged in:       0\cf1\highlight2 
+\par \cf0\highlight0   Memory usage: 1%                IP address for ens160: 192.168.1.211\cf1\highlight2 
+\par \cf0\highlight0   Swap usage:   0%\cf1\highlight2 
+\par 
+\par \cf0\highlight0  * Super-optimized for small spaces - read how we shrank the memory\cf1\highlight2 
+\par \cf0\highlight0    footprint of MicroK8s to make it the smallest full K8s around.\cf1\highlight2 
+\par 
+\par \cf0\highlight0    https://ubuntu.com/blog/microk8s-memory-optimisation\cf1\highlight2 
+\par 
+\par \cf0\highlight0  * Canonical Livepatch is available for installation.\cf1\highlight2 
+\par \cf0\highlight0    - Reduce system reboots and improve kernel security. Activate at:\cf1\highlight2 
+\par \cf0\highlight0      https://ubuntu.com/livepatch\cf1\highlight2 
+\par 
+\par \cf0\highlight0 20 updates can be applied immediately.\cf1\highlight2 
+\par \cf0\highlight0 1 of these updates is a standard security update.\cf1\highlight2 
+\par \cf0\highlight0 To see these additional updates run: apt list --upgradable\cf1\highlight2 
+\par 
+\par \cf0\highlight0 New release '20.04.3 LTS' available.\cf1\highlight2 
+\par \cf0\highlight0 Run 'do-release-upgrade' to upgrade to it.\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Last login: Tue Dec 21 09:49:11 2021 from 192.168.1.1\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:~# sudo apt -y update && sudo apt -y install make && sudo apt -y install gcc && sudo apt -y install jq\cf1\highlight2 
+\par \cf0\highlight0 Hit:1 http://in.archive.ubuntu.com/ubuntu bionic InRelease\cf1\highlight2 
+\par \cf0\highlight0 Hit:2 http://in.archive.ubuntu.com/ubuntu bionic-updates InRelease\cf1\highlight2 
+\par \cf0\highlight0 Hit:3 http://in.archive.ubuntu.com/ubuntu bionic-backports InRelease\cf1\highlight2 
+\par \cf0\highlight0 Hit:4 http://in.archive.ubuntu.com/ubuntu bionic-security InRelease\cf1\highlight2 
+\par \cf0\highlight0 Reading package lists... Done\cf1\highlight2 
+\par \cf0\highlight0 Building dependency tree\cf1\highlight2 
+\par \cf0\highlight0 Reading state information... Done\cf1\highlight2 
+\par \cf0\highlight0 16 packages can be upgraded. Run 'apt list --upgradable' to see them.\cf1\highlight2 
+\par \cf0\highlight0 Reading package lists... Done\cf1\highlight2 
+\par \cf0\highlight0 Building dependency tree\cf1\highlight2 
+\par \cf0\highlight0 Reading state information... Done\cf1\highlight2 
+\par \cf0\highlight0 Suggested packages:\cf1\highlight2 
+\par \cf0\highlight0   make-doc\cf1\highlight2 
+\par \cf0\highlight0 The following NEW packages will be installed:\cf1\highlight2 
+\par \cf0\highlight0   make\cf1\highlight2 
+\par \cf0\highlight0 0 upgraded, 1 newly installed, 0 to remove and 16 not upgraded.\cf1\highlight2 
+\par \cf0\highlight0 Need to get 154 kB of archives.\cf1\highlight2 
+\par \cf0\highlight0 After this operation, 381 kB of additional disk space will be used.\cf1\highlight2 
+\par \cf0\highlight0 Get:1 http://in.archive.ubuntu.com/ubuntu bionic/main amd64 make amd64 4.1-9.1ubuntu1 [154 kB]\cf1\highlight2 
+\par \cf0\highlight0 Fetched 154 kB in 0s (699 kB/s)\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package make.\cf1\highlight2 
+\par \cf0\highlight0 (Reading database ... 102752 files and directories currently installed.)\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../make_4.1-9.1ubuntu1_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking make (4.1-9.1ubuntu1) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up make (4.1-9.1ubuntu1) ...\cf1\highlight2 
+\par \cf0\highlight0 Processing triggers for man-db (2.8.3-2ubuntu0.1) ...\cf1\highlight2 
+\par \cf0\highlight0 Reading package lists... Done\cf1\highlight2 
+\par \cf0\highlight0 Building dependency tree\cf1\highlight2 
+\par \cf0\highlight0 Reading state information... Done\cf1\highlight2 
+\par \cf0\highlight0 The following additional packages will be installed:\cf1\highlight2 
+\par \cf0\highlight0   binutils binutils-common binutils-x86-64-linux-gnu cpp cpp-7 gcc-7 gcc-7-base libasan4 libatomic1 libbinutils libc-dev-bin libc6-dev libcc1-0 libcilkrts5\cf1\highlight2 
+\par \cf0\highlight0   libgcc-7-dev libgomp1 libisl19 libitm1 liblsan0 libmpc3 libmpx2 libquadmath0 libtsan0 libubsan0 linux-libc-dev manpages-dev\cf1\highlight2 
+\par \cf0\highlight0 Suggested packages:\cf1\highlight2 
+\par \cf0\highlight0   binutils-doc cpp-doc gcc-7-locales gcc-multilib autoconf automake libtool flex bison gdb gcc-doc gcc-7-multilib gcc-7-doc libgcc1-dbg libgomp1-dbg libitm1-dbg\cf1\highlight2 
+\par \cf0\highlight0   libatomic1-dbg libasan4-dbg liblsan0-dbg libtsan0-dbg libubsan0-dbg libcilkrts5-dbg libmpx2-dbg libquadmath0-dbg glibc-doc\cf1\highlight2 
+\par \cf0\highlight0 The following NEW packages will be installed:\cf1\highlight2 
+\par \cf0\highlight0   binutils binutils-common binutils-x86-64-linux-gnu cpp cpp-7 gcc gcc-7 gcc-7-base libasan4 libatomic1 libbinutils libc-dev-bin libc6-dev libcc1-0 libcilkrts5\cf1\highlight2 
+\par \cf0\highlight0   libgcc-7-dev libgomp1 libisl19 libitm1 liblsan0 libmpc3 libmpx2 libquadmath0 libtsan0 libubsan0 linux-libc-dev manpages-dev\cf1\highlight2 
+\par \cf0\highlight0 0 upgraded, 27 newly installed, 0 to remove and 16 not upgraded.\cf1\highlight2 
+\par \cf0\highlight0 Need to get 30.6 MB of archives.\cf1\highlight2 
+\par \cf0\highlight0 After this operation, 118 MB of additional disk space will be used.\cf1\highlight2 
+\par \cf0\highlight0 Get:1 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 binutils-common amd64 2.30-21ubuntu1~18.04.7 [197 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:2 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libbinutils amd64 2.30-21ubuntu1~18.04.7 [489 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:3 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 binutils-x86-64-linux-gnu amd64 2.30-21ubuntu1~18.04.7 [1,839 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:4 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 binutils amd64 2.30-21ubuntu1~18.04.7 [3,388 B]\cf1\highlight2 
+\par \cf0\highlight0 Get:5 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 gcc-7-base amd64 7.5.0-3ubuntu1~18.04 [18.3 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:6 http://in.archive.ubuntu.com/ubuntu bionic/main amd64 libisl19 amd64 0.19-1 [551 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:7 http://in.archive.ubuntu.com/ubuntu bionic/main amd64 libmpc3 amd64 1.1.0-1 [40.8 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:8 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 cpp-7 amd64 7.5.0-3ubuntu1~18.04 [8,591 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:9 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 cpp amd64 4:7.4.0-1ubuntu2.3 [27.7 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:10 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libcc1-0 amd64 8.4.0-1ubuntu1~18.04 [39.4 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:11 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libgomp1 amd64 8.4.0-1ubuntu1~18.04 [76.5 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:12 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libitm1 amd64 8.4.0-1ubuntu1~18.04 [27.9 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:13 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libatomic1 amd64 8.4.0-1ubuntu1~18.04 [9,192 B]\cf1\highlight2 
+\par \cf0\highlight0 Get:14 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libasan4 amd64 7.5.0-3ubuntu1~18.04 [358 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:15 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 liblsan0 amd64 8.4.0-1ubuntu1~18.04 [133 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:16 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libtsan0 amd64 8.4.0-1ubuntu1~18.04 [288 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:17 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libubsan0 amd64 7.5.0-3ubuntu1~18.04 [126 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:18 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libcilkrts5 amd64 7.5.0-3ubuntu1~18.04 [42.5 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:19 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libmpx2 amd64 8.4.0-1ubuntu1~18.04 [11.6 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:20 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libquadmath0 amd64 8.4.0-1ubuntu1~18.04 [134 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:21 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libgcc-7-dev amd64 7.5.0-3ubuntu1~18.04 [2,378 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:22 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 gcc-7 amd64 7.5.0-3ubuntu1~18.04 [9,381 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:23 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 gcc amd64 4:7.4.0-1ubuntu2.3 [5,184 B]\cf1\highlight2 
+\par \cf0\highlight0 Get:24 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libc-dev-bin amd64 2.27-3ubuntu1.4 [71.8 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:25 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 linux-libc-dev amd64 4.15.0-163.171 [994 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:26 http://in.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libc6-dev amd64 2.27-3ubuntu1.4 [2,585 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:27 http://in.archive.ubuntu.com/ubuntu bionic/main amd64 manpages-dev all 4.15-1 [2,217 kB]\cf1\highlight2 
+\par \cf0\highlight0 Fetched 30.6 MB in 3s (9,909 kB/s)\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package binutils-common:amd64.\cf1\highlight2 
+\par \cf0\highlight0 (Reading database ... 102768 files and directories currently installed.)\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../00-binutils-common_2.30-21ubuntu1~18.04.7_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking binutils-common:amd64 (2.30-21ubuntu1~18.04.7) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package libbinutils:amd64.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../01-libbinutils_2.30-21ubuntu1~18.04.7_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking libbinutils:amd64 (2.30-21ubuntu1~18.04.7) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package binutils-x86-64-linux-gnu.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../02-binutils-x86-64-linux-gnu_2.30-21ubuntu1~18.04.7_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking binutils-x86-64-linux-gnu (2.30-21ubuntu1~18.04.7) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package binutils.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../03-binutils_2.30-21ubuntu1~18.04.7_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking binutils (2.30-21ubuntu1~18.04.7) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package gcc-7-base:amd64.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../04-gcc-7-base_7.5.0-3ubuntu1~18.04_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking gcc-7-base:amd64 (7.5.0-3ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package libisl19:amd64.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../05-libisl19_0.19-1_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking libisl19:amd64 (0.19-1) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package libmpc3:amd64.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../06-libmpc3_1.1.0-1_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking libmpc3:amd64 (1.1.0-1) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package cpp-7.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../07-cpp-7_7.5.0-3ubuntu1~18.04_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking cpp-7 (7.5.0-3ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package cpp.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../08-cpp_4%3a7.4.0-1ubuntu2.3_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking cpp (4:7.4.0-1ubuntu2.3) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package libcc1-0:amd64.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../09-libcc1-0_8.4.0-1ubuntu1~18.04_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking libcc1-0:amd64 (8.4.0-1ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package libgomp1:amd64.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../10-libgomp1_8.4.0-1ubuntu1~18.04_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking libgomp1:amd64 (8.4.0-1ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package libitm1:amd64.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../11-libitm1_8.4.0-1ubuntu1~18.04_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking libitm1:amd64 (8.4.0-1ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package libatomic1:amd64.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../12-libatomic1_8.4.0-1ubuntu1~18.04_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking libatomic1:amd64 (8.4.0-1ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package libasan4:amd64.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../13-libasan4_7.5.0-3ubuntu1~18.04_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking libasan4:amd64 (7.5.0-3ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package liblsan0:amd64.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../14-liblsan0_8.4.0-1ubuntu1~18.04_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking liblsan0:amd64 (8.4.0-1ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package libtsan0:amd64.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../15-libtsan0_8.4.0-1ubuntu1~18.04_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking libtsan0:amd64 (8.4.0-1ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package libubsan0:amd64.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../16-libubsan0_7.5.0-3ubuntu1~18.04_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking libubsan0:amd64 (7.5.0-3ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package libcilkrts5:amd64.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../17-libcilkrts5_7.5.0-3ubuntu1~18.04_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking libcilkrts5:amd64 (7.5.0-3ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package libmpx2:amd64.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../18-libmpx2_8.4.0-1ubuntu1~18.04_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking libmpx2:amd64 (8.4.0-1ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package libquadmath0:amd64.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../19-libquadmath0_8.4.0-1ubuntu1~18.04_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking libquadmath0:amd64 (8.4.0-1ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package libgcc-7-dev:amd64.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../20-libgcc-7-dev_7.5.0-3ubuntu1~18.04_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking libgcc-7-dev:amd64 (7.5.0-3ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package gcc-7.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../21-gcc-7_7.5.0-3ubuntu1~18.04_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking gcc-7 (7.5.0-3ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package gcc.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../22-gcc_4%3a7.4.0-1ubuntu2.3_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking gcc (4:7.4.0-1ubuntu2.3) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package libc-dev-bin.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../23-libc-dev-bin_2.27-3ubuntu1.4_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking libc-dev-bin (2.27-3ubuntu1.4) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package linux-libc-dev:amd64.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../24-linux-libc-dev_4.15.0-163.171_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking linux-libc-dev:amd64 (4.15.0-163.171) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package libc6-dev:amd64.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../25-libc6-dev_2.27-3ubuntu1.4_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking libc6-dev:amd64 (2.27-3ubuntu1.4) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package manpages-dev.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../26-manpages-dev_4.15-1_all.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking manpages-dev (4.15-1) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up libquadmath0:amd64 (8.4.0-1ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up libgomp1:amd64 (8.4.0-1ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up libatomic1:amd64 (8.4.0-1ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up libcc1-0:amd64 (8.4.0-1ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up libtsan0:amd64 (8.4.0-1ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up linux-libc-dev:amd64 (4.15.0-163.171) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up liblsan0:amd64 (8.4.0-1ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up gcc-7-base:amd64 (7.5.0-3ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up binutils-common:amd64 (2.30-21ubuntu1~18.04.7) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up libmpx2:amd64 (8.4.0-1ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up libmpc3:amd64 (1.1.0-1) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up libc-dev-bin (2.27-3ubuntu1.4) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up manpages-dev (4.15-1) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up libc6-dev:amd64 (2.27-3ubuntu1.4) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up libitm1:amd64 (8.4.0-1ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up libisl19:amd64 (0.19-1) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up libasan4:amd64 (7.5.0-3ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up libbinutils:amd64 (2.30-21ubuntu1~18.04.7) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up libcilkrts5:amd64 (7.5.0-3ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up libubsan0:amd64 (7.5.0-3ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up libgcc-7-dev:amd64 (7.5.0-3ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up cpp-7 (7.5.0-3ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up binutils-x86-64-linux-gnu (2.30-21ubuntu1~18.04.7) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up cpp (4:7.4.0-1ubuntu2.3) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up binutils (2.30-21ubuntu1~18.04.7) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up gcc-7 (7.5.0-3ubuntu1~18.04) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up gcc (4:7.4.0-1ubuntu2.3) ...\cf1\highlight2 
+\par \cf0\highlight0 Processing triggers for man-db (2.8.3-2ubuntu0.1) ...\cf1\highlight2 
+\par \cf0\highlight0 Processing triggers for libc-bin (2.27-3ubuntu1.4) ...\cf1\highlight2 
+\par \cf0\highlight0 Reading package lists... Done\cf1\highlight2 
+\par \cf0\highlight0 Building dependency tree\cf1\highlight2 
+\par \cf0\highlight0 Reading state information... Done\cf1\highlight2 
+\par \cf0\highlight0 The following additional packages will be installed:\cf1\highlight2 
+\par \cf0\highlight0   libjq1 libonig4\cf1\highlight2 
+\par \cf0\highlight0 The following NEW packages will be installed:\cf1\highlight2 
+\par \cf0\highlight0   jq libjq1 libonig4\cf1\highlight2 
+\par \cf0\highlight0 0 upgraded, 3 newly installed, 0 to remove and 16 not upgraded.\cf1\highlight2 
+\par \cf0\highlight0 Need to get 276 kB of archives.\cf1\highlight2 
+\par \cf0\highlight0 After this operation, 930 kB of additional disk space will be used.\cf1\highlight2 
+\par \cf0\highlight0 Get:1 http://in.archive.ubuntu.com/ubuntu bionic/universe amd64 libonig4 amd64 6.7.0-1 [119 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:2 http://in.archive.ubuntu.com/ubuntu bionic/universe amd64 libjq1 amd64 1.5+dfsg-2 [111 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:3 http://in.archive.ubuntu.com/ubuntu bionic/universe amd64 jq amd64 1.5+dfsg-2 [45.6 kB]\cf1\highlight2 
+\par \cf0\highlight0 Fetched 276 kB in 0s (862 kB/s)\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package libonig4:amd64.\cf1\highlight2 
+\par \cf0\highlight0 (Reading database ... 106949 files and directories currently installed.)\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../libonig4_6.7.0-1_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking libonig4:amd64 (6.7.0-1) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package libjq1:amd64.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../libjq1_1.5+dfsg-2_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking libjq1:amd64 (1.5+dfsg-2) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package jq.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../jq_1.5+dfsg-2_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking jq (1.5+dfsg-2) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up libonig4:amd64 (6.7.0-1) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up libjq1:amd64 (1.5+dfsg-2) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up jq (1.5+dfsg-2) ...\cf1\highlight2 
+\par \cf0\highlight0 Processing triggers for man-db (2.8.3-2ubuntu0.1) ...\cf1\highlight2 
+\par \cf0\highlight0 Processing triggers for libc-bin (2.27-3ubuntu1.4) ...\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:~# sudo modprobe br_netfilter\cf1\highlight2 
+\par \cf0\highlight0 cat <<EOF | sudo tee /etc/sysctl.d/k8s.conf\cf1\highlight2 
+\par \cf0\highlight0 net.bridge.bridge-nf-call-ip6tables = 1\cf1\highlight2 
+\par \cf0\highlight0 net.bridge.bridge-nf-call-iptables = 1\cf1\highlight2 
+\par \cf0\highlight0 EOF\cf1\highlight2 
+\par \cf0\highlight0 sudo sysctl --systemroot@node-e:~# lsmod | grep br_netfilter\cf1\highlight2 
+\par \cf9\highlight0 br_netfilter\cf0            24576  0\cf1\highlight2 
+\par \cf0\highlight0 bridge                155648  1 \cf9 br_netfilter\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:~#\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:~# cat <<EOF | sudo tee /etc/modules-load.d/k8s.conf\cf1\highlight2 
+\par \cf0\highlight0 > br_netfilter\cf1\highlight2 
+\par \cf0\highlight0 > EOF\cf1\highlight2 
+\par \cf0\highlight0 br_netfilter\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:~#\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:~# cat <<EOF | sudo tee /etc/sysctl.d/k8s.conf\cf1\highlight2 
+\par \cf0\highlight0 > net.bridge.bridge-nf-call-ip6tables = 1\cf1\highlight2 
+\par \cf0\highlight0 > net.bridge.bridge-nf-call-iptables = 1\cf1\highlight2 
+\par \cf0\highlight0 > EOF\cf1\highlight2 
+\par \cf0\highlight0 net.bridge.bridge-nf-call-ip6tables = 1\cf1\highlight2 
+\par \cf0\highlight0 net.bridge.bridge-nf-call-iptables = 1\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:~# sudo sysctl --system\cf1\highlight2 
+\par \cf0\highlight0 * Applying /etc/sysctl.d/10-console-messages.conf ...\cf1\highlight2 
+\par \cf0\highlight0 kernel.printk = 4 4 1 7\cf1\highlight2 
+\par \cf0\highlight0 * Applying /etc/sysctl.d/10-ipv6-privacy.conf ...\cf1\highlight2 
+\par \cf0\highlight0 net.ipv6.conf.all.use_tempaddr = 2\cf1\highlight2 
+\par \cf0\highlight0 net.ipv6.conf.default.use_tempaddr = 2\cf1\highlight2 
+\par \cf0\highlight0 * Applying /etc/sysctl.d/10-kernel-hardening.conf ...\cf1\highlight2 
+\par \cf0\highlight0 kernel.kptr_restrict = 1\cf1\highlight2 
+\par \cf0\highlight0 * Applying /etc/sysctl.d/10-link-restrictions.conf ...\cf1\highlight2 
+\par \cf0\highlight0 fs.protected_hardlinks = 1\cf1\highlight2 
+\par \cf0\highlight0 fs.protected_symlinks = 1\cf1\highlight2 
+\par \cf0\highlight0 * Applying /etc/sysctl.d/10-lxd-inotify.conf ...\cf1\highlight2 
+\par \cf0\highlight0 fs.inotify.max_user_instances = 1024\cf1\highlight2 
+\par \cf0\highlight0 * Applying /etc/sysctl.d/10-magic-sysrq.conf ...\cf1\highlight2 
+\par \cf0\highlight0 kernel.sysrq = 176\cf1\highlight2 
+\par \cf0\highlight0 * Applying /etc/sysctl.d/10-network-security.conf ...\cf1\highlight2 
+\par \cf0\highlight0 net.ipv4.conf.default.rp_filter = 1\cf1\highlight2 
+\par \cf0\highlight0 net.ipv4.conf.all.rp_filter = 1\cf1\highlight2 
+\par \cf0\highlight0 net.ipv4.tcp_syncookies = 1\cf1\highlight2 
+\par \cf0\highlight0 * Applying /etc/sysctl.d/10-ptrace.conf ...\cf1\highlight2 
+\par \cf0\highlight0 kernel.yama.ptrace_scope = 1\cf1\highlight2 
+\par \cf0\highlight0 * Applying /etc/sysctl.d/10-zeropage.conf ...\cf1\highlight2 
+\par \cf0\highlight0 vm.mmap_min_addr = 65536\cf1\highlight2 
+\par \cf0\highlight0 * Applying /usr/lib/sysctl.d/50-default.conf ...\cf1\highlight2 
+\par \cf0\highlight0 net.ipv4.conf.all.promote_secondaries = 1\cf1\highlight2 
+\par \cf0\highlight0 net.core.default_qdisc = fq_codel\cf1\highlight2 
+\par \cf0\highlight0 * Applying /etc/sysctl.d/99-sysctl.conf ...\cf1\highlight2 
+\par \cf0\highlight0 * Applying /etc/sysctl.d/k8s.conf ...\cf1\highlight2 
+\par \cf0\highlight0 net.bridge.bridge-nf-call-ip6tables = 1\cf1\highlight2 
+\par \cf0\highlight0 net.bridge.bridge-nf-call-iptables = 1\cf1\highlight2 
+\par \cf0\highlight0 * Applying /etc/sysctl.conf ...\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:~# uname -a\cf1\highlight2 
+\par \cf0\highlight0 Linux node-e 4.15.0-163-generic #171-Ubuntu SMP Fri Nov 5 11:55:11 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:~# wget https://raw.githubusercontent.com/CentaurusInfra/mizar/dev-next/kernelupdate.sh\cf1\highlight2 
+\par \cf0\highlight0 --2021-12-21 10:17:20--  https://raw.githubusercontent.com/CentaurusInfra/mizar/dev-next/kernelupdate.sh\cf1\highlight2 
+\par \cf0\highlight0 Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.110.133, 185.199.109.133, 185.199.108.133, ...\cf1\highlight2 
+\par \cf0\highlight0 Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.110.133|:443... connected.\cf1\highlight2 
+\par \cf0\highlight0 HTTP request sent, awaiting response... 200 OK\cf1\highlight2 
+\par \cf0\highlight0 Length: 791 [text/plain]\cf1\highlight2 
+\par \cf0\highlight0\f1 Saving to: \lquote kernelupdate.sh\rquote\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 kernelupdate.sh                           100%[===================================================================================>]     791  --.-KB/s    in 0s\cf1\highlight2 
+\par 
+\par \cf0\highlight0\f1 2021-12-21 10:17:21 (18.0 MB/s) - \lquote kernelupdate.sh\rquote  saved [791/791]\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 root@node-e:~# bash kernelupdate.sh\cf1\highlight2 
+\par \cf0\highlight0 --2021-12-21 10:17:38--  https://mizar.s3.amazonaws.com/linux-5.6-rc2/linux-headers-5.6.0-rc2_5.6.0-rc2-1_amd64.deb\cf1\highlight2 
+\par \cf0\highlight0 Resolving mizar.s3.amazonaws.com (mizar.s3.amazonaws.com)... 52.217.84.60\cf1\highlight2 
+\par \cf0\highlight0 Connecting to mizar.s3.amazonaws.com (mizar.s3.amazonaws.com)|52.217.84.60|:443... connected.\cf1\highlight2 
+\par \cf0\highlight0 HTTP request sent, awaiting response... 200 OK\cf1\highlight2 
+\par \cf0\highlight0 Length: 7621020 (7.3M) []\cf1\highlight2 
+\par \cf0\highlight0\f1 Saving to: \lquote ../linux-5.6-rc2/linux-headers-5.6.0-rc2_5.6.0-rc2-1_amd64.deb\rquote\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 linux-headers-5.6.0-rc2_5.6.0-rc2-1_amd64 100%[===================================================================================>]   7.27M  3.74MB/s    in 1.9s\cf1\highlight2 
+\par 
+\par \cf0\highlight0\f1 2021-12-21 10:17:41 (3.74 MB/s) - \lquote ../linux-5.6-rc2/linux-headers-5.6.0-rc2_5.6.0-rc2-1_amd64.deb\rquote  saved [7621020/7621020]\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 --2021-12-21 10:17:41--  https://mizar.s3.amazonaws.com/linux-5.6-rc2/linux-image-5.6.0-rc2-dbg_5.6.0-rc2-1_amd64.deb\cf1\highlight2 
+\par \cf0\highlight0 Resolving mizar.s3.amazonaws.com (mizar.s3.amazonaws.com)... 52.217.84.60\cf1\highlight2 
+\par \cf0\highlight0 Connecting to mizar.s3.amazonaws.com (mizar.s3.amazonaws.com)|52.217.84.60|:443... connected.\cf1\highlight2 
+\par \cf0\highlight0 HTTP request sent, awaiting response... 200 OK\cf1\highlight2 
+\par \cf0\highlight0 Length: 857827912 (818M) [application/x-www-form-urlencoded]\cf1\highlight2 
+\par \cf0\highlight0\f1 Saving to: \lquote ../linux-5.6-rc2/linux-image-5.6.0-rc2-dbg_5.6.0-rc2-1_amd64.deb\rquote\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 linux-image-5.6.0-rc2-dbg_5.6.0-rc2-1_amd 100%[===================================================================================>] 818.09M  11.9MB/s    in 1m 55s\cf1\highlight2 
+\par 
+\par \cf0\highlight0\f1 2021-12-21 10:19:38 (7.10 MB/s) - \lquote ../linux-5.6-rc2/linux-image-5.6.0-rc2-dbg_5.6.0-rc2-1_amd64.deb\rquote  saved [857827912/857827912]\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 --2021-12-21 10:19:38--  https://mizar.s3.amazonaws.com/linux-5.6-rc2/linux-image-5.6.0-rc2_5.6.0-rc2-1_amd64.deb\cf1\highlight2 
+\par \cf0\highlight0 Resolving mizar.s3.amazonaws.com (mizar.s3.amazonaws.com)... 54.231.197.89\cf1\highlight2 
+\par \cf0\highlight0 Connecting to mizar.s3.amazonaws.com (mizar.s3.amazonaws.com)|54.231.197.89|:443... connected.\cf1\highlight2 
+\par \cf0\highlight0 HTTP request sent, awaiting response... 200 OK\cf1\highlight2 
+\par \cf0\highlight0 Length: 56427036 (54M) [application/x-www-form-urlencoded]\cf1\highlight2 
+\par \cf0\highlight0\f1 Saving to: \lquote ../linux-5.6-rc2/linux-image-5.6.0-rc2_5.6.0-rc2-1_amd64.deb\rquote\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 linux-image-5.6.0-rc2_5.6.0-rc2-1_amd64.d 100%[===================================================================================>]  53.81M  7.61MB/s    in 7.3s\cf1\highlight2 
+\par 
+\par \cf0\highlight0\f1 2021-12-21 10:19:46 (7.41 MB/s) - \lquote ../linux-5.6-rc2/linux-image-5.6.0-rc2_5.6.0-rc2-1_amd64.deb\rquote  saved [56427036/56427036]\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 --2021-12-21 10:19:46--  https://mizar.s3.amazonaws.com/linux-5.6-rc2/linux-libc-dev_5.6.0-rc2-1_amd64.deb\cf1\highlight2 
+\par \cf0\highlight0 Resolving mizar.s3.amazonaws.com (mizar.s3.amazonaws.com)... 52.217.227.81\cf1\highlight2 
+\par \cf0\highlight0 Connecting to mizar.s3.amazonaws.com (mizar.s3.amazonaws.com)|52.217.227.81|:443... connected.\cf1\highlight2 
+\par \cf0\highlight0 HTTP request sent, awaiting response... 200 OK\cf1\highlight2 
+\par \cf0\highlight0 Length: 1082248 (1.0M) []\cf1\highlight2 
+\par \cf0\highlight0\f1 Saving to: \lquote ../linux-5.6-rc2/linux-libc-dev_5.6.0-rc2-1_amd64.deb\rquote\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 linux-libc-dev_5.6.0-rc2-1_amd64.deb      100%[===================================================================================>]   1.03M   837KB/s    in 1.3s\cf1\highlight2 
+\par 
+\par \cf0\highlight0\f1 2021-12-21 10:19:48 (837 KB/s) - \lquote ../linux-5.6-rc2/linux-libc-dev_5.6.0-rc2-1_amd64.deb\rquote  saved [1082248/1082248]\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 Continue kernel update (y/n)?y\cf1\highlight2 
+\par \cf0\highlight0 Updating kernel\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package linux-headers-5.6.0-rc2.\cf1\highlight2 
+\par \cf0\highlight0 (Reading database ... 106966 files and directories currently installed.)\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../linux-headers-5.6.0-rc2_5.6.0-rc2-1_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking linux-headers-5.6.0-rc2 (5.6.0-rc2-1) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package linux-image-5.6.0-rc2.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../linux-image-5.6.0-rc2_5.6.0-rc2-1_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking linux-image-5.6.0-rc2 (5.6.0-rc2-1) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package linux-image-5.6.0-rc2-dbg.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../linux-image-5.6.0-rc2-dbg_5.6.0-rc2-1_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking linux-image-5.6.0-rc2-dbg (5.6.0-rc2-1) ...\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../linux-libc-dev_5.6.0-rc2-1_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking linux-libc-dev:amd64 (5.6.0-rc2-1) over (4.15.0-163.171) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up linux-headers-5.6.0-rc2 (5.6.0-rc2-1) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up linux-image-5.6.0-rc2 (5.6.0-rc2-1) ...\cf1\highlight2 
+\par \cf0\highlight0 update-initramfs: Generating /boot/initrd.img-5.6.0-rc2\cf1\highlight2 
+\par \cf0\highlight0 Searching for GRUB installation directory ... found: /boot/grub\cf1\highlight2 
+\par \cf0\highlight0 Searching for default file ... found: /boot/grub/default\cf1\highlight2 
+\par \cf0\highlight0 Testing for an existing GRUB menu.lst file ... found: /boot/grub/menu.lst\cf1\highlight2 
+\par \cf0\highlight0 Searching for splash image ... none found, skipping ...\cf1\highlight2 
+\par \cf0\highlight0 Found kernel: /vmlinuz-4.15.0-163-generic\cf1\highlight2 
+\par \cf0\highlight0 Found kernel: /vmlinuz-4.15.0-159-generic\cf1\highlight2 
+\par \cf0\highlight0 Found kernel: /vmlinuz-5.6.0-rc2\cf1\highlight2 
+\par \cf0\highlight0 Found kernel: /vmlinuz-4.15.0-163-generic\cf1\highlight2 
+\par \cf0\highlight0 Found kernel: /vmlinuz-4.15.0-159-generic\cf1\highlight2 
+\par \cf0\highlight0 Replacing config file /run/grub/menu.lst with new version\cf1\highlight2 
+\par \cf0\highlight0 Updating /boot/grub/menu.lst ... done\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Sourcing file `/etc/default/grub'\cf1\highlight2 
+\par \cf0\highlight0 Generating grub configuration file ...\cf1\highlight2 
+\par \cf0\highlight0 Found linux image: /boot/vmlinuz-5.6.0-rc2\cf1\highlight2 
+\par \cf0\highlight0 Found initrd image: /boot/initrd.img-5.6.0-rc2\cf1\highlight2 
+\par \cf0\highlight0 Found linux image: /boot/vmlinuz-4.15.0-163-generic\cf1\highlight2 
+\par \cf0\highlight0 Found initrd image: /boot/initrd.img-4.15.0-163-generic\cf1\highlight2 
+\par \cf0\highlight0 Found linux image: /boot/vmlinuz-4.15.0-159-generic\cf1\highlight2 
+\par \cf0\highlight0 Found initrd image: /boot/initrd.img-4.15.0-159-generic\cf1\highlight2 
+\par \cf0\highlight0 done\cf1\highlight2 
+\par \cf0\highlight0 Setting up linux-image-5.6.0-rc2-dbg (5.6.0-rc2-1) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up linux-libc-dev:amd64 (5.6.0-rc2-1) ...\cf1\highlight2 
+\par \cf0\highlight0 Reboot host (y/n)?y\cf1\highlight2 
+\par \cf0\highlight0 Rebooting\cf1\highlight2 
+\par 
+\par \cf7\highlight0 Remote side unexpectedly closed network connection\cf1\highlight2 
+\par 
+\par \cf8\highlight0\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\cf1\highlight2 
+\par 
+\par \cf7\highlight0 Session stopped\cf1\highlight2 
+\par \cf0\highlight0     - Press \cf5 <return>\cf0  to exit tab\cf1\highlight2 
+\par \cf0\highlight0     - Press \cf5 R\cf0  to restart session\cf1\highlight2 
+\par \cf0\highlight0     - Press \cf5 S\cf0  to save terminal output to file\cf1\highlight2 
+\par \cf0\highlight0     \u9484?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9488?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?                 \cf3\f1\bullet  MobaXterm Personal Edition v21.4 \bullet\cf0\f0                  \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?               \cf4 (SSH client, X server and network tools)\cf0                \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?                                                                      \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474? \u8594? SSH session to \cf5 root@192.168.1.211                        \cf0           \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  Direct SSH      :  \cf3\f0 v\cf0                                              \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  SSH compression :  \cf3\f0 v\cf0                                              \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  SSH-browser     :  \cf3\f0 v\cf0                                              \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  X11-forwarding  :  \cf3\f0 v\cf0   (remote display is forwarded through SSH)  \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?                                                                      \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474? \u8594? For more info, ctrl+click on \cf6\ul help\cf0\ulnone  or visit our \cf6\ul website\cf0\ulnone .            \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9492?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9496?\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 5.6.0-rc2 x86_64)\cf1\highlight2 
+\par 
+\par \cf0\highlight0  * Documentation:  https://help.ubuntu.com\cf1\highlight2 
+\par \cf0\highlight0  * Management:     https://landscape.canonical.com\cf1\highlight2 
+\par \cf0\highlight0  * Support:        https://ubuntu.com/advantage\cf1\highlight2 
+\par 
+\par \cf0\highlight0   System information as of Tue Dec 21 10:27:02 UTC 2021\cf1\highlight2 
+\par 
+\par \cf0\highlight0   System load:  0.09               Processes:             371\cf1\highlight2 
+\par \cf0\highlight0   Usage of /:   18.0% of 72.83GB   Users logged in:       0\cf1\highlight2 
+\par \cf0\highlight0   Memory usage: 1%                 IP address for ens160: 192.168.1.211\cf1\highlight2 
+\par \cf0\highlight0   Swap usage:   0%\cf1\highlight2 
+\par 
+\par \cf0\highlight0  * Super-optimized for small spaces - read how we shrank the memory\cf1\highlight2 
+\par \cf0\highlight0    footprint of MicroK8s to make it the smallest full K8s around.\cf1\highlight2 
+\par 
+\par \cf0\highlight0    https://ubuntu.com/blog/microk8s-memory-optimisation\cf1\highlight2 
+\par 
+\par \cf0\highlight0  * Canonical Livepatch is available for installation.\cf1\highlight2 
+\par \cf0\highlight0    - Reduce system reboots and improve kernel security. Activate at:\cf1\highlight2 
+\par \cf0\highlight0      https://ubuntu.com/livepatch\cf1\highlight2 
+\par 
+\par \cf0\highlight0 20 updates can be applied immediately.\cf1\highlight2 
+\par \cf0\highlight0 1 of these updates is a standard security update.\cf1\highlight2 
+\par \cf0\highlight0 To see these additional updates run: apt list --upgradable\cf1\highlight2 
+\par 
+\par \cf0\highlight0 New release '20.04.3 LTS' available.\cf1\highlight2 
+\par \cf0\highlight0 Run 'do-release-upgrade' to upgrade to it.\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Last login: Tue Dec 21 09:53:26 2021 from 192.168.1.1\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:~# ufw disable && swapoff -a && apt-get update -y\cf1\highlight2 
+\par \cf0\highlight0 Firewall stopped and disabled on system startup\cf1\highlight2 
+\par \cf0\highlight0 Hit:1 http://in.archive.ubuntu.com/ubuntu bionic InRelease\cf1\highlight2 
+\par \cf0\highlight0 Hit:2 http://in.archive.ubuntu.com/ubuntu bionic-updates InRelease\cf1\highlight2 
+\par \cf0\highlight0 Hit:3 http://in.archive.ubuntu.com/ubuntu bionic-backports InRelease\cf1\highlight2 
+\par \cf0\highlight0 Hit:4 http://in.archive.ubuntu.com/ubuntu bionic-security InRelease\cf1\highlight2 
+\par \cf0\highlight0 Reading package lists... Done\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:~# git clone https://github.com/Click2Cloud-Centaurus/arktos.git\cf1\highlight2 
+\par \cf0\highlight0 Cloning into 'arktos'...\cf1\highlight2 
+\par \cf0\highlight0 remote: Enumerating objects: 61766, done.\cf1\highlight2 
+\par \cf0\highlight0 ^Cceiving objects:  99% (61749/61766), 167.29 MiB | 17.57 MiB/s\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:~# git clone https://github.com/Click2Cloud-Centaurus/arktos.git  ~/go/src/k8s.io/arktos -b default-cni-mizar\cf1\highlight2 
+\par \cf0\highlight0 Cloning into '/root/go/src/k8s.io/arktos'...\cf1\highlight2 
+\par \cf0\highlight0 remote: Enumerating objects: 61766, done.\cf1\highlight2 
+\par \cf0\highlight0 remote: Total 61766 (delta 0), reused 0 (delta 0), pack-reused 61766\cf1\highlight2 
+\par \cf0\highlight0 Receiving objects: 100% (61766/61766), 220.67 MiB | 14.82 MiB/s, done.\cf1\highlight2 
+\par \cf0\highlight0 Resolving deltas: 100% (38088/38088), done.\cf1\highlight2 
+\par \cf0\highlight0 Checking out files: 100% (20767/20767), done.\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:~# sudo bash $HOME/go/src/k8s.io/arktos/hack/setup-dev-node.sh\cf1\highlight2 
+\par \cf0\highlight0 The script is to help install prerequisites of Arktos development environment\cf1\highlight2 
+\par \cf0\highlight0 on a fresh Linux installation.\cf1\highlight2 
+\par \cf0\highlight0 It's been tested on Ubuntu 16.04 LTS and 18.04 LTS.\cf1\highlight2 
+\par \cf0\highlight0 Update apt.\cf1\highlight2 
+\par \cf0\highlight0 Hit:1 http://in.archive.ubuntu.com/ubuntu bionic InRelease\cf1\highlight2 
+\par \cf0\highlight0 Hit:2 http://in.archive.ubuntu.com/ubuntu bionic-updates InRelease\cf1\highlight2 
+\par \cf0\highlight0 Hit:3 http://in.archive.ubuntu.com/ubuntu bionic-backports InRelease\cf1\highlight2 
+\par \cf0\highlight0 Hit:4 http://in.archive.ubuntu.com/ubuntu bionic-security InRelease\cf1\highlight2 
+\par \cf0\highlight0 Reading package lists... Done\cf1\highlight2 
+\par \cf0\highlight0 Building dependency tree\cf1\highlight2 
+\par \cf0\highlight0 Reading state information... Done\cf1\highlight2 
+\par \cf0\highlight0 16 packages can be upgraded. Run 'apt list --upgradable' to see them.\cf1\highlight2 
+\par \cf0\highlight0 Install docker.\cf1\highlight2 
+\par \cf0\highlight0 Reading package lists... Done\cf1\highlight2 
+\par \cf0\highlight0 Building dependency tree\cf1\highlight2 
+\par \cf0\highlight0 Reading state information... Done\cf1\highlight2 
+\par \cf0\highlight0 The following packages were automatically installed and are no longer required:\cf1\highlight2 
+\par \cf0\highlight0   linux-headers-4.15.0-159 linux-headers-4.15.0-159-generic linux-image-4.15.0-159-generic linux-modules-4.15.0-159-generic linux-modules-extra-4.15.0-159-generic\cf1\highlight2 
+\par \cf0\highlight0 Use 'sudo apt autoremove' to remove them.\cf1\highlight2 
+\par \cf0\highlight0 The following additional packages will be installed:\cf1\highlight2 
+\par \cf0\highlight0   bridge-utils containerd pigz runc ubuntu-fan\cf1\highlight2 
+\par \cf0\highlight0 Suggested packages:\cf1\highlight2 
+\par \cf0\highlight0   ifupdown aufs-tools cgroupfs-mount | cgroup-lite debootstrap docker-doc rinse zfs-fuse | zfsutils\cf1\highlight2 
+\par \cf0\highlight0 The following NEW packages will be installed:\cf1\highlight2 
+\par \cf0\highlight0   bridge-utils containerd docker.io pigz runc ubuntu-fan\cf1\highlight2 
+\par \cf0\highlight0 0 upgraded, 6 newly installed, 0 to remove and 16 not upgraded.\cf1\highlight2 
+\par \cf0\highlight0 Need to get 74.2 MB of archives.\cf1\highlight2 
+\par \cf0\highlight0 After this operation, 360 MB of additional disk space will be used.\cf1\highlight2 
+\par \cf0\highlight0 Get:1 http://in.archive.ubuntu.com/ubuntu bionic/universe amd64 pigz amd64 2.4-1 [57.4 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:2 http://in.archive.ubuntu.com/ubuntu bionic/main amd64 bridge-utils amd64 1.5-15ubuntu1 [30.1 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:3 http://in.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 runc amd64 1.0.1-0ubuntu2~18.04.1 [4,155 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:4 http://in.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 containerd amd64 1.5.5-0ubuntu3~18.04.1 [33.0 MB]\cf1\highlight2 
+\par \cf0\highlight0 Get:5 http://in.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 docker.io amd64 20.10.7-0ubuntu5~18.04.3 [36.9 MB]\cf1\highlight2 
+\par \cf0\highlight0 Get:6 http://in.archive.ubuntu.com/ubuntu bionic/main amd64 ubuntu-fan all 0.12.10 [34.7 kB]\cf1\highlight2 
+\par \cf0\highlight0 Fetched 74.2 MB in 9s (8,703 kB/s)\cf1\highlight2 
+\par \cf0\highlight0 Preconfiguring packages ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package pigz.\cf1\highlight2 
+\par \cf0\highlight0 (Reading database ... 137631 files and directories currently installed.)\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../0-pigz_2.4-1_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking pigz (2.4-1) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package bridge-utils.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../1-bridge-utils_1.5-15ubuntu1_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking bridge-utils (1.5-15ubuntu1) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package runc.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../2-runc_1.0.1-0ubuntu2~18.04.1_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking runc (1.0.1-0ubuntu2~18.04.1) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package containerd.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../3-containerd_1.5.5-0ubuntu3~18.04.1_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking containerd (1.5.5-0ubuntu3~18.04.1) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package docker.io.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../4-docker.io_20.10.7-0ubuntu5~18.04.3_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking docker.io (20.10.7-0ubuntu5~18.04.3) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package ubuntu-fan.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../5-ubuntu-fan_0.12.10_all.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking ubuntu-fan (0.12.10) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up runc (1.0.1-0ubuntu2~18.04.1) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up containerd (1.5.5-0ubuntu3~18.04.1) ...\cf1\highlight2 
+\par \cf0\highlight0 Created symlink /etc/systemd/system/multi-user.target.wants/containerd.service \u8594? /lib/systemd/system/containerd.service.\cf1\highlight2 
+\par \cf0\highlight0 /usr/sbin/policy-rc.d returned 101, not running 'start containerd.service'\cf1\highlight2 
+\par \cf0\highlight0 Setting up bridge-utils (1.5-15ubuntu1) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up ubuntu-fan (0.12.10) ...\cf1\highlight2 
+\par \cf0\highlight0 Created symlink /etc/systemd/system/multi-user.target.wants/ubuntu-fan.service \u8594? /lib/systemd/system/ubuntu-fan.service.\cf1\highlight2 
+\par \cf0\highlight0 invoke-rc.d: policy-rc.d denied execution of start.\cf1\highlight2 
+\par \cf0\highlight0 Setting up pigz (2.4-1) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up docker.io (20.10.7-0ubuntu5~18.04.3) ...\cf1\highlight2 
+\par \cf0\highlight0 Adding group `docker' (GID 113) ...\cf1\highlight2 
+\par \cf0\highlight0 Done.\cf1\highlight2 
+\par \cf0\highlight0 Created symlink /etc/systemd/system/multi-user.target.wants/docker.service \u8594? /lib/systemd/system/docker.service.\cf1\highlight2 
+\par \cf0\highlight0 Created symlink /etc/systemd/system/sockets.target.wants/docker.socket \u8594? /lib/systemd/system/docker.socket.\cf1\highlight2 
+\par \cf0\highlight0 invoke-rc.d: policy-rc.d denied execution of start.\cf1\highlight2 
+\par \cf0\highlight0 Processing triggers for systemd (237-3ubuntu10.52) ...\cf1\highlight2 
+\par \cf0\highlight0 Processing triggers for man-db (2.8.3-2ubuntu0.1) ...\cf1\highlight2 
+\par \cf0\highlight0 Processing triggers for ureadahead (0.100.0-21) ...\cf1\highlight2 
+\par \cf0\highlight0 Install make & gcc.\cf1\highlight2 
+\par \cf0\highlight0 Reading package lists... Done\cf1\highlight2 
+\par \cf0\highlight0 Building dependency tree\cf1\highlight2 
+\par \cf0\highlight0 Reading state information... Done\cf1\highlight2 
+\par \cf0\highlight0 make is already the newest version (4.1-9.1ubuntu1).\cf1\highlight2 
+\par \cf0\highlight0 The following packages were automatically installed and are no longer required:\cf1\highlight2 
+\par \cf0\highlight0   linux-headers-4.15.0-159 linux-headers-4.15.0-159-generic linux-image-4.15.0-159-generic linux-modules-4.15.0-159-generic linux-modules-extra-4.15.0-159-generic\cf1\highlight2 
+\par \cf0\highlight0 Use 'sudo apt autoremove' to remove them.\cf1\highlight2 
+\par \cf0\highlight0 0 upgraded, 0 newly installed, 0 to remove and 16 not upgraded.\cf1\highlight2 
+\par \cf0\highlight0 Reading package lists... Done\cf1\highlight2 
+\par \cf0\highlight0 Building dependency tree\cf1\highlight2 
+\par \cf0\highlight0 Reading state information... Done\cf1\highlight2 
+\par \cf0\highlight0 gcc is already the newest version (4:7.4.0-1ubuntu2.3).\cf1\highlight2 
+\par \cf0\highlight0 The following packages were automatically installed and are no longer required:\cf1\highlight2 
+\par \cf0\highlight0   linux-headers-4.15.0-159 linux-headers-4.15.0-159-generic linux-image-4.15.0-159-generic linux-modules-4.15.0-159-generic linux-modules-extra-4.15.0-159-generic\cf1\highlight2 
+\par \cf0\highlight0 Use 'sudo apt autoremove' to remove them.\cf1\highlight2 
+\par \cf0\highlight0 0 upgraded, 0 newly installed, 0 to remove and 16 not upgraded.\cf1\highlight2 
+\par \cf0\highlight0 Reading package lists... Done\cf1\highlight2 
+\par \cf0\highlight0 Building dependency tree\cf1\highlight2 
+\par \cf0\highlight0 Reading state information... Done\cf1\highlight2 
+\par \cf0\highlight0 jq is already the newest version (1.5+dfsg-2).\cf1\highlight2 
+\par \cf0\highlight0 The following packages were automatically installed and are no longer required:\cf1\highlight2 
+\par \cf0\highlight0   linux-headers-4.15.0-159 linux-headers-4.15.0-159-generic linux-image-4.15.0-159-generic linux-modules-4.15.0-159-generic linux-modules-extra-4.15.0-159-generic\cf1\highlight2 
+\par \cf0\highlight0 Use 'sudo apt autoremove' to remove them.\cf1\highlight2 
+\par \cf0\highlight0 0 upgraded, 0 newly installed, 0 to remove and 16 not upgraded.\cf1\highlight2 
+\par \cf0\highlight0 Install golang.\cf1\highlight2 
+\par \cf0\highlight0 --2021-12-21 10:38:12--  https://dl.google.com/go/go1.13.9.linux-amd64.tar.gz\cf1\highlight2 
+\par \cf0\highlight0 Resolving dl.google.com (dl.google.com)... 142.250.183.142, 2404:6800:4009:824::200e\cf1\highlight2 
+\par \cf0\highlight0 Connecting to dl.google.com (dl.google.com)|142.250.183.142|:443... connected.\cf1\highlight2 
+\par \cf0\highlight0 HTTP request sent, awaiting response... 200 OK\cf1\highlight2 
+\par \cf0\highlight0 Length: 120139686 (115M) [application/octet-stream]\cf1\highlight2 
+\par \cf0\highlight0\f1 Saving to: \lquote /tmp/go1.13.9.linux-amd64.tar.gz\rquote\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 go1.13.9.linux-amd64.tar.gz               100%[===================================================================================>] 114.57M  6.92MB/s    in 14s\cf1\highlight2 
+\par 
+\par \cf0\highlight0\f1 2021-12-21 10:38:27 (8.19 MB/s) - \lquote /tmp/go1.13.9.linux-amd64.tar.gz\rquote  saved [120139686/120139686]\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 Done.\cf1\highlight2 
+\par \cf0\highlight0 Please run and add 'export PATH=$PATH:/usr/local/go/bin' into your shell profile.\cf1\highlight2 
+\par \cf0\highlight0 You can proceed to run arktos-up.sh if you want to launch a single-node cluster.\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:~# mkdir -p /etc/kubeedge\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:~# cd /etc/kubeedge/\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/etc/kubeedge# ls\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/etc/kubeedge# scp -r 192.168.2.50:/etc/kubeedge/certs .\cf1\highlight2 
+\par \cf0\highlight0 The authenticity of host '192.168.2.50 (192.168.2.50)' can't be established.\cf1\highlight2 
+\par \cf0\highlight0 ECDSA key fingerprint is SHA256:CB1dE2wmZ3LcNKU6RDD0D8xosH3X8k+M4YQMZtC34RI.\cf1\highlight2 
+\par \cf0\highlight0 Are you sure you want to continue connecting (yes/no)? yes\cf1\highlight2 
+\par \cf0\highlight0 Warning: Permanently added '192.168.2.50' (ECDSA) to the list of known hosts.\cf1\highlight2 
+\par \cf0\highlight0 root@192.168.2.50's password:\cf1\highlight2 
+\par \cf0\highlight0 server.crt                                                                                                                          100% 1619     1.2MB/s   00:00\cf1\highlight2 
+\par \cf0\highlight0 server.csr                                                                                                                          100%  989   975.8KB/s   00:00\cf1\highlight2 
+\par \cf0\highlight0 server.key                                                                                                                          100% 1679   881.9KB/s   00:00\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/etc/kubeedge# scp -r 192.168.2.50:/etc/kubeedge/ca .\cf1\highlight2 
+\par \cf0\highlight0 root@192.168.2.50's password:\cf1\highlight2 
+\par \cf0\highlight0 rootCA.crt                                                                                                                          100% 2078     1.9MB/s   00:00\cf1\highlight2 
+\par \cf0\highlight0 rootCA.key                                                                                                                          100% 3311     2.6MB/s   00:00\cf1\highlight2 
+\par \cf0\highlight0 rootCA.srl                                                                                                                          100%   41    42.5KB/s   00:00\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/etc/kubeedge# cd /root\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:~# history\cf1\highlight2 
+\par \cf0\highlight0     1  vi /etc/ssh/sshd_config\cf1\highlight2 
+\par \cf0\highlight0     2  init 6\cf1\highlight2 
+\par \cf0\highlight0     3  init 0\cf1\highlight2 
+\par \cf0\highlight0     4  vi /etc/netplan/00-installer-config.yaml\cf1\highlight2 
+\par \cf0\highlight0     5  init 6\cf1\highlight2 
+\par \cf0\highlight0     6  apt-get update && apt-get upgrade -y\cf1\highlight2 
+\par \cf0\highlight0     7  vi /etc/hostname\cf1\highlight2 
+\par \cf0\highlight0     8  init 6\cf1\highlight2 
+\par \cf0\highlight0     9  init 0\cf1\highlight2 
+\par \cf0\highlight0    10  ip a\cf1\highlight2 
+\par \cf0\highlight0    11  vi /etc/netplan/00-installer-config.yaml\cf1\highlight2 
+\par \cf0\highlight0    12  init 0\cf1\highlight2 
+\par \cf0\highlight0    13  vi /etc/hostname\cf1\highlight2 
+\par \cf0\highlight0    14  vi /etc/hosts\cf1\highlight2 
+\par \cf0\highlight0    15  init 6\cf1\highlight2 
+\par \cf0\highlight0    16  sudo apt -y update && sudo apt -y install make && sudo apt -y install gcc && sudo apt -y install jq\cf1\highlight2 
+\par \cf0\highlight0    17  sudo modprobe br_netfilter\cf1\highlight2 
+\par \cf0\highlight0    18  lsmod | grep br_netfilter\cf1\highlight2 
+\par \cf0\highlight0    19  cat <<EOF | sudo tee /etc/modules-load.d/k8s.conf\cf1\highlight2 
+\par \cf0\highlight0    20  br_netfilter\cf1\highlight2 
+\par \cf0\highlight0    21  EOF\cf1\highlight2 
+\par \cf0\highlight0    22  cat <<EOF | sudo tee /etc/sysctl.d/k8s.conf\cf1\highlight2 
+\par \cf0\highlight0    23  net.bridge.bridge-nf-call-ip6tables = 1\cf1\highlight2 
+\par \cf0\highlight0    24  net.bridge.bridge-nf-call-iptables = 1\cf1\highlight2 
+\par \cf0\highlight0    25  EOF\cf1\highlight2 
+\par \cf0\highlight0    26  sudo sysctl --system\cf1\highlight2 
+\par \cf0\highlight0    27  uname -a\cf1\highlight2 
+\par \cf0\highlight0    28  wget https://raw.githubusercontent.com/CentaurusInfra/mizar/dev-next/kernelupdate.sh\cf1\highlight2 
+\par \cf0\highlight0    29  bash kernelupdate.sh\cf1\highlight2 
+\par \cf0\highlight0    30  ufw disable && swapoff -a && apt-get update -y\cf1\highlight2 
+\par \cf0\highlight0    31  git clone https://github.com/Click2Cloud-Centaurus/arktos.git\cf1\highlight2 
+\par \cf0\highlight0    32  git clone https://github.com/Click2Cloud-Centaurus/arktos.git  ~/go/src/k8s.io/arktos -b default-cni-mizar\cf1\highlight2 
+\par \cf0\highlight0    33  sudo bash $HOME/go/src/k8s.io/arktos/hack/setup-dev-node.sh\cf1\highlight2 
+\par \cf0\highlight0    34  mkdir -p /etc/kubeedge\cf1\highlight2 
+\par \cf0\highlight0    35  cd /etc/kubeedge/\cf1\highlight2 
+\par \cf0\highlight0    36  ls\cf1\highlight2 
+\par \cf0\highlight0    37  scp -r 192.168.2.50:/etc/kubeedge/certs .\cf1\highlight2 
+\par \cf0\highlight0    38  scp -r 192.168.2.50:/etc/kubeedge/ca .\cf1\highlight2 
+\par \cf0\highlight0    39  cd /root\cf1\highlight2 
+\par \cf0\highlight0    40  history\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:~# echo export PATH=$PATH:/usr/local/go/bin\\ >> ~/.profile\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:~# echo cd \\$HOME/go/src/k8s.io/arktos >> ~/.profile\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:~# source ~/.profile\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:~/go/src/k8s.io/arktos# systemctl status containerd\cf1\highlight2 
+\par \cf0\highlight0\u9679? containerd.service - containerd container runtime\cf1\highlight2 
+\par \cf0\highlight0    Loaded: loaded (/lib/systemd/system/containerd.service; enabled; vendor preset: enabled)\cf1\highlight2 
+\par \cf0\highlight0    Active: inactive (dead)\cf1\highlight2 
+\par \cf0\highlight0      Docs: https://containerd.io\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:~/go/src/k8s.io/arktos# systemctl start containerd\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:~/go/src/k8s.io/arktos# systemctl enable containerd\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:~/go/src/k8s.io/arktos# systemctl status  docker\cf1\highlight2 
+\par \cf0\highlight0\u9679? docker.service - Docker Application Container Engine\cf1\highlight2 
+\par \cf0\highlight0    Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)\cf1\highlight2 
+\par \cf0\highlight0    Active: inactive (dead)\cf1\highlight2 
+\par \cf0\highlight0      Docs: https://docs.docker.com\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:~/go/src/k8s.io/arktos# systemctl start  docker\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:~/go/src/k8s.io/arktos# systemctl enable  docker\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:~/go/src/k8s.io/arktos# go version\cf1\highlight2 
+\par \cf0\highlight0 go version go1.13.9 linux/amd64\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:~/go/src/k8s.io/arktos# swapoff -a\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:~/go/src/k8s.io/arktos# CNIPLUGIN=mizar ./hack/arktos-up.sh\cf1\highlight2 
+\par \cf0\highlight0 DBG: mizar CNI plugin will be installed AFTER cluster is up\cf1\highlight2 
+\par \cf0\highlight0 DBG: effective feature gates AllAlpha=false,WorkloadInfoDefaulting=true,QPSDoubleGCController=true,QPSDoubleRSController=true,MandatoryArktosNetwork=true\cf1\highlight2 
+\par \cf0\highlight0 DBG: effective disabling admission plugins\cf1\highlight2 
+\par \cf0\highlight0 DBG: effective default network template file is /root/go/src/k8s.io/arktos/hack/testdata/default-mizar-network.tmpl\cf1\highlight2 
+\par \cf0\highlight0 DBG: kubelet arg RESOLV_CONF is /run/systemd/resolve/resolv.conf\cf1\highlight2 
+\par \cf0\highlight0 WARNING : The kubelet is configured to not fail even if swap is enabled; production deployments should disable swap.\cf1\highlight2 
+\par \cf0\highlight0 cni plugin is mizar; arktos will use mizar to provision pod network\cf1\highlight2 
+\par \cf0\highlight0 Checking arktos containerd...\cf1\highlight2 
+\par \cf0\highlight0 arktos containerd not found...\cf1\highlight2 
+\par \cf0\highlight0 --2021-12-21 10:53:06--  https://github.com/containerd/containerd/releases/download/v1.4.2/containerd-1.4.2-linux-amd64.tar.gz\cf1\highlight2 
+\par \cf0\highlight0 Resolving github.com (github.com)... 13.234.210.38\cf1\highlight2 
+\par \cf0\highlight0 Connecting to github.com (github.com)|13.234.210.38|:443... connected.\cf1\highlight2 
+\par \cf0\highlight0 HTTP request sent, awaiting response... 302 Found\cf1\highlight2 
+\par \cf0\highlight0 Location: https://objects.githubusercontent.com/github-production-release-asset-2e65be/46089560/5cad0000-2fc0-11eb-8e3a-ed435a7b945c?X-Amz-Algorithm=AWS4-HMAC-SHA256&      X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20211221%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20211221T105306Z&X-Amz-Expires=300&X-Amz-Signature=3b492e190b5725bf71f0e6d      438640db5c19f59aaf52f458e593b09fc07f672a3&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=46089560&response-content-disposition=attachment%3B%20filename%3Dcontai      nerd-1.4.2-linux-amd64.tar.gz&response-content-type=application%2Foctet-stream [following]\cf1\highlight2 
+\par \cf0\highlight0 --2021-12-21 10:53:06--  https://objects.githubusercontent.com/github-production-release-asset-2e65be/46089560/5cad0000-2fc0-11eb-8e3a-ed435a7b945c?X-Amz-Algorithm=AW      S4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20211221%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20211221T105306Z&X-Amz-Expires=300&X-Amz-Signature=3b492e19      0b5725bf71f0e6d438640db5c19f59aaf52f458e593b09fc07f672a3&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=46089560&response-content-disposition=attachment%3B%20fi      lename%3Dcontainerd-1.4.2-linux-amd64.tar.gz&response-content-type=application%2Foctet-stream\cf1\highlight2 
+\par \cf0\highlight0 Resolving objects.githubusercontent.com (objects.githubusercontent.com)... 185.199.109.133, 185.199.110.133, 185.199.108.133, ...\cf1\highlight2 
+\par \cf0\highlight0 Connecting to objects.githubusercontent.com (objects.githubusercontent.com)|185.199.109.133|:443... connected.\cf1\highlight2 
+\par \cf0\highlight0 HTTP request sent, awaiting response... 200 OK\cf1\highlight2 
+\par \cf0\highlight0 Length: 31160021 (30M) [application/octet-stream]\cf1\highlight2 
+\par \cf0\highlight0\f1 Saving to: \lquote /root/arktos-containerd/containerd-1.4.2-linux-amd64.tar.gz\rquote\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 containerd-1.4.2-linux-amd64.tar.gz       100%[===================================================================================>]  29.72M  1.88MB/s    in 12s\cf1\highlight2 
+\par 
+\par \cf0\highlight0\f1 2021-12-21 10:53:19 (2.45 MB/s) - \lquote /root/arktos-containerd/containerd-1.4.2-linux-amd64.tar.gz\rquote  saved [31160021/31160021]\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 installing arktos containerd...\cf1\highlight2 
+\par \cf0\highlight0 installing loopback cni binary...\cf1\highlight2 
+\par \cf0\highlight0 ./loopback\cf1\highlight2 
+\par \cf0\highlight0 2021-12-21 10:53:41 URL:https://objects.githubusercontent.com/github-production-release-asset-2e65be/84575398/53318d00-bf61-11e9-9a8f-40364582e9ed?X-Amz-Algorithm=AWS      4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20211221%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20211221T105337Z&X-Amz-Expires=300&X-Amz-Signature=bcdb1ac07      29a283b85833000e4aba9e5152f541999e3000ba62f4b84cb616468&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=84575398&response-content-disposition=attachment%3B%20fil      ename%3Dcni-plugins-linux-amd64-v0.8.2.tgz&response-content-type=application%2Foctet-stream [36662740/36662740] -> "-" [1]\cf1\highlight2 
+\par \cf0\highlight0 WARNING : The kubelet is configured to not fail even if swap is enabled; production deployments should disable swap.\cf1\highlight2 
+\par \cf0\highlight0 Getting runtime deployment file  libvirt-qemu\cf1\highlight2 
+\par \cf0\highlight0 --2021-12-21 10:53:41--  https://raw.githubusercontent.com/futurewei-cloud/arktos-vm-runtime/release-0.6/deploy/apparmor/libvirt-qemu\cf1\highlight2 
+\par \cf0\highlight0 Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.108.133, 185.199.109.133, 185.199.111.133, ...\cf1\highlight2 
+\par \cf0\highlight0 Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443... connected.\cf1\highlight2 
+\par \cf0\highlight0 HTTP request sent, awaiting response... 200 OK\cf1\highlight2 
+\par \cf0\highlight0 Length: 6578 (6.4K) [text/plain]\cf1\highlight2 
+\par \cf0\highlight0\f1 Saving to: \lquote /tmp/libvirt-qemu\rquote\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 /tmp/libvirt-qemu                         100%[===================================================================================>]   6.42K  --.-KB/s    in 0s\cf1\highlight2 
+\par 
+\par \cf0\highlight0\f1 2021-12-21 10:53:42 (20.6 MB/s) - \lquote /tmp/libvirt-qemu\rquote  saved [6578/6578]\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 Getting runtime deployment file  libvirtd\cf1\highlight2 
+\par \cf0\highlight0 --2021-12-21 10:53:42--  https://raw.githubusercontent.com/futurewei-cloud/arktos-vm-runtime/release-0.6/deploy/apparmor/libvirtd\cf1\highlight2 
+\par \cf0\highlight0 Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.110.133, 185.199.111.133, 185.199.109.133, ...\cf1\highlight2 
+\par \cf0\highlight0 Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.110.133|:443... connected.\cf1\highlight2 
+\par \cf0\highlight0 HTTP request sent, awaiting response... 200 OK\cf1\highlight2 
+\par \cf0\highlight0 Length: 1617 (1.6K) [text/plain]\cf1\highlight2 
+\par \cf0\highlight0\f1 Saving to: \lquote /tmp/libvirtd\rquote\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 /tmp/libvirtd                             100%[===================================================================================>]   1.58K  --.-KB/s    in 0s\cf1\highlight2 
+\par 
+\par \cf0\highlight0\f1 2021-12-21 10:53:42 (9.63 MB/s) - \lquote /tmp/libvirtd\rquote  saved [1617/1617]\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 Getting runtime deployment file  virtlet\cf1\highlight2 
+\par \cf0\highlight0 --2021-12-21 10:53:42--  https://raw.githubusercontent.com/futurewei-cloud/arktos-vm-runtime/release-0.6/deploy/apparmor/virtlet\cf1\highlight2 
+\par \cf0\highlight0 Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.110.133, 185.199.111.133, 185.199.109.133, ...\cf1\highlight2 
+\par \cf0\highlight0 Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.110.133|:443... connected.\cf1\highlight2 
+\par \cf0\highlight0 HTTP request sent, awaiting response... 200 OK\cf1\highlight2 
+\par \cf0\highlight0 Length: 2582 (2.5K) [text/plain]\cf1\highlight2 
+\par \cf0\highlight0\f1 Saving to: \lquote /tmp/virtlet\rquote\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 /tmp/virtlet                              100%[===================================================================================>]   2.52K  --.-KB/s    in 0s\cf1\highlight2 
+\par 
+\par \cf0\highlight0\f1 2021-12-21 10:53:43 (16.1 MB/s) - \lquote /tmp/virtlet\rquote  saved [2582/2582]\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 Getting runtime deployment file  vms\cf1\highlight2 
+\par \cf0\highlight0 --2021-12-21 10:53:43--  https://raw.githubusercontent.com/futurewei-cloud/arktos-vm-runtime/release-0.6/deploy/apparmor/vms\cf1\highlight2 
+\par \cf0\highlight0 Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.110.133, 185.199.111.133, 185.199.109.133, ...\cf1\highlight2 
+\par \cf0\highlight0 Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.110.133|:443... connected.\cf1\highlight2 
+\par \cf0\highlight0 HTTP request sent, awaiting response... 200 OK\cf1\highlight2 
+\par \cf0\highlight0 Length: 485 [text/plain]\cf1\highlight2 
+\par \cf0\highlight0\f1 Saving to: \lquote /tmp/vms\rquote\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 /tmp/vms                                  100%[===================================================================================>]     485  --.-KB/s    in 0s\cf1\highlight2 
+\par 
+\par \cf0\highlight0\f1 2021-12-21 10:53:43 (12.6 MB/s) - \lquote /tmp/vms\rquote  saved [485/485]\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 Getting runtime deployment file  vmruntime.yaml\cf1\highlight2 
+\par \cf0\highlight0 --2021-12-21 10:53:43--  https://raw.githubusercontent.com/futurewei-cloud/arktos-vm-runtime/release-0.6/deploy/data/virtlet-ds.yaml\cf1\highlight2 
+\par \cf0\highlight0 Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.110.133, 185.199.111.133, 185.199.109.133, ...\cf1\highlight2 
+\par \cf0\highlight0 Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.110.133|:443... connected.\cf1\highlight2 
+\par \cf0\highlight0 HTTP request sent, awaiting response... 200 OK\cf1\highlight2 
+\par \cf0\highlight0 Length: 11643 (11K) [text/plain]\cf1\highlight2 
+\par \cf0\highlight0\f1 Saving to: \lquote /tmp/vmruntime.yaml\rquote\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 /tmp/vmruntime.yaml                       100%[===================================================================================>]  11.37K  --.-KB/s    in 0s\cf1\highlight2 
+\par 
+\par \cf0\highlight0\f1 2021-12-21 10:53:44 (25.8 MB/s) - \lquote /tmp/vmruntime.yaml\rquote  saved [11643/11643]\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 Getting runtime deployment file  images.yaml\cf1\highlight2 
+\par \cf0\highlight0 --2021-12-21 10:53:44--  https://raw.githubusercontent.com/futurewei-cloud/arktos-vm-runtime/release-0.6/deploy/images.yaml\cf1\highlight2 
+\par \cf0\highlight0 Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.110.133, 185.199.111.133, 185.199.109.133, ...\cf1\highlight2 
+\par \cf0\highlight0 Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.110.133|:443... connected.\cf1\highlight2 
+\par \cf0\highlight0 HTTP request sent, awaiting response... 200 OK\cf1\highlight2 
+\par \cf0\highlight0 Length: 254 [text/plain]\cf1\highlight2 
+\par \cf0\highlight0\f1 Saving to: \lquote /tmp/images.yaml\rquote\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 /tmp/images.yaml                          100%[===================================================================================>]     254  --.-KB/s    in 0s\cf1\highlight2 
+\par 
+\par \cf0\highlight0\f1 2021-12-21 10:53:44 (6.59 MB/s) - \lquote /tmp/images.yaml\rquote  saved [254/254]\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 Stopping Apparmor service\cf1\highlight2 
+\par \cf0\highlight0 make: Entering directory '/root/go/src/k8s.io/arktos'\cf1\highlight2 
+\par \cf0\highlight0 make[1]: Entering directory '/root/go/src/k8s.io/arktos'\cf1\highlight2 
+\par \cf0\highlight0 +++ [1221 10:54:03] Building go targets for linux/amd64:\cf1\highlight2 
+\par \cf0\highlight0     ./vendor/k8s.io/code-generator/cmd/deepcopy-gen\cf1\highlight2 
+\par \cf0\highlight0 +++ [1221 10:54:03] Building go targets for linux/amd64:\cf1\highlight2 
+\par \cf0\highlight0     ./vendor/k8s.io/code-generator/cmd/defaulter-gen\cf1\highlight2 
+\par \cf0\highlight0 +++ [1221 10:54:03] Building go targets for linux/amd64:\cf1\highlight2 
+\par \cf0\highlight0     ./vendor/k8s.io/code-generator/cmd/conversion-gen\cf1\highlight2 
+\par \cf0\highlight0 +++ [1221 10:54:03] Building go targets for linux/amd64:\cf1\highlight2 
+\par \cf0\highlight0     ./vendor/k8s.io/kube-openapi/cmd/openapi-gen\cf1\highlight2 
+\par \cf0\highlight0 +++ [1221 10:54:17] Building go targets for linux/amd64:\cf1\highlight2 
+\par \cf0\highlight0     ./vendor/github.com/go-bindata/go-bindata/go-bindata\cf1\highlight2 
+\par \cf0\highlight0 make[1]: Leaving directory '/root/go/src/k8s.io/arktos'\cf1\highlight2 
+\par \cf0\highlight0 Running copyright check for repo: /root/go/src/k8s.io/arktos, logging to _output/ArktosCopyrightTool.log\cf1\highlight2 
+\par \cf0\highlight0 ~/go/src/k8s.io/arktos ~/go/src/k8s.io/arktos\cf1\highlight2 
+\par \cf0\highlight0 warning: inexact rename detection was skipped due to too many files.\cf1\highlight2 
+\par \cf0\highlight0 warning: you may want to set your diff.renameLimit variable to at least 3068 and retry the command.\cf1\highlight2 
+\par \cf0\highlight0 ~/go/src/k8s.io/arktos\cf1\highlight2 
+\par \cf0\highlight0 ~/go/src/k8s.io/arktos ~/go/src/k8s.io/arktos\cf1\highlight2 
+\par \cf0\highlight0 warning: inexact rename detection was skipped due to too many files.\cf1\highlight2 
+\par \cf0\highlight0 warning: you may want to set your diff.renameLimit variable to at least 3068 and retry the command.\cf1\highlight2 
+\par \cf0\highlight0 ~/go/src/k8s.io/arktos\cf1\highlight2 
+\par \cf0\highlight0 Inspecting copyright files, writing logs to _output/ArktosCopyrightTool.log\cf1\highlight2 
+\par \cf0\highlight0 Done.\cf1\highlight2 
+\par \cf0\highlight0 +++ [1221 10:55:37] Building go targets for linux/amd64:\cf1\highlight2 
+\par \cf0\highlight0     cmd/kubectl\cf1\highlight2 
+\par \cf0\highlight0     cmd/hyperkube\cf1\highlight2 
+\par \cf0\highlight0     cmd/kube-apiserver\cf1\highlight2 
+\par \cf0\highlight0     cmd/kube-controller-manager\cf1\highlight2 
+\par \cf0\highlight0     cmd/workload-controller-manager\cf1\highlight2 
+\par \cf0\highlight0     cmd/cloud-controller-manager\cf1\highlight2 
+\par \cf0\highlight0     cmd/kubelet\cf1\highlight2 
+\par \cf0\highlight0     cmd/kube-proxy\cf1\highlight2 
+\par \cf0\highlight0     cmd/kube-scheduler\cf1\highlight2 
+\par \cf0\highlight0     cmd/arktos-network-controller\cf1\highlight2 
+\par \cf0\highlight0 Running copyright check for repo: /root/go/src/k8s.io/arktos, logging to _output/ArktosCopyrightTool.log\cf1\highlight2 
+\par \cf0\highlight0 ~/go/src/k8s.io/arktos ~/go/src/k8s.io/arktos\cf1\highlight2 
+\par \cf0\highlight0 warning: inexact rename detection was skipped due to too many files.\cf1\highlight2 
+\par \cf0\highlight0 warning: you may want to set your diff.renameLimit variable to at least 3068 and retry the command.\cf1\highlight2 
+\par \cf0\highlight0 ~/go/src/k8s.io/arktos\cf1\highlight2 
+\par \cf0\highlight0 ~/go/src/k8s.io/arktos ~/go/src/k8s.io/arktos\cf1\highlight2 
+\par \cf0\highlight0 warning: inexact rename detection was skipped due to too many files.\cf1\highlight2 
+\par \cf0\highlight0 warning: you may want to set your diff.renameLimit variable to at least 3068 and retry the command.\cf1\highlight2 
+\par \cf0\highlight0 ~/go/src/k8s.io/arktos\cf1\highlight2 
+\par \cf0\highlight0 Inspecting copyright files, writing logs to _output/ArktosCopyrightTool.log\cf1\highlight2 
+\par \cf0\highlight0 Done.\cf1\highlight2 
+\par \cf0\highlight0 make: Leaving directory '/root/go/src/k8s.io/arktos'\cf1\highlight2 
+\par \cf0\highlight0 cannot find etcd locally. will install one.\cf1\highlight2 
+\par \cf0\highlight0 Downloading https://github.com/centaurus-cloud/etcd/releases/download/v3.4.3/etcd-v3.4.3-linux-amd64.tar.gz succeed\cf1\highlight2 
+\par \cf0\highlight0 etcd v3.4.3 installed. To use:\cf1\highlight2 
+\par \cf0\highlight0 export PATH="/root/go/src/k8s.io/arktos/third_party/etcd:$\{PATH\}"\cf1\highlight2 
+\par 
+\par \cf0\highlight0 The current version is 3.4.3\cf1\highlight2 
+\par 
+\par \cf0\highlight0 API SERVER insecure port is free, proceeding...\cf1\highlight2 
+\par \cf0\highlight0 API SERVER secure port is free, proceeding...\cf1\highlight2 
+\par \cf0\highlight0 Unable to successfully run 'cfssl' from /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/go/bin:/root/go/      src/k8s.io/arktos/third_party/etcd; downloading instead...\cf1\highlight2 
+\par \cf0\highlight0   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\cf1\highlight2 
+\par \cf0\highlight0                                  Dload  Upload   Total   Spent    Left  Speed\cf1\highlight2 
+\par \cf0\highlight0   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\cf1\highlight2 
+\par \cf0\highlight0 100   654  100   654    0     0    877      0 --:--:-- --:--:-- --:--:--  638k\cf1\highlight2 
+\par \cf0\highlight0 100  9.8M  100  9.8M    0     0  5061k      0  0:00:02  0:00:02 --:--:-- 17.7M\cf1\highlight2 
+\par \cf0\highlight0   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\cf1\highlight2 
+\par \cf0\highlight0                                  Dload  Upload   Total   Spent    Left  Speed\cf1\highlight2 
+\par \cf0\highlight0   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\cf1\highlight2 
+\par \cf0\highlight0 100   658  100   658    0     0   1337      0 --:--:-- --:--:-- --:--:--  1337\cf1\highlight2 
+\par \cf0\highlight0 100 2224k  100 2224k    0     0  1108k      0  0:00:02  0:00:02 --:--:-- 1699k\cf1\highlight2 
+\par \cf0\highlight0 Detected host and ready to start services.  Doing some housekeeping first...\cf1\highlight2 
+\par \cf0\highlight0 Using GO_OUT /root/go/src/k8s.io/arktos/_output/local/bin/linux/amd64\cf1\highlight2 
+\par \cf0\highlight0 Starting services now!\cf1\highlight2 
+\par \cf0\highlight0 Starting etcd\cf1\highlight2 
+\par 
+\par \cf0\highlight0 The current version is 3.4.3\cf1\highlight2 
+\par 
+\par \cf0\highlight0 etcd --name node-e --listen-peer-urls http://192.168.1.211:2380   --advertise-client-urls http://192.168.1.211:2379 --data-dir /tmp/tmp.BkzZBYtrVH --listen-client-url      s http://192.168.1.211:2379,http://127.0.0.1:2379 --listen-peer-urls http://192.168.1.211:2380 --debug > "/tmp/etcd.log" 2>/dev/null\cf1\highlight2 
+\par \cf0\highlight0 Waiting for etcd to come up.\cf1\highlight2 
+\par \cf0\highlight0 +++ [1221 11:01:28] On try 1, etcd: : \{"health":"true"\}\cf1\highlight2 
+\par \cf0\highlight0\{"header":\{"cluster_id":"12059777664062182387","member_id":"7127428317409177188","revision":"2","raft_term":"2"\}\}Starting 1 kube-apiserver instances. If you want to m      ake changes to the kube-apiserver nubmer, please run export APISERVER_SERVER=n(n=1,2,...).\cf1\highlight2 
+\par \cf0\highlight0 Copied the apiserver partition config file  /var/run/kubernetes/apiserver.config...\cf1\highlight2 
+\par \cf0\highlight0 Can't load /root/.rnd into RNG\cf1\highlight2 
+\par \cf0\highlight0 140613738451392:error:2406F079:random number generator:RAND_load_file:Cannot open file:../crypto/rand/randfile.c:88:Filename=/root/.rnd\cf1\highlight2 
+\par \cf0\highlight0 Generating a RSA private key\cf1\highlight2 
+\par \cf0\highlight0 ................+++++\cf1\highlight2 
+\par \cf0\highlight0 ...............+++++\cf1\highlight2 
+\par \cf0\highlight0 writing new private key to '/var/run/kubernetes/server-ca.key'\cf1\highlight2 
+\par \cf0\highlight0 -----\cf1\highlight2 
+\par \cf0\highlight0 Can't load /root/.rnd into RNG\cf1\highlight2 
+\par \cf0\highlight0 139689752564160:error:2406F079:random number generator:RAND_load_file:Cannot open file:../crypto/rand/randfile.c:88:Filename=/root/.rnd\cf1\highlight2 
+\par \cf0\highlight0 Generating a RSA private key\cf1\highlight2 
+\par \cf0\highlight0 .................+++++\cf1\highlight2 
+\par \cf0\highlight0 .............................................................................+++++\cf1\highlight2 
+\par \cf0\highlight0 writing new private key to '/var/run/kubernetes/client-ca.key'\cf1\highlight2 
+\par \cf0\highlight0 -----\cf1\highlight2 
+\par \cf0\highlight0 Can't load /root/.rnd into RNG\cf1\highlight2 
+\par \cf0\highlight0 139708611281344:error:2406F079:random number generator:RAND_load_file:Cannot open file:../crypto/rand/randfile.c:88:Filename=/root/.rnd\cf1\highlight2 
+\par \cf0\highlight0 Generating a RSA private key\cf1\highlight2 
+\par \cf0\highlight0 ........................+++++\cf1\highlight2 
+\par \cf0\highlight0 ....................................................................+++++\cf1\highlight2 
+\par \cf0\highlight0 writing new private key to '/var/run/kubernetes/request-header-ca.key'\cf1\highlight2 
+\par \cf0\highlight0 -----\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:29 [INFO] generate received request\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:29 [INFO] received CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:29 [INFO] generating key: rsa-2048\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:30 [INFO] encoded CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:30 [INFO] signed certificate with serial number 378990482334895343894640299624974503374477386500\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:30 [WARNING] This certificate lacks a "hosts" field. This makes it unsuitable for\cf1\highlight2 
+\par \cf0\highlight0 websites. For more information see the Baseline Requirements for the Issuance and Management\cf1\highlight2 
+\par \cf0\highlight0 of Publicly-Trusted Certificates, v.1.1.6, from the CA/Browser Forum (https://cabforum.org);\cf1\highlight2 
+\par \cf0\highlight0 specifically, section 10.2.3 ("Information Requirements").\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:30 [INFO] generate received request\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:30 [INFO] received CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:30 [INFO] generating key: rsa-2048\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:30 [INFO] encoded CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:30 [INFO] signed certificate with serial number 42522022228990410550991787051807898473565549683\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:30 [WARNING] This certificate lacks a "hosts" field. This makes it unsuitable for\cf1\highlight2 
+\par \cf0\highlight0 websites. For more information see the Baseline Requirements for the Issuance and Management\cf1\highlight2 
+\par \cf0\highlight0 of Publicly-Trusted Certificates, v.1.1.6, from the CA/Browser Forum (https://cabforum.org);\cf1\highlight2 
+\par \cf0\highlight0 specifically, section 10.2.3 ("Information Requirements").\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:30 [INFO] generate received request\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:30 [INFO] received CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:30 [INFO] generating key: rsa-2048\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:31 [INFO] encoded CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:31 [INFO] signed certificate with serial number 164775638237090169727511123558347806922749807426\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:31 [WARNING] This certificate lacks a "hosts" field. This makes it unsuitable for\cf1\highlight2 
+\par \cf0\highlight0 websites. For more information see the Baseline Requirements for the Issuance and Management\cf1\highlight2 
+\par \cf0\highlight0 of Publicly-Trusted Certificates, v.1.1.6, from the CA/Browser Forum (https://cabforum.org);\cf1\highlight2 
+\par \cf0\highlight0 specifically, section 10.2.3 ("Information Requirements").\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:31 [INFO] generate received request\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:31 [INFO] received CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:31 [INFO] generating key: rsa-2048\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:32 [INFO] encoded CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:32 [INFO] signed certificate with serial number 52044134006156696980992072437126294825483179871\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:32 [WARNING] This certificate lacks a "hosts" field. This makes it unsuitable for\cf1\highlight2 
+\par \cf0\highlight0 websites. For more information see the Baseline Requirements for the Issuance and Management\cf1\highlight2 
+\par \cf0\highlight0 of Publicly-Trusted Certificates, v.1.1.6, from the CA/Browser Forum (https://cabforum.org);\cf1\highlight2 
+\par \cf0\highlight0 specifically, section 10.2.3 ("Information Requirements").\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:32 [INFO] generate received request\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:32 [INFO] received CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:32 [INFO] generating key: rsa-2048\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:32 [INFO] encoded CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:32 [INFO] signed certificate with serial number 474187294632764399643728477801873744998179648079\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:32 [WARNING] This certificate lacks a "hosts" field. This makes it unsuitable for\cf1\highlight2 
+\par \cf0\highlight0 websites. For more information see the Baseline Requirements for the Issuance and Management\cf1\highlight2 
+\par \cf0\highlight0 of Publicly-Trusted Certificates, v.1.1.6, from the CA/Browser Forum (https://cabforum.org);\cf1\highlight2 
+\par \cf0\highlight0 specifically, section 10.2.3 ("Information Requirements").\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:32 [INFO] generate received request\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:32 [INFO] received CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:32 [INFO] generating key: rsa-2048\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:33 [INFO] encoded CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:33 [INFO] signed certificate with serial number 293304404904721828177797172460543874193644038258\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:33 [WARNING] This certificate lacks a "hosts" field. This makes it unsuitable for\cf1\highlight2 
+\par \cf0\highlight0 websites. For more information see the Baseline Requirements for the Issuance and Management\cf1\highlight2 
+\par \cf0\highlight0 of Publicly-Trusted Certificates, v.1.1.6, from the CA/Browser Forum (https://cabforum.org);\cf1\highlight2 
+\par \cf0\highlight0 specifically, section 10.2.3 ("Information Requirements").\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:33 [INFO] generate received request\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:33 [INFO] received CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:33 [INFO] generating key: rsa-2048\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:33 [INFO] encoded CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:33 [INFO] signed certificate with serial number 27435580862885967000553909907801516289849374525\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:33 [WARNING] This certificate lacks a "hosts" field. This makes it unsuitable for\cf1\highlight2 
+\par \cf0\highlight0 websites. For more information see the Baseline Requirements for the Issuance and Management\cf1\highlight2 
+\par \cf0\highlight0 of Publicly-Trusted Certificates, v.1.1.6, from the CA/Browser Forum (https://cabforum.org);\cf1\highlight2 
+\par \cf0\highlight0 specifically, section 10.2.3 ("Information Requirements").\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:33 [INFO] generate received request\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:33 [INFO] received CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:33 [INFO] generating key: rsa-2048\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:33 [INFO] encoded CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:33 [INFO] signed certificate with serial number 175185949528856858523521290242969792149254997918\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:33 [WARNING] This certificate lacks a "hosts" field. This makes it unsuitable for\cf1\highlight2 
+\par \cf0\highlight0 websites. For more information see the Baseline Requirements for the Issuance and Management\cf1\highlight2 
+\par \cf0\highlight0 of Publicly-Trusted Certificates, v.1.1.6, from the CA/Browser Forum (https://cabforum.org);\cf1\highlight2 
+\par \cf0\highlight0 specifically, section 10.2.3 ("Information Requirements").\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:33 [INFO] generate received request\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:33 [INFO] received CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:33 [INFO] generating key: rsa-2048\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:34 [INFO] encoded CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:34 [INFO] signed certificate with serial number 244029655991429611982834263949149844459329733115\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:34 [WARNING] This certificate lacks a "hosts" field. This makes it unsuitable for\cf1\highlight2 
+\par \cf0\highlight0 websites. For more information see the Baseline Requirements for the Issuance and Management\cf1\highlight2 
+\par \cf0\highlight0 of Publicly-Trusted Certificates, v.1.1.6, from the CA/Browser Forum (https://cabforum.org);\cf1\highlight2 
+\par \cf0\highlight0 specifically, section 10.2.3 ("Information Requirements").\cf1\highlight2 
+\par \cf0\highlight0 Waiting for apiserver to come up\cf1\highlight2 
+\par \cf0\highlight0 +++ [1221 11:01:52] On try 12, apiserver: : ok\cf1\highlight2 
+\par \cf0\highlight0 clusterrolebinding.rbac.authorization.k8s.io/kube-apiserver-kubelet-admin created\cf1\highlight2 
+\par \cf0\highlight0 Cluster "local-up-cluster" set.\cf1\highlight2 
+\par \cf0\highlight0 use 'kubectl --kubeconfig=/var/run/kubernetes/admin-kube-aggregator0.kubeconfig' to use the aggregated API server\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:53 [INFO] generate received request\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:53 [INFO] received CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:53 [INFO] generating key: rsa-2048\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:55 [INFO] encoded CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:55 [INFO] signed certificate with serial number 646943989992151882588585423402076971023665438244\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:55 [WARNING] This certificate lacks a "hosts" field. This makes it unsuitable for\cf1\highlight2 
+\par \cf0\highlight0 websites. For more information see the Baseline Requirements for the Issuance and Management\cf1\highlight2 
+\par \cf0\highlight0 of Publicly-Trusted Certificates, v.1.1.6, from the CA/Browser Forum (https://cabforum.org);\cf1\highlight2 
+\par \cf0\highlight0 specifically, section 10.2.3 ("Information Requirements").\cf1\highlight2 
+\par \cf0\highlight0 service/kube-dns created\cf1\highlight2 
+\par \cf0\highlight0 serviceaccount/kube-dns created\cf1\highlight2 
+\par \cf0\highlight0 configmap/kube-dns created\cf1\highlight2 
+\par \cf0\highlight0 deployment.apps/kube-dns created\cf1\highlight2 
+\par \cf0\highlight0 Kube-dns addon successfully deployed.\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:56 [INFO] generate received request\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:56 [INFO] received CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:56 [INFO] generating key: rsa-2048\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:56 [INFO] encoded CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:56 [INFO] signed certificate with serial number 167903501064140977055747251208503655458268320338\cf1\highlight2 
+\par \cf0\highlight0 2021/12/21 11:01:56 [WARNING] This certificate lacks a "hosts" field. This makes it unsuitable for\cf1\highlight2 
+\par \cf0\highlight0 websites. For more information see the Baseline Requirements for the Issuance and Management\cf1\highlight2 
+\par \cf0\highlight0 of Publicly-Trusted Certificates, v.1.1.6, from the CA/Browser Forum (https://cabforum.org);\cf1\highlight2 
+\par \cf0\highlight0 specifically, section 10.2.3 ("Information Requirements").\cf1\highlight2 
+\par \cf0\highlight0 kubelet ( 32375 ) is running.\cf1\highlight2 
+\par \cf0\highlight0 customresourcedefinition.apiextensions.k8s.io/bouncers.mizar.com created\cf1\highlight2 
+\par \cf0\highlight0 customresourcedefinition.apiextensions.k8s.io/dividers.mizar.com created\cf1\highlight2 
+\par \cf0\highlight0 customresourcedefinition.apiextensions.k8s.io/droplets.mizar.com created\cf1\highlight2 
+\par \cf0\highlight0 customresourcedefinition.apiextensions.k8s.io/endpoints.mizar.com created\cf1\highlight2 
+\par \cf0\highlight0 customresourcedefinition.apiextensions.k8s.io/subnets.mizar.com created\cf1\highlight2 
+\par \cf0\highlight0 customresourcedefinition.apiextensions.k8s.io/vpcs.mizar.com created\cf1\highlight2 
+\par \cf0\highlight0 serviceaccount/mizar-operator created\cf1\highlight2 
+\par \cf0\highlight0 clusterrolebinding.rbac.authorization.k8s.io/mizar-operator created\cf1\highlight2 
+\par \cf0\highlight0 daemonset.apps/mizar-daemon created\cf1\highlight2 
+\par \cf0\highlight0 deployment.apps/mizar-operator created\cf1\highlight2 
+\par \cf0\highlight0 Create default storage class for\cf1\highlight2 
+\par \cf0\highlight0 storageclass.storage.k8s.io/standard created\cf1\highlight2 
+\par \cf0\highlight0 customresourcedefinition.apiextensions.k8s.io/networks.arktos.futurewei.com created\cf1\highlight2 
+\par \cf0\highlight0 *******************************************\cf1\highlight2 
+\par \cf0\highlight0 Setup Arktos components ...\cf1\highlight2 
+\par 
+\par \cf0\highlight0 No resources found.\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 No resources found.\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 No resources found.\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 No resources found.\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 No resources found.\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 No resources found.\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 No resources found.\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 node-e   Ready   <none>   12m   v0.9.0\cf1\highlight2 
+\par \cf0\highlight0 node/node-e labeled\cf1\highlight2 
+\par \cf0\highlight0 configmap/virtlet-image-translations created\cf1\highlight2 
+\par \cf0\highlight0 daemonset.apps/virtlet created\cf1\highlight2 
+\par \cf0\highlight0 configmap/virtlet-config created\cf1\highlight2 
+\par \cf0\highlight0 clusterrolebinding.rbac.authorization.k8s.io/virtlet created\cf1\highlight2 
+\par \cf0\highlight0 clusterrole.rbac.authorization.k8s.io/virtlet created\cf1\highlight2 
+\par \cf0\highlight0 clusterrole.rbac.authorization.k8s.io/configmap-reader created\cf1\highlight2 
+\par \cf0\highlight0 clusterrole.rbac.authorization.k8s.io/virtlet-userdata-reader created\cf1\highlight2 
+\par \cf0\highlight0 clusterrolebinding.rbac.authorization.k8s.io/kubelet-node-binding created\cf1\highlight2 
+\par \cf0\highlight0 clusterrolebinding.rbac.authorization.k8s.io/vm-userdata-binding created\cf1\highlight2 
+\par \cf0\highlight0 clusterrole.rbac.authorization.k8s.io/virtlet-crd created\cf1\highlight2 
+\par \cf0\highlight0 clusterrolebinding.rbac.authorization.k8s.io/virtlet-crd created\cf1\highlight2 
+\par \cf0\highlight0 serviceaccount/virtlet created\cf1\highlight2 
+\par \cf0\highlight0 NAME      DESIRED   CURRENT   READY   UP-TO-DATE   AVAILABLE   NODE SELECTOR   AGE\cf1\highlight2 
+\par \cf0\highlight0 virtlet   0         0         0       0            0           <none>          0s\cf1\highlight2 
+\par \cf0\highlight0 clusterrole.rbac.authorization.k8s.io/system:arktos-network-reader created\cf1\highlight2 
+\par \cf0\highlight0 clusterrolebinding.rbac.authorization.k8s.io/system:kubelet-network-reader created\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Arktos Setup done.\cf1\highlight2 
+\par \cf0\highlight0 *******************************************\cf1\highlight2 
+\par \cf0\highlight0 Setup Kata Containers components ...\cf1\highlight2 
+\par \cf0\highlight0 * Install Kata components\cf1\highlight2 
+\par \cf0\highlight0 2021-12-21T11:14:54Z INFO Waiting for automatic snapd restart...\cf1\highlight2 
+\par \cf0\highlight0 kata-containers 2.3.0 from Kata Containers (katacontainers\cf10\u10003?\cf0 ) installed\cf1\highlight2 
+\par \cf0\highlight0 * Checking Kata compatibility\cf1\highlight2 
+\par \cf0\highlight0 time="2021-12-21T11:15:38Z" level=warning msg="Not running network checks as super user" arch=amd64 name=kata-runtime pid=2700 source=runtime System is capable of run      ning Kata Containers System can currently create Kata Containers\cf1\highlight2 
+\par \cf0\highlight0 * Copy kata configuration.toml to /etc/kata-containers\cf1\highlight2 
+\par \cf0\highlight0 * Setup ShimV2\cf1\highlight2 
+\par \cf0\highlight0 #!/bin/bash\cf1\highlight2 
+\par \cf0\highlight0 KATA_CONF_FILE=/etc/kata-containers/configuration.toml /snap/kata-containers/current/usr/bin/containerd-shim-kata-v2 $@\cf1\highlight2 
+\par \cf0\highlight0 * Setup Containerd for Kata\cf1\highlight2 
+\par \cf0\highlight0 [plugins.cri.containerd.runtimes.kata-qemu]\cf1\highlight2 
+\par \cf0\highlight0   runtime_type = "io.containerd.kata-qemu.v2"\cf1\highlight2 
+\par \cf0\highlight0   [plugins.cri.containerd.runtimes.kata-qemu.options]\cf1\highlight2 
+\par \cf0\highlight0     ConfigPath = "/etc/kata-containers/configuration.toml"\cf1\highlight2 
+\par \cf0\highlight0 * Restart containerd\cf1\highlight2 
+\par \cf0\highlight0 For kubernetes 1.14: RUN kubectl apply -f https://raw.githubusercontent.com/kata-containers/packaging/master/kata-deploy/k8s-1.14/kata-qemu-runtimeClass.yaml\cf1\highlight2 
+\par \cf0\highlight0 For kubernetes 1.13: RUN kubectl apply -f https://raw.githubusercontent.com/kata-containers/packaging/master/kata-deploy/k8s-1.13/kata-qemu-runtimeClass.yaml\cf1\highlight2 
+\par \cf0\highlight0 create 1.14 runtimeClass by default\cf1\highlight2 
+\par \cf0\highlight0 runtimeclass.node.k8s.io/kata created\cf1\highlight2 
+\par \cf0\highlight0 runtimeclass.node.k8s.io/kata-qemu created\cf1\highlight2 
+\par \cf0\highlight0 A Kata example: RUN kubectl apply -f https://raw.githubusercontent.com/kata-containers/packaging/master/kata-deploy/examples/test-deploy-kata-qemu.yaml\cf1\highlight2 
+\par \cf0\highlight0 Kata Setup done.\cf1\highlight2 
+\par \cf0\highlight0 *******************************************\cf1\highlight2 
+\par \cf0\highlight0 Local Kubernetes cluster is running. Press Ctrl-C to shut it down.\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Logs:\cf1\highlight2 
+\par \cf0\highlight0   /tmp/kube-apiserver0.log\cf1\highlight2 
+\par \cf0\highlight0   /tmp/kube-controller-manager.log\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0   /tmp/kube-proxy.log\cf1\highlight2 
+\par \cf0\highlight0   /tmp/kube-scheduler.log\cf1\highlight2 
+\par \cf0\highlight0   /tmp/kubelet.log\cf1\highlight2 
+\par 
+\par \cf0\highlight0 To start using your cluster, you can open up another terminal/tab and run:\cf1\highlight2 
+\par 
+\par \cf0\highlight0   export KUBECONFIG=/var/run/kubernetes/admin.kubeconfig\cf1\highlight2 
+\par \cf0\highlight0 Or\cf1\highlight2 
+\par \cf0\highlight0   export KUBECONFIG=/var/run/kubernetes/adminN(N=0,1,...).kubeconfig\cf1\highlight2 
+\par 
+\par \cf0\highlight0   cluster/kubectl.sh\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Alternatively, you can write to the default kubeconfig:\cf1\highlight2 
+\par 
+\par \cf0\highlight0   export KUBERNETES_PROVIDER=local\cf1\highlight2 
+\par 
+\par \cf0\highlight0   cluster/kubectl.sh config set-cluster local --server=https://node-e:6443 --certificate-authority=/var/run/kubernetes/server-ca.crt\cf1\highlight2 
+\par \cf0\highlight0   cluster/kubectl.sh config set-credentials myself --client-key=/var/run/kubernetes/client-admin.key --client-certificate=/var/run/kubernetes/client-admin.crt\cf1\highlight2 
+\par \cf0\highlight0   cluster/kubectl.sh config set-context local --cluster=local --user=myself\cf1\highlight2 
+\par \cf0\highlight0   cluster/kubectl.sh config use-context local\cf1\highlight2 
+\par \cf0\highlight0   cluster/kubectl.sh\cf1\highlight2 
+\par \cf0\highlight0 history\cf1\highlight2 
+\par \cf9\highlight0 W1221 15:02:01]: scheduler terminated unexpectedly, see /tmp/kube-scheduler.log\cf1\highlight2 
+\par \cf0\highlight0 ^CCleaning up...\cf1\highlight2 
+\par \cf0\highlight0 Killing the following apiserver running processes\cf1\highlight2 
+\par \cf0\highlight0 31535 has been killed\cf1\highlight2 
+\par \cf0\highlight0 ./hack/arktos-up.sh: line 171: 31963 Terminated              $\{CONTROLPLANE_SUDO\} "$\{GO_OUT\}/hyperkube" kube-controller-manager --v="$\{LOG_LEVEL\}" --allocate-node-cidrs="$\{AGER_ALLOCATE_NODE_CIDR\}" --cluster-cidr="$\{KUBE_CONTROLLER_MANAGER_CLUSTER_CIDR\}" --vmodule="$\{LOG_SPEC\}" --service-account-private-key-file="$\{SERVICE_ACCOUNT_KEY\}" --rooA_FILE\}" --cluster-signing-cert-file="$\{CLUSTER_SIGNING_CERT_FILE\}" --cluster-signing-key-file="$\{CLUSTER_SIGNING_KEY_FILE\}" --enable-hostpath-provisioner="$\{ENABLE_HOSTPATode_cidr_args[@]+"$\{node_cidr_args[@]\}"\} --pvclaimbinder-sync-period="$\{CLAIM_BINDER_SYNC_PERIOD\}" --feature-gates="$\{FEATURE_GATES\}" "$\{cloud_config_arg[@]\}" --kubeconfig ths\}" --use-service-account-credentials --controllers="$\{KUBE_CONTROLLERS\}" --leader-elect=false --cert-dir="$\{CERT_DIR\}" --default-network-template-path="$\{ARKTOS_NETWORK_RMGR_LOG\}" 2>&1\cf1\highlight2 
+\par \cf0\highlight0 ./hack/arktos-up.sh: line 171: 31965 Terminated              $\{CONTROLPLANE_SUDO\} "$\{GO_OUT\}/arktos-network-controller" --v="$\{LOG_LEVEL\}" --master="http://127.0.0.1:8080"  "$\{API_HOST_IP_EXTERNAL\}" --kube-apiserver-port=6443 --resource-name-salt="$\{SALT\}" > "$\{ARKTOS_NETWORK_CONTROLLER_LOG\}" 2>&1\cf1\highlight2 
+\par \cf0\highlight0 /root/go/src/k8s.io/arktos/hack/lib/etcd.sh: line 120: 32065 Terminated              sudo "$\{GO_OUT\}/hyperkube" kube-proxy --v="$\{LOG_LEVEL\}" --config=/tmp/kube-proxy.yaml l\}://$\{API_HOST\}:$\{port\}" > "$\{PROXY_LOG\}" 2>&1\cf1\highlight2 
+\par \cf0\highlight0 Cleanup runtime metadata folder\cf1\highlight2 
+\par \cf0\highlight0 Cleanup runtime log folder\cf1\highlight2 
+\par 
+\par \cf0\highlight0 root@node-e:~/go/src/k8s.io/arktos# CNIPLUGIN=mizar ./hack/arktos-up.sh -O\cf1\highlight2 
+\par \cf0\highlight0 DBG: mizar CNI plugin will be installed AFTER cluster is up\cf1\highlight2 
+\par \cf0\highlight0 DBG: effective feature gates AllAlpha=false,WorkloadInfoDefaulting=true,QPSDoubleGCController=true,QPSDoubleRSController=true,MandatoryArktosNetwork=true\cf1\highlight2 
+\par \cf0\highlight0 DBG: effective disabling admission plugins\cf1\highlight2 
+\par \cf0\highlight0 DBG: effective default network template file is /root/go/src/k8s.io/arktos/hack/testdata/default-mizar-network.tmpl\cf1\highlight2 
+\par \cf0\highlight0 DBG: kubelet arg RESOLV_CONF is /run/systemd/resolve/resolv.conf\cf1\highlight2 
+\par \cf0\highlight0 WARNING : The kubelet is configured to not fail even if swap is enabled; production deployments should disable swap.\cf1\highlight2 
+\par \cf0\highlight0 cni plugin is mizar; arktos will use mizar to provision pod network\cf1\highlight2 
+\par \cf0\highlight0 Checking arktos containerd...\cf1\highlight2 
+\par \cf0\highlight0 arktos containerd found...\cf1\highlight2 
+\par \cf0\highlight0 installing loopback cni binary...\cf1\highlight2 
+\par \cf0\highlight0 ./loopback\cf1\highlight2 
+\par \cf0\highlight0 2021-12-22 04:43:57 URL:https://objects.githubusercontent.com/github-production-release-asset-2e65be/84575398/53318d00-bf61-11e9-9a8f-40364582e9ed?X-Amz-Algorithm=AWS4-HMACntial=AKIAIWNJYAX4CSVEH53A%2F20211222%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20211222T044353Z&X-Amz-Expires=300&X-Amz-Signature=c46aaa9eff3b1be798e848345e22250227ec43768c01c&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=84575398&response-content-disposition=attachment%3B%20filename%3Dcni-plugins-linux-amd64-v0.8.2.tgz&response-contn%2Foctet-stream [36662740/36662740] -> "-" [1]\cf1\highlight2 
+\par \cf0\highlight0 WARNING : The kubelet is configured to not fail even if swap is enabled; production deployments should disable swap.\cf1\highlight2 
+\par \cf0\highlight0 Getting runtime deployment file  libvirt-qemu\cf1\highlight2 
+\par \cf0\highlight0 --2021-12-22 04:43:57--  https://raw.githubusercontent.com/futurewei-cloud/arktos-vm-runtime/release-0.6/deploy/apparmor/libvirt-qemu\cf1\highlight2 
+\par \cf0\highlight0 Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.109.133, 185.199.108.133, 185.199.110.133, ...\cf1\highlight2 
+\par \cf0\highlight0 Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.109.133|:443... connected.\cf1\highlight2 
+\par \cf0\highlight0 HTTP request sent, awaiting response... 200 OK\cf1\highlight2 
+\par \cf0\highlight0 Length: 6578 (6.4K) [text/plain]\cf1\highlight2 
+\par \cf0\highlight0\f1 Saving to: \lquote /tmp/libvirt-qemu\rquote\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 /tmp/libvirt-qemu                               100%[======================================================================================================>]   6.42K  --.-K\cf1\highlight2 
+\par 
+\par \cf0\highlight0\f1 2021-12-22 04:43:57 (19.1 MB/s) - \lquote /tmp/libvirt-qemu\rquote  saved [6578/6578]\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 Getting runtime deployment file  libvirtd\cf1\highlight2 
+\par \cf0\highlight0 --2021-12-22 04:43:57--  https://raw.githubusercontent.com/futurewei-cloud/arktos-vm-runtime/release-0.6/deploy/apparmor/libvirtd\cf1\highlight2 
+\par \cf0\highlight0 Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.109.133, 185.199.108.133, 185.199.110.133, ...\cf1\highlight2 
+\par \cf0\highlight0 Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.109.133|:443... connected.\cf1\highlight2 
+\par \cf0\highlight0 HTTP request sent, awaiting response... 200 OK\cf1\highlight2 
+\par \cf0\highlight0 Length: 1617 (1.6K) [text/plain]\cf1\highlight2 
+\par \cf0\highlight0\f1 Saving to: \lquote /tmp/libvirtd\rquote\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 /tmp/libvirtd                                   100%[======================================================================================================>]   1.58K  --.-K\cf1\highlight2 
+\par 
+\par \cf0\highlight0\f1 2021-12-22 04:43:57 (9.31 MB/s) - \lquote /tmp/libvirtd\rquote  saved [1617/1617]\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 Getting runtime deployment file  virtlet\cf1\highlight2 
+\par \cf0\highlight0 --2021-12-22 04:43:57--  https://raw.githubusercontent.com/futurewei-cloud/arktos-vm-runtime/release-0.6/deploy/apparmor/virtlet\cf1\highlight2 
+\par \cf0\highlight0 Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.109.133, 185.199.108.133, 185.199.110.133, ...\cf1\highlight2 
+\par \cf0\highlight0 Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.109.133|:443... connected.\cf1\highlight2 
+\par \cf0\highlight0 HTTP request sent, awaiting response... 200 OK\cf1\highlight2 
+\par \cf0\highlight0 Length: 2582 (2.5K) [text/plain]\cf1\highlight2 
+\par \cf0\highlight0\f1 Saving to: \lquote /tmp/virtlet\rquote\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 /tmp/virtlet                                    100%[======================================================================================================>]   2.52K  --.-K\cf1\highlight2 
+\par 
+\par \cf0\highlight0\f1 2021-12-22 04:43:58 (18.9 MB/s) - \lquote /tmp/virtlet\rquote  saved [2582/2582]\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 Getting runtime deployment file  vms\cf1\highlight2 
+\par \cf0\highlight0 --2021-12-22 04:43:58--  https://raw.githubusercontent.com/futurewei-cloud/arktos-vm-runtime/release-0.6/deploy/apparmor/vms\cf1\highlight2 
+\par \cf0\highlight0 Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.109.133, 185.199.108.133, 185.199.110.133, ...\cf1\highlight2 
+\par \cf0\highlight0 Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.109.133|:443... connected.\cf1\highlight2 
+\par \cf0\highlight0 HTTP request sent, awaiting response... 200 OK\cf1\highlight2 
+\par \cf0\highlight0 Length: 485 [text/plain]\cf1\highlight2 
+\par \cf0\highlight0\f1 Saving to: \lquote /tmp/vms\rquote\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 /tmp/vms                                        100%[======================================================================================================>]     485  --.-K\cf1\highlight2 
+\par 
+\par \cf0\highlight0\f1 2021-12-22 04:43:58 (8.55 MB/s) - \lquote /tmp/vms\rquote  saved [485/485]\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 Getting runtime deployment file  vmruntime.yaml\cf1\highlight2 
+\par \cf0\highlight0 --2021-12-22 04:43:58--  https://raw.githubusercontent.com/futurewei-cloud/arktos-vm-runtime/release-0.6/deploy/data/virtlet-ds.yaml\cf1\highlight2 
+\par \cf0\highlight0 Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.109.133, 185.199.108.133, 185.199.110.133, ...\cf1\highlight2 
+\par \cf0\highlight0 Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.109.133|:443... connected.\cf1\highlight2 
+\par \cf0\highlight0 HTTP request sent, awaiting response... 200 OK\cf1\highlight2 
+\par \cf0\highlight0 Length: 11643 (11K) [text/plain]\cf1\highlight2 
+\par \cf0\highlight0\f1 Saving to: \lquote /tmp/vmruntime.yaml\rquote\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 /tmp/vmruntime.yaml                             100%[======================================================================================================>]  11.37K  --.-K\cf1\highlight2 
+\par 
+\par \cf0\highlight0\f1 2021-12-22 04:43:58 (18.1 MB/s) - \lquote /tmp/vmruntime.yaml\rquote  saved [11643/11643]\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 Getting runtime deployment file  images.yaml\cf1\highlight2 
+\par \cf0\highlight0 --2021-12-22 04:43:58--  https://raw.githubusercontent.com/futurewei-cloud/arktos-vm-runtime/release-0.6/deploy/images.yaml\cf1\highlight2 
+\par \cf0\highlight0 Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.109.133, 185.199.108.133, 185.199.110.133, ...\cf1\highlight2 
+\par \cf0\highlight0 Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.109.133|:443... connected.\cf1\highlight2 
+\par \cf0\highlight0 HTTP request sent, awaiting response... 200 OK\cf1\highlight2 
+\par \cf0\highlight0 Length: 254 [text/plain]\cf1\highlight2 
+\par \cf0\highlight0\f1 Saving to: \lquote /tmp/images.yaml\rquote\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 /tmp/images.yaml                                100%[======================================================================================================>]     254  --.-K\cf1\highlight2 
+\par 
+\par \cf0\highlight0\f1 2021-12-22 04:43:58 (5.15 MB/s) - \lquote /tmp/images.yaml\rquote  saved [254/254]\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 Stopping Apparmor service\cf1\highlight2 
+\par \cf0\highlight0 skipped the build.\cf1\highlight2 
+\par 
+\par \cf0\highlight0 The current version is 3.4.3\cf1\highlight2 
+\par 
+\par \cf0\highlight0 API SERVER insecure port is free, proceeding...\cf1\highlight2 
+\par \cf0\highlight0 API SERVER secure port is free, proceeding...\cf1\highlight2 
+\par \cf0\highlight0 Unable to successfully run 'cfssl' from /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/go/bin:/root/go/src/k8arty/etcd; downloading instead...\cf1\highlight2 
+\par \cf0\highlight0   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\cf1\highlight2 
+\par \cf0\highlight0                                  Dload  Upload   Total   Spent    Left  Speed\cf1\highlight2 
+\par \cf0\highlight0   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\cf1\highlight2 
+\par \cf0\highlight0 100   654  100   654    0     0    834      0 --:--:-- --:--:-- --:--:--   834\cf1\highlight2 
+\par \cf0\highlight0 100  9.8M  100  9.8M    0     0  3753k      0  0:00:02  0:00:02 --:--:-- 15.1M\cf1\highlight2 
+\par \cf0\highlight0   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\cf1\highlight2 
+\par \cf0\highlight0                                  Dload  Upload   Total   Spent    Left  Speed\cf1\highlight2 
+\par \cf0\highlight0   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\cf1\highlight2 
+\par \cf0\highlight0 100   658  100   658    0     0   1975      0 --:--:-- --:--:-- --:--:--  1975\cf1\highlight2 
+\par \cf0\highlight0 100 2224k  100 2224k    0     0  2522k      0 --:--:-- --:--:-- --:--:-- 18.5M\cf1\highlight2 
+\par \cf0\highlight0 Detected host and ready to start services.  Doing some housekeeping first...\cf1\highlight2 
+\par \cf0\highlight0 Using GO_OUT /root/go/src/k8s.io/arktos/_output/bin\cf1\highlight2 
+\par \cf0\highlight0 Starting services now!\cf1\highlight2 
+\par \cf0\highlight0 Starting etcd\cf1\highlight2 
+\par 
+\par \cf0\highlight0 The current version is 3.4.3\cf1\highlight2 
+\par 
+\par \cf0\highlight0 etcd --name node-e --listen-peer-urls http://192.168.1.211:2380   --advertise-client-urls http://192.168.1.211:2379 --data-dir /tmp/tmp.Qo5MZY2RJQ --listen-client-urls http79,http://127.0.0.1:2379 --listen-peer-urls http://192.168.1.211:2380 --debug > "/tmp/etcd.log" 2>/dev/null\cf1\highlight2 
+\par \cf0\highlight0 Waiting for etcd to come up.\cf1\highlight2 
+\par \cf0\highlight0 +++ [1222 04:44:04] On try 5, etcd: : \{"health":"true"\}\cf1\highlight2 
+\par \cf0\highlight0\{"header":\{"cluster_id":"12059777664062182387","member_id":"7127428317409177188","revision":"2","raft_term":"2"\}\}Starting 1 kube-apiserver instances. If you want to make chpiserver nubmer, please run export APISERVER_SERVER=n(n=1,2,...).\cf1\highlight2 
+\par \cf0\highlight0 Copied the apiserver partition config file  /var/run/kubernetes/apiserver.config...\cf1\highlight2 
+\par \cf0\highlight0 Skip generating CA as CA files existed and REGENERATE_CA != true. To regenerate CA files, export REGENERATE_CA=true\cf1\highlight2 
+\par \cf0\highlight0 Can't load /root/.rnd into RNG\cf1\highlight2 
+\par \cf0\highlight0 140138945565120:error:2406F079:random number generator:RAND_load_file:Cannot open file:../crypto/rand/randfile.c:88:Filename=/root/.rnd\cf1\highlight2 
+\par \cf0\highlight0 Generating a RSA private key\cf1\highlight2 
+\par \cf0\highlight0 ......+++++\cf1\highlight2 
+\par \cf0\highlight0 .....................................................+++++\cf1\highlight2 
+\par \cf0\highlight0 writing new private key to '/var/run/kubernetes/request-header-ca.key'\cf1\highlight2 
+\par \cf0\highlight0 -----\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:04 [INFO] generate received request\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:04 [INFO] received CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:04 [INFO] generating key: rsa-2048\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:05 [INFO] encoded CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:05 [INFO] signed certificate with serial number 400568694675378042303815807156873446831744363458\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:05 [WARNING] This certificate lacks a "hosts" field. This makes it unsuitable for\cf1\highlight2 
+\par \cf0\highlight0 websites. For more information see the Baseline Requirements for the Issuance and Management\cf1\highlight2 
+\par \cf0\highlight0 of Publicly-Trusted Certificates, v.1.1.6, from the CA/Browser Forum (https://cabforum.org);\cf1\highlight2 
+\par \cf0\highlight0 specifically, section 10.2.3 ("Information Requirements").\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:05 [INFO] generate received request\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:05 [INFO] received CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:05 [INFO] generating key: rsa-2048\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:06 [INFO] encoded CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:06 [INFO] signed certificate with serial number 442698285373598978344688471572652000889337539747\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:06 [WARNING] This certificate lacks a "hosts" field. This makes it unsuitable for\cf1\highlight2 
+\par \cf0\highlight0 websites. For more information see the Baseline Requirements for the Issuance and Management\cf1\highlight2 
+\par \cf0\highlight0 of Publicly-Trusted Certificates, v.1.1.6, from the CA/Browser Forum (https://cabforum.org);\cf1\highlight2 
+\par \cf0\highlight0 specifically, section 10.2.3 ("Information Requirements").\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:06 [INFO] generate received request\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:06 [INFO] received CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:06 [INFO] generating key: rsa-2048\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:07 [INFO] encoded CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:07 [INFO] signed certificate with serial number 450683378868901579734033863079056997863869537392\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:07 [WARNING] This certificate lacks a "hosts" field. This makes it unsuitable for\cf1\highlight2 
+\par \cf0\highlight0 websites. For more information see the Baseline Requirements for the Issuance and Management\cf1\highlight2 
+\par \cf0\highlight0 of Publicly-Trusted Certificates, v.1.1.6, from the CA/Browser Forum (https://cabforum.org);\cf1\highlight2 
+\par \cf0\highlight0 specifically, section 10.2.3 ("Information Requirements").\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:07 [INFO] generate received request\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:07 [INFO] received CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:07 [INFO] generating key: rsa-2048\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:08 [INFO] encoded CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:08 [INFO] signed certificate with serial number 295016424554090897142372870367976576567813757761\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:08 [WARNING] This certificate lacks a "hosts" field. This makes it unsuitable for\cf1\highlight2 
+\par \cf0\highlight0 websites. For more information see the Baseline Requirements for the Issuance and Management\cf1\highlight2 
+\par \cf0\highlight0 of Publicly-Trusted Certificates, v.1.1.6, from the CA/Browser Forum (https://cabforum.org);\cf1\highlight2 
+\par \cf0\highlight0 specifically, section 10.2.3 ("Information Requirements").\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:08 [INFO] generate received request\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:08 [INFO] received CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:08 [INFO] generating key: rsa-2048\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:09 [INFO] encoded CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:09 [INFO] signed certificate with serial number 278306542753271422527466537548926333329368656076\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:09 [WARNING] This certificate lacks a "hosts" field. This makes it unsuitable for\cf1\highlight2 
+\par \cf0\highlight0 websites. For more information see the Baseline Requirements for the Issuance and Management\cf1\highlight2 
+\par \cf0\highlight0 of Publicly-Trusted Certificates, v.1.1.6, from the CA/Browser Forum (https://cabforum.org);\cf1\highlight2 
+\par \cf0\highlight0 specifically, section 10.2.3 ("Information Requirements").\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:09 [INFO] generate received request\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:09 [INFO] received CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:09 [INFO] generating key: rsa-2048\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:11 [INFO] encoded CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:11 [INFO] signed certificate with serial number 90051220721679162557712703483224603125866351060\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:11 [WARNING] This certificate lacks a "hosts" field. This makes it unsuitable for\cf1\highlight2 
+\par \cf0\highlight0 websites. For more information see the Baseline Requirements for the Issuance and Management\cf1\highlight2 
+\par \cf0\highlight0 of Publicly-Trusted Certificates, v.1.1.6, from the CA/Browser Forum (https://cabforum.org);\cf1\highlight2 
+\par \cf0\highlight0 specifically, section 10.2.3 ("Information Requirements").\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:11 [INFO] generate received request\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:11 [INFO] received CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:11 [INFO] generating key: rsa-2048\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:12 [INFO] encoded CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:12 [INFO] signed certificate with serial number 77436511002529852305190988344106874644844533024\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:12 [WARNING] This certificate lacks a "hosts" field. This makes it unsuitable for\cf1\highlight2 
+\par \cf0\highlight0 websites. For more information see the Baseline Requirements for the Issuance and Management\cf1\highlight2 
+\par \cf0\highlight0 of Publicly-Trusted Certificates, v.1.1.6, from the CA/Browser Forum (https://cabforum.org);\cf1\highlight2 
+\par \cf0\highlight0 specifically, section 10.2.3 ("Information Requirements").\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:12 [INFO] generate received request\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:12 [INFO] received CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:12 [INFO] generating key: rsa-2048\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:13 [INFO] encoded CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:13 [INFO] signed certificate with serial number 72606419677611448896176015047372976895578698789\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:13 [WARNING] This certificate lacks a "hosts" field. This makes it unsuitable for\cf1\highlight2 
+\par \cf0\highlight0 websites. For more information see the Baseline Requirements for the Issuance and Management\cf1\highlight2 
+\par \cf0\highlight0 of Publicly-Trusted Certificates, v.1.1.6, from the CA/Browser Forum (https://cabforum.org);\cf1\highlight2 
+\par \cf0\highlight0 specifically, section 10.2.3 ("Information Requirements").\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:13 [INFO] generate received request\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:13 [INFO] received CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:13 [INFO] generating key: rsa-2048\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:16 [INFO] encoded CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:16 [INFO] signed certificate with serial number 289109130774971822915355505983872893140070562592\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:16 [WARNING] This certificate lacks a "hosts" field. This makes it unsuitable for\cf1\highlight2 
+\par \cf0\highlight0 websites. For more information see the Baseline Requirements for the Issuance and Management\cf1\highlight2 
+\par \cf0\highlight0 of Publicly-Trusted Certificates, v.1.1.6, from the CA/Browser Forum (https://cabforum.org);\cf1\highlight2 
+\par \cf0\highlight0 specifically, section 10.2.3 ("Information Requirements").\cf1\highlight2 
+\par \cf0\highlight0 Waiting for apiserver to come up\cf1\highlight2 
+\par \cf0\highlight0 +++ [1222 04:44:41] On try 15, apiserver: : ok\cf1\highlight2 
+\par \cf0\highlight0 clusterrolebinding.rbac.authorization.k8s.io/kube-apiserver-kubelet-admin created\cf1\highlight2 
+\par \cf0\highlight0 Cluster "local-up-cluster" set.\cf1\highlight2 
+\par \cf0\highlight0 use 'kubectl --kubeconfig=/var/run/kubernetes/admin-kube-aggregator0.kubeconfig' to use the aggregated API server\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:44 [INFO] generate received request\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:44 [INFO] received CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:44 [INFO] generating key: rsa-2048\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:44 [INFO] encoded CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:44 [INFO] signed certificate with serial number 660898758552896319109523024211456453784343636840\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:44 [WARNING] This certificate lacks a "hosts" field. This makes it unsuitable for\cf1\highlight2 
+\par \cf0\highlight0 websites. For more information see the Baseline Requirements for the Issuance and Management\cf1\highlight2 
+\par \cf0\highlight0 of Publicly-Trusted Certificates, v.1.1.6, from the CA/Browser Forum (https://cabforum.org);\cf1\highlight2 
+\par \cf0\highlight0 specifically, section 10.2.3 ("Information Requirements").\cf1\highlight2 
+\par \cf0\highlight0 service/kube-dns created\cf1\highlight2 
+\par \cf0\highlight0 serviceaccount/kube-dns created\cf1\highlight2 
+\par \cf0\highlight0 configmap/kube-dns created\cf1\highlight2 
+\par \cf0\highlight0 deployment.apps/kube-dns created\cf1\highlight2 
+\par \cf0\highlight0 Kube-dns addon successfully deployed.\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:46 [INFO] generate received request\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:46 [INFO] received CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:46 [INFO] generating key: rsa-2048\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:47 [INFO] encoded CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:47 [INFO] signed certificate with serial number 211248716824109735959119167586765013223093022023\cf1\highlight2 
+\par \cf0\highlight0 2021/12/22 04:44:47 [WARNING] This certificate lacks a "hosts" field. This makes it unsuitable for\cf1\highlight2 
+\par \cf0\highlight0 websites. For more information see the Baseline Requirements for the Issuance and Management\cf1\highlight2 
+\par \cf0\highlight0 of Publicly-Trusted Certificates, v.1.1.6, from the CA/Browser Forum (https://cabforum.org);\cf1\highlight2 
+\par \cf0\highlight0 specifically, section 10.2.3 ("Information Requirements").\cf1\highlight2 
+\par \cf0\highlight0 kubelet ( 17161 ) is running.\cf1\highlight2 
+\par \cf0\highlight0 customresourcedefinition.apiextensions.k8s.io/bouncers.mizar.com created\cf1\highlight2 
+\par \cf0\highlight0 customresourcedefinition.apiextensions.k8s.io/dividers.mizar.com created\cf1\highlight2 
+\par \cf0\highlight0 customresourcedefinition.apiextensions.k8s.io/droplets.mizar.com created\cf1\highlight2 
+\par \cf0\highlight0 customresourcedefinition.apiextensions.k8s.io/endpoints.mizar.com created\cf1\highlight2 
+\par \cf0\highlight0 customresourcedefinition.apiextensions.k8s.io/subnets.mizar.com created\cf1\highlight2 
+\par \cf0\highlight0 customresourcedefinition.apiextensions.k8s.io/vpcs.mizar.com created\cf1\highlight2 
+\par \cf0\highlight0 serviceaccount/mizar-operator created\cf1\highlight2 
+\par \cf0\highlight0 clusterrolebinding.rbac.authorization.k8s.io/mizar-operator created\cf1\highlight2 
+\par \cf0\highlight0 daemonset.apps/mizar-daemon created\cf1\highlight2 
+\par \cf0\highlight0 deployment.apps/mizar-operator created\cf1\highlight2 
+\par \cf0\highlight0 Create default storage class for\cf1\highlight2 
+\par \cf0\highlight0 storageclass.storage.k8s.io/standard created\cf1\highlight2 
+\par \cf0\highlight0 customresourcedefinition.apiextensions.k8s.io/networks.arktos.futurewei.com created\cf1\highlight2 
+\par \cf0\highlight0 *******************************************\cf1\highlight2 
+\par \cf0\highlight0 Setup Arktos components ...\cf1\highlight2 
+\par 
+\par \cf0\highlight0 No resources found.\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 No resources found.\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 No resources found.\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 No resources found.\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 node-e   Ready   <none>   1s    v0.9.0\cf1\highlight2 
+\par \cf0\highlight0 node/node-e labeled\cf1\highlight2 
+\par \cf0\highlight0 configmap/virtlet-image-translations created\cf1\highlight2 
+\par \cf0\highlight0 daemonset.apps/virtlet created\cf1\highlight2 
+\par \cf0\highlight0 configmap/virtlet-config created\cf1\highlight2 
+\par \cf0\highlight0 clusterrolebinding.rbac.authorization.k8s.io/virtlet created\cf1\highlight2 
+\par \cf0\highlight0 clusterrole.rbac.authorization.k8s.io/virtlet created\cf1\highlight2 
+\par \cf0\highlight0 clusterrole.rbac.authorization.k8s.io/configmap-reader created\cf1\highlight2 
+\par \cf0\highlight0 clusterrole.rbac.authorization.k8s.io/virtlet-userdata-reader created\cf1\highlight2 
+\par \cf0\highlight0 clusterrolebinding.rbac.authorization.k8s.io/kubelet-node-binding created\cf1\highlight2 
+\par \cf0\highlight0 clusterrolebinding.rbac.authorization.k8s.io/vm-userdata-binding created\cf1\highlight2 
+\par \cf0\highlight0 clusterrole.rbac.authorization.k8s.io/virtlet-crd created\cf1\highlight2 
+\par \cf0\highlight0 clusterrolebinding.rbac.authorization.k8s.io/virtlet-crd created\cf1\highlight2 
+\par \cf0\highlight0 serviceaccount/virtlet created\cf1\highlight2 
+\par \cf0\highlight0 NAME      DESIRED   CURRENT   READY   UP-TO-DATE   AVAILABLE   NODE SELECTOR   AGE\cf1\highlight2 
+\par \cf0\highlight0 virtlet   0         0         0       0            0           <none>          1s\cf1\highlight2 
+\par \cf0\highlight0 clusterrole.rbac.authorization.k8s.io/system:arktos-network-reader created\cf1\highlight2 
+\par \cf0\highlight0 clusterrolebinding.rbac.authorization.k8s.io/system:kubelet-network-reader created\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Arktos Setup done.\cf1\highlight2 
+\par \cf0\highlight0 *******************************************\cf1\highlight2 
+\par \cf0\highlight0 Setup Kata Containers components ...\cf1\highlight2 
+\par \cf0\highlight0 * Install Kata components\cf1\highlight2 
+\par \cf0\highlight0 snap "kata-containers" is already installed, see 'snap help refresh'\cf1\highlight2 
+\par \cf0\highlight0 * Checking Kata compatibility\cf1\highlight2 
+\par \cf0\highlight0 time="2021-12-22T04:45:19Z" level=warning msg="Not running network checks as super user" arch=amd64 name=kata-runtime pid=21407 source=runtime System is capable of running tem can currently create Kata Containers\cf1\highlight2 
+\par \cf0\highlight0 * Warning: /etc/kata-containers/configuration.toml already exists. Making a backup in /etc/kata-containers/configuration.toml.bk\cf1\highlight2 
+\par \cf0\highlight0 * Copy kata configuration.toml to /etc/kata-containers\cf1\highlight2 
+\par \cf0\highlight0 * Setup ShimV2\cf1\highlight2 
+\par \cf0\highlight0 * Warning: containerd-shim-kata-qemu-v2 already exists\cf1\highlight2 
+\par \cf0\highlight0 #!/bin/bash\cf1\highlight2 
+\par \cf0\highlight0 KATA_CONF_FILE=/etc/kata-containers/configuration.toml /snap/kata-containers/current/usr/bin/containerd-shim-kata-v2 $@\cf1\highlight2 
+\par \cf0\highlight0 * Setup Containerd for Kata\cf1\highlight2 
+\par \cf0\highlight0 * Warning: /etc/containerd/config.toml already exists, making a backup in /etc/containerd/config.toml.bk\cf1\highlight2 
+\par \cf0\highlight0 * Making a backup of /etc/containerd/config.toml to /etc/containerd/config.toml.bk\cf1\highlight2 
+\par \cf0\highlight0 [plugins.cri.containerd.runtimes.kata-qemu]\cf1\highlight2 
+\par \cf0\highlight0   runtime_type = "io.containerd.kata-qemu.v2"\cf1\highlight2 
+\par \cf0\highlight0   [plugins.cri.containerd.runtimes.kata-qemu.options]\cf1\highlight2 
+\par \cf0\highlight0     ConfigPath = "/etc/kata-containers/configuration.toml"\cf1\highlight2 
+\par \cf0\highlight0 * Restart containerd\cf1\highlight2 
+\par \cf0\highlight0 For kubernetes 1.14: RUN kubectl apply -f https://raw.githubusercontent.com/kata-containers/packaging/master/kata-deploy/k8s-1.14/kata-qemu-runtimeClass.yaml\cf1\highlight2 
+\par \cf0\highlight0 For kubernetes 1.13: RUN kubectl apply -f https://raw.githubusercontent.com/kata-containers/packaging/master/kata-deploy/k8s-1.13/kata-qemu-runtimeClass.yaml\cf1\highlight2 
+\par \cf0\highlight0 create 1.14 runtimeClass by default\cf1\highlight2 
+\par \cf0\highlight0 runtimeclass.node.k8s.io/kata created\cf1\highlight2 
+\par \cf0\highlight0 runtimeclass.node.k8s.io/kata-qemu created\cf1\highlight2 
+\par \cf0\highlight0 A Kata example: RUN kubectl apply -f https://raw.githubusercontent.com/kata-containers/packaging/master/kata-deploy/examples/test-deploy-kata-qemu.yaml\cf1\highlight2 
+\par \cf0\highlight0 Kata Setup done.\cf1\highlight2 
+\par \cf0\highlight0 *******************************************\cf1\highlight2 
+\par \cf0\highlight0 Local Kubernetes cluster is running. Press Ctrl-C to shut it down.\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Logs:\cf1\highlight2 
+\par \cf0\highlight0   /tmp/kube-apiserver0.log\cf1\highlight2 
+\par \cf0\highlight0   /tmp/kube-controller-manager.log\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0   /tmp/kube-proxy.log\cf1\highlight2 
+\par \cf0\highlight0   /tmp/kube-scheduler.log\cf1\highlight2 
+\par \cf0\highlight0   /tmp/kubelet.log\cf1\highlight2 
+\par 
+\par \cf0\highlight0 To start using your cluster, you can open up another terminal/tab and run:\cf1\highlight2 
+\par 
+\par \cf0\highlight0   export KUBECONFIG=/var/run/kubernetes/admin.kubeconfig\cf1\highlight2 
+\par \cf0\highlight0 Or\cf1\highlight2 
+\par \cf0\highlight0   export KUBECONFIG=/var/run/kubernetes/adminN(N=0,1,...).kubeconfig\cf1\highlight2 
+\par 
+\par \cf0\highlight0   cluster/kubectl.sh\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Alternatively, you can write to the default kubeconfig:\cf1\highlight2 
+\par 
+\par \cf0\highlight0   export KUBERNETES_PROVIDER=local\cf1\highlight2 
+\par 
+\par \cf0\highlight0   cluster/kubectl.sh config set-cluster local --server=https://node-e:6443 --certificate-authority=/var/run/kubernetes/server-ca.crt\cf1\highlight2 
+\par \cf0\highlight0   cluster/kubectl.sh config set-credentials myself --client-key=/var/run/kubernetes/client-admin.key --client-certificate=/var/run/kubernetes/client-admin.crt\cf1\highlight2 
+\par \cf0\highlight0   cluster/kubectl.sh config set-context local --cluster=local --user=myself\cf1\highlight2 
+\par \cf0\highlight0   cluster/kubectl.sh config use-context local\cf1\highlight2 
+\par \cf0\highlight0   cluster/kubectl.sh\cf1\highlight2 
+\par \pard\cf0\highlight0\f2 
+\par }
+ 
