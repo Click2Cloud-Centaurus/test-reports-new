@@ -1,0 +1,464 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fmodern Consolas;}{\f1\fmodern\fcharset0 Consolas;}{\f2\fnil\fcharset129 Courier New;}}
+{\colortbl ;\red20\green20\blue20;\red142\green142\blue142;\red16\green158\blue98;\red148\green146\blue12;\red170\green51\blue170;\red56\green136\blue159;\red18\green124\blue155;\red94\green147\blue162;\red9\green118\blue72;}
+\viewkind4\uc1\pard\f0\fs20     \u9484?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9488?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?                 \cf3\f1\bullet  MobaXterm Personal Edition v21.4 \bullet\cf0\f0                  \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?               \cf4 (SSH client, X server and network tools)\cf0                \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?                                                                      \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474? \u8594? SSH session to \cf5 root@192.168.1.213                        \cf0           \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  Direct SSH      :  \cf3\f0 v\cf0                                              \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  SSH compression :  \cf3\f0 v\cf0                                              \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  SSH-browser     :  \cf3\f0 v\cf0                                              \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  X11-forwarding  :  \cf3\f0 v\cf0   (remote display is forwarded through SSH)  \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?                                                                      \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474? \u8594? For more info, ctrl+click on \cf6\ul help\cf0\ulnone  or visit our \cf6\ul website\cf0\ulnone .            \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9492?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9496?\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 5.6.0-rc2 x86_64)\cf1\highlight2 
+\par 
+\par \cf0\highlight0  * Documentation:  https://help.ubuntu.com\cf1\highlight2 
+\par \cf0\highlight0  * Management:     https://landscape.canonical.com\cf1\highlight2 
+\par \cf0\highlight0  * Support:        https://ubuntu.com/advantage\cf1\highlight2 
+\par 
+\par \cf0\highlight0   System information as of Tue Dec 28 06:13:47 UTC 2021\cf1\highlight2 
+\par 
+\par \cf0\highlight0   System load:  3.44               Processes:              352\cf1\highlight2 
+\par \cf0\highlight0   Usage of /:   24.1% of 72.83GB   Users logged in:        1\cf1\highlight2 
+\par \cf0\highlight0   Memory usage: 8%                 IP address for ens160:  192.168.1.213\cf1\highlight2 
+\par \cf0\highlight0   Swap usage:   0%                 IP address for docker0: 172.17.0.1\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0  * Canonical Livepatch is available for installation.\cf1\highlight2 
+\par \cf0\highlight0    - Reduce system reboots and improve kernel security. Activate at:\cf1\highlight2 
+\par \cf0\highlight0      https://ubuntu.com/livepatch\cf1\highlight2 
+\par 
+\par \cf0\highlight0 168 packages can be updated.\cf1\highlight2 
+\par \cf0\highlight0 124 updates are security updates.\cf1\highlight2 
+\par 
+\par \cf0\highlight0 New release '20.04.3 LTS' available.\cf1\highlight2 
+\par \cf0\highlight0 Run 'do-release-upgrade' to upgrade to it.\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Last login: Tue Dec 28 05:55:36 2021 from 192.168.1.1\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# systemctl status containerd\cf1\highlight2 
+\par \cf3\highlight0\u9679?\cf0  containerd.service - containerd container runtime\cf1\highlight2 
+\par \cf0\highlight0    Loaded: loaded (/lib/systemd/system/containerd.service; enabled; vendor preset: enabled)\cf1\highlight2 
+\par \cf0\highlight0    Active: \cf3 active (running)\cf0  since Tue 2021-12-28 06:01:18 UTC; 12min ago\cf1\highlight2 
+\par \cf0\highlight0      Docs: https://containerd.io\cf1\highlight2 
+\par \cf0\highlight0  Main PID: 7769 (containerd)\cf1\highlight2 
+\par \cf0\highlight0     Tasks: 26\cf1\highlight2 
+\par \cf0\highlight0    CGroup: /system.slice/containerd.service\cf1\highlight2 
+\par \cf0\highlight0            \u9492?\u9472?7769 /usr/bin/containerd\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Dec 28 06:13:55 node-d containerd[7769]: time="2021-12-28T06:13:55.273155643Z" level=info msg="No cni config template is specified, wait for other system components t\cf1\highlight2 
+\par \cf0\highlight0 Dec 28 06:13:55 node-d containerd[7769]: time="2021-12-28T06:13:55.374643827Z" level=info msg="No cni config template is specified, wait for other system components t\cf1\highlight2 
+\par \cf0\highlight0 Dec 28 06:13:55 node-d containerd[7769]: time="2021-12-28T06:13:55.475971135Z" level=info msg="No cni config template is specified, wait for other system components t\cf1\highlight2 
+\par \cf0\highlight0 Dec 28 06:13:55 node-d containerd[7769]: time="2021-12-28T06:13:55.577232727Z" level=info msg="No cni config template is specified, wait for other system components t\cf1\highlight2 
+\par \cf0\highlight0 Dec 28 06:13:55 node-d containerd[7769]: time="2021-12-28T06:13:55.678551040Z" level=info msg="No cni config template is specified, wait for other system components t\cf1\highlight2 
+\par \cf0\highlight0 Dec 28 06:13:55 node-d containerd[7769]: time="2021-12-28T06:13:55.779763279Z" level=info msg="No cni config template is specified, wait for other system components t\cf1\highlight2 
+\par \cf0\highlight0 Dec 28 06:13:55 node-d containerd[7769]: time="2021-12-28T06:13:55.880837159Z" level=info msg="No cni config template is specified, wait for other system components t\cf1\highlight2 
+\par \cf0\highlight0 Dec 28 06:13:55 node-d containerd[7769]: time="2021-12-28T06:13:55.981934413Z" level=info msg="No cni config template is specified, wait for other system components t\cf1\highlight2 
+\par \cf0\highlight0 Dec 28 06:13:56 node-d containerd[7769]: time="2021-12-28T06:13:56.083390787Z" level=info msg="No cni config template is specified, wait for other system components t\cf1\highlight2 
+\par \cf0\highlight0 Dec 28 06:13:56 node-d containerd[7769]: time="2021-12-28T06:13:56.184698222Z" level=info msg="No cni config template is specified, wait for other system components t\cf1\highlight2 
+\par 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# systemctl restart containerd\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# export KUBECONFIG=/var/run/kubernetes/admin.kubeconfig\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# vi kubernetes-dashboard.yaml\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# sudo sed -i '0,/RANDFILE/\{s/RANDFILE/\\#&/\}' /etc/ssl/openssl.cnf\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# openssl genrsa -out dashboard.key 2048\cf1\highlight2 
+\par \cf0\highlight0 Generating RSA private key, 2048 bit long modulus (2 primes)\cf1\highlight2 
+\par \cf0\highlight0 ....+++++\cf1\highlight2 
+\par \cf0\highlight0 .......+++++\cf1\highlight2 
+\par \cf0\highlight0 e is 65537 (0x010001)\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# openssl rsa -in dashboard.key -out dashboard.key\cf1\highlight2 
+\par \cf0\highlight0 writing RSA key\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# openssl req -sha256 -new -key dashboard.key -out dashboard.csr -subj "/CN=$(hostname -I | awk\cf1\highlight2 
+\par \cf0\highlight0 > '\{print $1\}')"\cf1\highlight2 
+\par \cf0\highlight0 Usage: awk [POSIX or GNU style options] -f progfile [--] file ...\cf1\highlight2 
+\par \cf0\highlight0 Usage: awk [POSIX or GNU style options] [--] 'program' file ...\cf1\highlight2 
+\par \cf0\highlight0 POSIX options:          GNU long options: (standard)\cf1\highlight2 
+\par \cf0\highlight0         -f progfile             --file=progfile\cf1\highlight2 
+\par \cf0\highlight0         -F fs                   --field-separator=fs\cf1\highlight2 
+\par \cf0\highlight0         -v var=val              --assign=var=val\cf1\highlight2 
+\par \cf0\highlight0 Short options:          GNU long options: (extensions)\cf1\highlight2 
+\par \cf0\highlight0         -b                      --characters-as-bytes\cf1\highlight2 
+\par \cf0\highlight0         -c                      --traditional\cf1\highlight2 
+\par \cf0\highlight0         -C                      --copyright\cf1\highlight2 
+\par \cf0\highlight0         -d[file]                --dump-variables[=file]\cf1\highlight2 
+\par \cf0\highlight0         -D[file]                --debug[=file]\cf1\highlight2 
+\par \cf0\highlight0         -e 'program-text'       --source='program-text'\cf1\highlight2 
+\par \cf0\highlight0         -E file                 --exec=file\cf1\highlight2 
+\par \cf0\highlight0         -g                      --gen-pot\cf1\highlight2 
+\par \cf0\highlight0         -h                      --help\cf1\highlight2 
+\par \cf0\highlight0         -i includefile          --include=includefile\cf1\highlight2 
+\par \cf0\highlight0         -l library              --load=library\cf1\highlight2 
+\par \cf0\highlight0         -L[fatal|invalid]       --lint[=fatal|invalid]\cf1\highlight2 
+\par \cf0\highlight0         -M                      --bignum\cf1\highlight2 
+\par \cf0\highlight0         -N                      --use-lc-numeric\cf1\highlight2 
+\par \cf0\highlight0         -n                      --non-decimal-data\cf1\highlight2 
+\par \cf0\highlight0         -o[file]                --pretty-print[=file]\cf1\highlight2 
+\par \cf0\highlight0         -O                      --optimize\cf1\highlight2 
+\par \cf0\highlight0         -p[file]                --profile[=file]\cf1\highlight2 
+\par \cf0\highlight0         -P                      --posix\cf1\highlight2 
+\par \cf0\highlight0         -r                      --re-interval\cf1\highlight2 
+\par \cf0\highlight0         -S                      --sandbox\cf1\highlight2 
+\par \cf0\highlight0         -t                      --lint-old\cf1\highlight2 
+\par \cf0\highlight0         -V                      --version\cf1\highlight2 
+\par 
+\par \cf0\highlight0 To report bugs, see node `Bugs' in `gawk.info', which is\cf1\highlight2 
+\par \cf0\highlight0 section `Reporting Problems and Bugs' in the printed version.\cf1\highlight2 
+\par 
+\par \cf0\highlight0 gawk is a pattern scanning and processing language.\cf1\highlight2 
+\par \cf0\highlight0 By default it reads standard input and writes standard output.\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Examples:\cf1\highlight2 
+\par \cf0\highlight0         gawk '\{ sum += $1 \}; END \{ print sum \}' file\cf1\highlight2 
+\par \cf0\highlight0         gawk -F: '\{ print $1 \}' /etc/passwd\cf1\highlight2 
+\par \cf0\highlight0\{print $1\}: command not found\cf1\highlight2 
+\par \cf0\highlight0 problems making Certificate Request\cf1\highlight2 
+\par \cf0\highlight0 139835364622784:error:0D07A098:asn1 encoding routines:ASN1_mbstring_ncopy:string too short:../crypto/asn1/a_mbstr.c:100:minsize=1\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# sudo sed -i '0,/RANDFILE/\{s/RANDFILE/\\#&/\}' /etc/ssl/openssl.cnf\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# openssl genrsa -out dashboard.key 2048\cf1\highlight2 
+\par \cf0\highlight0 Generating RSA private key, 2048 bit long modulus (2 primes)\cf1\highlight2 
+\par \cf0\highlight0 ............+++++\cf1\highlight2 
+\par \cf0\highlight0 ...............+++++\cf1\highlight2 
+\par \cf0\highlight0 e is 65537 (0x010001)\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# openssl rsa -in dashboard.key -out dashboard.key\cf1\highlight2 
+\par \cf0\highlight0 writing RSA key\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# openssl req -sha256 -new -key dashboard.key -out dashboard.csr -subj "/CN=$(hostname -I | awk '\{print $1\}')"\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# openssl x509 -req -sha256 -days 365 -in dashboard.csr -signkey dashboard.key -out dashboard.crt\cf1\highlight2 
+\par \cf0\highlight0 Signature ok\cf1\highlight2 
+\par \cf0\highlight0 subject=CN = 192.168.1.213\cf1\highlight2 
+\par \cf0\highlight0 Getting Private key\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh create namespace kubernetes-dashboard\cf1\highlight2 
+\par \cf0\highlight0 namespace/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh create secret generic kubernetes-dashboard-certs --from-file=/root/dashboard.key --from-file=/root/dashboard.crt -n kubernetes-dashboard\cf1\highlight2 
+\par \cf0\highlight0 error: error reading /root/dashboard.key: no such file or directory\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ls\cf1\highlight2 
+\par \cf7\highlight0 api\cf0                   \cf7 CHANGELOG\cf0            dashboard.crt  go.mod                     \cf7 logo\cf0                       OWNERS      readthedocs.yaml  \cf7 translations\cf1\highlight2 
+\par \cf0\highlight0 aws_build_version    \cf7 cluster\cf0              dashboard.csr  go.sum                     \cf8 Makefile\cf0                   \cf7 perf-tests\cf0   \cf7 staging\cf0            \cf7 vendor\cf1\highlight2 
+\par \cf0\highlight0 aws_kube_params.inc  \cf7 cmd\cf0                  dashboard.key  \cf7 hack\cf0                        \cf8 Makefile.generated_files\cf0   \cf7 pkg\cf0          SUPPORT.md        \cf8 WORKSPACE\cf1\highlight2 
+\par \cf7\highlight0 build\cf0                 code-of-conduct.md  \cf7 docs\cf0            kubernetes-dashboard.yaml  mkdocs.yml                \cf7 plugin\cf0       \cf7 test\cf1\highlight2 
+\par \cf8\highlight0 BUILD.bazel\cf0           CONTRIBUTING.md     \cf7 Godeps\cf0          LICENSE                    \cf7 _output\cf0                    README.md   \cf7 third_party\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# cp dashboard.crt dashboard.csr dashboard.key  /root\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh create secret generic kubernetes-dashboard-certs --from-file=/root/dashboard.key --from-file=/root/dashboard.crt -n kubernetes-dashboard\cf1\highlight2 
+\par \cf0\highlight0 secret/kubernetes-dashboard-certs created\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh create -f kubernetes-dashboard.yaml\cf1\highlight2 
+\par \cf0\highlight0 serviceaccount/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 service/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 secret/kubernetes-dashboard-csrf created\cf1\highlight2 
+\par \cf0\highlight0 secret/kubernetes-dashboard-key-holder created\cf1\highlight2 
+\par \cf0\highlight0 configmap/kubernetes-dashboard-settings created\cf1\highlight2 
+\par \cf0\highlight0 role.rbac.authorization.k8s.io/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 clusterrole.rbac.authorization.k8s.io/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 rolebinding.rbac.authorization.k8s.io/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 clusterrolebinding.rbac.authorization.k8s.io/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 deployment.apps/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 service/dashboard-metrics-scraper created\cf1\highlight2 
+\par \cf0\highlight0 deployment.apps/dashboard-metrics-scraper created\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE              NAME                                         HASHKEY               READY   STATUS              RESTARTS   AGE     IP              NODE     NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 kube-system            coredns-default-fc74854f6-kxh86              6038552928485379131   1/1     Running             0          7m21s   10.88.0.3       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            kube-dns-554c5866fc-nzqfw                    4162887934088858130   3/3     Running             0          7m22s   10.88.0.2       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            virtlet-v967d                                2326610282324667440   3/3     Running             0          6m51s   192.168.1.213   node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   dashboard-metrics-scraper-5c577c86cf-f28zv   7128995781061579438   0/1     ContainerCreating   0          10s     <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-54867f9f59-fdcrx        5848570785767711074   0/1     ContainerCreating   0          10s     <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-54867f9f59-fkr9j        1030195502265320227   0/1     ContainerCreating   0          10s     <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE              NAME                                         HASHKEY               READY   STATUS              RESTARTS   AGE     IP              NODE     NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 kube-system            coredns-default-fc74854f6-kxh86              6038552928485379131   1/1     Running             0          7m23s   10.88.0.3       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            kube-dns-554c5866fc-nzqfw                    4162887934088858130   3/3     Running             0          7m24s   10.88.0.2       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            virtlet-v967d                                2326610282324667440   3/3     Running             0          6m53s   192.168.1.213   node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   dashboard-metrics-scraper-5c577c86cf-f28zv   7128995781061579438   0/1     ContainerCreating   0          12s     <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-54867f9f59-fdcrx        5848570785767711074   0/1     ContainerCreating   0          12s     <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-54867f9f59-fkr9j        1030195502265320227   0/1     ContainerCreating   0          12s     <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE              NAME                                         HASHKEY               READY   STATUS              RESTARTS   AGE     IP              NODE     NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 kube-system            coredns-default-fc74854f6-kxh86              6038552928485379131   1/1     Running             0          7m25s   10.88.0.3       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            kube-dns-554c5866fc-nzqfw                    4162887934088858130   3/3     Running             0          7m26s   10.88.0.2       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            virtlet-v967d                                2326610282324667440   3/3     Running             0          6m55s   192.168.1.213   node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   dashboard-metrics-scraper-5c577c86cf-f28zv   7128995781061579438   0/1     ContainerCreating   0          14s     <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-54867f9f59-fdcrx        5848570785767711074   0/1     ContainerCreating   0          14s     <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-54867f9f59-fkr9j        1030195502265320227   0/1     ContainerCreating   0          14s     <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE              NAME                                         HASHKEY               READY   STATUS              RESTARTS   AGE     IP              NODE     NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 kube-system            coredns-default-fc74854f6-kxh86              6038552928485379131   1/1     Running             0          7m26s   10.88.0.3       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            kube-dns-554c5866fc-nzqfw                    4162887934088858130   3/3     Running             0          7m27s   10.88.0.2       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            virtlet-v967d                                2326610282324667440   3/3     Running             0          6m56s   192.168.1.213   node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   dashboard-metrics-scraper-5c577c86cf-f28zv   7128995781061579438   0/1     ContainerCreating   0          15s     <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-54867f9f59-fdcrx        5848570785767711074   0/1     ContainerCreating   0          15s     <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-54867f9f59-fkr9j        1030195502265320227   0/1     ContainerCreating   0          15s     <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE              NAME                                         HASHKEY               READY   STATUS              RESTARTS   AGE     IP              NODE     NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 kube-system            coredns-default-fc74854f6-kxh86              6038552928485379131   1/1     Running             0          7m27s   10.88.0.3       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            kube-dns-554c5866fc-nzqfw                    4162887934088858130   3/3     Running             0          7m28s   10.88.0.2       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            virtlet-v967d                                2326610282324667440   3/3     Running             0          6m57s   192.168.1.213   node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   dashboard-metrics-scraper-5c577c86cf-f28zv   7128995781061579438   0/1     ContainerCreating   0          16s     <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-54867f9f59-fdcrx        5848570785767711074   0/1     ContainerCreating   0          16s     <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-54867f9f59-fkr9j        1030195502265320227   0/1     ContainerCreating   0          16s     <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE              NAME                                         HASHKEY               READY   STATUS              RESTARTS   AGE     IP              NODE     NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 kube-system            coredns-default-fc74854f6-kxh86              6038552928485379131   1/1     Running             0          7m28s   10.88.0.3       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            kube-dns-554c5866fc-nzqfw                    4162887934088858130   3/3     Running             0          7m29s   10.88.0.2       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            virtlet-v967d                                2326610282324667440   3/3     Running             0          6m58s   192.168.1.213   node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   dashboard-metrics-scraper-5c577c86cf-f28zv   7128995781061579438   0/1     ContainerCreating   0          17s     <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-54867f9f59-fdcrx        5848570785767711074   0/1     ContainerCreating   0          17s     <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-54867f9f59-fkr9j        1030195502265320227   0/1     ContainerCreating   0          17s     <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE              NAME                                         HASHKEY               READY   STATUS    RESTARTS   AGE     IP              NODE     NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 kube-system            coredns-default-fc74854f6-kxh86              6038552928485379131   1/1     Running   0          7m31s   10.88.0.3       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            kube-dns-554c5866fc-nzqfw                    4162887934088858130   3/3     Running   0          7m32s   10.88.0.2       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            virtlet-v967d                                2326610282324667440   3/3     Running   0          7m1s    192.168.1.213   node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   dashboard-metrics-scraper-5c577c86cf-f28zv   7128995781061579438   1/1     Running   0          20s     10.88.0.5       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-54867f9f59-fdcrx        5848570785767711074   0/1     Error     0          20s     10.88.0.4       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-54867f9f59-fkr9j        1030195502265320227   1/1     Running   0          20s     10.88.0.6       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE              NAME                                         HASHKEY               READY   STATUS    RESTARTS   AGE     IP              NODE     NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 kube-system            coredns-default-fc74854f6-kxh86              6038552928485379131   1/1     Running   0          7m33s   10.88.0.3       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            kube-dns-554c5866fc-nzqfw                    4162887934088858130   3/3     Running   0          7m34s   10.88.0.2       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            virtlet-v967d                                2326610282324667440   3/3     Running   0          7m3s    192.168.1.213   node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   dashboard-metrics-scraper-5c577c86cf-f28zv   7128995781061579438   1/1     Running   0          22s     10.88.0.5       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-54867f9f59-fdcrx        5848570785767711074   0/1     Error     0          22s     10.88.0.4       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-54867f9f59-fkr9j        1030195502265320227   1/1     Running   0          22s     10.88.0.6       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE              NAME                                         HASHKEY               READY   STATUS    RESTARTS   AGE     IP              NODE     NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 kube-system            coredns-default-fc74854f6-kxh86              6038552928485379131   1/1     Running   0          7m34s   10.88.0.3       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            kube-dns-554c5866fc-nzqfw                    4162887934088858130   3/3     Running   0          7m35s   10.88.0.2       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            virtlet-v967d                                2326610282324667440   3/3     Running   0          7m4s    192.168.1.213   node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   dashboard-metrics-scraper-5c577c86cf-f28zv   7128995781061579438   1/1     Running   0          23s     10.88.0.5       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-54867f9f59-fdcrx        5848570785767711074   1/1     Running   1          23s     10.88.0.4       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-54867f9f59-fkr9j        1030195502265320227   1/1     Running   0          23s     10.88.0.6       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# vi kubernetes-dashboard.yaml\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh delete -f kubernetes-dashboard.yaml\cf1\highlight2 
+\par \cf0\highlight0 serviceaccount "kubernetes-dashboard" deleted\cf1\highlight2 
+\par \cf0\highlight0 service "kubernetes-dashboard" deleted\cf1\highlight2 
+\par \cf0\highlight0 secret "kubernetes-dashboard-csrf" deleted\cf1\highlight2 
+\par \cf0\highlight0 secret "kubernetes-dashboard-key-holder" deleted\cf1\highlight2 
+\par \cf0\highlight0 configmap "kubernetes-dashboard-settings" deleted\cf1\highlight2 
+\par \cf0\highlight0 role.rbac.authorization.k8s.io "kubernetes-dashboard" deleted\cf1\highlight2 
+\par \cf0\highlight0 clusterrole.rbac.authorization.k8s.io "kubernetes-dashboard" deleted\cf1\highlight2 
+\par \cf0\highlight0 rolebinding.rbac.authorization.k8s.io "kubernetes-dashboard" deleted\cf1\highlight2 
+\par \cf0\highlight0 clusterrolebinding.rbac.authorization.k8s.io "kubernetes-dashboard" deleted\cf1\highlight2 
+\par \cf0\highlight0 deployment.apps "kubernetes-dashboard" deleted\cf1\highlight2 
+\par \cf0\highlight0 service "dashboard-metrics-scraper" deleted\cf1\highlight2 
+\par \cf0\highlight0 deployment.apps "dashboard-metrics-scraper" deleted\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# vi kubernetes-dashboard.yaml\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh create -f kubernetes-dashboard.yaml\cf1\highlight2 
+\par \cf0\highlight0 serviceaccount/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 service/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 secret/kubernetes-dashboard-csrf created\cf1\highlight2 
+\par \cf0\highlight0 secret/kubernetes-dashboard-key-holder created\cf1\highlight2 
+\par \cf0\highlight0 configmap/kubernetes-dashboard-settings created\cf1\highlight2 
+\par \cf0\highlight0 role.rbac.authorization.k8s.io/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 clusterrole.rbac.authorization.k8s.io/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 rolebinding.rbac.authorization.k8s.io/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 clusterrolebinding.rbac.authorization.k8s.io/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 deployment.apps/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 service/dashboard-metrics-scraper created\cf1\highlight2 
+\par \cf0\highlight0 deployment.apps/dashboard-metrics-scraper created\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE              NAME                                         HASHKEY               READY   STATUS              RESTARTS   AGE     IP              NODE     NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 kube-system            coredns-default-fc74854f6-kxh86              6038552928485379131   1/1     Running             0          9m39s   10.88.0.3       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            kube-dns-554c5866fc-nzqfw                    4162887934088858130   3/3     Running             0          9m40s   10.88.0.2       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            virtlet-v967d                                2326610282324667440   3/3     Running             0          9m9s    192.168.1.213   node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   dashboard-metrics-scraper-5c577c86cf-nnsxf   6031535137387219187   0/1     ContainerCreating   0          2s      <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-7cf669f7c-5x94w         6440273764128615372   0/1     ContainerCreating   0          2s      <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-7cf669f7c-bzprz         1570920126325456165   0/1     ContainerCreating   0          2s      <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE              NAME                                         HASHKEY               READY   STATUS              RESTARTS   AGE     IP              NODE     NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 kube-system            coredns-default-fc74854f6-kxh86              6038552928485379131   1/1     Running             0          9m41s   10.88.0.3       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            kube-dns-554c5866fc-nzqfw                    4162887934088858130   3/3     Running             0          9m42s   10.88.0.2       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            virtlet-v967d                                2326610282324667440   3/3     Running             0          9m11s   192.168.1.213   node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   dashboard-metrics-scraper-5c577c86cf-nnsxf   6031535137387219187   1/1     Running             0          4s      10.88.0.7       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-7cf669f7c-5x94w         6440273764128615372   0/1     ContainerCreating   0          4s      <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-7cf669f7c-bzprz         1570920126325456165   0/1     ContainerCreating   0          4s      <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE              NAME                                         HASHKEY               READY   STATUS              RESTARTS   AGE     IP              NODE     NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 kube-system            coredns-default-fc74854f6-kxh86              6038552928485379131   1/1     Running             0          9m42s   10.88.0.3       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            kube-dns-554c5866fc-nzqfw                    4162887934088858130   3/3     Running             0          9m43s   10.88.0.2       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            virtlet-v967d                                2326610282324667440   3/3     Running             0          9m12s   192.168.1.213   node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   dashboard-metrics-scraper-5c577c86cf-nnsxf   6031535137387219187   1/1     Running             0          5s      10.88.0.7       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-7cf669f7c-5x94w         6440273764128615372   0/1     ContainerCreating   0          5s      <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-7cf669f7c-bzprz         1570920126325456165   0/1     ContainerCreating   0          5s      <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE              NAME                                         HASHKEY               READY   STATUS              RESTARTS   AGE     IP              NODE     NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 kube-system            coredns-default-fc74854f6-kxh86              6038552928485379131   1/1     Running             0          9m43s   10.88.0.3       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            kube-dns-554c5866fc-nzqfw                    4162887934088858130   3/3     Running             0          9m44s   10.88.0.2       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            virtlet-v967d                                2326610282324667440   3/3     Running             0          9m13s   192.168.1.213   node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   dashboard-metrics-scraper-5c577c86cf-nnsxf   6031535137387219187   1/1     Running             0          6s      10.88.0.7       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-7cf669f7c-5x94w         6440273764128615372   0/1     ContainerCreating   0          6s      <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-7cf669f7c-bzprz         1570920126325456165   0/1     ContainerCreating   0          6s      <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE              NAME                                         HASHKEY               READY   STATUS              RESTARTS   AGE     IP              NODE     NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 kube-system            coredns-default-fc74854f6-kxh86              6038552928485379131   1/1     Running             0          9m44s   10.88.0.3       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            kube-dns-554c5866fc-nzqfw                    4162887934088858130   3/3     Running             0          9m45s   10.88.0.2       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            virtlet-v967d                                2326610282324667440   3/3     Running             0          9m14s   192.168.1.213   node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   dashboard-metrics-scraper-5c577c86cf-nnsxf   6031535137387219187   1/1     Running             0          7s      10.88.0.7       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-7cf669f7c-5x94w         6440273764128615372   0/1     ContainerCreating   0          7s      <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-7cf669f7c-bzprz         1570920126325456165   0/1     ContainerCreating   0          7s      <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE              NAME                                         HASHKEY               READY   STATUS              RESTARTS   AGE     IP              NODE     NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 kube-system            coredns-default-fc74854f6-kxh86              6038552928485379131   1/1     Running             0          9m45s   10.88.0.3       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            kube-dns-554c5866fc-nzqfw                    4162887934088858130   3/3     Running             0          9m46s   10.88.0.2       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            virtlet-v967d                                2326610282324667440   3/3     Running             0          9m15s   192.168.1.213   node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   dashboard-metrics-scraper-5c577c86cf-nnsxf   6031535137387219187   1/1     Running             0          8s      10.88.0.7       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-7cf669f7c-5x94w         6440273764128615372   0/1     ContainerCreating   0          8s      <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-7cf669f7c-bzprz         1570920126325456165   0/1     ContainerCreating   0          8s      <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE              NAME                                         HASHKEY               READY   STATUS              RESTARTS   AGE     IP              NODE     NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 kube-system            coredns-default-fc74854f6-kxh86              6038552928485379131   1/1     Running             0          9m45s   10.88.0.3       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            kube-dns-554c5866fc-nzqfw                    4162887934088858130   3/3     Running             0          9m46s   10.88.0.2       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            virtlet-v967d                                2326610282324667440   3/3     Running             0          9m15s   192.168.1.213   node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   dashboard-metrics-scraper-5c577c86cf-nnsxf   6031535137387219187   1/1     Running             0          8s      10.88.0.7       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-7cf669f7c-5x94w         6440273764128615372   0/1     ContainerCreating   0          8s      <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-7cf669f7c-bzprz         1570920126325456165   0/1     ContainerCreating   0          8s      <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE              NAME                                         HASHKEY               READY   STATUS              RESTARTS   AGE     IP              NODE     NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 kube-system            coredns-default-fc74854f6-kxh86              6038552928485379131   1/1     Running             0          9m46s   10.88.0.3       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            kube-dns-554c5866fc-nzqfw                    4162887934088858130   3/3     Running             0          9m47s   10.88.0.2       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            virtlet-v967d                                2326610282324667440   3/3     Running             0          9m16s   192.168.1.213   node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   dashboard-metrics-scraper-5c577c86cf-nnsxf   6031535137387219187   1/1     Running             0          9s      10.88.0.7       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-7cf669f7c-5x94w         6440273764128615372   0/1     ContainerCreating   0          9s      <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-7cf669f7c-bzprz         1570920126325456165   0/1     ContainerCreating   0          9s      <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE              NAME                                         HASHKEY               READY   STATUS              RESTARTS   AGE     IP              NODE     NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 kube-system            coredns-default-fc74854f6-kxh86              6038552928485379131   1/1     Running             0          9m47s   10.88.0.3       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            kube-dns-554c5866fc-nzqfw                    4162887934088858130   3/3     Running             0          9m48s   10.88.0.2       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            virtlet-v967d                                2326610282324667440   3/3     Running             0          9m17s   192.168.1.213   node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   dashboard-metrics-scraper-5c577c86cf-nnsxf   6031535137387219187   1/1     Running             0          10s     10.88.0.7       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-7cf669f7c-5x94w         6440273764128615372   0/1     ContainerCreating   0          10s     <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-7cf669f7c-bzprz         1570920126325456165   0/1     ContainerCreating   0          10s     <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE              NAME                                         HASHKEY               READY   STATUS              RESTARTS   AGE     IP              NODE     NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 kube-system            coredns-default-fc74854f6-kxh86              6038552928485379131   1/1     Running             0          9m48s   10.88.0.3       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            kube-dns-554c5866fc-nzqfw                    4162887934088858130   3/3     Running             0          9m49s   10.88.0.2       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            virtlet-v967d                                2326610282324667440   3/3     Running             0          9m18s   192.168.1.213   node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   dashboard-metrics-scraper-5c577c86cf-nnsxf   6031535137387219187   1/1     Running             0          11s     10.88.0.7       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-7cf669f7c-5x94w         6440273764128615372   0/1     ContainerCreating   0          11s     <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-7cf669f7c-bzprz         1570920126325456165   0/1     ContainerCreating   0          11s     <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE              NAME                                         HASHKEY               READY   STATUS              RESTARTS   AGE     IP              NODE     NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 kube-system            coredns-default-fc74854f6-kxh86              6038552928485379131   1/1     Running             0          9m49s   10.88.0.3       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            kube-dns-554c5866fc-nzqfw                    4162887934088858130   3/3     Running             0          9m50s   10.88.0.2       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            virtlet-v967d                                2326610282324667440   3/3     Running             0          9m19s   192.168.1.213   node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   dashboard-metrics-scraper-5c577c86cf-nnsxf   6031535137387219187   1/1     Running             0          12s     10.88.0.7       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-7cf669f7c-5x94w         6440273764128615372   0/1     ContainerCreating   0          12s     <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-7cf669f7c-bzprz         1570920126325456165   0/1     ContainerCreating   0          12s     <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE              NAME                                         HASHKEY               READY   STATUS              RESTARTS   AGE     IP              NODE     NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 kube-system            coredns-default-fc74854f6-kxh86              6038552928485379131   1/1     Running             0          9m49s   10.88.0.3       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            kube-dns-554c5866fc-nzqfw                    4162887934088858130   3/3     Running             0          9m50s   10.88.0.2       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            virtlet-v967d                                2326610282324667440   3/3     Running             0          9m19s   192.168.1.213   node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   dashboard-metrics-scraper-5c577c86cf-nnsxf   6031535137387219187   1/1     Running             0          12s     10.88.0.7       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-7cf669f7c-5x94w         6440273764128615372   0/1     ContainerCreating   0          12s     <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-7cf669f7c-bzprz         1570920126325456165   0/1     ContainerCreating   0          12s     <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE              NAME                                         HASHKEY               READY   STATUS              RESTARTS   AGE     IP              NODE     NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 kube-system            coredns-default-fc74854f6-kxh86              6038552928485379131   1/1     Running             0          9m50s   10.88.0.3       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            kube-dns-554c5866fc-nzqfw                    4162887934088858130   3/3     Running             0          9m51s   10.88.0.2       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            virtlet-v967d                                2326610282324667440   3/3     Running             0          9m20s   192.168.1.213   node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   dashboard-metrics-scraper-5c577c86cf-nnsxf   6031535137387219187   1/1     Running             0          13s     10.88.0.7       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-7cf669f7c-5x94w         6440273764128615372   0/1     ContainerCreating   0          13s     <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-7cf669f7c-bzprz         1570920126325456165   0/1     ContainerCreating   0          13s     <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE              NAME                                         HASHKEY               READY   STATUS              RESTARTS   AGE     IP              NODE     NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 kube-system            coredns-default-fc74854f6-kxh86              6038552928485379131   1/1     Running             0          9m54s   10.88.0.3       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            kube-dns-554c5866fc-nzqfw                    4162887934088858130   3/3     Running             0          9m55s   10.88.0.2       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            virtlet-v967d                                2326610282324667440   3/3     Running             0          9m24s   192.168.1.213   node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   dashboard-metrics-scraper-5c577c86cf-nnsxf   6031535137387219187   1/1     Running             0          17s     10.88.0.7       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-7cf669f7c-5x94w         6440273764128615372   0/1     ContainerCreating   0          17s     <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-7cf669f7c-bzprz         1570920126325456165   0/1     ContainerCreating   0          17s     <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE              NAME                                         HASHKEY               READY   STATUS              RESTARTS   AGE     IP              NODE     NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 kube-system            coredns-default-fc74854f6-kxh86              6038552928485379131   1/1     Running             0          9m56s   10.88.0.3       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            kube-dns-554c5866fc-nzqfw                    4162887934088858130   3/3     Running             0          9m57s   10.88.0.2       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            virtlet-v967d                                2326610282324667440   3/3     Running             0          9m26s   192.168.1.213   node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   dashboard-metrics-scraper-5c577c86cf-nnsxf   6031535137387219187   1/1     Running             0          19s     10.88.0.7       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-7cf669f7c-5x94w         6440273764128615372   0/1     ContainerCreating   0          19s     <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-7cf669f7c-bzprz         1570920126325456165   0/1     ContainerCreating   0          19s     <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE              NAME                                         HASHKEY               READY   STATUS              RESTARTS   AGE     IP              NODE     NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 kube-system            coredns-default-fc74854f6-kxh86              6038552928485379131   1/1     Running             0          9m57s   10.88.0.3       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            kube-dns-554c5866fc-nzqfw                    4162887934088858130   3/3     Running             0          9m58s   10.88.0.2       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            virtlet-v967d                                2326610282324667440   3/3     Running             0          9m27s   192.168.1.213   node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   dashboard-metrics-scraper-5c577c86cf-nnsxf   6031535137387219187   1/1     Running             0          20s     10.88.0.7       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-7cf669f7c-5x94w         6440273764128615372   0/1     ContainerCreating   0          20s     <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-7cf669f7c-bzprz         1570920126325456165   0/1     ContainerCreating   0          20s     <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE              NAME                                         HASHKEY               READY   STATUS    RESTARTS   AGE     IP              NODE     NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 kube-system            coredns-default-fc74854f6-kxh86              6038552928485379131   1/1     Running   0          9m59s   10.88.0.3       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            kube-dns-554c5866fc-nzqfw                    4162887934088858130   3/3     Running   0          10m     10.88.0.2       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            virtlet-v967d                                2326610282324667440   3/3     Running   0          9m29s   192.168.1.213   node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   dashboard-metrics-scraper-5c577c86cf-nnsxf   6031535137387219187   1/1     Running   0          22s     10.88.0.7       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-7cf669f7c-5x94w         6440273764128615372   1/1     Running   0          22s     10.88.0.8       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-7cf669f7c-bzprz         1570920126325456165   0/1     Error     0          22s     10.88.0.9       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh delete -f kubernetes-dashboard.yaml\cf1\highlight2 
+\par \cf0\highlight0 serviceaccount "kubernetes-dashboard" deleted\cf1\highlight2 
+\par \cf0\highlight0 service "kubernetes-dashboard" deleted\cf1\highlight2 
+\par \cf0\highlight0 secret "kubernetes-dashboard-csrf" deleted\cf1\highlight2 
+\par \cf0\highlight0 secret "kubernetes-dashboard-key-holder" deleted\cf1\highlight2 
+\par \cf0\highlight0 configmap "kubernetes-dashboard-settings" deleted\cf1\highlight2 
+\par \cf0\highlight0 role.rbac.authorization.k8s.io "kubernetes-dashboard" deleted\cf1\highlight2 
+\par \cf0\highlight0 clusterrole.rbac.authorization.k8s.io "kubernetes-dashboard" deleted\cf1\highlight2 
+\par \cf0\highlight0 rolebinding.rbac.authorization.k8s.io "kubernetes-dashboard" deleted\cf1\highlight2 
+\par \cf0\highlight0 clusterrolebinding.rbac.authorization.k8s.io "kubernetes-dashboard" deleted\cf1\highlight2 
+\par \cf0\highlight0 deployment.apps "kubernetes-dashboard" deleted\cf1\highlight2 
+\par \cf0\highlight0 service "dashboard-metrics-scraper" deleted\cf1\highlight2 
+\par \cf0\highlight0 deployment.apps "dashboard-metrics-scraper" deleted\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# vi kubernetes-dashboard.yaml\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# vi kubernetes-dashboard.yaml\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# git branch\cf1\highlight2 
+\par \cf0\highlight0 * \cf9 master\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# git checkout test\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# git checkout\cf1\highlight2 
+\par \cf0\highlight0 M       hack/lib/common.sh\cf1\highlight2 
+\par \cf0\highlight0 Your branch is up to date with 'origin/master'.\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# git branch\cf1\highlight2 
+\par \cf0\highlight0 * \cf9 master\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# git checkout -b test\cf1\highlight2 
+\par \cf0\highlight0 M       hack/lib/common.sh\cf1\highlight2 
+\par \cf0\highlight0 Switched to a new branch 'test'\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# git branch\cf1\highlight2 
+\par \cf0\highlight0   master\cf1\highlight2 
+\par \cf0\highlight0 * \cf9 test\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# vi kubernetes-dashboard.yaml\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh create -f kubernetes-dashboard.yaml\cf1\highlight2 
+\par \cf0\highlight0 serviceaccount/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 service/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 secret/kubernetes-dashboard-csrf created\cf1\highlight2 
+\par \cf0\highlight0 secret/kubernetes-dashboard-key-holder created\cf1\highlight2 
+\par \cf0\highlight0 configmap/kubernetes-dashboard-settings created\cf1\highlight2 
+\par \cf0\highlight0 role.rbac.authorization.k8s.io/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 clusterrole.rbac.authorization.k8s.io/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 rolebinding.rbac.authorization.k8s.io/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 clusterrolebinding.rbac.authorization.k8s.io/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 deployment.apps/kubernetes-dashboard created\cf1\highlight2 
+\par \cf0\highlight0 service/dashboard-metrics-scraper created\cf1\highlight2 
+\par \cf0\highlight0 deployment.apps/dashboard-metrics-scraper created\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE              NAME                                         HASHKEY               READY   STATUS              RESTARTS   AGE   IP              NODE     NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 kube-system            coredns-default-fc74854f6-kxh86              6038552928485379131   1/1     Running             0          14m   10.88.0.3       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            kube-dns-554c5866fc-nzqfw                    4162887934088858130   3/3     Running             0          15m   10.88.0.2       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            virtlet-v967d                                2326610282324667440   3/3     Running             0          14m   192.168.1.213   node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   dashboard-metrics-scraper-5c577c86cf-d8l49   6258375082221566569   1/1     Running             0          14s   10.88.0.12      node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-b4ccf578c-d2wns         1174050009378482000   0/1     ContainerCreating   0          14s   <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-b4ccf578c-kzckz         543542361152266787    0/1     ContainerCreating   0          14s   <none>          node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE              NAME                                         HASHKEY               READY   STATUS    RESTARTS   AGE   IP              NODE     NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 kube-system            coredns-default-fc74854f6-kxh86              6038552928485379131   1/1     Running   0          15m   10.88.0.3       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            kube-dns-554c5866fc-nzqfw                    4162887934088858130   3/3     Running   0          15m   10.88.0.2       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            virtlet-v967d                                2326610282324667440   3/3     Running   0          14m   192.168.1.213   node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   dashboard-metrics-scraper-5c577c86cf-d8l49   6258375082221566569   1/1     Running   0          17s   10.88.0.12      node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-b4ccf578c-d2wns         1174050009378482000   1/1     Running   0          17s   10.88.0.11      node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-b4ccf578c-kzckz         543542361152266787    1/1     Running   0          17s   10.88.0.10      node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE              NAME                                         HASHKEY               READY   STATUS    RESTARTS   AGE    IP              NODE     NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 kube-system            coredns-default-fc74854f6-kxh86              6038552928485379131   1/1     Running   0          16m    10.88.0.3       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            kube-dns-554c5866fc-nzqfw                    4162887934088858130   3/3     Running   0          16m    10.88.0.2       node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system            virtlet-v967d                                2326610282324667440   3/3     Running   0          16m    192.168.1.213   node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   dashboard-metrics-scraper-5c577c86cf-d8l49   6258375082221566569   1/1     Running   0          105s   10.88.0.12      node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-b4ccf578c-d2wns         1174050009378482000   1/1     Running   0          105s   10.88.0.11      node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kubernetes-dashboard   kubernetes-dashboard-b4ccf578c-kzckz         543542361152266787    1/1     Running   0          105s   10.88.0.10      node-d   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos#\cf1\highlight2 
+\par \pard\cf0\highlight0\f2 
+\par }
+ 

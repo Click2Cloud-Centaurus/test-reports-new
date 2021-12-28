@@ -1,0 +1,1368 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fmodern Consolas;}{\f1\fmodern\fcharset0 Consolas;}{\f2\fnil\fcharset129 Courier New;}}
+{\colortbl ;\red20\green20\blue20;\red142\green142\blue142;\red16\green158\blue98;\red148\green146\blue12;\red170\green51\blue170;\red56\green136\blue159;\red9\green118\blue72;}
+\viewkind4\uc1\pard\f0\fs20     \u9484?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9488?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?                 \cf3\f1\bullet  MobaXterm Personal Edition v21.4 \bullet\cf0\f0                  \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?               \cf4 (SSH client, X server and network tools)\cf0                \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?                                                                      \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474? \u8594? SSH session to \cf5 root@192.168.1.213                        \cf0           \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  Direct SSH      :  \cf3\f0 v\cf0                                              \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  SSH compression :  \cf3\f0 v\cf0                                              \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  SSH-browser     :  \cf3\f0 v\cf0                                              \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  X11-forwarding  :  \cf3\f0 v\cf0   (remote display is forwarded through SSH)  \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?                                                                      \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474? \u8594? For more info, ctrl+click on \cf6\ul help\cf0\ulnone  or visit our \cf6\ul website\cf0\ulnone .            \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9492?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9496?\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 5.6.0-rc2 x86_64)\cf1\highlight2 
+\par 
+\par \cf0\highlight0  * Documentation:  https://help.ubuntu.com\cf1\highlight2 
+\par \cf0\highlight0  * Management:     https://landscape.canonical.com\cf1\highlight2 
+\par \cf0\highlight0  * Support:        https://ubuntu.com/advantage\cf1\highlight2 
+\par 
+\par \cf0\highlight0   System information as of Tue Dec 28 05:55:34 UTC 2021\cf1\highlight2 
+\par 
+\par \cf0\highlight0   System load:  1.18               Processes:             380\cf1\highlight2 
+\par \cf0\highlight0   Usage of /:   17.8% of 72.83GB   Users logged in:       0\cf1\highlight2 
+\par \cf0\highlight0   Memory usage: 2%                 IP address for ens160: 192.168.1.213\cf1\highlight2 
+\par \cf0\highlight0   Swap usage:   0%\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0  * Canonical Livepatch is available for installation.\cf1\highlight2 
+\par \cf0\highlight0    - Reduce system reboots and improve kernel security. Activate at:\cf1\highlight2 
+\par \cf0\highlight0      https://ubuntu.com/livepatch\cf1\highlight2 
+\par 
+\par \cf0\highlight0 168 packages can be updated.\cf1\highlight2 
+\par \cf0\highlight0 124 updates are security updates.\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Last login: Tue Nov 30 10:45:51 2021 from 192.168.1.1\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~# uname -a\cf1\highlight2 
+\par \cf0\highlight0 Linux node-d 5.6.0-rc2 #1 SMP Tue Feb 25 18:54:05 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~# vi /etc/hosts\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~# vi /etc/hosts\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~# ufw disable\cf1\highlight2 
+\par \cf0\highlight0 Firewall stopped and disabled on system startup\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~# swapoff -a\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~# git clone https://github.com/Click2Cloud-Centaurus/arktos.git  ~/go/src/k8s.io/arktos\cf1\highlight2 
+\par \cf0\highlight0 Cloning into '/root/go/src/k8s.io/arktos'...\cf1\highlight2 
+\par \cf0\highlight0 remote: Enumerating objects: 61816, done.\cf1\highlight2 
+\par \cf0\highlight0 remote: Counting objects: 100% (50/50), done.\cf1\highlight2 
+\par \cf0\highlight0 remote: Compressing objects: 100% (46/46), done.\cf1\highlight2 
+\par \cf0\highlight0 remote: Total 61816 (delta 8), reused 12 (delta 4), pack-reused 61766\cf1\highlight2 
+\par \cf0\highlight0 Receiving objects: 100% (61816/61816), 220.81 MiB | 15.50 MiB/s, done.\cf1\highlight2 
+\par \cf0\highlight0 Resolving deltas: 100% (38096/38096), done.\cf1\highlight2 
+\par \cf0\highlight0 Checking out files: 100% (20766/20766), done.\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~# cd ~/go/src/k8s.io/arktos\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# sudo bash ./hack/setup-dev-node.sh\cf1\highlight2 
+\par \cf0\highlight0 The script is to help install prerequisites of Arktos development environment\cf1\highlight2 
+\par \cf0\highlight0 on a fresh Linux installation.\cf1\highlight2 
+\par \cf0\highlight0 It's been tested on Ubuntu 16.04 LTS and 18.04 LTS.\cf1\highlight2 
+\par \cf0\highlight0 Update apt.\cf1\highlight2 
+\par \cf0\highlight0 Hit:1 http://in.archive.ubuntu.com/ubuntu bionic InRelease\cf1\highlight2 
+\par \cf0\highlight0 Hit:2 http://in.archive.ubuntu.com/ubuntu bionic-updates InRelease\cf1\highlight2 
+\par \cf0\highlight0 Hit:3 http://in.archive.ubuntu.com/ubuntu bionic-backports InRelease\cf1\highlight2 
+\par \cf0\highlight0 Hit:4 http://in.archive.ubuntu.com/ubuntu bionic-security InRelease\cf1\highlight2 
+\par \cf0\highlight0 Reading package lists... Done\cf1\highlight2 
+\par \cf0\highlight0 Building dependency tree\cf1\highlight2 
+\par \cf0\highlight0 Reading state information... Done\cf1\highlight2 
+\par \cf0\highlight0 159 packages can be upgraded. Run 'apt list --upgradable' to see them.\cf1\highlight2 
+\par \cf0\highlight0 Install docker.\cf1\highlight2 
+\par \cf0\highlight0 E: Could not get lock /var/lib/dpkg/lock-frontend - open (11: Resource temporarily unavailable)\cf1\highlight2 
+\par \cf0\highlight0 E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), is another process using it?\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# lsof /var/lib/dpkg/lock-frontend\cf1\highlight2 
+\par \cf0\highlight0 COMMAND    PID USER   FD   TYPE DEVICE SIZE/OFF    NODE NAME\cf1\highlight2 
+\par \cf0\highlight0 unattende 2252 root    5uW  REG  253,0        0 3277007 /var/lib/dpkg/lock-frontend\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# kill -9 2252\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# lsof /var/lib/dpkg/lock-frontend\cf1\highlight2 
+\par \cf0\highlight0 COMMAND    PID USER   FD   TYPE DEVICE SIZE/OFF    NODE NAME\cf1\highlight2 
+\par \cf0\highlight0 unattende 4426 root    5uW  REG  253,0        0 3277007 /var/lib/dpkg/lock-frontend\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# kill -9 4426\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# sudo bash ./hack/setup-dev-node.sh\cf1\highlight2 
+\par \cf0\highlight0 The script is to help install prerequisites of Arktos development environment\cf1\highlight2 
+\par \cf0\highlight0 on a fresh Linux installation.\cf1\highlight2 
+\par \cf0\highlight0 It's been tested on Ubuntu 16.04 LTS and 18.04 LTS.\cf1\highlight2 
+\par \cf0\highlight0 Update apt.\cf1\highlight2 
+\par \cf0\highlight0 Hit:1 http://in.archive.ubuntu.com/ubuntu bionic InRelease\cf1\highlight2 
+\par \cf0\highlight0 Hit:2 http://in.archive.ubuntu.com/ubuntu bionic-updates InRelease\cf1\highlight2 
+\par \cf0\highlight0 Hit:3 http://in.archive.ubuntu.com/ubuntu bionic-backports InRelease\cf1\highlight2 
+\par \cf0\highlight0 Hit:4 http://in.archive.ubuntu.com/ubuntu bionic-security InRelease\cf1\highlight2 
+\par \cf0\highlight0 Reading package lists... Done\cf1\highlight2 
+\par \cf0\highlight0 Building dependency tree\cf1\highlight2 
+\par \cf0\highlight0 Reading state information... Done\cf1\highlight2 
+\par \cf0\highlight0 159 packages can be upgraded. Run 'apt list --upgradable' to see them.\cf1\highlight2 
+\par \cf0\highlight0 Install docker.\cf1\highlight2 
+\par \cf0\highlight0 Reading package lists... Done\cf1\highlight2 
+\par \cf0\highlight0 Building dependency tree\cf1\highlight2 
+\par \cf0\highlight0 Reading state information... Done\cf1\highlight2 
+\par \cf0\highlight0 The following additional packages will be installed:\cf1\highlight2 
+\par \cf0\highlight0   bridge-utils containerd pigz runc ubuntu-fan\cf1\highlight2 
+\par \cf0\highlight0 Suggested packages:\cf1\highlight2 
+\par \cf0\highlight0   ifupdown aufs-tools cgroupfs-mount | cgroup-lite debootstrap docker-doc rinse zfs-fuse | zfsutils\cf1\highlight2 
+\par \cf0\highlight0 The following NEW packages will be installed:\cf1\highlight2 
+\par \cf0\highlight0   bridge-utils containerd docker.io pigz runc ubuntu-fan\cf1\highlight2 
+\par \cf0\highlight0 0 upgraded, 6 newly installed, 0 to remove and 159 not upgraded.\cf1\highlight2 
+\par \cf0\highlight0 Need to get 74.2 MB of archives.\cf1\highlight2 
+\par \cf0\highlight0 After this operation, 360 MB of additional disk space will be used.\cf1\highlight2 
+\par \cf0\highlight0 Get:1 http://in.archive.ubuntu.com/ubuntu bionic/universe amd64 pigz amd64 2.4-1 [57.4 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:2 http://in.archive.ubuntu.com/ubuntu bionic/main amd64 bridge-utils amd64 1.5-15ubuntu1 [30.1 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:3 http://in.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 runc amd64 1.0.1-0ubuntu2~18.04.1 [4,155 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:4 http://in.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 containerd amd64 1.5.5-0ubuntu3~18.04.1 [33.0 MB]\cf1\highlight2 
+\par \cf0\highlight0 Get:5 http://in.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 docker.io amd64 20.10.7-0ubuntu5~18.04.3 [36.9 MB]\cf1\highlight2 
+\par \cf0\highlight0 Get:6 http://in.archive.ubuntu.com/ubuntu bionic/main amd64 ubuntu-fan all 0.12.10 [34.7 kB]\cf1\highlight2 
+\par \cf0\highlight0 Fetched 74.2 MB in 5s (15.0 MB/s)\cf1\highlight2 
+\par \cf0\highlight0 Preconfiguring packages ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package pigz.\cf1\highlight2 
+\par \cf0\highlight0 (Reading database ... 103285 files and directories currently installed.)\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../0-pigz_2.4-1_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking pigz (2.4-1) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package bridge-utils.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../1-bridge-utils_1.5-15ubuntu1_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking bridge-utils (1.5-15ubuntu1) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package runc.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../2-runc_1.0.1-0ubuntu2~18.04.1_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking runc (1.0.1-0ubuntu2~18.04.1) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package containerd.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../3-containerd_1.5.5-0ubuntu3~18.04.1_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking containerd (1.5.5-0ubuntu3~18.04.1) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package docker.io.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../4-docker.io_20.10.7-0ubuntu5~18.04.3_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking docker.io (20.10.7-0ubuntu5~18.04.3) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package ubuntu-fan.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../5-ubuntu-fan_0.12.10_all.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking ubuntu-fan (0.12.10) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up runc (1.0.1-0ubuntu2~18.04.1) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up containerd (1.5.5-0ubuntu3~18.04.1) ...\cf1\highlight2 
+\par \cf0\highlight0 Created symlink /etc/systemd/system/multi-user.target.wants/containerd.service \u8594? /lib/systemd/system/containerd.service.\cf1\highlight2 
+\par \cf0\highlight0 /usr/sbin/policy-rc.d returned 101, not running 'start containerd.service'\cf1\highlight2 
+\par \cf0\highlight0 Setting up bridge-utils (1.5-15ubuntu1) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up ubuntu-fan (0.12.10) ...\cf1\highlight2 
+\par \cf0\highlight0 Created symlink /etc/systemd/system/multi-user.target.wants/ubuntu-fan.service \u8594? /lib/systemd/system/ubuntu-fan.service.\cf1\highlight2 
+\par \cf0\highlight0 invoke-rc.d: policy-rc.d denied execution of start.\cf1\highlight2 
+\par \cf0\highlight0 Setting up pigz (2.4-1) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up docker.io (20.10.7-0ubuntu5~18.04.3) ...\cf1\highlight2 
+\par \cf0\highlight0 Adding group `docker' (GID 113) ...\cf1\highlight2 
+\par \cf0\highlight0 Done.\cf1\highlight2 
+\par \cf0\highlight0 Created symlink /etc/systemd/system/multi-user.target.wants/docker.service \u8594? /lib/systemd/system/docker.service.\cf1\highlight2 
+\par \cf0\highlight0 Created symlink /etc/systemd/system/sockets.target.wants/docker.socket \u8594? /lib/systemd/system/docker.socket.\cf1\highlight2 
+\par \cf0\highlight0 invoke-rc.d: policy-rc.d denied execution of start.\cf1\highlight2 
+\par \cf0\highlight0 Processing triggers for systemd (237-3ubuntu10.42) ...\cf1\highlight2 
+\par \cf0\highlight0 Processing triggers for man-db (2.8.3-2ubuntu0.1) ...\cf1\highlight2 
+\par \cf0\highlight0 Processing triggers for ureadahead (0.100.0-21) ...\cf1\highlight2 
+\par \cf0\highlight0 Install make & gcc.\cf1\highlight2 
+\par \cf0\highlight0 Reading package lists... Done\cf1\highlight2 
+\par \cf0\highlight0 Building dependency tree\cf1\highlight2 
+\par \cf0\highlight0 Reading state information... Done\cf1\highlight2 
+\par \cf0\highlight0 make is already the newest version (4.1-9.1ubuntu1).\cf1\highlight2 
+\par \cf0\highlight0 make set to manually installed.\cf1\highlight2 
+\par \cf0\highlight0 0 upgraded, 0 newly installed, 0 to remove and 159 not upgraded.\cf1\highlight2 
+\par \cf0\highlight0 Reading package lists... Done\cf1\highlight2 
+\par \cf0\highlight0 Building dependency tree\cf1\highlight2 
+\par \cf0\highlight0 Reading state information... Done\cf1\highlight2 
+\par \cf0\highlight0 gcc is already the newest version (4:7.4.0-1ubuntu2.3).\cf1\highlight2 
+\par \cf0\highlight0 gcc set to manually installed.\cf1\highlight2 
+\par \cf0\highlight0 0 upgraded, 0 newly installed, 0 to remove and 159 not upgraded.\cf1\highlight2 
+\par \cf0\highlight0 Reading package lists... Done\cf1\highlight2 
+\par \cf0\highlight0 Building dependency tree\cf1\highlight2 
+\par \cf0\highlight0 Reading state information... Done\cf1\highlight2 
+\par \cf0\highlight0 The following additional packages will be installed:\cf1\highlight2 
+\par \cf0\highlight0   libjq1 libonig4\cf1\highlight2 
+\par \cf0\highlight0 The following NEW packages will be installed:\cf1\highlight2 
+\par \cf0\highlight0   jq libjq1 libonig4\cf1\highlight2 
+\par \cf0\highlight0 0 upgraded, 3 newly installed, 0 to remove and 159 not upgraded.\cf1\highlight2 
+\par \cf0\highlight0 Need to get 276 kB of archives.\cf1\highlight2 
+\par \cf0\highlight0 After this operation, 930 kB of additional disk space will be used.\cf1\highlight2 
+\par \cf0\highlight0 Get:1 http://in.archive.ubuntu.com/ubuntu bionic/universe amd64 libonig4 amd64 6.7.0-1 [119 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:2 http://in.archive.ubuntu.com/ubuntu bionic/universe amd64 libjq1 amd64 1.5+dfsg-2 [111 kB]\cf1\highlight2 
+\par \cf0\highlight0 Get:3 http://in.archive.ubuntu.com/ubuntu bionic/universe amd64 jq amd64 1.5+dfsg-2 [45.6 kB]\cf1\highlight2 
+\par \cf0\highlight0 Fetched 276 kB in 0s (622 kB/s)\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package libonig4:amd64.\cf1\highlight2 
+\par \cf0\highlight0 (Reading database ... 103608 files and directories currently installed.)\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../libonig4_6.7.0-1_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking libonig4:amd64 (6.7.0-1) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package libjq1:amd64.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../libjq1_1.5+dfsg-2_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking libjq1:amd64 (1.5+dfsg-2) ...\cf1\highlight2 
+\par \cf0\highlight0 Selecting previously unselected package jq.\cf1\highlight2 
+\par \cf0\highlight0 Preparing to unpack .../jq_1.5+dfsg-2_amd64.deb ...\cf1\highlight2 
+\par \cf0\highlight0 Unpacking jq (1.5+dfsg-2) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up libonig4:amd64 (6.7.0-1) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up libjq1:amd64 (1.5+dfsg-2) ...\cf1\highlight2 
+\par \cf0\highlight0 Setting up jq (1.5+dfsg-2) ...\cf1\highlight2 
+\par \cf0\highlight0 Processing triggers for man-db (2.8.3-2ubuntu0.1) ...\cf1\highlight2 
+\par \cf0\highlight0 Processing triggers for libc-bin (2.27-3ubuntu1.2) ...\cf1\highlight2 
+\par \cf0\highlight0 Install golang.\cf1\highlight2 
+\par \cf0\highlight0 --2021-12-28 05:58:32--  https://dl.google.com/go/go1.13.9.linux-amd64.tar.gz\cf1\highlight2 
+\par \cf0\highlight0 Resolving dl.google.com (dl.google.com)... 142.250.192.78, 2404:6800:4009:824::200e\cf1\highlight2 
+\par \cf0\highlight0 Connecting to dl.google.com (dl.google.com)|142.250.192.78|:443... connected.\cf1\highlight2 
+\par \cf0\highlight0 HTTP request sent, awaiting response... 200 OK\cf1\highlight2 
+\par \cf0\highlight0 Length: 120139686 (115M) [application/octet-stream]\cf1\highlight2 
+\par \cf0\highlight0\f1 Saving to: \lquote /tmp/go1.13.9.linux-amd64.tar.gz\rquote\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 go1.13.9.linux-amd64.tar.gz               100%[===================================================================================>] 114.57M  16.3MB/s    in 7.0s\cf1\highlight2 
+\par 
+\par \cf0\highlight0\f1 2021-12-28 05:58:40 (16.3 MB/s) - \lquote /tmp/go1.13.9.linux-amd64.tar.gz\rquote  saved [120139686/120139686]\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 Done.\cf1\highlight2 
+\par \cf0\highlight0 Please run and add 'export PATH=$PATH:/usr/local/go/bin' into your shell profile.\cf1\highlight2 
+\par \cf0\highlight0 You can proceed to run arktos-up.sh if you want to launch a single-node cluster.\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# export PATH=$PATH:/usr/local/go/bin\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# echo export PATH=$PATH:/usr/local/go/bin\\ >> ~/.profile\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# echo cd \\$HOME/go/src/k8s.io/arktos >> ~/.profile\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# source ~/.profile\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# vi hack/lib/common.sh\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# hack/arktos-up.sh\cf1\highlight2 
+\par \cf0\highlight0 DBG: Flannel CNI plugin will be installed AFTER cluster is up\cf1\highlight2 
+\par \cf0\highlight0 DBG: effective feature gates AllAlpha=false,WorkloadInfoDefaulting=true,QPSDoubleGCController=true,QPSDoubleRSController=true,MandatoryArktosNetwork=true\cf1\highlight2 
+\par \cf0\highlight0 DBG: effective disabling admission plugins\cf1\highlight2 
+\par \cf0\highlight0 DBG: effective default network template file is /root/go/src/k8s.io/arktos/hack/testdata/default-flat-network.tmpl\cf1\highlight2 
+\par \cf0\highlight0 DBG: kubelet arg RESOLV_CONF is /run/systemd/resolve/resolv.conf\cf1\highlight2 
+\par \cf0\highlight0 WARNING : The kubelet is configured to not fail even if swap is enabled; production deployments should disable swap.\cf1\highlight2 
+\par \cf0\highlight0 Containerd is required for Arktos\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# systemctl status containerd\cf1\highlight2 
+\par \cf0\highlight0\u9679? containerd.service - containerd container runtime\cf1\highlight2 
+\par \cf0\highlight0    Loaded: loaded (/lib/systemd/system/containerd.service; enabled; vendor preset: enabled)\cf1\highlight2 
+\par \cf0\highlight0    Active: inactive (dead)\cf1\highlight2 
+\par \cf0\highlight0      Docs: https://containerd.io\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# systemctl start containerd\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# systemctl start docker\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# systemctl enable docker\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# systemctl enable containerd\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# hack/arktos-up.sh\cf1\highlight2 
+\par \cf0\highlight0 DBG: Flannel CNI plugin will be installed AFTER cluster is up\cf1\highlight2 
+\par \cf0\highlight0 DBG: effective feature gates AllAlpha=false,WorkloadInfoDefaulting=true,QPSDoubleGCController=true,QPSDoubleRSController=true,MandatoryArktosNetwork=true\cf1\highlight2 
+\par \cf0\highlight0 DBG: effective disabling admission plugins\cf1\highlight2 
+\par \cf0\highlight0 DBG: effective default network template file is /root/go/src/k8s.io/arktos/hack/testdata/default-flat-network.tmpl\cf1\highlight2 
+\par \cf0\highlight0 DBG: kubelet arg RESOLV_CONF is /run/systemd/resolve/resolv.conf\cf1\highlight2 
+\par \cf0\highlight0 WARNING : The kubelet is configured to not fail even if swap is enabled; production deployments should disable swap.\cf1\highlight2 
+\par \cf0\highlight0 cni plugin is bridge; arktos will use bridge to provision pod network\cf1\highlight2 
+\par \cf0\highlight0 Ensuring firewall to allow traffic forward by default\cf1\highlight2 
+\par \cf0\highlight0 -P FORWARD DROP\cf1\highlight2 
+\par \cf0\highlight0 -P FORWARD ACCEPT\cf1\highlight2 
+\par \cf0\highlight0 Ensuring minimum cni plugin installation...\cf1\highlight2 
+\par \cf0\highlight0 installing cni plugin binaries\cf1\highlight2 
+\par \cf0\highlight0 ./\cf1\highlight2 
+\par \cf0\highlight0 ./flannel\cf1\highlight2 
+\par \cf0\highlight0 ./ptp\cf1\highlight2 
+\par \cf0\highlight0 ./host-local\cf1\highlight2 
+\par \cf0\highlight0 ./firewall\cf1\highlight2 
+\par \cf0\highlight0 ./portmap\cf1\highlight2 
+\par \cf0\highlight0 ./tuning\cf1\highlight2 
+\par \cf0\highlight0 ./vlan\cf1\highlight2 
+\par \cf0\highlight0 ./host-device\cf1\highlight2 
+\par \cf0\highlight0 ./bandwidth\cf1\highlight2 
+\par \cf0\highlight0 ./sbr\cf1\highlight2 
+\par \cf0\highlight0 ./static\cf1\highlight2 
+\par \cf0\highlight0 ./dhcp\cf1\highlight2 
+\par \cf0\highlight0 ./ipvlan\cf1\highlight2 
+\par \cf0\highlight0 ./macvlan\cf1\highlight2 
+\par \cf0\highlight0 ./loopback\cf1\highlight2 
+\par \cf0\highlight0 ./bridge\cf1\highlight2 
+\par \cf0\highlight0 2021-12-28 06:01:58 URL:https://objects.githubusercontent.com/github-production-release-asset-2e65be/84575398/53318d00-bf61-11e9-9a8f-40364582e9ed?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20211228%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20211228T060155Z&X-Amz-Expires=300&X-Amz-Signature=eff7e5ccb3d4f7bda8b2e1a35a3fcd340bcc57d6a6a995f435235d34859d4d0c&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=84575398&response-content-disposition=attachment%3B%20filename%3Dcni-plugins-linux-amd64-v0.8.2.tgz&response-content-type=application%2Foctet-stream [36662740/36662740] -> "-" [1]\cf1\highlight2 
+\par \cf0\highlight0 setting up cni conf file...\cf1\highlight2 
+\par \cf0\highlight0 copying /root/go/src/k8s.io/arktos/hack/testdata/cni-conf/bridge.conf to /etc/cni/net.d/bridge.conf...\cf1\highlight2 
+\par \cf0\highlight0 copied /root/go/src/k8s.io/arktos/hack/testdata/cni-conf/bridge.conf to /etc/cni/net.d/bridge.conf\cf1\highlight2 
+\par \cf0\highlight0 done with bridge cni plugin installation\cf1\highlight2 
+\par \cf0\highlight0 WARNING : The kubelet is configured to not fail even if swap is enabled; production deployments should disable swap.\cf1\highlight2 
+\par \cf0\highlight0 Getting runtime deployment file  libvirt-qemu\cf1\highlight2 
+\par \cf0\highlight0 --2021-12-28 06:01:59--  https://raw.githubusercontent.com/futurewei-cloud/arktos-vm-runtime/release-0.6/deploy/apparmor/libvirt-qemu\cf1\highlight2 
+\par \cf0\highlight0 Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.108.133, 185.199.109.133, 185.199.110.133, ...\cf1\highlight2 
+\par \cf0\highlight0 Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443... connected.\cf1\highlight2 
+\par \cf0\highlight0 HTTP request sent, awaiting response... 200 OK\cf1\highlight2 
+\par \cf0\highlight0 Length: 6578 (6.4K) [text/plain]\cf1\highlight2 
+\par \cf0\highlight0\f1 Saving to: \lquote /tmp/libvirt-qemu\rquote\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 /tmp/libvirt-qemu                         100%[===================================================================================>]   6.42K  --.-KB/s    in 0s\cf1\highlight2 
+\par 
+\par \cf0\highlight0\f1 2021-12-28 06:01:59 (18.1 MB/s) - \lquote /tmp/libvirt-qemu\rquote  saved [6578/6578]\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 Getting runtime deployment file  libvirtd\cf1\highlight2 
+\par \cf0\highlight0 --2021-12-28 06:01:59--  https://raw.githubusercontent.com/futurewei-cloud/arktos-vm-runtime/release-0.6/deploy/apparmor/libvirtd\cf1\highlight2 
+\par \cf0\highlight0 Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.111.133, 185.199.110.133, 185.199.109.133, ...\cf1\highlight2 
+\par \cf0\highlight0 Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.111.133|:443... connected.\cf1\highlight2 
+\par \cf0\highlight0 HTTP request sent, awaiting response... 200 OK\cf1\highlight2 
+\par \cf0\highlight0 Length: 1617 (1.6K) [text/plain]\cf1\highlight2 
+\par \cf0\highlight0\f1 Saving to: \lquote /tmp/libvirtd\rquote\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 /tmp/libvirtd                             100%[===================================================================================>]   1.58K  --.-KB/s    in 0s\cf1\highlight2 
+\par 
+\par \cf0\highlight0\f1 2021-12-28 06:01:59 (14.3 MB/s) - \lquote /tmp/libvirtd\rquote  saved [1617/1617]\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 Getting runtime deployment file  virtlet\cf1\highlight2 
+\par \cf0\highlight0 --2021-12-28 06:01:59--  https://raw.githubusercontent.com/futurewei-cloud/arktos-vm-runtime/release-0.6/deploy/apparmor/virtlet\cf1\highlight2 
+\par \cf0\highlight0 Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.111.133, 185.199.110.133, 185.199.109.133, ...\cf1\highlight2 
+\par \cf0\highlight0 Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.111.133|:443... connected.\cf1\highlight2 
+\par \cf0\highlight0 HTTP request sent, awaiting response... 200 OK\cf1\highlight2 
+\par \cf0\highlight0 Length: 2582 (2.5K) [text/plain]\cf1\highlight2 
+\par \cf0\highlight0\f1 Saving to: \lquote /tmp/virtlet\rquote\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 /tmp/virtlet                              100%[===================================================================================>]   2.52K  --.-KB/s    in 0s\cf1\highlight2 
+\par 
+\par \cf0\highlight0\f1 2021-12-28 06:02:00 (11.2 MB/s) - \lquote /tmp/virtlet\rquote  saved [2582/2582]\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 Getting runtime deployment file  vms\cf1\highlight2 
+\par \cf0\highlight0 --2021-12-28 06:02:00--  https://raw.githubusercontent.com/futurewei-cloud/arktos-vm-runtime/release-0.6/deploy/apparmor/vms\cf1\highlight2 
+\par \cf0\highlight0 Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.111.133, 185.199.110.133, 185.199.109.133, ...\cf1\highlight2 
+\par \cf0\highlight0 Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.111.133|:443... connected.\cf1\highlight2 
+\par \cf0\highlight0 HTTP request sent, awaiting response... 200 OK\cf1\highlight2 
+\par \cf0\highlight0 Length: 485 [text/plain]\cf1\highlight2 
+\par \cf0\highlight0\f1 Saving to: \lquote /tmp/vms\rquote\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 /tmp/vms                                  100%[===================================================================================>]     485  --.-KB/s    in 0s\cf1\highlight2 
+\par 
+\par \cf0\highlight0\f1 2021-12-28 06:02:00 (17.2 MB/s) - \lquote /tmp/vms\rquote  saved [485/485]\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 Getting runtime deployment file  vmruntime.yaml\cf1\highlight2 
+\par \cf0\highlight0 --2021-12-28 06:02:00--  https://raw.githubusercontent.com/futurewei-cloud/arktos-vm-runtime/release-0.6/deploy/data/virtlet-ds.yaml\cf1\highlight2 
+\par \cf0\highlight0 Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.111.133, 185.199.110.133, 185.199.109.133, ...\cf1\highlight2 
+\par \cf0\highlight0 Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.111.133|:443... connected.\cf1\highlight2 
+\par \cf0\highlight0 HTTP request sent, awaiting response... 200 OK\cf1\highlight2 
+\par \cf0\highlight0 Length: 11643 (11K) [text/plain]\cf1\highlight2 
+\par \cf0\highlight0\f1 Saving to: \lquote /tmp/vmruntime.yaml\rquote\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 /tmp/vmruntime.yaml                       100%[===================================================================================>]  11.37K  --.-KB/s    in 0s\cf1\highlight2 
+\par 
+\par \cf0\highlight0\f1 2021-12-28 06:02:00 (26.4 MB/s) - \lquote /tmp/vmruntime.yaml\rquote  saved [11643/11643]\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 Getting runtime deployment file  images.yaml\cf1\highlight2 
+\par \cf0\highlight0 --2021-12-28 06:02:00--  https://raw.githubusercontent.com/futurewei-cloud/arktos-vm-runtime/release-0.6/deploy/images.yaml\cf1\highlight2 
+\par \cf0\highlight0 Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.111.133, 185.199.110.133, 185.199.109.133, ...\cf1\highlight2 
+\par \cf0\highlight0 Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.111.133|:443... connected.\cf1\highlight2 
+\par \cf0\highlight0 HTTP request sent, awaiting response... 200 OK\cf1\highlight2 
+\par \cf0\highlight0 Length: 254 [text/plain]\cf1\highlight2 
+\par \cf0\highlight0\f1 Saving to: \lquote /tmp/images.yaml\rquote\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 /tmp/images.yaml                          100%[===================================================================================>]     254  --.-KB/s    in 0s\cf1\highlight2 
+\par 
+\par \cf0\highlight0\f1 2021-12-28 06:02:01 (6.41 MB/s) - \lquote /tmp/images.yaml\rquote  saved [254/254]\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 Stopping Apparmor service\cf1\highlight2 
+\par \cf0\highlight0 make: Entering directory '/root/go/src/k8s.io/arktos'\cf1\highlight2 
+\par \cf0\highlight0 make[1]: Entering directory '/root/go/src/k8s.io/arktos'\cf1\highlight2 
+\par \cf0\highlight0 +++ [1228 06:02:18] Building go targets for linux/amd64:\cf1\highlight2 
+\par \cf0\highlight0     ./vendor/k8s.io/code-generator/cmd/conversion-gen\cf1\highlight2 
+\par \cf0\highlight0 +++ [1228 06:02:18] Building go targets for linux/amd64:\cf1\highlight2 
+\par \cf0\highlight0     ./vendor/k8s.io/code-generator/cmd/defaulter-gen\cf1\highlight2 
+\par \cf0\highlight0 +++ [1228 06:02:18] Building go targets for linux/amd64:\cf1\highlight2 
+\par \cf0\highlight0     ./vendor/k8s.io/code-generator/cmd/deepcopy-gen\cf1\highlight2 
+\par \cf0\highlight0 +++ [1228 06:02:18] Building go targets for linux/amd64:\cf1\highlight2 
+\par \cf0\highlight0     ./vendor/k8s.io/kube-openapi/cmd/openapi-gen\cf1\highlight2 
+\par \cf0\highlight0 +++ [1228 06:02:24] Building go targets for linux/amd64:\cf1\highlight2 
+\par \cf0\highlight0     ./vendor/github.com/go-bindata/go-bindata/go-bindata\cf1\highlight2 
+\par \cf0\highlight0 make[1]: Leaving directory '/root/go/src/k8s.io/arktos'\cf1\highlight2 
+\par \cf0\highlight0 Running copyright check for repo: /root/go/src/k8s.io/arktos, logging to _output/ArktosCopyrightTool.log\cf1\highlight2 
+\par \cf0\highlight0 ~/go/src/k8s.io/arktos ~/go/src/k8s.io/arktos\cf1\highlight2 
+\par \cf0\highlight0 warning: inexact rename detection was skipped due to too many files.\cf1\highlight2 
+\par \cf0\highlight0 warning: you may want to set your diff.renameLimit variable to at least 3067 and retry the command.\cf1\highlight2 
+\par \cf0\highlight0 ~/go/src/k8s.io/arktos\cf1\highlight2 
+\par \cf0\highlight0 ~/go/src/k8s.io/arktos ~/go/src/k8s.io/arktos\cf1\highlight2 
+\par \cf0\highlight0 warning: inexact rename detection was skipped due to too many files.\cf1\highlight2 
+\par \cf0\highlight0 warning: you may want to set your diff.renameLimit variable to at least 3067 and retry the command.\cf1\highlight2 
+\par \cf0\highlight0 ~/go/src/k8s.io/arktos\cf1\highlight2 
+\par \cf0\highlight0 Inspecting copyright files, writing logs to _output/ArktosCopyrightTool.log\cf1\highlight2 
+\par \cf0\highlight0 Done.\cf1\highlight2 
+\par \cf0\highlight0 +++ [1228 06:03:22] Building go targets for linux/amd64:\cf1\highlight2 
+\par \cf0\highlight0     cmd/kubectl\cf1\highlight2 
+\par \cf0\highlight0     cmd/hyperkube\cf1\highlight2 
+\par \cf0\highlight0     cmd/kube-apiserver\cf1\highlight2 
+\par \cf0\highlight0     cmd/kube-controller-manager\cf1\highlight2 
+\par \cf0\highlight0     cmd/workload-controller-manager\cf1\highlight2 
+\par \cf0\highlight0     cmd/cloud-controller-manager\cf1\highlight2 
+\par \cf0\highlight0     cmd/kubelet\cf1\highlight2 
+\par \cf0\highlight0     cmd/kube-proxy\cf1\highlight2 
+\par \cf0\highlight0     cmd/kube-scheduler\cf1\highlight2 
+\par \cf0\highlight0     cmd/arktos-network-controller\cf1\highlight2 
+\par \cf0\highlight0 Running copyright check for repo: /root/go/src/k8s.io/arktos, logging to _output/ArktosCopyrightTool.log\cf1\highlight2 
+\par \cf0\highlight0 ~/go/src/k8s.io/arktos ~/go/src/k8s.io/arktos\cf1\highlight2 
+\par \cf0\highlight0 warning: inexact rename detection was skipped due to too many files.\cf1\highlight2 
+\par \cf0\highlight0 warning: you may want to set your diff.renameLimit variable to at least 3067 and retry the command.\cf1\highlight2 
+\par \cf0\highlight0 ~/go/src/k8s.io/arktos\cf1\highlight2 
+\par \cf0\highlight0 ~/go/src/k8s.io/arktos ~/go/src/k8s.io/arktos\cf1\highlight2 
+\par \cf0\highlight0 warning: inexact rename detection was skipped due to too many files.\cf1\highlight2 
+\par \cf0\highlight0 warning: you may want to set your diff.renameLimit variable to at least 3067 and retry the command.\cf1\highlight2 
+\par \cf0\highlight0 ~/go/src/k8s.io/arktos\cf1\highlight2 
+\par \cf0\highlight0 Inspecting copyright files, writing logs to _output/ArktosCopyrightTool.log\cf1\highlight2 
+\par \cf0\highlight0 Done.\cf1\highlight2 
+\par \cf0\highlight0 make: Leaving directory '/root/go/src/k8s.io/arktos'\cf1\highlight2 
+\par \cf0\highlight0 cannot find etcd locally. will install one.\cf1\highlight2 
+\par \cf0\highlight0 Downloading https://github.com/centaurus-cloud/etcd/releases/download/v3.4.3/etcd-v3.4.3-linux-amd64.tar.gz succeed\cf1\highlight2 
+\par \cf0\highlight0 etcd v3.4.3 installed. To use:\cf1\highlight2 
+\par \cf0\highlight0 export PATH="/root/go/src/k8s.io/arktos/third_party/etcd:$\{PATH\}"\cf1\highlight2 
+\par 
+\par \cf0\highlight0 The current version is 3.4.3\cf1\highlight2 
+\par 
+\par \cf0\highlight0 API SERVER insecure port is free, proceeding...\cf1\highlight2 
+\par \cf0\highlight0 API SERVER secure port is free, proceeding...\cf1\highlight2 
+\par \cf0\highlight0 Unable to successfully run 'cfssl' from /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/go/bin:/usr/local/go/bin:/root/go/src/k8s.io/arktos/third_party/etcd; downloading instead...\cf1\highlight2 
+\par \cf0\highlight0   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\cf1\highlight2 
+\par \cf0\highlight0                                  Dload  Upload   Total   Spent    Left  Speed\cf1\highlight2 
+\par \cf0\highlight0   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\cf1\highlight2 
+\par \cf0\highlight0 100   654  100   654    0     0    735      0 --:--:-- --:--:-- --:--:--  638k\cf1\highlight2 
+\par \cf0\highlight0 100  9.8M  100  9.8M    0     0  3839k      0  0:00:02  0:00:02 --:--:-- 9259k\cf1\highlight2 
+\par \cf0\highlight0   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\cf1\highlight2 
+\par \cf0\highlight0                                  Dload  Upload   Total   Spent    Left  Speed\cf1\highlight2 
+\par \cf0\highlight0   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\cf1\highlight2 
+\par \cf0\highlight0 100   658  100   658    0     0    808      0 --:--:-- --:--:-- --:--:--   808\cf1\highlight2 
+\par \cf0\highlight0 100 2224k  100 2224k    0     0  1110k      0  0:00:02  0:00:02 --:--:-- 3600k\cf1\highlight2 
+\par \cf0\highlight0 Detected host and ready to start services.  Doing some housekeeping first...\cf1\highlight2 
+\par \cf0\highlight0 Using GO_OUT /root/go/src/k8s.io/arktos/_output/local/bin/linux/amd64\cf1\highlight2 
+\par \cf0\highlight0 Starting services now!\cf1\highlight2 
+\par \cf0\highlight0 Starting etcd\cf1\highlight2 
+\par 
+\par \cf0\highlight0 The current version is 3.4.3\cf1\highlight2 
+\par 
+\par \cf0\highlight0 etcd --name node-d --listen-peer-urls http://192.168.1.213:2380   --advertise-client-urls http://192.168.1.213:2379 --data-dir /tmp/tmp.jIt7tHn6dO --listen-client-urls http://192.168.1.213:2379,http://127.0.0.1:2379 --listen-peer-urls http://192.168.1.213:2380 --debug > "/tmp/etcd.log" 2>/dev/null\cf1\highlight2 
+\par \cf0\highlight0 Waiting for etcd to come up.\cf1\highlight2 
+\par \cf0\highlight0 +++ [1228 06:07:33] On try 1, etcd: : \{"health":"true"\}\cf1\highlight2 
+\par \cf0\highlight0\{"header":\{"cluster_id":"6710635368012556246","member_id":"10812308969844428066","revision":"2","raft_term":"2"\}\}Starting 1 kube-apiserver instances. If you want to make changes to the kube-apiserver nubmer, please run export APISERVER_SERVER=n(n=1,2,...).\cf1\highlight2 
+\par \cf0\highlight0 Copied the apiserver partition config file  /var/run/kubernetes/apiserver.config...\cf1\highlight2 
+\par \cf0\highlight0 Can't load /root/.rnd into RNG\cf1\highlight2 
+\par \cf0\highlight0 140694424674752:error:2406F079:random number generator:RAND_load_file:Cannot open file:../crypto/rand/randfile.c:88:Filename=/root/.rnd\cf1\highlight2 
+\par \cf0\highlight0 Generating a RSA private key\cf1\highlight2 
+\par \cf0\highlight0 ...........................................................+++++\cf1\highlight2 
+\par \cf0\highlight0 ..............+++++\cf1\highlight2 
+\par \cf0\highlight0 writing new private key to '/var/run/kubernetes/server-ca.key'\cf1\highlight2 
+\par \cf0\highlight0 -----\cf1\highlight2 
+\par \cf0\highlight0 Can't load /root/.rnd into RNG\cf1\highlight2 
+\par \cf0\highlight0 140659394101696:error:2406F079:random number generator:RAND_load_file:Cannot open file:../crypto/rand/randfile.c:88:Filename=/root/.rnd\cf1\highlight2 
+\par \cf0\highlight0 Generating a RSA private key\cf1\highlight2 
+\par \cf0\highlight0 .........................................................................................................................................................................................................................+++++\cf1\highlight2 
+\par \cf0\highlight0 .........+++++\cf1\highlight2 
+\par \cf0\highlight0 writing new private key to '/var/run/kubernetes/client-ca.key'\cf1\highlight2 
+\par \cf0\highlight0 -----\cf1\highlight2 
+\par \cf0\highlight0 Can't load /root/.rnd into RNG\cf1\highlight2 
+\par \cf0\highlight0 139808884945344:error:2406F079:random number generator:RAND_load_file:Cannot open file:../crypto/rand/randfile.c:88:Filename=/root/.rnd\cf1\highlight2 
+\par \cf0\highlight0 Generating a RSA private key\cf1\highlight2 
+\par \cf0\highlight0 ...........+++++\cf1\highlight2 
+\par \cf0\highlight0 .........................+++++\cf1\highlight2 
+\par \cf0\highlight0 writing new private key to '/var/run/kubernetes/request-header-ca.key'\cf1\highlight2 
+\par \cf0\highlight0 -----\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:07:34 [INFO] generate received request\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:07:34 [INFO] received CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:07:34 [INFO] generating key: rsa-2048\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:07:35 [INFO] encoded CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:07:35 [INFO] signed certificate with serial number 84008416209163870870523014487997607812460434026\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:07:35 [WARNING] This certificate lacks a "hosts" field. This makes it unsuitable for\cf1\highlight2 
+\par \cf0\highlight0 websites. For more information see the Baseline Requirements for the Issuance and Management\cf1\highlight2 
+\par \cf0\highlight0 of Publicly-Trusted Certificates, v.1.1.6, from the CA/Browser Forum (https://cabforum.org);\cf1\highlight2 
+\par \cf0\highlight0 specifically, section 10.2.3 ("Information Requirements").\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:07:35 [INFO] generate received request\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:07:35 [INFO] received CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:07:35 [INFO] generating key: rsa-2048\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:07:35 [INFO] encoded CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:07:35 [INFO] signed certificate with serial number 79349867058430889448132013347369976460112418046\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:07:35 [WARNING] This certificate lacks a "hosts" field. This makes it unsuitable for\cf1\highlight2 
+\par \cf0\highlight0 websites. For more information see the Baseline Requirements for the Issuance and Management\cf1\highlight2 
+\par \cf0\highlight0 of Publicly-Trusted Certificates, v.1.1.6, from the CA/Browser Forum (https://cabforum.org);\cf1\highlight2 
+\par \cf0\highlight0 specifically, section 10.2.3 ("Information Requirements").\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:07:35 [INFO] generate received request\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:07:35 [INFO] received CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:07:35 [INFO] generating key: rsa-2048\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:07:35 [INFO] encoded CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:07:35 [INFO] signed certificate with serial number 80363687065844115763726731540141102940267520171\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:07:35 [WARNING] This certificate lacks a "hosts" field. This makes it unsuitable for\cf1\highlight2 
+\par \cf0\highlight0 websites. For more information see the Baseline Requirements for the Issuance and Management\cf1\highlight2 
+\par \cf0\highlight0 of Publicly-Trusted Certificates, v.1.1.6, from the CA/Browser Forum (https://cabforum.org);\cf1\highlight2 
+\par \cf0\highlight0 specifically, section 10.2.3 ("Information Requirements").\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:07:35 [INFO] generate received request\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:07:35 [INFO] received CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:07:35 [INFO] generating key: rsa-2048\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:07:35 [INFO] encoded CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:07:35 [INFO] signed certificate with serial number 128952528258255067734045538887826463167816804736\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:07:35 [WARNING] This certificate lacks a "hosts" field. This makes it unsuitable for\cf1\highlight2 
+\par \cf0\highlight0 websites. For more information see the Baseline Requirements for the Issuance and Management\cf1\highlight2 
+\par \cf0\highlight0 of Publicly-Trusted Certificates, v.1.1.6, from the CA/Browser Forum (https://cabforum.org);\cf1\highlight2 
+\par \cf0\highlight0 specifically, section 10.2.3 ("Information Requirements").\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:07:35 [INFO] generate received request\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:07:35 [INFO] received CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:07:35 [INFO] generating key: rsa-2048\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:07:36 [INFO] encoded CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:07:36 [INFO] signed certificate with serial number 9867820904464283636423622939443071506245829920\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:07:36 [WARNING] This certificate lacks a "hosts" field. This makes it unsuitable for\cf1\highlight2 
+\par \cf0\highlight0 websites. For more information see the Baseline Requirements for the Issuance and Management\cf1\highlight2 
+\par \cf0\highlight0 of Publicly-Trusted Certificates, v.1.1.6, from the CA/Browser Forum (https://cabforum.org);\cf1\highlight2 
+\par \cf0\highlight0 specifically, section 10.2.3 ("Information Requirements").\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:07:36 [INFO] generate received request\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:07:36 [INFO] received CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:07:36 [INFO] generating key: rsa-2048\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:07:37 [INFO] encoded CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:07:37 [INFO] signed certificate with serial number 290432316261434766632564487398383049771714827123\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:07:37 [WARNING] This certificate lacks a "hosts" field. This makes it unsuitable for\cf1\highlight2 
+\par \cf0\highlight0 websites. For more information see the Baseline Requirements for the Issuance and Management\cf1\highlight2 
+\par \cf0\highlight0 of Publicly-Trusted Certificates, v.1.1.6, from the CA/Browser Forum (https://cabforum.org);\cf1\highlight2 
+\par \cf0\highlight0 specifically, section 10.2.3 ("Information Requirements").\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:07:37 [INFO] generate received request\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:07:37 [INFO] received CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:07:37 [INFO] generating key: rsa-2048\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:07:37 [INFO] encoded CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:07:37 [INFO] signed certificate with serial number 526464033280774609087582022868486487500196646695\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:07:37 [WARNING] This certificate lacks a "hosts" field. This makes it unsuitable for\cf1\highlight2 
+\par \cf0\highlight0 websites. For more information see the Baseline Requirements for the Issuance and Management\cf1\highlight2 
+\par \cf0\highlight0 of Publicly-Trusted Certificates, v.1.1.6, from the CA/Browser Forum (https://cabforum.org);\cf1\highlight2 
+\par \cf0\highlight0 specifically, section 10.2.3 ("Information Requirements").\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:07:37 [INFO] generate received request\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:07:37 [INFO] received CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:07:37 [INFO] generating key: rsa-2048\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:07:37 [INFO] encoded CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:07:37 [INFO] signed certificate with serial number 496530359929514033134063127133517550554774707381\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:07:37 [WARNING] This certificate lacks a "hosts" field. This makes it unsuitable for\cf1\highlight2 
+\par \cf0\highlight0 websites. For more information see the Baseline Requirements for the Issuance and Management\cf1\highlight2 
+\par \cf0\highlight0 of Publicly-Trusted Certificates, v.1.1.6, from the CA/Browser Forum (https://cabforum.org);\cf1\highlight2 
+\par \cf0\highlight0 specifically, section 10.2.3 ("Information Requirements").\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:07:37 [INFO] generate received request\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:07:37 [INFO] received CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:07:37 [INFO] generating key: rsa-2048\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:07:38 [INFO] encoded CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:07:38 [INFO] signed certificate with serial number 657993130128431150196051721802236061746608875985\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:07:38 [WARNING] This certificate lacks a "hosts" field. This makes it unsuitable for\cf1\highlight2 
+\par \cf0\highlight0 websites. For more information see the Baseline Requirements for the Issuance and Management\cf1\highlight2 
+\par \cf0\highlight0 of Publicly-Trusted Certificates, v.1.1.6, from the CA/Browser Forum (https://cabforum.org);\cf1\highlight2 
+\par \cf0\highlight0 specifically, section 10.2.3 ("Information Requirements").\cf1\highlight2 
+\par \cf0\highlight0 Waiting for apiserver to come up\cf1\highlight2 
+\par \cf0\highlight0 !!! [1228 06:08:39] Timed out waiting for apiserver:  to answer at https://0.0.0.0:6443/healthz; tried 60 waiting 1 between each\cf1\highlight2 
+\par \cf0\highlight0 check apiserver logs: /tmp/kube-apiserver0.log\cf1\highlight2 
+\par \cf0\highlight0 Cleaning up...\cf1\highlight2 
+\par \cf0\highlight0 Killing the following apiserver running processes\cf1\highlight2 
+\par \cf0\highlight0 2547 has been killed\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# cat /tmp/kube-apiserver0.log\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.607299    2547 registry.go:154] Registering EvenPodsSpread predicate and priority function\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.607505    2547 registry.go:154] Registering EvenPodsSpread predicate and priority function\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.634170    2547 registry.go:154] Registering EvenPodsSpread predicate and priority function\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.634220    2547 registry.go:154] Registering EvenPodsSpread predicate and priority function\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.649780    2547 feature_gate.go:216] feature gates: &\{map[AllAlpha:false BalanceAttachedNodeVolumes:false BoundServiceAccountTokenVolume:false CSIInlineVolume:false CSIMigration:false CSIMigrationAWS:false CSIMigrationAzureDisk:false CSIMigrationAzureFile:false CSIMigrationGCE:false CSIMigrationOpenStack:false CSINodeInfo:false CustomCPUCFSQuotaPeriod:false CustomResourceDefaulting:false DebugContainers:false DynamicAuditing:false ExpandCSIVolumes:false ExperimentalCriticalPodAnnotation:false HyperVContainer:false InPlacePodVerticalScaling:false LocalStorageCapacityIsolationFSQuotaMonitoring:false MandatoryArktosNetwork:true MountContainers:false NonPreemptingPriority:false PerNetworkServiceIPAlloc:false ProcMountType:false QOSReserved:false QPSDoubleGCController:true QPSDoubleRSController:true RemainingItemCount:false RemoveSelfLink:false RequestManagement:false ResourceLimitsPriorityFunction:false SCTPSupport:false ServerSideApply:false ServiceLoadBalancerFinalizer:false ServiceNodeExclusion:false TTLAfterFinished:false VolumePVCDataSource:false VolumeSnapshotDataSource:false WinDSR:false WinOverlay:false WindowsGMSA:false WorkloadInfoDefaulting:true]\}\cf1\highlight2 
+\par \cf0\highlight0 Flag --insecure-bind-address has been deprecated, This flag will be removed in a future version.\cf1\highlight2 
+\par \cf0\highlight0 Flag --insecure-port has been deprecated, This flag will be removed in a future version.\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650057    2547 flags.go:33] FLAG: --add-dir-header="false"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650076    2547 flags.go:33] FLAG: --address="0.0.0.0"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650093    2547 flags.go:33] FLAG: --admission-control="[]"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650115    2547 flags.go:33] FLAG: --admission-control-config-file=""\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650126    2547 flags.go:33] FLAG: --advertise-address="0.0.0.0"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650136    2547 flags.go:33] FLAG: --allow-privileged="true"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650147    2547 flags.go:33] FLAG: --alsologtostderr="false"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650157    2547 flags.go:33] FLAG: --anonymous-auth="true"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650166    2547 flags.go:33] FLAG: --api-audiences="[]"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650182    2547 flags.go:33] FLAG: --apiserver-count="1"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650193    2547 flags.go:33] FLAG: --application-metrics-count-limit="100"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650204    2547 flags.go:33] FLAG: --audit-dynamic-configuration="false"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650213    2547 flags.go:33] FLAG: --audit-log-batch-buffer-size="10000"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650222    2547 flags.go:33] FLAG: --audit-log-batch-max-size="1"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650232    2547 flags.go:33] FLAG: --audit-log-batch-max-wait="0s"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650242    2547 flags.go:33] FLAG: --audit-log-batch-throttle-burst="0"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650252    2547 flags.go:33] FLAG: --audit-log-batch-throttle-enable="false"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650261    2547 flags.go:33] FLAG: --audit-log-batch-throttle-qps="0"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650272    2547 flags.go:33] FLAG: --audit-log-format="json"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650281    2547 flags.go:33] FLAG: --audit-log-maxage="0"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650291    2547 flags.go:33] FLAG: --audit-log-maxbackup="0"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650309    2547 flags.go:33] FLAG: --audit-log-maxsize="0"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650320    2547 flags.go:33] FLAG: --audit-log-mode="blocking"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650329    2547 flags.go:33] FLAG: --audit-log-path="/tmp/kube-apiserver-audit0.log"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650339    2547 flags.go:33] FLAG: --audit-log-truncate-enabled="false"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650348    2547 flags.go:33] FLAG: --audit-log-truncate-max-batch-size="10485760"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650360    2547 flags.go:33] FLAG: --audit-log-truncate-max-event-size="102400"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650369    2547 flags.go:33] FLAG: --audit-log-version="audit.k8s.io/v1"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650391    2547 flags.go:33] FLAG: --audit-policy-file=""\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650419    2547 flags.go:33] FLAG: --audit-webhook-batch-buffer-size="10000"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650430    2547 flags.go:33] FLAG: --audit-webhook-batch-initial-backoff="10s"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650440    2547 flags.go:33] FLAG: --audit-webhook-batch-max-size="400"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650449    2547 flags.go:33] FLAG: --audit-webhook-batch-max-wait="30s"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650459    2547 flags.go:33] FLAG: --audit-webhook-batch-throttle-burst="15"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650468    2547 flags.go:33] FLAG: --audit-webhook-batch-throttle-enable="true"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650477    2547 flags.go:33] FLAG: --audit-webhook-batch-throttle-qps="10"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650488    2547 flags.go:33] FLAG: --audit-webhook-config-file=""\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650497    2547 flags.go:33] FLAG: --audit-webhook-initial-backoff="10s"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650506    2547 flags.go:33] FLAG: --audit-webhook-mode="batch"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650515    2547 flags.go:33] FLAG: --audit-webhook-truncate-enabled="false"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650524    2547 flags.go:33] FLAG: --audit-webhook-truncate-max-batch-size="10485760"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650538    2547 flags.go:33] FLAG: --audit-webhook-truncate-max-event-size="102400"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650549    2547 flags.go:33] FLAG: --audit-webhook-version="audit.k8s.io/v1"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650559    2547 flags.go:33] FLAG: --authentication-token-webhook-cache-ttl="2m0s"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650569    2547 flags.go:33] FLAG: --authentication-token-webhook-config-file=""\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650578    2547 flags.go:33] FLAG: --authorization-mode="[Node,RBAC]"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650599    2547 flags.go:33] FLAG: --authorization-policy-file=""\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650630    2547 flags.go:33] FLAG: --authorization-webhook-cache-authorized-ttl="5m0s"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650641    2547 flags.go:33] FLAG: --authorization-webhook-cache-unauthorized-ttl="30s"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650651    2547 flags.go:33] FLAG: --authorization-webhook-config-file=""\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650660    2547 flags.go:33] FLAG: --azure-container-registry-config=""\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650669    2547 flags.go:33] FLAG: --basic-auth-file="/etc/kubernetes/auth/auth.csv"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650678    2547 flags.go:33] FLAG: --bind-address="0.0.0.0"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650688    2547 flags.go:33] FLAG: --boot-id-file="/proc/sys/kernel/random/boot_id"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650699    2547 flags.go:33] FLAG: --cert-dir="/var/run/kubernetes"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650708    2547 flags.go:33] FLAG: --client-ca-file="/var/run/kubernetes/client-ca.crt"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650718    2547 flags.go:33] FLAG: --cloud-config=""\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650727    2547 flags.go:33] FLAG: --cloud-provider=""\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650736    2547 flags.go:33] FLAG: --cloud-provider-gce-lb-src-cidrs="130.211.0.0/22,209.85.152.0/22,209.85.204.0/22,35.191.0.0/16"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650749    2547 flags.go:33] FLAG: --container-hints="/etc/cadvisor/container_hints.json"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650773    2547 flags.go:33] FLAG: --containerd="/run/containerd/containerd.sock"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650786    2547 flags.go:33] FLAG: --containerd-namespace="k8s.io"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650796    2547 flags.go:33] FLAG: --contention-profiling="true"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650805    2547 flags.go:33] FLAG: --cors-allowed-origins="[/127.0.0.1(:[0-9]+)?$,/localhost(:[0-9]+)?$]"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650823    2547 flags.go:33] FLAG: --default-not-ready-toleration-seconds="300"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650834    2547 flags.go:33] FLAG: --default-unreachable-toleration-seconds="300"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650843    2547 flags.go:33] FLAG: --default-watch-cache-size="100"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650853    2547 flags.go:33] FLAG: --delete-collection-workers="1"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650862    2547 flags.go:33] FLAG: --deserialization-cache-size="0"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650871    2547 flags.go:33] FLAG: --disable-admission-plugins="[]"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650889    2547 flags.go:33] FLAG: --docker="unix:///var/run/docker.sock"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650900    2547 flags.go:33] FLAG: --docker-env-metadata-whitelist=""\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650909    2547 flags.go:33] FLAG: --docker-only="false"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650919    2547 flags.go:33] FLAG: --docker-root="/var/lib/docker"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650928    2547 flags.go:33] FLAG: --docker-tls="false"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650944    2547 flags.go:33] FLAG: --docker-tls-ca="ca.pem"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650955    2547 flags.go:33] FLAG: --docker-tls-cert="cert.pem"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650964    2547 flags.go:33] FLAG: --docker-tls-key="key.pem"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650973    2547 flags.go:33] FLAG: --enable-admission-plugins="[NamespaceLifecycle,LimitRanger,ServiceAccount,DefaultStorageClass,DefaultTolerationSeconds,MutatingAdmissionWebhook,ValidatingAdmissionWebhook,ResourceQuota,TenantExists]"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.650996    2547 flags.go:33] FLAG: --enable-aggregator-routing="false"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651010    2547 flags.go:33] FLAG: --enable-bootstrap-token-auth="false"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651020    2547 flags.go:33] FLAG: --enable-garbage-collector="true"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651029    2547 flags.go:33] FLAG: --enable-inflight-quota-handler="false"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651038    2547 flags.go:33] FLAG: --enable-load-reader="false"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651048    2547 flags.go:33] FLAG: --enable-logs-handler="true"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651057    2547 flags.go:33] FLAG: --enable-swagger-ui="false"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651066    2547 flags.go:33] FLAG: --encryption-provider-config=""\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651074    2547 flags.go:33] FLAG: --endpoint-reconciler-type="lease"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651083    2547 flags.go:33] FLAG: --etcd-cafile=""\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651092    2547 flags.go:33] FLAG: --etcd-certfile=""\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651101    2547 flags.go:33] FLAG: --etcd-compaction-interval="5m0s"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651111    2547 flags.go:33] FLAG: --etcd-count-metric-poll-period="1m0s"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651120    2547 flags.go:33] FLAG: --etcd-keyfile=""\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651129    2547 flags.go:33] FLAG: --etcd-prefix="/registry"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651138    2547 flags.go:33] FLAG: --etcd-servers="[http://192.168.1.213:2379]"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651158    2547 flags.go:33] FLAG: --etcd-servers-overrides="[]"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651173    2547 flags.go:33] FLAG: --event-storage-age-limit="default=0"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651183    2547 flags.go:33] FLAG: --event-storage-event-limit="default=0"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651192    2547 flags.go:33] FLAG: --event-ttl="1h0m0s"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651207    2547 flags.go:33] FLAG: --experimental-encryption-provider-config=""\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651217    2547 flags.go:33] FLAG: --external-hostname="node-d"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651227    2547 flags.go:33] FLAG: --feature-gates="AllAlpha=false,BalanceAttachedNodeVolumes=false,BoundServiceAccountTokenVolume=false,CSIInlineVolume=false,CSIMigration=false,CSIMigrationAWS=false,CSIMigrationAzureDisk=false,CSIMigrationAzureFile=false,CSIMigrationGCE=false,CSIMigrationOpenStack=false,CSINodeInfo=false,CustomCPUCFSQuotaPeriod=false,CustomResourceDefaulting=false,DebugContainers=false,DynamicAuditing=false,ExpandCSIVolumes=false,ExperimentalCriticalPodAnnotation=false,HyperVContainer=false,InPlacePodVerticalScaling=false,LocalStorageCapacityIsolationFSQuotaMonitoring=false,MandatoryArktosNetwork=true,MountContainers=false,NonPreemptingPriority=false,PerNetworkServiceIPAlloc=false,ProcMountType=false,QOSReserved=false,QPSDoubleGCController=true,QPSDoubleRSController=true,RemainingItemCount=false,RemoveSelfLink=false,RequestManagement=false,ResourceLimitsPriorityFunction=false,SCTPSupport=false,ServerSideApply=false,ServiceLoadBalancerFinalizer=false,ServiceNodeExclusion=false,TTLAfterFinished=false,VolumePVCDataSource=false,VolumeSnapshotDataSource=false,WinDSR=false,WinOverlay=false,WindowsGMSA=false,WorkloadInfoDefaulting=true"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651299    2547 flags.go:33] FLAG: --global-housekeeping-interval="1m0s"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651310    2547 flags.go:33] FLAG: --goaway-chance="0"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651323    2547 flags.go:33] FLAG: --help="false"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651333    2547 flags.go:33] FLAG: --housekeeping-interval="10s"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651342    2547 flags.go:33] FLAG: --http2-max-streams-per-connection="0"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651352    2547 flags.go:33] FLAG: --insecure-bind-address="0.0.0.0"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651361    2547 flags.go:33] FLAG: --insecure-port="8080"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651371    2547 flags.go:33] FLAG: --kubelet-certificate-authority=""\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651386    2547 flags.go:33] FLAG: --kubelet-client-certificate="/var/run/kubernetes/client-kube-apiserver.crt"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651398    2547 flags.go:33] FLAG: --kubelet-client-key="/var/run/kubernetes/client-kube-apiserver.key"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651408    2547 flags.go:33] FLAG: --kubelet-https="true"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651417    2547 flags.go:33] FLAG: --kubelet-port="10250"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651429    2547 flags.go:33] FLAG: --kubelet-preferred-address-types="[Hostname,InternalDNS,InternalIP,ExternalDNS,ExternalIP]"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651451    2547 flags.go:33] FLAG: --kubelet-read-only-port="10255"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651461    2547 flags.go:33] FLAG: --kubelet-timeout="5s"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651471    2547 flags.go:33] FLAG: --kubernetes-service-node-port="0"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651484    2547 flags.go:33] FLAG: --livez-grace-period="0s"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651494    2547 flags.go:33] FLAG: --log-backtrace-at=":0"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651506    2547 flags.go:33] FLAG: --log-cadvisor-usage="false"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651515    2547 flags.go:33] FLAG: --log-dir=""\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651524    2547 flags.go:33] FLAG: --log-file=""\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651533    2547 flags.go:33] FLAG: --log-file-max-size="1800"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651543    2547 flags.go:33] FLAG: --log-flush-frequency="5s"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651553    2547 flags.go:33] FLAG: --logtostderr="true"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651562    2547 flags.go:33] FLAG: --machine-id-file="/etc/machine-id,/var/lib/dbus/machine-id"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651572    2547 flags.go:33] FLAG: --master-service-namespace="default"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651582    2547 flags.go:33] FLAG: --max-connection-bytes-per-sec="0"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651591    2547 flags.go:33] FLAG: --max-mutating-requests-inflight="200"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651601    2547 flags.go:33] FLAG: --max-requests-inflight="400"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651610    2547 flags.go:33] FLAG: --min-request-timeout="1800"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651620    2547 flags.go:33] FLAG: --oidc-ca-file=""\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651629    2547 flags.go:33] FLAG: --oidc-client-id=""\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651638    2547 flags.go:33] FLAG: --oidc-groups-claim=""\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651647    2547 flags.go:33] FLAG: --oidc-groups-prefix=""\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651656    2547 flags.go:33] FLAG: --oidc-issuer-url=""\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651671    2547 flags.go:33] FLAG: --oidc-required-claim=""\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651687    2547 flags.go:33] FLAG: --oidc-signing-algs="[RS256]"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651703    2547 flags.go:33] FLAG: --oidc-username-claim="sub"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651713    2547 flags.go:33] FLAG: --oidc-username-prefix=""\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651722    2547 flags.go:33] FLAG: --partition-config="/var/run/kubernetes/apiserver.config"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651732    2547 flags.go:33] FLAG: --port="8080"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651742    2547 flags.go:33] FLAG: --profiling="true"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651751    2547 flags.go:33] FLAG: --proxy-client-cert-file="/var/run/kubernetes/client-auth-proxy.crt"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651761    2547 flags.go:33] FLAG: --proxy-client-key-file="/var/run/kubernetes/client-auth-proxy.key"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651771    2547 flags.go:33] FLAG: --request-timeout="1m0s"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651780    2547 flags.go:33] FLAG: --requestheader-allowed-names="[system:auth-proxy]"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651805    2547 flags.go:33] FLAG: --requestheader-client-ca-file="/var/run/kubernetes/request-header-ca.crt"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651816    2547 flags.go:33] FLAG: --requestheader-extra-headers-prefix="[X-Remote-Extra-]"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651832    2547 flags.go:33] FLAG: --requestheader-group-headers="[X-Remote-Group]"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651850    2547 flags.go:33] FLAG: --requestheader-username-headers="[X-Remote-User]"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651866    2547 flags.go:33] FLAG: --runtime-config=""\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651879    2547 flags.go:33] FLAG: --secure-port="6443"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651889    2547 flags.go:33] FLAG: --service-account-api-audiences="[]"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651906    2547 flags.go:33] FLAG: --service-account-issuer=""\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651915    2547 flags.go:33] FLAG: --service-account-key-file="[/tmp/kube-serviceaccount.key]"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651937    2547 flags.go:33] FLAG: --service-account-lookup="true"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651953    2547 flags.go:33] FLAG: --service-account-max-token-expiration="0s"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651964    2547 flags.go:33] FLAG: --service-account-signing-key-file=""\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651973    2547 flags.go:33] FLAG: --service-cluster-ip-range="10.0.0.0/24"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651987    2547 flags.go:33] FLAG: --service-cluster-subnet=""\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.651996    2547 flags.go:33] FLAG: --service-group-id="1"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.652005    2547 flags.go:33] FLAG: --service-node-port-range="30000-32767"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.652018    2547 flags.go:33] FLAG: --skip-headers="false"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.652028    2547 flags.go:33] FLAG: --skip-log-headers="false"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.652037    2547 flags.go:33] FLAG: --ssh-keyfile=""\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.652045    2547 flags.go:33] FLAG: --ssh-user=""\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.652058    2547 flags.go:33] FLAG: --stderrthreshold="2"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.652072    2547 flags.go:33] FLAG: --storage-backend="etcd3"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.652088    2547 flags.go:33] FLAG: --storage-driver-buffer-duration="1m0s"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.652107    2547 flags.go:33] FLAG: --storage-driver-db="cadvisor"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.652171    2547 flags.go:33] FLAG: --storage-driver-host="localhost:8086"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.652191    2547 flags.go:33] FLAG: --storage-driver-password="root"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.652208    2547 flags.go:33] FLAG: --storage-driver-secure="false"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.652225    2547 flags.go:33] FLAG: --storage-driver-table="stats"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.652246    2547 flags.go:33] FLAG: --storage-driver-user="root"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.652257    2547 flags.go:33] FLAG: --storage-media-type=""\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.652266    2547 flags.go:33] FLAG: --target-ram-mb="0"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.652276    2547 flags.go:33] FLAG: --tls-cert-file="/var/run/kubernetes/serving-kube-apiserver.crt"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.652286    2547 flags.go:33] FLAG: --tls-cipher-suites="[]"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.652306    2547 flags.go:33] FLAG: --tls-min-version=""\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.652315    2547 flags.go:33] FLAG: --tls-private-key-file="/var/run/kubernetes/serving-kube-apiserver.key"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.652325    2547 flags.go:33] FLAG: --tls-sni-cert-key="[]"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.652338    2547 flags.go:33] FLAG: --token-auth-file=""\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.652347    2547 flags.go:33] FLAG: --update-machine-info-interval="5m0s"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.652357    2547 flags.go:33] FLAG: --v="3"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.652366    2547 flags.go:33] FLAG: --version="false"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.652379    2547 flags.go:33] FLAG: --vmodule=""\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.652388    2547 flags.go:33] FLAG: --watch-cache="true"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.652397    2547 flags.go:33] FLAG: --watch-cache-sizes="[]"\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.653054    2547 server.go:629] Initializing cache sizes based on 0MB limit\cf1\highlight2 
+\par \cf0\highlight0 I1228 06:07:38.653437    2547 server.go:151] Version: v0.9.0\cf1\highlight2 
+\par \cf0\highlight0 Error: invalid authentication config: open /etc/kubernetes/auth/auth.csv: no such file or directory\cf1\highlight2 
+\par \cf0\highlight0 Usage:\cf1\highlight2 
+\par \cf0\highlight0   hyperkube kube-apiserver [flags]\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Generic flags:\cf1\highlight2 
+\par 
+\par \cf0\highlight0       --advertise-address ip                         The IP address on which to advertise the apiserver to members of the cluster. This address must be reachable by the rest of the cluster. If blank, the --bind-address will be used. If --bind-address is unspecified, the host's default interface will be used.\cf1\highlight2 
+\par \cf0\highlight0       --cloud-provider-gce-lb-src-cidrs cidrs        CIDRs opened in GCE firewall for LB traffic proxy & health checks (default 130.211.0.0/22,209.85.152.0/22,209.85.204.0/22,35.191.0.0/16)\cf1\highlight2 
+\par \cf0\highlight0       --cors-allowed-origins strings                 List of allowed origins for CORS, comma separated.  An allowed origin can be a regular expression to support subdomain matching. If this list is empty CORS will not be enabled.\cf1\highlight2 
+\par \cf0\highlight0       --default-not-ready-toleration-seconds int     Indicates the tolerationSeconds of the toleration for notReady:NoExecute that is added by default to every pod that does not already have such a toleration. (default 300)\cf1\highlight2 
+\par \cf0\highlight0       --default-unreachable-toleration-seconds int   Indicates the tolerationSeconds of the toleration for unreachable:NoExecute that is added by default to every pod that does not already have such a toleration. (default 300)\cf1\highlight2 
+\par \cf0\highlight0       --enable-inflight-quota-handler                If true, replace the max-in-flight handler with an enhanced one that queues and dispatches with priority and fairness\cf1\highlight2 
+\par \cf0\highlight0       --external-hostname string                     The hostname to use when generating externalized URLs for this master (e.g. Swagger API Docs).\cf1\highlight2 
+\par \cf0\highlight0       --feature-gates mapStringBool                  A set of key=value pairs that describe feature gates for alpha/experimental features. Options are:\cf1\highlight2 
+\par \cf0\highlight0                                                      APIListChunking=true|false (BETA - default=true)\cf1\highlight2 
+\par \cf0\highlight0                                                      APIResponseCompression=true|false (BETA - default=true)\cf1\highlight2 
+\par \cf0\highlight0                                                      AllAlpha=true|false (ALPHA - default=false)\cf1\highlight2 
+\par \cf0\highlight0                                                      AppArmor=true|false (BETA - default=true)\cf1\highlight2 
+\par \cf0\highlight0                                                      AttachVolumeLimit=true|false (BETA - default=true)\cf1\highlight2 
+\par \cf0\highlight0                                                      BalanceAttachedNodeVolumes=true|false (ALPHA - default=false)\cf1\highlight2 
+\par \cf0\highlight0                                                      BlockVolume=true|false (BETA - default=true)\cf1\highlight2 
+\par \cf0\highlight0                                                      BoundServiceAccountTokenVolume=true|false (ALPHA - default=false)\cf1\highlight2 
+\par \cf0\highlight0                                                      CPUManager=true|false (BETA - default=true)\cf1\highlight2 
+\par \cf0\highlight0                                                      CRIContainerLogRotation=true|false (BETA - default=true)\cf1\highlight2 
+\par \cf0\highlight0                                                      CSIBlockVolume=true|false (BETA - default=true)\cf1\highlight2 
+\par \cf0\highlight0                                                      CSIDriverRegistry=true|false (BETA - default=true)\cf1\highlight2 
+\par \cf0\highlight0                                                      CSIInlineVolume=true|false (ALPHA - default=false)\cf1\highlight2 
+\par \cf0\highlight0                                                      CSIMigration=true|false (ALPHA - default=false)\cf1\highlight2 
+\par \cf0\highlight0                                                      CSIMigrationAWS=true|false (ALPHA - default=false)\cf1\highlight2 
+\par \cf0\highlight0                                                      CSIMigrationAzureDisk=true|false (ALPHA - default=false)\cf1\highlight2 
+\par \cf0\highlight0                                                      CSIMigrationAzureFile=true|false (ALPHA - default=false)\cf1\highlight2 
+\par \cf0\highlight0                                                      CSIMigrationGCE=true|false (ALPHA - default=false)\cf1\highlight2 
+\par \cf0\highlight0                                                      CSIMigrationOpenStack=true|false (ALPHA - default=false)\cf1\highlight2 
+\par \cf0\highlight0                                                      CSINodeInfo=true|false (ALPHA - default=false)\cf1\highlight2 
+\par \cf0\highlight0                                                      CustomCPUCFSQuotaPeriod=true|false (ALPHA - default=false)\cf1\highlight2 
+\par \cf0\highlight0                                                      CustomResourceDefaulting=true|false (ALPHA - default=false)\cf1\highlight2 
+\par \cf0\highlight0                                                      CustomResourcePublishOpenAPI=true|false (BETA - default=true)\cf1\highlight2 
+\par \cf0\highlight0                                                      CustomResourceSubresources=true|false (BETA - default=true)\cf1\highlight2 
+\par \cf0\highlight0                                                      CustomResourceValidation=true|false (BETA - default=true)\cf1\highlight2 
+\par \cf0\highlight0                                                      CustomResourceWebhookConversion=true|false (BETA - default=true)\cf1\highlight2 
+\par \cf0\highlight0                                                      DebugContainers=true|false (ALPHA - default=false)\cf1\highlight2 
+\par \cf0\highlight0                                                      DevicePlugins=true|false (BETA - default=true)\cf1\highlight2 
+\par \cf0\highlight0                                                      DryRun=true|false (BETA - default=true)\cf1\highlight2 
+\par \cf0\highlight0                                                      DynamicAuditing=true|false (ALPHA - default=false)\cf1\highlight2 
+\par \cf0\highlight0                                                      DynamicKubeletConfig=true|false (BETA - default=true)\cf1\highlight2 
+\par \cf0\highlight0                                                      EvenPodsSpread=true|false (BETA - default=true)\cf1\highlight2 
+\par \cf0\highlight0                                                      ExpandCSIVolumes=true|false (ALPHA - default=false)\cf1\highlight2 
+\par \cf0\highlight0                                                      ExpandInUsePersistentVolumes=true|false (BETA - default=true)\cf1\highlight2 
+\par \cf0\highlight0                                                      ExpandPersistentVolumes=true|false (BETA - default=true)\cf1\highlight2 
+\par \cf0\highlight0                                                      ExperimentalCriticalPodAnnotation=true|false (ALPHA - default=false)\cf1\highlight2 
+\par \cf0\highlight0                                                      ExperimentalHostUserNamespaceDefaulting=true|false (BETA - default=false)\cf1\highlight2 
+\par \cf0\highlight0                                                      HyperVContainer=true|false (ALPHA - default=false)\cf1\highlight2 
+\par \cf0\highlight0                                                      InPlacePodVerticalScaling=true|false (ALPHA - default=false)\cf1\highlight2 
+\par \cf0\highlight0                                                      KubeletPodResources=true|false (BETA - default=true)\cf1\highlight2 
+\par \cf0\highlight0                                                      LocalStorageCapacityIsolation=true|false (BETA - default=true)\cf1\highlight2 
+\par \cf0\highlight0                                                      LocalStorageCapacityIsolationFSQuotaMonitoring=true|false (ALPHA - default=false)\cf1\highlight2 
+\par \cf0\highlight0                                                      MandatoryArktosNetwork=true|false (ALPHA - default=false)\cf1\highlight2 
+\par \cf0\highlight0                                                      MountContainers=true|false (ALPHA - default=false)\cf1\highlight2 
+\par \cf0\highlight0                                                      NodeLease=true|false (BETA - default=true)\cf1\highlight2 
+\par \cf0\highlight0                                                      NonPreemptingPriority=true|false (ALPHA - default=false)\cf1\highlight2 
+\par \cf0\highlight0                                                      PerNetworkServiceIPAlloc=true|false (ALPHA - default=false)\cf1\highlight2 
+\par \cf0\highlight0                                                      PodDisruptionBudget=true|false (BETA - default=true)\cf1\highlight2 
+\par \cf0\highlight0                                                      PodOverhead=true|false (BETA - default=true)\cf1\highlight2 
+\par \cf0\highlight0                                                      PodShareProcessNamespace=true|false (BETA - default=true)\cf1\highlight2 
+\par \cf0\highlight0                                                      ProcMountType=true|false (ALPHA - default=false)\cf1\highlight2 
+\par \cf0\highlight0                                                      QOSReserved=true|false (ALPHA - default=false)\cf1\highlight2 
+\par \cf0\highlight0                                                      QPSDoubleGCController=true|false (ALPHA - default=false)\cf1\highlight2 
+\par \cf0\highlight0                                                      QPSDoubleRSController=true|false (ALPHA - default=false)\cf1\highlight2 
+\par \cf0\highlight0                                                      RemainingItemCount=true|false (ALPHA - default=false)\cf1\highlight2 
+\par \cf0\highlight0                                                      RemoveSelfLink=true|false (ALPHA - default=false)\cf1\highlight2 
+\par \cf0\highlight0                                                      RequestManagement=true|false (ALPHA - default=false)\cf1\highlight2 
+\par \cf0\highlight0                                                      ResourceLimitsPriorityFunction=true|false (ALPHA - default=false)\cf1\highlight2 
+\par \cf0\highlight0                                                      ResourceQuotaScopeSelectors=true|false (BETA - default=true)\cf1\highlight2 
+\par \cf0\highlight0                                                      RotateKubeletClientCertificate=true|false (BETA - default=true)\cf1\highlight2 
+\par \cf0\highlight0                                                      RotateKubeletServerCertificate=true|false (BETA - default=true)\cf1\highlight2 
+\par \cf0\highlight0                                                      RunAsGroup=true|false (BETA - default=true)\cf1\highlight2 
+\par \cf0\highlight0                                                      RuntimeClass=true|false (BETA - default=true)\cf1\highlight2 
+\par \cf0\highlight0                                                      SCTPSupport=true|false (ALPHA - default=false)\cf1\highlight2 
+\par \cf0\highlight0                                                      ServerSideApply=true|false (ALPHA - default=false)\cf1\highlight2 
+\par \cf0\highlight0                                                      ServiceLoadBalancerFinalizer=true|false (ALPHA - default=false)\cf1\highlight2 
+\par \cf0\highlight0                                                      ServiceNodeExclusion=true|false (ALPHA - default=false)\cf1\highlight2 
+\par \cf0\highlight0                                                      StorageVersionHash=true|false (BETA - default=true)\cf1\highlight2 
+\par \cf0\highlight0                                                      StreamingProxyRedirects=true|false (BETA - default=true)\cf1\highlight2 
+\par \cf0\highlight0                                                      SupportNodePidsLimit=true|false (BETA - default=true)\cf1\highlight2 
+\par \cf0\highlight0                                                      SupportPodPidsLimit=true|false (BETA - default=true)\cf1\highlight2 
+\par \cf0\highlight0                                                      Sysctls=true|false (BETA - default=true)\cf1\highlight2 
+\par \cf0\highlight0                                                      TTLAfterFinished=true|false (ALPHA - default=false)\cf1\highlight2 
+\par \cf0\highlight0                                                      TaintBasedEvictions=true|false (BETA - default=true)\cf1\highlight2 
+\par \cf0\highlight0                                                      TaintNodesByCondition=true|false (BETA - default=true)\cf1\highlight2 
+\par \cf0\highlight0                                                      TokenRequest=true|false (BETA - default=true)\cf1\highlight2 
+\par \cf0\highlight0                                                      TokenRequestProjection=true|false (BETA - default=true)\cf1\highlight2 
+\par \cf0\highlight0                                                      ValidateProxyRedirects=true|false (BETA - default=true)\cf1\highlight2 
+\par \cf0\highlight0                                                      VolumePVCDataSource=true|false (ALPHA - default=false)\cf1\highlight2 
+\par \cf0\highlight0                                                      VolumeSnapshotDataSource=true|false (ALPHA - default=false)\cf1\highlight2 
+\par \cf0\highlight0                                                      VolumeSubpathEnvExpansion=true|false (BETA - default=true)\cf1\highlight2 
+\par \cf0\highlight0                                                      WinDSR=true|false (ALPHA - default=false)\cf1\highlight2 
+\par \cf0\highlight0                                                      WinOverlay=true|false (ALPHA - default=false)\cf1\highlight2 
+\par \cf0\highlight0                                                      WindowsGMSA=true|false (ALPHA - default=false)\cf1\highlight2 
+\par \cf0\highlight0                                                      WorkloadInfoDefaulting=true|false (ALPHA - default=false) (default )\cf1\highlight2 
+\par \cf0\highlight0       --goaway-chance float                          To prevent HTTP/2 clients from getting stuck on a single apiserver, randomly close a connection (GOAWAY). The client's other in-flight requests won't be affected, and the client will reconnect, likely landing on a different apiserver after going through the load balancer again. This argument sets the fraction of requests that will be sent a GOAWAY. Clusters with single apiservers, or which don't use a load balancer, should NOT enable this. Min is 0 (off), Max is .02 (1/50 requests); .001 (1/1000) is a recommended starting point.\cf1\highlight2 
+\par \cf0\highlight0       --livez-grace-period duration                  This option represents the maximum amount of time it should take for apiserver to complete its startup sequence and become live. From apiserver's start time to when this amount of time has elapsed, /livez will assume that unfinished post-start hooks will complete successfully and therefore return true.\cf1\highlight2 
+\par \cf0\highlight0       --master-service-namespace string              DEPRECATED: the namespace from which the kubernetes master services should be injected into pods. (default "default")\cf1\highlight2 
+\par \cf0\highlight0       --max-mutating-requests-inflight int           The maximum number of mutating requests in flight at a given time. When the server exceeds this, it rejects requests. Zero for no limit. (default 200)\cf1\highlight2 
+\par \cf0\highlight0       --max-requests-inflight int                    The maximum number of non-mutating requests in flight at a given time. When the server exceeds this, it rejects requests. Zero for no limit. (default 400)\cf1\highlight2 
+\par \cf0\highlight0       --min-request-timeout int                      An optional field indicating the minimum number of seconds a handler must keep a request open before timing it out. Currently only honored by the watch request handler, which picks a randomized value above this number as the connection timeout, to spread out load. (default 1800)\cf1\highlight2 
+\par \cf0\highlight0       --request-timeout duration                     An optional field indicating the duration a handler must keep a request open before timing it out. This is the default request timeout for requests but may be overridden by flags such as --min-request-timeout for specific types of requests. (default 1m0s)\cf1\highlight2 
+\par \cf0\highlight0       --target-ram-mb int                            Memory limit for apiserver in MB (used to configure sizes of caches, etc.)\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Etcd flags:\cf1\highlight2 
+\par 
+\par \cf0\highlight0       --default-watch-cache-size int             Default watch cache size. If zero, watch cache will be disabled for resources that do not have a default watch size set. (default 100)\cf1\highlight2 
+\par \cf0\highlight0       --delete-collection-workers int            Number of workers spawned for DeleteCollection call. These are used to speed up namespace cleanup. (default 1)\cf1\highlight2 
+\par \cf0\highlight0       --enable-garbage-collector                 Enables the generic garbage collector. MUST be synced with the corresponding flag of the kube-controller-manager. (default true)\cf1\highlight2 
+\par \cf0\highlight0       --encryption-provider-config string        The file containing configuration for encryption providers to be used for storing secrets in etcd\cf1\highlight2 
+\par \cf0\highlight0       --etcd-cafile string                       SSL Certificate Authority file used to secure etcd communication.\cf1\highlight2 
+\par \cf0\highlight0       --etcd-certfile string                     SSL certification file used to secure etcd communication.\cf1\highlight2 
+\par \cf0\highlight0       --etcd-compaction-interval duration        The interval of compaction requests. If 0, the compaction request from apiserver is disabled. (default 5m0s)\cf1\highlight2 
+\par \cf0\highlight0       --etcd-count-metric-poll-period duration   Frequency of polling etcd for number of resources per type. 0 disables the metric collection. (default 1m0s)\cf1\highlight2 
+\par \cf0\highlight0       --etcd-keyfile string                      SSL key file used to secure etcd communication.\cf1\highlight2 
+\par \cf0\highlight0       --etcd-prefix string                       The prefix to prepend to all resource paths in etcd. (default "/registry")\cf1\highlight2 
+\par \cf0\highlight0       --etcd-servers strings                     List of etcd servers to connect with (scheme://ip:port), comma separated.\cf1\highlight2 
+\par \cf0\highlight0       --etcd-servers-overrides strings           Per-resource etcd servers overrides, comma separated. The individual override format: group/resource#servers, where servers are URLs, semicolon separated.\cf1\highlight2 
+\par \cf0\highlight0       --partition-config string                  The config file path of apiserver partition\cf1\highlight2 
+\par \cf0\highlight0       --storage-backend string                   The storage backend for persistence. Options: 'etcd3' (default).\cf1\highlight2 
+\par \cf0\highlight0       --storage-media-type string                The media type to use to store objects in storage. Some resources or storage backends may only support a specific media type and will ignore this setting. (default "application/vnd.kubernetes.protobuf")\cf1\highlight2 
+\par \cf0\highlight0       --watch-cache                              Enable watch caching in the apiserver (default true)\cf1\highlight2 
+\par \cf0\highlight0       --watch-cache-sizes strings                Watch cache size settings for some resources (pods, nodes, etc.), comma separated. The individual setting format: resource[.group]#size, where resource is lowercase plural (no version), group is omitted for resources of apiVersion v1 (the legacy core API) and included for others, and size is a number. It takes effect when watch-cache is enabled. Some resources (replicationcontrollers, endpoints, nodes, pods, services, apiservices.apiregistration.k8s.io) have system defaults set by heuristics, others default to default-watch-cache-size\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Secure serving flags:\cf1\highlight2 
+\par 
+\par \cf0\highlight0       --bind-address ip                        The IP address on which to listen for the --secure-port port. The associated interface(s) must be reachable by the rest of the cluster, and by CLI/web clients. If blank, all interfaces will be used (0.0.0.0 for all IPv4 interfaces and :: for all IPv6 interfaces). (default 0.0.0.0)\cf1\highlight2 
+\par \cf0\highlight0       --cert-dir string                        The directory where the TLS certs are located. If --tls-cert-file and --tls-private-key-file are provided, this flag will be ignored. (default "/var/run/kubernetes")\cf1\highlight2 
+\par \cf0\highlight0       --http2-max-streams-per-connection int   The limit that the server gives to clients for the maximum number of streams in an HTTP/2 connection. Zero means to use golang's default.\cf1\highlight2 
+\par \cf0\highlight0       --secure-port int                        The port on which to serve HTTPS with authentication and authorization.It cannot be switched off with 0. (default 6443)\cf1\highlight2 
+\par \cf0\highlight0       --tls-cert-file string                   File containing the default x509 Certificate for HTTPS. (CA cert, if any, concatenated after server cert). If HTTPS serving is enabled, and --tls-cert-file and --tls-private-key-file are not provided, a self-signed certificate and key are generated for the public address and saved to the directory specified by --cert-dir.\cf1\highlight2 
+\par \cf0\highlight0       --tls-cipher-suites strings              Comma-separated list of cipher suites for the server. If omitted, the default Go cipher suites will be use.  Possible values: TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA,TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256,TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256,TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA,TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384,TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305,TLS_ECDHE_ECDSA_WITH_RC4_128_SHA,TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256,TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA,TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384,TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305,TLS_ECDHE_RSA_WITH_RC4_128_SHA,TLS_RSA_WITH_3DES_EDE_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA256,TLS_RSA_WITH_AES_128_GCM_SHA256,TLS_RSA_WITH_AES_256_CBC_SHA,TLS_RSA_WITH_AES_256_GCM_SHA384,TLS_RSA_WITH_RC4_128_SHA\cf1\highlight2 
+\par \cf0\highlight0       --tls-min-version string                 Minimum TLS version supported. Possible values: VersionTLS10, VersionTLS11, VersionTLS12, VersionTLS13\cf1\highlight2 
+\par \cf0\highlight0       --tls-private-key-file string            File containing the default x509 private key matching --tls-cert-file.\cf1\highlight2 
+\par \cf0\highlight0       --tls-sni-cert-key namedCertKey          A pair of x509 certificate and private key file paths, optionally suffixed with a list of domain patterns which are fully qualified domain names, possibly with prefixed wildcard segments. If no domain patterns are provided, the names of the certificate are extracted. Non-wildcard matches trump over wildcard matches, explicit domain patterns trump over extracted names. For multiple key/certificate pairs, use the --tls-sni-cert-key multiple times. Examples: "example.crt,example.key" or "foo.crt,foo.key:*.foo.com,foo.com". (default [])\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Insecure serving flags:\cf1\highlight2 
+\par 
+\par \cf0\highlight0       --address ip                 The IP address on which to serve the insecure --port (set to 0.0.0.0 for all IPv4 interfaces and :: for all IPv6 interfaces). (default 127.0.0.1) (DEPRECATED: see --bind-address instead.)\cf1\highlight2 
+\par \cf0\highlight0       --insecure-bind-address ip   The IP address on which to serve the --insecure-port (set to 0.0.0.0 for all IPv4 interfaces and :: for all IPv6 interfaces). (default 127.0.0.1) (DEPRECATED: This flag will be removed in a future version.)\cf1\highlight2 
+\par \cf0\highlight0       --insecure-port int          The port on which to serve unsecured, unauthenticated access. (default 8080) (DEPRECATED: This flag will be removed in a future version.)\cf1\highlight2 
+\par \cf0\highlight0       --port int                   The port on which to serve unsecured, unauthenticated access. Set to 0 to disable. (default 8080) (DEPRECATED: see --secure-port instead.)\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Auditing flags:\cf1\highlight2 
+\par 
+\par \cf0\highlight0       --audit-dynamic-configuration                 Enables dynamic audit configuration. This feature also requires the DynamicAuditing feature flag\cf1\highlight2 
+\par \cf0\highlight0       --audit-log-batch-buffer-size int             The size of the buffer to store events before batching and writing. Only used in batch mode. (default 10000)\cf1\highlight2 
+\par \cf0\highlight0       --audit-log-batch-max-size int                The maximum size of a batch. Only used in batch mode. (default 1)\cf1\highlight2 
+\par \cf0\highlight0       --audit-log-batch-max-wait duration           The amount of time to wait before force writing the batch that hadn't reached the max size. Only used in batch mode.\cf1\highlight2 
+\par \cf0\highlight0       --audit-log-batch-throttle-burst int          Maximum number of requests sent at the same moment if ThrottleQPS was not utilized before. Only used in batch mode.\cf1\highlight2 
+\par \cf0\highlight0       --audit-log-batch-throttle-enable             Whether batching throttling is enabled. Only used in batch mode.\cf1\highlight2 
+\par \cf0\highlight0       --audit-log-batch-throttle-qps float32        Maximum average number of batches per second. Only used in batch mode.\cf1\highlight2 
+\par \cf0\highlight0       --audit-log-format string                     Format of saved audits. "legacy" indicates 1-line text format for each event. "json" indicates structured json format. Known formats are legacy,json. (default "json")\cf1\highlight2 
+\par \cf0\highlight0       --audit-log-maxage int                        The maximum number of days to retain old audit log files based on the timestamp encoded in their filename.\cf1\highlight2 
+\par \cf0\highlight0       --audit-log-maxbackup int                     The maximum number of old audit log files to retain.\cf1\highlight2 
+\par \cf0\highlight0       --audit-log-maxsize int                       The maximum size in megabytes of the audit log file before it gets rotated.\cf1\highlight2 
+\par \cf0\highlight0       --audit-log-mode string                       Strategy for sending audit events. Blocking indicates sending events should block server responses. Batch causes the backend to buffer and write events asynchronously. Known modes are batch,blocking,blocking-strict. (default "blocking")\cf1\highlight2 
+\par \cf0\highlight0       --audit-log-path string                       If set, all requests coming to the apiserver will be logged to this file.  '-' means standard out.\cf1\highlight2 
+\par \cf0\highlight0       --audit-log-truncate-enabled                  Whether event and batch truncating is enabled.\cf1\highlight2 
+\par \cf0\highlight0       --audit-log-truncate-max-batch-size int       Maximum size of the batch sent to the underlying backend. Actual serialized size can be several hundreds of bytes greater. If a batch exceeds this limit, it is split into several batches of smaller size. (default 10485760)\cf1\highlight2 
+\par \cf0\highlight0       --audit-log-truncate-max-event-size int       Maximum size of the audit event sent to the underlying backend. If the size of an event is greater than this number, first request and response are removed, and if this doesn't reduce the size enough, event is discarded. (default 102400)\cf1\highlight2 
+\par \cf0\highlight0       --audit-log-version string                    API group and version used for serializing audit events written to log. (default "audit.k8s.io/v1")\cf1\highlight2 
+\par \cf0\highlight0       --audit-policy-file string                    Path to the file that defines the audit policy configuration.\cf1\highlight2 
+\par \cf0\highlight0       --audit-webhook-batch-buffer-size int         The size of the buffer to store events before batching and writing. Only used in batch mode. (default 10000)\cf1\highlight2 
+\par \cf0\highlight0       --audit-webhook-batch-max-size int            The maximum size of a batch. Only used in batch mode. (default 400)\cf1\highlight2 
+\par \cf0\highlight0       --audit-webhook-batch-max-wait duration       The amount of time to wait before force writing the batch that hadn't reached the max size. Only used in batch mode. (default 30s)\cf1\highlight2 
+\par \cf0\highlight0       --audit-webhook-batch-throttle-burst int      Maximum number of requests sent at the same moment if ThrottleQPS was not utilized before. Only used in batch mode. (default 15)\cf1\highlight2 
+\par \cf0\highlight0       --audit-webhook-batch-throttle-enable         Whether batching throttling is enabled. Only used in batch mode. (default true)\cf1\highlight2 
+\par \cf0\highlight0       --audit-webhook-batch-throttle-qps float32    Maximum average number of batches per second. Only used in batch mode. (default 10)\cf1\highlight2 
+\par \cf0\highlight0       --audit-webhook-config-file string            Path to a kubeconfig formatted file that defines the audit webhook configuration.\cf1\highlight2 
+\par \cf0\highlight0       --audit-webhook-initial-backoff duration      The amount of time to wait before retrying the first failed request. (default 10s)\cf1\highlight2 
+\par \cf0\highlight0       --audit-webhook-mode string                   Strategy for sending audit events. Blocking indicates sending events should block server responses. Batch causes the backend to buffer and write events asynchronously. Known modes are batch,blocking,blocking-strict. (default "batch")\cf1\highlight2 
+\par \cf0\highlight0       --audit-webhook-truncate-enabled              Whether event and batch truncating is enabled.\cf1\highlight2 
+\par \cf0\highlight0       --audit-webhook-truncate-max-batch-size int   Maximum size of the batch sent to the underlying backend. Actual serialized size can be several hundreds of bytes greater. If a batch exceeds this limit, it is split into several batches of smaller size. (default 10485760)\cf1\highlight2 
+\par \cf0\highlight0       --audit-webhook-truncate-max-event-size int   Maximum size of the audit event sent to the underlying backend. If the size of an event is greater than this number, first request and response are removed, and if this doesn't reduce the size enough, event is discarded. (default 102400)\cf1\highlight2 
+\par \cf0\highlight0       --audit-webhook-version string                API group and version used for serializing audit events written to webhook. (default "audit.k8s.io/v1")\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Features flags:\cf1\highlight2 
+\par 
+\par \cf0\highlight0       --contention-profiling   Enable lock contention profiling, if profiling is enabled\cf1\highlight2 
+\par \cf0\highlight0       --profiling              Enable profiling via web interface host:port/debug/pprof/ (default true)\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Authentication flags:\cf1\highlight2 
+\par 
+\par \cf0\highlight0       --anonymous-auth                                    Enables anonymous requests to the secure port of the API server. Requests that are not rejected by another authentication method are treated as anonymous requests. Anonymous requests have a username of system:anonymous, and a group name of system:unauthenticated. (default true)\cf1\highlight2 
+\par \cf0\highlight0       --api-audiences strings                             Identifiers of the API. The service account token authenticator will validate that tokens used against the API are bound to at least one of these audiences. If the --service-account-issuer flag is configured and this flag is not, this field defaults to a single element list containing the issuer URL .\cf1\highlight2 
+\par \cf0\highlight0       --authentication-token-webhook-cache-ttl duration   The duration to cache responses from the webhook token authenticator. (default 2m0s)\cf1\highlight2 
+\par \cf0\highlight0       --authentication-token-webhook-config-file string   File with webhook configuration for token authentication in kubeconfig format. The API server will query the remote service to determine authentication for bearer tokens.\cf1\highlight2 
+\par \cf0\highlight0       --basic-auth-file string                            If set, the file that will be used to admit requests to the secure port of the API server via http basic authentication.\cf1\highlight2 
+\par \cf0\highlight0       --client-ca-file string                             If set, any request presenting a client certificate signed by one of the authorities in the client-ca-file is authenticated with an identity corresponding to the CommonName of the client certificate.\cf1\highlight2 
+\par \cf0\highlight0       --enable-bootstrap-token-auth                       Enable to allow secrets of type 'bootstrap.kubernetes.io/token' in the 'kube-system' namespace to be used for TLS bootstrapping authentication.\cf1\highlight2 
+\par \cf0\highlight0       --oidc-ca-file string                               If set, the OpenID server's certificate will be verified by one of the authorities in the oidc-ca-file, otherwise the host's root CA set will be used.\cf1\highlight2 
+\par \cf0\highlight0       --oidc-client-id string                             The client ID for the OpenID Connect client, must be set if oidc-issuer-url is set.\cf1\highlight2 
+\par \cf0\highlight0       --oidc-groups-claim string                          If provided, the name of a custom OpenID Connect claim for specifying user groups. The claim value is expected to be a string or array of strings. This flag is experimental, please see the authentication documentation for further details.\cf1\highlight2 
+\par \cf0\highlight0       --oidc-groups-prefix string                         If provided, all groups will be prefixed with this value to prevent conflicts with other authentication strategies.\cf1\highlight2 
+\par \cf0\highlight0       --oidc-issuer-url string                            The URL of the OpenID issuer, only HTTPS scheme will be accepted. If set, it will be used to verify the OIDC JSON Web Token (JWT).\cf1\highlight2 
+\par \cf0\highlight0       --oidc-required-claim mapStringString               A key=value pair that describes a required claim in the ID Token. If set, the claim is verified to be present in the ID Token with a matching value. Repeat this flag to specify multiple claims.\cf1\highlight2 
+\par \cf0\highlight0       --oidc-signing-algs strings                         Comma-separated list of allowed JOSE asymmetric signing algorithms. JWTs with a 'alg' header value not in this list will be rejected. Values are defined by RFC 7518 https://tools.ietf.org/html/rfc7518#section-3.1. (default [RS256])\cf1\highlight2 
+\par \cf0\highlight0       --oidc-username-claim string                        The OpenID claim to use as the user name. Note that claims other than the default ('sub') is not guaranteed to be unique and immutable. This flag is experimental, please see the authentication documentation for further details. (default "sub")\cf1\highlight2 
+\par \cf0\highlight0       --oidc-username-prefix string                       If provided, all usernames will be prefixed with this value. If not provided, username claims other than 'email' are prefixed by the issuer URL to avoid clashes. To skip any prefixing, provide the value '-'.\cf1\highlight2 
+\par \cf0\highlight0       --requestheader-allowed-names strings               List of client certificate common names to allow to provide usernames in headers specified by --requestheader-username-headers. If empty, any client certificate validated by the authorities in --requestheader-client-ca-file is allowed.\cf1\highlight2 
+\par \cf0\highlight0       --requestheader-client-ca-file string               Root certificate bundle to use to verify client certificates on incoming requests before trusting usernames in headers specified by --requestheader-username-headers. WARNING: generally do not depend on authorization being already done for incoming requests.\cf1\highlight2 
+\par \cf0\highlight0       --requestheader-extra-headers-prefix strings        List of request header prefixes to inspect. X-Remote-Extra- is suggested.\cf1\highlight2 
+\par \cf0\highlight0       --requestheader-group-headers strings               List of request headers to inspect for groups. X-Remote-Group is suggested.\cf1\highlight2 
+\par \cf0\highlight0       --requestheader-username-headers strings            List of request headers to inspect for usernames. X-Remote-User is common.\cf1\highlight2 
+\par \cf0\highlight0       --service-account-issuer string                     Identifier of the service account token issuer. The issuer will assert this identifier in "iss" claim of issued tokens. This value is a string or URI.\cf1\highlight2 
+\par \cf0\highlight0       --service-account-key-file stringArray              File containing PEM-encoded x509 RSA or ECDSA private or public keys, used to verify ServiceAccount tokens. The specified file can contain multiple keys, and the flag can be specified multiple times with different files. If unspecified, --tls-private-key-file is used. Must be specified when --service-account-signing-key is provided\cf1\highlight2 
+\par \cf0\highlight0       --service-account-lookup                            If true, validate ServiceAccount tokens exist in etcd as part of authentication. (default true)\cf1\highlight2 
+\par \cf0\highlight0       --service-account-max-token-expiration duration     The maximum validity duration of a token created by the service account token issuer. If an otherwise valid TokenRequest with a validity duration larger than this value is requested, a token will be issued with a validity duration of this value.\cf1\highlight2 
+\par \cf0\highlight0       --token-auth-file string                            If set, the file that will be used to secure the secure port of the API server via token authentication.\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Authorization flags:\cf1\highlight2 
+\par 
+\par \cf0\highlight0       --authorization-mode strings                              Ordered list of plug-ins to do authorization on secure port. Comma-delimited list of: AlwaysAllow,AlwaysDeny,ABAC,Webhook,RBAC,Node. (default [AlwaysAllow])\cf1\highlight2 
+\par \cf0\highlight0       --authorization-policy-file string                        File with authorization policy in json line by line format, used with --authorization-mode=ABAC, on the secure port.\cf1\highlight2 
+\par \cf0\highlight0       --authorization-webhook-cache-authorized-ttl duration     The duration to cache 'authorized' responses from the webhook authorizer. (default 5m0s)\cf1\highlight2 
+\par \cf0\highlight0       --authorization-webhook-cache-unauthorized-ttl duration   The duration to cache 'unauthorized' responses from the webhook authorizer. (default 30s)\cf1\highlight2 
+\par \cf0\highlight0       --authorization-webhook-config-file string                File with webhook configuration in kubeconfig format, used with --authorization-mode=Webhook. The API server will query the remote service to determine access on the API server's secure port.\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Cloud provider flags:\cf1\highlight2 
+\par 
+\par \cf0\highlight0       --cloud-config string     The path to the cloud provider configuration file. Empty string for no configuration file.\cf1\highlight2 
+\par \cf0\highlight0       --cloud-provider string   The provider for cloud services. Empty string for no provider.\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Api enablement flags:\cf1\highlight2 
+\par 
+\par \cf0\highlight0       --runtime-config mapStringString   A set of key=value pairs that describe runtime configuration that may be passed to apiserver. <group>/<version> (or <version> for the core group) key can be used to turn on/off specific api versions. api/all is special key to control all api versions, be careful setting it false, unless you know what you do. api/legacy is deprecated, we will remove it in the future, so stop using it.\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Admission flags:\cf1\highlight2 
+\par 
+\par \cf0\highlight0       --admission-control strings              Admission is divided into two phases. In the first phase, only mutating admission plugins run. In the second phase, only validating admission plugins run. The names in the below list may represent a validating plugin, a mutating plugin, or both. The order of plugins in which they are passed to this flag does not matter. Comma-delimited list of: AlwaysAdmit, AlwaysDeny, AlwaysPullImages, DefaultPodNetworkReadiness, DefaultStorageClass, DefaultTolerationSeconds, DenyEscalatingExec, DenyExecOnPrivileged, DeploymentNetwork, EventRateLimit, ExtendedResourceToleration, ImagePolicyWebhook, LimitPodHardAntiAffinityTopology, LimitRanger, MutatingAdmissionWebhook, NamespaceAutoProvision, NamespaceExists, NamespaceLifecycle, NodeRestriction, OwnerReferencesPermissionEnforcement, PersistentVolumeClaimResize, PersistentVolumeLabel, PodNodeSelector, PodPreset, PodResourceAllocation, PodSecurityPolicy, PodTolerationRestriction, Priority, ResourceQuota, SecurityContextDeny, ServiceAccount, StorageObjectInUseProtection, TaintNodesByCondition, TenantExists, ValidatingAdmissionWebhook. (DEPRECATED: Use --enable-admission-plugins or --disable-admission-plugins instead. Will be removed in a future version.)\cf1\highlight2 
+\par \cf0\highlight0       --admission-control-config-file string   File with admission control configuration.\cf1\highlight2 
+\par \cf0\highlight0       --disable-admission-plugins strings      admission plugins that should be disabled although they are in the default enabled plugins list (NamespaceLifecycle, LimitRanger, ServiceAccount, TaintNodesByCondition, Priority, DefaultTolerationSeconds, DefaultStorageClass, StorageObjectInUseProtection, PersistentVolumeClaimResize, MutatingAdmissionWebhook, ValidatingAdmissionWebhook, PodResourceAllocation, ResourceQuota, DeploymentNetwork). Comma-delimited list of admission plugins: AlwaysAdmit, AlwaysDeny, AlwaysPullImages, DefaultPodNetworkReadiness, DefaultStorageClass, DefaultTolerationSeconds, DenyEscalatingExec, DenyExecOnPrivileged, DeploymentNetwork, EventRateLimit, ExtendedResourceToleration, ImagePolicyWebhook, LimitPodHardAntiAffinityTopology, LimitRanger, MutatingAdmissionWebhook, NamespaceAutoProvision, NamespaceExists, NamespaceLifecycle, NodeRestriction, OwnerReferencesPermissionEnforcement, PersistentVolumeClaimResize, PersistentVolumeLabel, PodNodeSelector, PodPreset, PodResourceAllocation, PodSecurityPolicy, PodTolerationRestriction, Priority, ResourceQuota, SecurityContextDeny, ServiceAccount, StorageObjectInUseProtection, TaintNodesByCondition, TenantExists, ValidatingAdmissionWebhook. The order of plugins in this flag does not matter.\cf1\highlight2 
+\par \cf0\highlight0       --enable-admission-plugins strings       admission plugins that should be enabled in addition to default enabled ones (NamespaceLifecycle, LimitRanger, ServiceAccount, TaintNodesByCondition, Priority, DefaultTolerationSeconds, DefaultStorageClass, StorageObjectInUseProtection, PersistentVolumeClaimResize, MutatingAdmissionWebhook, ValidatingAdmissionWebhook, PodResourceAllocation, ResourceQuota, DeploymentNetwork). Comma-delimited list of admission plugins: AlwaysAdmit, AlwaysDeny, AlwaysPullImages, DefaultPodNetworkReadiness, DefaultStorageClass, DefaultTolerationSeconds, DenyEscalatingExec, DenyExecOnPrivileged, DeploymentNetwork, EventRateLimit, ExtendedResourceToleration, ImagePolicyWebhook, LimitPodHardAntiAffinityTopology, LimitRanger, MutatingAdmissionWebhook, NamespaceAutoProvision, NamespaceExists, NamespaceLifecycle, NodeRestriction, OwnerReferencesPermissionEnforcement, PersistentVolumeClaimResize, PersistentVolumeLabel, PodNodeSelector, PodPreset, PodResourceAllocation, PodSecurityPolicy, PodTolerationRestriction, Priority, ResourceQuota, SecurityContextDeny, ServiceAccount, StorageObjectInUseProtection, TaintNodesByCondition, TenantExists, ValidatingAdmissionWebhook. The order of plugins in this flag does not matter.\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Misc flags:\cf1\highlight2 
+\par 
+\par \cf0\highlight0       --allow-privileged                          If true, allow privileged containers. [default=false]\cf1\highlight2 
+\par \cf0\highlight0       --apiserver-count int                       The number of apiservers running in the cluster, must be a positive number. (In use when --endpoint-reconciler-type=master-count is enabled.) (default 1)\cf1\highlight2 
+\par \cf0\highlight0       --enable-aggregator-routing                 Turns on aggregator routing requests to endpoints IP rather than cluster IP.\cf1\highlight2 
+\par \cf0\highlight0       --endpoint-reconciler-type string           Use an endpoint reconciler (master-count, lease, none) (default "lease")\cf1\highlight2 
+\par \cf0\highlight0       --event-ttl duration                        Amount of time to retain events. (default 1h0m0s)\cf1\highlight2 
+\par \cf0\highlight0       --kubelet-certificate-authority string      Path to a cert file for the certificate authority.\cf1\highlight2 
+\par \cf0\highlight0       --kubelet-client-certificate string         Path to a client cert file for TLS.\cf1\highlight2 
+\par \cf0\highlight0       --kubelet-client-key string                 Path to a client key file for TLS.\cf1\highlight2 
+\par \cf0\highlight0       --kubelet-https                             Use https for kubelet connections. (default true)\cf1\highlight2 
+\par \cf0\highlight0       --kubelet-preferred-address-types strings   List of the preferred NodeAddressTypes to use for kubelet connections. (default [Hostname,InternalDNS,InternalIP,ExternalDNS,ExternalIP])\cf1\highlight2 
+\par \cf0\highlight0       --kubelet-timeout duration                  Timeout for kubelet operations. (default 5s)\cf1\highlight2 
+\par \cf0\highlight0       --kubernetes-service-node-port int          If non-zero, the Kubernetes master service (which apiserver creates/maintains) will be of type NodePort, using this as the value of the port. If zero, the Kubernetes master service will be of type ClusterIP.\cf1\highlight2 
+\par \cf0\highlight0       --max-connection-bytes-per-sec int          If non-zero, throttle each user connection to this number of bytes/sec. Currently only applies to long-running requests.\cf1\highlight2 
+\par \cf0\highlight0       --proxy-client-cert-file string             Client certificate used to prove the identity of the aggregator or kube-apiserver when it must call out during a request. This includes proxying requests to a user api-server and calling out to webhook admission plugins. It is expected that this cert includes a signature from the CA in the --requestheader-client-ca-file flag. That CA is published in the 'extension-apiserver-authentication' configmap in the kube-system namespace. Components receiving calls from kube-aggregator should use that CA to perform their half of the mutual TLS verification.\cf1\highlight2 
+\par \cf0\highlight0       --proxy-client-key-file string              Private key for the client certificate used to prove the identity of the aggregator or kube-apiserver when it must call out during a request. This includes proxying requests to a user api-server and calling out to webhook admission plugins.\cf1\highlight2 
+\par \cf0\highlight0       --service-account-signing-key-file string   Path to the file that contains the current private key of the service account token issuer. The issuer will sign issued ID tokens with this private key. (Requires the 'TokenRequest' feature gate.)\cf1\highlight2 
+\par \cf0\highlight0       --service-cluster-ip-range ipNet            A CIDR notation IP range from which to assign service cluster IPs. This must not overlap with any IP ranges assigned to nodes for pods. (default 10.0.0.0/24)\cf1\highlight2 
+\par \cf0\highlight0       --service-cluster-subnet string             A Subnet name/ID from which to assign service cluster IPs. This must not be the subnet assigned to nodes for pods. Note this subnet if defined will OVERWRITE service-cluster-ip-range.\cf1\highlight2 
+\par \cf0\highlight0       --service-group-id string                   An optional field indicating the service group that this api server is belong to. Service group id is used to partition tenant data read from etcd. Default to service group 0. If there is no data partition for the service group, this api server will take all data from etcd\cf1\highlight2 
+\par \cf0\highlight0       --service-node-port-range portRange         A port range to reserve for services with NodePort visibility. Example: '30000-32767'. Inclusive at both ends of the range. (default 30000-32767)\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Global flags:\cf1\highlight2 
+\par 
+\par \cf0\highlight0       --add-dir-header                   If true, adds the file directory to the header\cf1\highlight2 
+\par \cf0\highlight0       --alsologtostderr                  log to standard error as well as files\cf1\highlight2 
+\par \cf0\highlight0   -h, --help                             help for kube-apiserver\cf1\highlight2 
+\par \cf0\highlight0       --log-backtrace-at traceLocation   when logging hits line file:N, emit a stack trace (default :0)\cf1\highlight2 
+\par \cf0\highlight0       --log-dir string                   If non-empty, write log files in this directory\cf1\highlight2 
+\par \cf0\highlight0       --log-file string                  If non-empty, use this log file\cf1\highlight2 
+\par \cf0\highlight0       --log-file-max-size uint           Defines the maximum size a log file can grow to. Unit is megabytes. If the value is 0, the maximum file size is unlimited. (default 1800)\cf1\highlight2 
+\par \cf0\highlight0       --log-flush-frequency duration     Maximum number of seconds between log flushes (default 5s)\cf1\highlight2 
+\par \cf0\highlight0       --logtostderr                      log to standard error instead of files (default true)\cf1\highlight2 
+\par \cf0\highlight0       --skip-headers                     If true, avoid header prefixes in the log messages\cf1\highlight2 
+\par \cf0\highlight0       --skip-log-headers                 If true, avoid headers when opening log files\cf1\highlight2 
+\par \cf0\highlight0       --stderrthreshold severity         logs at or above this threshold go to stderr (default 2)\cf1\highlight2 
+\par \cf0\highlight0   -v, --v Level                          number for the log level verbosity (default 0)\cf1\highlight2 
+\par \cf0\highlight0       --version version[=true]           Print version information and quit\cf1\highlight2 
+\par \cf0\highlight0       --vmodule moduleSpec               comma-separated list of pattern=N settings for file-filtered logging\cf1\highlight2 
+\par 
+\par \cf0\highlight0 invalid authentication config: open /etc/kubernetes/auth/auth.csv: no such file or directory\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# mkdir -p  /etc/kubernetes/auth\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# vi /etc/kubernetes/auth/auth.csv\cf1\highlight2 
+\par \cf0\highlight0 root@node-d:~/go/src/k8s.io/arktos# hack/arktos-up.sh\cf1\highlight2 
+\par \cf0\highlight0 DBG: Flannel CNI plugin will be installed AFTER cluster is up\cf1\highlight2 
+\par \cf0\highlight0 DBG: effective feature gates AllAlpha=false,WorkloadInfoDefaulting=true,QPSDoubleGCController=true,QPSDoubleRSController=true,MandatoryArktosNetwork=true\cf1\highlight2 
+\par \cf0\highlight0 DBG: effective disabling admission plugins\cf1\highlight2 
+\par \cf0\highlight0 DBG: effective default network template file is /root/go/src/k8s.io/arktos/hack/testdata/default-flat-network.tmpl\cf1\highlight2 
+\par \cf0\highlight0 DBG: kubelet arg RESOLV_CONF is /run/systemd/resolve/resolv.conf\cf1\highlight2 
+\par \cf0\highlight0 WARNING : The kubelet is configured to not fail even if swap is enabled; production deployments should disable swap.\cf1\highlight2 
+\par \cf0\highlight0 cni plugin is bridge; arktos will use bridge to provision pod network\cf1\highlight2 
+\par \cf0\highlight0 Ensuring firewall to allow traffic forward by default\cf1\highlight2 
+\par \cf0\highlight0 -P FORWARD ACCEPT\cf1\highlight2 
+\par \cf0\highlight0 Ensuring minimum cni plugin installation...\cf1\highlight2 
+\par \cf0\highlight0 found bridge, host-local, loopback\cf1\highlight2 
+\par \cf0\highlight0 setting up cni conf file...\cf1\highlight2 
+\par \cf0\highlight0 /etc/cni/net.d/bridge.conf already exists; keep it.\cf1\highlight2 
+\par \cf0\highlight0 done with bridge cni plugin installation\cf1\highlight2 
+\par \cf0\highlight0 WARNING : The kubelet is configured to not fail even if swap is enabled; production deployments should disable swap.\cf1\highlight2 
+\par \cf0\highlight0 Getting runtime deployment file  libvirt-qemu\cf1\highlight2 
+\par \cf0\highlight0 --2021-12-28 06:10:23--  https://raw.githubusercontent.com/futurewei-cloud/arktos-vm-runtime/release-0.6/deploy/apparmor/libvirt-qemu\cf1\highlight2 
+\par \cf0\highlight0 Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.109.133, 185.199.111.133, 185.199.110.133, ...\cf1\highlight2 
+\par \cf0\highlight0 Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.109.133|:443... connected.\cf1\highlight2 
+\par \cf0\highlight0 HTTP request sent, awaiting response... 200 OK\cf1\highlight2 
+\par \cf0\highlight0 Length: 6578 (6.4K) [text/plain]\cf1\highlight2 
+\par \cf0\highlight0\f1 Saving to: \lquote /tmp/libvirt-qemu\rquote\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 /tmp/libvirt-qemu                         100%[===================================================================================>]   6.42K  --.-KB/s    in 0s\cf1\highlight2 
+\par 
+\par \cf0\highlight0\f1 2021-12-28 06:10:23 (14.4 MB/s) - \lquote /tmp/libvirt-qemu\rquote  saved [6578/6578]\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 Getting runtime deployment file  libvirtd\cf1\highlight2 
+\par \cf0\highlight0 --2021-12-28 06:10:23--  https://raw.githubusercontent.com/futurewei-cloud/arktos-vm-runtime/release-0.6/deploy/apparmor/libvirtd\cf1\highlight2 
+\par \cf0\highlight0 Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.108.133, 185.199.110.133, 185.199.111.133, ...\cf1\highlight2 
+\par \cf0\highlight0 Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443... connected.\cf1\highlight2 
+\par \cf0\highlight0 HTTP request sent, awaiting response... 200 OK\cf1\highlight2 
+\par \cf0\highlight0 Length: 1617 (1.6K) [text/plain]\cf1\highlight2 
+\par \cf0\highlight0\f1 Saving to: \lquote /tmp/libvirtd\rquote\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 /tmp/libvirtd                             100%[===================================================================================>]   1.58K  --.-KB/s    in 0s\cf1\highlight2 
+\par 
+\par \cf0\highlight0\f1 2021-12-28 06:10:24 (12.2 MB/s) - \lquote /tmp/libvirtd\rquote  saved [1617/1617]\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 Getting runtime deployment file  virtlet\cf1\highlight2 
+\par \cf0\highlight0 --2021-12-28 06:10:24--  https://raw.githubusercontent.com/futurewei-cloud/arktos-vm-runtime/release-0.6/deploy/apparmor/virtlet\cf1\highlight2 
+\par \cf0\highlight0 Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.108.133, 185.199.110.133, 185.199.111.133, ...\cf1\highlight2 
+\par \cf0\highlight0 Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443... connected.\cf1\highlight2 
+\par \cf0\highlight0 HTTP request sent, awaiting response... 200 OK\cf1\highlight2 
+\par \cf0\highlight0 Length: 2582 (2.5K) [text/plain]\cf1\highlight2 
+\par \cf0\highlight0\f1 Saving to: \lquote /tmp/virtlet\rquote\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 /tmp/virtlet                              100%[===================================================================================>]   2.52K  --.-KB/s    in 0s\cf1\highlight2 
+\par 
+\par \cf0\highlight0\f1 2021-12-28 06:10:24 (16.1 MB/s) - \lquote /tmp/virtlet\rquote  saved [2582/2582]\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 Getting runtime deployment file  vms\cf1\highlight2 
+\par \cf0\highlight0 --2021-12-28 06:10:24--  https://raw.githubusercontent.com/futurewei-cloud/arktos-vm-runtime/release-0.6/deploy/apparmor/vms\cf1\highlight2 
+\par \cf0\highlight0 Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.108.133, 185.199.110.133, 185.199.111.133, ...\cf1\highlight2 
+\par \cf0\highlight0 Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443... connected.\cf1\highlight2 
+\par \cf0\highlight0 HTTP request sent, awaiting response... 200 OK\cf1\highlight2 
+\par \cf0\highlight0 Length: 485 [text/plain]\cf1\highlight2 
+\par \cf0\highlight0\f1 Saving to: \lquote /tmp/vms\rquote\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 /tmp/vms                                  100%[===================================================================================>]     485  --.-KB/s    in 0s\cf1\highlight2 
+\par 
+\par \cf0\highlight0\f1 2021-12-28 06:10:24 (12.5 MB/s) - \lquote /tmp/vms\rquote  saved [485/485]\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 Getting runtime deployment file  vmruntime.yaml\cf1\highlight2 
+\par \cf0\highlight0 --2021-12-28 06:10:24--  https://raw.githubusercontent.com/futurewei-cloud/arktos-vm-runtime/release-0.6/deploy/data/virtlet-ds.yaml\cf1\highlight2 
+\par \cf0\highlight0 Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.108.133, 185.199.110.133, 185.199.111.133, ...\cf1\highlight2 
+\par \cf0\highlight0 Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443... connected.\cf1\highlight2 
+\par \cf0\highlight0 HTTP request sent, awaiting response... 200 OK\cf1\highlight2 
+\par \cf0\highlight0 Length: 11643 (11K) [text/plain]\cf1\highlight2 
+\par \cf0\highlight0\f1 Saving to: \lquote /tmp/vmruntime.yaml\rquote\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 /tmp/vmruntime.yaml                       100%[===================================================================================>]  11.37K  --.-KB/s    in 0s\cf1\highlight2 
+\par 
+\par \cf0\highlight0\f1 2021-12-28 06:10:25 (28.6 MB/s) - \lquote /tmp/vmruntime.yaml\rquote  saved [11643/11643]\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 Getting runtime deployment file  images.yaml\cf1\highlight2 
+\par \cf0\highlight0 --2021-12-28 06:10:25--  https://raw.githubusercontent.com/futurewei-cloud/arktos-vm-runtime/release-0.6/deploy/images.yaml\cf1\highlight2 
+\par \cf0\highlight0 Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.108.133, 185.199.110.133, 185.199.111.133, ...\cf1\highlight2 
+\par \cf0\highlight0 Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443... connected.\cf1\highlight2 
+\par \cf0\highlight0 HTTP request sent, awaiting response... 200 OK\cf1\highlight2 
+\par \cf0\highlight0 Length: 254 [text/plain]\cf1\highlight2 
+\par \cf0\highlight0\f1 Saving to: \lquote /tmp/images.yaml\rquote\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 /tmp/images.yaml                          100%[===================================================================================>]     254  --.-KB/s    in 0s\cf1\highlight2 
+\par 
+\par \cf0\highlight0\f1 2021-12-28 06:10:25 (6.42 MB/s) - \lquote /tmp/images.yaml\rquote  saved [254/254]\cf1\highlight2\f0 
+\par 
+\par \cf0\highlight0 Stopping Apparmor service\cf1\highlight2 
+\par \cf0\highlight0 make: Entering directory '/root/go/src/k8s.io/arktos'\cf1\highlight2 
+\par \cf0\highlight0 make[1]: Entering directory '/root/go/src/k8s.io/arktos'\cf1\highlight2 
+\par \cf0\highlight0 make[1]: Leaving directory '/root/go/src/k8s.io/arktos'\cf1\highlight2 
+\par \cf0\highlight0 Running copyright check for repo: /root/go/src/k8s.io/arktos, logging to _output/ArktosCopyrightTool.log\cf1\highlight2 
+\par \cf0\highlight0 ~/go/src/k8s.io/arktos ~/go/src/k8s.io/arktos\cf1\highlight2 
+\par \cf0\highlight0 warning: inexact rename detection was skipped due to too many files.\cf1\highlight2 
+\par \cf0\highlight0 warning: you may want to set your diff.renameLimit variable to at least 3067 and retry the command.\cf1\highlight2 
+\par \cf0\highlight0 ~/go/src/k8s.io/arktos\cf1\highlight2 
+\par \cf0\highlight0 ~/go/src/k8s.io/arktos ~/go/src/k8s.io/arktos\cf1\highlight2 
+\par \cf0\highlight0 warning: inexact rename detection was skipped due to too many files.\cf1\highlight2 
+\par \cf0\highlight0 warning: you may want to set your diff.renameLimit variable to at least 3067 and retry the command.\cf1\highlight2 
+\par \cf0\highlight0 ~/go/src/k8s.io/arktos\cf1\highlight2 
+\par \cf0\highlight0 Inspecting copyright files, writing logs to _output/ArktosCopyrightTool.log\cf1\highlight2 
+\par \cf0\highlight0 Done.\cf1\highlight2 
+\par \cf0\highlight0 +++ [1228 06:11:33] Building go targets for linux/amd64:\cf1\highlight2 
+\par \cf0\highlight0     cmd/kubectl\cf1\highlight2 
+\par \cf0\highlight0     cmd/hyperkube\cf1\highlight2 
+\par \cf0\highlight0     cmd/kube-apiserver\cf1\highlight2 
+\par \cf0\highlight0     cmd/kube-controller-manager\cf1\highlight2 
+\par \cf0\highlight0     cmd/workload-controller-manager\cf1\highlight2 
+\par \cf0\highlight0     cmd/cloud-controller-manager\cf1\highlight2 
+\par \cf0\highlight0     cmd/kubelet\cf1\highlight2 
+\par \cf0\highlight0     cmd/kube-proxy\cf1\highlight2 
+\par \cf0\highlight0     cmd/kube-scheduler\cf1\highlight2 
+\par \cf0\highlight0     cmd/arktos-network-controller\cf1\highlight2 
+\par \cf0\highlight0 Running copyright check for repo: /root/go/src/k8s.io/arktos, logging to _output/ArktosCopyrightTool.log\cf1\highlight2 
+\par \cf0\highlight0 ~/go/src/k8s.io/arktos ~/go/src/k8s.io/arktos\cf1\highlight2 
+\par \cf0\highlight0 warning: inexact rename detection was skipped due to too many files.\cf1\highlight2 
+\par \cf0\highlight0 warning: you may want to set your diff.renameLimit variable to at least 3067 and retry the command.\cf1\highlight2 
+\par \cf0\highlight0 ~/go/src/k8s.io/arktos\cf1\highlight2 
+\par \cf0\highlight0 ~/go/src/k8s.io/arktos ~/go/src/k8s.io/arktos\cf1\highlight2 
+\par \cf0\highlight0 warning: inexact rename detection was skipped due to too many files.\cf1\highlight2 
+\par \cf0\highlight0 warning: you may want to set your diff.renameLimit variable to at least 3067 and retry the command.\cf1\highlight2 
+\par \cf0\highlight0 ~/go/src/k8s.io/arktos\cf1\highlight2 
+\par \cf0\highlight0 Inspecting copyright files, writing logs to _output/ArktosCopyrightTool.log\cf1\highlight2 
+\par \cf0\highlight0 Done.\cf1\highlight2 
+\par \cf0\highlight0 make: Leaving directory '/root/go/src/k8s.io/arktos'\cf1\highlight2 
+\par 
+\par \cf0\highlight0 The current version is 3.4.3\cf1\highlight2 
+\par 
+\par \cf0\highlight0 API SERVER insecure port is free, proceeding...\cf1\highlight2 
+\par \cf0\highlight0 API SERVER secure port is free, proceeding...\cf1\highlight2 
+\par \cf0\highlight0 Unable to successfully run 'cfssl' from /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/go/bin:/usr/local/go/bin:/root/go/src/k8s.io/arktos/third_party/etcd; downloading instead...\cf1\highlight2 
+\par \cf0\highlight0   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\cf1\highlight2 
+\par \cf0\highlight0                                  Dload  Upload   Total   Spent    Left  Speed\cf1\highlight2 
+\par \cf0\highlight0   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\cf1\highlight2 
+\par \cf0\highlight0 100   654  100   654    0     0   1564      0 --:--:-- --:--:-- --:--:--  1564\cf1\highlight2 
+\par \cf0\highlight0 100  9.8M  100  9.8M    0     0  7300k      0  0:00:01  0:00:01 --:--:-- 17.1M\cf1\highlight2 
+\par \cf0\highlight0   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\cf1\highlight2 
+\par \cf0\highlight0                                  Dload  Upload   Total   Spent    Left  Speed\cf1\highlight2 
+\par \cf0\highlight0   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\cf1\highlight2 
+\par \cf0\highlight0 100   658  100   658    0     0   2446      0 --:--:-- --:--:-- --:--:--  2446\cf1\highlight2 
+\par \cf0\highlight0 100 2224k  100 2224k    0     0  2712k      0 --:--:-- --:--:-- --:--:-- 2712k\cf1\highlight2 
+\par \cf0\highlight0 Detected host and ready to start services.  Doing some housekeeping first...\cf1\highlight2 
+\par \cf0\highlight0 Using GO_OUT /root/go/src/k8s.io/arktos/_output/local/bin/linux/amd64\cf1\highlight2 
+\par \cf0\highlight0 Starting services now!\cf1\highlight2 
+\par \cf0\highlight0 Starting etcd\cf1\highlight2 
+\par 
+\par \cf0\highlight0 The current version is 3.4.3\cf1\highlight2 
+\par 
+\par \cf0\highlight0 etcd --name node-d --listen-peer-urls http://192.168.1.213:2380   --advertise-client-urls http://192.168.1.213:2379 --data-dir /tmp/tmp.7Lc48jX7T9 --listen-client-urls http://192.168.1.213:2379,http://127.0.0.1:2379 --listen-peer-urls http://192.168.1.213:2380 --debug > "/tmp/etcd.log" 2>/dev/null\cf1\highlight2 
+\par \cf0\highlight0 Waiting for etcd to come up.\cf1\highlight2 
+\par \cf0\highlight0 +++ [1228 06:13:04] On try 2, etcd: : \{"health":"true"\}\cf1\highlight2 
+\par \cf0\highlight0\{"header":\{"cluster_id":"6710635368012556246","member_id":"10812308969844428066","revision":"2","raft_term":"2"\}\}Starting 1 kube-apiserver instances. If you want to make changes to the kube-apiserver nubmer, please run export APISERVER_SERVER=n(n=1,2,...).\cf1\highlight2 
+\par \cf0\highlight0 Copied the apiserver partition config file  /var/run/kubernetes/apiserver.config...\cf1\highlight2 
+\par \cf0\highlight0 Skip generating CA as CA files existed and REGENERATE_CA != true. To regenerate CA files, export REGENERATE_CA=true\cf1\highlight2 
+\par \cf0\highlight0 Can't load /root/.rnd into RNG\cf1\highlight2 
+\par \cf0\highlight0 140093244633536:error:2406F079:random number generator:RAND_load_file:Cannot open file:../crypto/rand/randfile.c:88:Filename=/root/.rnd\cf1\highlight2 
+\par \cf0\highlight0 Generating a RSA private key\cf1\highlight2 
+\par \cf0\highlight0 ........................................................................................................................................................................................+++++\cf1\highlight2 
+\par \cf0\highlight0 ................................+++++\cf1\highlight2 
+\par \cf0\highlight0 writing new private key to '/var/run/kubernetes/request-header-ca.key'\cf1\highlight2 
+\par \cf0\highlight0 -----\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:05 [INFO] generate received request\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:05 [INFO] received CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:05 [INFO] generating key: rsa-2048\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:05 [INFO] encoded CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:05 [INFO] signed certificate with serial number 672459004242185508009290060982357918930138802933\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:05 [WARNING] This certificate lacks a "hosts" field. This makes it unsuitable for\cf1\highlight2 
+\par \cf0\highlight0 websites. For more information see the Baseline Requirements for the Issuance and Management\cf1\highlight2 
+\par \cf0\highlight0 of Publicly-Trusted Certificates, v.1.1.6, from the CA/Browser Forum (https://cabforum.org);\cf1\highlight2 
+\par \cf0\highlight0 specifically, section 10.2.3 ("Information Requirements").\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:05 [INFO] generate received request\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:05 [INFO] received CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:05 [INFO] generating key: rsa-2048\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:06 [INFO] encoded CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:06 [INFO] signed certificate with serial number 548930159533427736614576637991322302578267074428\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:06 [WARNING] This certificate lacks a "hosts" field. This makes it unsuitable for\cf1\highlight2 
+\par \cf0\highlight0 websites. For more information see the Baseline Requirements for the Issuance and Management\cf1\highlight2 
+\par \cf0\highlight0 of Publicly-Trusted Certificates, v.1.1.6, from the CA/Browser Forum (https://cabforum.org);\cf1\highlight2 
+\par \cf0\highlight0 specifically, section 10.2.3 ("Information Requirements").\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:06 [INFO] generate received request\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:06 [INFO] received CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:06 [INFO] generating key: rsa-2048\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:06 [INFO] encoded CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:06 [INFO] signed certificate with serial number 643988561261647305107100039220086550744510305140\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:06 [WARNING] This certificate lacks a "hosts" field. This makes it unsuitable for\cf1\highlight2 
+\par \cf0\highlight0 websites. For more information see the Baseline Requirements for the Issuance and Management\cf1\highlight2 
+\par \cf0\highlight0 of Publicly-Trusted Certificates, v.1.1.6, from the CA/Browser Forum (https://cabforum.org);\cf1\highlight2 
+\par \cf0\highlight0 specifically, section 10.2.3 ("Information Requirements").\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:06 [INFO] generate received request\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:06 [INFO] received CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:06 [INFO] generating key: rsa-2048\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:07 [INFO] encoded CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:07 [INFO] signed certificate with serial number 155643148401702510542455123091274469674766587186\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:07 [WARNING] This certificate lacks a "hosts" field. This makes it unsuitable for\cf1\highlight2 
+\par \cf0\highlight0 websites. For more information see the Baseline Requirements for the Issuance and Management\cf1\highlight2 
+\par \cf0\highlight0 of Publicly-Trusted Certificates, v.1.1.6, from the CA/Browser Forum (https://cabforum.org);\cf1\highlight2 
+\par \cf0\highlight0 specifically, section 10.2.3 ("Information Requirements").\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:07 [INFO] generate received request\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:07 [INFO] received CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:07 [INFO] generating key: rsa-2048\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:08 [INFO] encoded CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:08 [INFO] signed certificate with serial number 293430343090309216825171013410363255724779811219\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:08 [WARNING] This certificate lacks a "hosts" field. This makes it unsuitable for\cf1\highlight2 
+\par \cf0\highlight0 websites. For more information see the Baseline Requirements for the Issuance and Management\cf1\highlight2 
+\par \cf0\highlight0 of Publicly-Trusted Certificates, v.1.1.6, from the CA/Browser Forum (https://cabforum.org);\cf1\highlight2 
+\par \cf0\highlight0 specifically, section 10.2.3 ("Information Requirements").\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:08 [INFO] generate received request\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:08 [INFO] received CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:08 [INFO] generating key: rsa-2048\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:08 [INFO] encoded CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:08 [INFO] signed certificate with serial number 61439376085995700744391722128373689746060905647\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:08 [WARNING] This certificate lacks a "hosts" field. This makes it unsuitable for\cf1\highlight2 
+\par \cf0\highlight0 websites. For more information see the Baseline Requirements for the Issuance and Management\cf1\highlight2 
+\par \cf0\highlight0 of Publicly-Trusted Certificates, v.1.1.6, from the CA/Browser Forum (https://cabforum.org);\cf1\highlight2 
+\par \cf0\highlight0 specifically, section 10.2.3 ("Information Requirements").\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:08 [INFO] generate received request\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:08 [INFO] received CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:08 [INFO] generating key: rsa-2048\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:09 [INFO] encoded CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:09 [INFO] signed certificate with serial number 194089163428370230418763478499184158594272547755\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:09 [WARNING] This certificate lacks a "hosts" field. This makes it unsuitable for\cf1\highlight2 
+\par \cf0\highlight0 websites. For more information see the Baseline Requirements for the Issuance and Management\cf1\highlight2 
+\par \cf0\highlight0 of Publicly-Trusted Certificates, v.1.1.6, from the CA/Browser Forum (https://cabforum.org);\cf1\highlight2 
+\par \cf0\highlight0 specifically, section 10.2.3 ("Information Requirements").\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:09 [INFO] generate received request\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:09 [INFO] received CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:09 [INFO] generating key: rsa-2048\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:09 [INFO] encoded CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:09 [INFO] signed certificate with serial number 220657815068500215322073653868838410220942941132\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:09 [WARNING] This certificate lacks a "hosts" field. This makes it unsuitable for\cf1\highlight2 
+\par \cf0\highlight0 websites. For more information see the Baseline Requirements for the Issuance and Management\cf1\highlight2 
+\par \cf0\highlight0 of Publicly-Trusted Certificates, v.1.1.6, from the CA/Browser Forum (https://cabforum.org);\cf1\highlight2 
+\par \cf0\highlight0 specifically, section 10.2.3 ("Information Requirements").\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:09 [INFO] generate received request\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:09 [INFO] received CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:09 [INFO] generating key: rsa-2048\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:10 [INFO] encoded CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:10 [INFO] signed certificate with serial number 697681350603298664191428031527254666794068067677\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:10 [WARNING] This certificate lacks a "hosts" field. This makes it unsuitable for\cf1\highlight2 
+\par \cf0\highlight0 websites. For more information see the Baseline Requirements for the Issuance and Management\cf1\highlight2 
+\par \cf0\highlight0 of Publicly-Trusted Certificates, v.1.1.6, from the CA/Browser Forum (https://cabforum.org);\cf1\highlight2 
+\par \cf0\highlight0 specifically, section 10.2.3 ("Information Requirements").\cf1\highlight2 
+\par \cf0\highlight0 Waiting for apiserver to come up\cf1\highlight2 
+\par \cf0\highlight0 +++ [1228 06:13:25] On try 11, apiserver: : ok\cf1\highlight2 
+\par \cf0\highlight0 clusterrolebinding.rbac.authorization.k8s.io/kube-apiserver-kubelet-admin created\cf1\highlight2 
+\par \cf0\highlight0 Cluster "local-up-cluster" set.\cf1\highlight2 
+\par \cf0\highlight0 use 'kubectl --kubeconfig=/var/run/kubernetes/admin-kube-aggregator0.kubeconfig' to use the aggregated API server\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:26 [INFO] generate received request\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:26 [INFO] received CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:26 [INFO] generating key: rsa-2048\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:27 [INFO] encoded CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:27 [INFO] signed certificate with serial number 194284209186243514640909608054480397519228774092\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:27 [WARNING] This certificate lacks a "hosts" field. This makes it unsuitable for\cf1\highlight2 
+\par \cf0\highlight0 websites. For more information see the Baseline Requirements for the Issuance and Management\cf1\highlight2 
+\par \cf0\highlight0 of Publicly-Trusted Certificates, v.1.1.6, from the CA/Browser Forum (https://cabforum.org);\cf1\highlight2 
+\par \cf0\highlight0 specifically, section 10.2.3 ("Information Requirements").\cf1\highlight2 
+\par \cf0\highlight0 service/kube-dns created\cf1\highlight2 
+\par \cf0\highlight0 serviceaccount/kube-dns created\cf1\highlight2 
+\par \cf0\highlight0 configmap/kube-dns created\cf1\highlight2 
+\par \cf0\highlight0 deployment.apps/kube-dns created\cf1\highlight2 
+\par \cf0\highlight0 Kube-dns addon successfully deployed.\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:28 [INFO] generate received request\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:28 [INFO] received CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:28 [INFO] generating key: rsa-2048\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:28 [INFO] encoded CSR\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:28 [INFO] signed certificate with serial number 347851003380377329912159814212415374185007532758\cf1\highlight2 
+\par \cf0\highlight0 2021/12/28 06:13:28 [WARNING] This certificate lacks a "hosts" field. This makes it unsuitable for\cf1\highlight2 
+\par \cf0\highlight0 websites. For more information see the Baseline Requirements for the Issuance and Management\cf1\highlight2 
+\par \cf0\highlight0 of Publicly-Trusted Certificates, v.1.1.6, from the CA/Browser Forum (https://cabforum.org);\cf1\highlight2 
+\par \cf0\highlight0 specifically, section 10.2.3 ("Information Requirements").\cf1\highlight2 
+\par \cf0\highlight0 kubelet ( 4675 ) is running.\cf1\highlight2 
+\par \cf0\highlight0 Create default storage class for\cf1\highlight2 
+\par \cf0\highlight0 storageclass.storage.k8s.io/standard created\cf1\highlight2 
+\par \cf0\highlight0 customresourcedefinition.apiextensions.k8s.io/networks.arktos.futurewei.com created\cf1\highlight2 
+\par \cf0\highlight0 *******************************************\cf1\highlight2 
+\par \cf0\highlight0 Setup Arktos components ...\cf1\highlight2 
+\par 
+\par \cf0\highlight0 No resources found.\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 No resources found.\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 No resources found.\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 No resources found.\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 No resources found.\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 No resources found.\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 No resources found.\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 Waiting for node ready at api server\cf1\highlight2 
+\par \cf0\highlight0 node-d   Ready   <none>   23s   v0.9.0\cf1\highlight2 
+\par \cf0\highlight0 node/node-d labeled\cf1\highlight2 
+\par \cf0\highlight0 configmap/virtlet-image-translations created\cf1\highlight2 
+\par \cf0\highlight0 daemonset.apps/virtlet created\cf1\highlight2 
+\par \cf0\highlight0 configmap/virtlet-config created\cf1\highlight2 
+\par \cf0\highlight0 clusterrolebinding.rbac.authorization.k8s.io/virtlet created\cf1\highlight2 
+\par \cf0\highlight0 clusterrole.rbac.authorization.k8s.io/virtlet created\cf1\highlight2 
+\par \cf0\highlight0 clusterrole.rbac.authorization.k8s.io/configmap-reader created\cf1\highlight2 
+\par \cf0\highlight0 clusterrole.rbac.authorization.k8s.io/virtlet-userdata-reader created\cf1\highlight2 
+\par \cf0\highlight0 clusterrolebinding.rbac.authorization.k8s.io/kubelet-node-binding created\cf1\highlight2 
+\par \cf0\highlight0 clusterrolebinding.rbac.authorization.k8s.io/vm-userdata-binding created\cf1\highlight2 
+\par \cf0\highlight0 clusterrole.rbac.authorization.k8s.io/virtlet-crd created\cf1\highlight2 
+\par \cf0\highlight0 clusterrolebinding.rbac.authorization.k8s.io/virtlet-crd created\cf1\highlight2 
+\par \cf0\highlight0 serviceaccount/virtlet created\cf1\highlight2 
+\par \cf0\highlight0 NAME      DESIRED   CURRENT   READY   UP-TO-DATE   AVAILABLE   NODE SELECTOR   AGE\cf1\highlight2 
+\par \cf0\highlight0 virtlet   0         0         0       0            0           <none>          0s\cf1\highlight2 
+\par \cf0\highlight0 clusterrole.rbac.authorization.k8s.io/system:arktos-network-reader created\cf1\highlight2 
+\par \cf0\highlight0 clusterrolebinding.rbac.authorization.k8s.io/system:kubelet-network-reader created\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Arktos Setup done.\cf1\highlight2 
+\par \cf0\highlight0 *******************************************\cf1\highlight2 
+\par \cf0\highlight0 Setup Kata Containers components ...\cf1\highlight2 
+\par \cf0\highlight0 * Install Kata components\cf1\highlight2 
+\par \cf0\highlight0 2021-12-28T06:14:38Z INFO Waiting for automatic snapd restart...\cf1\highlight2 
+\par \cf0\highlight0 kata-containers 2.3.0 from Kata Containers (katacontainers\cf7\u10003?\cf0 ) installed\cf1\highlight2 
+\par \cf0\highlight0 * Checking Kata compatibility\cf1\highlight2 
+\par \cf0\highlight0 time="2021-12-28T06:15:21Z" level=warning msg="Not running network checks as super user" arch=amd64 name=kata-runtime pid=11893 source=runtime time="2021-12-28T06:15:21Z" level=error msg="CPU property not found" arch=amd64 description="Virtualization support" name=vmx pid=11893 source=runtime type=flag time="2021-12-28T06:15:22Z" level=warning msg="modprobe insert module failed" arch=amd64 error="exit status 1" module=kvm_intel name=kata-runtime output="modprobe: ERROR: could not insert 'kvm_intel': Operation not supported\\n" pid=11893 source=runtime time="2021-12-28T06:15:22Z" level=error msg="kernel property kvm_intel not found" arch=amd64 description="Intel KVM" name=kvm_intel pid=11893 source=runtime type=module time="2021-12-28T06:15:22Z" level=error msg="ERROR: System is not capable of running Kata Containers" arch=amd64 name=kata-runtime pid=11893 source=runtime ERROR: System is not capable of running Kata Containers\cf1\highlight2 
+\par \cf0\highlight0 Aborted. Current system does not support Kata Containers.\cf1\highlight2 
+\par \cf0\highlight0 Kata Setup done.\cf1\highlight2 
+\par \cf0\highlight0 *******************************************\cf1\highlight2 
+\par \cf0\highlight0 Local Kubernetes cluster is running. Press Ctrl-C to shut it down.\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Logs:\cf1\highlight2 
+\par \cf0\highlight0   /tmp/kube-apiserver0.log\cf1\highlight2 
+\par \cf0\highlight0   /tmp/kube-controller-manager.log\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0   /tmp/kube-proxy.log\cf1\highlight2 
+\par \cf0\highlight0   /tmp/kube-scheduler.log\cf1\highlight2 
+\par \cf0\highlight0   /tmp/kubelet.log\cf1\highlight2 
+\par 
+\par \cf0\highlight0 To start using your cluster, you can open up another terminal/tab and run:\cf1\highlight2 
+\par 
+\par \cf0\highlight0   export KUBECONFIG=/var/run/kubernetes/admin.kubeconfig\cf1\highlight2 
+\par \cf0\highlight0 Or\cf1\highlight2 
+\par \cf0\highlight0   export KUBECONFIG=/var/run/kubernetes/adminN(N=0,1,...).kubeconfig\cf1\highlight2 
+\par 
+\par \cf0\highlight0   cluster/kubectl.sh\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Alternatively, you can write to the default kubeconfig:\cf1\highlight2 
+\par 
+\par \cf0\highlight0   export KUBERNETES_PROVIDER=local\cf1\highlight2 
+\par 
+\par \cf0\highlight0   cluster/kubectl.sh config set-cluster local --server=https://node-d:6443 --certificate-authority=/var/run/kubernetes/server-ca.crt\cf1\highlight2 
+\par \cf0\highlight0   cluster/kubectl.sh config set-credentials myself --client-key=/var/run/kubernetes/client-admin.key --client-certificate=/var/run/kubernetes/client-admin.crt\cf1\highlight2 
+\par \cf0\highlight0   cluster/kubectl.sh config set-context local --cluster=local --user=myself\cf1\highlight2 
+\par \cf0\highlight0   cluster/kubectl.sh config use-context local\cf1\highlight2 
+\par \cf0\highlight0   cluster/kubectl.sh\cf1\highlight2 
+\par \pard\cf0\highlight0\f2 
+\par }
+ 
