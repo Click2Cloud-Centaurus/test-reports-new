@@ -1,0 +1,613 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fmodern Consolas;}{\f1\fmodern\fcharset0 Consolas;}{\f2\fnil\fcharset129 Courier New;}}
+{\colortbl ;\red20\green20\blue20;\red142\green142\blue142;\red16\green158\blue98;\red148\green146\blue12;\red170\green51\blue170;\red56\green136\blue159;\red18\green124\blue155;\red94\green147\blue162;}
+\viewkind4\uc1\pard\f0\fs20     \u9484?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9488?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?                 \cf3\f1\bullet  MobaXterm Personal Edition v21.4 \bullet\cf0\f0                  \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?               \cf4 (SSH client, X server and network tools)\cf0                \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?                                                                      \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474? \u8594? SSH session to \cf5 root@192.168.1.211                        \cf0           \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  Direct SSH      :  \cf3\f0 v\cf0                                              \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  SSH compression :  \cf3\f0 v\cf0                                              \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  SSH-browser     :  \cf3\f0 v\cf0                                              \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  X11-forwarding  :  \cf3\f0 v\cf0   (remote display is forwarded through SSH)  \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?                                                                      \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474? \u8594? For more info, ctrl+click on \cf6\ul help\cf0\ulnone  or visit our \cf6\ul website\cf0\ulnone .            \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9492?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9496?\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 5.6.0-rc2 x86_64)\cf1\highlight2 
+\par 
+\par \cf0\highlight0  * Documentation:  https://help.ubuntu.com\cf1\highlight2 
+\par \cf0\highlight0  * Management:     https://landscape.canonical.com\cf1\highlight2 
+\par \cf0\highlight0  * Support:        https://ubuntu.com/advantage\cf1\highlight2 
+\par 
+\par \cf0\highlight0   System information as of Thu Dec 30 09:08:28 UTC 2021\cf1\highlight2 
+\par 
+\par \cf0\highlight0   System load:  1.72               Processes:              351\cf1\highlight2 
+\par \cf0\highlight0   Usage of /:   26.9% of 72.83GB   Users logged in:        1\cf1\highlight2 
+\par \cf0\highlight0   Memory usage: 8%                 IP address for ens160:  192.168.1.211\cf1\highlight2 
+\par \cf0\highlight0   Swap usage:   0%                 IP address for docker0: 172.17.0.1\cf1\highlight2 
+\par 
+\par \cf0\highlight0  * Super-optimized for small spaces - read how we shrank the memory\cf1\highlight2 
+\par \cf0\highlight0    footprint of MicroK8s to make it the smallest full K8s around.\cf1\highlight2 
+\par 
+\par \cf0\highlight0    https://ubuntu.com/blog/microk8s-memory-optimisation\cf1\highlight2 
+\par 
+\par \cf0\highlight0  * Canonical Livepatch is available for installation.\cf1\highlight2 
+\par \cf0\highlight0    - Reduce system reboots and improve kernel security. Activate at:\cf1\highlight2 
+\par \cf0\highlight0      https://ubuntu.com/livepatch\cf1\highlight2 
+\par 
+\par \cf0\highlight0 20 updates can be applied immediately.\cf1\highlight2 
+\par \cf0\highlight0 1 of these updates is a standard security update.\cf1\highlight2 
+\par \cf0\highlight0 To see these additional updates run: apt list --upgradable\cf1\highlight2 
+\par 
+\par \cf0\highlight0 New release '20.04.3 LTS' available.\cf1\highlight2 
+\par \cf0\highlight0 Run 'do-release-upgrade' to upgrade to it.\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Last login: Thu Dec 30 08:44:43 2021 from 192.168.1.1\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:~# cd /s\cf1\highlight2 
+\par \cf0\highlight0 sbin/ snap/ src/  srv/  sys/\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:~# cd /sr\cf1\highlight2 
+\par \cf0\highlight0 src/ srv/\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:~# cd /src/github.com/arktos/\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos# ls\cf1\highlight2 
+\par \cf7\highlight0 api\cf0                   \cf8 BUILD.bazel\cf0   code-of-conduct.md  go.mod   \cf7 logo\cf0                       \cf7 _output\cf0      \cf7 plugin\cf0             SUPPORT.md    \cf7 vendor\cf1\highlight2 
+\par \cf0\highlight0 aws_build_version    \cf7 CHANGELOG\cf0     CONTRIBUTING.md     go.sum   \cf8 Makefile\cf0                   OWNERS      README.md         \cf7 test\cf0           \cf8 WORKSPACE\cf1\highlight2 
+\par \cf0\highlight0 aws_kube_params.inc  \cf7 cluster\cf0       \cf7 docs\cf0                 \cf7 hack\cf0      \cf8 Makefile.generated_files\cf0   \cf7 perf-tests\cf0   readthedocs.yaml  \cf7 third_party\cf1\highlight2 
+\par \cf7\highlight0 build\cf0                 \cf7 cmd\cf0           \cf7 Godeps\cf0               LICENSE  mkdocs.yml                \cf7 pkg\cf0          \cf7 staging\cf0            \cf7 translations\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos# systemctl restart containerd\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos# export KUBECONFIG=/var/run/kubernetes/admin.kubeconfig\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos# ls\cf1\highlight2 
+\par \cf7\highlight0 api\cf0                   \cf8 BUILD.bazel\cf0   code-of-conduct.md  go.mod            LICENSE                   mkdocs.yml  \cf7 pkg\cf0                \cf7 staging\cf0       \cf7 translations\cf1\highlight2 
+\par \cf0\highlight0 aws_build_version    \cf7 CHANGELOG\cf0     CONTRIBUTING.md     go.sum            \cf7 logo\cf0                       \cf7 _output\cf0      \cf7 plugin\cf0             SUPPORT.md   \cf7 vendor\cf1\highlight2 
+\par \cf0\highlight0 aws_kube_params.inc  \cf7 cluster\cf0       \cf7 docs\cf0                 \cf7 hack\cf0               \cf8 Makefile\cf0                   OWNERS      README.md         \cf7 test\cf0          \cf8 WORKSPACE\cf1\highlight2 
+\par \cf7\highlight0 build\cf0                 \cf7 cmd\cf0           \cf7 Godeps\cf0               \cf7 kata_config_path\cf0   \cf8 Makefile.generated_files\cf0   \cf7 perf-tests\cf0   readthedocs.yaml  \cf7 third_party\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos# ./cluster/kubectl.sh get nodes\cf1\highlight2 
+\par \cf0\highlight0 NAME     STATUS     ROLES    AGE     VERSION\cf1\highlight2 
+\par \cf0\highlight0 node-e   NotReady   <none>   6m48s   v0.9.0\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos# ./cluster/kubectl.sh get nodes\cf1\highlight2 
+\par \cf0\highlight0 NAME     STATUS     ROLES    AGE    VERSION\cf1\highlight2 
+\par \cf0\highlight0 node-e   NotReady   <none>   7m1s   v0.9.0\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos# ./cluster/kubectl.sh get nodes\cf1\highlight2 
+\par \cf0\highlight0 NAME     STATUS     ROLES    AGE    VERSION\cf1\highlight2 
+\par \cf0\highlight0 node-e   NotReady   <none>   7m3s   v0.9.0\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos# ./cluster/kubectl.sh get nodes\cf1\highlight2 
+\par \cf0\highlight0 NAME     STATUS     ROLES    AGE    VERSION\cf1\highlight2 
+\par \cf0\highlight0 node-e   NotReady   <none>   7m4s   v0.9.0\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos# ./cluster/kubectl.sh get nodes\cf1\highlight2 
+\par \cf0\highlight0 NAME     STATUS     ROLES    AGE    VERSION\cf1\highlight2 
+\par \cf0\highlight0 node-e   NotReady   <none>   7m5s   v0.9.0\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos# ./cluster/kubectl.sh get nodes\cf1\highlight2 
+\par \cf0\highlight0 NAME     STATUS     ROLES    AGE     VERSION\cf1\highlight2 
+\par \cf0\highlight0 node-e   NotReady   <none>   7m19s   v0.9.0\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos# ./cluster/kubectl.sh describe node node-e\cf1\highlight2 
+\par \cf0\highlight0 Name:               node-e\cf1\highlight2 
+\par \cf0\highlight0 Roles:              <none>\cf1\highlight2 
+\par \cf0\highlight0 Labels:             beta.kubernetes.io/arch=amd64\cf1\highlight2 
+\par \cf0\highlight0                     beta.kubernetes.io/os=linux\cf1\highlight2 
+\par \cf0\highlight0                     extraRuntime=virtlet\cf1\highlight2 
+\par \cf0\highlight0                     kubernetes.io/arch=amd64\cf1\highlight2 
+\par \cf0\highlight0                     kubernetes.io/hostname=node-e\cf1\highlight2 
+\par \cf0\highlight0                     kubernetes.io/os=linux\cf1\highlight2 
+\par \cf0\highlight0 Annotations:        node.alpha.kubernetes.io/ttl: 0\cf1\highlight2 
+\par \cf0\highlight0                     volumes.kubernetes.io/controller-managed-attach-detach: true\cf1\highlight2 
+\par \cf0\highlight0 CreationTimestamp:  Thu, 30 Dec 2021 09:07:04 +0000\cf1\highlight2 
+\par \cf0\highlight0 Taints:             node.kubernetes.io/not-ready:NoSchedule\cf1\highlight2 
+\par \cf0\highlight0 Unschedulable:      false\cf1\highlight2 
+\par \cf0\highlight0 Conditions:\cf1\highlight2 
+\par \cf0\highlight0   Type                    Status  LastHeartbeatTime                 LastTransitionTime                Reason                               Message\cf1\highlight2 
+\par \cf0\highlight0   ----                    ------  -----------------                 ------------------                ------                               -------\cf1\highlight2 
+\par \cf0\highlight0   VmRuntimeReady          False   Thu, 30 Dec 2021 09:14:27 +0000   Thu, 30 Dec 2021 09:07:04 +0000   None of vm runtime is ready\cf1\highlight2 
+\par \cf0\highlight0   ContainerRuntimeReady   False   Thu, 30 Dec 2021 09:14:27 +0000   Thu, 30 Dec 2021 09:10:36 +0000   None of container runtime is ready\cf1\highlight2 
+\par \cf0\highlight0   MemoryPressure          False   Thu, 30 Dec 2021 09:14:27 +0000   Thu, 30 Dec 2021 09:07:04 +0000   KubeletHasSufficientMemory           kubelet has sufficient memory available\cf1\highlight2 
+\par \cf0\highlight0   DiskPressure            False   Thu, 30 Dec 2021 09:14:27 +0000   Thu, 30 Dec 2021 09:07:04 +0000   KubeletHasNoDiskPressure             kubelet has no disk pressure\cf1\highlight2 
+\par \cf0\highlight0   PIDPressure             False   Thu, 30 Dec 2021 09:14:27 +0000   Thu, 30 Dec 2021 09:07:04 +0000   KubeletHasSufficientPID              kubelet has sufficient PID available\cf1\highlight2 
+\par \cf0\highlight0   Ready                   False   Thu, 30 Dec 2021 09:14:27 +0000   Thu, 30 Dec 2021 09:11:06 +0000   KubeletNotReady                      container runtime is down\cf1\highlight2 
+\par \cf0\highlight0 Addresses:\cf1\highlight2 
+\par \cf0\highlight0   InternalIP:  192.168.1.211\cf1\highlight2 
+\par \cf0\highlight0   Hostname:    node-e\cf1\highlight2 
+\par \cf0\highlight0 Capacity:\cf1\highlight2 
+\par \cf0\highlight0  cpu:                16\cf1\highlight2 
+\par \cf0\highlight0  ephemeral-storage:  76368676Ki\cf1\highlight2 
+\par \cf0\highlight0  hugepages-2Mi:      0\cf1\highlight2 
+\par \cf0\highlight0  memory:             16419360Ki\cf1\highlight2 
+\par \cf0\highlight0  pods:               110\cf1\highlight2 
+\par \cf0\highlight0 Allocatable:\cf1\highlight2 
+\par \cf0\highlight0  cpu:                16\cf1\highlight2 
+\par \cf0\highlight0  ephemeral-storage:  70381371686\cf1\highlight2 
+\par \cf0\highlight0  hugepages-2Mi:      0\cf1\highlight2 
+\par \cf0\highlight0  memory:             16316960Ki\cf1\highlight2 
+\par \cf0\highlight0  pods:               110\cf1\highlight2 
+\par \cf0\highlight0 System Info:\cf1\highlight2 
+\par \cf0\highlight0  Machine ID:                 d7e690c417cc42b98b2c7145990dec7b\cf1\highlight2 
+\par \cf0\highlight0  System UUID:                c3030642-1cac-2c39-9e3f-d093ff59673f\cf1\highlight2 
+\par \cf0\highlight0  Boot ID:                    8fb6082e-4a99-4d80-985b-0b787686297c\cf1\highlight2 
+\par \cf0\highlight0  Kernel Version:             5.6.0-rc2\cf1\highlight2 
+\par \cf0\highlight0  OS Image:                   Ubuntu 18.04.5 LTS\cf1\highlight2 
+\par \cf0\highlight0  Operating System:           linux\cf1\highlight2 
+\par \cf0\highlight0  Architecture:               amd64\cf1\highlight2 
+\par \cf0\highlight0  Container Runtime Version:  TypeUnknown://Unknown\cf1\highlight2 
+\par \cf0\highlight0  Kubelet Version:            v0.9.0\cf1\highlight2 
+\par \cf0\highlight0  Kube-Proxy Version:         v0.9.0\cf1\highlight2 
+\par \cf0\highlight0 PodCIDR:                     10.244.0.0/24\cf1\highlight2 
+\par \cf0\highlight0 Non-terminated Pods:         (3 in total)\cf1\highlight2 
+\par \cf0\highlight0   Namespace                  Name                                CPU Requests  CPU Limits  Memory Requests  Memory Limits  AGE\cf1\highlight2 
+\par \cf0\highlight0   ---------                  ----                                ------------  ----------  ---------------  -------------  ---\cf1\highlight2 
+\par \cf0\highlight0   kube-system                coredns-default-7b4cbdf5cd-2l45x    0 (0%)        0 (0%)      0 (0%)           0 (0%)         7m38s\cf1\highlight2 
+\par \cf0\highlight0   kube-system                kube-dns-554c5866fc-pzwjh           260m (1%)     0 (0%)      110Mi (0%)       170Mi (1%)     7m38s\cf1\highlight2 
+\par \cf0\highlight0   kube-system                virtlet-v4vn7                       0 (0%)        0 (0%)      0 (0%)           0 (0%)         5m36s\cf1\highlight2 
+\par \cf0\highlight0 Allocated resources:\cf1\highlight2 
+\par \cf0\highlight0   (Total limits may be over 100 percent, i.e., overcommitted.)\cf1\highlight2 
+\par \cf0\highlight0   Resource           Requests    Limits\cf1\highlight2 
+\par \cf0\highlight0   --------           --------    ------\cf1\highlight2 
+\par \cf0\highlight0   cpu                260m (1%)   0 (0%)\cf1\highlight2 
+\par \cf0\highlight0   memory             110Mi (0%)  170Mi (1%)\cf1\highlight2 
+\par \cf0\highlight0   ephemeral-storage  0 (0%)      0 (0%)\cf1\highlight2 
+\par \cf0\highlight0 Events:              <none>\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos# ./cluster/kubectl.sh taint node node-e node.kubernetes.io/not-ready:NoSchedule\cf1\highlight2 
+\par \cf0\highlight0 error: at least one taint update is required\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos# ./cluster/kubectl.sh taint node node-e node.kubernetes.io/not-ready:NoSchedule\cf1\highlight2 
+\par \cf0\highlight0 error: at least one taint update is required\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos# ./cluster/kubectl.sh describe node node-e\cf1\highlight2 
+\par \cf0\highlight0 Name:               node-e\cf1\highlight2 
+\par \cf0\highlight0 Roles:              <none>\cf1\highlight2 
+\par \cf0\highlight0 Labels:             beta.kubernetes.io/arch=amd64\cf1\highlight2 
+\par \cf0\highlight0                     beta.kubernetes.io/os=linux\cf1\highlight2 
+\par \cf0\highlight0                     extraRuntime=virtlet\cf1\highlight2 
+\par \cf0\highlight0                     kubernetes.io/arch=amd64\cf1\highlight2 
+\par \cf0\highlight0                     kubernetes.io/hostname=node-e\cf1\highlight2 
+\par \cf0\highlight0                     kubernetes.io/os=linux\cf1\highlight2 
+\par \cf0\highlight0 Annotations:        node.alpha.kubernetes.io/ttl: 0\cf1\highlight2 
+\par \cf0\highlight0                     volumes.kubernetes.io/controller-managed-attach-detach: true\cf1\highlight2 
+\par \cf0\highlight0 CreationTimestamp:  Thu, 30 Dec 2021 09:07:04 +0000\cf1\highlight2 
+\par \cf0\highlight0 Taints:             node.kubernetes.io/not-ready:NoSchedule\cf1\highlight2 
+\par \cf0\highlight0 Unschedulable:      false\cf1\highlight2 
+\par \cf0\highlight0 Conditions:\cf1\highlight2 
+\par \cf0\highlight0   Type                    Status  LastHeartbeatTime                 LastTransitionTime                Reason                               Message\cf1\highlight2 
+\par \cf0\highlight0   ----                    ------  -----------------                 ------------------                ------                               -------\cf1\highlight2 
+\par \cf0\highlight0   VmRuntimeReady          False   Thu, 30 Dec 2021 09:17:38 +0000   Thu, 30 Dec 2021 09:07:04 +0000   None of vm runtime is ready\cf1\highlight2 
+\par \cf0\highlight0   ContainerRuntimeReady   False   Thu, 30 Dec 2021 09:17:38 +0000   Thu, 30 Dec 2021 09:10:36 +0000   None of container runtime is ready\cf1\highlight2 
+\par \cf0\highlight0   MemoryPressure          False   Thu, 30 Dec 2021 09:17:38 +0000   Thu, 30 Dec 2021 09:07:04 +0000   KubeletHasSufficientMemory           kubelet has sufficient memory available\cf1\highlight2 
+\par \cf0\highlight0   DiskPressure            False   Thu, 30 Dec 2021 09:17:38 +0000   Thu, 30 Dec 2021 09:07:04 +0000   KubeletHasNoDiskPressure             kubelet has no disk pressure\cf1\highlight2 
+\par \cf0\highlight0   PIDPressure             False   Thu, 30 Dec 2021 09:17:38 +0000   Thu, 30 Dec 2021 09:07:04 +0000   KubeletHasSufficientPID              kubelet has sufficient PID available\cf1\highlight2 
+\par \cf0\highlight0   Ready                   False   Thu, 30 Dec 2021 09:17:38 +0000   Thu, 30 Dec 2021 09:11:06 +0000   KubeletNotReady                      container runtime is down\cf1\highlight2 
+\par \cf0\highlight0 Addresses:\cf1\highlight2 
+\par \cf0\highlight0   InternalIP:  192.168.1.211\cf1\highlight2 
+\par \cf0\highlight0   Hostname:    node-e\cf1\highlight2 
+\par \cf0\highlight0 Capacity:\cf1\highlight2 
+\par \cf0\highlight0  cpu:                16\cf1\highlight2 
+\par \cf0\highlight0  ephemeral-storage:  76368676Ki\cf1\highlight2 
+\par \cf0\highlight0  hugepages-2Mi:      0\cf1\highlight2 
+\par \cf0\highlight0  memory:             16419360Ki\cf1\highlight2 
+\par \cf0\highlight0  pods:               110\cf1\highlight2 
+\par \cf0\highlight0 Allocatable:\cf1\highlight2 
+\par \cf0\highlight0  cpu:                16\cf1\highlight2 
+\par \cf0\highlight0  ephemeral-storage:  70381371686\cf1\highlight2 
+\par \cf0\highlight0  hugepages-2Mi:      0\cf1\highlight2 
+\par \cf0\highlight0  memory:             16316960Ki\cf1\highlight2 
+\par \cf0\highlight0  pods:               110\cf1\highlight2 
+\par \cf0\highlight0 System Info:\cf1\highlight2 
+\par \cf0\highlight0  Machine ID:                 d7e690c417cc42b98b2c7145990dec7b\cf1\highlight2 
+\par \cf0\highlight0  System UUID:                c3030642-1cac-2c39-9e3f-d093ff59673f\cf1\highlight2 
+\par \cf0\highlight0  Boot ID:                    8fb6082e-4a99-4d80-985b-0b787686297c\cf1\highlight2 
+\par \cf0\highlight0  Kernel Version:             5.6.0-rc2\cf1\highlight2 
+\par \cf0\highlight0  OS Image:                   Ubuntu 18.04.5 LTS\cf1\highlight2 
+\par \cf0\highlight0  Operating System:           linux\cf1\highlight2 
+\par \cf0\highlight0  Architecture:               amd64\cf1\highlight2 
+\par \cf0\highlight0  Container Runtime Version:  TypeUnknown://Unknown\cf1\highlight2 
+\par \cf0\highlight0  Kubelet Version:            v0.9.0\cf1\highlight2 
+\par \cf0\highlight0  Kube-Proxy Version:         v0.9.0\cf1\highlight2 
+\par \cf0\highlight0 PodCIDR:                     10.244.0.0/24\cf1\highlight2 
+\par \cf0\highlight0 Non-terminated Pods:         (3 in total)\cf1\highlight2 
+\par \cf0\highlight0   Namespace                  Name                                CPU Requests  CPU Limits  Memory Requests  Memory Limits  AGE\cf1\highlight2 
+\par \cf0\highlight0   ---------                  ----                                ------------  ----------  ---------------  -------------  ---\cf1\highlight2 
+\par \cf0\highlight0   kube-system                coredns-default-7b4cbdf5cd-2l45x    0 (0%)        0 (0%)      0 (0%)           0 (0%)         10m\cf1\highlight2 
+\par \cf0\highlight0   kube-system                kube-dns-554c5866fc-pzwjh           260m (1%)     0 (0%)      110Mi (0%)       170Mi (1%)     10m\cf1\highlight2 
+\par \cf0\highlight0   kube-system                virtlet-v4vn7                       0 (0%)        0 (0%)      0 (0%)           0 (0%)         8m45s\cf1\highlight2 
+\par \cf0\highlight0 Allocated resources:\cf1\highlight2 
+\par \cf0\highlight0   (Total limits may be over 100 percent, i.e., overcommitted.)\cf1\highlight2 
+\par \cf0\highlight0   Resource           Requests    Limits\cf1\highlight2 
+\par \cf0\highlight0   --------           --------    ------\cf1\highlight2 
+\par \cf0\highlight0   cpu                260m (1%)   0 (0%)\cf1\highlight2 
+\par \cf0\highlight0   memory             110Mi (0%)  170Mi (1%)\cf1\highlight2 
+\par \cf0\highlight0   ephemeral-storage  0 (0%)      0 (0%)\cf1\highlight2 
+\par \cf0\highlight0 Events:              <none>\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos# ./cluster/kubectl.sh get nodes\cf1\highlight2 
+\par \cf0\highlight0 NAME     STATUS     ROLES    AGE   VERSION\cf1\highlight2 
+\par \cf0\highlight0 node-e   NotReady   <none>   10m   v0.9.0\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos# ./cluster/kubectl.sh get nodes\cf1\highlight2 
+\par \cf0\highlight0 NAME     STATUS     ROLES    AGE   VERSION\cf1\highlight2 
+\par \cf0\highlight0 node-e   NotReady   <none>   10m   v0.9.0\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos# ./cluster/kubectl.sh taint node node-e node.kubernetes.io/not-ready:NoSchedule\cf1\highlight2 
+\par \cf0\highlight0 error: at least one taint update is required\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos# ./cluster/kubectl.sh taint node node-e node.kubernetes.io/not-ready-\cf1\highlight2 
+\par \cf0\highlight0 node/node-e untainted\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos# ./cluster/kubectl.sh get nodes\cf1\highlight2 
+\par \cf0\highlight0 NAME     STATUS     ROLES    AGE   VERSION\cf1\highlight2 
+\par \cf0\highlight0 node-e   NotReady   <none>   12m   v0.9.0\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos# ./cluster/kubectl.sh get nodes\cf1\highlight2 
+\par \cf0\highlight0 NAME     STATUS     ROLES    AGE   VERSION\cf1\highlight2 
+\par \cf0\highlight0 node-e   NotReady   <none>   12m   v0.9.0\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos# ./cluster/kubectl.sh get nodes\cf1\highlight2 
+\par \cf0\highlight0 NAME     STATUS     ROLES    AGE   VERSION\cf1\highlight2 
+\par \cf0\highlight0 node-e   NotReady   <none>   12m   v0.9.0\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos# ./cluster/kubectl.sh get nodes\cf1\highlight2 
+\par \cf0\highlight0 NAME     STATUS     ROLES    AGE   VERSION\cf1\highlight2 
+\par \cf0\highlight0 node-e   NotReady   <none>   12m   v0.9.0\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos# ./cluster/kubectl.sh describe node node-e\cf1\highlight2 
+\par \cf0\highlight0 Name:               node-e\cf1\highlight2 
+\par \cf0\highlight0 Roles:              <none>\cf1\highlight2 
+\par \cf0\highlight0 Labels:             beta.kubernetes.io/arch=amd64\cf1\highlight2 
+\par \cf0\highlight0                     beta.kubernetes.io/os=linux\cf1\highlight2 
+\par \cf0\highlight0                     extraRuntime=virtlet\cf1\highlight2 
+\par \cf0\highlight0                     kubernetes.io/arch=amd64\cf1\highlight2 
+\par \cf0\highlight0                     kubernetes.io/hostname=node-e\cf1\highlight2 
+\par \cf0\highlight0                     kubernetes.io/os=linux\cf1\highlight2 
+\par \cf0\highlight0 Annotations:        node.alpha.kubernetes.io/ttl: 0\cf1\highlight2 
+\par \cf0\highlight0                     volumes.kubernetes.io/controller-managed-attach-detach: true\cf1\highlight2 
+\par \cf0\highlight0 CreationTimestamp:  Thu, 30 Dec 2021 09:07:04 +0000\cf1\highlight2 
+\par \cf0\highlight0 Taints:             node.kubernetes.io/not-ready:NoSchedule\cf1\highlight2 
+\par \cf0\highlight0 Unschedulable:      false\cf1\highlight2 
+\par \cf0\highlight0 Conditions:\cf1\highlight2 
+\par \cf0\highlight0   Type                    Status  LastHeartbeatTime                 LastTransitionTime                Reason                               Message\cf1\highlight2 
+\par \cf0\highlight0   ----                    ------  -----------------                 ------------------                ------                               -------\cf1\highlight2 
+\par \cf0\highlight0   VmRuntimeReady          False   Thu, 30 Dec 2021 09:19:21 +0000   Thu, 30 Dec 2021 09:07:04 +0000   None of vm runtime is ready\cf1\highlight2 
+\par \cf0\highlight0   ContainerRuntimeReady   False   Thu, 30 Dec 2021 09:19:21 +0000   Thu, 30 Dec 2021 09:10:36 +0000   None of container runtime is ready\cf1\highlight2 
+\par \cf0\highlight0   MemoryPressure          False   Thu, 30 Dec 2021 09:19:21 +0000   Thu, 30 Dec 2021 09:07:04 +0000   KubeletHasSufficientMemory           kubelet has sufficient memory available\cf1\highlight2 
+\par \cf0\highlight0   DiskPressure            False   Thu, 30 Dec 2021 09:19:21 +0000   Thu, 30 Dec 2021 09:07:04 +0000   KubeletHasNoDiskPressure             kubelet has no disk pressure\cf1\highlight2 
+\par \cf0\highlight0   PIDPressure             False   Thu, 30 Dec 2021 09:19:21 +0000   Thu, 30 Dec 2021 09:07:04 +0000   KubeletHasSufficientPID              kubelet has sufficient PID available\cf1\highlight2 
+\par \cf0\highlight0   Ready                   False   Thu, 30 Dec 2021 09:19:21 +0000   Thu, 30 Dec 2021 09:11:06 +0000   KubeletNotReady                      container runtime is down\cf1\highlight2 
+\par \cf0\highlight0 Addresses:\cf1\highlight2 
+\par \cf0\highlight0   InternalIP:  192.168.1.211\cf1\highlight2 
+\par \cf0\highlight0   Hostname:    node-e\cf1\highlight2 
+\par \cf0\highlight0 Capacity:\cf1\highlight2 
+\par \cf0\highlight0  cpu:                16\cf1\highlight2 
+\par \cf0\highlight0  ephemeral-storage:  76368676Ki\cf1\highlight2 
+\par \cf0\highlight0  hugepages-2Mi:      0\cf1\highlight2 
+\par \cf0\highlight0  memory:             16419360Ki\cf1\highlight2 
+\par \cf0\highlight0  pods:               110\cf1\highlight2 
+\par \cf0\highlight0 Allocatable:\cf1\highlight2 
+\par \cf0\highlight0  cpu:                16\cf1\highlight2 
+\par \cf0\highlight0  ephemeral-storage:  70381371686\cf1\highlight2 
+\par \cf0\highlight0  hugepages-2Mi:      0\cf1\highlight2 
+\par \cf0\highlight0  memory:             16316960Ki\cf1\highlight2 
+\par \cf0\highlight0  pods:               110\cf1\highlight2 
+\par \cf0\highlight0 System Info:\cf1\highlight2 
+\par \cf0\highlight0  Machine ID:                 d7e690c417cc42b98b2c7145990dec7b\cf1\highlight2 
+\par \cf0\highlight0  System UUID:                c3030642-1cac-2c39-9e3f-d093ff59673f\cf1\highlight2 
+\par \cf0\highlight0  Boot ID:                    8fb6082e-4a99-4d80-985b-0b787686297c\cf1\highlight2 
+\par \cf0\highlight0  Kernel Version:             5.6.0-rc2\cf1\highlight2 
+\par \cf0\highlight0  OS Image:                   Ubuntu 18.04.5 LTS\cf1\highlight2 
+\par \cf0\highlight0  Operating System:           linux\cf1\highlight2 
+\par \cf0\highlight0  Architecture:               amd64\cf1\highlight2 
+\par \cf0\highlight0  Container Runtime Version:  TypeUnknown://Unknown\cf1\highlight2 
+\par \cf0\highlight0  Kubelet Version:            v0.9.0\cf1\highlight2 
+\par \cf0\highlight0  Kube-Proxy Version:         v0.9.0\cf1\highlight2 
+\par \cf0\highlight0 PodCIDR:                     10.244.0.0/24\cf1\highlight2 
+\par \cf0\highlight0 Non-terminated Pods:         (3 in total)\cf1\highlight2 
+\par \cf0\highlight0   Namespace                  Name                                CPU Requests  CPU Limits  Memory Requests  Memory Limits  AGE\cf1\highlight2 
+\par \cf0\highlight0   ---------                  ----                                ------------  ----------  ---------------  -------------  ---\cf1\highlight2 
+\par \cf0\highlight0   kube-system                coredns-default-7b4cbdf5cd-2l45x    0 (0%)        0 (0%)      0 (0%)           0 (0%)         12m\cf1\highlight2 
+\par \cf0\highlight0   kube-system                kube-dns-554c5866fc-pzwjh           260m (1%)     0 (0%)      110Mi (0%)       170Mi (1%)     12m\cf1\highlight2 
+\par \cf0\highlight0   kube-system                virtlet-v4vn7                       0 (0%)        0 (0%)      0 (0%)           0 (0%)         10m\cf1\highlight2 
+\par \cf0\highlight0 Allocated resources:\cf1\highlight2 
+\par \cf0\highlight0   (Total limits may be over 100 percent, i.e., overcommitted.)\cf1\highlight2 
+\par \cf0\highlight0   Resource           Requests    Limits\cf1\highlight2 
+\par \cf0\highlight0   --------           --------    ------\cf1\highlight2 
+\par \cf0\highlight0   cpu                260m (1%)   0 (0%)\cf1\highlight2 
+\par \cf0\highlight0   memory             110Mi (0%)  170Mi (1%)\cf1\highlight2 
+\par \cf0\highlight0   ephemeral-storage  0 (0%)      0 (0%)\cf1\highlight2 
+\par \cf0\highlight0 Events:              <none>\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos# ./cluster/kubectl.sh get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS                            RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-7b4cbdf5cd-2l45x   4512083042527875782   0/1     ContainerCreating                 0          13m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-pzwjh          5142583141898226493   0/3     ContainerCreating                 0          13m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-v4vn7                      6777587949260443294   0/3     Init:CreateContainerConfigError   0          11m\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos# ./cluster/kubectl.sh get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS                            RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-7b4cbdf5cd-2l45x   4512083042527875782   0/1     ContainerCreating                 0          13m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-pzwjh          5142583141898226493   0/3     ContainerCreating                 0          13m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-v4vn7                      6777587949260443294   0/3     Init:CreateContainerConfigError   0          11m\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos# ./cluster/kubectl.sh get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS                            RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-7b4cbdf5cd-2l45x   4512083042527875782   0/1     ContainerCreating                 0          13m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-pzwjh          5142583141898226493   0/3     ContainerCreating                 0          13m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-v4vn7                      6777587949260443294   0/3     Init:CreateContainerConfigError   0          11m\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos# ./cluster/kubectl.sh get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS                            RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-7b4cbdf5cd-2l45x   4512083042527875782   0/1     ContainerCreating                 0          13m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-pzwjh          5142583141898226493   0/3     ContainerCreating                 0          13m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-v4vn7                      6777587949260443294   0/3     Init:CreateContainerConfigError   0          11m\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos# ./cluster/kubectl.sh get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS                            RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-7b4cbdf5cd-2l45x   4512083042527875782   0/1     ContainerCreating                 0          13m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-pzwjh          5142583141898226493   0/3     ContainerCreating                 0          13m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-v4vn7                      6777587949260443294   0/3     Init:CreateContainerConfigError   0          11m\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos# ./cluster/kubectl.sh coredns-default-7b4cbdf5cd-2l45x\cf1\highlight2 
+\par \cf0\highlight0 Error: unknown command "coredns-default-7b4cbdf5cd-2l45x" for "kubectl"\cf1\highlight2 
+\par \cf0\highlight0 Run 'kubectl --help' for usage.\cf1\highlight2 
+\par \cf0\highlight0 unknown command "coredns-default-7b4cbdf5cd-2l45x" for "kubectl"\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos# ./cluster/kubectl.sh describe pod coredns-default-7b4cbdf5cd-2l45x\cf1\highlight2 
+\par \cf0\highlight0 Error from server (NotFound): pods "coredns-default-7b4cbdf5cd-2l45x" not found\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos# ./cluster/kubectl.sh describe pod coredns-default-7b4cbdf5cd-2l45x  -n kube-system\cf1\highlight2 
+\par \cf0\highlight0 Name:                 coredns-default-7b4cbdf5cd-2l45x\cf1\highlight2 
+\par \cf0\highlight0 Namespace:            kube-system\cf1\highlight2 
+\par \cf0\highlight0 Tenant:               system\cf1\highlight2 
+\par \cf0\highlight0 Priority:             2000000000\cf1\highlight2 
+\par \cf0\highlight0 Priority Class Name:  system-cluster-critical\cf1\highlight2 
+\par \cf0\highlight0 Node:                 node-e/192.168.1.211\cf1\highlight2 
+\par \cf0\highlight0 Start Time:           Thu, 30 Dec 2021 09:08:55 +0000\cf1\highlight2 
+\par \cf0\highlight0 Labels:               arktos.futurewei.com/network=default\cf1\highlight2 
+\par \cf0\highlight0                       k8s-app=kube-dns-default\cf1\highlight2 
+\par \cf0\highlight0                       pod-template-hash=7b4cbdf5cd\cf1\highlight2 
+\par \cf0\highlight0 Annotations:          <none>\cf1\highlight2 
+\par \cf0\highlight0 Status:               Pending\cf1\highlight2 
+\par \cf0\highlight0 IP:\cf1\highlight2 
+\par \cf0\highlight0 Controlled By:        ReplicaSet/coredns-default-7b4cbdf5cd\cf1\highlight2 
+\par \cf0\highlight0 Containers:\cf1\highlight2 
+\par \cf0\highlight0   coredns:\cf1\highlight2 
+\par \cf0\highlight0     Container ID:\cf1\highlight2 
+\par \cf0\highlight0     Image:         coredns/coredns:1.7.0\cf1\highlight2 
+\par \cf0\highlight0     Image ID:\cf1\highlight2 
+\par \cf0\highlight0     Ports:         53/UDP, 53/TCP, 9153/TCP\cf1\highlight2 
+\par \cf0\highlight0     Host Ports:    0/UDP, 0/TCP, 0/TCP\cf1\highlight2 
+\par \cf0\highlight0     Args:\cf1\highlight2 
+\par \cf0\highlight0       -conf\cf1\highlight2 
+\par \cf0\highlight0       /etc/coredns/Corefile\cf1\highlight2 
+\par \cf0\highlight0     State:          Waiting\cf1\highlight2 
+\par \cf0\highlight0       Reason:       ContainerCreating\cf1\highlight2 
+\par \cf0\highlight0     Ready:          False\cf1\highlight2 
+\par \cf0\highlight0     Restart Count:  0\cf1\highlight2 
+\par \cf0\highlight0     Liveness:       http-get http://:8080/health delay=60s timeout=5s period=10s #success=1 #failure=5\cf1\highlight2 
+\par \cf0\highlight0     Readiness:      http-get http://:8181/ready delay=0s timeout=1s period=10s #success=1 #failure=3\cf1\highlight2 
+\par \cf0\highlight0     Environment:\cf1\highlight2 
+\par \cf0\highlight0       KUBERNETES_SERVICE_HOST:  192.168.1.211\cf1\highlight2 
+\par \cf0\highlight0       KUBERNETES_SERVICE_PORT:  6443\cf1\highlight2 
+\par \cf0\highlight0     Mounts:\cf1\highlight2 
+\par \cf0\highlight0       /etc/coredns from config-volume (ro)\cf1\highlight2 
+\par \cf0\highlight0       /var/run/secrets/kubernetes.io/serviceaccount from coredns-token-m6fvn (ro)\cf1\highlight2 
+\par \cf0\highlight0 Conditions:\cf1\highlight2 
+\par \cf0\highlight0   Type              Status\cf1\highlight2 
+\par \cf0\highlight0   Initialized       True\cf1\highlight2 
+\par \cf0\highlight0   ContainersReady   False\cf1\highlight2 
+\par \cf0\highlight0   Ready             False\cf1\highlight2 
+\par \cf0\highlight0   PodScheduled      True\cf1\highlight2 
+\par \cf0\highlight0 Volumes:\cf1\highlight2 
+\par \cf0\highlight0   config-volume:\cf1\highlight2 
+\par \cf0\highlight0     Type:      ConfigMap (a volume populated by a ConfigMap)\cf1\highlight2 
+\par \cf0\highlight0     Name:      coredns-default\cf1\highlight2 
+\par \cf0\highlight0     Optional:  false\cf1\highlight2 
+\par \cf0\highlight0   coredns-token-m6fvn:\cf1\highlight2 
+\par \cf0\highlight0     Type:        Secret (a volume populated by a Secret)\cf1\highlight2 
+\par \cf0\highlight0     SecretName:  coredns-token-m6fvn\cf1\highlight2 
+\par \cf0\highlight0     Optional:    false\cf1\highlight2 
+\par \cf0\highlight0 QoS Class:       BestEffort\cf1\highlight2 
+\par \cf0\highlight0 Node-Selectors:  kubernetes.io/os=linux\cf1\highlight2 
+\par \cf0\highlight0 Tolerations:     CriticalAddonsOnly\cf1\highlight2 
+\par \cf0\highlight0                  node.kubernetes.io/not-ready:NoExecute for 300s\cf1\highlight2 
+\par \cf0\highlight0                  node.kubernetes.io/unreachable:NoExecute for 300s\cf1\highlight2 
+\par \cf0\highlight0 Events:          <none>\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos# systemctl restart containerd\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos# systemctl status containerd\cf1\highlight2 
+\par \cf3\highlight0\u9679?\cf0  containerd.service - containerd container runtime\cf1\highlight2 
+\par \cf0\highlight0    Loaded: loaded (/lib/systemd/system/containerd.service; enabled; vendor preset: enabled)\cf1\highlight2 
+\par \cf0\highlight0    Active: \cf3 active (running)\cf0  since Thu 2021-12-30 09:21:46 UTC; 7s ago\cf1\highlight2 
+\par \cf0\highlight0      Docs: https://containerd.io\cf1\highlight2 
+\par \cf0\highlight0   Process: 1143 ExecStartPre=/sbin/modprobe overlay (code=exited, status=0/SUCCESS)\cf1\highlight2 
+\par \cf0\highlight0  Main PID: 1144 (containerd)\cf1\highlight2 
+\par \cf0\highlight0     Tasks: 62\cf1\highlight2 
+\par \cf0\highlight0    CGroup: /system.slice/containerd.service\cf1\highlight2 
+\par \cf0\highlight0            \u9500?\u9472?1144 /usr/bin/containerd\cf1\highlight2 
+\par \cf0\highlight0            \u9500?\u9472?5593 /usr/bin/containerd-shim-runc-v2 -namespace k8s.io -id 4b24115133f7894f0f1d5fe7a7e905b0f5123929ab849046ce9d8f7d3f4e6044 -address /run/containerd/con\cf1\highlight2 
+\par \cf0\highlight0            \u9500?\u9472?5625 /pause\cf1\highlight2 
+\par \cf0\highlight0            \u9500?\u9472?5780 /usr/bin/containerd-shim-runc-v2 -namespace k8s.io -id 80c804cf096eb5a4986f21af592542e4f9e1ca14b883ba05aad1042fe14e9f85 -address /run/containerd/con\cf1\highlight2 
+\par \cf0\highlight0            \u9500?\u9472?5805 /pause\cf1\highlight2 
+\par \cf0\highlight0            \u9500?\u9472?5989 /usr/bin/containerd-shim-runc-v2 -namespace k8s.io -id 164ea5c79c1201b846a963d98aafd6726dfa0038e3f0adf6f66d84d6bfdaa4fb -address /run/containerd/con\cf1\highlight2 
+\par \cf0\highlight0            \u9500?\u9472?6016 /pause\cf1\highlight2 
+\par \cf0\highlight0            \u9500?\u9472?6304 /kube-dns --domain=cluster.local. --dns-port=10053 --config-dir=/kube-dns-config --v=2\cf1\highlight2 
+\par \cf0\highlight0            \u9500?\u9472?6560 /dnsmasq-nanny -v=2 -logtostderr -configDir=/etc/k8s/dns/dnsmasq-nanny -restartDnsmasq=true -- -k --cache-size=1000 --no-negcache --dns-loop-detect\cf1\highlight2 
+\par \cf0\highlight0            \u9500?\u9472?6636 /usr/sbin/dnsmasq -k --cache-size=1000 --no-negcache --dns-loop-detect --log-facility=- --server=/cluster.local/127.0.0.1#10053 --server=/in-addr.ar\cf1\highlight2 
+\par \cf0\highlight0            \u9500?\u9472?6925 /sidecar --v=2 --logtostderr --probe=kubedns,127.0.0.1:10053,kubernetes.default.svc.cluster.local,5,SRV --probe=dnsmasq,127.0.0.1:53,kubernetes.defa\cf1\highlight2 
+\par \cf0\highlight0            \u9492?\u9472?7923 /coredns -conf /etc/coredns/Corefile\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Dec 30 09:21:46 node-e containerd[1144]: time="2021-12-30T09:21:46.203935773Z" level=info msg="loading plugin \\"io.containerd.grpc.v1.snapshots\\"..." type=io.containe\cf1\highlight2 
+\par \cf0\highlight0 Dec 30 09:21:46 node-e containerd[1144]: time="2021-12-30T09:21:46.204023304Z" level=info msg="loading plugin \\"io.containerd.grpc.v1.tasks\\"..." type=io.containerd.g\cf1\highlight2 
+\par \cf0\highlight0 Dec 30 09:21:46 node-e containerd[1144]: time="2021-12-30T09:21:46.204099479Z" level=info msg="loading plugin \\"io.containerd.grpc.v1.version\\"..." type=io.containerd\cf1\highlight2 
+\par \cf0\highlight0 Dec 30 09:21:46 node-e containerd[1144]: time="2021-12-30T09:21:46.204168623Z" level=info msg="loading plugin \\"io.containerd.grpc.v1.cri\\"..." type=io.containerd.grp\cf1\highlight2 
+\par \cf0\highlight0 Dec 30 09:21:46 node-e containerd[1144]: time="2021-12-30T09:21:46.205156550Z" level=warning msg="failed to load plugin io.containerd.grpc.v1.cri" error="invalid plug\cf1\highlight2 
+\par \cf0\highlight0 Dec 30 09:21:46 node-e containerd[1144]: time="2021-12-30T09:21:46.205239299Z" level=info msg="loading plugin \\"io.containerd.grpc.v1.introspection\\"..." type=io.cont\cf1\highlight2 
+\par \cf0\highlight0 Dec 30 09:21:46 node-e containerd[1144]: time="2021-12-30T09:21:46.205956806Z" level=info msg=serving... address=/run/containerd/containerd.sock.ttrpc\cf1\highlight2 
+\par \cf0\highlight0 Dec 30 09:21:46 node-e containerd[1144]: time="2021-12-30T09:21:46.206182204Z" level=info msg=serving... address=/run/containerd/containerd.sock\cf1\highlight2 
+\par \cf0\highlight0 Dec 30 09:21:46 node-e containerd[1144]: time="2021-12-30T09:21:46.206399143Z" level=info msg="containerd successfully booted in 0.099925s"\cf1\highlight2 
+\par \cf0\highlight0 Dec 30 09:21:46 node-e systemd[1]: Started containerd container runtime.\cf1\highlight2 
+\par \cf0\highlight0 ...skipping...\cf1\highlight2 
+\par \cf3\highlight0\u9679?\cf0  containerd.service - containerd container runtime\cf1\highlight2 
+\par \cf0\highlight0    Loaded: loaded (/lib/systemd/system/containerd.service; enabled; vendor preset: enabled)\cf1\highlight2 
+\par \cf0\highlight0    Active: \cf3 active (running)\cf0  since Thu 2021-12-30 09:21:46 UTC; 7s ago\cf1\highlight2 
+\par \cf0\highlight0      Docs: https://containerd.io\cf1\highlight2 
+\par \cf0\highlight0   Process: 1143 ExecStartPre=/sbin/modprobe overlay (code=exited, status=0/SUCCESS)\cf1\highlight2 
+\par \cf0\highlight0  Main PID: 1144 (containerd)\cf1\highlight2 
+\par \cf0\highlight0     Tasks: 62\cf1\highlight2 
+\par \cf0\highlight0    CGroup: /system.slice/containerd.service\cf1\highlight2 
+\par \cf0\highlight0            \u9500?\u9472?1144 /usr/bin/containerd\cf1\highlight2 
+\par \cf0\highlight0            \u9500?\u9472?5593 /usr/bin/containerd-shim-runc-v2 -namespace k8s.io -id 4b24115133f7894f0f1d5fe7a7e905b0f5123929ab849046ce9d8f7d3f4e6044 -address /run/containerd/con\cf1\highlight2 
+\par \cf0\highlight0            \u9500?\u9472?5625 /pause\cf1\highlight2 
+\par \cf0\highlight0            \u9500?\u9472?5780 /usr/bin/containerd-shim-runc-v2 -namespace k8s.io -id 80c804cf096eb5a4986f21af592542e4f9e1ca14b883ba05aad1042fe14e9f85 -address /run/containerd/con\cf1\highlight2 
+\par \cf0\highlight0            \u9500?\u9472?5805 /pause\cf1\highlight2 
+\par \cf0\highlight0            \u9500?\u9472?5989 /usr/bin/containerd-shim-runc-v2 -namespace k8s.io -id 164ea5c79c1201b846a963d98aafd6726dfa0038e3f0adf6f66d84d6bfdaa4fb -address /run/containerd/con\cf1\highlight2 
+\par \cf0\highlight0            \u9500?\u9472?6016 /pause\cf1\highlight2 
+\par \cf0\highlight0            \u9500?\u9472?6304 /kube-dns --domain=cluster.local. --dns-port=10053 --config-dir=/kube-dns-config --v=2\cf1\highlight2 
+\par \cf0\highlight0            \u9500?\u9472?6560 /dnsmasq-nanny -v=2 -logtostderr -configDir=/etc/k8s/dns/dnsmasq-nanny -restartDnsmasq=true -- -k --cache-size=1000 --no-negcache --dns-loop-detect\cf1\highlight2 
+\par \cf0\highlight0            \u9500?\u9472?6636 /usr/sbin/dnsmasq -k --cache-size=1000 --no-negcache --dns-loop-detect --log-facility=- --server=/cluster.local/127.0.0.1#10053 --server=/in-addr.ar\cf1\highlight2 
+\par \cf0\highlight0            \u9500?\u9472?6925 /sidecar --v=2 --logtostderr --probe=kubedns,127.0.0.1:10053,kubernetes.default.svc.cluster.local,5,SRV --probe=dnsmasq,127.0.0.1:53,kubernetes.defa\cf1\highlight2 
+\par \cf0\highlight0            \u9492?\u9472?7923 /coredns -conf /etc/coredns/Corefile\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Dec 30 09:21:46 node-e containerd[1144]: time="2021-12-30T09:21:46.203935773Z" level=info msg="loading plugin \\"io.containerd.grpc.v1.snapshots\\"..." type=io.containe\cf1\highlight2 
+\par \cf0\highlight0 Dec 30 09:21:46 node-e containerd[1144]: time="2021-12-30T09:21:46.204023304Z" level=info msg="loading plugin \\"io.containerd.grpc.v1.tasks\\"..." type=io.containerd.g\cf1\highlight2 
+\par \cf0\highlight0 Dec 30 09:21:46 node-e containerd[1144]: time="2021-12-30T09:21:46.204099479Z" level=info msg="loading plugin \\"io.containerd.grpc.v1.version\\"..." type=io.containerd\cf1\highlight2 
+\par \cf0\highlight0 Dec 30 09:21:46 node-e containerd[1144]: time="2021-12-30T09:21:46.204168623Z" level=info msg="loading plugin \\"io.containerd.grpc.v1.cri\\"..." type=io.containerd.grp\cf1\highlight2 
+\par \cf0\highlight0 Dec 30 09:21:46 node-e containerd[1144]: time="2021-12-30T09:21:46.205156550Z" level=warning msg="failed to load plugin io.containerd.grpc.v1.cri" error="invalid plug\cf1\highlight2 
+\par \cf0\highlight0 Dec 30 09:21:46 node-e containerd[1144]: time="2021-12-30T09:21:46.205239299Z" level=info msg="loading plugin \\"io.containerd.grpc.v1.introspection\\"..." type=io.cont\cf1\highlight2 
+\par \cf0\highlight0 Dec 30 09:21:46 node-e containerd[1144]: time="2021-12-30T09:21:46.205956806Z" level=info msg=serving... address=/run/containerd/containerd.sock.ttrpc\cf1\highlight2 
+\par \cf0\highlight0 Dec 30 09:21:46 node-e containerd[1144]: time="2021-12-30T09:21:46.206182204Z" level=info msg=serving... address=/run/containerd/containerd.sock\cf1\highlight2 
+\par \cf0\highlight0 Dec 30 09:21:46 node-e containerd[1144]: time="2021-12-30T09:21:46.206399143Z" level=info msg="containerd successfully booted in 0.099925s"\cf1\highlight2 
+\par \cf0\highlight0 Dec 30 09:21:46 node-e systemd[1]: Started containerd container runtime.\cf1\highlight2 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par \cf0\highlight0\b ~\cf1\highlight2\b0 
+\par 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos#\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos# ./cluster/kubectl.sh get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS                            RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-7b4cbdf5cd-2l45x   4512083042527875782   0/1     ContainerCreating                 0          15m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-pzwjh          5142583141898226493   0/3     ContainerCreating                 0          15m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-v4vn7                      6777587949260443294   0/3     Init:CreateContainerConfigError   0          13m\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos# ./cluster/kubectl.sh get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS                            RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-7b4cbdf5cd-2l45x   4512083042527875782   0/1     ContainerCreating                 0          15m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-pzwjh          5142583141898226493   0/3     ContainerCreating                 0          15m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-v4vn7                      6777587949260443294   0/3     Init:CreateContainerConfigError   0          13m\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos# ./cluster/kubectl.sh get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS                            RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-7b4cbdf5cd-2l45x   4512083042527875782   0/1     ContainerCreating                 0          15m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-pzwjh          5142583141898226493   0/3     ContainerCreating                 0          15m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-v4vn7                      6777587949260443294   0/3     Init:CreateContainerConfigError   0          13m\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos# ./cluster/kubectl.sh get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS                            RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-7b4cbdf5cd-2l45x   4512083042527875782   0/1     ContainerCreating                 0          15m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-pzwjh          5142583141898226493   0/3     ContainerCreating                 0          15m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-v4vn7                      6777587949260443294   0/3     Init:CreateContainerConfigError   0          13m\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos# ./cluster/kubectl.sh get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS                            RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-7b4cbdf5cd-2l45x   4512083042527875782   0/1     ContainerCreating                 0          15m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-pzwjh          5142583141898226493   0/3     ContainerCreating                 0          15m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-v4vn7                      6777587949260443294   0/3     Init:CreateContainerConfigError   0          13m\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos# ./cluster/kubectl.sh get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS                            RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-7b4cbdf5cd-2l45x   4512083042527875782   0/1     ContainerCreating                 0          15m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-pzwjh          5142583141898226493   0/3     ContainerCreating                 0          15m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-v4vn7                      6777587949260443294   0/3     Init:CreateContainerConfigError   0          13m\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos# ./cluster/kubectl.sh get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS                            RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-7b4cbdf5cd-2l45x   4512083042527875782   0/1     ContainerCreating                 0          15m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-pzwjh          5142583141898226493   0/3     ContainerCreating                 0          15m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-v4vn7                      6777587949260443294   0/3     Init:CreateContainerConfigError   0          13m\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos# ./cluster/kubectl.sh get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS                            RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-7b4cbdf5cd-2l45x   4512083042527875782   0/1     ContainerCreating                 0          16m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-pzwjh          5142583141898226493   0/3     ContainerCreating                 0          16m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-v4vn7                      6777587949260443294   0/3     Init:CreateContainerConfigError   0          14m\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos# ./cluster/kubectl.sh get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS                            RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-7b4cbdf5cd-2l45x   4512083042527875782   0/1     ContainerCreating                 0          16m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-pzwjh          5142583141898226493   0/3     ContainerCreating                 0          16m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-v4vn7                      6777587949260443294   0/3     Init:CreateContainerConfigError   0          14m\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos# uname -a\cf1\highlight2 
+\par \cf0\highlight0 Linux node-e 5.6.0-rc2 #1 SMP Tue Feb 25 18:54:05 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos# ./cus\cf1\highlight2 
+\par \cf0\highlight0 -bash: ./cus: No such file or directory\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos#\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos# ./cluster/kubectl.sh get nodes\cf1\highlight2 
+\par \cf0\highlight0 NAME     STATUS     ROLES    AGE   VERSION\cf1\highlight2 
+\par \cf0\highlight0 node-e   NotReady   <none>   19m   v0.9.0\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos# ./cluster/kubectl.sh get pods -A o wide\cf1\highlight2 
+\par \cf0\highlight0 error: a resource cannot be retrieved by name across all namespaces\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS                            RESTARTS   AGE   IP              NODE     NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-7b4cbdf5cd-2l45x   4512083042527875782   0/1     ContainerCreating                 0          20m   <none>          node-e   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-pzwjh          5142583141898226493   0/3     ContainerCreating                 0          20m   <none>          node-e   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-v4vn7                      6777587949260443294   0/3     Init:CreateContainerConfigError   0          18m   192.168.1.211   node-e   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos# ./cluster/kubectl.sh get pods -Ao wide\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS                            RESTARTS   AGE   IP              NODE     NOMINATED NODE   READINESS GATES\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-7b4cbdf5cd-2l45x   4512083042527875782   0/1     ContainerCreating                 0          23m   <none>          node-e   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-pzwjh          5142583141898226493   0/3     ContainerCreating                 0          23m   <none>          node-e   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-v4vn7                      6777587949260443294   0/3     Init:CreateContainerConfigError   0          21m   192.168.1.211   node-e   <none>           <none>\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos# ./cluster/kubectl.sh get nodes\cf1\highlight2 
+\par \cf0\highlight0 NAME     STATUS     ROLES    AGE   VERSION\cf1\highlight2 
+\par \cf0\highlight0 node-e   NotReady   <none>   23m   v0.9.0\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos# ./cluster/kubectl.sh get nodes\cf1\highlight2 
+\par \cf0\highlight0 NAME     STATUS     ROLES    AGE   VERSION\cf1\highlight2 
+\par \cf0\highlight0 node-e   NotReady   <none>   23m   v0.9.0\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos# ./cluster/kubectl.sh --version\cf1\highlight2 
+\par \cf0\highlight0 Error: unknown flag: --version\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Basic Commands (Beginner):\cf1\highlight2 
+\par \cf0\highlight0   create         Create a resource from a file or from stdin.\cf1\highlight2 
+\par \cf0\highlight0   expose         Take a replication controller, service, deployment or pod and expose it as a new Kubernetes Service\cf1\highlight2 
+\par \cf0\highlight0   run            Run a particular image on the cluster\cf1\highlight2 
+\par \cf0\highlight0   set            Set specific features on objects\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Basic Commands (Intermediate):\cf1\highlight2 
+\par \cf0\highlight0   explain        Documentation of resources\cf1\highlight2 
+\par \cf0\highlight0   get            Display one or many resources\cf1\highlight2 
+\par \cf0\highlight0   edit           Edit a resource on the server\cf1\highlight2 
+\par \cf0\highlight0   delete         Delete resources by filenames, stdin, resources and names, or by resources and label selector\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Deploy Commands:\cf1\highlight2 
+\par \cf0\highlight0   rollout        Manage the rollout of a resource\cf1\highlight2 
+\par \cf0\highlight0   scale          Set a new size for a Deployment, ReplicaSet, Replication Controller, or Job\cf1\highlight2 
+\par \cf0\highlight0   autoscale      Auto-scale a Deployment, ReplicaSet, or ReplicationController\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Cluster Management Commands:\cf1\highlight2 
+\par \cf0\highlight0   certificate    Modify certificate resources.\cf1\highlight2 
+\par \cf0\highlight0   cluster-info   Display cluster info\cf1\highlight2 
+\par \cf0\highlight0   top            Display Resource (CPU/Memory/Storage) usage.\cf1\highlight2 
+\par \cf0\highlight0   cordon         Mark node as unschedulable\cf1\highlight2 
+\par \cf0\highlight0   uncordon       Mark node as schedulable\cf1\highlight2 
+\par \cf0\highlight0   drain          Drain node in preparation for maintenance\cf1\highlight2 
+\par \cf0\highlight0   taint          Update the taints on one or more nodes\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Troubleshooting and Debugging Commands:\cf1\highlight2 
+\par \cf0\highlight0   describe       Show details of a specific resource or group of resources\cf1\highlight2 
+\par \cf0\highlight0   logs           Print the logs for a container in a pod\cf1\highlight2 
+\par \cf0\highlight0   attach         Attach to a running container\cf1\highlight2 
+\par \cf0\highlight0   exec           Execute a command in a container\cf1\highlight2 
+\par \cf0\highlight0   port-forward   Forward one or more local ports to a pod\cf1\highlight2 
+\par \cf0\highlight0   proxy          Run a proxy to the Kubernetes API server\cf1\highlight2 
+\par \cf0\highlight0   cp             Copy files and directories to and from containers.\cf1\highlight2 
+\par \cf0\highlight0   auth           Inspect authorization\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Advanced Commands:\cf1\highlight2 
+\par \cf0\highlight0   diff           Diff live version against would-be applied version\cf1\highlight2 
+\par \cf0\highlight0   apply          Apply a configuration to a resource by filename or stdin\cf1\highlight2 
+\par \cf0\highlight0   patch          Update field(s) of a resource using strategic merge patch\cf1\highlight2 
+\par \cf0\highlight0   replace        Replace a resource by filename or stdin\cf1\highlight2 
+\par \cf0\highlight0   wait           Experimental: Wait for a specific condition on one or many resources.\cf1\highlight2 
+\par \cf0\highlight0   convert        Convert config files between different API versions\cf1\highlight2 
+\par \cf0\highlight0   kustomize      Build a kustomization target from a directory or a remote url.\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Settings Commands:\cf1\highlight2 
+\par \cf0\highlight0   label          Update the labels on a resource\cf1\highlight2 
+\par \cf0\highlight0   annotate       Update the annotations on a resource\cf1\highlight2 
+\par \cf0\highlight0   completion     Output shell completion code for the specified shell (bash or zsh)\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Other Commands:\cf1\highlight2 
+\par \cf0\highlight0   api-resources  Print the supported API resources on the server\cf1\highlight2 
+\par \cf0\highlight0   api-versions   Print the supported API versions on the server, in the form of "group/version"\cf1\highlight2 
+\par \cf0\highlight0   config         Modify kubeconfig files\cf1\highlight2 
+\par \cf0\highlight0   plugin         Provides utilities for interacting with plugins.\cf1\highlight2 
+\par \cf0\highlight0   version        Print the client and server version information\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Usage:\cf1\highlight2 
+\par \cf0\highlight0   kubectl [flags] [options]\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Use "kubectl <command> --help" for more information about a given command.\cf1\highlight2 
+\par \cf0\highlight0 Use "kubectl options" for a list of global command-line options (applies to all commands).\cf1\highlight2 
+\par 
+\par \cf0\highlight0 unknown flag: --version\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos# ./cluster/kubectl.sh version --client\cf1\highlight2 
+\par \cf0\highlight0 Client Version: version.Info\{Major:"", Minor:"", GitVersion:"v0.9.0", GitCommit:"$Format:%H$", GitTreeState:"", BuildDate:"2021-12-30T09:03:33Z", GoVersion:"go1.13.9", Compiler:"gc", Platform:"linux/amd64"\}\cf1\highlight2 
+\par \cf0\highlight0 root@node-e:/src/github.com/arktos#\cf1\highlight2 
+\par \pard\cf0\highlight0\f2 
+\par }
+ 
