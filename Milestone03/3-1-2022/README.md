@@ -1,4 +1,4 @@
-# Deployment of Arktos without Mizar CNI (Community repo)
+# Deployment of Arktos with Mizar CNI (Community repo)
 
 Deployment Infra | Deployments Counts | Success | Failures | Comments
 --- | --- | --- | --- | ---
