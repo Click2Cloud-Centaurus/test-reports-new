@@ -2,5 +2,5 @@
 
 Deployment Infra | Deployments Counts | Success | Failures | Comments
 --- | --- | --- | --- | ---
-GCP | 1 | 1 | 0 |-Node was getting ready but test pods were stuck in a containercreating state.
-On-Premise | 1 | 1 | 0 |-Node was getting ready but test pods were stuck in a containercreating state.
+GCP | 1 | 1 | 0 |-Node is getting ready but test pods are stuck in a containercreating state.
+On-Premise | 1 | 1 | 0 |-Node is getting ready but test pods are stuck in a containercreating state.
