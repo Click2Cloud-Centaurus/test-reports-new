@@ -1,0 +1,79 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fmodern Consolas;}{\f1\fmodern\fcharset0 Consolas;}{\f2\fnil\fcharset129 Courier New;}}
+{\colortbl ;\red20\green20\blue20;\red142\green142\blue142;\red16\green158\blue98;\red148\green146\blue12;\red170\green51\blue170;\red56\green136\blue159;}
+\viewkind4\uc1\pard\f0\fs20 Server refused our key\cf1\highlight2 
+\par \cf0\highlight0     \u9484?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9488?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?                 \cf3\f1\bullet  MobaXterm Personal Edition v21.4 \bullet\cf0\f0                  \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?               \cf4 (SSH client, X server and network tools)\cf0                \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?                                                                      \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474? \u8594? SSH session to \cf5 root@192.168.1.210                        \cf0           \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  Direct SSH      :  \cf3\f0 v\cf0                                              \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  SSH compression :  \cf3\f0 v\cf0                                              \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  SSH-browser     :  \cf3\f0 v\cf0                                              \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?\f1    \bullet  X11-forwarding  :  \cf3\f0 v\cf0   (remote display is forwarded through SSH)  \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474?                                                                      \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9474? \u8594? For more info, ctrl+click on \cf6\ul help\cf0\ulnone  or visit our \cf6\ul website\cf0\ulnone .            \u9474?\cf1\highlight2 
+\par \cf0\highlight0     \u9492?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9496?\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 5.6.0-rc2 x86_64)\cf1\highlight2 
+\par 
+\par \cf0\highlight0  * Documentation:  https://help.ubuntu.com\cf1\highlight2 
+\par \cf0\highlight0  * Management:     https://landscape.canonical.com\cf1\highlight2 
+\par \cf0\highlight0  * Support:        https://ubuntu.com/advantage\cf1\highlight2 
+\par 
+\par \cf0\highlight0  * Super-optimized for small spaces - read how we shrank the memory\cf1\highlight2 
+\par \cf0\highlight0    footprint of MicroK8s to make it the smallest full K8s around.\cf1\highlight2 
+\par 
+\par \cf0\highlight0    https://ubuntu.com/blog/microk8s-memory-optimisation\cf1\highlight2 
+\par 
+\par \cf0\highlight0  * Canonical Livepatch is available for installation.\cf1\highlight2 
+\par \cf0\highlight0    - Reduce system reboots and improve kernel security. Activate at:\cf1\highlight2 
+\par \cf0\highlight0      https://ubuntu.com/livepatch\cf1\highlight2 
+\par 
+\par \cf0\highlight0 166 packages can be updated.\cf1\highlight2 
+\par \cf0\highlight0 122 updates are security updates.\cf1\highlight2 
+\par 
+\par 
+\par \cf0\highlight0 Last login: Tue Jan  4 06:21:18 2022 from 192.168.1.1\cf1\highlight2 
+\par \cf0\highlight0 root@master:~/go/src/k8s.io/arktos# kubectl apply -f   https://raw.githubusercontent.com/Click2Cloud-Centaurus/Documentation/main/test-yamls/test_pods.yaml\cf1\highlight2 
+\par \cf0\highlight0 pod/netpod1 created\cf1\highlight2 
+\par \cf0\highlight0 pod/netpod2 created\cf1\highlight2 
+\par \cf0\highlight0 root@master:~/go/src/k8s.io/arktos# kubectl get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS              RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-daemon-6k9w4                 4618648239353704249   1/1     Running             0          7m42s\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-operator-64d6f9fc8d-v7w57    626887559617227703    1/1     Running             0          3m46s\cf1\highlight2 
+\par \cf0\highlight0 default       netpod1                            1912857985405033468   0/1     ContainerCreating   0          7s\cf1\highlight2 
+\par \cf0\highlight0 default       netpod2                            6784119082314768547   0/1     ContainerCreating   0          7s\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-54db4cd8c9-gj4j8   8369157905134481102   1/1     Running             0          16m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-flvzm          5419777347410370378   3/3     Running             0          16m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-9l6h9                      4525399306379366827   3/3     Running             0          9m59s\cf1\highlight2 
+\par \cf0\highlight0 root@master:~/go/src/k8s.io/arktos# kubectl get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS              RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-daemon-6k9w4                 4618648239353704249   1/1     Running             0          8m36s\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-operator-64d6f9fc8d-v7w57    626887559617227703    1/1     Running             0          4m40s\cf1\highlight2 
+\par \cf0\highlight0 default       netpod1                            1912857985405033468   0/1     ContainerCreating   0          61s\cf1\highlight2 
+\par \cf0\highlight0 default       netpod2                            6784119082314768547   0/1     ContainerCreating   0          61s\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-54db4cd8c9-gj4j8   8369157905134481102   1/1     Running             0          17m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-flvzm          5419777347410370378   3/3     Running             0          17m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-9l6h9                      4525399306379366827   3/3     Running             0          10m\cf1\highlight2 
+\par \cf0\highlight0 root@master:~/go/src/k8s.io/arktos# kubectl get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS              RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-daemon-6k9w4                 4618648239353704249   1/1     Running             0          8m37s\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-operator-64d6f9fc8d-v7w57    626887559617227703    1/1     Running             0          4m41s\cf1\highlight2 
+\par \cf0\highlight0 default       netpod1                            1912857985405033468   0/1     ContainerCreating   0          62s\cf1\highlight2 
+\par \cf0\highlight0 default       netpod2                            6784119082314768547   0/1     ContainerCreating   0          62s\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-54db4cd8c9-gj4j8   8369157905134481102   1/1     Running             0          17m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-flvzm          5419777347410370378   3/3     Running             0          17m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-9l6h9                      4525399306379366827   3/3     Running             0          10m\cf1\highlight2 
+\par \cf0\highlight0 root@master:~/go/src/k8s.io/arktos# kubectl get pods -A\cf1\highlight2 
+\par \cf0\highlight0 NAMESPACE     NAME                               HASHKEY               READY   STATUS              RESTARTS   AGE\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-daemon-6k9w4                 4618648239353704249   1/1     Running             0          8m39s\cf1\highlight2 
+\par \cf0\highlight0 default       mizar-operator-64d6f9fc8d-v7w57    626887559617227703    1/1     Running             0          4m43s\cf1\highlight2 
+\par \cf0\highlight0 default       netpod1                            1912857985405033468   0/1     ContainerCreating   0          64s\cf1\highlight2 
+\par \cf0\highlight0 default       netpod2                            6784119082314768547   0/1     ContainerCreating   0          64s\cf1\highlight2 
+\par \cf0\highlight0 kube-system   coredns-default-54db4cd8c9-gj4j8   8369157905134481102   1/1     Running             0          17m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   kube-dns-554c5866fc-flvzm          5419777347410370378   3/3     Running             0          17m\cf1\highlight2 
+\par \cf0\highlight0 kube-system   virtlet-9l6h9                      4525399306379366827   3/3     Running             0          10m\cf1\highlight2 
+\par \cf0\highlight0 root@master:~/go/src/k8s.io/arktos#\cf1\highlight2 
+\par \pard\cf0\highlight0\f2 
+\par }
+ 
