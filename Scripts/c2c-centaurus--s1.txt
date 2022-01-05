@@ -1,0 +1,13 @@
+#! /bin/bash
+
+set -x
+
+#Change ip and hostname
+ufw disable
+hostnamectl set-hostname arktos-local
+echo ' arktos-local' | sudo tee -a /etc/hosts
+hostname -i
+wget https://raw.githubusercontent.com/CentaurusInfra/mizar/dev-next/kernelupdate.sh
+echo y | sudo bash kernelupdate.sh
+init 6
+Done

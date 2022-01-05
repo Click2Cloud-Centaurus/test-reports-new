@@ -1,0 +1,25 @@
+#! /bin/bash
+
+set -x
+
+mkdir -p /go/src/k8s.io
+pushd /go/src/k8s.io
+git clone https://github.com/Click2Cloud-Centaurus/arktos.git 
+pushd arktos
+sudo bash ./hack/setup-dev-node.sh
+export PATH=$PATH:/usr/local/go/bin
+systemctl start containerd
+systemctl start docker 
+systemctl enable containerd
+systemctl enable docker
+echo export PATH=$PATH:/usr/local/go/bin\ >> ~/.profile
+echo pushd \$HOME/go/src/k8s.io/arktos >> ~/.profile
+git checkout -b master
+source ~/.profile
+nohup hack/arktos-up.sh > arktoswithoutmizar.logs 2>&1 &
+sleep 600s
+systemctl restart containerd
+sleep 180s
+./cluster/kubectl.sh apply -f   https://raw.githubusercontent.com/Click2Cloud-Centaurus/Documentation/main/test-yamls/test_pods.yaml
+./cluster/kubectl.sh get nodes -Ao wide
+./cluster/kubectl.sh get pods -Ao wide   

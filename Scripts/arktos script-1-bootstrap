@@ -1,0 +1,25 @@
+#! /bin/bash
+
+set -x
+
+
+#Change ip and hostname
+hostnamectl set-hostname arktos
+echo ' arktos' | sudo tee -a /etc/hosts
+hostname -i
+sudo apt-get -y update
+pushd
+git clone https://github.com/CentaurusInfra/mizar.git
+pushd mizar
+pushd ~/mizar
+yes y Y | bash bootstrap.sh
+sed -i 's+sudo reboot+#sudo reboot+g' /root/mizar/setup-machine-arktos.sh
+chmod 755 setup-machine-arktos.sh
+./setup-machine-arktos.sh
+export PATH=$PATH:/usr/local/go/bin
+pushd ~/mizar
+echo y | sudo bash kernelupdate.sh
+init 6
+
+Done
+

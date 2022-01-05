@@ -1,0 +1,37 @@
+#! /bin/bash
+
+set -x
+
+
+
+pushd ~/mizar
+echo y| python3 -m pip install --user grpcio-tools
+make
+pushd $HOME/go/src/k8s.io/arktos
+echo y | sudo ./hack/setup-dev-node.sh
+export PATH=$PATH:/usr/local/go/bin
+make all WHAT=cmd/arktos-network-controller
+pushd $HOME/mizar
+echo y | sudo bash replace-containerd.sh
+pushd $HOME/go/src/k8s.io/arktos
+systemctl enable containerd
+systemctl enable docker  
+nohup ./hack/arktos-up.sh > arktos.logs 2>&1 &
+sleep 600s
+systemctl restart containerd
+sleep 180s
+pushd $HOME/mizar
+nohup ./deploy-mizar.sh > mizar.logs 2>&1 &
+sleep 360s
+sudo ls /etc/cni/net.d
+sudo rm /etc/cni/net.d/bridge.conf
+pushd $HOME/go/src/k8s.io/arktos
+#CHANGE IP ADDRESS 
+nohup  ./_output/local/bin/linux/amd64/arktos-network-controller --kubeconfig=/var/run/kubernetes/admin.kubeconfig --kube-apiserver-ip=172.31.5.66 > network-controller.logs 2>&1 &
+sleep 120s
+kubectl apply -f   https://raw.githubusercontent.com/Click2Cloud-Centaurus/Documentation/main/test-yamls/test_pods.yaml
+sleep 20s
+kubectl get nodes -Ao wide
+kubectl get pods -Ao wide
+
+Done
