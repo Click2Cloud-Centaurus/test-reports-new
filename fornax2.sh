@@ -5,13 +5,15 @@
 
 set -x
 
-      
-hostnamectl set-hostname node-test
+----------------------------------------
+hostnamectl set-hostname node-b
 ufw disable
 swapoff -a
+mkdir -p /etc/kubeedge/ca
+mkdir -p /etc/kubeedge/certs
 apt-get -y update
 echo -e 'br_netfilter' | cat > /etc/modules-load.d/k8s.conf
-echo -e 'net.bridge.bridge-nf-call-ip6tables = 1\nnet.bridge.bridge-nf-call-iptables = 1' | "cat >> /etc/sysctl.d/k8s.conf"
+echo -e 'net.bridge.bridge-nf-call-ip6tables = 1\nnet.bridge.bridge-nf-call-iptables = 1' | cat >> /etc/sysctl.d/k8s.conf
 sysctl --system
 apt-get -y update
 apt-get install docker.io -y
@@ -29,12 +31,19 @@ kubeadm init
 export KUBECONFIG=/etc/kubernetes/admin.conf
 sleep 120s
 kubectl get nodes
+export kubever=$(kubectl version | base64 | tr -d '\n')
+kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$kubever"
+sleep 60s
+kubectl get nodes
+echo y | sudo apt-get install vim
 GOLANG_VERSION=${GOLANG_VERSION:-"1.14.15"}
 apt -y install make gcc jq
-wget https://dl.google.com/go/go${GOLANG_VERSION}.linux-amd64.tar.gz -P /tmp
-tar -C /usr/local -xzf /tmp/go${GOLANG_VERSION}.linux-amd64.tar.gz
+wget https://dl.google.com/go/go1.14.15.linux-amd64.tar.gz -P /tmp
+tar -C /usr/local -xzf /tmp/go1.14.15.linux-amd64.tar.gz
 echo -e 'export PATH=$PATH:/usr/local/go/bin\nexport GOPATH=/usr/local/go/bin\nexport KUBECONFIG=/etc/kubernetes/admin.conf' |cat >> ~/.bashrc 
-source ~/.bashrc
+sleep 10s
+cp /usr/local/go/bin/go  /usr/local/bin
+source /root/.bashrc
 go version
 mkdir -p go/src/github.com
 pushd /root/go/src/github.com
@@ -47,19 +56,11 @@ git clone https://github.com/CentaurusInfra/fornax.git
          mkdir /etc/kubeedge/config -p
          cp /etc/kubernetes/admin.conf /root/.kube/config
          _output/local/bin/cloudcore --minconfig > /etc/kubeedge/config/cloudcore.yaml
-	 sed -i 's+RANDFILE+#RANDFILE+g' /etc/ssl/openssl.cnf
-         mkdir -p /etc/kubeedge/ca
-         mkdir -p /etc/kubeedge/certs
-         build/tools/certgen.sh genCA $1 $2 $3 $4
-         build/tools/certgen.sh genCertAndKey server $1 $2 $3 $4
-         #ssh -t root@$2 "mkdir -p /etc/kubeedge/ca /etc/kubeedge/certs"
-         #ssh  -t root@$3 "mkdir -p /etc/kubeedge/ca /etc/kubeedge/certs"
-         #ssh -t root@$i "scp -r /etc/kubeedge/ca root@$2:/etc/kubeedge/"
-         #ssh -t root@$i "scp -r /etc/kubeedge/ca root@$3:/etc/kubeedge/"
-         #ssh -t root@$i "scp -r /etc/kubeedge/certs root@$2:/etc/kubeedge/"
-         #ssh -t root@$i "scp -r /etc/kubeedge/certs root@$3:/etc/kubeedge/"
-         #ssh -t root@$i "scp -r /etc/kubernetes/admin.conf root@$2:/root/go/src/github.com/kubeedge"
-         kubectl apply -f build/crds/devices/devices_v1alpha2_device.yaml
+		 cp /etc/kubernetes/admin.conf /root/edgecluster.kubeconfig
+         _output/local/bin/edgecore --edgeclusterconfig > /etc/kubeedge/config/edgecore.yaml
+         tests/edgecluster/hack/update_edgecore_config.sh admin.conf
+		 sed -i 's+RANDFILE+#RANDFILE+g' /etc/ssl/openssl.cnf
+		 kubectl apply -f build/crds/devices/devices_v1alpha2_device.yaml
          kubectl apply -f build/crds/devices/devices_v1alpha2_devicemodel.yaml
 
          kubectl apply -f build/crds/reliablesyncs/cluster_objectsync_v1alpha1.yaml
@@ -69,11 +70,13 @@ git clone https://github.com/CentaurusInfra/fornax.git
          kubectl apply -f  build/crds/router/router_v1_ruleEndpoint.yaml
          kubectl apply -f build/crds/edgecluster/mission_v1.yaml
          kubectl apply -f build/crds/edgecluster/edgecluster_v1.yaml
-         _output/local/bin/cloudcore 
-
-
-
-
-
-
-
+		 chmod 777 /root/go/src/github.com/kubeedge/_output/local/bin/kubectl/vanilla/kubectl
+		 export KUBECONFIG=/etc/kubernetes/admin.conf
+		 nohup _output/local/bin/edgecore --edgecluster > edgecore.logs 2>&1 &
+ 		 export KUBECONFIG=/etc/kubernetes/admin.conf
+         nohup _output/local/bin/cloudcore > cloudcore.logs 2>&1 &
+		 echo yes | scp -r /etc/kubernetes/admin.conf  192.168.2.52:/root/go/src/github.com/kubeedge
+		 sleep 5s
+		 cat cloudcore.logs
+		 cat edgecore.logs
+		 
