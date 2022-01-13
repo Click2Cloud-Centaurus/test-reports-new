@@ -9,4 +9,5 @@
      cd mizar
      chmod 755 setup-machine-arktos.sh
      ./setup-machine-arktos.sh
-
+     
+  • The lab machine will be rebooted once the above script is completed, you will be automatically logged out of the lab machine.
