@@ -53,6 +53,8 @@
       
    • Once your arktos server and Mizar are running. To verify, you can open a new terminal and run kubectl get nodes, you should see a node running with the name starts with "IP" followed by the private IP address of your lab machine.
    
+      kubectl get nodes -Ao wide
+   
    #### You also want make sure the default kubernetes bridge network configuration file is deleted:
      
        sudo ls /etc/cni/net.d
