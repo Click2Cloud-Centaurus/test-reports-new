@@ -65,9 +65,9 @@
         
    #### where the kube-apiserver-ip is your lab machine's private ip address
    
-    • Open another terminal:
+   • Open another terminal:
          
-    • Deploy test pods:
+   • Deploy test pods:
         
           kubectl apply -f   https://raw.githubusercontent.com/Click2Cloud-Centaurus/Documentation/main/test-yamls/test_pods.yaml
           kubectl get pods -A
