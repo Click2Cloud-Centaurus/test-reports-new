@@ -11,5 +11,7 @@
      ./setup-machine-arktos.sh
      
   • The lab machine will be rebooted once the above script is completed, you will be automatically logged out of the lab machine.
+  
   •	Log onto your lab machine, then run bootstrap.sh script from the Mizar project folder to bootstrap your lab machine.
+  
   •	Once bootstrap is completed, you can then compile Mizar. Make sure to run these in sudo mode:
