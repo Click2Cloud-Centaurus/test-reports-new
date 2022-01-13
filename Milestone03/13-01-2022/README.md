@@ -72,7 +72,7 @@
    • Deploy test pods:
         
           kubectl apply -f   https://raw.githubusercontent.com/Click2Cloud-Centaurus/Documentation/main/test-yamls/test_pods.yaml
-          kubectl get pods -A
+          kubectl get pods -Ao wide
           
    ### Pods are getting stuck in ContainerCreating state      
           
