@@ -27,7 +27,8 @@
      
 #### Output:
 
-![image](https://user-images.githubusercontent.com/95343388/150755619-528e174a-f644-4a6a-b642-4837bf1f2e4f.png)
+![image](https://user-images.githubusercontent.com/95343388/150782275-a782f6f5-0d6d-4dca-8f15-10ed767beb01.png)
+
 
 ### 4) Now Open Another Terminal And Check The Nodes Status:
       ./cluster/kubectl.sh get nodes 
