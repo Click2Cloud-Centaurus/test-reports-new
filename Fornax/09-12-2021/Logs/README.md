@@ -8,5 +8,5 @@ The purpose of this document is to setup and configure the Cloud Intel on single
 ### Virtual Machine Configuration
 
 
-•        `Centos 7`
-•        `8 vCPUs, 16 GB RAM and 200 GB Storage`
+•        ` Centos 7 `
+•        ` 8 vCPUs, 16 GB RAM and 200 GB Storage `
