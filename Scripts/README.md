@@ -97,3 +97,14 @@
        cd $HOME/go/src/github.com/fornax
        cat cloudcore.logs
        cat edgecore.logs
+       
+       
+       
+### If Kubernetes node does not get Ready even after successfully running the script in Machine-3 please run the following command:
+
+
+       export KUBECONFIG=/etc/kubernetes/admin.conf
+       
+       
+   ![image](https://user-images.githubusercontent.com/95343388/152477536-b2aa6c4b-15c5-4b57-87dd-de197d0597c3.png)
+
