@@ -39,6 +39,16 @@
      
      
        systemctl reload sshd
+       
+       
+**Set the ROOT password of the Machine**
+
+
+       passwd root
+       
+       
+   ![image](https://user-images.githubusercontent.com/95343388/152478338-2bc2a7da-b236-4776-9c50-42c9eb60eaaf.png)
+
 
    
 ### Running the Scripts:
