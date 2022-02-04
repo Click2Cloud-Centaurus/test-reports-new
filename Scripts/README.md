@@ -41,7 +41,7 @@
        systemctl reload sshd
 
    
-#### Running the Scripts:
+### Running the Scripts:
 
 
 **create project folder and go to the project folder**
