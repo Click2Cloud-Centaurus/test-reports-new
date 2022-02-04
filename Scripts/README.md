@@ -57,8 +57,8 @@
        sudo bash fornax/scripts/edge_worker_node.sh                (Run in machine 3)  (run the script only after successfully running the machine-2 script)
        
        
-**Run the machine-2 script only after successfully running the machine-1 script**
-**Run the machine-3 script only after successfully running the machine-2 script**
+•         **Run the machine-2 script only after successfully running the machine-1 script**
+•         **Run the machine-3 script only after successfully running the machine-2 script**
 
 
 ### NOTE: 'prerequisite_package.sh' contains all the required packages for creating Kubernetes Cluster.
