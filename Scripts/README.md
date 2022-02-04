@@ -106,5 +106,6 @@
        export KUBECONFIG=/etc/kubernetes/admin.conf
        
        
+       
    ![image](https://user-images.githubusercontent.com/95343388/152477536-b2aa6c4b-15c5-4b57-87dd-de197d0597c3.png)
 
