@@ -1,7 +1,7 @@
-# Arktos and Mizar Single Node Installation Guide (On-Prem)
+# Test Report - Arktos and Mizar Single Node Installation (On-Prem)
 
 
-
+**Date: 07-02-2022
 
 ### Introduction
 
