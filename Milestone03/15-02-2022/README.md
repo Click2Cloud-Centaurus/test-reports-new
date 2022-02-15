@@ -16,7 +16,7 @@
 -  Preferred OS is Ubuntu 18.04. 
 - 16 vCPUs, 16 GB RAM, and the Storage size 128GB or more
 
-- **Make sure your cluster is running, run the command from arktos directory. **
+- **Make sure your cluster is running, run the command from arktos directory.**
 ```bash
  export KUBECONFIG=/var/run/kubernetes/admin.kubeconfig
 ./cluster/kubectl.sh get nodes -A
@@ -26,7 +26,7 @@
 NAME               STATUS   ROLES    AGE   VERSION
 centaurus-master   Ready    <none>   30m   v0.9.0
 ```
-#### 1. Installing Docker:
+### 1. Installing Docker:
 
 ```bash
 sudo apt-get remove docker docker-engine docker.io containerd runc
